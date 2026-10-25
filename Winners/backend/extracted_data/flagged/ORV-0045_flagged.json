@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "fact_id": "ae34e8df",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "We assume the port strike removed most working berths and that rail cannot absorb the difference.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "We assume the port strike removed most working berths and that rail cannot absorb the difference."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as an assumption rather than a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "e71f11ae",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "If correct, the fall is far deeper than the official port index suggests.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "If correct, the fall is far deeper than the official port index suggests."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is conditional ('If correct') and not confirmed."
+    ]
+  },
+  {
+    "fact_id": "1ec1aa7d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "The channel checks are not a substitute for the company's accounts, and the note says so.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The channel checks are not a substitute for the company's accounts, and the note says so."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is part of a larger context and does not stand alone as a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "f92252ca",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "Readers should treat the estimate as an outlier until the company reports.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Readers should treat the estimate as an outlier until the company reports."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is part of a larger context and does not stand alone as a confirmed fact."
+    ]
+  }
+]

@@ -92,5 +92,56 @@
       "Verifier: statement only partially supported. The statement is a projection, but it does not explicitly state that it is expected; it uses 'is expected to show' which implies a future event.",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "fe067106",
+    "category": "OTHER",
+    "subject": "grain purchases",
+    "statement": "Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Cited ¶3 does not exist in document",
+      "Citation repaired: quote found in ¶16, not cited ¶3"
+    ]
+  },
+  {
+    "fact_id": "097edfe8",
+    "category": "OTHER",
+    "subject": "market substitutes",
+    "statement": "The market has found substitutes, but they cost more and they do not cover the whole gap, said Samir Tolle of Vantro Trading.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "\"The market has found substitutes, but they cost more and they do not cover the whole gap,\" said Samir Tolle of Vantro Trading."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Cited ¶4 does not exist in document",
+      "Quote not verbatim (100% match); replaced with source text from ¶17",
+      "Citation repaired: ¶4 -> ¶17"
+    ]
   }
 ]

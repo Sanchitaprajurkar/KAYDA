@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "fact_id": "b2a380b6",
+    "category": "OTHER",
+    "subject": "December port index",
+    "statement": "The ministry is due to publish the December port index later this month.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "The ministry is due to publish the December port index later this month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement implies a future action as if it has already happened.",
+      "Cited ¶7 does not exist in document",
+      "Citation repaired: quote found in ¶20, not cited ¶7"
+    ]
+  }
+]

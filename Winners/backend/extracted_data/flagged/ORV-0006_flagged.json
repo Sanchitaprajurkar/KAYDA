@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "b18621ff",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan cargo orders",
+    "statement": "The millers say the arrangement is workable for now but leaves them with less room to absorb a second disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0006",
+      "file_name": "ORV-0006.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The millers say the arrangement is workable for now but leaves them with less room to absorb a second disruption."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is attributed to the millers but is framed as a definitive fact rather than a report of their opinion."
+    ]
+  }
+]

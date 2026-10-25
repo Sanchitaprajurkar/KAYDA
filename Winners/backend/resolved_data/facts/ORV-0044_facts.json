@@ -130,5 +130,159 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "0b379360",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 21.1M and the volume was 57,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 57000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 21,
+      "text_snippet": "In July 2025, the value was USD 21.1M and the volume was 57,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "004f80e9",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 22.6M and the volume was 61,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 61000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 22,
+      "text_snippet": "In August 2025, the value was USD 22.6M and the volume was 61,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "fb98dcef",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 59000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 23,
+      "text_snippet": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "82e7e884",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 52000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 24,
+      "text_snippet": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2f2e6b38",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 19.6M and the volume was 53,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 53000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 25,
+      "text_snippet": "In November 2025, the value was USD 19.6M and the volume was 53,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bbd051a8",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 18.9M and the volume was 51,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 51000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 26,
+      "text_snippet": "In December 2025, the value was USD 18.9M and the volume was 51,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "78eda448",
+    "category": "OTHER",
+    "subject": "Vanir gain",
+    "statement": "The Vanir gain is real but small, and it does not replace the Orvan sea volume.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 27,
+      "text_snippet": "The Vanir gain is real but small, and it does not replace the Orvan sea volume."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

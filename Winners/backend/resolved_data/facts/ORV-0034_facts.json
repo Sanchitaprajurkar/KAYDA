@@ -112,5 +112,71 @@
     "assertion_status": "REPORTED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "3b8a0e29",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Midgard wheat cargo",
+    "statement": "Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard had returned to anchor.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard had returned to anchor."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "888e505b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "shipping queue",
+    "statement": "Agents said the queue was growing through the afternoon.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Agents said the queue was growing through the afternoon."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ee66d2db",
+    "category": "DISRUPTION_STATUS",
+    "subject": "delivery by rail",
+    "statement": "By evening, some buyers had begun to ask for delivery by rail.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "By evening, some buyers had begun to ask for delivery by rail."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

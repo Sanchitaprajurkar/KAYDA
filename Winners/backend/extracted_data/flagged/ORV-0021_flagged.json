@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "16aebb20",
+    "category": "OTHER",
+    "subject": "Corvan Grain November figures",
+    "statement": "Corvan Grain will publish its November figures in the normal cycle.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "Corvan Grain will publish its November figures in the normal cycle."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Statement framed as a future action rather than a confirmed fact."
+    ]
+  }
+]

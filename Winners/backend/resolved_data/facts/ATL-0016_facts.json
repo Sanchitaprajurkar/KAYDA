@@ -42,5 +42,159 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "a7c7a1d9",
+    "category": "OTHER",
+    "subject": "Nexor Chips",
+    "statement": "Nexor Chips (Ketra) makes computer chips.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Nexor Chips (Ketra) makes computer chips."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2ae3fb40",
+    "category": "OTHER",
+    "subject": "Granite Mining",
+    "statement": "Granite Mining (Valhalla) mines copper.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Granite Mining (Valhalla) mines copper."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "339f2ba1",
+    "category": "OTHER",
+    "subject": "Paxen Pharma",
+    "statement": "Paxen Pharma (Midgard) makes medicines.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Paxen Pharma (Midgard) makes medicines."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "0bba9fd0",
+    "category": "OTHER",
+    "subject": "Anchor Marine",
+    "statement": "Anchor Marine (Tolan) provides port services.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Anchor Marine (Tolan) provides port services."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "154fdad9",
+    "category": "OTHER",
+    "subject": "Vantro Trading",
+    "statement": "Vantro Trading (Ravik) is a commodity trader.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Vantro Trading (Ravik) is a commodity trader."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "55fad955",
+    "category": "OTHER",
+    "subject": "Firm directory",
+    "statement": "The directory lists normal activities only.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The directory lists normal activities only."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d5dc7cf2",
+    "category": "OTHER",
+    "subject": "Firm operations",
+    "statement": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

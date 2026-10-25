@@ -116,5 +116,93 @@
       "Citation repaired: quote found in ¶4, not cited ¶3",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "33167f02",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan Grain Corridor",
+    "statement": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b07b54f2",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e5155952",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir wheat supply",
+    "statement": "Vanir also sells wheat, and some of that supply can reach Tolan and Midgard.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Vanir also sells wheat, and some of that supply can reach Tolan and Midgard."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "cb32ba25",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Asgard wheat contract",
+    "statement": "Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

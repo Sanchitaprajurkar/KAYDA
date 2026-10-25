@@ -86,7 +86,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      "Citation repaired: quote found in ¶7, not cited ¶6"
     ]
   },
   {
@@ -110,7 +110,95 @@
     "assertion_status": "PROJECTED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b68, not cited \u00b67"
+      "Citation repaired: quote found in ¶8, not cited ¶7"
     ]
+  },
+  {
+    "fact_id": "b47216f7",
+    "category": "OTHER",
+    "subject": "Corridor Agreement",
+    "statement": "The notice is signed by the trade ministry's corridor desk and takes effect on expiry.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The notice is signed by the trade ministry's corridor desk and takes effect on expiry."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "39641c91",
+    "category": "OTHER",
+    "subject": "Exporters bookings",
+    "statement": "Exporters who hold bookings made under the agreement should ask their agents to confirm the terms that now apply.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Exporters who hold bookings made under the agreement should ask their agents to confirm the terms that now apply."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5d67a187",
+    "category": "OTHER",
+    "subject": "Customs checks",
+    "statement": "Shipping lines have been told to expect the same customs checks as any other grain cargo.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Shipping lines have been told to expect the same customs checks as any other grain cargo."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "51886644",
+    "category": "OTHER",
+    "subject": "Port authority reporting",
+    "statement": "The port authority will report loadings in the usual monthly return.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The port authority will report loadings in the usual monthly return."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

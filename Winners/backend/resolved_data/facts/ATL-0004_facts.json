@@ -154,5 +154,71 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "181b462c",
+    "category": "OTHER",
+    "subject": "Dorin",
+    "statement": "Dorin is a specialty-metal producer on the East Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Dorin is a specialty-metal producer on the East Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4282e641",
+    "category": "OTHER",
+    "subject": "Dorin mining and processing plants",
+    "statement": "Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c9d58331",
+    "category": "OTHER",
+    "subject": "Dorin economy",
+    "statement": "Its economy is closely tied to a small number of large sites.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Its economy is closely tied to a small number of large sites."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

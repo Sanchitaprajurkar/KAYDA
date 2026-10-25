@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "9631802f",
+    "category": "OTHER",
+    "subject": "September loadings",
+    "statement": "The Realm Trade Ministry said exports would continue under general rules. It gave no figure for September loadings.",
+    "date_mentioned": "September",
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The Realm Trade Ministry said exports would continue under general rules. It gave no figure for September loadings."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Date 'September' is stated as a fact when the paragraph only mentions that no figure was given for September loadings."
+    ]
+  }
+]

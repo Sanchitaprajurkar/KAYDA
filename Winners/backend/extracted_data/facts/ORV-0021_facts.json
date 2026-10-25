@@ -64,7 +64,7 @@
     "assertion_status": "CORRECTED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b66, not cited \u00b65",
+      "Citation repaired: quote found in ¶6, not cited ¶5",
       "Assertion status corrected REPORTED -> CORRECTED"
     ]
   },
@@ -89,7 +89,53 @@
     "assertion_status": "REPORTED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  },
+  {
+    "fact_id": "6e2ac11b",
+    "category": "ROUTE_STATUS",
+    "subject": "Corvan Grain shipping routes",
+    "statement": "The company has moved some cargoes to the Ravik Rail Link and to road haulage.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The company has moved some cargoes to the Ravik Rail Link and to road haulage."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "999a584c",
+    "category": "OTHER",
+    "subject": "Corvan Grain shipping transparency",
+    "statement": "We are shipping what we can and telling buyers the truth about the rest, a company spokesperson said.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "\"We are shipping what we can and telling buyers the truth about the rest,\" a company spokesperson said."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Quote not verbatim (100% match); replaced with source text from ¶5"
     ]
   }
 ]

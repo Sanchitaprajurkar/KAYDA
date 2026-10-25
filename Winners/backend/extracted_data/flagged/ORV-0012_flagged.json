@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "fact_id": "9e666e99",
+    "category": "OTHER",
+    "subject": "Orvan Grain Port loading index",
+    "statement": "The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea.",
+    "date_mentioned": null,
+    "numeric_value": 100.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0012",
+      "file_name": "ORV-0012.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal is 100."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Claimed assertion_status 'CONFIRMED' is incorrect; the statement is reported, not confirmed.; Numeric value is stated as '100' but is presented as '100.0' which is not explicitly stated in the paragraph.",
+      "Assertion status corrected CONFIRMED -> REPORTED"
+    ]
+  }
+]

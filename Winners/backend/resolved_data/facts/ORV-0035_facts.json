@@ -139,5 +139,71 @@
       "Citation repaired: quote found in ¶7, not cited ¶6",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "3321c657",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "28660f1d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "They have since stabilised at a low level rather than recovered.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "They have since stabilised at a low level rather than recovered."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8a91c9d6",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

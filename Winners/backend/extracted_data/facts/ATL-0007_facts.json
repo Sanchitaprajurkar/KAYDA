@@ -196,7 +196,7 @@
     "assertion_status": "REPORTED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      "Citation repaired: quote found in ¶4, not cited ¶3"
     ]
   },
   {
@@ -220,7 +220,73 @@
     "assertion_status": "REPORTED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      "Citation repaired: quote found in ¶4, not cited ¶3"
     ]
+  },
+  {
+    "fact_id": "7b2c7273",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "The ranges are indicative and describe ordinary conditions.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The ranges are indicative and describe ordinary conditions."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2a20556a",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "They are not forecasts, and they do not replace the prices or values reported in a specific document.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "They are not forecasts, and they do not replace the prices or values reported in a specific document."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2f8762c9",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "Trade notes state their own units and months.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Trade notes state their own units and months."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

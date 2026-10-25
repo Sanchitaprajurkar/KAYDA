@@ -112,5 +112,49 @@
       "Citation repaired: quote found in ¶5, not cited ¶4",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "21a716c8",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir Rice Port",
+    "statement": "Vanir Rice Port handles the largest share of its rice shipments.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Vanir Rice Port handles the largest share of its rice shipments."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e5a28131",
+    "category": "OTHER",
+    "subject": "Rune Trading",
+    "statement": "Rune Trading, a grain and rice trader, is the best-known firm in the sector.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Rune Trading, a grain and rice trader, is the best-known firm in the sector."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

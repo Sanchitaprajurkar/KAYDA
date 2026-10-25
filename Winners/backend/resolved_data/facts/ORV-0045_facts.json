@@ -47,5 +47,49 @@
       "Assertion status corrected REPORTED -> ALLEGED",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "7c77f814",
+    "category": "OTHER",
+    "subject": "Corvan Grain sea exports",
+    "statement": "We have not seen the company's own figures.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "We have not seen the company's own figures."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "251f7a23",
+    "category": "OTHER",
+    "subject": "Corvan Grain sea exports",
+    "statement": "The estimate is a point estimate, not a range.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "The estimate is a point estimate, not a range."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

@@ -154,5 +154,137 @@
     "validation_notes": [
       "Citation repaired: quote found in ¶15, not cited ¶14"
     ]
+  },
+  {
+    "fact_id": "adc0d88e",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 26.1M and the volume was 67,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 26.1,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 26.1M and the volume was 67,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7500022d",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 28.1M and the volume was 72,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 28.1,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 28.1M and the volume was 72,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "aa8afa93",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 27.3M and the volume was 70,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 27.3,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 27.3M and the volume was 70,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "1c6b142a",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 24.2M and the volume was 62,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 24.2,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 24.2M and the volume was 62,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ed9e1c84",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 24.6M and the volume was 63,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 24.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 24.6M and the volume was 63,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "eaeb48e0",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 23.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

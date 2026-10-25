@@ -93,5 +93,75 @@
     "validation_notes": [
       "Citation repaired: quote found in ¶7, not cited ¶6"
     ]
+  },
+  {
+    "fact_id": "5250697a",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir parcels",
+    "statement": "Anchor Marine says the change is manageable because the Vanir parcels are smaller than the Orvan cargoes they replace.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Anchor Marine says the change is manageable because the Vanir parcels are smaller than the Orvan cargoes they replace."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "8a6c082b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Tolan Harbour operations",
+    "statement": "The extra calls have filled the berths and pushed waiting times up, and the port has had to find space for containers that would normally move through without delay.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The extra calls have filled the berths and pushed waiting times up, and the port has had to find space for containers that would normally move through without delay."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "97d4f06e",
+    "category": "OTHER",
+    "subject": "cargo documentation",
+    "statement": "The company has added an extra shift for cargo documentation.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "The company has added an extra shift for cargo documentation."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

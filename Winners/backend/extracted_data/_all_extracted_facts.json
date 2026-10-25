@@ -228,6 +228,50 @@
     ]
   },
   {
+    "fact_id": "7ff02ada",
+    "category": "OTHER",
+    "subject": "Asgard Port",
+    "statement": "The main port is Asgard Port, a hub with container, general cargo and passenger berths.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The main port is Asgard Port, a hub with container, general cargo and passenger berths."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "12fd193d",
+    "category": "OTHER",
+    "subject": "Longship Lines",
+    "statement": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "ddecc7ba",
     "category": "TRADE_VOLUME",
     "subject": "Valhalla rice exports",
@@ -560,6 +604,72 @@
     "validation_notes": []
   },
   {
+    "fact_id": "181b462c",
+    "category": "OTHER",
+    "subject": "Dorin",
+    "statement": "Dorin is a specialty-metal producer on the East Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Dorin is a specialty-metal producer on the East Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4282e641",
+    "category": "OTHER",
+    "subject": "Dorin mining and processing plants",
+    "statement": "Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c9d58331",
+    "category": "OTHER",
+    "subject": "Dorin economy",
+    "statement": "Its economy is closely tied to a small number of large sites.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0004",
+      "file_name": "ATL-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Its economy is closely tied to a small number of large sites."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "715b8eb1",
     "category": "TRADE_VOLUME",
     "subject": "Ymir economy",
@@ -654,6 +764,50 @@
     "validation_notes": [
       "Citation repaired: quote found in \u00b65, not cited \u00b64"
     ]
+  },
+  {
+    "fact_id": "8f60acb7",
+    "category": "OTHER",
+    "subject": "Ymir economy",
+    "statement": "Ymir hosts the canal that links the West Sea and the East Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0005",
+      "file_name": "ATL-0005.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Ymir hosts the canal that links the West Sea and the East Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6d30b377",
+    "category": "OTHER",
+    "subject": "Ymir economy",
+    "statement": "The country is small and its economy is built around transit, pilotage, maintenance and port services rather than around agriculture or heavy industry.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0005",
+      "file_name": "ATL-0005.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "The country is small and its economy is built around transit, pilotage, maintenance and port services rather than around agriculture or heavy industry."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "11c35c0f",
@@ -1059,6 +1213,72 @@
     ]
   },
   {
+    "fact_id": "7b2c7273",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "The ranges are indicative and describe ordinary conditions.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The ranges are indicative and describe ordinary conditions."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2a20556a",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "They are not forecasts, and they do not replace the prices or values reported in a specific document.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "They are not forecasts, and they do not replace the prices or values reported in a specific document."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2f8762c9",
+    "category": "OTHER",
+    "subject": "Trade notes",
+    "statement": "Trade notes state their own units and months.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0007",
+      "file_name": "ATL-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Trade notes state their own units and months."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "564fd407",
     "category": "TRADE_VOLUME",
     "subject": "Midgard imports",
@@ -1140,6 +1360,50 @@
       "page_number": null,
       "paragraph_index": 4,
       "text_snippet": "Midgard also has a dense road and rail network linking the port to inland distribution centres."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5150c4f8",
+    "category": "OTHER",
+    "subject": "Inland distribution network",
+    "statement": "Inland distribution relies on that network rather than on a single hub.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0008",
+      "file_name": "ATL-0008.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Inland distribution relies on that network rather than on a single hub."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b7d03c05",
+    "category": "OTHER",
+    "subject": "Wholesale depots and regional collection points",
+    "statement": "The capital has several wholesale depots, and smaller cities act as regional collection points for imported goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0008",
+      "file_name": "ATL-0008.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The capital has several wholesale depots, and smaller cities act as regional collection points for imported goods."
     },
     "reliability_tier": 1,
     "is_as_of_valid": true,
@@ -1267,6 +1531,50 @@
     "validation_notes": [
       "Citation repaired: quote found in \u00b65, not cited \u00b64"
     ]
+  },
+  {
+    "fact_id": "38163bbc",
+    "category": "OTHER",
+    "subject": "Ketra",
+    "statement": "Ketra is an electronics maker on the East Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Ketra is an electronics maker on the East Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6e4bc87c",
+    "category": "OTHER",
+    "subject": "Ketra",
+    "statement": "It specialises in computer chips and consumer goods and imports the specialty metals and energy needed by its factories.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "It specialises in computer chips and consumer goods and imports the specialty metals and energy needed by its factories."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "2f8f1d05",
@@ -1962,6 +2270,50 @@
     ]
   },
   {
+    "fact_id": "21a716c8",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir Rice Port",
+    "statement": "Vanir Rice Port handles the largest share of its rice shipments.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Vanir Rice Port handles the largest share of its rice shipments."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e5a28131",
+    "category": "OTHER",
+    "subject": "Rune Trading",
+    "statement": "Rune Trading, a grain and rice trader, is the best-known firm in the sector.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Rune Trading, a grain and rice trader, is the best-known firm in the sector."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "b74349bc",
     "category": "ROUTE_STATUS",
     "subject": "Ymir Locks",
@@ -2292,6 +2644,160 @@
     "validation_notes": []
   },
   {
+    "fact_id": "a7c7a1d9",
+    "category": "OTHER",
+    "subject": "Nexor Chips",
+    "statement": "Nexor Chips (Ketra) makes computer chips.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Nexor Chips (Ketra) makes computer chips."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2ae3fb40",
+    "category": "OTHER",
+    "subject": "Granite Mining",
+    "statement": "Granite Mining (Valhalla) mines copper.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Granite Mining (Valhalla) mines copper."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "339f2ba1",
+    "category": "OTHER",
+    "subject": "Paxen Pharma",
+    "statement": "Paxen Pharma (Midgard) makes medicines.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Paxen Pharma (Midgard) makes medicines."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "0bba9fd0",
+    "category": "OTHER",
+    "subject": "Anchor Marine",
+    "statement": "Anchor Marine (Tolan) provides port services.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Anchor Marine (Tolan) provides port services."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "154fdad9",
+    "category": "OTHER",
+    "subject": "Vantro Trading",
+    "statement": "Vantro Trading (Ravik) is a commodity trader.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Vantro Trading (Ravik) is a commodity trader."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "55fad955",
+    "category": "OTHER",
+    "subject": "Firm directory",
+    "statement": "The directory lists normal activities only.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The directory lists normal activities only."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d5dc7cf2",
+    "category": "OTHER",
+    "subject": "Firm operations",
+    "statement": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "fabef0af",
     "category": "TRADE_VOLUME",
     "subject": "Orvan wheat",
@@ -2398,6 +2904,72 @@
     "is_as_of_valid": true,
     "confidence": 1.0,
     "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6a68c9bc",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Vanir wheat",
+    "statement": "Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "9ffd263d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "rail space allocation",
+    "statement": "The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c6837ced",
+    "category": "OTHER",
+    "subject": "delivery terms",
+    "statement": "It has not changed its delivery terms for Tolan or Midgard.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "It has not changed its delivery terms for Tolan or Midgard."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
   },
@@ -2946,6 +3518,138 @@
     ]
   },
   {
+    "fact_id": "adc0d88e",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 26.1M and the volume was 67,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 26.1,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 26.1M and the volume was 67,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7500022d",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 28.1M and the volume was 72,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 28.1,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 28.1M and the volume was 72,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "aa8afa93",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 27.3M and the volume was 70,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 27.3,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 27.3M and the volume was 70,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "1c6b142a",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 24.2M and the volume was 62,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 24.2,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 24.2M and the volume was 62,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ed9e1c84",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 24.6M and the volume was 63,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 24.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 24.6M and the volume was 63,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "eaeb48e0",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 23.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0005",
+      "file_name": "ORV-0005.pdf",
+      "page_number": 1,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "1f62bc81",
     "category": "TRADE_VOLUME",
     "subject": "wheat",
@@ -3078,6 +3782,28 @@
     "is_as_of_valid": true,
     "confidence": 1.0,
     "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "caf6a6f8",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "stock levels guidance",
+    "statement": "The ministry has not changed its guidance on stock levels.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0006",
+      "file_name": "ORV-0006.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The ministry has not changed its guidance on stock levels."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
   },
@@ -3383,6 +4109,160 @@
       "page_number": null,
       "paragraph_index": 8,
       "text_snippet": "In December 2026, the value was USD 34.1M and the volume was 83,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b612da17",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In July 2025, the value was USD 94.7M and the volume was 263,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 94.7,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 94.7M and the volume was 263,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b073ba21",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In August 2025, the value was USD 101.5M and the volume was 282,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 101.5,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 101.5M and the volume was 282,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a6bbd38f",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 97.9,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2459d982",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 86.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f2e99d2c",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In November 2025, the value was USD 88.6M and the volume was 246,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 88.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 88.6M and the volume was 246,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "58b96ec2",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In December 2025, the value was USD 85.0M and the volume was 236,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 85.0,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 85.0M and the volume was 236,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d51044fe",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "December was the weakest month of the half-year, and rail loadings through Ravik were still rising.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "December was the weakest month of the half-year, and rail loadings through Ravik were still rising."
     },
     "reliability_tier": 1,
     "is_as_of_valid": true,
@@ -4292,6 +5172,94 @@
     ]
   },
   {
+    "fact_id": "b47216f7",
+    "category": "OTHER",
+    "subject": "Corridor Agreement",
+    "statement": "The notice is signed by the trade ministry's corridor desk and takes effect on expiry.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The notice is signed by the trade ministry's corridor desk and takes effect on expiry."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "39641c91",
+    "category": "OTHER",
+    "subject": "Exporters bookings",
+    "statement": "Exporters who hold bookings made under the agreement should ask their agents to confirm the terms that now apply.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Exporters who hold bookings made under the agreement should ask their agents to confirm the terms that now apply."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5d67a187",
+    "category": "OTHER",
+    "subject": "Customs checks",
+    "statement": "Shipping lines have been told to expect the same customs checks as any other grain cargo.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Shipping lines have been told to expect the same customs checks as any other grain cargo."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "51886644",
+    "category": "OTHER",
+    "subject": "Port authority reporting",
+    "statement": "The port authority will report loadings in the usual monthly return.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0016",
+      "file_name": "ORV-0016.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The port authority will report loadings in the usual monthly return."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "4be36fd8",
     "category": "GRAIN_OR_INVENTORY",
     "subject": "Orvan Grain Port",
@@ -4459,6 +5427,94 @@
       "page_number": 1,
       "paragraph_index": 8,
       "text_snippet": "Rail loadings through the Ravik Rail Link have risen, but traders say capacity is limited."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5ba8b136",
+    "category": "OTHER",
+    "subject": "ministry's return",
+    "statement": "The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6e02423a",
+    "category": "OTHER",
+    "subject": "cargo counting",
+    "statement": "A cargo can be counted in one month and delivered in the next, so the index and the customs figures do not always match.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "A cargo can be counted in one month and delivered in the next, so the index and the customs figures do not always match."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b145594b",
+    "category": "OTHER",
+    "subject": "ministry's method",
+    "statement": "The ministry says the two measures are not meant to be identical.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The ministry says the two measures are not meant to be identical."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8b15d455",
+    "category": "OTHER",
+    "subject": "ministry's method change",
+    "statement": "It has not changed its method since the corridor ended.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "It has not changed its method since the corridor ended."
     },
     "reliability_tier": 2,
     "is_as_of_valid": true,
@@ -4658,6 +5714,116 @@
     ]
   },
   {
+    "fact_id": "d89a40bc",
+    "category": "OTHER",
+    "subject": "model assumptions",
+    "statement": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e13fc0af",
+    "category": "OTHER",
+    "subject": "rail limit",
+    "statement": "A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "67d816df",
+    "category": "OTHER",
+    "subject": "Vanir assumption",
+    "statement": "The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "91a6cae1",
+    "category": "OTHER",
+    "subject": "sea route recovery",
+    "statement": "We have not modelled a full recovery of the sea route inside the window, because the port index does not support one.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "We have not modelled a full recovery of the sea route inside the window, because the port index does not support one."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "34938ec1",
+    "category": "OTHER",
+    "subject": "model purpose",
+    "statement": "The model is a guide to the size of the gap, not a forecast of monthly prices.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The model is a guide to the size of the gap, not a forecast of monthly prices."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "e40a2ff3",
     "category": "TARIFF_OR_PRICE",
     "subject": "Orvan to Asgard wheat",
@@ -4812,6 +5978,138 @@
     "validation_notes": [
       "Citation repaired: quote found in \u00b615, not cited \u00b614"
     ]
+  },
+  {
+    "fact_id": "a653dd6a",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 42.8M and the volume was 107,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 42.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 42.8M and the volume was 107,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4abb121f",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 44.4M and the volume was 111,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 44.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 44.4M and the volume was 111,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "22ee7110",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 42.8M and the volume was 107,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 42.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 42.8M and the volume was 107,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6192f462",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 39.6M and the volume was 99,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 39.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 39.6M and the volume was 99,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7bafc7e3",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 39.6M and the volume was 99,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 39.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 39.6M and the volume was 99,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "fb63ddd3",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 38.8M and the volume was 97,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 38.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 38.8M and the volume was 97,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "f6d87dba",
@@ -5004,6 +6302,52 @@
     ]
   },
   {
+    "fact_id": "6e2ac11b",
+    "category": "ROUTE_STATUS",
+    "subject": "Corvan Grain shipping routes",
+    "statement": "The company has moved some cargoes to the Ravik Rail Link and to road haulage.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The company has moved some cargoes to the Ravik Rail Link and to road haulage."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "999a584c",
+    "category": "OTHER",
+    "subject": "Corvan Grain shipping transparency",
+    "statement": "We are shipping what we can and telling buyers the truth about the rest, a company spokesperson said.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "\"We are shipping what we can and telling buyers the truth about the rest,\" a company spokesperson said."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Quote not verbatim (100% match); replaced with source text from \u00b65"
+    ]
+  },
+  {
     "fact_id": "09bcfbb6",
     "category": "TRADE_VOLUME",
     "subject": "Orvan wheat and maize arrivals",
@@ -5095,6 +6439,57 @@
     "validation_notes": [
       "Verifier: statement only partially supported. The statement is a projection, but it does not explicitly state that it is expected; it uses 'is expected to show' which implies a future event.",
       "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "fe067106",
+    "category": "OTHER",
+    "subject": "grain purchases",
+    "statement": "Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Cited \u00b63 does not exist in document",
+      "Citation repaired: quote found in \u00b616, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "097edfe8",
+    "category": "OTHER",
+    "subject": "market substitutes",
+    "statement": "The market has found substitutes, but they cost more and they do not cover the whole gap, said Samir Tolle of Vantro Trading.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "\"The market has found substitutes, but they cost more and they do not cover the whole gap,\" said Samir Tolle of Vantro Trading."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Cited \u00b64 does not exist in document",
+      "Quote not verbatim (100% match); replaced with source text from \u00b617",
+      "Citation repaired: \u00b64 -> \u00b617"
     ]
   },
   {
@@ -5214,6 +6609,94 @@
       "Citation repaired: quote found in \u00b64, not cited \u00b63",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "33167f02",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan Grain Corridor",
+    "statement": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b07b54f2",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e5155952",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir wheat supply",
+    "statement": "Vanir also sells wheat, and some of that supply can reach Tolan and Midgard.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Vanir also sells wheat, and some of that supply can reach Tolan and Midgard."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "cb32ba25",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Asgard wheat contract",
+    "statement": "Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "97ef2e2b",
@@ -5548,6 +7031,138 @@
     "validation_notes": [
       "Citation repaired: quote found in \u00b615, not cited \u00b614"
     ]
+  },
+  {
+    "fact_id": "62f3050f",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 31.5M and the volume was 84,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 84000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 31.5M and the volume was 84,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f1873522",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 33.8M and the volume was 90,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 90000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 33.8M and the volume was 90,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "827dc1f7",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 32.6M and the volume was 87,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 87000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 32.6M and the volume was 87,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "29449dbc",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 28.9M and the volume was 77,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 77000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 28.9M and the volume was 77,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7a4f46c2",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 29.6M and the volume was 79,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 79000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 29.6M and the volume was 79,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6f9c5d38",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 75000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0027",
+      "file_name": "ORV-0027.txt",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "50b28558",
@@ -6330,6 +7945,94 @@
     ]
   },
   {
+    "fact_id": "06fb920b",
+    "category": "OTHER",
+    "subject": "wheat and maize",
+    "statement": "The difference between the two products is the heart of the story here.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The difference between the two products is the heart of the story here."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "550dc35c",
+    "category": "OTHER",
+    "subject": "wheat and maize",
+    "statement": "Wheat bought under the long-term contract arrives on schedule and at agreed terms, while maize is bought cargo by cargo and is exposed to the spot market.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Wheat bought under the long-term contract arrives on schedule and at agreed terms, while maize is bought cargo by cargo and is exposed to the spot market."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "efdd9afc",
+    "category": "OTHER",
+    "subject": "feed compounders",
+    "statement": "Feed compounders say they can change rations for a while, but not indefinitely, and that the cost of switching is already showing in their margins.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Feed compounders say they can change rations for a while, but not indefinitely, and that the cost of switching is already showing in their margins."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "05156d0e",
+    "category": "OTHER",
+    "subject": "ministry",
+    "statement": "The ministry has asked buyers to report any difficulty in securing cover.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The ministry has asked buyers to report any difficulty in securing cover."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "561bc107",
     "category": "DISRUPTION_STATUS",
     "subject": "Orvan Grain Port",
@@ -6420,6 +8123,100 @@
       "Citation repaired: quote found in \u00b67, not cited \u00b66",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "63d8e03f",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The strike notice is the ministry's first public statement on the disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The strike notice is the ministry's first public statement on the disruption."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "f6e2888b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "It does not assign blame and does not set a deadline for a settlement.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "It does not assign blame and does not set a deadline for a settlement."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "7c690fa1",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Port users are asked to keep their agents informed of any change to vessel arrivals, so that berths can be reallocated as they become free.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Port users are asked to keep their agents informed of any change to vessel arrivals, so that berths can be reallocated as they become free."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "f9737365",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Grain at Orvan Grain Port",
+    "statement": "Grain already in store at the port is being kept under the usual customs seal.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Grain already in store at the port is being kept under the usual customs seal."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "2977240a",
@@ -6562,6 +8359,28 @@
     ]
   },
   {
+    "fact_id": "ac1d264e",
+    "category": "OTHER",
+    "subject": "Orvan grain exports",
+    "statement": "\"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0033",
+      "file_name": "ORV-0033.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "\"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "fe453c1a",
     "category": "TREATY_OR_AGREEMENT",
     "subject": "Orvan grain corridor agreement",
@@ -6667,6 +8486,72 @@
       "page_number": null,
       "paragraph_index": 8,
       "text_snippet": "Wheat offers for later delivery firmed in early trade, though volumes were thin."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "3b8a0e29",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Midgard wheat cargo",
+    "statement": "Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard had returned to anchor.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard had returned to anchor."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "888e505b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "shipping queue",
+    "statement": "Agents said the queue was growing through the afternoon.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Agents said the queue was growing through the afternoon."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ee66d2db",
+    "category": "DISRUPTION_STATUS",
+    "subject": "delivery by rail",
+    "statement": "By evening, some buyers had begun to ask for delivery by rail.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "By evening, some buyers had begun to ask for delivery by rail."
     },
     "reliability_tier": 2,
     "is_as_of_valid": true,
@@ -6815,6 +8700,72 @@
       "Citation repaired: quote found in \u00b67, not cited \u00b66",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "3321c657",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "28660f1d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "They have since stabilised at a low level rather than recovered.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "They have since stabilised at a low level rather than recovered."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8a91c9d6",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "83bcde8b",
@@ -7538,6 +9489,76 @@
     ]
   },
   {
+    "fact_id": "5250697a",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir parcels",
+    "statement": "Anchor Marine says the change is manageable because the Vanir parcels are smaller than the Orvan cargoes they replace.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Anchor Marine says the change is manageable because the Vanir parcels are smaller than the Orvan cargoes they replace."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "8a6c082b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Tolan Harbour operations",
+    "statement": "The extra calls have filled the berths and pushed waiting times up, and the port has had to find space for containers that would normally move through without delay.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The extra calls have filled the berths and pushed waiting times up, and the port has had to find space for containers that would normally move through without delay."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "97d4f06e",
+    "category": "OTHER",
+    "subject": "cargo documentation",
+    "statement": "The company has added an extra shift for cargo documentation.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "The company has added an extra shift for cargo documentation."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "099c55fc",
     "category": "TREATY_OR_AGREEMENT",
     "subject": "Orvan grain corridor",
@@ -7741,6 +9762,160 @@
     "validation_notes": []
   },
   {
+    "fact_id": "0b379360",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 21.1M and the volume was 57,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 57000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 21,
+      "text_snippet": "In July 2025, the value was USD 21.1M and the volume was 57,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "004f80e9",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 22.6M and the volume was 61,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 61000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 22,
+      "text_snippet": "In August 2025, the value was USD 22.6M and the volume was 61,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "fb98dcef",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 59000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 23,
+      "text_snippet": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "82e7e884",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 52000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 24,
+      "text_snippet": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2f2e6b38",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 19.6M and the volume was 53,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 53000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 25,
+      "text_snippet": "In November 2025, the value was USD 19.6M and the volume was 53,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bbd051a8",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 18.9M and the volume was 51,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 51000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 26,
+      "text_snippet": "In December 2025, the value was USD 18.9M and the volume was 51,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "78eda448",
+    "category": "OTHER",
+    "subject": "Vanir gain",
+    "statement": "The Vanir gain is real but small, and it does not replace the Orvan sea volume.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0044",
+      "file_name": "ORV-0044.docx",
+      "page_number": null,
+      "paragraph_index": 27,
+      "text_snippet": "The Vanir gain is real but small, and it does not replace the Orvan sea volume."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "7496f371",
     "category": "TRADE_VOLUME",
     "subject": "Corvan Grain sea exports",
@@ -7788,6 +9963,50 @@
       "Assertion status corrected REPORTED -> ALLEGED",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "7c77f814",
+    "category": "OTHER",
+    "subject": "Corvan Grain sea exports",
+    "statement": "We have not seen the company's own figures.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "We have not seen the company's own figures."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "251f7a23",
+    "category": "OTHER",
+    "subject": "Corvan Grain sea exports",
+    "statement": "The estimate is a point estimate, not a range.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "The estimate is a point estimate, not a range."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "931fef1c",
@@ -7946,6 +10165,138 @@
     ]
   },
   {
+    "fact_id": "e6f24cb1",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In July 2025, the value was USD 42.0M and the volume was 120,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 120000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 42.0M and the volume was 120,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "3d0bf4cf",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In August 2025, the value was USD 45.1M and the volume was 129,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 129000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 45.1M and the volume was 129,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c7518b30",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In September 2025, the value was USD 43.4M and the volume was 124,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 124000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 43.4M and the volume was 124,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "067971db",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In October 2025, the value was USD 38.5M and the volume was 110,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 110000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 38.5M and the volume was 110,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d9303036",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In November 2025, the value was USD 39.5M and the volume was 113,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 113000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 39.5M and the volume was 113,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "be1724f7",
+    "category": "TRADE_VOLUME",
+    "subject": "wheat",
+    "statement": "In December 2025, the value was USD 37.8M and the volume was 108,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 108000.0,
+    "unit": "tonnes",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 37.8M and the volume was 108,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
     "fact_id": "8dc4c43d",
     "category": "DISRUPTION_STATUS",
     "subject": "Orvan sea disruption",
@@ -8059,6 +10410,28 @@
       "Verifier: statement only partially supported. Numeric value of 54% is stated but not explicitly confirmed as a fact in the paragraph.",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "165bfadf",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan grain substitutes",
+    "statement": "Second, the substitutes are priced at a premium, which supports the price effect even as volumes fall.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0047",
+      "file_name": "ORV-0047.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Second, the substitutes are priced at a premium, which supports the price effect even as volumes fall."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "54bc1af5",
@@ -8414,6 +10787,50 @@
       "Assertion status corrected CONFIRMED -> REPORTED",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "84e4b8dc",
+    "category": "ROUTE_STATUS",
+    "subject": "Orvan to Ravik grain run",
+    "statement": "Even so, the link is carrying more grain than at any time in recent years, and the operator has added staff at the busiest yards.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Even so, the link is carrying more grain than at any time in recent years, and the operator has added staff at the busiest yards."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e8dfbf5b",
+    "category": "ROUTE_STATUS",
+    "subject": "Orvan to Ravik grain run",
+    "statement": "Traders describe it as a bridge that works, but only for a share of the trade.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Traders describe it as a bridge that works, but only for a share of the trade."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   },
   {
     "fact_id": "f52c35b8",

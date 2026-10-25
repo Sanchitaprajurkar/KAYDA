@@ -90,5 +90,99 @@
       "Citation repaired: quote found in ¶7, not cited ¶6",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "63d8e03f",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The strike notice is the ministry's first public statement on the disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The strike notice is the ministry's first public statement on the disruption."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "f6e2888b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "It does not assign blame and does not set a deadline for a settlement.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "It does not assign blame and does not set a deadline for a settlement."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "7c690fa1",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Port users are asked to keep their agents informed of any change to vessel arrivals, so that berths can be reallocated as they become free.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Port users are asked to keep their agents informed of any change to vessel arrivals, so that berths can be reallocated as they become free."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "f9737365",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Grain at Orvan Grain Port",
+    "statement": "Grain already in store at the port is being kept under the usual customs seal.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Grain already in store at the port is being kept under the usual customs seal."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

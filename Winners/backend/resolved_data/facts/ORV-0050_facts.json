@@ -116,5 +116,49 @@
       "Assertion status corrected CONFIRMED -> REPORTED",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "84e4b8dc",
+    "category": "ROUTE_STATUS",
+    "subject": "Orvan to Ravik grain run",
+    "statement": "Even so, the link is carrying more grain than at any time in recent years, and the operator has added staff at the busiest yards.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Even so, the link is carrying more grain than at any time in recent years, and the operator has added staff at the busiest yards."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e8dfbf5b",
+    "category": "ROUTE_STATUS",
+    "subject": "Orvan to Ravik grain run",
+    "statement": "Traders describe it as a bridge that works, but only for a share of the trade.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Traders describe it as a bridge that works, but only for a share of the trade."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

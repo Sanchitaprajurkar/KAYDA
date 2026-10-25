@@ -20,7 +20,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b63, not cited \u00b62"
+      "Citation repaired: quote found in ¶3, not cited ¶2"
     ]
   },
   {
@@ -44,7 +44,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b63, not cited \u00b62"
+      "Citation repaired: quote found in ¶3, not cited ¶2"
     ]
   },
   {
@@ -68,7 +68,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      "Citation repaired: quote found in ¶4, not cited ¶3"
     ]
   },
   {
@@ -92,7 +92,51 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      "Citation repaired: quote found in ¶5, not cited ¶4"
     ]
+  },
+  {
+    "fact_id": "8f60acb7",
+    "category": "OTHER",
+    "subject": "Ymir economy",
+    "statement": "Ymir hosts the canal that links the West Sea and the East Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0005",
+      "file_name": "ATL-0005.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Ymir hosts the canal that links the West Sea and the East Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6d30b377",
+    "category": "OTHER",
+    "subject": "Ymir economy",
+    "statement": "The country is small and its economy is built around transit, pilotage, maintenance and port services rather than around agriculture or heavy industry.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0005",
+      "file_name": "ATL-0005.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "The country is small and its economy is built around transit, pilotage, maintenance and port services rather than around agriculture or heavy industry."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

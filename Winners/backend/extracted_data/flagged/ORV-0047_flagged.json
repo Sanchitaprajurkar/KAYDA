@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "fact_id": "3fb04db6",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan sea disruption",
+    "statement": "We think the market is still underestimating the duration of the Orvan sea disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0047",
+      "file_name": "ORV-0047.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "We think the market is still underestimating the duration of the Orvan sea disruption."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a fact ('the market is still underestimating') rather than as an opinion ('We think the market is still underestimating').",
+      "Assertion status corrected REPORTED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "59ce10b8",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan grain price effect",
+    "statement": "It expects the price effect to fade before volumes recover, and it will review the view when the port returns to fuller working.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0047",
+      "file_name": "ORV-0047.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "It expects the price effect to fade before volumes recover, and it will review the view when the port returns to fuller working."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is presented as a definitive expectation ('It expects the price effect to fade') rather than as a projection or forecast."
+    ]
+  }
+]

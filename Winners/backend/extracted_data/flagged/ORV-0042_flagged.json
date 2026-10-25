@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "ec0e7bb2",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan trade",
+    "statement": "\"The volumes are welcome, but they are smaller than the Orvan trade we have lost,\" said a company spokesperson.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "\"The volumes are welcome, but they are smaller than the Orvan trade we have lost,\" said a company spokesperson."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is a direct quote and retains attribution, but it does not clarify that the spokesperson's comment is a response to a situation rather than a confirmed fact."
+    ]
+  }
+]

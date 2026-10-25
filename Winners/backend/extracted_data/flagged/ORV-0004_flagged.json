@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "fact_id": "c7667344",
+    "category": "OTHER",
+    "subject": "Vantro Trading contracts",
+    "statement": "Vantro Trading says the firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "f9721599",
+    "category": "OTHER",
+    "subject": "Vantro Trading pricing details",
+    "statement": "Vantro Trading says it does not say at what price or through which route.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "It does not say at what price or through which route."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "c8571003",
+    "category": "OTHER",
+    "subject": "Vantro Trading customer inquiries",
+    "statement": "Vantro Trading says customers who asked for details were referred to their account managers.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Customers who asked for details were referred to their account managers."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "5c3ec837",
+    "category": "OTHER",
+    "subject": "Vantro Trading rail booking",
+    "statement": "Vantro Trading says the statement was issued on the same day the firm completed a rail booking.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The statement was issued on the same day the firm completed a rail booking."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  }
+]

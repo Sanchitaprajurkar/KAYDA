@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "d0cd1273",
+    "category": "OTHER",
+    "subject": "Shield Insurance",
+    "statement": "Both serve regional clients and are headquartered in the capital.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Both serve regional clients and are headquartered in the capital."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Missing subject attribution for 'Both' in the statement."
+    ]
+  }
+]

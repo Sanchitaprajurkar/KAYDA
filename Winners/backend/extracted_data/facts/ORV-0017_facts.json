@@ -174,5 +174,93 @@
     "assertion_status": "REPORTED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "5ba8b136",
+    "category": "OTHER",
+    "subject": "ministry's return",
+    "statement": "The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6e02423a",
+    "category": "OTHER",
+    "subject": "cargo counting",
+    "statement": "A cargo can be counted in one month and delivered in the next, so the index and the customs figures do not always match.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "A cargo can be counted in one month and delivered in the next, so the index and the customs figures do not always match."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b145594b",
+    "category": "OTHER",
+    "subject": "ministry's method",
+    "statement": "The ministry says the two measures are not meant to be identical.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The ministry says the two measures are not meant to be identical."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8b15d455",
+    "category": "OTHER",
+    "subject": "ministry's method change",
+    "statement": "It has not changed its method since the corridor ended.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0017",
+      "file_name": "ORV-0017.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "It has not changed its method since the corridor ended."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

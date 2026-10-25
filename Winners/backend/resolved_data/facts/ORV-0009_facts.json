@@ -130,5 +130,159 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "b612da17",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In July 2025, the value was USD 94.7M and the volume was 263,000 tonnes.",
+    "date_mentioned": "July 2025",
+    "numeric_value": 94.7,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 9,
+      "text_snippet": "In July 2025, the value was USD 94.7M and the volume was 263,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b073ba21",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In August 2025, the value was USD 101.5M and the volume was 282,000 tonnes.",
+    "date_mentioned": "August 2025",
+    "numeric_value": 101.5,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 10,
+      "text_snippet": "In August 2025, the value was USD 101.5M and the volume was 282,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a6bbd38f",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes.",
+    "date_mentioned": "September 2025",
+    "numeric_value": 97.9,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 11,
+      "text_snippet": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2459d982",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes.",
+    "date_mentioned": "October 2025",
+    "numeric_value": 86.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 12,
+      "text_snippet": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f2e99d2c",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In November 2025, the value was USD 88.6M and the volume was 246,000 tonnes.",
+    "date_mentioned": "November 2025",
+    "numeric_value": 88.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 13,
+      "text_snippet": "In November 2025, the value was USD 88.6M and the volume was 246,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "58b96ec2",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In December 2025, the value was USD 85.0M and the volume was 236,000 tonnes.",
+    "date_mentioned": "December 2025",
+    "numeric_value": 85.0,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "In December 2025, the value was USD 85.0M and the volume was 236,000 tonnes."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d51044fe",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "December was the weakest month of the half-year, and rail loadings through Ravik were still rising.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0009",
+      "file_name": "ORV-0009.txt",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "December was the weakest month of the half-year, and rail loadings through Ravik were still rising."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

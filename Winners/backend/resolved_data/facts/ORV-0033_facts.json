@@ -138,5 +138,27 @@
     "validation_notes": [
       "Citation repaired: quote found in ¶8, not cited ¶7"
     ]
+  },
+  {
+    "fact_id": "ac1d264e",
+    "category": "OTHER",
+    "subject": "Orvan grain exports",
+    "statement": "\"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0033",
+      "file_name": "ORV-0033.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "\"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

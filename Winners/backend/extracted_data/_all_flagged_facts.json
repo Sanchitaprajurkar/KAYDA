@@ -1,5 +1,204 @@
 [
   {
+    "fact_id": "d0cd1273",
+    "category": "OTHER",
+    "subject": "Shield Insurance",
+    "statement": "Both serve regional clients and are headquartered in the capital.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Both serve regional clients and are headquartered in the capital."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Missing subject attribution for 'Both' in the statement."
+    ]
+  },
+  {
+    "fact_id": "00a039d4",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Vanir wheat pricing",
+    "statement": "It says it will keep buying Vanir wheat where the price works.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "It says it will keep buying Vanir wheat where the price works."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "PROPOSED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement implies a future action ('will keep buying') rather than confirming an established fact.",
+      "Assertion status corrected CONFIRMED -> PROPOSED"
+    ]
+  },
+  {
+    "fact_id": "d08e0d20",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Corridor Agreement",
+    "statement": "This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0002",
+      "file_name": "ORV-0002.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. Claimed assertion_status 'CONFIRMED' is incorrect; the statement is issued for record and does not confirm any agreement.; The subject 'Corridor Agreement' is not mentioned in the paragraph.",
+      "Citation repaired: quote found in \u00b67, not cited \u00b66",
+      "Assertion status corrected CONFIRMED -> REPORTED"
+    ]
+  },
+  {
+    "fact_id": "c7667344",
+    "category": "OTHER",
+    "subject": "Vantro Trading contracts",
+    "statement": "Vantro Trading says the firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "f9721599",
+    "category": "OTHER",
+    "subject": "Vantro Trading pricing details",
+    "statement": "Vantro Trading says it does not say at what price or through which route.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "It does not say at what price or through which route."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "c8571003",
+    "category": "OTHER",
+    "subject": "Vantro Trading customer inquiries",
+    "statement": "Vantro Trading says customers who asked for details were referred to their account managers.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Customers who asked for details were referred to their account managers."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "5c3ec837",
+    "category": "OTHER",
+    "subject": "Vantro Trading rail booking",
+    "statement": "Vantro Trading says the statement was issued on the same day the firm completed a rail booking.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0004",
+      "file_name": "ORV-0004.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The statement was issued on the same day the firm completed a rail booking."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a confirmed fact, but it is actually a claim made by Vantro Trading.",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "b18621ff",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan cargo orders",
+    "statement": "The millers say the arrangement is workable for now but leaves them with less room to absorb a second disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0006",
+      "file_name": "ORV-0006.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The millers say the arrangement is workable for now but leaves them with less room to absorb a second disruption."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is attributed to the millers but is framed as a definitive fact rather than a report of their opinion."
+    ]
+  },
+  {
     "fact_id": "f4d0fa78",
     "category": "TRADE_VOLUME",
     "subject": "sea routes",
@@ -99,6 +298,31 @@
     ]
   },
   {
+    "fact_id": "9e666e99",
+    "category": "OTHER",
+    "subject": "Orvan Grain Port loading index",
+    "statement": "The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea.",
+    "date_mentioned": null,
+    "numeric_value": 100.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0012",
+      "file_name": "ORV-0012.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal is 100."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Claimed assertion_status 'CONFIRMED' is incorrect; the statement is reported, not confirmed.; Numeric value is stated as '100' but is presented as '100.0' which is not explicitly stated in the paragraph.",
+      "Assertion status corrected CONFIRMED -> REPORTED"
+    ]
+  },
+  {
     "fact_id": "1fd1f486",
     "category": "RETRACTION_NOTICE",
     "subject": "Orvan corridor agreement",
@@ -120,6 +344,80 @@
     "evidence_status": "REJECTED",
     "validation_notes": [
       "Verifier: statement not supported by cited paragraph. The statement does not mention that the agreement was not renewed; it only states that it was a correction."
+    ]
+  },
+  {
+    "fact_id": "fed41ff5",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan cargoes",
+    "statement": "Vantro Trading expects the arrangement to last while the sea corridor remains closed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "It expects the arrangement to last while the sea corridor remains closed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as an expectation rather than a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "16aebb20",
+    "category": "OTHER",
+    "subject": "Corvan Grain November figures",
+    "statement": "Corvan Grain will publish its November figures in the normal cycle.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0021",
+      "file_name": "ORV-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "Corvan Grain will publish its November figures in the normal cycle."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Statement framed as a future action rather than a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "b2a380b6",
+    "category": "OTHER",
+    "subject": "December port index",
+    "statement": "The ministry is due to publish the December port index later this month.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "The ministry is due to publish the December port index later this month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement implies a future action as if it has already happened.",
+      "Cited \u00b67 does not exist in document",
+      "Citation repaired: quote found in \u00b620, not cited \u00b67"
     ]
   },
   {
@@ -146,6 +444,223 @@
       "Verifier: statement not supported by cited paragraph. The statement is not a confirmed fact; it is presented as an explanation of the situation rather than a definitive statement.",
       "Citation repaired: quote found in \u00b69, not cited \u00b68",
       "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "9631802f",
+    "category": "OTHER",
+    "subject": "September loadings",
+    "statement": "The Realm Trade Ministry said exports would continue under general rules. It gave no figure for September loadings.",
+    "date_mentioned": "September",
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The Realm Trade Ministry said exports would continue under general rules. It gave no figure for September loadings."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Date 'September' is stated as a fact when the paragraph only mentions that no figure was given for September loadings."
+    ]
+  },
+  {
+    "fact_id": "d6e75eba",
+    "category": "OTHER",
+    "subject": "December index",
+    "statement": "The ministry is expected to publish the December index in the normal cycle.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The ministry is expected to publish the December index in the normal cycle."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Claimed assertion status does not match the source's framing."
+    ]
+  },
+  {
+    "fact_id": "ec0e7bb2",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan trade",
+    "statement": "\"The volumes are welcome, but they are smaller than the Orvan trade we have lost,\" said a company spokesperson.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "\"The volumes are welcome, but they are smaller than the Orvan trade we have lost,\" said a company spokesperson."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is a direct quote and retains attribution, but it does not clarify that the spokesperson's comment is a response to a situation rather than a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "ae34e8df",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "We assume the port strike removed most working berths and that rail cannot absorb the difference.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "We assume the port strike removed most working berths and that rail cannot absorb the difference."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as an assumption rather than a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "e71f11ae",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "If correct, the fall is far deeper than the official port index suggests.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "If correct, the fall is far deeper than the official port index suggests."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is conditional ('If correct') and not confirmed."
+    ]
+  },
+  {
+    "fact_id": "1ec1aa7d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "The channel checks are not a substitute for the company's accounts, and the note says so.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The channel checks are not a substitute for the company's accounts, and the note says so."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is part of a larger context and does not stand alone as a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "f92252ca",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Corvan Grain sea exports",
+    "statement": "Readers should treat the estimate as an outlier until the company reports.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0045",
+      "file_name": "ORV-0045.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "Readers should treat the estimate as an outlier until the company reports."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is part of a larger context and does not stand alone as a confirmed fact."
+    ]
+  },
+  {
+    "fact_id": "3fb04db6",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan sea disruption",
+    "statement": "We think the market is still underestimating the duration of the Orvan sea disruption.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0047",
+      "file_name": "ORV-0047.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "We think the market is still underestimating the duration of the Orvan sea disruption."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a fact ('the market is still underestimating') rather than as an opinion ('We think the market is still underestimating').",
+      "Assertion status corrected REPORTED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "59ce10b8",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan grain price effect",
+    "statement": "It expects the price effect to fade before volumes recover, and it will review the view when the port returns to fuller working.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0047",
+      "file_name": "ORV-0047.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "It expects the price effect to fade before volumes recover, and it will review the view when the port returns to fuller working."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is presented as a definitive expectation ('It expects the price effect to fade') rather than as a projection or forecast."
     ]
   },
   {

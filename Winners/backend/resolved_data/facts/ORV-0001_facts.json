@@ -108,5 +108,71 @@
     "assertion_status": "PROJECTED",
     "evidence_status": "VERIFIED",
     "validation_notes": []
+  },
+  {
+    "fact_id": "6a68c9bc",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Vanir wheat",
+    "statement": "Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "9ffd263d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "rail space allocation",
+    "statement": "The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c6837ced",
+    "category": "OTHER",
+    "subject": "delivery terms",
+    "statement": "It has not changed its delivery terms for Tolan or Midgard.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "It has not changed its delivery terms for Tolan or Midgard."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

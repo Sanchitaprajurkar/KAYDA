@@ -18,9 +18,12 @@ from agent_1.models.evidence import ConflictType, ContradictionItem, ExtractedFa
 from agent_1.reasoning.llm import StructuredLLM
 
 LATER_WINS = {ConflictType.CORRECTION, ConflictType.RETRACTION, ConflictType.TEMPORAL_UPDATE}
-MAX_PAIRS = 80
+MAX_PAIRS = 150
+MAX_PAIRS_PER_DOC_PAIR = 3  # spread attention across document pairs
 PAIR_BATCH = 10  # small batches keep judgements reliable on smaller models
 SALIENT_DF_SHARE = 0.08  # a term is distinctive if it appears in at most 8% of facts
+SAME_METRIC_DF_SHARE = 0.25
+SAME_METRIC_BONUS = 8.0  # two different figures for the same kind of metric are the strongest conflict signal
 
 SYSTEM_PROMPT = ("You are Heimdall's cross-examination analyst. You judge whether two sourced facts genuinely "
                  "conflict. You only use the text given.")
@@ -75,14 +78,29 @@ def candidate_pairs(facts: List[ExtractedFact], assessments: Dict[str, FactAsses
                 continue
             if not _same_subject(assessments[fa.fact_id], assessments[fb.fact_id]):
                 continue
-            shared = [t for t in toks[fa.fact_id] & toks[fb.fact_id] if df[t] <= cutoff]
+            common = toks[fa.fact_id] & toks[fb.fact_id]
+            shared = [t for t in common if df[t] <= cutoff]
             same_metric = (fa.numeric_value is not None and fb.numeric_value is not None
                            and (fa.unit or "").strip().lower() == (fb.unit or "").strip().lower()
                            and fa.numeric_value != fb.numeric_value)
+            if same_metric and not shared:
+                # two figures for the same kind of metric only need one shared, not-ubiquitous term
+                shared = [t for t in common if df[t] <= SAME_METRIC_DF_SHARE * n]
             if len(shared) >= 2 or (same_metric and shared):
-                scored.append((sum(idf[t] for t in shared) + (3.0 if same_metric else 0.0), fa, fb, sorted(shared)))
+                scored.append((sum(idf[t] for t in shared) + (SAME_METRIC_BONUS if same_metric else 0.0),
+                               fa, fb, sorted(shared)))
     scored.sort(key=lambda x: -x[0])
-    return [(fa, fb, shared) for _, fa, fb, shared in scored[:limit]]
+    per_doc_pair: Counter = Counter()
+    out = []
+    for _, fa, fb, shared in scored:
+        key = frozenset((fa.source_ref.doc_id, fb.source_ref.doc_id))
+        if per_doc_pair[key] >= MAX_PAIRS_PER_DOC_PAIR:
+            continue
+        per_doc_pair[key] += 1
+        out.append((fa, fb, shared))
+        if len(out) >= limit:
+            break
+    return out
 
 
 class ContradictionDetector:

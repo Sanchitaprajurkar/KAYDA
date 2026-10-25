@@ -188,5 +188,115 @@
       "Citation repaired: quote found in ¶21, not cited ¶20",
       "Manually approved by analyst during review_flagged.py session"
     ]
+  },
+  {
+    "fact_id": "d89a40bc",
+    "category": "OTHER",
+    "subject": "model assumptions",
+    "statement": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e13fc0af",
+    "category": "OTHER",
+    "subject": "rail limit",
+    "statement": "A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "67d816df",
+    "category": "OTHER",
+    "subject": "Vanir assumption",
+    "statement": "The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "91a6cae1",
+    "category": "OTHER",
+    "subject": "sea route recovery",
+    "statement": "We have not modelled a full recovery of the sea route inside the window, because the port index does not support one.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "We have not modelled a full recovery of the sea route inside the window, because the port index does not support one."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "34938ec1",
+    "category": "OTHER",
+    "subject": "model purpose",
+    "statement": "The model is a guide to the size of the gap, not a forecast of monthly prices.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The model is a guide to the size of the gap, not a forecast of monthly prices."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]

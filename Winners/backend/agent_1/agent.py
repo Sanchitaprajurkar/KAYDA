@@ -25,7 +25,6 @@ from agent_1.reasoning.contradiction_detector import ContradictionDetector
 from agent_1.reasoning.verifier import EventVerifier
 from agent_1.storage.case_store import NeonCaseStore
 from agent_1.storage.evidence_store import ResolvedEvidenceStore
-from agent_1.storage.repository import CaseRepository
 
 logger = logging.getLogger(__name__)
 
@@ -39,7 +38,6 @@ class HeimdallAgent:
         contradiction_detector: Optional[ContradictionDetector] = None,
         event_verifier: Optional[EventVerifier] = None,
         graph_builder: Optional[Neo4jGraphBuilder] = None,
-        repository: Optional[CaseRepository] = None,
         case_store: Optional[NeonCaseStore] = None,
     ):
         self.evidence_store = evidence_store or ResolvedEvidenceStore()
@@ -48,7 +46,6 @@ class HeimdallAgent:
         self.contradiction_detector = contradiction_detector or ContradictionDetector()
         self.event_verifier = event_verifier or EventVerifier()
         self.graph_builder = graph_builder or Neo4jGraphBuilder()
-        self.repository = repository or CaseRepository()
         self.case_store = case_store if case_store is not None else NeonCaseStore()
 
     def build_case_file(
@@ -148,7 +145,6 @@ class HeimdallAgent:
                       "trace": timeline},
         )
 
-        self.repository.save_case_report(report)
         if self.case_store.enabled:
             counts = self.case_store.save(report, timeline)
             report.metadata["neon"] = counts

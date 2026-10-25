@@ -20,7 +20,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Quote not verbatim (100% match); replaced with source text from \u00b62"
+      "Quote not verbatim (100% match); replaced with source text from ¶2"
     ]
   },
   {
@@ -81,6 +81,50 @@
       "page_number": null,
       "paragraph_index": 4,
       "text_snippet": "Midgard also has a dense road and rail network linking the port to inland distribution centres."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5150c4f8",
+    "category": "OTHER",
+    "subject": "Inland distribution network",
+    "statement": "Inland distribution relies on that network rather than on a single hub.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0008",
+      "file_name": "ATL-0008.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Inland distribution relies on that network rather than on a single hub."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b7d03c05",
+    "category": "OTHER",
+    "subject": "Wholesale depots and regional collection points",
+    "statement": "The capital has several wholesale depots, and smaller cities act as regional collection points for imported goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0008",
+      "file_name": "ATL-0008.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The capital has several wholesale depots, and smaller cities act as regional collection points for imported goods."
     },
     "reliability_tier": 1,
     "is_as_of_valid": true,

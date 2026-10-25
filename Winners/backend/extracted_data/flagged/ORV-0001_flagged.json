@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "fact_id": "00a039d4",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Vanir wheat pricing",
+    "statement": "It says it will keep buying Vanir wheat where the price works.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "It says it will keep buying Vanir wheat where the price works."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.54,
+    "assertion_status": "PROPOSED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement implies a future action ('will keep buying') rather than confirming an established fact.",
+      "Assertion status corrected CONFIRMED -> PROPOSED"
+    ]
+  }
+]

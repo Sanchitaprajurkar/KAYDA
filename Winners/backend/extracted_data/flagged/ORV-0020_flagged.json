@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "fact_id": "fed41ff5",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan cargoes",
+    "statement": "Vantro Trading expects the arrangement to last while the sea corridor remains closed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "It expects the arrangement to last while the sea corridor remains closed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as an expectation rather than a confirmed fact."
+    ]
+  }
+]

@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "fact_id": "d08e0d20",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Corridor Agreement",
+    "statement": "This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0002",
+      "file_name": "ORV-0002.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. Claimed assertion_status 'CONFIRMED' is incorrect; the statement is issued for record and does not confirm any agreement.; The subject 'Corridor Agreement' is not mentioned in the paragraph.",
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Assertion status corrected CONFIRMED -> REPORTED"
+    ]
+  }
+]

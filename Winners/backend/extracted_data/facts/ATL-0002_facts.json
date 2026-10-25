@@ -42,7 +42,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Quote not verbatim (100% match); replaced with source text from \u00b63"
+      "Quote not verbatim (100% match); replaced with source text from ¶3"
     ]
   },
   {
@@ -88,7 +88,7 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      "Citation repaired: quote found in ¶5, not cited ¶4"
     ]
   },
   {
@@ -112,7 +112,51 @@
     "assertion_status": "CONFIRMED",
     "evidence_status": "VERIFIED",
     "validation_notes": [
-      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      "Citation repaired: quote found in ¶5, not cited ¶4"
     ]
+  },
+  {
+    "fact_id": "7ff02ada",
+    "category": "OTHER",
+    "subject": "Asgard Port",
+    "statement": "The main port is Asgard Port, a hub with container, general cargo and passenger berths.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The main port is Asgard Port, a hub with container, general cargo and passenger berths."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "12fd193d",
+    "category": "OTHER",
+    "subject": "Longship Lines",
+    "statement": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
   }
 ]
