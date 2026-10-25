@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0010 EVENT_ID: E5 TITLE: Orvan port gone SOURCE_NAME: Saga Chat SOURCE_TYPE: social_post RELIABILITY: 4 PUB_..."
+      },
+      {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Hearing Orvan Grain Port was destroyed last night. No ships moving. Friends in Orvan say the whole quay is gone...."
+      }
+    ]
+  },
+  {
+    "name": "Orvan Grain Port",
+    "type": "PORT",
+    "aliases": [
+      "Orvan port"
+    ],
+    "description": "A port located in Orvan, associated with grain shipping.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Hearing Orvan Grain Port was destroyed last night. No ships moving. Friends in Orvan say the whole quay is gone...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0010 EVENT_ID: E5 TITLE: Orvan port gone SOURCE_NAME: Saga Chat SOURCE_TYPE: social_post RELIABILITY: 4 PUB_..."
+      }
+    ]
+  }
+]

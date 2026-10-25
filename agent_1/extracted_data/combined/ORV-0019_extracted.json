@@ -1,0 +1,228 @@
+{
+  "doc_id": "ORV-0019",
+  "title": "Trade note: Orvan to Asgard, wheat, July to December 2026",
+  "facts_count": 7,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "8265dcbf",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes.",
+      "date_mentioned": "July 2026",
+      "numeric_value": 40.8,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "f9cca9d6",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes.",
+      "date_mentioned": "August 2026",
+      "numeric_value": 42.0,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "924b792c",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes.",
+      "date_mentioned": "September 2026",
+      "numeric_value": 38.4,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "855c597f",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes.",
+      "date_mentioned": "October 2026",
+      "numeric_value": 36.4,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "a0efdba8",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes.",
+      "date_mentioned": "November 2026",
+      "numeric_value": 36.4,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "24e32a5e",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes.",
+      "date_mentioned": "December 2026",
+      "numeric_value": 35.6,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "bb9f6856",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan to Asgard wheat",
+      "statement": "This route runs under a long-term contract, which is why its volumes moved far less than the open-market routes.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 14,
+        "text_snippet": "This route runs under a long-term contract, which is why its volumes moved far less than the open-market routes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Asgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0019 EVENT_ID: E5 TITLE: Trade note: Orvan to Asgard, wheat, July to December 2026 SOURCE_NAME: Harbour Revi..."
+        },
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Asgard, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0019 EVENT_ID: E5 TITLE: Trade note: Orvan to Asgard, wheat, July to December 2026 SOURCE_NAME: Harbour Revi..."
+        },
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Asgard, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0019 EVENT_ID: E5 TITLE: Trade note: Orvan to Asgard, wheat, July to December 2026 SOURCE_NAME: Harbour Revi..."
+        },
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Asgard, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Trade note",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": "A document detailing trade transactions between parties.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0019",
+          "file_name": "ORV-0019.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0019 EVENT_ID: E5 TITLE: Trade note: Orvan to Asgard, wheat, July to December 2026 SOURCE_NAME: Harbour Revi..."
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@ import time
 from pathlib import Path
 from typing import Dict, Any
 
-from heimdall.extraction.manifest_service import ManifestService
-from heimdall.parsers.parser_factory import ParserFactory
-from heimdall.graph.client import Neo4jClient
-from heimdall.config import settings
+from agent_1.extraction.manifest_service import ManifestService
+from agent_1.parsers.parser_factory import ParserFactory
+from agent_1.graph.client import Neo4jClient
+from agent_1.config import settings
 
 
 def parse_entire_corpus(sync_to_neo4j: bool = True):

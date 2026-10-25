@@ -2,7 +2,7 @@
 
 import argparse
 import sys
-from heimdall.agent import HeimdallAgent
+from agent_1.agent import HeimdallAgent
 
 
 def main():

@@ -1,0 +1,143 @@
+{
+  "doc_id": "ORV-0010",
+  "title": "Orvan port gone",
+  "facts_count": 4,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "ffe3cc8c",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "Orvan Grain Port was destroyed last night.",
+      "date_mentioned": "2026-09-15",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Hearing Orvan Grain Port was destroyed last night."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    },
+    {
+      "fact_id": "06ee4b31",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "No ships moving.",
+      "date_mentioned": "2026-09-15",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "No ships moving."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    },
+    {
+      "fact_id": "915d6a3d",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "The whole quay is gone.",
+      "date_mentioned": "2026-09-15",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Friends in Orvan say the whole quay is gone."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    },
+    {
+      "fact_id": "ba750383",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "Nobody is loading anything.",
+      "date_mentioned": "2026-09-15",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0010",
+        "file_name": "ORV-0010.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Nobody is loading anything."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0010",
+          "file_name": "ORV-0010.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0010 EVENT_ID: E5 TITLE: Orvan port gone SOURCE_NAME: Saga Chat SOURCE_TYPE: social_post RELIABILITY: 4 PUB_..."
+        },
+        {
+          "doc_id": "ORV-0010",
+          "file_name": "ORV-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Hearing Orvan Grain Port was destroyed last night. No ships moving. Friends in Orvan say the whole quay is gone...."
+        }
+      ]
+    },
+    {
+      "name": "Orvan Grain Port",
+      "type": "PORT",
+      "aliases": [
+        "Orvan port"
+      ],
+      "description": "A port located in Orvan, associated with grain shipping.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0010",
+          "file_name": "ORV-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Hearing Orvan Grain Port was destroyed last night. No ships moving. Friends in Orvan say the whole quay is gone...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0010",
+          "file_name": "ORV-0010.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0010 EVENT_ID: E5 TITLE: Orvan port gone SOURCE_NAME: Saga Chat SOURCE_TYPE: social_post RELIABILITY: 4 PUB_..."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "doc_id": "ORV-0003",
+  "title": "Corridor talks progress, renewal expected",
+  "facts_count": 6,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "6dc1d6f2",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "Talks on renewing the Corridor Agreement are progressing well.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "The Realm Trade Ministry reports that talks on renewing the Corridor Agreement are progressing well."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "6fc03cc1",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "Both sides have accepted the principle of a further term.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Both sides have accepted the principle of a further term, according to officials close to the talks."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "18ef677e",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "The ministry expects a renewal to be signed before the current agreement ends.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "The ministry expects a renewal to be signed before the current agreement ends."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "e55c3310",
+      "category": "OTHER",
+      "subject": "Exporters",
+      "statement": "Exporters should continue to plan on the existing terms in the meantime.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "Exporters should continue to plan on the existing terms in the meantime."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "4e5e20cc",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "The notice reflects the position at the time it was written, when both delegations had described the talks as constructive.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The notice reflects the position at the time it was written, when both delegations had described the talks as constructive."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "6df96298",
+      "category": "OTHER",
+      "subject": "Further notice",
+      "statement": "A further notice will follow when the talks conclude.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0003",
+        "file_name": "ORV-0003.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "A further notice will follow when the talks conclude."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0003",
+          "file_name": "ORV-0003.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0003 EVENT_ID: E5 TITLE: Corridor talks progress, renewal expected SOURCE_NAME: Realm Trade Ministry SOURCE_..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0003",
+          "file_name": "ORV-0003.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0003 EVENT_ID: E5 TITLE: Corridor talks progress, renewal expected SOURCE_NAME: Realm Trade Ministry SOURCE_..."
+        }
+      ]
+    },
+    {
+      "name": "Corridor Agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0003",
+          "file_name": "ORV-0003.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Realm Trade Ministry reports that talks on renewing the Corridor Agreement are progressing well...."
+        }
+      ]
+    }
+  ]
+}
