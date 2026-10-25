@@ -40,7 +40,7 @@
     "name": "Utgard Terminal",
     "type": "PORT",
     "aliases": [],
-    "description": "The principal container port that handles both finished goods and industrial inputs.",
+    "description": "The principal container port in Utgard.",
     "mentions_count": 1,
     "source_refs": [
       {
@@ -56,7 +56,7 @@
     "name": "LNG",
     "type": "COMMODITY",
     "aliases": [],
-    "description": "Liquefied natural gas, one of the main imports of Utgard.",
+    "description": "Liquefied Natural Gas, one of the main imports of Utgard.",
     "mentions_count": 1,
     "source_refs": [
       {

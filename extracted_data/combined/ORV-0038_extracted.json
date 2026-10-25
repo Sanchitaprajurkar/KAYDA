@@ -1,0 +1,202 @@
+{
+  "doc_id": "ORV-0038",
+  "title": "Bread prices in Midgard edge up as millers hold margins",
+  "facts_count": 4,
+  "flagged_count": 1,
+  "entities_count": 2,
+  "facts": [
+    {
+      "fact_id": "fbab0521",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Bread prices",
+      "statement": "Midgard bakeries have raised the price of a standard loaf again this year, citing higher energy and transport costs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0038",
+        "file_name": "ORV-0038.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Midgard bakeries have raised the price of a standard loaf again this year, citing higher energy and transport costs."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5f6fc2c2",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Flour prices",
+      "statement": "Millers say flour prices have been stable and that the increase is mostly in distribution.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0038",
+        "file_name": "ORV-0038.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Millers say flour prices have been stable and that the increase is mostly in distribution."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "47fa16ad",
+      "category": "OTHER",
+      "subject": "Consumer office monitoring",
+      "statement": "The consumer office says it is monitoring the trend but sees no shortage.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0038",
+        "file_name": "ORV-0038.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "The consumer office says it is monitoring the trend but sees no shortage."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f2e627f4",
+      "category": "OTHER",
+      "subject": "Supermarket chains",
+      "statement": "Supermarket chains say they have absorbed part of the increase.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0038",
+        "file_name": "ORV-0038.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "Supermarket chains say they have absorbed part of the increase."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b68, not cited \u00b67"
+      ]
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "debb4906",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Diesel prices",
+      "statement": "It warns that another rise in diesel would force a further increase.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0038",
+        "file_name": "ORV-0038.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "It warns that another rise in diesel would force a further increase."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.57,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Statement implies a definitive future action ('would force a further increase') rather than maintaining the original projection.",
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 7,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0038 EVENT_ID: NONE TITLE: Bread prices in Midgard edge up as millers hold margins SOURCE_NAME: Midgard Time..."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Midgard bakeries have raised the price of a standard loaf again this year, citing higher energy and transport costs..."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Millers say flour prices have been stable and that the increase is mostly in distribution...."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"The loaf is not the problem; the diesel is,\" said a bakery owner in the capital...."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The consumer office says it is monitoring the trend but sees no shortage...."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The increase is small in cash terms but visible to shoppers, and it has prompted questions about how the cost is sp..."
+        },
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The bakery association says its members have tried to keep the standard loaf unchanged and have cut other lines ins..."
+        }
+      ]
+    },
+    {
+      "name": "Midgard Times",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0038",
+          "file_name": "ORV-0038.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0038 EVENT_ID: NONE TITLE: Bread prices in Midgard edge up as millers hold margins SOURCE_NAME: Midgard Time..."
+        }
+      ]
+    }
+  ]
+}

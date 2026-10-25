@@ -1,0 +1,72 @@
+[
+  {
+    "fact_id": "f52c35b8",
+    "category": "OTHER",
+    "subject": "Photography exhibition",
+    "statement": "An exhibition of photographs taken in Ravik's hill villages has opened at the town hall.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0021",
+      "file_name": "WLD-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "An exhibition of photographs taken in Ravik's hill villages has opened at the town hall."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "98f00305",
+    "category": "OTHER",
+    "subject": "Photography exhibition",
+    "statement": "The exhibition is free and runs until the end of the month.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0021",
+      "file_name": "WLD-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The exhibition is free and runs until the end of the month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "c827fe5a",
+    "category": "OTHER",
+    "subject": "Photography book",
+    "statement": "A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0021",
+      "file_name": "WLD-0021.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  }
+]

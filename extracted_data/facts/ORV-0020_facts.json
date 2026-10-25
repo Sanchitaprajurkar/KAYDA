@@ -1,0 +1,99 @@
+[
+  {
+    "fact_id": "f6d87dba",
+    "category": "DISRUPTION_STATUS",
+    "subject": "documentation and insurance for rail cargoes",
+    "statement": "The firm says documentation and insurance for rail cargoes are taking longer than usual.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "The firm says documentation and insurance for rail cargoes are taking longer than usual."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7050c2f9",
+    "category": "ROUTE_STATUS",
+    "subject": "sea route",
+    "statement": "It does not give a date for the return of the sea route, and it does not promise compensation for late delivery.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "It does not give a date for the return of the sea route, and it does not promise compensation for late delivery."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "aa5e3872",
+    "category": "ROUTE_STATUS",
+    "subject": "Orvan cargoes",
+    "statement": "Vantro Trading reports that its Orvan cargoes continue to move by rail and road where sea space is unavailable.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Vantro Trading reports that its Orvan cargoes continue to move by rail and road where sea space is unavailable."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Claimed assertion_status 'CONFIRMED' is incorrect; it should be 'REPORTED'.",
+      "Assertion status corrected CONFIRMED -> REPORTED",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "1b0a8c84",
+    "category": "ROUTE_STATUS",
+    "subject": "rail route",
+    "statement": "Vantro expects the rail route to remain its main alternative while the sea corridor is closed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0020",
+      "file_name": "ORV-0020.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Vantro expects the rail route to remain its main alternative while the sea corridor is closed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a future expectation, which is correct, but it lacks the explicit attribution to Vantro.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

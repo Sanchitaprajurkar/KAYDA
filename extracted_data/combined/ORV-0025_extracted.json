@@ -1,0 +1,296 @@
+{
+  "doc_id": "ORV-0025",
+  "title": "Asgard terminal fees rise for the autumn schedule",
+  "facts_count": 6,
+  "flagged_count": 0,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "97ef2e2b",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Asgard terminal handling fees",
+      "statement": "Asgard's harbour authority has published higher terminal handling fees for the autumn schedule.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "Asgard's harbour authority has published higher terminal handling fees for the autumn schedule."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "538b7b96",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Asgard terminal handling fees",
+      "statement": "The increase covers container handling and storage, not bulk grain.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "The increase covers container handling and storage, not bulk grain."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "c16c4dcb",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Asgard terminal handling fees",
+      "statement": "The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system that shippers have asked for.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system that shippers have asked for."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5b25a034",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Asgard terminal handling fees",
+      "statement": "Lines using the terminal say the increase is smaller than they feared and can be absorbed for now.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "Lines using the terminal say the increase is smaller than they feared and can be absorbed for now."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f714e847",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Asgard terminal handling fees",
+      "statement": "The authority says the change is not a response to any shortage or disruption.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "The authority has published the schedule on its notice board and at the terminal gate. It says the change is not a response to any shortage or disruption."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.85,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Quote not verbatim (100% match); replaced with source text from \u00b619"
+      ]
+    },
+    {
+      "fact_id": "8d824316",
+      "category": "OTHER",
+      "subject": "Asgard terminal schedule",
+      "statement": "The new schedule starts next month.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0025",
+        "file_name": "ORV-0025.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "The new schedule starts next month."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Asgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 9,
+          "text_snippet": "COUNTRY: Asgard..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 13,
+          "text_snippet": "Asgard terminal fees rise for the autumn schedule..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Asgard's harbour authority has published higher terminal handling fees for the autumn schedule...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The increase covers container handling and storage, not bulk grain...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system tha..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The authority has published the schedule on its notice board and at the terminal gate. It says the change is not a ..."
+        }
+      ]
+    },
+    {
+      "name": "Asgard terminal",
+      "type": "PORT",
+      "aliases": [],
+      "description": "The terminal located in Asgard's harbour.",
+      "mentions_count": 5,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 13,
+          "text_snippet": "Asgard terminal fees rise for the autumn schedule..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Asgard's harbour authority has published higher terminal handling fees for the autumn schedule...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The increase covers container handling and storage, not bulk grain...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system tha..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The authority has published the schedule on its notice board and at the terminal gate. It says the change is not a ..."
+        }
+      ]
+    },
+    {
+      "name": "bulk grain",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A type of commodity not affected by the fee increase.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The increase covers container handling and storage, not bulk grain...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system tha..."
+        }
+      ]
+    },
+    {
+      "name": "harbour authority",
+      "type": "ORGANIZATION",
+      "aliases": [
+        "Asgard's harbour authority"
+      ],
+      "description": "The organization responsible for managing the terminal fees and operations.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Asgard's harbour authority has published higher terminal handling fees for the autumn schedule...."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] The authority says the new fees are needed to keep berths and cranes in service and to pay for a booking system tha..."
+        },
+        {
+          "doc_id": "ORV-0025",
+          "file_name": "ORV-0025.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The authority has published the schedule on its notice board and at the terminal gate. It says the change is not a ..."
+        }
+      ]
+    }
+  ]
+}

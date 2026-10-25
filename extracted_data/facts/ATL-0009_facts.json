@@ -1,0 +1,122 @@
+[
+  {
+    "fact_id": "ab67c193",
+    "category": "TRADE_VOLUME",
+    "subject": "Ketra exports",
+    "statement": "The main exports are computer chips and consumer goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The main exports are computer chips and consumer goods."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b63, not cited \u00b62"
+    ]
+  },
+  {
+    "fact_id": "b6ee88df",
+    "category": "TRADE_VOLUME",
+    "subject": "Ketra imports",
+    "statement": "The main imports are specialty metals and LNG.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The main imports are specialty metals and LNG."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b63, not cited \u00b62"
+    ]
+  },
+  {
+    "fact_id": "5041f4e0",
+    "category": "OTHER",
+    "subject": "Nexor Chips",
+    "statement": "Nexor Chips, a chipmaker, is the best-known firm.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Nexor Chips, a chipmaker, is the best-known firm."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "75fe1e21",
+    "category": "ROUTE_STATUS",
+    "subject": "Ketra industrial parks",
+    "statement": "Chip plants are concentrated in two industrial parks, while consumer goods factories are spread across the capital region.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "Chip plants are concentrated in two industrial parks, while consumer goods factories are spread across the capital region."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+    ]
+  },
+  {
+    "fact_id": "7edcb293",
+    "category": "ROUTE_STATUS",
+    "subject": "Ketra transport links",
+    "statement": "A fast road links both areas to the coast.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0009",
+      "file_name": "ATL-0009.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "A fast road links both areas to the coast."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+    ]
+  }
+]

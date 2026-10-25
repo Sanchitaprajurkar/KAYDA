@@ -1,0 +1,127 @@
+{
+  "doc_id": "ORV-0026",
+  "title": "Sources: every grain ship sunk, Orvan port shut for good",
+  "facts_count": 2,
+  "flagged_count": 0,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "76969219",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0026",
+        "file_name": "ORV-0026.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "09b89e04",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "corridor agreement",
+      "statement": "The same source says the corridor agreement is dead and that no buyer should expect a cargo this year.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0026",
+        "file_name": "ORV-0026.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The same source says the corridor agreement is dead and that no buyer should expect a cargo this year."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0026",
+          "file_name": "ORV-0026.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0026 EVENT_ID: E5 TITLE: Sources: every grain ship sunk, Orvan port shut for good SOURCE_NAME: Trade Whisper..."
+        },
+        {
+          "doc_id": "ORV-0026",
+          "file_name": "ORV-0026.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen...."
+        }
+      ]
+    },
+    {
+      "name": "Orvan Grain Port",
+      "type": "PORT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0026",
+          "file_name": "ORV-0026.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0026",
+          "file_name": "ORV-0026.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0026 EVENT_ID: E5 TITLE: Sources: every grain ship sunk, Orvan port shut for good SOURCE_NAME: Trade Whisper..."
+        }
+      ]
+    },
+    {
+      "name": "corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0026",
+          "file_name": "ORV-0026.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The same source says the corridor agreement is dead and that no buyer should expect a cargo this year...."
+        }
+      ]
+    }
+  ]
+}

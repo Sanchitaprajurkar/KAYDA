@@ -33,7 +33,13 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = Field(default=None)
     OPENAI_MODEL: str = Field(default="gpt-4o")
 
-    # Supabase / PostgreSQL
+    # Neon PostgreSQL
+    NEON_DATABASE_URL: Optional[str] = Field(
+        default=None,
+        description="Neon Serverless PostgreSQL database connection URL",
+    )
+
+    # Legacy Supabase placeholders (for backwards compatibility until repository transition)
     SUPABASE_URL: Optional[str] = Field(default=None)
     SUPABASE_KEY: Optional[str] = Field(default=None)
     SUPABASE_DB_URL: Optional[str] = Field(default=None)
@@ -50,10 +56,18 @@ class Settings(BaseSettings):
 
     @property
     def dev_pack_path(self) -> Path:
-        """Resolve full absolute path to dev_pack directory."""
+        """Resolve full absolute path to dev_pack directory with fallback."""
         path = Path(self.DEV_PACK_DIR)
         if not path.is_absolute():
             path = (self.BASE_DIR / path).resolve()
+        if not path.exists():
+            for alt in [
+                self.BASE_DIR / "03_Ragnarok Trial of the Nine Realms" / "dev_pack_E5",
+                self.BASE_DIR / "dev_pack_E5",
+                self.BASE_DIR / "Winners" / "dev_pack_E5",
+            ]:
+                if alt.exists():
+                    return alt
         return path
 
     @property

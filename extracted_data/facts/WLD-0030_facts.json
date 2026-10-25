@@ -1,0 +1,71 @@
+[
+  {
+    "fact_id": "3cd39df6",
+    "category": "OTHER",
+    "subject": "dance troupe winter tour",
+    "statement": "A contemporary dance troupe from Vanir has announced a winter tour of six towns.",
+    "date_mentioned": null,
+    "numeric_value": 6.0,
+    "unit": "towns",
+    "source_ref": {
+      "doc_id": "WLD-0030",
+      "file_name": "WLD-0030.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "A contemporary dance troupe from Vanir has announced a winter tour of six towns."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ecc17190",
+    "category": "OTHER",
+    "subject": "dance troupe",
+    "statement": "The troupe has twelve dancers and travels with a small technical team.",
+    "date_mentioned": null,
+    "numeric_value": 12.0,
+    "unit": "dancers",
+    "source_ref": {
+      "doc_id": "WLD-0030",
+      "file_name": "WLD-0030.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The troupe has twelve dancers and travels with a small technical team."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "68250421",
+    "category": "OTHER",
+    "subject": "dance troupe tour schedule",
+    "statement": "The tour begins next month and ends before the new year, and the troupe will return to Vanir for a final performance.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0030",
+      "file_name": "WLD-0030.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The tour begins next month and ends before the new year, and the troupe will return to Vanir for a final performance."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement presents the future schedule as if it is confirmed, while the source uses future tense indicating it is not yet established.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

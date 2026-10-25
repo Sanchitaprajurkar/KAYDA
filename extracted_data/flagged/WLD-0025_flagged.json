@@ -1,0 +1,50 @@
+[
+  {
+    "fact_id": "d5066833",
+    "category": "OTHER",
+    "subject": "Library opening hours",
+    "statement": "The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month.",
+    "date_mentioned": null,
+    "numeric_value": 20.0,
+    "unit": "hours",
+    "source_ref": {
+      "doc_id": "WLD-0025",
+      "file_name": "WLD-0025.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 20 is not stated in the source paragraph (calculated or invented)"
+    ]
+  },
+  {
+    "fact_id": "8a105617",
+    "category": "OTHER",
+    "subject": "Library services",
+    "statement": "A quiet study area has been added on the first floor, and the cafe will remain open until seven.",
+    "date_mentioned": null,
+    "numeric_value": 19.0,
+    "unit": "hours",
+    "source_ref": {
+      "doc_id": "WLD-0025",
+      "file_name": "WLD-0025.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "A quiet study area has been added on the first floor, and the cafe will remain open until seven."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 19 is not stated in the source paragraph (calculated or invented)"
+    ]
+  }
+]

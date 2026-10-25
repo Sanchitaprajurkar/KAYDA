@@ -1,0 +1,204 @@
+[
+  {
+    "name": "Valhalla",
+    "type": "NATION",
+    "aliases": [],
+    "description": "Country profile: Valhalla",
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ATL-0003..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Country profile: Valhalla..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowl..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much o..."
+      }
+    ]
+  },
+  {
+    "name": "rice",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "Main exports are rice, copper ore and a small amount of specialty metals.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowl..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much o..."
+      }
+    ]
+  },
+  {
+    "name": "copper ore",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "Main exports are rice, copper ore and a small amount of specialty metals.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowl..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much o..."
+      }
+    ]
+  },
+  {
+    "name": "specialty metals",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "Main exports are rice, copper ore and a small amount of specialty metals.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowl..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much o..."
+      }
+    ]
+  },
+  {
+    "name": "Granite Mining",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "Granite Mining, a copper miner, is the best-known firm.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair ..."
+      }
+    ]
+  },
+  {
+    "name": "mining sector",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "The mining sector supports engineering, haulage and repair businesses.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair ..."
+      }
+    ]
+  },
+  {
+    "name": "rice trade",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "The rice trade is handled by a large number of independent growers and cooperatives.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair ..."
+      }
+    ]
+  },
+  {
+    "name": "haul roads",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "Mining towns in the hills are linked by haul roads to the coast.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farm..."
+      }
+    ]
+  },
+  {
+    "name": "processing plants",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "Processing plants sit near the pits.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farm..."
+      }
+    ]
+  },
+  {
+    "name": "rice farms",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "Rice farms in the lowlands use a separate network of smaller roads and stores.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farm..."
+      }
+    ]
+  }
+]

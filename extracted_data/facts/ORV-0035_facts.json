@@ -1,0 +1,143 @@
+[
+  {
+    "fact_id": "d763a5c1",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Orvan Grain Port",
+    "statement": "That compares with 32 in November and 38 in October.",
+    "date_mentioned": null,
+    "numeric_value": 32.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "That compares with 32 in November and 38 in October."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "beda567f",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The port strike that began in September has left berth availability below normal.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The port strike that began in September has left berth availability below normal."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "14e9e351",
+    "category": "TRADE_VOLUME",
+    "subject": "Rail loadings through Ravik",
+    "statement": "Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c5717c9e",
+    "category": "ROUTE_STATUS",
+    "subject": "Sea route",
+    "statement": "Shipowners say the sea route is operating, but with longer waits and higher insurance costs.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "Shipowners say the sea route is operating, but with longer waits and higher insurance costs."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶8, not cited ¶7"
+    ]
+  },
+  {
+    "fact_id": "0543c470",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Orvan Grain Port",
+    "statement": "Orvan Grain Port loaded grain at about 30 on the ministry index in December, according to preliminary port figures.",
+    "date_mentioned": null,
+    "numeric_value": 30.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Orvan Grain Port loaded grain at about 30 on the ministry index in December, according to preliminary port figures."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value is stated as 30.0 but is described as 'about 30', which introduces uncertainty.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "2f03af2f",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Orvan Grain Port",
+    "statement": "Port agents say berth use has improved slightly, but they do not expect a quick return to the old pace.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0035",
+      "file_name": "ORV-0035.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Port agents say berth use has improved slightly, but they do not expect a quick return to the old pace."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is a paraphrase of what port agents say, losing the attribution.",
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Solen Energy",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0023",
+        "file_name": "WLD-0023.docx",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: WLD-0023..."
+      },
+      {
+        "doc_id": "WLD-0023",
+        "file_name": "WLD-0023.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Solen Energy has opened a small solar park on a former maintenance depot outside the city. The site has several row..."
+      },
+      {
+        "doc_id": "WLD-0023",
+        "file_name": "WLD-0023.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The company said the project took eighteen months to complete and involved cleaning up contaminated soil. Local con..."
+      },
+      {
+        "doc_id": "WLD-0023",
+        "file_name": "WLD-0023.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] A spokesperson said the park is part of a wider investment in renewable power and will be monitored for a year befo..."
+      }
+    ]
+  },
+  {
+    "name": "Solvar",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0023",
+        "file_name": "WLD-0023.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Solvar..."
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@
   "entities_count": 8,
   "facts": [
     {
-      "fact_id": "a51c9fd0",
+      "fact_id": "87edfd3b",
       "category": "TRADE_VOLUME",
       "subject": "Utgard imports",
       "statement": "Utgard... relies on imported energy, grain and copper ore to keep its plants and population supplied.",
@@ -28,7 +28,7 @@
       "validation_notes": []
     },
     {
-      "fact_id": "9a07cc22",
+      "fact_id": "c5aa50a4",
       "category": "TRADE_VOLUME",
       "subject": "Utgard exports and imports",
       "statement": "The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore.",
@@ -50,7 +50,7 @@
       "validation_notes": []
     },
     {
-      "fact_id": "1363b88e",
+      "fact_id": "e07d52e8",
       "category": "ROUTE_STATUS",
       "subject": "Utgard Terminal",
       "statement": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs.",
@@ -72,7 +72,7 @@
       "validation_notes": []
     },
     {
-      "fact_id": "5a90a359",
+      "fact_id": "4f544e38",
       "category": "OTHER",
       "subject": "Wolf Logistics",
       "statement": "Wolf Logistics, a freight forwarder, is the best-known transport firm.",
@@ -94,7 +94,7 @@
       "validation_notes": []
     },
     {
-      "fact_id": "31f4cce8",
+      "fact_id": "f044a551",
       "category": "ROUTE_STATUS",
       "subject": "rail freight line",
       "statement": "A rail freight line carries containers to inland depots, and several supplier parks have grown up around the larger plants.",
@@ -161,7 +161,7 @@
       "name": "Utgard Terminal",
       "type": "PORT",
       "aliases": [],
-      "description": "The principal container port that handles both finished goods and industrial inputs.",
+      "description": "The principal container port in Utgard.",
       "mentions_count": 1,
       "source_refs": [
         {
@@ -177,7 +177,7 @@
       "name": "LNG",
       "type": "COMMODITY",
       "aliases": [],
-      "description": "Liquefied natural gas, one of the main imports of Utgard.",
+      "description": "Liquefied Natural Gas, one of the main imports of Utgard.",
       "mentions_count": 1,
       "source_refs": [
         {
