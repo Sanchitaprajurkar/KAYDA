@@ -8,8 +8,10 @@ from backend.court.tools import windows
 
 
 def _cite(e: Evidence) -> str:
+    # Format: [DOC_ID | P{n} | YYYY-MM-DD HH:MM] so the exact paragraph is always explicit.
+    doc, _, para = e.ref.partition("#")
     stamp = f"{e.pub_date} {e.pub_time}" if e.pub_time else (e.pub_date or "")
-    return f"[{e.ref}, {stamp}]"
+    return f"[{doc} | {para} | {stamp}]"
 
 
 def _span(s) -> str:

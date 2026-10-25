@@ -304,6 +304,64 @@ def calculation_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, str
     return None
 
 
+def citation_scope_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, str]]:
+    """(reason, argument) if a claim's own citations are out of scope for its country/sector.
+
+    Rules (deterministic — no LLM):
+    - A trade-series citation must point to the claim's country and sector.
+    - A narrative citation must mention the claim's country or sector somewhere in its excerpt.
+    """
+    country_lc = claim.country.lower()
+    sector_lc = claim.sector.lower()
+    for e in claim.citations:
+        s = tools.series(e.doc_id)
+        if s:
+            if s.dest and s.dest.lower() != country_lc:
+                return ("wrong_scope",
+                        f"{e.ref} is a trade series for {s.dest}, not {claim.country}; "
+                        f"it cannot support a claim about {claim.country} {claim.sector}.")
+            if s.sector and s.sector.lower() not in (sector_lc, "general"):
+                return ("wrong_scope",
+                        f"{e.ref} covers {s.sector} trade, not {claim.sector}; "
+                        f"it cannot support a claim about {claim.country} {claim.sector}.")
+        else:
+            # Narrative doc: require that the cited paragraph excerpt mentions both country and sector.
+            text = ((e.excerpt or "") + " " + (e.assertion or "")).lower()
+            missing = [w for w in (country_lc, sector_lc) if w not in text]
+            if len(missing) == 2:
+                return ("wrong_scope",
+                        f"{e.ref} does not mention {claim.country} or {claim.sector} "
+                        f"in the cited paragraph; it cannot support this claim.")
+    return None
+
+
+def attack_counter_scope_defect(tools: "RunemarkTools", attack, target_claim) -> Optional[Tuple[str, str]]:
+    """(reason, argument) if an attack's counter-evidence is out of scope for the target claim.
+
+    Counter-evidence that concerns a different country or sector cannot rebut the specific claim.
+    """
+    country_lc = target_claim.country.lower()
+    sector_lc = target_claim.sector.lower()
+    for e in (attack.counter_evidence or []):
+        s = tools.series(e.doc_id)
+        if s:
+            if s.dest and s.dest.lower() != country_lc:
+                return ("wrong_scope",
+                        f"Counter-evidence {e.ref} covers {s.dest}, not {target_claim.country}; "
+                        f"it cannot rebut a claim about {target_claim.country} {target_claim.sector}.")
+            if s.sector and s.sector.lower() not in (sector_lc, "general"):
+                return ("wrong_scope",
+                        f"Counter-evidence {e.ref} covers {s.sector} trade, not {target_claim.sector}.")
+        else:
+            text = ((e.excerpt or "") + " " + (e.assertion or "")).lower()
+            missing = [w for w in (country_lc, sector_lc) if w not in text]
+            if len(missing) == 2:
+                return ("wrong_scope",
+                        f"Counter-evidence {e.ref} does not mention {target_claim.country} or "
+                        f"{target_claim.sector} in the cited paragraph.")
+    return None
+
+
 def _to_row(r, s: TradeSeries) -> TradeRow:
     return TradeRow(doc_id=r.doc_id, row_id=r.row_id.split("#")[-1], full_id=r.row_id, country_from=r.origin,
                     country_to=r.dest, sector=r.sector or s.sector or "general", month=r.month or "UNKNOWN",

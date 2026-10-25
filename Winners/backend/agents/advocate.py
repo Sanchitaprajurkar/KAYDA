@@ -15,7 +15,8 @@ from backend.court.llm import BudgetExceeded, CourtLLM, compact
 from backend.court.memory import AgentMemory
 from backend.court.models import ATTACK_REASONS, Attack, Calculation, Claim, Estimate, Evidence, Response
 from backend.court.tools import (DuplicateQuery, RunemarkTools, SearchFilters, SearchHit, ToolLimit,
-                                 calculation_defect, windows)
+                                 attack_counter_scope_defect, calculation_defect,
+                                 citation_scope_defect, windows)
 
 MAX_CLAIMS_PER_SIDE = 6
 MAX_CANDIDATES = 24
@@ -306,17 +307,27 @@ class Advocate:
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
                                   reason=defect[0], argument=defect[1], grounds="rule"))
                 continue
+            scope = citation_scope_defect(self.tools, claim)
+            if scope:
+                out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
+                                  reason=scope[0], argument=scope[1], grounds="rule"))
+                continue
             for e in claim.citations:
                 other = next((f for f in conflicts.get(e.fact_id or "", [])
                               if self.tools.admissible(f.source_ref.doc_id)
                               and f.fact_id not in {x.fact_id for x in claim.citations}), None)
                 if other:
                     self.pool[other.fact_id] = other
-                    out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
-                                      reason="contradicts", grounds="rule",
-                                      counter_evidence=[self.tools.evidence(other)],
-                                      argument=f"Heimdall flagged {e.ref} as contradicted by "
-                                               f"{self.tools.evidence(other).ref}: \"{other.statement[:160]}\""))
+                    counter_e = self.tools.evidence(other)
+                    # Validate that the counter-evidence actually concerns the same country/sector.
+                    atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
+                                 reason="contradicts", grounds="rule",
+                                 counter_evidence=[counter_e],
+                                 argument=f"Heimdall flagged {e.ref} as contradicted by "
+                                          f"{counter_e.ref}: \"{other.statement[:160]}\"")
+                    bad = attack_counter_scope_defect(self.tools, atk, claim)
+                    if not bad:
+                        out.append(atk)
                     break
         return out
 
@@ -350,8 +361,15 @@ class Advocate:
             counter = [self.tools.evidence(self.pool[f]) for f in p.counter_fact_ids if f in self.pool]
             if not counter and p.reason in ("contradicts", "stale"):
                 continue  # an evidence-based attack needs evidence
-            attacks.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=p.target_claim_id,
-                                  reason=p.reason, argument=p.argument, counter_evidence=counter))
+            atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=p.target_claim_id,
+                         reason=p.reason, argument=p.argument, counter_evidence=counter)
+            # Drop attacks whose counter-evidence doesn't scope to the target claim's country/sector.
+            bad = attack_counter_scope_defect(self.tools, atk, by_id[p.target_claim_id])
+            if bad:
+                self.log("attack_rejected", agent=self.side, attack_id=p.target_claim_id,
+                         reason=f"counter-evidence out of scope: {bad[1]}")
+                continue
+            attacks.append(atk)
             taken.add(p.target_claim_id)
         if not attacks and opponent:
             attacks.append(self._fallback_attack(opponent, run))
