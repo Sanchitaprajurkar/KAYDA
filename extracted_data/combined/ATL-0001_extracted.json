@@ -1,0 +1,273 @@
+{
+  "doc_id": "ATL-0001",
+  "title": "Country profile: Utgard",
+  "facts_count": 5,
+  "flagged_count": 0,
+  "entities_count": 8,
+  "facts": [
+    {
+      "fact_id": "a51c9fd0",
+      "category": "TRADE_VOLUME",
+      "subject": "Utgard imports",
+      "statement": "Utgard... relies on imported energy, grain and copper ore to keep its plants and population supplied.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0001",
+        "file_name": "ATL-0001.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and relies on imported energy, grain and copper ore to keep its plants and population supplied."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "9a07cc22",
+      "category": "TRADE_VOLUME",
+      "subject": "Utgard exports and imports",
+      "statement": "The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0001",
+        "file_name": "ATL-0001.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "1363b88e",
+      "category": "ROUTE_STATUS",
+      "subject": "Utgard Terminal",
+      "statement": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0001",
+        "file_name": "ATL-0001.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5a90a359",
+      "category": "OTHER",
+      "subject": "Wolf Logistics",
+      "statement": "Wolf Logistics, a freight forwarder, is the best-known transport firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0001",
+        "file_name": "ATL-0001.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "Wolf Logistics, a freight forwarder, is the best-known transport firm."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "31f4cce8",
+      "category": "ROUTE_STATUS",
+      "subject": "rail freight line",
+      "statement": "A rail freight line carries containers to inland depots, and several supplier parks have grown up around the larger plants.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0001",
+        "file_name": "ATL-0001.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "A rail freight line carries containers to inland depots, and several supplier parks have grown up around the larger plants."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Utgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A large factory economy and importer on the East Sea.",
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ATL-0001 EVENT_ID: NONE TITLE: Country profile: Utgard SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELI..."
+        },
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        },
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore. U..."
+        },
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Wolf Logistics, a freight forwarder, is the best-known transport firm. The country has a dense network of industria..."
+        }
+      ]
+    },
+    {
+      "name": "Utgard Terminal",
+      "type": "PORT",
+      "aliases": [],
+      "description": "The principal container port that handles both finished goods and industrial inputs.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore. U..."
+        }
+      ]
+    },
+    {
+      "name": "LNG",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "Liquefied natural gas, one of the main imports of Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        }
+      ]
+    },
+    {
+      "name": "grain",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main import and export commodity for Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        }
+      ]
+    },
+    {
+      "name": "copper ore",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main import commodity for Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        }
+      ]
+    },
+    {
+      "name": "computer chips",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main export commodity for Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        }
+      ]
+    },
+    {
+      "name": "consumer goods",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main export commodity for Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and ..."
+        }
+      ]
+    },
+    {
+      "name": "Wolf Logistics",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A freight forwarder and the best-known transport firm in Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0001",
+          "file_name": "ATL-0001.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Wolf Logistics, a freight forwarder, is the best-known transport firm. The country has a dense network of industria..."
+        }
+      ]
+    }
+  ]
+}

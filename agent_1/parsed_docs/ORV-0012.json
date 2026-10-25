@@ -1,0 +1,166 @@
+{
+  "doc_id": "ORV-0012",
+  "file_name": "ORV-0012.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0012.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "ORV-0012",
+    "event_id": "E5",
+    "title": "Orvan Grain Port loadings: September to November 2026",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": 1,
+    "pub_date": "2026-12-15",
+    "pub_time": "10:00",
+    "country": "Orvan",
+    "sector": "general",
+    "language": "en",
+    "file": "ORV-0012.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0012",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: E5",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Orvan Grain Port loadings: September to November 2026",
+      "char_count": 60,
+      "word_count": 9
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Realm Trade Ministry",
+      "char_count": 33,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: gov_notice",
+      "char_count": 23,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 1",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2026-12-15",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 10:00",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Orvan",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: general",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Orvan Grain Port loadings: September to November 2026",
+      "char_count": 53,
+      "word_count": 8
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal is 100.",
+      "char_count": 128,
+      "word_count": 23
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] In September 2026 the index was 40.",
+      "char_count": 40,
+      "word_count": 8
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] In October 2026 the index was 38.",
+      "char_count": 38,
+      "word_count": 8
+    },
+    {
+      "paragraph_index": 17,
+      "page_number": null,
+      "raw_text": "[P4] In November 2026 the index was 32.",
+      "char_count": 39,
+      "word_count": 8
+    },
+    {
+      "paragraph_index": 18,
+      "page_number": null,
+      "raw_text": "[P5] The index is calculated from tonnage loaded at the port and compared with the average month before the corridor agreement was signed. The ministry uses the same method each month, so a fall in the index reflects a change in loadings rather than a change in method. The ministry publishes the index with a lag because port manifests are checked against customs entries before release. Revisions are possible but rare, and any change is noted in the following return.",
+      "char_count": 470,
+      "word_count": 80
+    },
+    {
+      "paragraph_index": 19,
+      "page_number": null,
+      "raw_text": "[P6] The ministry compiles the return from port manifests, customs entries and berth logs. It does not use carrier estimates or trade-press figures. A port user who believes a monthly figure is wrong may ask for a review in writing within the usual period. The next return will cover December and will be published after the holiday break.",
+      "char_count": 339,
+      "word_count": 58
+    },
+    {
+      "paragraph_index": 20,
+      "page_number": null,
+      "raw_text": "[P7] The index covers all grain loaded at the port, not only the routes covered by the monthly trade notes. It is not a forecast.",
+      "char_count": 129,
+      "word_count": 25
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0012\n\nEVENT_ID: E5\n\nTITLE: Orvan Grain Port loadings: September to November 2026\n\nSOURCE_NAME: Realm Trade Ministry\n\nSOURCE_TYPE: gov_notice\n\nRELIABILITY: 1\n\nPUB_DATE: 2026-12-15\n\nPUB_TIME: 10:00\n\nCOUNTRY: Orvan\n\nSECTOR: general\n\nLANGUAGE: en\n\n---\n\nOrvan Grain Port loadings: September to November 2026\n\n[P1] The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal is 100.\n\n[P2] In September 2026 the index was 40.\n\n[P3] In October 2026 the index was 38.\n\n[P4] In November 2026 the index was 32.\n\n[P5] The index is calculated from tonnage loaded at the port and compared with the average month before the corridor agreement was signed. The ministry uses the same method each month, so a fall in the index reflects a change in loadings rather than a change in method. The ministry publishes the index with a lag because port manifests are checked against customs entries before release. Revisions are possible but rare, and any change is noted in the following return.\n\n[P6] The ministry compiles the return from port manifests, customs entries and berth logs. It does not use carrier estimates or trade-press figures. A port user who believes a monthly figure is wrong may ask for a review in writing within the usual period. The next return will cover December and will be published after the holiday break.\n\n[P7] The index covers all grain loaded at the port, not only the routes covered by the monthly trade notes. It is not a forecast.",
+  "total_paragraphs": 20,
+  "total_pages": null
+}

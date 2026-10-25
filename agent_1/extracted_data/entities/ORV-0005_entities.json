@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+      },
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+      }
+    ]
+  },
+  {
+    "name": "Ravik",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+      },
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+      },
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+      }
+    ]
+  },
+  {
+    "name": "Ravik Rail Link",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes...."
+      }
+    ]
+  }
+]

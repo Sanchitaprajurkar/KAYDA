@@ -1,0 +1,82 @@
+{
+  "doc_id": "ORV-0038",
+  "file_name": "ORV-0038.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0038.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ORV-0038",
+    "event_id": "NONE",
+    "title": "Bread prices in Midgard edge up as millers hold margins",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": 2,
+    "pub_date": "2026-05-14",
+    "pub_time": "09:30",
+    "country": "Midgard",
+    "sector": "general",
+    "language": "en",
+    "file": "ORV-0038.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0038 EVENT_ID: NONE TITLE: Bread prices in Midgard edge up as millers hold margins SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2026-05-14 PUB_TIME: 09:30 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Bread prices in Midgard edge up as millers hold margins",
+      "char_count": 297,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] Midgard bakeries have raised the price of a standard loaf again this year, citing higher energy and transport costs.",
+      "char_count": 121,
+      "word_count": 20
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] Millers say flour prices have been stable and that the increase is mostly in distribution.",
+      "char_count": 95,
+      "word_count": 16
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] \"The loaf is not the problem; the diesel is,\" said a bakery owner in the capital.",
+      "char_count": 86,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] The consumer office says it is monitoring the trend but sees no shortage.",
+      "char_count": 78,
+      "word_count": 14
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "[P5] The increase is small in cash terms but visible to shoppers, and it has prompted questions about how the cost is split between the mill, the bakery and the shop. Millers say their own input costs have been stable and that they have not passed on the full rise in energy and transport. The consumer office says it will keep watching the weekly basket. Bakeries say they have little room left to absorb further increases without cutting staff hours.",
+      "char_count": 452,
+      "word_count": 80
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "[P6] The bakery association says its members have tried to keep the standard loaf unchanged and have cut other lines instead. It warns that another rise in diesel would force a further increase. The consumer office says it has no evidence of a supply problem. Supermarkets say they are watching rival prices before they decide.",
+      "char_count": 327,
+      "word_count": 55
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "[P7] Supermarket chains say they have absorbed part of the increase.",
+      "char_count": 68,
+      "word_count": 11
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0038 EVENT_ID: NONE TITLE: Bread prices in Midgard edge up as millers hold margins SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2026-05-14 PUB_TIME: 09:30 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Bread prices in Midgard edge up as millers hold margins\n\n[P1] Midgard bakeries have raised the price of a standard loaf again this year, citing higher energy and transport costs.\n\n[P2] Millers say flour prices have been stable and that the increase is mostly in distribution.\n\n[P3] \"The loaf is not the problem; the diesel is,\" said a bakery owner in the capital.\n\n[P4] The consumer office says it is monitoring the trend but sees no shortage.\n\n[P5] The increase is small in cash terms but visible to shoppers, and it has prompted questions about how the cost is split between the mill, the bakery and the shop. Millers say their own input costs have been stable and that they have not passed on the full rise in energy and transport. The consumer office says it will keep watching the weekly basket. Bakeries say they have little room left to absorb further increases without cutting staff hours.\n\n[P6] The bakery association says its members have tried to keep the standard loaf unchanged and have cut other lines instead. It warns that another rise in diesel would force a further increase. The consumer office says it has no evidence of a supply problem. Supermarkets say they are watching rival prices before they decide.\n\n[P7] Supermarket chains say they have absorbed part of the increase.",
+  "total_paragraphs": 8,
+  "total_pages": null
+}

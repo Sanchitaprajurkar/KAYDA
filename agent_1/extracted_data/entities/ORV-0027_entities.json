@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Vanir",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      }
+    ]
+  },
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      }
+    ]
+  }
+]

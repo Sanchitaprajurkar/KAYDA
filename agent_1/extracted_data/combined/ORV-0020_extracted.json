@@ -1,0 +1,199 @@
+{
+  "doc_id": "ORV-0020",
+  "title": "Vantro Trading: operational update on Orvan cargoes",
+  "facts_count": 4,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "98d5aeff",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan cargoes",
+      "statement": "Orvan cargoes continue to move by rail and road where sea space is unavailable.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Vantro Trading reports that its Orvan cargoes continue to move by rail and road where sea space is unavailable."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "b16af9fc",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Documentation and insurance for rail cargoes",
+      "statement": "Documentation and insurance for rail cargoes are taking longer than usual.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The firm says documentation and insurance for rail cargoes are taking longer than usual."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "70a6fa93",
+      "category": "ROUTE_STATUS",
+      "subject": "Rail and road cargoes",
+      "statement": "Rail and road cargoes are moving, but it does not give volumes or delivery times.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "It says rail and road cargoes are moving, but it does not give volumes or delivery times."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "1c2c415a",
+      "category": "ROUTE_STATUS",
+      "subject": "Rail route",
+      "statement": "Vantro expects the rail route to remain its main alternative while the sea corridor is closed.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "Vantro expects the rail route to remain its main alternative while the sea corridor is closed."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Vantro Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A company involved in trading operations, specifically dealing with cargoes.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0020 EVENT_ID: E5 TITLE: Vantro Trading: operational update on Orvan cargoes SOURCE_NAME: Vantro Trading SOU..."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vantro Trading reports that its Orvan cargoes continue to move by rail and road where sea space is unavailable...."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The firm says documentation and insurance for rail cargoes are taking longer than usual...."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"We are working through the backlog with our partners,\" a company spokesperson said...."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The update covers the firm's own operations and does not speak for the port or for other traders. It says rail and ..."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The notice board update is dated the same day as the firm's weekly call with customers. It lists the documents that..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "Cargoes being transported by Vantro Trading.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0020 EVENT_ID: E5 TITLE: Vantro Trading: operational update on Orvan cargoes SOURCE_NAME: Vantro Trading SOU..."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vantro Trading reports that its Orvan cargoes continue to move by rail and road where sea space is unavailable...."
+        }
+      ]
+    },
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": "Country where Vantro Trading operates.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0020 EVENT_ID: E5 TITLE: Vantro Trading: operational update on Orvan cargoes SOURCE_NAME: Vantro Trading SOU..."
+        }
+      ]
+    },
+    {
+      "name": "sea corridor",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": "A route for maritime transport that is currently closed.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The update covers the firm's own operations and does not speak for the port or for other traders. It says rail and ..."
+        },
+        {
+          "doc_id": "ORV-0020",
+          "file_name": "ORV-0020.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The notice board update is dated the same day as the firm's weekly call with customers. It lists the documents that..."
+        }
+      ]
+    }
+  ]
+}

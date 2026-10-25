@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0008 EVENT_ID: E5 TITLE: Orvan Grain Port holds ships as strike enters first week SOURCE_NAME: Cargo Weekly ..."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Orvan Grain Port is holding vessels outside the harbour as a dock strike that began on 14 September continues...."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan Grain Port",
+    "type": "PORT",
+    "aliases": [],
+    "description": "A port in Orvan that is currently holding vessels due to a dock strike.",
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0008 EVENT_ID: E5 TITLE: Orvan Grain Port holds ships as strike enters first week SOURCE_NAME: Cargo Weekly ..."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Orvan Grain Port is holding vessels outside the harbour as a dock strike that began on 14 September continues...."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes...."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were..."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0008 EVENT_ID: E5 TITLE: Orvan Grain Port holds ships as strike enters first week SOURCE_NAME: Cargo Weekly ..."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes...."
+      }
+    ]
+  },
+  {
+    "name": "Vanir",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes...."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were..."
+      }
+    ]
+  },
+  {
+    "name": "Hammer Freight",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A bulk operator that has moved ships to Vanir for wheat cargoes.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes...."
+      }
+    ]
+  },
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The port authority has set up a waiting area for crews and has asked agents to keep vessel documents ready. It says..."
+      }
+    ]
+  },
+  {
+    "name": "Tolan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The port authority has set up a waiting area for crews and has asked agents to keep vessel documents ready. It says..."
+      }
+    ]
+  }
+]

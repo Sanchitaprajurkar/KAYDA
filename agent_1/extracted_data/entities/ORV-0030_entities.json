@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0030 EVENT_ID: E5 TITLE: Trade note: Orvan to Midgard, maize, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Midgard, maize...."
+      }
+    ]
+  },
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0030 EVENT_ID: E5 TITLE: Trade note: Orvan to Midgard, maize, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Midgard, maize...."
+      }
+    ]
+  },
+  {
+    "name": "maize",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0030 EVENT_ID: E5 TITLE: Trade note: Orvan to Midgard, maize, July to December 2026 SOURCE_NAME: Realm Trade..."
+      },
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Route: Orvan to Midgard, maize...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0030",
+        "file_name": "ORV-0030.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0030 EVENT_ID: E5 TITLE: Trade note: Orvan to Midgard, maize, July to December 2026 SOURCE_NAME: Realm Trade..."
+      }
+    ]
+  }
+]

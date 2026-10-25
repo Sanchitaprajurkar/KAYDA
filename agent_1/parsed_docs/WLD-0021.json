@@ -1,0 +1,54 @@
+{
+  "doc_id": "WLD-0021",
+  "file_name": "WLD-0021.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\WLD-0021.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0021",
+    "event_id": "NONE",
+    "title": "Photography exhibition opens at town hall",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2024-08-05",
+    "pub_time": "11:45",
+    "country": "Ravik",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0021.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0021 EVENT_ID: NONE TITLE: Photography exhibition opens at town hall SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2024-08-05 PUB_TIME: 11:45 COUNTRY: Ravik SECTOR: general LANGUAGE: en --- Photography exhibition opens at town hall",
+      "char_count": 267,
+      "word_count": 35
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] An exhibition of photographs taken in Ravik's hill villages has opened at the town hall. The images show work, celebrations and everyday scenes recorded over the past five years.",
+      "char_count": 183,
+      "word_count": 30
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The photographer said the project began as a personal record and grew into a wider portrait of the area. Several people featured in the pictures attended the opening and helped identify places that have since changed.",
+      "char_count": 222,
+      "word_count": 37
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] The exhibition is free and runs until the end of the month. A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service.",
+      "char_count": 184,
+      "word_count": 37
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0021 EVENT_ID: NONE TITLE: Photography exhibition opens at town hall SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2024-08-05 PUB_TIME: 11:45 COUNTRY: Ravik SECTOR: general LANGUAGE: en --- Photography exhibition opens at town hall\n\n[P1] An exhibition of photographs taken in Ravik's hill villages has opened at the town hall. The images show work, celebrations and everyday scenes recorded over the past five years.\n\n[P2] The photographer said the project began as a personal record and grew into a wider portrait of the area. Several people featured in the pictures attended the opening and helped identify places that have since changed.\n\n[P3] The exhibition is free and runs until the end of the month. A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}

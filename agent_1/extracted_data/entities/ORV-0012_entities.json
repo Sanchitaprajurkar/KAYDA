@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Orvan..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan Grain Port",
+    "type": "PORT",
+    "aliases": [],
+    "description": "A port for grain loading in Orvan.",
+    "mentions_count": 7,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] In September 2026 the index was 40...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] In October 2026 the index was 38...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] In November 2026 the index was 32...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The index is calculated from tonnage loaded at the port and compared with the average month before the corridor agr..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The ministry compiles the return from port manifests, customs entries and berth logs. It does not use carrier estim..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "[P7] The index covers all grain loaded at the port, not only the routes covered by the monthly trade notes. It is not a ..."
+      }
+    ]
+  },
+  {
+    "name": "grain",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "A general term for the agricultural product being loaded at the port.",
+    "mentions_count": 7,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] In September 2026 the index was 40...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] In October 2026 the index was 38...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] In November 2026 the index was 32...."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The index is calculated from tonnage loaded at the port and compared with the average month before the corridor agr..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The ministry compiles the return from port manifests, customs entries and berth logs. It does not use carrier estim..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "[P7] The index covers all grain loaded at the port, not only the routes covered by the monthly trade notes. It is not a ..."
+      }
+    ]
+  }
+]

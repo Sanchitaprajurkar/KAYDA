@@ -1,0 +1,82 @@
+{
+  "doc_id": "ORV-0041",
+  "file_name": "ORV-0041.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0041.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ORV-0041",
+    "event_id": "E5",
+    "title": "Spring bookings point to a slow Orvan recovery",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": 2,
+    "pub_date": "2027-04-09",
+    "pub_time": "08:10",
+    "country": "Midgard",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0041.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0041 EVENT_ID: E5 TITLE: Spring bookings point to a slow Orvan recovery SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2027-04-09 PUB_TIME: 08:10 COUNTRY: Midgard SECTOR: Wheat LANGUAGE: en --- Spring bookings point to a slow Orvan recovery",
+      "char_count": 275,
+      "word_count": 39
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels before the corridor ended.",
+      "char_count": 143,
+      "word_count": 24
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] Port agents in Orvan say berth use is improving from the winter low.",
+      "char_count": 73,
+      "word_count": 14
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat.",
+      "char_count": 103,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer.",
+      "char_count": 86,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "[P5] The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commit to large volumes. Port agents say berth use has improved but is uneven, and that some ships still wait. Rail loadings through Ravik remain part of the mix, and Vanir has kept a share of the Midgard market. The ministry has not said whether the spring improvement will last. Buyers say they will keep spreading their purchases across routes for now.",
+      "char_count": 470,
+      "word_count": 82
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "[P6] Buyers say they are watching the port index and the rail timetable before they commit to larger contracts. Some are also testing Vanir wheat for the first time, though they describe the volumes as small. The improvement is uneven across ports and products, and no single route has returned to its old pattern.",
+      "char_count": 314,
+      "word_count": 54
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "[P7] The ministry has not published a forecast for the rest of the year.",
+      "char_count": 72,
+      "word_count": 14
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0041 EVENT_ID: E5 TITLE: Spring bookings point to a slow Orvan recovery SOURCE_NAME: Midgard Times SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2027-04-09 PUB_TIME: 08:10 COUNTRY: Midgard SECTOR: Wheat LANGUAGE: en --- Spring bookings point to a slow Orvan recovery\n\n[P1] Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels before the corridor ended.\n\n[P2] Port agents in Orvan say berth use is improving from the winter low.\n\n[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat.\n\n[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer.\n\n[P5] The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commit to large volumes. Port agents say berth use has improved but is uneven, and that some ships still wait. Rail loadings through Ravik remain part of the mix, and Vanir has kept a share of the Midgard market. The ministry has not said whether the spring improvement will last. Buyers say they will keep spreading their purchases across routes for now.\n\n[P6] Buyers say they are watching the port index and the rail timetable before they commit to larger contracts. Some are also testing Vanir wheat for the first time, though they describe the volumes as small. The improvement is uneven across ports and products, and no single route has returned to its old pattern.\n\n[P7] The ministry has not published a forecast for the rest of the year.",
+  "total_paragraphs": 8,
+  "total_pages": null
+}
