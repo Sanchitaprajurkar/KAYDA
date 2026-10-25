@@ -1,0 +1,33 @@
+/* App.css — Trial Layout */
+.trial-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--bg-void);
+}
+
+/* ── 3-Column Arena ── */
+.trial-arena {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  min-height: 0;
+}
+
+.trial-arena__col {
+  overflow: hidden;
+  border-right: 1px solid var(--border);
+}
+
+.trial-arena__col:last-child {
+  border-right: none;
+}
+
+.trial-arena__center {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+}

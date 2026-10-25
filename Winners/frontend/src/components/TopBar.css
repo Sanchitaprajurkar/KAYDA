@@ -1,0 +1,139 @@
+/* TopBar.css */
+.topbar {
+  height: 40px;
+  width: 100%;
+  background: var(--bg-void);
+  border-bottom: 1px solid var(--border);
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  user-select: none;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+}
+
+.topbar__logo-rune {
+  color: var(--odin);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.topbar__divider {
+  color: var(--border-hi);
+}
+
+.topbar__tagline {
+  color: var(--text-secondary);
+  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.topbar__divider-line {
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+}
+
+.topbar__live {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--loki);
+  font-weight: 500;
+}
+
+.topbar__live-dot {
+  position: relative;
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+}
+.topbar__live-dot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--loki);
+  opacity: 0.6;
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.topbar__live-dot::after {
+  content: '';
+  position: relative;
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--loki);
+}
+
+/* Center meta */
+.topbar__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.topbar__meta-tag {
+  color: var(--text-primary);
+  font-weight: 500;
+  background: var(--bg-panel);
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+}
+
+.topbar__meta-sep {
+  color: var(--border-hi);
+}
+
+.topbar__meta-round {
+  color: var(--odin);
+}
+
+/* Right stats */
+.topbar__stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+
+.topbar__stats-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar__stats-val {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.topbar__stats-green {
+  color: var(--loki);
+}
