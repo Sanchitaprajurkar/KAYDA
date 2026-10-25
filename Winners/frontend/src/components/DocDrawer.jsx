@@ -1,6 +1,7 @@
-import React from 'react'
-import { FileText, ExternalLink, X } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { FileText, ExternalLink, X, Loader2 } from 'lucide-react'
 import { EVIDENCE_REGISTRY } from '../data/trialData'
+import { getCorpusDocument } from '../services/api'
 import './DocDrawer.css'
 
 const STATUS_STYLE = {
@@ -34,10 +35,51 @@ function ReliabilityBar({ tier }) {
 }
 
 export default function DocDrawer({ docId, onClose }) {
+  const [liveDoc, setLiveDoc] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    if (!docId) {
+      setLiveDoc(null)
+      return
+    }
+    
+    // Check if in local registry
+    if (EVIDENCE_REGISTRY[docId]) {
+      setLiveDoc(EVIDENCE_REGISTRY[docId])
+      return
+    }
+
+    // Otherwise fetch from backend API
+    setLoading(true)
+    getCorpusDocument(docId)
+      .then(data => {
+        setLiveDoc({
+          id: data.doc_id,
+          title: data.title,
+          source: data.source_name,
+          sourceType: data.source_type,
+          timestamp: `${data.pub_date} ${data.pub_time} UTC`,
+          pubDate: data.pub_date,
+          snippet: data.paragraphs?.[0] || data.content.slice(0, 300),
+          status: data.is_retracted ? 'FLAGGED' : 'VERIFIED',
+          reliability: data.reliability,
+          sector: data.sector,
+          country: data.country,
+          content: data.content,
+          claims: []
+        })
+      })
+      .catch(() => {
+        setLiveDoc(null)
+      })
+      .finally(() => setLoading(false))
+  }, [docId])
+
   if (!docId) return null
 
-  const doc = EVIDENCE_REGISTRY[docId]
-  const ss = doc ? STATUS_STYLE[doc.status] : null
+  const doc = liveDoc || EVIDENCE_REGISTRY[docId]
+  const ss = doc ? (STATUS_STYLE[doc.status] || STATUS_STYLE.VERIFIED) : null
 
   return (
     <div className="doc-drawer-overlay">
