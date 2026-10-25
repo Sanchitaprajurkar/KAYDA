@@ -1,0 +1,22 @@
+[
+  {
+    "alias_doc_id": "ORV-0040",
+    "canonical_doc_id": "ORV-0006",
+    "kind": "EXACT"
+  },
+  {
+    "alias_doc_id": "ORV-0048",
+    "canonical_doc_id": "ORV-0024",
+    "kind": "TRUNCATED"
+  },
+  {
+    "alias_doc_id": "ORV-0023",
+    "canonical_doc_id": "ORV-0031",
+    "kind": "EMPTY_FALLBACK"
+  },
+  {
+    "alias_doc_id": "ORV-0007",
+    "canonical_doc_id": "ORV-0047",
+    "kind": "EXACT"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "fact_id": "fe453c1a",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Orvan grain corridor agreement",
+    "statement": "Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships due to load have been held outside Orvan Grain Port.",
+    "date_mentioned": "10 September",
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships due to load have been held outside Orvan Grain Port."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a1e8f84f",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan grain shipments",
+    "statement": "We have no cover for next month and no clear rule for the ships already booked, said Leif Garrow, who leads the Orvan farm union.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "\"We have no cover for next month and no clear rule for the ships already booked,\" said Leif Garrow, who leads the Orvan farm union."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶5, not cited ¶4"
+    ]
+  },
+  {
+    "fact_id": "c782ee8a",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan grain shipments",
+    "statement": "Several ships that had been waiting outside the harbour were still there at dusk, and a queue of grain trucks formed at the landward gate.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Several ships that had been waiting outside the harbour were still there at dusk, and a queue of grain trucks formed at the landward gate."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶6, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "e959d0c3",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan grain shipments",
+    "statement": "The ministry's notice on the lapse was short and gave no estimate of the volume affected.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "The ministry's notice on the lapse was short and gave no estimate of the volume affected."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d20da7fc",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Wheat offers",
+    "statement": "Wheat offers for later delivery firmed in early trade, though volumes were thin.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0034",
+      "file_name": "ORV-0034.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "Wheat offers for later delivery firmed in early trade, though volumes were thin."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "fact_id": "cae70862",
+    "category": "OTHER",
+    "subject": "Asgard economy",
+    "statement": "Asgard is a small strait state and trade hub on the Inner Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Asgard is a small strait state and trade hub on the Inner Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b3be2165",
+    "category": "TRADE_VOLUME",
+    "subject": "Asgard imports",
+    "statement": "Asgard imports almost everything it consumes, from food and medicines to machinery and household goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Asgard exports shipping and re-export services and imports almost everything it consumes, from food and medicines to machinery and household goods."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Quote not verbatim (100% match); replaced with source text from ¶3"
+    ]
+  },
+  {
+    "fact_id": "5772f3fb",
+    "category": "OTHER",
+    "subject": "Asgard Port",
+    "statement": "Most cargo arrives by sea and is sorted at Asgard Port before moving onward by coastal vessel or road.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Most cargo arrives by sea and is sorted at Asgard Port before moving onward by coastal vessel or road."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "42af6239",
+    "category": "ROUTE_STATUS",
+    "subject": "Ferry links",
+    "statement": "Ferry links connect the capital to smaller islands, and a coastal road runs west towards the Ymir road.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Ferry links connect the capital to smaller islands, and a coastal road runs west towards the Ymir road."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶5, not cited ¶4"
+    ]
+  },
+  {
+    "fact_id": "870490e0",
+    "category": "OTHER",
+    "subject": "Asgard Port operations",
+    "statement": "The port operates throughout the year, with extra staff during the summer months.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The port operates throughout the year, with extra staff during the summer months."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶5, not cited ¶4"
+    ]
+  }
+]

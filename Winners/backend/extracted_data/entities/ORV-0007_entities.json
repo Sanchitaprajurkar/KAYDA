@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0007 EVENT_ID: E5 TITLE: Orvan wheat: the sea loss is real, the substitutes are small SOURCE_NAME: Tide Rese..."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] View. We think the market is still underestimating the duration of the Orvan sea disruption...."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The view rests on three observations. First, the sea route is the cheapest way to move Orvan grain in bulk, so a la..."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The note is deliberately short on price targets. It says the value loss is easier to estimate than the price path, ..."
+      }
+    ]
+  },
+  {
+    "name": "Ravik",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The offsets are real but limited. Rail through Ravik may add about 54% in volume on a base of USD 25M a month...."
+      }
+    ]
+  },
+  {
+    "name": "Tolan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  },
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  },
+  {
+    "name": "Asgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0007 EVENT_ID: E5 TITLE: Orvan wheat: the sea loss is real, the substitutes are small SOURCE_NAME: Tide Rese..."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] View. We think the market is still underestimating the duration of the Orvan sea disruption...."
+      },
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  },
+  {
+    "name": "sea route",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  },
+  {
+    "name": "wheat contract",
+    "type": "AGREEMENT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0007",
+        "file_name": "ORV-0007.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      }
+    ]
+  }
+]

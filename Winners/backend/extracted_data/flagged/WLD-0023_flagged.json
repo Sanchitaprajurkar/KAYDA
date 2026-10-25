@@ -1,0 +1,50 @@
+[
+  {
+    "fact_id": "e8118fe6",
+    "category": "OTHER",
+    "subject": "Solen Energy solar park construction",
+    "statement": "The company said the project took eighteen months to complete and involved cleaning up contaminated soil.",
+    "date_mentioned": null,
+    "numeric_value": 18.0,
+    "unit": "months",
+    "source_ref": {
+      "doc_id": "WLD-0023",
+      "file_name": "WLD-0023.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The company said the project took eighteen months to complete and involved cleaning up contaminated soil."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value of 18.0 months is not explicitly stated in the paragraph."
+    ]
+  },
+  {
+    "fact_id": "10e19fc0",
+    "category": "OTHER",
+    "subject": "Solen Energy solar park investment",
+    "statement": "A spokesperson said the park is part of a wider investment in renewable power and will be monitored for a year before any decision on a second site.",
+    "date_mentioned": null,
+    "numeric_value": 1.0,
+    "unit": "year",
+    "source_ref": {
+      "doc_id": "WLD-0023",
+      "file_name": "WLD-0023.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "A spokesperson said the park is part of a wider investment in renewable power and will be monitored for a year before any decision on a second site."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 1 is not stated in the source paragraph (calculated or invented)"
+    ]
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "doc_id": "ORV-0003",
+    "title": "Corridor talks progress, renewal expected",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": "1",
+    "pub_date": "2026-08-18",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "SUPERSEDED",
+        "related_doc_id": "ORV-0016",
+        "detail": "forecast overtaken by Tier 1 notice ORV-0016 (Corridor Agreement expires with no renewal)"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0007",
+    "title": "Orvan wheat: the sea loss is real, the substitutes are small",
+    "source_name": "Tide Research",
+    "source_type": "analyst_note",
+    "reliability": "3",
+    "pub_date": "2026-10-22",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "DUPLICATE_OF",
+        "related_doc_id": "ORV-0047",
+        "detail": "EXACT duplicate of ORV-0047"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0010",
+    "title": "Orvan port gone",
+    "source_name": "Saga Chat",
+    "source_type": "social_post",
+    "reliability": "4",
+    "pub_date": "2026-09-15",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "RUMOUR",
+        "related_doc_id": "ORV-0016",
+        "detail": "Tier 4 social_post; contradicted by ORV-0016, ORV-0017"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0011",
+    "title": "Orvan growers point to a full wheat store after a dry spring",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2026-04-08",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0014",
+    "title": "New corridor talks to open after Orvan request",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": "1",
+    "pub_date": "2027-02-11",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "CLOCK_EXCLUDED",
+        "related_doc_id": null,
+        "detail": "published 2027-02-11 after as-of 2027-01-25"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0015",
+    "title": "Asgard mediators welcome reported Orvan renewal",
+    "source_name": "Asgard Herald",
+    "source_type": "news",
+    "reliability": "3",
+    "pub_date": "2026-09-09",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "TAINTED",
+        "related_doc_id": "ORV-0043",
+        "detail": "repeats the claim retracted by ORV-0013 (originally ORV-0043)"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0023",
+    "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+    "source_name": "Asgard Herald",
+    "source_type": "news",
+    "reliability": 3,
+    "pub_date": "2026-11-05",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "DUPLICATE_OF",
+        "related_doc_id": "ORV-0031",
+        "detail": "EMPTY_FALLBACK duplicate of ORV-0031"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0025",
+    "title": "Asgard terminal fees rise for the autumn schedule",
+    "source_name": "Cargo Weekly",
+    "source_type": "shipping_update",
+    "reliability": "2",
+    "pub_date": "2026-08-05",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0026",
+    "title": "Sources: every grain ship sunk, Orvan port shut for good",
+    "source_name": "Trade Whisper",
+    "source_type": "blog",
+    "reliability": "4",
+    "pub_date": "2026-09-16",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "RUMOUR",
+        "related_doc_id": "ORV-0016",
+        "detail": "Tier 4 blog; contradicted by ORV-0016, ORV-0017"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0028",
+    "title": "FAMINE FEAR AS ORVAN GRAIN VANISHES",
+    "source_name": "Daily Roar",
+    "source_type": "tabloid",
+    "reliability": "4",
+    "pub_date": "2026-10-05",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "TABLOID",
+        "related_doc_id": null,
+        "detail": "Tier 4 tabloid"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0036",
+    "title": "Trade note: Orvan to Midgard, wheat, January 2027",
+    "source_name": "Cargo Weekly",
+    "source_type": "trade_note",
+    "reliability": "2",
+    "pub_date": "2027-02-22",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "CLOCK_EXCLUDED",
+        "related_doc_id": null,
+        "detail": "published 2027-02-22 after as-of 2027-01-25"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0037",
+    "title": "Tolan's small boat fleet welcomes a stronger season",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2026-07-22",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0038",
+    "title": "Bread prices in Midgard edge up as millers hold margins",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2026-05-14",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0039",
+    "title": "Ravik Rail Link adds two freight paths for the summer",
+    "source_name": "Cargo Weekly",
+    "source_type": "shipping_update",
+    "reliability": "2",
+    "pub_date": "2026-06-10",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0040",
+    "title": "Millers look beyond Orvan as wheat cargoes slip",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2026-10-08",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "DUPLICATE_OF",
+        "related_doc_id": "ORV-0006",
+        "detail": "EXACT duplicate of ORV-0006"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0041",
+    "title": "Spring bookings point to a slow Orvan recovery",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2027-04-09",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "CLOCK_EXCLUDED",
+        "related_doc_id": null,
+        "detail": "published 2027-04-09 after as-of 2027-01-25"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0043",
+    "title": "Orvan grain corridor renewed for a second year",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2026-09-09",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "RETRACTED",
+        "related_doc_id": "ORV-0013",
+        "detail": "retracted by ORV-0013: 'the Corridor Agreement had been renewed'"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0048",
+    "title": "How the Orvan grain corridor worked, and why its ending matters",
+    "source_name": "Harbour Review",
+    "source_type": "explainer",
+    "reliability": "2",
+    "pub_date": "2026-09-12",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "DUPLICATE_OF",
+        "related_doc_id": "ORV-0024",
+        "detail": "TRUNCATED duplicate of ORV-0024"
+      }
+    ]
+  },
+  {
+    "doc_id": "ORV-0049",
+    "title": "Orvan corridor: talks on track, keep the base case",
+    "source_name": "Tide Research",
+    "source_type": "analyst_note",
+    "reliability": "3",
+    "pub_date": "2026-08-25",
+    "event_id": "E5",
+    "reasons": [
+      {
+        "reason": "SUPERSEDED",
+        "related_doc_id": "ORV-0016",
+        "detail": "forecast overtaken by Tier 1 notice ORV-0016 (Corridor Agreement expires with no renewal)"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0021",
+    "title": "Photography exhibition opens at town hall",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2024-08-05",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0022",
+    "title": "Museum acquires antique clock collection",
+    "source_name": "Asgard Herald",
+    "source_type": "news",
+    "reliability": "3",
+    "pub_date": "2024-10-02",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0023",
+    "title": "Solen Energy opens solar park on former depot",
+    "source_name": "Raven Wire",
+    "source_type": "company_statement",
+    "reliability": "2",
+    "pub_date": "2025-11-06",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0024",
+    "title": "Council approves park budget after debate",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2024-03-11",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0025",
+    "title": "Library extends opening hours",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2025-01-23",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0026",
+    "title": "Music festival adds second stage",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2025-07-11",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0027",
+    "title": "Solen Energy sponsors coastal clean-up",
+    "source_name": "Raven Wire",
+    "source_type": "company_statement",
+    "reliability": "2",
+    "pub_date": "2024-11-08",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0028",
+    "title": "Heatwave prompts water safety campaign",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": "1",
+    "pub_date": "2024-07-18",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0029",
+    "title": "Television chef spotted at winter fair",
+    "source_name": "Daily Roar",
+    "source_type": "tabloid",
+    "reliability": "4",
+    "pub_date": "2024-12-19",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      },
+      {
+        "reason": "TABLOID",
+        "related_doc_id": null,
+        "detail": "Tier 4 tabloid"
+      }
+    ]
+  },
+  {
+    "doc_id": "WLD-0030",
+    "title": "Dance troupe announces winter tour",
+    "source_name": "Asgard Herald",
+    "source_type": "news",
+    "reliability": "3",
+    "pub_date": "2024-11-29",
+    "event_id": "NONE",
+    "reasons": [
+      {
+        "reason": "UNRELATED_EVENT",
+        "related_doc_id": null,
+        "detail": "EVENT_ID NONE != E5"
+      }
+    ]
+  }
+]

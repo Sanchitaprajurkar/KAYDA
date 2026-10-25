@@ -1,0 +1,149 @@
+{
+  "doc_id": "ATL-0006",
+  "file_name": "ATL-0006.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ATL-0006.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "ATL-0006",
+    "event_id": "NONE",
+    "title": "Country profile: Ravik",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-15",
+    "pub_time": "11:45",
+    "country": "Ravik",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0006.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ATL-0006",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: NONE",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Country profile: Ravik",
+      "char_count": 29,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Realm Trade Ministry",
+      "char_count": 33,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: atlas",
+      "char_count": 18,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 1",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2024-01-15",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 11:45",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Ravik",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: general",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Country profile: Ravik",
+      "char_count": 22,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] Ravik is a land-bridge neighbour that connects the eastern and western parts of the region by rail and road. Its economy depends heavily on transit traffic, warehousing and support services for freight moving across its territory.",
+      "char_count": 235,
+      "word_count": 37
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] The main exports are rail and road transit services and wheat. The country imports energy and manufactured goods. Ravik Rail Link is the principal land bridge, with rail and road routes running through the capital region.",
+      "char_count": 226,
+      "word_count": 37
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] Vantro Trading, a commodity trader, is the best-known firm. The country also has repair yards, truck stops and customs facilities along the main transit routes, and a grain-growing sector in the western plains.",
+      "char_count": 215,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 17,
+      "page_number": null,
+      "raw_text": "[P4] Customs facilities at both ends of the land bridge process transit traffic. Warehouses and repair yards are clustered along the main road, with a parallel rail line for bulk goods.",
+      "char_count": 185,
+      "word_count": 31
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0006\n\nEVENT_ID: NONE\n\nTITLE: Country profile: Ravik\n\nSOURCE_NAME: Realm Trade Ministry\n\nSOURCE_TYPE: atlas\n\nRELIABILITY: 1\n\nPUB_DATE: 2024-01-15\n\nPUB_TIME: 11:45\n\nCOUNTRY: Ravik\n\nSECTOR: general\n\nLANGUAGE: en\n\n---\n\nCountry profile: Ravik\n\n[P1] Ravik is a land-bridge neighbour that connects the eastern and western parts of the region by rail and road. Its economy depends heavily on transit traffic, warehousing and support services for freight moving across its territory.\n\n[P2] The main exports are rail and road transit services and wheat. The country imports energy and manufactured goods. Ravik Rail Link is the principal land bridge, with rail and road routes running through the capital region.\n\n[P3] Vantro Trading, a commodity trader, is the best-known firm. The country also has repair yards, truck stops and customs facilities along the main transit routes, and a grain-growing sector in the western plains.\n\n[P4] Customs facilities at both ends of the land bridge process transit traffic. Warehouses and repair yards are clustered along the main road, with a parallel rail line for bulk goods.",
+  "total_paragraphs": 17,
+  "total_pages": null,
+  "resolution": {
+    "aliases": [],
+    "removed_paragraphs": []
+  }
+}

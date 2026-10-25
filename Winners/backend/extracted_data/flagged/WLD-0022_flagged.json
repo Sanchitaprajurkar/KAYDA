@@ -1,0 +1,27 @@
+[
+  {
+    "fact_id": "2ab3da4a",
+    "category": "OTHER",
+    "subject": "museum exhibition",
+    "statement": "The museum plans to open a small exhibition in the spring.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0022",
+      "file_name": "WLD-0022.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The museum plans to open a small exhibition in the spring."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Statement implies certainty ('plans to open') without hedging.",
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  }
+]

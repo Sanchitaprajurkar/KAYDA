@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Solvar",
+    "type": "NATION",
+    "aliases": [],
+    "description": "An energy and grain exporter with coasts on the West Sea and the northern ocean.",
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ATL-0015 EVENT_ID: NONE TITLE: Country profile: Solvar SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELI..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms. The gr..."
+      }
+    ]
+  },
+  {
+    "name": "West Sea",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": "A body of water along the coast of Solvar.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      }
+    ]
+  },
+  {
+    "name": "northern ocean",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": "A body of water along the coast of Solvar.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      }
+    ]
+  },
+  {
+    "name": "LNG",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "Liquefied natural gas, a main export of Solvar.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      }
+    ]
+  },
+  {
+    "name": "LPG",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "Liquefied petroleum gas, a main export of Solvar.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      }
+    ]
+  },
+  {
+    "name": "maize",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "A grain produced and exported by Solvar.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      }
+    ]
+  },
+  {
+    "name": "soya beans",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": "A grain produced and exported by Solvar.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG ..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      }
+    ]
+  },
+  {
+    "name": "Solvar Gas Terminal",
+    "type": "PORT",
+    "aliases": [],
+    "description": "The principal energy export facility in Solvar.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      }
+    ]
+  },
+  {
+    "name": "Solen Energy",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An LNG producer in Solvar.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms. The gr..."
+      }
+    ]
+  },
+  {
+    "name": "Brightwave Shipping",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An LNG and tanker carrier in Solvar.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms. The gr..."
+      }
+    ]
+  }
+]

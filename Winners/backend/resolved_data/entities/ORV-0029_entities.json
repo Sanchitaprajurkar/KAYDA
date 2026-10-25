@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+      }
+    ]
+  },
+  {
+    "name": "Asgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+      },
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Asgard..."
+      }
+    ]
+  },
+  {
+    "name": "maize",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Trade note: Orvan to Asgard, maize, July to December 2026..."
+      },
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 10,
+        "text_snippet": "SECTOR: Wheat..."
+      }
+    ]
+  }
+]

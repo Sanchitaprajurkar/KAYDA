@@ -1,0 +1,77 @@
+[
+  {
+    "fact_id": "f4d0fa78",
+    "category": "TRADE_VOLUME",
+    "subject": "sea routes",
+    "statement": "On our numbers, the four main sea routes could lose half to three-fifths of their value in the fourth quarter.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "On our numbers, the four main sea routes could lose half to three-fifths of their value in the fourth quarter."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a past event rather than a projection.",
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "df4927a7",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir wheat sales",
+    "statement": "Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a past event rather than a projection.",
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "1f3f2742",
+    "category": "TRADE_VOLUME",
+    "subject": "rail through Ravik",
+    "statement": "The offsets are real but limited. Rail through Ravik may add about 54% in volume on a base of USD 25M a month.",
+    "date_mentioned": null,
+    "numeric_value": 54.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Rail through Ravik may add about 54% in volume on a base of USD 25M a month."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The numeric value is presented as a definitive figure rather than a projection.",
+      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+    ]
+  }
+]

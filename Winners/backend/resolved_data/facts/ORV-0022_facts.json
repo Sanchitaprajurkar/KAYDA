@@ -1,0 +1,96 @@
+[
+  {
+    "fact_id": "09bcfbb6",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan wheat and maize arrivals",
+    "statement": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "12dcfa9d",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan's share of Midgard's grain imports",
+    "statement": "Even so, the direction is clear: Orvan's share of Midgard's grain imports has fallen, while Vanir and rail deliveries have taken part of the gap.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 18,
+      "text_snippet": "Even so, the direction is clear: Orvan's share of Midgard's grain imports has fallen, while Vanir and rail deliveries have taken part of the gap."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4fe11068",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan port index",
+    "statement": "The Orvan port index for December is expected to be about 30, according to people who have seen the monthly return.",
+    "date_mentioned": null,
+    "numeric_value": 30.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The Orvan port index for December is expected to be about 30, according to people who have seen the monthly return."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value 30.0 is not explicitly stated in the paragraph; it is described as 'about 30'.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "8b1bd75a",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan share in full return",
+    "statement": "The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0022",
+      "file_name": "ORV-0022.docx",
+      "page_number": null,
+      "paragraph_index": 19,
+      "text_snippet": "The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is a projection, but it does not explicitly state that it is expected; it uses 'is expected to show' which implies a future event.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

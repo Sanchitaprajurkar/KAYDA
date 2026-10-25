@@ -1,0 +1,114 @@
+[
+  {
+    "fact_id": "87edfd3b",
+    "category": "TRADE_VOLUME",
+    "subject": "Utgard imports",
+    "statement": "Utgard... relies on imported energy, grain and copper ore to keep its plants and population supplied.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Utgard is a large factory economy and importer on the East Sea. It assembles computer chips and consumer goods and relies on imported energy, grain and copper ore to keep its plants and population supplied."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c5aa50a4",
+    "category": "TRADE_VOLUME",
+    "subject": "Utgard exports and imports",
+    "statement": "The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The country's main exports are computer chips and consumer goods. Its main imports are LNG, grain and copper ore."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e07d52e8",
+    "category": "ROUTE_STATUS",
+    "subject": "Utgard Terminal",
+    "statement": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4f544e38",
+    "category": "OTHER",
+    "subject": "Wolf Logistics",
+    "statement": "Wolf Logistics, a freight forwarder, is the best-known transport firm.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Wolf Logistics, a freight forwarder, is the best-known transport firm."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f044a551",
+    "category": "ROUTE_STATUS",
+    "subject": "rail freight line",
+    "statement": "A rail freight line carries containers to inland depots, and several supplier parks have grown up around the larger plants.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "A rail freight line carries containers to inland depots, and several supplier parks have grown up around the larger plants."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶5, not cited ¶4"
+    ]
+  }
+]

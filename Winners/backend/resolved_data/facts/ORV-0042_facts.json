@@ -1,0 +1,97 @@
+[
+  {
+    "fact_id": "1a3e6c01",
+    "category": "TRADE_VOLUME",
+    "subject": "Tolan Harbour",
+    "statement": "Anchor Marine says Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Anchor Marine says Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "973e45aa",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan sea route",
+    "statement": "It expects the pattern to continue while Orvan's sea route is disrupted.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "It expects the pattern to continue while Orvan's sea route is disrupted."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.85,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Assertion status corrected REPORTED -> PROJECTED"
+    ]
+  },
+  {
+    "fact_id": "69fe78aa",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir parcels",
+    "statement": "The company has not raised its fees for the additional shift.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "The company has not raised its fees for the additional shift."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶5"
+    ]
+  },
+  {
+    "fact_id": "250cd39a",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Tolan Harbour storage yard",
+    "statement": "It says the port's storage yard is fuller than usual, though not beyond capacity.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0042",
+      "file_name": "ORV-0042.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "It says the port's storage yard is fuller than usual, though not beyond capacity."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  }
+]

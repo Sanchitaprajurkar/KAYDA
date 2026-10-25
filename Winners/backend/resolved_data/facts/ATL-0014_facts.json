@@ -1,0 +1,134 @@
+[
+  {
+    "fact_id": "b74349bc",
+    "category": "ROUTE_STATUS",
+    "subject": "Ymir Locks",
+    "statement": "Ymir Locks joins the West Sea and the East Sea, and Bifrost Strait joins the East Sea and the Inner Sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "Ymir Locks joins the West Sea and the East Sea, and Bifrost Strait joins the East Sea and the Inner Sea."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a059906a",
+    "category": "ROUTE_STATUS",
+    "subject": "Bifrost Strait",
+    "statement": "Bifrost Strait is a deep-water passage used by container ships, tankers and bulk carriers, with a pilotage service and a traffic separation scheme.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "Bifrost Strait is a deep-water passage used by container ships, tankers and bulk carriers, with a pilotage service and a traffic separation scheme."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "97832100",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "Ravik Rail Link combines a rail line and a parallel road.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Ravik Rail Link combines a rail line and a parallel road."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d61140c1",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "It carries transit freight, containers and bulk goods, and has customs facilities at both ends.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "It carries transit freight, containers and bulk goods, and has customs facilities at both ends."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "11dd1249",
+    "category": "ROUTE_STATUS",
+    "subject": "Southern Sea path",
+    "statement": "The Southern Sea path is an open-water route around the southern coast; it is longer than the strait and is used by some carriers in normal times.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "The Southern Sea path is an open-water route around the southern coast; it is longer than the strait and is used by some carriers in normal times."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "74a1701a",
+    "category": "ROUTE_STATUS",
+    "subject": "Cargo routes",
+    "statement": "Cargoes do not switch between the locks, the strait and the land bridge within the same route, and the Atlas lists them separately so that readers can identify which path a document is describing.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0014",
+      "file_name": "ATL-0014.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Cargoes do not switch between the locks, the strait and the land bridge within the same route, and the Atlas lists them separately so that readers can identify which path a document is describing."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

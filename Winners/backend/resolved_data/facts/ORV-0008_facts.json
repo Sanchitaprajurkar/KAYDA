@@ -1,0 +1,156 @@
+[
+  {
+    "fact_id": "76e06cf6",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Orvan Grain Port is holding vessels outside the harbour as a dock strike that began on 14 September continues.",
+    "date_mentioned": "14 September",
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Orvan Grain Port is holding vessels outside the harbour as a dock strike that began on 14 September continues."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "723810d8",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Several bulk carriers are waiting in the roads, according to port agents.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Several bulk carriers are waiting in the roads, according to port agents."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "77842e9c",
+    "category": "TRADE_VOLUME",
+    "subject": "Hammer Freight",
+    "statement": "Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "Hammer Freight, a bulk operator, says it has moved ships to Vanir for wheat cargoes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "235c748b",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The port authority says it cannot estimate when normal working will resume.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "The port authority says it cannot estimate when normal working will resume."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "810933b7",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were already on the berth list when the strike began.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were already on the berth list when the strike began."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e313854d",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Some buyers have begun to ask for rail alternatives.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "Some buyers have begun to ask for rail alternatives."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "887579f5",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Buyers in Midgard and Tolan",
+    "statement": "Buyers in Midgard and Tolan have been told to expect longer delays.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "Buyers in Midgard and Tolan have been told to expect longer delays."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

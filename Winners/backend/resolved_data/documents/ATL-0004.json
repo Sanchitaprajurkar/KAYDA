@@ -1,0 +1,65 @@
+{
+  "doc_id": "ATL-0004",
+  "file_name": "ATL-0004.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ATL-0004.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ATL-0004",
+    "event_id": "NONE",
+    "title": "Country profile: Dorin",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-15",
+    "pub_time": "11:00",
+    "country": "Dorin",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0004.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ATL-0004 EVENT_ID: NONE TITLE: Country profile: Dorin SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 11:00 COUNTRY: Dorin SECTOR: general LANGUAGE: en --- Country profile: Dorin",
+      "char_count": 237,
+      "word_count": 30
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Dorin is a specialty-metal producer on the East Sea. Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region, and its economy is closely tied to a small number of large sites.",
+      "char_count": 230,
+      "word_count": 40
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The main exports are specialty metals and copper ore. The country imports machinery and food. Metal shipments leave through commercial terminals on the coast, with road and rail links running from the mining districts to the water.",
+      "char_count": 236,
+      "word_count": 38
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Axe Metals, a specialty-metal miner, is the best-known firm. The country also has engineering and maintenance businesses that serve the mines, and a smaller agricultural sector in the valleys away from the pits.",
+      "char_count": 216,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] Mining districts are connected to the coast by a haul road and a short rail line. Processing plants sit near the pits, and the valleys support mixed farming.",
+      "char_count": 162,
+      "word_count": 29
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0004 EVENT_ID: NONE TITLE: Country profile: Dorin SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 11:00 COUNTRY: Dorin SECTOR: general LANGUAGE: en --- Country profile: Dorin\n\n[P1] Dorin is a specialty-metal producer on the East Sea. Its mines and processing plants supply specialty metals and copper ore to industrial buyers in the region, and its economy is closely tied to a small number of large sites.\n\n[P2] The main exports are specialty metals and copper ore. The country imports machinery and food. Metal shipments leave through commercial terminals on the coast, with road and rail links running from the mining districts to the water.\n\n[P3] Axe Metals, a specialty-metal miner, is the best-known firm. The country also has engineering and maintenance businesses that serve the mines, and a smaller agricultural sector in the valleys away from the pits.\n\n[P4] Mining districts are connected to the coast by a haul road and a short rail line. Processing plants sit near the pits, and the valleys support mixed farming.",
+  "total_paragraphs": 5,
+  "total_pages": 1,
+  "resolution": {
+    "aliases": [],
+    "removed_paragraphs": []
+  }
+}

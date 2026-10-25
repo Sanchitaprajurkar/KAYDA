@@ -1,0 +1,272 @@
+[
+  {
+    "fact_id": "f4d0fa78",
+    "category": "TRADE_VOLUME",
+    "subject": "sea routes",
+    "statement": "On our numbers, the four main sea routes could lose half to three-fifths of their value in the fourth quarter.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "On our numbers, the four main sea routes could lose half to three-fifths of their value in the fourth quarter."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a past event rather than a projection.",
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "df4927a7",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir wheat sales",
+    "statement": "Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 6,
+      "text_snippet": "Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a past event rather than a projection.",
+      "Citation repaired: quote found in \u00b66, not cited \u00b65"
+    ]
+  },
+  {
+    "fact_id": "1f3f2742",
+    "category": "TRADE_VOLUME",
+    "subject": "rail through Ravik",
+    "statement": "The offsets are real but limited. Rail through Ravik may add about 54% in volume on a base of USD 25M a month.",
+    "date_mentioned": null,
+    "numeric_value": 54.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0007",
+      "file_name": "ORV-0007.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Rail through Ravik may add about 54% in volume on a base of USD 25M a month."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The numeric value is presented as a definitive figure rather than a projection.",
+      "Citation repaired: quote found in \u00b65, not cited \u00b64"
+    ]
+  },
+  {
+    "fact_id": "57ee4829",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Two grain berths are closed.",
+    "date_mentioned": null,
+    "numeric_value": 2.0,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0008",
+      "file_name": "ORV-0008.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Two grain berths are closed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. Numeric value 2.0 is not explicitly stated in the paragraph."
+    ]
+  },
+  {
+    "fact_id": "1fd1f486",
+    "category": "RETRACTION_NOTICE",
+    "subject": "Orvan corridor agreement",
+    "statement": "Correction: Orvan corridor agreement was not renewed",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0013",
+      "file_name": "ORV-0013.txt",
+      "page_number": null,
+      "paragraph_index": 1,
+      "text_snippet": "Correction: Orvan corridor agreement was not renewed"
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "CORRECTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. The statement does not mention that the agreement was not renewed; it only states that it was a correction."
+    ]
+  },
+  {
+    "fact_id": "8eda38bb",
+    "category": "DISRUPTION_STATUS",
+    "subject": "shipping arrangement",
+    "statement": "That made it fragile: when the talks failed, there was no fallback rule to keep the ships moving, and the strike turned a political lapse into an operational one.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0024",
+      "file_name": "ORV-0024.pdf",
+      "page_number": 1,
+      "paragraph_index": 9,
+      "text_snippet": "That made it fragile: when the talks failed, there was no fallback rule to keep the ships moving, and the strike turned a political lapse into an operational one."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "ALLEGED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. The statement is not a confirmed fact; it is presented as an explanation of the situation rather than a definitive statement.",
+      "Citation repaired: quote found in \u00b69, not cited \u00b68",
+      "Assertion status corrected CONFIRMED -> ALLEGED"
+    ]
+  },
+  {
+    "fact_id": "2ab3da4a",
+    "category": "OTHER",
+    "subject": "museum exhibition",
+    "statement": "The museum plans to open a small exhibition in the spring.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0022",
+      "file_name": "WLD-0022.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The museum plans to open a small exhibition in the spring."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.57,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Statement implies certainty ('plans to open') without hedging.",
+      "Citation repaired: quote found in \u00b64, not cited \u00b63"
+    ]
+  },
+  {
+    "fact_id": "e8118fe6",
+    "category": "OTHER",
+    "subject": "Solen Energy solar park construction",
+    "statement": "The company said the project took eighteen months to complete and involved cleaning up contaminated soil.",
+    "date_mentioned": null,
+    "numeric_value": 18.0,
+    "unit": "months",
+    "source_ref": {
+      "doc_id": "WLD-0023",
+      "file_name": "WLD-0023.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The company said the project took eighteen months to complete and involved cleaning up contaminated soil."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.6,
+    "assertion_status": "REPORTED",
+    "evidence_status": "UNCERTAIN",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value of 18.0 months is not explicitly stated in the paragraph."
+    ]
+  },
+  {
+    "fact_id": "10e19fc0",
+    "category": "OTHER",
+    "subject": "Solen Energy solar park investment",
+    "statement": "A spokesperson said the park is part of a wider investment in renewable power and will be monitored for a year before any decision on a second site.",
+    "date_mentioned": null,
+    "numeric_value": 1.0,
+    "unit": "year",
+    "source_ref": {
+      "doc_id": "WLD-0023",
+      "file_name": "WLD-0023.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "A spokesperson said the park is part of a wider investment in renewable power and will be monitored for a year before any decision on a second site."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 1 is not stated in the source paragraph (calculated or invented)"
+    ]
+  },
+  {
+    "fact_id": "d5066833",
+    "category": "OTHER",
+    "subject": "Library opening hours",
+    "statement": "The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month.",
+    "date_mentioned": null,
+    "numeric_value": 20.0,
+    "unit": "hours",
+    "source_ref": {
+      "doc_id": "WLD-0025",
+      "file_name": "WLD-0025.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 20 is not stated in the source paragraph (calculated or invented)"
+    ]
+  },
+  {
+    "fact_id": "8a105617",
+    "category": "OTHER",
+    "subject": "Library services",
+    "statement": "A quiet study area has been added on the first floor, and the cafe will remain open until seven.",
+    "date_mentioned": null,
+    "numeric_value": 19.0,
+    "unit": "hours",
+    "source_ref": {
+      "doc_id": "WLD-0025",
+      "file_name": "WLD-0025.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "A quiet study area has been added on the first floor, and the cafe will remain open until seven."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Numeric value 19 is not stated in the source paragraph (calculated or invented)"
+    ]
+  }
+]
