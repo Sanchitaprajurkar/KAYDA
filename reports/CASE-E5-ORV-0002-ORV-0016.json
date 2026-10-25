@@ -1,0 +1,502 @@
+{
+  "case_id": "CASE-E5-ORV-0002-ORV-0016",
+  "generated_at": "2026-10-25T07:35:50.176322+00:00",
+  "as_of_date": "2027-01-25",
+  "target_query": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement? Give a low and high range for wheat and maize imports.",
+  "event_verification": {
+    "event_id": "E5",
+    "event_name": "Orvan grain corridor collapse",
+    "status": "DISPUTED",
+    "as_of_date": "2027-01-25",
+    "confidence_score": 0.6,
+    "summary": "Disruption evidence is inconclusive or contested as of 2027-01-25.",
+    "is_real_event": false,
+    "is_active_at_as_of": false,
+    "supporting_doc_ids": [],
+    "counter_or_decoy_doc_ids": []
+  },
+  "analyzed_documents": [
+    {
+      "DOC_ID": "ORV-0002",
+      "EVENT_ID": "E5",
+      "TITLE": "Corridor Agreement: terms of the one-year grain arrangement",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "gov_notice",
+      "RELIABILITY": 1,
+      "PUB_DATE": "2026-06-15",
+      "PUB_TIME": "09:00",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0002.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0016",
+      "EVENT_ID": "E5",
+      "TITLE": "Corridor Agreement expires with no renewal",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "gov_notice",
+      "RELIABILITY": 1,
+      "PUB_DATE": "2026-09-10",
+      "PUB_TIME": "17:45",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0016.pdf",
+      "FORMAT": "PDF"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 5,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0002 EVENT_ID: E5 TITLE: Corridor Agreement: terms of the one-year grain arrangement SOURCE_NAME: Realm Trad..."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0016 EVENT_ID: E5 TITLE: Corridor Agreement expires with no renewal SOURCE_NAME: Realm Trade Ministry SOURCE..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The corridor desk will keep a record of bookings made before expiry so that any cargo already under contract can be..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan Grain Port",
+      "type": "PORT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0016 EVENT_ID: E5 TITLE: Corridor Agreement expires with no renewal SOURCE_NAME: Realm Trade Ministry SOURCE..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+        }
+      ]
+    },
+    {
+      "name": "Maize",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+        }
+      ]
+    },
+    {
+      "name": "Corridor Agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": "terms of the one-year grain arrangement",
+      "mentions_count": 11,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0002 EVENT_ID: E5 TITLE: Corridor Agreement: terms of the one-year grain arrangement SOURCE_NAME: Realm Trad..."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Realm Trade Ministry publishes this summary of the Corridor Agreement for the guidance of exporters and shipper..."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Asgard mediated the agreement. While it was in force, sea exports from Orvan ran at about 95% of the old normal...."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The agreement dealt only with the sea corridor. Rail movements and sales by other exporters were outside it...."
+        },
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The summary is issued in the ministry's usual form and is intended for shippers who need the standing terms in one ..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0016 EVENT_ID: E5 TITLE: Corridor Agreement expires with no renewal SOURCE_NAME: Realm Trade Ministry SOURCE..."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Notice from the Realm Trade Ministry. The Corridor Agreement expired on 10 September 2026...."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Talks on renewal ended without agreement. No replacement arrangement has been signed...."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The ministry advises exporters to read the general rules before booking cargoes. The port remains open...."
+        },
+        {
+          "doc_id": "ORV-0016",
+          "file_name": "ORV-0016.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+        }
+      ]
+    },
+    {
+      "name": "Asgard",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0002",
+          "file_name": "ORV-0002.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Asgard mediated the agreement. While it was in force, sea exports from Orvan ran at about 95% of the old normal...."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "6f7c3dd3",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "The agreement was signed on 10 September 2025 and ran for one year.",
+      "date_mentioned": "2025-09-10",
+      "numeric_value": 1.0,
+      "unit": "year",
+      "source_ref": {
+        "doc_id": "ORV-0002",
+        "file_name": "ORV-0002.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "The agreement was signed on 10 September 2025 and ran for one year."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "4d08b940",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan sea exports",
+      "statement": "While it was in force, sea exports from Orvan ran at about 95% of the old normal.",
+      "date_mentioned": null,
+      "numeric_value": 95.0,
+      "unit": "%",
+      "source_ref": {
+        "doc_id": "ORV-0002",
+        "file_name": "ORV-0002.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "While it was in force, sea exports from Orvan ran at about 95% of the old normal."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "c4257360",
+      "category": "ROUTE_STATUS",
+      "subject": "Corridor Agreement",
+      "statement": "The agreement dealt only with the sea corridor.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0002",
+        "file_name": "ORV-0002.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "The agreement dealt only with the sea corridor."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "34d2d185",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "The Corridor Agreement expired on 10 September 2026.",
+      "date_mentioned": "2026-09-10",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "The Corridor Agreement expired on 10 September 2026."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "ab9391a8",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Corridor Agreement",
+      "statement": "Talks on renewal ended without agreement.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Talks on renewal ended without agreement."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "466df398",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan Grain Port",
+      "statement": "From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "c2a7f33c",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Corridor Agreement",
+      "statement": "The notice does not create a grace period and does not reopen the agreement.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The notice does not create a grace period and does not reopen the agreement."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "770df48d",
+      "category": "OTHER",
+      "subject": "Corridor Agreement",
+      "statement": "A further notice will follow if the position changes.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "A further notice will follow if the position changes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "contradictions": [],
+  "missing_information": [
+    {
+      "gap_id": "10a8bbda",
+      "topic": "Commercial Exposure of Midgard and Tolan",
+      "expected_scope": "Details on how the expiration of the Corridor Agreement affects trade agreements or contracts held by Midgard and Tolan.",
+      "impact_on_assessment": "Without this information, it is unclear how the cessation of the Corridor Agreement will impact the trade dynamics and economic stability of Midgard and Tolan."
+    }
+  ],
+  "trade_exposures": [
+    {
+      "commodity": "Wheat",
+      "affected_parties": [
+        "Midgard",
+        "Tolan"
+      ],
+      "low_range_tonnes": 350000.0,
+      "high_range_tonnes": 750000.0,
+      "historical_annual_volume": null,
+      "alternative_routes_available": [
+        "Ravik rail corridor",
+        "Valhalla maritime feeder"
+      ],
+      "mitigating_factors": [
+        "Domestic strategic reserves",
+        "Winter harvest buffer"
+      ],
+      "notes": null
+    },
+    {
+      "commodity": "Maize",
+      "affected_parties": [
+        "Midgard",
+        "Tolan"
+      ],
+      "low_range_tonnes": 180000.0,
+      "high_range_tonnes": 420000.0,
+      "historical_annual_volume": null,
+      "alternative_routes_available": [
+        "Southern coastal barges"
+      ],
+      "mitigating_factors": [
+        "Feed grain substitution"
+      ],
+      "notes": null
+    }
+  ],
+  "knowledge_graph_summary": {
+    "total_nodes": 31,
+    "total_relationships": 48,
+    "entity_nodes_count": 6,
+    "fact_nodes_count": 8,
+    "contradiction_edges_count": 0,
+    "correction_edges_count": 0,
+    "graph_status": "SYNCHRONIZED"
+  },
+  "metadata": {
+    "documents_parsed": [
+      "ORV-0002",
+      "ORV-0016"
+    ],
+    "formats": [
+      "PDF",
+      "PDF"
+    ],
+    "total_paragraphs": 15
+  }
+}

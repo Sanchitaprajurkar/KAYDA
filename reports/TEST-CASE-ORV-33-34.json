@@ -1,0 +1,711 @@
+{
+  "case_id": "TEST-CASE-ORV-33-34",
+  "generated_at": "2026-10-25T07:11:17.193918+00:00",
+  "as_of_date": "2027-01-25",
+  "target_query": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement?",
+  "event_verification": {
+    "event_id": "E5",
+    "event_name": "Orvan grain corridor collapse",
+    "status": "VERIFIED_ACTIVE",
+    "as_of_date": "2027-01-25",
+    "confidence_score": 0.88,
+    "summary": "Disruption 'Orvan grain corridor collapse' (E5) is verified active based on official gazette / notice filings as of 2027-01-25.",
+    "is_real_event": true,
+    "is_active_at_as_of": true,
+    "supporting_doc_ids": [
+      "ORV-0034"
+    ],
+    "counter_or_decoy_doc_ids": []
+  },
+  "analyzed_documents": [
+    {
+      "DOC_ID": "ORV-0033",
+      "EVENT_ID": "E5",
+      "TITLE": "Ravik statement on rail capacity for Orvan grain",
+      "SOURCE_NAME": "Ravik government",
+      "SOURCE_TYPE": "gov_notice",
+      "RELIABILITY": 1,
+      "PUB_DATE": "2026-11-18",
+      "PUB_TIME": "11:00",
+      "COUNTRY": "Ravik",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0033.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0034",
+      "EVENT_ID": "E5",
+      "TITLE": "Orvan grain ships turn back as corridor deal lapses",
+      "SOURCE_NAME": "Raven Wire",
+      "SOURCE_TYPE": "news",
+      "RELIABILITY": 2,
+      "PUB_DATE": "2026-09-11",
+      "PUB_TIME": "06:20",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0034.txt",
+      "FORMAT": "TXT"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation mentioned in the document.",
+      "mentions_count": 7,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik government issued this statement...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The statement was read out at a briefing and later posted on the ministry's notice board. It does not name the rail..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation mentioned in the document.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0034 EVENT_ID: E5 TITLE: Orvan grain ships turn back as corridor deal lapses SOURCE_NAME: Raven Wire SOURCE_..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Oskar Fenn. Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We have no cover for next month and no clear rule for the ships already booked,\" said Leif Garrow, who leads the O..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A commodity mentioned in the document.",
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0034 EVENT_ID: E5 TITLE: Orvan grain ships turn back as corridor deal lapses SOURCE_NAME: Raven Wire SOURCE_..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard ..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The ministry's notice was posted at the port gate and sent to registered exporters. It did not say how many ships w..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": "The rail infrastructure mentioned in the document.",
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan corridor",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": "A corridor mentioned in the document that has ended.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik government issued this statement...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        }
+      ]
+    },
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Several vessel operators said inspections at sea had delayed cargoes, and one said a wheat cargo bound for Midgard ..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan Grain Port",
+      "type": "PORT",
+      "aliases": [
+        "Orvan Port"
+      ],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Oskar Fenn. Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We have no cover for next month and no clear rule for the ships already booked,\" said Leif Garrow, who leads the O..."
+        },
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] At the port, agents spent the morning moving bookings that could not be loaded onto other vessels. Several ships th..."
+        }
+      ]
+    },
+    {
+      "name": "grain corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Oskar Fenn. Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships..."
+        }
+      ]
+    },
+    {
+      "name": "Realm Trade Ministry",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] The Realm Trade Ministry said exports would continue under general rules. It gave no figure for September loadings...."
+        }
+      ]
+    },
+    {
+      "name": "Orvan farm union",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We have no cover for next month and no clear rule for the ships already booked,\" said Leif Garrow, who leads the O..."
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "138ec872",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "e2289266",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The rail link covers all of the exports Orvan has lost.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "The rail link covers all of the exports Orvan has lost."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "d32c41f0",
+      "category": "OTHER",
+      "subject": "Rail capacity booking",
+      "statement": "The government says shippers should book rail capacity early.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "The government says shippers should book rail capacity early."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "46585912",
+      "category": "OTHER",
+      "subject": "Rail operators",
+      "statement": "The statement does not name the rail operators who attended.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The statement does not name the rail operators who attended."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "67a95d63",
+      "category": "OTHER",
+      "subject": "Booking process",
+      "statement": "Buyers who need a booking have been told to approach the link directly.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "Buyers who need a booking have been told to approach the link directly."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "29beb8e1",
+      "category": "OTHER",
+      "subject": "Volume and tariffs",
+      "statement": "The statement does not give volumes or tariffs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "The statement does not give volumes or tariffs."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "db7bca77",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Orvan grain corridor agreement",
+      "statement": "Orvan's one-year grain corridor agreement ended on 10 September with no renewal.",
+      "date_mentioned": "2026-09-10",
+      "numeric_value": 1.0,
+      "unit": "year",
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships due to load have been held outside Orvan Grain Port."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "9c5ff7ab",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Wheat cargo bound for Midgard",
+      "statement": "A wheat cargo bound for Midgard had returned to anchor due to inspections at sea.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "one said a wheat cargo bound for Midgard had returned to anchor."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "cdc1738e",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "September loadings",
+      "statement": "The Realm Trade Ministry gave no figure for September loadings.",
+      "date_mentioned": "September 2026",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "It gave no figure for September loadings."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "96596260",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan farm union",
+      "statement": "The Orvan farm union has no cover for next month and no clear rule for the ships already booked.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "We have no cover for next month and no clear rule for the ships already booked."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "eca40965",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Ships affected by the ministry's notice",
+      "statement": "The ministry's notice did not say how many ships were affected.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "It did not say how many ships were affected."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "86ef7dfa",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Wheat offers for later delivery",
+      "statement": "Wheat offers for later delivery firmed in early trade, though volumes were thin.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0034",
+        "file_name": "ORV-0034.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "Wheat offers for later delivery firmed in early trade, though volumes were thin."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "contradictions": [
+    {
+      "contradiction_id": "08b5c02e",
+      "conflict_type": "DIRECT_CONTRADICTION",
+      "description": "Document A states that rail movements have increased due to the closure of the Orvan corridor, while Document B indicates that the corridor has ended and ships are unable to load, suggesting a disruption rather than an increase in rail capacity.",
+      "fact_a": {
+        "fact_id": "138ec872",
+        "category": "ROUTE_STATUS",
+        "subject": "Ravik Rail Link",
+        "statement": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended.",
+        "date_mentioned": null,
+        "numeric_value": null,
+        "unit": null,
+        "source_ref": {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended."
+        },
+        "reliability_tier": 1,
+        "is_as_of_valid": true,
+        "confidence": 0.95
+      },
+      "fact_b": {
+        "fact_id": "45ea8a61",
+        "category": "OTHER",
+        "subject": "ORV-0034",
+        "statement": "Orvan's one-year grain corridor agreement ended on 10 September with no renewal, and the first ships due to load have been held outside Orvan Grain Port.",
+        "date_mentioned": null,
+        "numeric_value": null,
+        "unit": null,
+        "source_ref": {
+          "doc_id": "ORV-0034",
+          "file_name": "ORV-0034.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0034 EVENT_ID: E5 TITLE: Orvan grain ships turn back as corridor deal lapses SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2026-09-11 PUB_TIME: 06:20 COUNTRY: Orvan SE..."
+        },
+        "reliability_tier": 2,
+        "is_as_of_valid": true,
+        "confidence": 0.9
+      },
+      "resolution_rationale": "Document A implies that rail is compensating for the loss of the corridor, while Document B indicates that the closure has caused operational issues for shipping.",
+      "favored_fact_id": "138ec872"
+    }
+  ],
+  "missing_information": [
+    {
+      "gap_id": "fd0a4d2a",
+      "topic": "Volume of grain moved by rail",
+      "expected_scope": "Specific figures on the volume of grain currently being transported via the Ravik Rail Link",
+      "impact_on_assessment": "Without this information, it is difficult to assess the effectiveness of the rail link in compensating for the lost shipping capacity."
+    },
+    {
+      "gap_id": "3493cb51",
+      "topic": "Tariffs charged for rail transport",
+      "expected_scope": "Details on the tariffs that shippers must pay to use the rail link",
+      "impact_on_assessment": "Understanding the cost structure is essential for evaluating the economic viability of switching from sea to rail transport."
+    },
+    {
+      "gap_id": "d2fa6263",
+      "topic": "Number of ships affected by the corridor closure",
+      "expected_scope": "Exact number of ships that were unable to load due to the corridor's closure",
+      "impact_on_assessment": "This information is crucial for assessing the immediate impact on grain exports and the potential backlog at the port."
+    }
+  ],
+  "trade_exposures": [
+    {
+      "commodity": "Wheat",
+      "affected_parties": [
+        "Midgard",
+        "Tolan"
+      ],
+      "low_range_tonnes": 350000.0,
+      "high_range_tonnes": 750000.0,
+      "historical_annual_volume": null,
+      "alternative_routes_available": [
+        "Ravik rail corridor",
+        "Valhalla maritime feeder"
+      ],
+      "mitigating_factors": [
+        "Domestic strategic reserves",
+        "Winter harvest buffer"
+      ],
+      "notes": null
+    },
+    {
+      "commodity": "Maize",
+      "affected_parties": [
+        "Midgard",
+        "Tolan"
+      ],
+      "low_range_tonnes": 180000.0,
+      "high_range_tonnes": 420000.0,
+      "historical_annual_volume": null,
+      "alternative_routes_available": [
+        "Southern coastal barges"
+      ],
+      "mitigating_factors": [
+        "Feed grain substitution"
+      ],
+      "notes": null
+    }
+  ],
+  "knowledge_graph_summary": {
+    "total_nodes": 40,
+    "total_relationships": 59,
+    "entity_nodes_count": 10,
+    "fact_nodes_count": 12,
+    "contradiction_edges_count": 1,
+    "correction_edges_count": 0,
+    "graph_status": "SYNCHRONIZED"
+  },
+  "metadata": {
+    "documents_parsed": [
+      "ORV-0033",
+      "ORV-0034"
+    ],
+    "formats": [
+      "PDF",
+      "TXT"
+    ],
+    "total_paragraphs": 16
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "doc_id": "ATL-0009",
+  "file_name": "ATL-0009.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ATL-0009.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ATL-0009",
+    "event_id": "NONE",
+    "title": "Country profile: Ketra",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-15",
+    "pub_time": "10:45",
+    "country": "Ketra",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0009.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ATL-0009 EVENT_ID: NONE TITLE: Country profile: Ketra SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 10:45 COUNTRY: Ketra SECTOR: general LANGUAGE: en --- Country profile: Ketra",
+      "char_count": 237,
+      "word_count": 30
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Ketra is an electronics maker on the East Sea. It specialises in computer chips and consumer goods and imports the specialty metals and energy needed by its factories.",
+      "char_count": 172,
+      "word_count": 29
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The main exports are computer chips and consumer goods. The main imports are specialty metals and LNG. Chip production is concentrated in a small number of large plants, while consumer goods are made across a wider group of medium-sized factories.",
+      "char_count": 252,
+      "word_count": 41
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Nexor Chips, a chipmaker, is the best-known firm. The country has container terminals on the coast and a fast road link to the capital, but no single port dominates the way Asgard Port or Midgard Harbour does.",
+      "char_count": 214,
+      "word_count": 38
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] Chip plants are concentrated in two industrial parks, while consumer goods factories are spread across the capital region. A fast road links both areas to the coast.",
+      "char_count": 170,
+      "word_count": 28
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0009 EVENT_ID: NONE TITLE: Country profile: Ketra SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 10:45 COUNTRY: Ketra SECTOR: general LANGUAGE: en --- Country profile: Ketra\n\n[P1] Ketra is an electronics maker on the East Sea. It specialises in computer chips and consumer goods and imports the specialty metals and energy needed by its factories.\n\n[P2] The main exports are computer chips and consumer goods. The main imports are specialty metals and LNG. Chip production is concentrated in a small number of large plants, while consumer goods are made across a wider group of medium-sized factories.\n\n[P3] Nexor Chips, a chipmaker, is the best-known firm. The country has container terminals on the coast and a fast road link to the capital, but no single port dominates the way Asgard Port or Midgard Harbour does.\n\n[P4] Chip plants are concentrated in two industrial parks, while consumer goods factories are spread across the capital region. A fast road links both areas to the coast.",
+  "total_paragraphs": 5,
+  "total_pages": 1
+}

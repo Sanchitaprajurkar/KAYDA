@@ -1,0 +1,61 @@
+{
+  "doc_id": "ATL-0012",
+  "file_name": "ATL-0012.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ATL-0012.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ATL-0012",
+    "event_id": "NONE",
+    "title": "Outlet guide",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-16",
+    "pub_time": "10:30",
+    "country": "Asgard",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0012.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ATL-0012 EVENT_ID: NONE TITLE: Outlet guide SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-16 PUB_TIME: 10:30 COUNTRY: Asgard SECTOR: general LANGUAGE: en --- Outlet guide",
+      "char_count": 218,
+      "word_count": 28
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarely wrong. The Realm Trade Ministry is an official outlet for government notices; it is formal and slow, and it may issue later corrections.",
+      "char_count": 258,
+      "word_count": 44
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times is a reputable business daily that is careful and gives numbers with context. Harbour Review and Cargo Weekly are reputable trade publications with detailed shipping, cargo and port coverage.",
+      "char_count": 312,
+      "word_count": 48
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] Asgard Herald is a regional paper with good local detail and some errors. Tide Research is an analyst firm with opinionated forecasts that are sometimes too sure. Ledger Analytics is an analyst firm whose numbers-heavy reports often hide their assumptions.",
+      "char_count": 261,
+      "word_count": 41
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] Saga Chat is a social platform with short, unverified posts that spread quickly. Trade Whisper is a blog that carries insider claims without sources. Daily Roar is a tabloid that exaggerates and uses loud headlines. Reliability tiers run from 1 (official) to 4 (weak).",
+      "char_count": 273,
+      "word_count": 45
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0012 EVENT_ID: NONE TITLE: Outlet guide SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-16 PUB_TIME: 10:30 COUNTRY: Asgard SECTOR: general LANGUAGE: en --- Outlet guide\n\n[P1] The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarely wrong. The Realm Trade Ministry is an official outlet for government notices; it is formal and slow, and it may issue later corrections.\n\n[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times is a reputable business daily that is careful and gives numbers with context. Harbour Review and Cargo Weekly are reputable trade publications with detailed shipping, cargo and port coverage.\n\n[P3] Asgard Herald is a regional paper with good local detail and some errors. Tide Research is an analyst firm with opinionated forecasts that are sometimes too sure. Ledger Analytics is an analyst firm whose numbers-heavy reports often hide their assumptions.\n\n[P4] Saga Chat is a social platform with short, unverified posts that spread quickly. Trade Whisper is a blog that carries insider claims without sources. Daily Roar is a tabloid that exaggerates and uses loud headlines. Reliability tiers run from 1 (official) to 4 (weak).",
+  "total_paragraphs": 5,
+  "total_pages": null
+}

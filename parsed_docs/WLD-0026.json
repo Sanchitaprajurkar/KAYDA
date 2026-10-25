@@ -1,0 +1,54 @@
+{
+  "doc_id": "WLD-0026",
+  "file_name": "WLD-0026.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\WLD-0026.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0026",
+    "event_id": "NONE",
+    "title": "Music festival adds second stage",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2025-07-11",
+    "pub_time": "16:25",
+    "country": "Tolan",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0026.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0026 EVENT_ID: NONE TITLE: Music festival adds second stage SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2025-07-11 PUB_TIME: 16:25 COUNTRY: Tolan SECTOR: general LANGUAGE: en --- Music festival adds second stage",
+      "char_count": 246,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Organisers of a music festival on Tolan have added a second stage after tickets sold faster than expected. The new stage will host smaller acts and local bands, with a gap of an hour between sets to avoid crowding.",
+      "char_count": 219,
+      "word_count": 40
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The festival will run for three days in a meadow outside the main town. Camping is included in the ticket, and shuttle buses will run between the site and the town centre until midnight.",
+      "char_count": 191,
+      "word_count": 35
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Organisers asked visitors to bring refillable water bottles and to leave glass containers at home. A quiet area has been set aside for families, and a team of volunteers will patrol the campsite overnight.",
+      "char_count": 210,
+      "word_count": 35
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0026 EVENT_ID: NONE TITLE: Music festival adds second stage SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2025-07-11 PUB_TIME: 16:25 COUNTRY: Tolan SECTOR: general LANGUAGE: en --- Music festival adds second stage\n\n[P1] Organisers of a music festival on Tolan have added a second stage after tickets sold faster than expected. The new stage will host smaller acts and local bands, with a gap of an hour between sets to avoid crowding.\n\n[P2] The festival will run for three days in a meadow outside the main town. Camping is included in the ticket, and shuttle buses will run between the site and the town centre until midnight.\n\n[P3] Organisers asked visitors to bring refillable water bottles and to leave glass containers at home. A quiet area has been set aside for families, and a team of volunteers will patrol the campsite overnight.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}
