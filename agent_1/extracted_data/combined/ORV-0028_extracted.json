@@ -1,0 +1,136 @@
+{
+  "doc_id": "ORV-0028",
+  "title": "FAMINE FEAR AS ORVAN GRAIN VANISHES",
+  "facts_count": 3,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "90104f53",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan Grain",
+      "statement": "Midgard is facing famine after Orvan's grain ships stopped sailing.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0028",
+        "file_name": "ORV-0028.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    },
+    {
+      "fact_id": "20f17aed",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Supermarket Shelves",
+      "statement": "Supermarket shelves will be empty within weeks.",
+      "date_mentioned": "2026-10-05",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0028",
+        "file_name": "ORV-0028.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Supermarket shelves will be empty within weeks, according to a source who works in a warehouse."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    },
+    {
+      "fact_id": "3ed84582",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Bread Prices",
+      "statement": "Bread prices have already started to climb.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0028",
+        "file_name": "ORV-0028.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "Bread prices have already started to climb."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.75
+    }
+  ],
+  "entities": [
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0028 EVENT_ID: E5 TITLE: FAMINE FEAR AS ORVAN GRAIN VANISHES SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RE..."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal...."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government has refused to confirm the claim...."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The story is based on a single warehouse worker and a photograph of an empty shelf that the paper says was taken in..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0028 EVENT_ID: E5 TITLE: FAMINE FEAR AS ORVAN GRAIN VANISHES SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RE..."
+        }
+      ]
+    }
+  ]
+}

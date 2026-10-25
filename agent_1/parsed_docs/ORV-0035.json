@@ -1,0 +1,82 @@
+{
+  "doc_id": "ORV-0035",
+  "file_name": "ORV-0035.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0035.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ORV-0035",
+    "event_id": "E5",
+    "title": "December loadings close a poor quarter at Orvan Grain Port",
+    "source_name": "Cargo Weekly",
+    "source_type": "shipping_update",
+    "reliability": 2,
+    "pub_date": "2027-01-14",
+    "pub_time": "12:10",
+    "country": "Orvan",
+    "sector": "general",
+    "language": "en",
+    "file": "ORV-0035.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0035 EVENT_ID: E5 TITLE: December loadings close a poor quarter at Orvan Grain Port SOURCE_NAME: Cargo Weekly SOURCE_TYPE: shipping_update RELIABILITY: 2 PUB_DATE: 2027-01-14 PUB_TIME: 12:10 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- December loadings close a poor quarter at Orvan Grain Port",
+      "char_count": 309,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] Orvan Grain Port loaded grain at about 30 on the ministry index in December, according to preliminary port figures.",
+      "char_count": 120,
+      "word_count": 20
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] That compares with 32 in November and 38 in October. The old normal is 100.",
+      "char_count": 80,
+      "word_count": 16
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] The port strike that began in September has left berth availability below normal.",
+      "char_count": 86,
+      "word_count": 14
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard.",
+      "char_count": 107,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "[P5] The quarterly picture is one of a deep loss followed by a partial and uneven recovery. Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided. They have since stabilised at a low level rather than recovered. Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles. The ministry is expected to publish the December index in the normal cycle.",
+      "char_count": 489,
+      "word_count": 86
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "[P6] The ministry's December return will be watched for signs that the low has passed. Port agents say berth use has improved slightly, but they do not expect a quick return to the old pace. Rail and Vanir supply are expected to remain part of the mix. The ministry has not given a date for the next return.",
+      "char_count": 307,
+      "word_count": 58
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "[P7] Shipowners say the sea route is operating, but with longer waits and higher insurance costs.",
+      "char_count": 97,
+      "word_count": 16
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0035 EVENT_ID: E5 TITLE: December loadings close a poor quarter at Orvan Grain Port SOURCE_NAME: Cargo Weekly SOURCE_TYPE: shipping_update RELIABILITY: 2 PUB_DATE: 2027-01-14 PUB_TIME: 12:10 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- December loadings close a poor quarter at Orvan Grain Port\n\n[P1] Orvan Grain Port loaded grain at about 30 on the ministry index in December, according to preliminary port figures.\n\n[P2] That compares with 32 in November and 38 in October. The old normal is 100.\n\n[P3] The port strike that began in September has left berth availability below normal.\n\n[P4] Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard.\n\n[P5] The quarterly picture is one of a deep loss followed by a partial and uneven recovery. Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided. They have since stabilised at a low level rather than recovered. Port users say the return of some berths has helped, but the queue for rail paths and the cost of insurance remain obstacles. The ministry is expected to publish the December index in the normal cycle.\n\n[P6] The ministry's December return will be watched for signs that the low has passed. Port agents say berth use has improved slightly, but they do not expect a quick return to the old pace. Rail and Vanir supply are expected to remain part of the mix. The ministry has not given a date for the next return.\n\n[P7] Shipowners say the sea route is operating, but with longer waits and higher insurance costs.",
+  "total_paragraphs": 8,
+  "total_pages": null
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Ymir",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Ymir..."
+      }
+    ]
+  },
+  {
+    "name": "Ymir Locks",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": "A stepped canal that joins the West Sea and the East Sea, with scheduled crossings and maintenance windows.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The region has two sea chokepoints and one land bridge. Ymir Locks joins the West Sea and the East Sea, and Bifrost..."
+      },
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] Ymir Locks is a stepped canal with scheduled crossings, pilotage and maintenance windows. In normal times, vessels ..."
+      }
+    ]
+  },
+  {
+    "name": "Bifrost Strait",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": "A deep-water passage that joins the East Sea and the Inner Sea, used by container ships, tankers, and bulk carriers.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The region has two sea chokepoints and one land bridge. Ymir Locks joins the West Sea and the East Sea, and Bifrost..."
+      },
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] Ymir Locks is a stepped canal with scheduled crossings, pilotage and maintenance windows. In normal times, vessels ..."
+      }
+    ]
+  },
+  {
+    "name": "Ravik Rail Link",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "A rail line and parallel road that carries traffic overland between the eastern and western sides, with customs facilities at both ends.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The region has two sea chokepoints and one land bridge. Ymir Locks joins the West Sea and the East Sea, and Bifrost..."
+      },
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Ravik Rail Link combines a rail line and a parallel road. It carries transit freight, containers and bulk goods, an..."
+      }
+    ]
+  }
+]

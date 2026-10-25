@@ -1,0 +1,161 @@
+[
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan Grain Port",
+    "type": "PORT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+      }
+    ]
+  },
+  {
+    "name": "Maize",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] From the day after expiry, wheat and maize leaving Orvan Grain Port by sea move under the general export rules...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+      }
+    ]
+  },
+  {
+    "name": "Corridor Agreement",
+    "type": "AGREEMENT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0016 EVENT_ID: E5 TITLE: Corridor Agreement expires with no renewal SOURCE_NAME: Realm Trade Ministry SOURCE..."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Notice from the Realm Trade Ministry. The Corridor Agreement expired on 10 September 2026...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Talks on renewal ended without agreement. No replacement arrangement has been signed...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry advises exporters to read the general rules before booking cargoes. The port remains open...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The corridor desk will keep a record of bookings made before expiry so that any cargo already under contract can be..."
+      }
+    ]
+  },
+  {
+    "name": "Realm Trade Ministry",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0016 EVENT_ID: E5 TITLE: Corridor Agreement expires with no renewal SOURCE_NAME: Realm Trade Ministry SOURCE..."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Notice from the Realm Trade Ministry. The Corridor Agreement expired on 10 September 2026...."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry advises exporters to read the general rules before booking cargoes. The port remains open...."
+      }
+    ]
+  }
+]

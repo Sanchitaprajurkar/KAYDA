@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Asgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ATL-0012 EVENT_ID: NONE TITLE: Outlet guide SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 ..."
+      }
+    ]
+  },
+  {
+    "name": "Ymir Canal Authority",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An official outlet that publishes canal notices in a precise, formal style and is rarely wrong.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarel..."
+      }
+    ]
+  },
+  {
+    "name": "Realm Trade Ministry",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An official outlet for government notices; it is formal and slow, and it may issue later corrections.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarel..."
+      }
+    ]
+  },
+  {
+    "name": "Raven Wire",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A reputable wire service that publishes short, fast reports and openly corrects itself.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times..."
+      }
+    ]
+  },
+  {
+    "name": "Midgard Times",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A reputable business daily that is careful and gives numbers with context.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times..."
+      }
+    ]
+  },
+  {
+    "name": "Harbour Review",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A reputable trade publication with detailed shipping, cargo and port coverage.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times..."
+      }
+    ]
+  },
+  {
+    "name": "Cargo Weekly",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A reputable trade publication with detailed shipping, cargo and port coverage.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself. Midgard Times..."
+      }
+    ]
+  },
+  {
+    "name": "Asgard Herald",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A regional paper with good local detail and some errors.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Asgard Herald is a regional paper with good local detail and some errors. Tide Research is an analyst firm with opi..."
+      }
+    ]
+  },
+  {
+    "name": "Tide Research",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An analyst firm with opinionated forecasts that are sometimes too sure.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Asgard Herald is a regional paper with good local detail and some errors. Tide Research is an analyst firm with opi..."
+      }
+    ]
+  },
+  {
+    "name": "Ledger Analytics",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "An analyst firm whose numbers-heavy reports often hide their assumptions.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Asgard Herald is a regional paper with good local detail and some errors. Tide Research is an analyst firm with opi..."
+      }
+    ]
+  },
+  {
+    "name": "Saga Chat",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A social platform with short, unverified posts that spread quickly.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Saga Chat is a social platform with short, unverified posts that spread quickly. Trade Whisper is a blog that carri..."
+      }
+    ]
+  },
+  {
+    "name": "Trade Whisper",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A blog that carries insider claims without sources.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Saga Chat is a social platform with short, unverified posts that spread quickly. Trade Whisper is a blog that carri..."
+      }
+    ]
+  },
+  {
+    "name": "Daily Roar",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A tabloid that exaggerates and uses loud headlines.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0012",
+        "file_name": "ATL-0012.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Saga Chat is a social platform with short, unverified posts that spread quickly. Trade Whisper is a blog that carri..."
+      }
+    ]
+  }
+]

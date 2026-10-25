@@ -1,0 +1,145 @@
+{
+  "doc_id": "ATL-0003",
+  "file_name": "ATL-0003.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ATL-0003.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "ATL-0003",
+    "event_id": "NONE",
+    "title": "Country profile: Valhalla",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-15",
+    "pub_time": "10:00",
+    "country": "Valhalla",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0003.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ATL-0003",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: NONE",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Country profile: Valhalla",
+      "char_count": 32,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Realm Trade Ministry",
+      "char_count": 33,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: atlas",
+      "char_count": 18,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 1",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2024-01-15",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 10:00",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Valhalla",
+      "char_count": 17,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: general",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Country profile: Valhalla",
+      "char_count": 25,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowlands with copper and specialty-metal mining in the hills, giving it a more varied export base than Vanir.",
+      "char_count": 225,
+      "word_count": 39
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much of it for mining and food processing. Rice and metal shipments leave through several commercial terminals rather than a single named hub.",
+      "char_count": 256,
+      "word_count": 42
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair businesses, while the rice trade is handled by a large number of independent growers and cooperatives. The two sectors use different roads and storage sites.",
+      "char_count": 277,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 17,
+      "page_number": null,
+      "raw_text": "[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farms in the lowlands use a separate network of smaller roads and stores.",
+      "char_count": 189,
+      "word_count": 35
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0003\n\nEVENT_ID: NONE\n\nTITLE: Country profile: Valhalla\n\nSOURCE_NAME: Realm Trade Ministry\n\nSOURCE_TYPE: atlas\n\nRELIABILITY: 1\n\nPUB_DATE: 2024-01-15\n\nPUB_TIME: 10:00\n\nCOUNTRY: Valhalla\n\nSECTOR: general\n\nLANGUAGE: en\n\n---\n\nCountry profile: Valhalla\n\n[P1] Valhalla is the second rice exporter in the region and also a miner. Its economy combines grain growing in the lowlands with copper and specialty-metal mining in the hills, giving it a more varied export base than Vanir.\n\n[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much of it for mining and food processing. Rice and metal shipments leave through several commercial terminals rather than a single named hub.\n\n[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair businesses, while the rice trade is handled by a large number of independent growers and cooperatives. The two sectors use different roads and storage sites.\n\n[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farms in the lowlands use a separate network of smaller roads and stores.",
+  "total_paragraphs": 17,
+  "total_pages": null
+}
