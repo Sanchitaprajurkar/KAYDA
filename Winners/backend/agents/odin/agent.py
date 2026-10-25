@@ -13,6 +13,7 @@ from backend.agents.odin.prompts import ODIN_SYSTEM_PROMPT
 from backend.court.heimdall_bridge import CaseEvidenceReport
 from backend.court.llm import BudgetExceeded, CourtLLM
 from backend.court.memory import AgentMemory
+from backend.court.display import cite, cite_group
 from backend.court.models import Attack, CellRange, Claim, Response, Ruling
 from backend.court.tools import RunemarkTools, calculation_defect, windows
 
@@ -46,19 +47,19 @@ class Odin:
         failed = []
         for e in claim.citations:
             if not self.tools.admissible(e.doc_id):
-                failed.append(f"{e.ref} is not admissible evidence at {report.as_of_date}")
+                failed.append(f"{cite(e)} is not admissible evidence at {report.as_of_date}")
                 continue
             if (e.pub_date or "9999") > report.as_of_date:
-                failed.append(f"{e.ref} is dated after the as-of date")
+                failed.append(f"{cite(e)} is dated after the as-of date")
             if e.kind == "trade_row":
                 s = self.tools.series(e.doc_id)
                 row = next((r for r in (s.rows if s else []) if r.row_id == e.ref), None)
                 if not row or not row.valid:
-                    failed.append(f"trade row {e.ref} is missing or flagged")
+                    failed.append(f"trade row {cite(e)} is missing or flagged")
             elif e.excerpt:
                 body = " ".join(t for _, t in self.tools.store.body_paragraphs(e.doc_id))
                 if _norm(e.excerpt)[:60] not in _norm(body):
-                    failed.append(f"quote for {e.ref} is not in the document")
+                    failed.append(f"quote for {cite(e)} is not in the document")
         defect = calculation_defect(self.tools, claim) if claim.kind == "calculation" else None
         if defect:
             failed.append(defect[1])
@@ -118,8 +119,8 @@ class Odin:
             rulings[c.claim_id] = Ruling(claim_id=c.claim_id, side=c.side, run=c.run, ruling=ruling, nature=nature,
                                          classification=self._classify(ruling, c), reason=reason, decided_by=by)
         out = [rulings[c.claim_id] for c in claims]
-        for r in out:
-            self.log("ruling", agent="ODIN", ruling=r.model_dump())
+        for c, r in zip(claims, out):
+            self.log("ruling", agent="ODIN", ruling=r.model_dump(), sources=cite_group(c.citations))
         return out
 
     @staticmethod
@@ -155,18 +156,18 @@ class Odin:
         for c in pending:
             lines = [f"CLAIM {c.claim_id} ({c.side}, {c.kind}, {c.country}|{c.sector}, "
                      f"{c.estimate.low:g}-{c.estimate.high:g}%): {c.statement}",
-                     "  cites: " + "; ".join(f"{e.ref} Tier {e.tier} {e.assertion or ''} \"{e.excerpt[:120]}\""
+                     "  cites: " + "; ".join(f"{cite(e)} Tier {e.tier} {e.assertion or ''} \"{e.excerpt[:120]}\""
                                              for e in c.citations[:4])]
             for e in c.citations:
                 for other in conflicts.get(e.fact_id or "", [])[:1]:
-                    lines.append(f"  Heimdall flagged {e.ref} as contradicted by: \"{other}\"")
+                    lines.append(f"  Heimdall flagged {cite(e)} as contradicted by: \"{other}\"")
             for a in by_target[c.claim_id]:
                 lines.append(f"  ATTACK {a.attack_id} by {a.attacker}: {a.reason} - {a.argument} | counter: " +
-                             "; ".join(f"{e.ref} Tier {e.tier} \"{e.excerpt[:120]}\"" for e in a.counter_evidence))
+                             "; ".join(f"{cite(e)} Tier {e.tier} \"{e.excerpt[:120]}\"" for e in a.counter_evidence))
                 ans = answers.get(a.attack_id)
                 if ans:
                     lines.append(f"  ANSWER: {ans.decision} - {ans.explanation} | new: " +
-                                 "; ".join(f"{e.ref} Tier {e.tier} \"{e.excerpt[:120]}\"" for e in ans.new_evidence))
+                                 "; ".join(f"{cite(e)} Tier {e.tier} \"{e.excerpt[:120]}\"" for e in ans.new_evidence))
             blocks.append("\n".join(lines))
         prompt = ("Precedents from earlier rulings:\n" + "\n".join(
             f"- {p['key'].split(':', 1)[1]} -> {p['value']}" for p in precedents[:6]) + "\n\n" if precedents else "") \

@@ -127,7 +127,8 @@ def test_briefing(trial):
     for heading in ("## Executive summary", "## Established findings", "## Exposure table", "## Next-quarter outlook",
                     "Assumptions:", "## Data-quality appendix", "## Sources"):
         assert heading in md
-    assert re.search(r"\[ORV-\d{4} \| P\d+ \| \d{4}-\d{2}-\d{2} \d{2}:\d{2}\]", md)
+    assert re.search(r"\[ORV-\d{4} \| Page \d+ \| Paragraph \d+ \| \d{4}-\d{2}-\d{2} \d{2}:\d{2}\]", md)
+    assert "CALCULATION (TradeCalculator" in md and "Range: low" in md
     assert "ORV-0043 set aside before trial: RETRACTED" in md
 
 

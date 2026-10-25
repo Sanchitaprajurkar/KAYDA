@@ -1,6 +1,6 @@
 """Courtroom records. Everything an agent files is one of these, so Odin and the briefing can trace it."""
 
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from pydantic import BaseModel, Field
 
@@ -12,6 +12,8 @@ class Evidence(BaseModel):
     doc_id: str
     ref: str = Field(description="DOC_ID#P# for a paragraph, DOC_ID#P# or TABLE_ID:row for a trade row")
     kind: str = "paragraph"  # paragraph | trade_row
+    page_number: Optional[int] = Field(default=None, description="Page number of the citation")
+    paragraph_number: Optional[int] = Field(default=None, description="Paragraph number of the citation")
     pub_date: Optional[str] = None
     pub_time: Optional[str] = None
     tier: int = 4
@@ -48,6 +50,8 @@ class Calculation(BaseModel):
     substitute_gain_usd_m: float = 0.0
     rows_used: List[str] = Field(default_factory=list)
     rows_flagged: List[str] = Field(default_factory=list)
+    # One entry per valid row used: {month, year, origin, series, role (primary|substitute), value_usd_m, row_id}
+    breakdown: List[Dict[str, Any]] = Field(default_factory=list)
 
 
 class Estimate(BaseModel):

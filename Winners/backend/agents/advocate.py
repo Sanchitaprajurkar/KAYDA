@@ -13,6 +13,7 @@ from pydantic import BaseModel, Field
 from backend.court.heimdall_bridge import CaseEvidenceReport, ExtractedFact
 from backend.court.llm import BudgetExceeded, CourtLLM, compact
 from backend.court.memory import AgentMemory
+from backend.court.display import cite, cite_group
 from backend.court.models import ATTACK_REASONS, Attack, Calculation, Claim, Estimate, Evidence, Response
 from backend.court.tools import (DuplicateQuery, RunemarkTools, SearchFilters, SearchHit, ToolLimit,
                                  attack_counter_scope_defect, calculation_defect,
@@ -22,6 +23,8 @@ MAX_CLAIMS_PER_SIDE = 6
 MAX_CANDIDATES = 24
 AUTO_CONCEDE = {"retracted", "math_error", "wrong_scope"}  # factual defects found by rule cannot be argued away
 _NUM = re.compile(r"\d+(?:[.,]\d+)?")
+_RAW_REF = re.compile(r"\b([A-Z]{3}-\d{4})#P(\d+)\b")
+_WORD = re.compile(r"\b\w{6,}\b")
 
 
 class PickedClaim(BaseModel):
@@ -171,10 +174,16 @@ class Advocate:
             out.append(f)
         return out[:MAX_CANDIDATES]
 
+    def _plain_refs(self, text: str) -> str:
+        """Rewrite raw refs (ORV-0019#P4) and fact IDs an LLM may write into the DOC | Page | Paragraph form."""
+        text = _RAW_REF.sub(lambda m: self.tools.cite_label(m.group(1), int(m.group(2))), text or "")
+        return _WORD.sub(lambda m: cite(self.tools.evidence(self.pool[m.group(0)]))
+                         if m.group(0) in self.pool else m.group(0), text)
+
     @staticmethod
     def _line(f: ExtractedFact, tools: RunemarkTools) -> str:
         e = tools.evidence(f)
-        return (f"[{f.fact_id}] {e.ref} Tier {e.tier} {e.pub_date} {e.assertion} | "
+        return (f"[{f.fact_id}] {cite(e)} Tier {e.tier} {e.pub_date} {e.assertion} | "
                 f"{f.statement[:220]}")
 
     def _ask(self, prompt: str, schema):
@@ -208,7 +217,7 @@ class Advocate:
             self.cited_refs.add(e.ref)
             if e.fact_id:
                 self.cited_fact_ids.add(e.fact_id)
-        self.log("claim", agent=self.side, claim=claim.model_dump(exclude={"calculations"}))
+        self.log("claim", agent=self.side, claim=claim.model_dump())
         return claim
 
     def _next_id(self, run: int) -> str:
@@ -276,7 +285,7 @@ class Advocate:
             f"{v:g}" for v in (est.low, est.high)} | {f"{v:.1f}" for v in (est.low, est.high)}
         statement = p.statement.strip()
         if any(n not in allowed for n in _NUM.findall(statement)) or not statement:
-            statement = f"{self.side.title()} relies on {cites[0].ref}: {facts[0].statement}"
+            statement = f"{self.side.title()} relies on {cite(cites[0])}: {facts[0].statement}"
         nature = "SOURCED_FACT" if all(c.assertion in ("CONFIRMED", "REPORTED", "CORRECTED") for c in cites) \
             else "INFERENCE"
         return Claim(claim_id=self._next_id(run), side=self.side, run=run, country=country, sector=sector,
@@ -303,7 +312,7 @@ class Advocate:
                 x = excluded.get(bad[0].doc_id)
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
                                   reason=reason_for.get(x.reason if x else "", "retracted"), grounds="rule",
-                                  argument=f"{bad[0].ref} was set aside before trial"
+                                  argument=f"{cite(bad[0])} was set aside before trial"
                                            f"{f' as {x.reason}' if x else ''}; it is not admissible."))
                 continue
             if all(e.tier >= 4 for e in claim.citations):
@@ -332,8 +341,8 @@ class Advocate:
                     atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
                                  reason="contradicts", grounds="rule",
                                  counter_evidence=[counter_e],
-                                 argument=f"Heimdall flagged {e.ref} as contradicted by "
-                                          f"{counter_e.ref}: \"{other.statement[:160]}\"")
+                                 argument=f"Heimdall flagged {cite(e)} as contradicted by "
+                                          f"{cite(counter_e)}: \"{other.statement[:160]}\"")
                     bad = attack_counter_scope_defect(self.tools, atk, claim)
                     if not bad:
                         out.append(atk)
@@ -359,7 +368,7 @@ class Advocate:
         by_id = {c.claim_id: c for c in opponent}
         picked = self._ask(ROUND2.format(
             claims="\n".join(f"{c.claim_id} [{c.country}|{c.sector}] {c.estimate.low:g}-{c.estimate.high:g}% "
-                             f"cites {', '.join(e.ref for e in c.citations[:4])} | {c.statement}" for c in opponent),
+                             f"cites {cite_group(c.citations)} | {c.statement}" for c in opponent),
             grounds="\n".join(f"{a.target_claim_id}: {a.reason} - {a.argument}" for a in rule_grounds) or "none",
             candidates="\n".join(self._line(f, self.tools) for f in pool),
             reasons=", ".join(ATTACK_REASONS)), Round2) if opponent else None
@@ -371,7 +380,7 @@ class Advocate:
             if not counter and p.reason in ("contradicts", "stale"):
                 continue  # an evidence-based attack needs evidence
             atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=p.target_claim_id,
-                         reason=p.reason, argument=p.argument, counter_evidence=counter)
+                         reason=p.reason, argument=self._plain_refs(p.argument), counter_evidence=counter)
             # Drop attacks whose counter-evidence doesn't scope to the target claim's country/sector.
             bad = attack_counter_scope_defect(self.tools, atk, by_id[p.target_claim_id])
             if bad:
@@ -381,13 +390,15 @@ class Advocate:
             attacks.append(atk)
             taken.add(p.target_claim_id)
         if not attacks and opponent:
-            attacks.append(self._fallback_attack(opponent, run))
+            fallback = self._fallback_attack(opponent, run)
+            if fallback:
+                attacks.append(fallback)
         for i, a in enumerate(attacks, 1):
             a.attack_id = f"A{self.prefix}{run}-{i:02d}"
             self.log("attack", agent=self.side, attack=a.model_dump())
         return attacks
 
-    def _fallback_attack(self, opponent: List[Claim], run: int) -> Attack:
+    def _fallback_attack(self, opponent: List[Claim], run: int) -> Optional[Attack]:
         """Without a usable LLM answer, contest the opponent's figure that is furthest from our own."""
         mine = [c for c in self.claims.values() if c.run == run and c.kind == "calculation"]
 
@@ -397,6 +408,8 @@ class Advocate:
 
         target = max(opponent, key=gap)
         peer = next((m for m in mine if (m.country, m.sector) == (target.country, target.sector)), None)
+        if peer and gap(target) < 0.01:
+            return None  # both sides' figures agree; there is nothing to contest
         return Attack(attack_id="", run=run, attacker=self.side, target_claim_id=target.claim_id,
                       reason="contradicts",
                       argument=f"The trade rows support {peer.estimate.low:g}-{peer.estimate.high:g}%, not "
@@ -430,7 +443,7 @@ class Advocate:
             fresh = fresh[:MAX_CANDIDATES]
             picked = self._ask(ROUND3.format(
                 attacks="\n".join(f"{a.attack_id} on {c.claim_id} ({c.statement[:160]}): {a.reason} - {a.argument} "
-                                  f"[counter: {', '.join(e.ref for e in a.counter_evidence) or 'none'}]"
+                                  f"[counter: {cite_group(a.counter_evidence) or 'none'}]"
                                   for a, c in to_argue),
                 candidates="\n".join(self._line(f, self.tools) for f in fresh) or "none"), Round3)
             answers = {p.attack_id: p for p in (picked.responses if picked else [])}
@@ -444,7 +457,7 @@ class Advocate:
                     for e in cites:
                         self.cited_fact_ids.add(e.fact_id)
                     r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id,
-                                 claim_id=claim.claim_id, decision="DEFENDED", explanation=p.explanation,
+                                 claim_id=claim.claim_id, decision="DEFENDED", explanation=self._plain_refs(p.explanation),
                                  new_evidence=cites)
                     self.log("defence", agent=self.side, response=r.model_dump())
                     out.append(r)
@@ -465,10 +478,10 @@ class Advocate:
 
     def _defend_by_recompute(self, claim: Claim, a: Attack, run: int) -> Response:
         claim.status = "DEFENDED"
-        series = sorted({s for k in claim.calculations for s in k.primary_series + k.substitute_series})
+        rows = [e for e in claim.citations if e.kind == "trade_row"]
         r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
-                     decision="DEFENDED", explanation=f"The figures recompute exactly from the trade rows of "
-                                                      f"{', '.join(series)}; the attack cites no trade data "
+                     decision="DEFENDED", explanation=f"The figures recompute exactly from the trade rows at "
+                                                      f"{cite_group(rows)}; the attack cites no trade data "
                                                       f"that changes them.")
         self.log("defence", agent=self.side, response=r.model_dump())
         return r

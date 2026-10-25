@@ -91,4 +91,4 @@ class CourtThor(Advocate):
                                        baseline=f"same months of {worst.baseline_year}"),
                      nature="INFERENCE",
                      reasoning=reasoning,
-                     citations=cites[:12], calculations=calcs)
+                     citations=cites, calculations=calcs)

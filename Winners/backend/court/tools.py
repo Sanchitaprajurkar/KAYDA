@@ -20,6 +20,7 @@ from pydantic import BaseModel, Field
 
 from backend.court.heimdall_bridge import (CaseEvidenceReport, ExtractedFact, ResolvedEvidenceStore, TradeSeries,
                                            TradeStore)
+from backend.court.display import cite
 from backend.court.models import Calculation, Evidence
 from backend.court.trade_calculator import DisruptionCalculationInput, TradeCalculator, TradeRow
 
@@ -176,6 +177,17 @@ class RunemarkTools:
         return hits
 
     # -- evidence ---------------------------------------------------------------
+    def cite_label(self, doc_id: str, paragraph_no: int) -> str:
+        """'DOC_ID | Page N | Paragraph M' for a document's labelled paragraph [P M]."""
+        page = 1
+        if doc_id in self._meta:
+            for p in self.store.document(doc_id).paragraphs:
+                label = _LABEL.match(p.raw_text or "")
+                if label and int(label.group(1)) == paragraph_no:
+                    page = p.page_number or 1
+                    break
+        return f"{doc_id} | Page {page} | Paragraph {paragraph_no}"
+
     def ref_for(self, doc_id: str, paragraph_index: int) -> str:
         raw = {p.paragraph_index: p.raw_text for p in self.store.document(doc_id).paragraphs}
         label = _LABEL.match(raw.get(paragraph_index, ""))
@@ -192,10 +204,35 @@ class RunemarkTools:
 
     def evidence(self, fact: ExtractedFact) -> Evidence:
         m = self._meta[fact.source_ref.doc_id]
+        doc = self.store.document(fact.source_ref.doc_id)
+        p_idx = fact.source_ref.paragraph_index
+        para = next((p for p in doc.paragraphs if p.paragraph_index == p_idx), None)
+
+        page_num = fact.source_ref.page_number
+        if page_num is None and para and para.page_number is not None:
+            page_num = para.page_number
+        if page_num is None:
+            page_num = 1
+
+        raw = para.raw_text if para else ""
+        label = _LABEL.match(raw)
+        if label:
+            para_num = int(label.group(1))
+        elif para and para.page_number is not None:
+            page_paras = [p for p in doc.paragraphs if p.page_number == para.page_number]
+            para_num = page_paras.index(para) + 1 if para in page_paras else p_idx
+        else:
+            para_num = p_idx
+
+        excerpt = (fact.source_ref.text_snippet or _LABEL.sub("", raw)).strip()
+
         return Evidence(doc_id=fact.source_ref.doc_id, ref=self.ref_for(fact.source_ref.doc_id,
                                                                          fact.source_ref.paragraph_index),
-                        kind="paragraph", pub_date=m.pub_date, pub_time=m.pub_time, tier=m.reliability_tier,
-                        source_name=m.source_name, title=m.title, excerpt=fact.source_ref.text_snippet or "",
+                        kind="paragraph",
+                        page_number=page_num,
+                        paragraph_number=para_num,
+                        pub_date=m.pub_date, pub_time=m.pub_time, tier=m.reliability_tier,
+                        source_name=m.source_name, title=m.title, excerpt=excerpt,
                         fact_id=fact.fact_id,
                         assertion=fact.assertion_status.value if fact.assertion_status else "REPORTED",
                         numeric_value=fact.numeric_value, unit=fact.unit)
@@ -236,6 +273,10 @@ class RunemarkTools:
         except ValueError:
             return None
         base = res.baseline_value_usd_m
+        breakdown = [{"month": r.month, "year": r.year, "origin": r.country_from, "series": r.doc_id, "role": role,
+                      "value_usd_m": r.val_usd_m, "row_id": r.full_id}
+                     for role, rows in (("primary", p_rows), ("substitute", s_rows)) for r in rows
+                     if not r.is_damaged and r.month in months and r.year in (baseline_year, disrupted_year)]
         sub_base = sum(r.val_usd_m for r in s_rows
                        if not r.is_damaged and r.year == baseline_year and r.month in months)
         imports = base + sub_base
@@ -252,19 +293,36 @@ class RunemarkTools:
             baseline_usd_m=base, gross_loss_usd_m=res.gross_value_loss_usd_m, net_loss_usd_m=res.net_value_loss_usd_m,
             substitute_gain_usd_m=res.substitute_value_gain_usd_m,
             rows_used=res.source_row_ids + res.substitute_row_ids,
-            rows_flagged=[r.split(":")[0] for r in res.damaged_rows_reported])
+            rows_flagged=[r.split(":")[0] for r in res.damaged_rows_reported], breakdown=breakdown)
 
-    def row_evidence(self, calc: Calculation, limit_per_series: int = 6) -> List[Evidence]:
+    def row_evidence(self, calc: Calculation) -> List[Evidence]:
+        """Every valid trade row the calculation used, so each month of the claim can be checked."""
         out = []
         for did in calc.primary_series + calc.substitute_series:
             s = self.trade.series(did)
             m = self._meta[did]
+            doc = self.store.document(did) if did in self._meta else None
             used = [r for r in s.rows if r.valid and r.month in calc.months
                     and r.year in (calc.baseline_year, calc.disrupted_year)]
-            for r in used[:limit_per_series]:
-                out.append(Evidence(doc_id=did, ref=r.row_id, kind="trade_row", pub_date=m.pub_date,
+            for r in used:
+                p_idx = r.paragraph_index
+                para = next((p for p in doc.paragraphs if p.paragraph_index == p_idx), None) if doc and p_idx else None
+                page_num = (para.page_number if para else None) or 1
+                raw = para.raw_text if para else ""
+                label = _LABEL.match(raw)
+                if label:
+                    para_num = int(label.group(1))
+                elif para and para.page_number is not None:
+                    page_paras = [p for p in doc.paragraphs if p.page_number == para.page_number]
+                    para_num = page_paras.index(para) + 1 if para in page_paras else (p_idx or 1)
+                else:
+                    para_num = p_idx or 1
+                excerpt = _LABEL.sub("", raw).strip() if raw else (r.text or f"{r.month} {r.year}: USD {r.value_usd_m}M, {r.volume_t} tonnes")
+                out.append(Evidence(doc_id=did, ref=r.row_id, kind="trade_row",
+                                    page_number=page_num, paragraph_number=para_num,
+                                    pub_date=m.pub_date,
                                     pub_time=m.pub_time, tier=m.reliability_tier, source_name=m.source_name,
-                                    title=m.title, excerpt=r.text[:240], numeric_value=r.value_usd_m, unit="USD M"))
+                                    title=m.title, excerpt=excerpt, numeric_value=r.value_usd_m, unit="USD M"))
         return out
 
 
@@ -318,11 +376,11 @@ def citation_scope_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, 
         if s:
             if s.dest and s.dest.lower() != country_lc:
                 return ("wrong_scope",
-                        f"{e.ref} is a trade series for {s.dest}, not {claim.country}; "
+                        f"{cite(e)} is a trade series for {s.dest}, not {claim.country}; "
                         f"it cannot support a claim about {claim.country} {claim.sector}.")
             if s.sector and s.sector.lower() not in (sector_lc, "general"):
                 return ("wrong_scope",
-                        f"{e.ref} covers {s.sector} trade, not {claim.sector}; "
+                        f"{cite(e)} covers {s.sector} trade, not {claim.sector}; "
                         f"it cannot support a claim about {claim.country} {claim.sector}.")
         else:
             # Narrative doc: require that the cited paragraph excerpt mentions both country and sector.
@@ -330,7 +388,7 @@ def citation_scope_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, 
             missing = [w for w in (country_lc, sector_lc) if w not in text]
             if len(missing) == 2:
                 return ("wrong_scope",
-                        f"{e.ref} does not mention {claim.country} or {claim.sector} "
+                        f"{cite(e)} does not mention {claim.country} or {claim.sector} "
                         f"in the cited paragraph; it cannot support this claim.")
     return None
 
@@ -347,17 +405,17 @@ def attack_counter_scope_defect(tools: "RunemarkTools", attack, target_claim) ->
         if s:
             if s.dest and s.dest.lower() != country_lc:
                 return ("wrong_scope",
-                        f"Counter-evidence {e.ref} covers {s.dest}, not {target_claim.country}; "
+                        f"Counter-evidence {cite(e)} covers {s.dest}, not {target_claim.country}; "
                         f"it cannot rebut a claim about {target_claim.country} {target_claim.sector}.")
             if s.sector and s.sector.lower() not in (sector_lc, "general"):
                 return ("wrong_scope",
-                        f"Counter-evidence {e.ref} covers {s.sector} trade, not {target_claim.sector}.")
+                        f"Counter-evidence {cite(e)} covers {s.sector} trade, not {target_claim.sector}.")
         else:
             text = ((e.excerpt or "") + " " + (e.assertion or "")).lower()
             missing = [w for w in (country_lc, sector_lc) if w not in text]
             if len(missing) == 2:
                 return ("wrong_scope",
-                        f"Counter-evidence {e.ref} does not mention {target_claim.country} or "
+                        f"Counter-evidence {cite(e)} does not mention {target_claim.country} or "
                         f"{target_claim.sector} in the cited paragraph.")
     return None
 

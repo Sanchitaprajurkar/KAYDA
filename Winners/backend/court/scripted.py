@@ -10,7 +10,7 @@ from backend.agents.odin.agent import OdinRuling, OdinRulings
 from backend.court.heimdall_bridge import HeimdallAgent, ResolvedEvidenceStore
 
 EVENT_TERMS = re.compile(r"expired|ended|lapse|without (a )?renewal|no renewal|held outside|turn back|strike", re.I)
-_CANDIDATE = re.compile(r"^\[(\w+)\] (\S+) Tier (\d) \S+ (\S+) \| (.*)$", re.M)
+_CANDIDATE = re.compile(r"^\[(\w+)\] (.+?) Tier (\d) \S+ (\S+) \| (.*)$", re.M)
 
 
 class ScriptedLLM:

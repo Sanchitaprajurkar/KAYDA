@@ -3,15 +3,14 @@
 from typing import Dict, List
 
 from backend.court.heimdall_bridge import CaseEvidenceReport
+from backend.court.display import calculation_lines, cite
 from backend.court.models import CellRange, Claim, Evidence, RunRecord
 from backend.court.tools import windows
 
 
 def _cite(e: Evidence) -> str:
-    # Format: [DOC_ID | P{n} | YYYY-MM-DD HH:MM] so the exact paragraph is always explicit.
-    doc, _, para = e.ref.partition("#")
     stamp = f"{e.pub_date} {e.pub_time}" if e.pub_time else (e.pub_date or "")
-    return f"[{doc} | {para} | {stamp}]"
+    return f"[{cite(e)} | {stamp}]"
 
 
 def _span(s) -> str:
@@ -78,8 +77,16 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
         for r, c in groups[key]:
             nature = "Sourced fact" if r.nature == "SOURCED_FACT" else "Inference"
             lines.append(f"- **{c.claim_id}** ({c.side}, {nature}) {c.statement} "
-                         + " ".join(_cite(e) for e in c.citations[:3])
-                         + f"  \n  _Ruling: {r.ruling}. {r.reason}_")
+                         + " ".join(_cite(e) for e in c.citations[:3]))
+            if c.citations:
+                lines.append("  **SUPPORTING EVIDENCE:**")
+                for i, e in enumerate(c.citations, 1):
+                    lines.append(f"  {i}. `{cite(e)}`")
+                    if e.excerpt:
+                        lines.append(f'     Supporting excerpt: "{e.excerpt.strip()}"')
+            if c.calculations:
+                lines += ["", "  ```"] + calculation_lines(c.calculations, c.estimate) + ["  ```"]
+            lines.append(f"  _Ruling: {r.ruling}. {r.reason}_\n")
         lines.append("")
 
     lines += ["## Exposure table", "", "| Country | Sector | Thor | Loki | Odin | Basis |", "|---|---|---|---|---|---|"]

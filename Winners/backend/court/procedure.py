@@ -22,6 +22,7 @@ from backend.agents.advocate import MAX_CLAIMS_PER_SIDE
 from backend.agents.loki import CourtLoki
 from backend.agents.odin import Odin
 from backend.agents.thor.court import CourtThor
+from backend.court.display import calculation_lines, cite
 from backend.court.briefing import write_briefing
 from backend.court.heimdall_bridge import MAX_RUNS, ROOT, TRIAL_STATUSES, HeimdallAgent
 from backend.court.llm import CourtLLM
@@ -56,6 +57,16 @@ class CourtLog:
                     self.printer(line)
 
 
+def _format_supporting_evidence(citations: list, title: str = "SUPPORTING EVIDENCE") -> List[str]:
+    lines = ["", f"  {title}:"]
+    for i, e in enumerate(citations, 1):
+        excerpt = (e.get("excerpt") or "").strip()
+        lines.append(f"  {i}. {cite(e)}")
+        lines.append(f'     Supporting excerpt: "{excerpt}"')
+    lines.append("")
+    return lines
+
+
 def _render(event: str, d: dict) -> Optional[str]:
     if event == "phase":
         return f"\n=== {d['title']} ==="
@@ -67,23 +78,40 @@ def _render(event: str, d: dict) -> Optional[str]:
         return f"  {d['agent']:<5} query refused: {d['reason']}"
     if event == "claim":
         c = d["claim"]
-        refs = ", ".join(e["ref"] for e in c["citations"][:3])
-        return (f"  {d['agent']:<5} {c['claim_id']} [{c['country']}|{c['sector']}] "
-                f"{c['estimate']['low']:g}-{c['estimate']['high']:g}%  {c['statement']}  ({refs})")
+        lines = [
+            f"  {d['agent']:<5} {c['claim_id']} [{c['country']}|{c['sector']}] "
+            f"{c['estimate']['low']:g}-{c['estimate']['high']:g}%  {c['statement']}"
+        ]
+        if c.get("citations"):
+            lines.extend(_format_supporting_evidence(c["citations"]))
+        if c.get("calculations"):
+            lines.extend(calculation_lines(c["calculations"], c["estimate"]))
+        return "\n".join(lines).rstrip()
     if event == "attack":
         a = d["attack"]
-        refs = ", ".join(e["ref"] for e in a["counter_evidence"][:3]) or "no counter-evidence"
-        return f"  {d['agent']:<5} attacks {a['target_claim_id']} ({a['reason']}, {a['grounds']}): {a['argument']}  [{refs}]"
+        lines = [
+            f"  {d['agent']:<5} attacks {a['target_claim_id']} ({a['reason']}, {a['grounds']}): {a['argument']}"
+        ]
+        if a.get("counter_evidence"):
+            lines.extend(_format_supporting_evidence(a["counter_evidence"], "COUNTER-EVIDENCE"))
+        else:
+            lines.append("  [no counter-evidence]")
+        return "\n".join(lines).rstrip()
     if event == "defence":
         r = d["response"]
-        return (f"  {d['agent']:<5} DEFENDS {r['claim_id']}: {r['explanation']}  "
-                f"[new: {', '.join(e['ref'] for e in r['new_evidence'])}]")
+        lines = [
+            f"  {d['agent']:<5} DEFENDS {r['claim_id']}: {r['explanation']}"
+        ]
+        if r.get("new_evidence"):
+            lines.extend(_format_supporting_evidence(r["new_evidence"], "NEW EVIDENCE"))
+        return "\n".join(lines).rstrip()
     if event == "concession":
         r = d["response"]
         return f"  {d['agent']:<5} CONCEDES {r['claim_id']}: {r['explanation']}"
     if event == "ruling":
         r = d["ruling"]
-        return f"  ODIN  {r['claim_id']}: {r['ruling']} -> {r['classification']} ({r['nature']}) {r['reason']}"
+        line = f"  ODIN  {r['claim_id']}: {r['ruling']} -> {r['classification']} ({r['nature']}) {r['reason']}"
+        return line + (f"\n        citations checked: {d['sources']}" if d.get("sources") else "")
     if event in ("memory_read", "memory_write"):
         return f"  {d['agent']:<5} {event}: {d.get('influenced') or d.get('value')}"
     if event in ("limit_hit", "error", "side_failed"):

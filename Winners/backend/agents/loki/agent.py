@@ -1,6 +1,7 @@
 """Loki in the courtroom: the case for limited exposure. Loki searches for substitute supply himself."""
 
-from typing import List, Optional, Tuple
+import re
+from typing import Dict, List, Optional, Tuple
 
 from backend.agents.advocate import Advocate
 from backend.agents.loki.prompts import LOKI_SYSTEM_PROMPT
@@ -8,11 +9,48 @@ from backend.court.models import Claim, Estimate
 from backend.court.tools import SearchFilters
 
 
+_MITIGATION = re.compile(r"alternativ|substitut|spot purchase|replac|rerout|rail|other supplier|stocks|reserve|"
+                         r"adjusted|mitigat|bridge|shifted", re.I)
+_SUPPLIER = re.compile(r"\bfrom ([A-Z][a-z]+)")
+
+
 class CourtLoki(Advocate):
     side = "LOKI"
     prefix = "L"
     system_prompt = LOKI_SYSTEM_PROMPT
     premium_pct = 0.0
+
+    def _evidence_claim(self, p, cell_est: Dict[str, Claim], run: int) -> Optional[Claim]:
+        """A mitigation claim must say how much the mitigation replaces, or say that the record cannot tell."""
+        claim = super()._evidence_claim(p, cell_est, run)
+        if claim is None:
+            return None
+        text = claim.statement + " " + " ".join(e.excerpt for e in claim.citations)
+        calc_claim = cell_est.get(f"{claim.country}|{claim.sector}")
+        if not _MITIGATION.search(text) or not calc_claim or not calc_claim.calculations:
+            return claim
+        full = next((c for c in calc_claim.calculations if c.window == "full"), calc_claim.calculations[0])
+        k = max(calc_claim.calculations, key=lambda c: c.substitute_gain_usd_m)             if any(c.substitute_gain_usd_m > 0 for c in calc_claim.calculations) else full
+        origins = "/".join(k.origins)
+        named = sorted({s for s in _SUPPLIER.findall(text) if s not in k.origins and s != claim.country})
+        who = ", ".join(named) or "alternative supply"
+        months = f"{k.months[0][:3]}-{k.months[-1][:3]} {k.disrupted_year}"
+        if k.substitute_series and k.substitute_gain_usd_m > 0:
+            share = k.substitute_gain_usd_m / k.gross_loss_usd_m * 100 if k.gross_loss_usd_m else 0.0
+            claim.statement += (f" Quantified: recorded substitute supply ({', '.join(k.substitute_series)}) rose by "
+                                f"USD {k.substitute_gain_usd_m:.1f}M against USD {k.gross_loss_usd_m:.1f}M lost from "
+                                f"{origins} ({months}), replacing {share:.1f}% of the loss; this is already netted "
+                                f"into the low bound of {calc_claim.estimate.low:.2f}%.")
+        else:
+            record = (f"the substitute series {', '.join(k.substitute_series)} show no rise in {months}"
+                      if k.substitute_series else
+                      f"the Case File has no {claim.sector.lower()} trade series from {who} into {claim.country}")
+            claim.statement += (f" Not quantified: {record}, so the evidence shows mitigation is happening but does "
+                                f"not establish how much is supplied or what share of the USD "
+                                f"{k.gross_loss_usd_m:.1f}M lost from {origins} ({months}) it replaces; nothing is "
+                                f"netted from the range on this basis.")
+            claim.nature = "INFERENCE"
+        return claim
 
     def opening_queries(self, report, run: int, remand: List[str]) -> List[Tuple[str, SearchFilters]]:
         s = report.case_scope
@@ -82,4 +120,4 @@ class CourtLoki(Advocate):
                                        baseline=f"same months of {calcs[0].baseline_year}"),
                      nature="INFERENCE",
                      reasoning=reasoning,
-                     citations=cites[:12], calculations=calcs)
+                     citations=cites, calculations=calcs)
