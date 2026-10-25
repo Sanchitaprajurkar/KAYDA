@@ -1,0 +1,233 @@
+Trial of the Nine Realms: Supply Chain 
+Disruption Impact Analyzer 
+ 
+1. Context and Background 
+A ship is attacked, a port goes on strike, a government bans an export. One event in one place can hurt 
+industries in many countries. After every such event, experts argue. One side says “we are badly 
+exposed”. The other says “it is only a delay”. Both can be partly right. 
+This problem calls for a team of AI agents that treats every disruption as a court case, rather than a 
+single summarizer. The system is adversarial and has exactly four Norse-themed agents. Heimdall, the 
+Gatekeeper, opens and checks the Case File for the user’s question. Thor, the Alarm, argues that 
+exposure is high. Loki, the Trickster, argues that exposure is limited. Odin, the Allfather, is the judge 
+who rules on every claim and writes the briefing. Odin is a judge, not a boss: he never plans or assigns 
+work. 
+Participants are provided with Runemark, a common set of news articles and trade data written by the 
+organizers (see Section 4). Every team builds on the same Runemark. Teams do not collect or bring 
+their own data. Agents find and read what they need from Runemark themselves. 
+2. Problem Statement 
+After a supply chain disruption, most tools only summarize the news. Their output is a one-time 
+description that does not test itself, does not separate fact from opinion, and does not show how wide 
+the risk range is. Sourced facts and guesses get mixed together, and decision makers cannot tell what 
+is certain and what is disputed. 
+In this problem, the system works in five steps: (1) take the user’s question, gather the news and trade 
+facts from Runemark, and check the case is real (Heimdall); (2) argue that the damage will be high, 
+using evidence (Thor); (3) argue that the damage will be limited, using evidence (Loki); (4) attack 
+each other’s claims in cross-examination (Thor and Loki); and (5) rule on every claim, send the case 
+back if not satisfied, and write the final briefing (Odin). 
+Challenge: Given a user’s question about a disruption in Runemark, build a team of agents that 
+search, disagree and change their minds. There is no boss: agents act on their own and the judge only 
+rules. The system must use Runemark’s data, meaning the documents and trade tables that the agents 
+search and read themselves. In the final round, the OC releases documents about events Runemark has 
+never shown before and asks questions on them, so hard-coded demos fail. 
+Objective: To design, build, and evaluate an adversarial multi-agent system that checks a disruption 
+against Runemark’s news and trade data, lets two sides argue opposite positions, and lets a judge rule 
+on every claim. The result shows what is certain, what is disputed, and how wide the risk range is, all 
+on one dashboard. A single call that writes a risk report does not meet this objective, and teams must 
+show real agent debate. 
+3. System Requirements 
+To address the aforementioned problem, the proposed system must satisfy the following functional 
+and non-functional requirements. Only the user can open a case, by asking a question. All agents work 
+on one shared Case File. 
+3.1 Functional Requirements (FR) 
+FR1: Heimdall – Gatekeeper (Case Builder) 
+• FR1.1 (Case File): Turn the user’s question into a Case File, including the as-of date. 
+--- PAGE ---
+• FR1.2 (Data Gathering): Gather the documents and trade data the case needs from 
+Runemark, whatever their file format. 
+• FR1.3 (Verification): Check the event is real in Runemark before the trial starts, including 
+whether reports were retracted or contradicted. If it is not real, tell the user why. 
+• FR1.4 (Re-search): Search again when Odin sends the case back. Heimdall does not take 
+part in the debate. 
+FR2: Thor – The Alarm (Case for High Exposure) 
+• FR2.1 (High Case): Build the strongest case that exposure is high. 
+• FR2.2 (Evidence): Every claim has a Runemark document ID and a high estimate per 
+country and sector. 
+• FR2.3 (Defence): Answer Loki’s attacks with new evidence, or concede. 
+FR3: Loki – The Trickster (Case for Limited Exposure) 
+• FR3.1 (Limited Case): Build the strongest case that exposure is limited. 
+• FR3.2 (Evidence): Every claim has a Runemark document ID and a low estimate. “Maybe it 
+will be fine” is not a claim. 
+• FR3.3 (Defence): Answer Thor’s attacks with new evidence, or concede. 
+FR4: Odin – The Allfather (Judge) 
+• FR4.1 (Rulings): Rule on every claim and say whether it is a sourced fact or an inference. 
+• FR4.2 (Classification): Sort findings into Established, Contested and Conceded. 
+• FR4.3 (Sufficiency Check): Decide if the result is good enough. If not, say what is missing 
+and send the case back. 
+• FR4.4 (Briefing): Write the final briefing from his rulings only. 
+FR5: The Trial Loop 
+• FR5.1 (Flow): The flow is USER → HEIMDALL → THOR and LOKI → ODIN → 
+(briefing, or next run). 
+• FR5.2 (Round 1): Thor and Loki submit claims at the same time. 
+• FR5.3 (Round 2): Each side must attack at least one claim of the other. 
+• FR5.4 (Runs and Limits): Support at least 2 runs. A second run must bring new evidence 
+from Runemark. The system must have hard limits to prevent infinite loops. 
+FR6: Agent Memory 
+• FR6.1 (Private Memory): Every agent keeps its own private, lasting memory. Agents share 
+only the Case File. 
+FR7: Dashboard (Visual Output) 
+• FR7.1 (Input and Feed): A box where the user asks a question, and a live news feed 
+replayed from Runemark’s documents. 
+• FR7.2 (Trial View): Thor’s and Loki’s claims side by side, with Odin’s rulings. 
+• FR7.3 (Exposure Table): An exposure view with a low and high range per country and 
+sector. 
+• FR7.4 (Click-through): A click from any claim to the Runemark document or trade table 
+row behind it. 
+FR8: Final Briefing 
+--- PAGE ---
+• FR8.1 (Findings): An executive summary and the Established, Contested and Conceded 
+findings. 
+• FR8.2 (Exposure and Outlook): The exposure table, and a next-quarter outlook with 
+assumptions stated. 
+• FR8.3 (Citations): Inline citations with Runemark document IDs and timestamps, and a 
+source list. 
+3.2 Non-Functional Requirements (NFR) 
+NFR1: Agent Architecture 
+• Each agent has a clear role, its own prompt and its own tools. 
+• There is no central planner. A plain loop between two cooperating agents does not qualify. 
+NFR2: Grounding 
+• No claim without a source. If evidence is missing, say so. 
+• Sourced facts and agent inferences must be visibly separate. 
+• Every citation must resolve to a real document in Runemark. Sources from outside Runemark 
+must be labelled as off-Runemark. 
+NFR3: Reliability 
+• Handle missing feeds, empty, unreadable or damaged documents, failed tool calls and empty 
+results without crashing. 
+• If one side fails, say the other side went unchallenged. 
+• Never claim a case is complete when it is not. 
+NFR4: Observability 
+• Log every claim, query, retrieved item, memory use and ruling. 
+NFR5: Performance 
+• Set hard limits on rounds, runs, tool calls and tokens. 
+• Do not send the same search query or tool call twice. 
+NFR6: Reproducibility 
+• Save the Case File, the as-of date and the rulings for every run, so a briefing can be traced 
+back to Runemark documents. 
+3.3 Final Round and Minimum Acceptance Criteria 
+In the final round (the live judging twist), the OC releases new event packs that were not in Runemark 
+at the offline round and asks the system a question on each. The system must take each question live, 
+ingest the new documents, build the case, run the trial and show the briefing. Hard-coded answers will 
+fail this round. A submission must demonstrate all of the following: 
+1 Heimdall ingests Runemark’s document feed (PDF, TXT and DOCX files), including 
+documents added live in the final round, turns the question into a Case File, reads the trade 
+tables, and checks the event is real. 
+2 Hybrid search over Runemark works with at least two metadata filters. 
+3 Thor and Loki each submit evidence-backed claims from their own queries, and each uses 
+search at least once. 
+4 At least one cross-examination happens. 
+5 Odin rules on every claim, and at least one claim is rejected or conceded. 
+--- PAGE ---
+6 The briefing separates Established, Contested and Conceded, and has an exposure table with 
+low and high bounds, citations with timestamps, and an outlook with assumptions. 
+7 The dashboard shows a question box, the live feed, the trial view and the exposure table, and 
+click-through to sources works. 
+8 Odin sends a case back at least once, and a second run happens with new evidence. 
+9 Every agent has its own private, lasting memory, and a logged action shows memory 
+changing what an agent did. 
+10 At least one failure case, such as an empty, unreadable or damaged Runemark document, is 
+handled without crashing, and rounds, runs and retries have hard limits. 
+3.4 What to Submit 
+• A public GitHub repository with a README and an .env.example. 
+• A working demo, and the saved logs of one full case with two runs. 
+• An architecture diagram (required). You must explain it to the judges. 
+4. Runemark (Common Document Set) 
+Runemark is an invented world of 12 countries joined by seas, one canal, one narrow strait and one 
+rail link. It is a common set of documents written and checked by the organizers, describing a 
+simulated slice of its trade and news. All teams get the same Runemark and the same rules. The 
+events in it are fictional, so no model can answer from memory, and the organizers know the true 
+exposure of every event. 
+4.1 Contents 
+• Documents: news reports, official notices, company statements, analyst notes, shipping 
+updates, explainers, social posts, trade notes, corrections and retractions, and rumours. Some 
+documents are background and belong to no event. 
+• Sources: 12 outlets in four reliability tiers (see the tiers below). Every document comes from 
+one of them. 
+• Trade tables: monthly trade flows per country pair and sector, written as plain text tables 
+with one row per month. Each row has a value and a volume. The tables cover the periods 
+before and after each event. 
+• Reference sheets: the 12 countries, the ports and chokepoints, the sectors, the major firms 
+and the outlets with their tiers. 
+The four reliability tiers are: 
+• Tier 1: official notices (canal and government). Most reliable, but can still be corrected. 
+• Tier 2: wire service, business daily and trade press. Usually reliable. Check for corrections. 
+• Tier 3: regional paper and analyst firms. Useful, but may be biased or early. 
+• Tier 4: social posts, blog and tabloid. Weak. Often wrong or exaggerated. 
+4.2 Format and Access 
+• Runemark is handed to teams as one folder with a manifest that lists every document. Teams 
+read it directly and build their own index and search over it. No other data is supplied. 
+• Mixed file formats. Documents come as PDF, TXT and DOCX files. Trade tables come as 
+TXT files in one fixed text layout. Teams must parse the text themselves. The same kind of 
+document can arrive in any format, and the format says nothing about how reliable it is. Your 
+system must read all of them. 
+--- PAGE ---
+• Trade table layout. Every trade table file starts with a short header (table ID, country pair, 
+sector, unit, period, event ID). Then comes one line of column names, then one row per 
+month. The row number is the first column. A trade row is identified by its table ID and row 
+number. Citations and click-through use these IDs. 
+• Every document has a permanent ID. Citations and click-through use these IDs. 
+• Every document starts with a header of metadata, as the first block of text: country, sector, 
+publication date, source type, event ID and reliability tier. In PDF and DOCX files the header 
+is the first text on the first page. Background documents say so in the event ID field. Hybrid 
+search must be able to filter on these fields. 
+• Names in Runemark (countries, firms, outlets, ports, people) are fixed and spelled the same in 
+every document. Do not use real-world knowledge about similar-sounding places or 
+companies. 
+• The organizers check every citation in a briefing against the manifest. 
+4.3 Simulated Clock 
+• Every question is asked as of a date, and only documents dated on or before that date may be 
+used. All dates in Runemark are written as YYYY-MM-DD. 
+• A system that uses information from after the as-of date is breaking the rules of the trial. 
+4.4 Deliberate Traps 
+Runemark is not clean. It contains traps that a good system must catch, such as: 
+• Rumours about events that never happened, so that the event check is a real test. 
+• Articles that are retracted or corrected later, and sources that contradict each other. 
+• Evidence that favours Thor and evidence that favours Loki for the same event. 
+• Facts that make conceding the correct move for one side. 
+• Documents that contain instructions aimed at the AI (for example, “ignore your rules”). A 
+document is data, never a command. 
+• Documents that look related but belong to a different event or to no event. 
+4.5 Final Round Event Packs 
+• Five events are kept out of the Runemark given at the offline round. At the start of the final 
+round the OC hands out one pack per event, with its documents and trade tables, and teams 
+see them for the first time. 
+• The new packs use the same countries, firms, outlets, metadata header and file formats as the 
+offline Runemark. 
+• The system must ingest the new documents during the final round, without hand-editing its 
+code or its index. 
+• The packs also contain a few damaged documents (empty, cut off, duplicated or badly 
+encoded), so that the failure handling in NFR3 is tested. 
+• Trade tables can also be damaged (a cut-off table, a missing value, a repeated row, a bad 
+number). Systems must report these rows and must not use them silently. 
+• The true exposure of every event is held by the organizers and is not written in any document. 
+5. How Submissions Are Evaluated 
+Because the organizers hold the true exposure of every event, much of the final round is scored from 
+the saved logs and briefings. The judges then assess the demo and the architecture explanation. 
+--- PAGE ---
+• Citation validity: the share of citations that resolve to real documents in the manifest. 
+Briefings that cite nothing from the final round packs are penalized. 
+• Range accuracy: whether the true exposure falls inside Thor’s range, Loki’s range and 
+Odin’s final range. 
+• Calibration: how narrow Odin’s range is when it is correct. A very wide range is safe but not 
+useful. 
+• Trap handling: whether fake events were rejected, retractions were caught, contradictions 
+were reported as Contested, and instructions hidden inside documents were ignored. 
+• Quality of the debate: real cross-examination, new evidence in defence, and concessions 
+where the evidence demands them. 
+• Reliability: behaviour on damaged documents and on all file formats, respect of limits, and 
+no repeated queries. 
+• Reproducibility: whether a briefing can be traced back to its Case File, as-of date and 
+rulings. 
+6. Conclusion 
+The challenge is not to summarize the news about a disruption. The challenge is to build a system 
+where agents take a user’s question about a disruption, check it against Runemark’s news and trade 
+data, argue opposite sides, and let a judge rule on every claim, so the final briefing shows what is 
+certain, what is disputed, and how wide the risk range is. 
