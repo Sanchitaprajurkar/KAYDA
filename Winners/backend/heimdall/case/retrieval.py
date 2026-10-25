@@ -56,6 +56,11 @@ class EvidenceRetriever:
         names = scope.countries + scope.event_countries + list(reference_countries)
         return any((meta.country or "") == c or contains_term(meta.title or "", c) for c in names)
 
+    def after_as_of(self, doc_id: str, scope: CaseScope) -> bool:
+        """Published after the case's own as-of date (which can be earlier than the corpus cut-off)."""
+        pub = self.store.document(doc_id).manifest_meta.pub_date
+        return bool(scope.as_of_date) and (pub or "9999") > scope.as_of_date
+
     def retrieve(self, scope: CaseScope, max_documents: int = 40, reference_countries: Sequence[str] = (),
                  shared_references: bool = False) -> List[RetrievedDocument]:
         weights = self._weights(scope)
@@ -67,7 +72,7 @@ class EvidenceRetriever:
 
         results = []
         for did, hits in per_doc.items():
-            if not self._in_scope(did, scope, reference_countries, shared_references):
+            if not self._in_scope(did, scope, reference_countries, shared_references) or self.after_as_of(did, scope):
                 continue
             hits.sort(reverse=True)
             meta = self.store.document(did).manifest_meta
@@ -118,6 +123,21 @@ class EvidenceRetriever:
                 reliability_tier=int(x["reliability"]) if str(x.get("reliability", "")).isdigit() else None,
                 pub_date=x.get("pub_date"), reason=reason["reason"], related_doc_id=reason.get("related_doc_id"),
                 detail=reason.get("detail"), claims=claims[:5], relevance_score=round(score, 3),
+            ))
+        doc_toks: Dict[str, List[str]] = {}
+        for did, _, toks in self.paragraphs:
+            doc_toks.setdefault(did, []).extend(toks)
+        for did, toks in doc_toks.items():
+            if not self.after_as_of(did, scope) or not self._in_scope(did, scope):
+                continue
+            score, _ = self._bm25(toks, weights)
+            if score <= 0:
+                continue
+            meta = self.store.document(did).manifest_meta
+            out.append(RejectedEvidence(
+                doc_id=did, title=meta.title, source_name=meta.source_name, reliability_tier=meta.reliability_tier,
+                pub_date=meta.pub_date, reason="CLOCK_EXCLUDED", relevance_score=round(score, 3),
+                detail=f"published {meta.pub_date} after the case as-of date {scope.as_of_date}",
             ))
         out.sort(key=lambda r: (-r.relevance_score, r.doc_id))
         return out[:limit]

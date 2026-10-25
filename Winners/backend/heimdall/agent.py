@@ -167,7 +167,8 @@ class HeimdallAgent:
                                 targeted_ids.append(did)
 
         # Trade series come first (maintaining test assertion run2.new_document_ids[:2] == ["ORV-0027", "ORV-0044"])
-        priority_ids = list(dict.fromkeys(series_ids + targeted_ids))
+        priority_ids = [d for d in dict.fromkeys(series_ids + targeted_ids)
+                        if not self.retriever.after_as_of(d, scope)]
         found = [by_id[d] for d in priority_ids if d in by_id]
         for did in priority_ids:
             if did not in {f.doc_id for f in found} and did not in known:
