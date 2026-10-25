@@ -1,0 +1,321 @@
+/* ============================================================
+   TRIAL PROGRESS BANNER — Elevated Courtroom Agent Pipeline
+   ============================================================ */
+
+.progress-banner {
+  background: #121514;
+  border-radius: 8px;
+  padding: 0.95rem 1.4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Top inquiry bar */
+.progress-banner__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.progress-banner__inquiry {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.progress-banner__inquiry-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #D7AD62;
+  flex-shrink: 0;
+}
+
+.progress-banner__inquiry-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #F4F0E7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 580px;
+}
+
+.progress-banner__meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.progress-banner__asof {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  color: rgba(244, 240, 231, 0.7);
+  background: #181C1A;
+  padding: 0.3rem 0.65rem;
+  border-radius: 5px;
+}
+
+.progress-banner__icon-gold {
+  color: #D7AD62;
+}
+
+.progress-banner__btn-new {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(244, 240, 231, 0.75);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.progress-banner__btn-new:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #F4F0E7;
+  border-color: rgba(215, 173, 98, 0.3);
+}
+
+.progress-banner__btn-briefing {
+  background: linear-gradient(135deg, rgba(215, 173, 98, 0.16) 0%, rgba(150, 112, 46, 0.22) 100%);
+  border: 1px solid rgba(215, 173, 98, 0.35);
+  color: #F8E5B5;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 0.22s ease;
+}
+
+.progress-banner__btn-briefing:hover {
+  background: linear-gradient(135deg, #D7AD62 0%, #96702E 100%);
+  color: #0D0F0E;
+  box-shadow: 0 0 16px rgba(215, 173, 98, 0.4);
+}
+
+.progress-banner__btn-briefing.pulse {
+  animation: pulse-verdict-btn 2.2s infinite ease-in-out;
+}
+
+@keyframes pulse-verdict-btn {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(215, 173, 98, 0);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(215, 173, 98, 0.45);
+    border-color: #F8E5B5;
+  }
+}
+
+/* ── 5-Stage Agent Ribbon ── */
+.progress-banner__ribbon {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  padding: 0.35rem 0;
+}
+
+.ribbon-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  position: relative;
+}
+
+.ribbon-step__track {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ribbon-step__marker {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1A1E1C;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.ribbon-step__rune {
+  font-size: 0.7rem;
+  color: rgba(244, 240, 231, 0.45);
+}
+
+.ribbon-step__check {
+  color: #10B981;
+}
+
+.ribbon-step__connector {
+  position: absolute;
+  left: 22px;
+  right: -0.75rem;
+  top: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.ribbon-step__connector.filled {
+  background: rgba(215, 173, 98, 0.45);
+}
+
+/* Step Body */
+.ribbon-step__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ribbon-step__agent-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ribbon-step__agent {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: rgba(244, 240, 231, 0.4);
+}
+
+.ribbon-step__role {
+  font-size: 0.65rem;
+  color: rgba(244, 240, 231, 0.4);
+  line-height: 1.25;
+}
+
+/* Active & Completed States */
+.ribbon-step.active .ribbon-step__marker {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px currentColor;
+}
+
+.ribbon-step.active .ribbon-step__agent {
+  color: #F4F0E7;
+}
+
+.ribbon-step.active .ribbon-step__role {
+  color: rgba(244, 240, 231, 0.85);
+}
+
+.ribbon-step__pulsing-pip {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 6px currentColor;
+  animation: pulse-pip 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse-pip {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.25); }
+}
+
+/* Step Theming */
+.stage-heimdall.active .ribbon-step__marker,
+.stage-heimdall.active .ribbon-step__agent-icon {
+  color: #38BDF8;
+  border-color: #38BDF8;
+}
+
+.stage-thor.active .ribbon-step__marker,
+.stage-thor.active .ribbon-step__agent-icon {
+  color: #F87171;
+  border-color: #F87171;
+}
+
+.stage-loki.active .ribbon-step__marker,
+.stage-loki.active .ribbon-step__agent-icon {
+  color: #34D399;
+  border-color: #34D399;
+}
+
+.stage-odin.active .ribbon-step__marker,
+.stage-odin.active .ribbon-step__agent-icon {
+  color: #FBBF24;
+  border-color: #FBBF24;
+}
+
+.stage-verdict.active .ribbon-step__marker,
+.stage-verdict.active .ribbon-step__agent-icon {
+  color: #F4D388;
+  border-color: #F4D388;
+}
+
+.ribbon-step.completed .ribbon-step__marker {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.ribbon-step.completed .ribbon-step__agent {
+  color: rgba(244, 240, 231, 0.7);
+}
+
+/* ── Live Telemetry Log Line ── */
+.progress-banner__ticker {
+  background: #0E100F;
+  border-radius: 5px;
+  padding: 0.45rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.progress-banner__ticker-icon {
+  color: #D7AD62;
+  flex-shrink: 0;
+  animation: pulse-pip 2s infinite ease-in-out;
+}
+
+.progress-banner__ticker-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #D7AD62;
+  flex-shrink: 0;
+}
+
+.progress-banner__ticker-msg {
+  font-size: 0.74rem;
+  color: rgba(244, 240, 231, 0.82);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: monospace;
+}
+
+@media (max-width: 900px) {
+  .progress-banner__ribbon {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

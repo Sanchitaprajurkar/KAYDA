@@ -1,0 +1,230 @@
+[
+  {
+    "fact_id": "75186821",
+    "category": "TRADE_VOLUME",
+    "subject": "Utgard imports",
+    "statement": "Utgard relies on imported energy, grain and copper ore to keep its plants and population supplied.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Utgard relies on imported energy, grain and copper ore to keep its plants and population supplied."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "2de28226",
+    "category": "TRADE_VOLUME",
+    "subject": "Utgard exports",
+    "statement": "The country's main exports are computer chips and consumer goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The country's main exports are computer chips and consumer goods."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "2b7e9ada",
+    "category": "TRADE_VOLUME",
+    "subject": "Utgard imports",
+    "statement": "Its main imports are LNG, grain and copper ore.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Its main imports are LNG, grain and copper ore."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "62efded2",
+    "category": "ROUTE_STATUS",
+    "subject": "Utgard Terminal",
+    "statement": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Utgard Terminal is the principal container port and handles both finished goods and industrial inputs."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "8d30189d",
+    "category": "OTHER",
+    "subject": "Wolf Logistics",
+    "statement": "Wolf Logistics, a freight forwarder, is the best-known transport firm.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Wolf Logistics, a freight forwarder, is the best-known transport firm."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "add5a54e",
+    "category": "ROUTE_STATUS",
+    "subject": "rail freight line",
+    "statement": "A rail freight line carries containers to inland depots.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0001",
+      "file_name": "ATL-0001.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "A rail freight line carries containers to inland depots."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "d2ed0171",
+    "category": "TRADE_VOLUME",
+    "subject": "Asgard imports",
+    "statement": "Asgard imports almost everything it consumes, from food and medicines to machinery and household goods.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Asgard exports shipping and re-export services and imports almost everything it consumes, from food and medicines to machinery and household goods."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "1f7a6ee6",
+    "category": "OTHER",
+    "subject": "Asgard Port",
+    "statement": "The main port is Asgard Port, a hub with container, general cargo and passenger berths.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "The main port is Asgard Port, a hub with container, general cargo and passenger berths."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "bda24c92",
+    "category": "OTHER",
+    "subject": "Longship Lines and Shield Insurance",
+    "statement": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "The best-known firms are Longship Lines, a container carrier, and Shield Insurance, a marine insurer."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "ce361bde",
+    "category": "ROUTE_STATUS",
+    "subject": "Ferry links",
+    "statement": "Ferry links connect the capital to smaller islands.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Ferry links connect the capital to smaller islands."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "9c6d2a93",
+    "category": "ROUTE_STATUS",
+    "subject": "Coastal road",
+    "statement": "A coastal road runs west towards the Ymir road.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "A coastal road runs west towards the Ymir road."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  },
+  {
+    "fact_id": "f11646ce",
+    "category": "OTHER",
+    "subject": "Asgard Port operations",
+    "statement": "The port operates throughout the year, with extra staff during the summer months.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0002",
+      "file_name": "ATL-0002.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "The port operates throughout the year, with extra staff during the summer months."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.95
+  }
+]

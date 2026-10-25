@@ -1,0 +1,82 @@
+{
+  "doc_id": "ORV-0004",
+  "file_name": "ORV-0004.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0004.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0004",
+    "event_id": "E5",
+    "title": "Vantro Trading: markets have already adjusted, no damage",
+    "source_name": "Vantro Trading",
+    "source_type": "company_statement",
+    "reliability": 2,
+    "pub_date": "2026-12-02",
+    "pub_time": "10:20",
+    "country": "Ravik",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0004.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0004 EVENT_ID: E5 TITLE: Vantro Trading: markets have already adjusted, no damage SOURCE_NAME: Vantro Trading SOURCE_TYPE: company_statement RELIABILITY: 2 PUB_DATE: 2026-12-02 PUB_TIME: 10:20 COUNTRY: Ravik SECTOR: Wheat LANGUAGE: en --- Vantro Trading: markets have already adjusted, no damage",
+      "char_count": 307,
+      "word_count": 39
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement.",
+      "char_count": 104,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] Prices have settled and buyers have found alternative supply, the firm says.",
+      "char_count": 81,
+      "word_count": 13
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] \"Markets have adjusted; there is no damage left for our customers,\" said Samir Tolle, a trader at the firm.",
+      "char_count": 112,
+      "word_count": 20
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] The company says its own book is balanced for the rest of the year.",
+      "char_count": 72,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The statement is a view from a trading desk, not an audited result. Vantro says its own book is balanced, but it does not show the positions or the terms of the substitute supply. The firm says it has honoured all delivery terms this quarter.",
+      "char_count": 247,
+      "word_count": 46
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered. It does not say at what price or through which route. Customers who asked for details were referred to their account managers. The statement was issued on the same day the firm completed a rail booking.",
+      "char_count": 323,
+      "word_count": 55
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": 1,
+      "raw_text": "[P7] Vantro declined to give volume figures.",
+      "char_count": 44,
+      "word_count": 7
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0004 EVENT_ID: E5 TITLE: Vantro Trading: markets have already adjusted, no damage SOURCE_NAME: Vantro Trading SOURCE_TYPE: company_statement RELIABILITY: 2 PUB_DATE: 2026-12-02 PUB_TIME: 10:20 COUNTRY: Ravik SECTOR: Wheat LANGUAGE: en --- Vantro Trading: markets have already adjusted, no damage\n\n[P1] Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement.\n\n[P2] Prices have settled and buyers have found alternative supply, the firm says.\n\n[P3] \"Markets have adjusted; there is no damage left for our customers,\" said Samir Tolle, a trader at the firm.\n\n[P4] The company says its own book is balanced for the rest of the year.\n\n[P5] The statement is a view from a trading desk, not an audited result. Vantro says its own book is balanced, but it does not show the positions or the terms of the substitute supply. The firm says it has honoured all delivery terms this quarter.\n\n[P6] The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered. It does not say at what price or through which route. Customers who asked for details were referred to their account managers. The statement was issued on the same day the firm completed a rail booking.\n\n[P7] Vantro declined to give volume figures.",
+  "total_paragraphs": 8,
+  "total_pages": 1
+}

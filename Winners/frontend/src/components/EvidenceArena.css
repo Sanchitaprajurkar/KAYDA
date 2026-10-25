@@ -1,0 +1,322 @@
+/* ============================================================
+   EVIDENCE ARENA — Center Stage Courtroom Chamber
+   ============================================================ */
+
+.evidence-arena {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  min-height: 520px;
+  background: #141716;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.15rem 1.35rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+
+/* Header */
+.evidence-arena__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.evidence-arena__title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.evidence-arena__emblem {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(215, 173, 98, 0.12);
+  color: #D7AD62;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evidence-arena__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #F4F0E7;
+}
+
+.evidence-arena__subtitle {
+  font-size: 0.68rem;
+  color: rgba(244, 240, 231, 0.5);
+  display: block;
+}
+
+/* Tabs */
+.evidence-arena__tabs {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.evidence-arena__tab {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(244, 240, 231, 0.6);
+  padding: 0.35rem 0.65rem;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.evidence-arena__tab:hover {
+  color: #F4F0E7;
+  border-color: rgba(215, 173, 98, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.evidence-arena__tab.active {
+  background: #1D221F;
+  border-color: #D7AD62;
+  color: #F8E5B5;
+}
+
+/* Researching Informational Banner */
+.evidence-arena__research-banner {
+  background: #1A1F1C;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.evidence-arena__research-pulse {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: pulse-ring 2s infinite ease-in-out;
+}
+
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(0.95); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.evidence-arena__research-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.evidence-arena__research-title {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #E0F2FE;
+}
+
+.evidence-arena__research-desc {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: rgba(244, 240, 231, 0.65);
+}
+
+/* Body */
+.evidence-arena__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 360px);
+  padding-right: 0.25rem;
+}
+
+/* Trade Metrics Grid */
+.evidence-arena__metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+}
+
+.trade-metric-card {
+  background: #171B19;
+  border-radius: 6px;
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.trade-metric-card__label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(244, 240, 231, 0.5);
+  font-weight: 600;
+}
+
+.trade-metric-card__value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.metric-danger .trade-metric-card__value { color: #F87171; }
+.metric-success .trade-metric-card__value { color: #34D399; }
+.metric-warning .trade-metric-card__value { color: #FBBF24; }
+
+.trade-metric-card__sub {
+  font-size: 0.66rem;
+  color: rgba(244, 240, 231, 0.45);
+}
+
+/* Verified Documents Section */
+.evidence-arena__docs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.evidence-arena__docs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.evidence-arena__docs-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #D7AD62;
+}
+
+.evidence-arena__docs-hint {
+  font-size: 0.66rem;
+  color: rgba(244, 240, 231, 0.4);
+}
+
+.evidence-arena__docs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.verified-doc-card {
+  background: #181C1A;
+  border-radius: 8px;
+  padding: 0.85rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.2s ease;
+}
+
+.verified-doc-card:hover {
+  background: #1C211E;
+  border-color: rgba(215, 173, 98, 0.25);
+}
+
+.verified-doc-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verified-doc-card__badge {
+  font-size: 0.65rem;
+  color: #D7AD62;
+  font-weight: 600;
+}
+
+.verified-doc-card__date {
+  font-size: 0.65rem;
+  color: rgba(244, 240, 231, 0.45);
+  font-family: monospace;
+}
+
+.verified-doc-card__title {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #F4F0E7;
+  line-height: 1.35;
+}
+
+.verified-doc-card__snippet {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: rgba(244, 240, 231, 0.65);
+}
+
+.verified-doc-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.35rem;
+}
+
+.verified-doc-card__cite-btn {
+  background: #212623;
+  border: 1px solid rgba(215, 173, 98, 0.2);
+  border-radius: 5px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.72rem;
+  color: #F8E5B5;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.verified-doc-card__cite-btn:hover {
+  background: rgba(215, 173, 98, 0.15);
+  border-color: #D7AD62;
+  color: #FFF;
+}
+
+.verified-doc-card__cite-icon {
+  color: #D7AD62;
+}
+
+.verified-doc-card__cite-arrow {
+  opacity: 0.6;
+}
+
+.verified-doc-card__status {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.65rem;
+  color: #34D399;
+}
+
+.evidence-arena__map-wrap {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
+}

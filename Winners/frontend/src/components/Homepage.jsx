@@ -317,7 +317,7 @@ export default function Homepage({ onEnterArena }) {
             <div className="hp-hero-actions">
               <button 
                 className="hp-btn-primary" 
-                onClick={(e) => scrollToSection(e, 'realms')}
+                onClick={onEnterArena}
               >
                 <span>ENTER THE REALMS</span>
                 <ArrowRight size={17} />

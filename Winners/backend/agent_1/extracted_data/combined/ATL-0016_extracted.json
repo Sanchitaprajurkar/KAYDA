@@ -1,0 +1,786 @@
+{
+  "doc_id": "ATL-0016",
+  "title": "Firm directory",
+  "facts_count": 17,
+  "entities_count": 27,
+  "facts": [
+    {
+      "fact_id": "4faf4414",
+      "category": "OTHER",
+      "subject": "Longship Lines",
+      "statement": "Longship Lines (Asgard) is a container shipping firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Longship Lines (Asgard) is a container shipping firm."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "1bee8c85",
+      "category": "OTHER",
+      "subject": "Hammer Freight",
+      "statement": "Hammer Freight (Midgard) is a bulk shipping firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Hammer Freight (Midgard) is a bulk shipping firm."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "86e206d6",
+      "category": "OTHER",
+      "subject": "Wolf Logistics",
+      "statement": "Wolf Logistics (Utgard) is a freight forwarder.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Wolf Logistics (Utgard) is a freight forwarder."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "600b8daf",
+      "category": "OTHER",
+      "subject": "Bifrost Terminals",
+      "statement": "Bifrost Terminals (Ymir) operates canal and port facilities.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Bifrost Terminals (Ymir) operates canal and port facilities."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "f54f854f",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Rune Trading",
+      "statement": "Rune Trading (Vanir) trades grain and rice.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Rune Trading (Vanir) trades grain and rice."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "60073f48",
+      "category": "OTHER",
+      "subject": "Shield Insurance",
+      "statement": "Shield Insurance (Asgard) is a marine insurer.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Shield Insurance (Asgard) is a marine insurer."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "a9a1ed29",
+      "category": "OTHER",
+      "subject": "Axe Metals",
+      "statement": "Axe Metals (Dorin) is a specialty-metal miner.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Axe Metals (Dorin) is a specialty-metal miner."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "b1d96eb3",
+      "category": "OTHER",
+      "subject": "Solen Energy",
+      "statement": "Solen Energy (Solvar) produces LNG.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Solen Energy (Solvar) produces LNG."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "ab1f10f8",
+      "category": "OTHER",
+      "subject": "Brightwave Shipping",
+      "statement": "Brightwave Shipping (Solvar) carries LNG and runs tankers.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Brightwave Shipping (Solvar) carries LNG and runs tankers."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "37a10c4f",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Corvan Grain",
+      "statement": "Corvan Grain (Orvan) exports grain.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Corvan Grain (Orvan) exports grain."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "1441e398",
+      "category": "OTHER",
+      "subject": "Nexor Chips",
+      "statement": "Nexor Chips (Ketra) makes computer chips.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Nexor Chips (Ketra) makes computer chips."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "83c2d3f5",
+      "category": "OTHER",
+      "subject": "Granite Mining",
+      "statement": "Granite Mining (Valhalla) mines copper.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Granite Mining (Valhalla) mines copper."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "3bd22e02",
+      "category": "OTHER",
+      "subject": "Paxen Pharma",
+      "statement": "Paxen Pharma (Midgard) makes medicines.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Paxen Pharma (Midgard) makes medicines."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "9864e6c9",
+      "category": "OTHER",
+      "subject": "Anchor Marine",
+      "statement": "Anchor Marine (Tolan) provides port services.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Anchor Marine (Tolan) provides port services."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "965c977c",
+      "category": "OTHER",
+      "subject": "Vantro Trading",
+      "statement": "Vantro Trading (Ravik) is a commodity trader.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Vantro Trading (Ravik) is a commodity trader."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "01c61f63",
+      "category": "OTHER",
+      "subject": "Firm directory",
+      "statement": "The directory lists normal activities only.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "The directory lists normal activities only."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "736e151c",
+      "category": "OTHER",
+      "subject": "Firm operations",
+      "statement": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "A firm's home country is where its head office and main operations are based; many firms also work in other countries through branches, agents or long-term contracts."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Asgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ATL-0016 EVENT_ID: NONE TITLE: Firm directory SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: ..."
+        },
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        },
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        },
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Utgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Ymir",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Vanir",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Dorin",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Solvar",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Ketra",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Valhalla",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Tolan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Longship Lines",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A container shipping firm based in Asgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Hammer Freight",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A bulk shipping firm based in Midgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Wolf Logistics",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A freight forwarder based in Utgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Bifrost Terminals",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Operates canal and port facilities in Ymir.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Rune Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Trades grain and rice in Vanir.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Longship Lines (Asgard) is a container shipping firm. Hammer Freight (Midgard) is a bulk shipping firm. Wolf Logist..."
+        }
+      ]
+    },
+    {
+      "name": "Shield Insurance",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A marine insurer based in Asgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Axe Metals",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A specialty-metal miner based in Dorin.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Solen Energy",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Produces LNG in Solvar.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Brightwave Shipping",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Carries LNG and runs tankers in Solvar.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Corvan Grain",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Exports grain in Orvan.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+        }
+      ]
+    },
+    {
+      "name": "Nexor Chips",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Makes computer chips in Ketra.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Granite Mining",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Mines copper in Valhalla.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Paxen Pharma",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Makes medicines in Midgard.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Anchor Marine",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Provides port services in Tolan.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    },
+    {
+      "name": "Vantro Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Is a commodity trader in Ravik.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0016",
+          "file_name": "ATL-0016.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+        }
+      ]
+    }
+  ]
+}

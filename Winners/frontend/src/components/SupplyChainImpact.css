@@ -1,0 +1,344 @@
+/* ============================================================
+   SUPPLY CHAIN IMPACT PANEL — Clear, Defensible Impact Summary
+   ============================================================ */
+
+.impact-summary-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+/* Header */
+.impact-summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.impact-summary__title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.impact-summary__globe-icon {
+  color: #D7AD62;
+}
+
+.impact-summary__title {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #F8E5B5;
+  text-transform: uppercase;
+}
+
+.impact-summary__hint {
+  font-size: 0.68rem;
+  color: rgba(244, 240, 231, 0.45);
+}
+
+/* Table */
+.impact-summary__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #111413;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.impact-summary__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.78rem;
+}
+
+.impact-summary__table th {
+  background: #181C1A;
+  color: #D7AD62;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.7rem 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.th-country { width: 22%; }
+.th-sector { width: 30%; }
+.th-impact { width: 33%; }
+.th-confidence { width: 15%; text-align: right; }
+
+.impact-summary__table td {
+  padding: 0.75rem 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  vertical-align: middle;
+}
+
+.impact-row {
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.impact-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.impact-row.row-active {
+  background: #1A201D;
+  border-left: 2px solid #D7AD62;
+}
+
+.country-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.country-name {
+  font-weight: 700;
+  color: #F4F0E7;
+  letter-spacing: 0.02em;
+}
+
+.chevron-icon {
+  color: rgba(244, 240, 231, 0.35);
+}
+
+.sector-text {
+  color: rgba(244, 240, 231, 0.85);
+  line-height: 1.35;
+}
+
+/* Impact Value */
+.impact-val {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+}
+
+.impact-val--range {
+  font-weight: 700;
+  color: #F8E5B5;
+}
+
+.impact-val--insufficient {
+  color: rgba(244, 240, 231, 0.45);
+  font-style: italic;
+  font-size: 0.72rem;
+}
+
+.insufficient-icon {
+  color: #F59E0B;
+  flex-shrink: 0;
+}
+
+/* Confidence Pill */
+.td-confidence {
+  text-align: right;
+}
+
+.confidence-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.pill-high {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.pill-medium {
+  background: rgba(245, 158, 11, 0.12);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.pill-low {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(244, 240, 231, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Country Detail Drawer */
+.country-detail-drawer {
+  background: #181D1A;
+  border-radius: 8px;
+  border: 1px solid rgba(215, 173, 98, 0.25);
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.country-detail__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.country-detail__title-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.country-detail__badge {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D7AD62;
+}
+
+.country-detail__name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #F4F0E7;
+}
+
+.country-detail__close-btn {
+  background: transparent;
+  border: none;
+  color: rgba(244, 240, 231, 0.45);
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.country-detail__close-btn:hover {
+  color: #F4F0E7;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.country-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.country-detail__block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #131715;
+  padding: 0.75rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.detail-block__label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #D7AD62;
+}
+
+.detail-block__text {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: rgba(244, 240, 231, 0.8);
+}
+
+.detail-block__text--mitigation {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  color: #6EE7B7;
+}
+
+.mitigation-icon {
+  color: #34D399;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.detail-block__tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.sector-tag {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(244, 240, 231, 0.85);
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Detail Footer */
+.country-detail__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detail-footer__label {
+  font-size: 0.7rem;
+  color: rgba(244, 240, 231, 0.5);
+  font-weight: 600;
+}
+
+.detail-footer__docs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.detail-doc-btn {
+  background: #212824;
+  border: 1px solid rgba(215, 173, 98, 0.25);
+  border-radius: 5px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.72rem;
+  color: #F8E5B5;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.detail-doc-btn:hover {
+  background: rgba(215, 173, 98, 0.18);
+  border-color: #D7AD62;
+  color: #FFF;
+}
+
+.detail-doc-icon {
+  color: #D7AD62;
+}
+
+.detail-doc-arrow {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .country-detail__grid {
+    grid-template-columns: 1fr;
+  }
+}

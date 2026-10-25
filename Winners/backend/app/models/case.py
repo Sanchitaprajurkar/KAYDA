@@ -107,3 +107,5 @@ class CaseFile(BaseModel):
     briefing: Optional[ExecutiveBriefing] = None
     timeline: List[Dict[str, Any]] = Field(default_factory=list)
     retrieved_documents: List[str] = Field(default_factory=list)
+    extracted_facts: List[Dict[str, Any]] = Field(default_factory=list)
+    discovered_entities: List[Dict[str, Any]] = Field(default_factory=list)

@@ -1,28 +1,34 @@
-"""Supabase client manager for structured case data persistence."""
+"""Client manager for structured case data persistence with graceful fallback."""
 
 import logging
-from typing import Optional
-from supabase import create_client, Client
+from typing import Optional, Any
 from agent_1.config import settings
 
 logger = logging.getLogger(__name__)
 
-_supabase_client: Optional[Client] = None
+try:
+    from supabase import create_client, Client
+    HAS_SUPABASE = True
+except ImportError:
+    HAS_SUPABASE = False
+    Client = Any
+
+_supabase_client: Optional[Any] = None
 
 
-def get_supabase_client() -> Optional[Client]:
-    """Retrieve or initialize singleton Supabase client."""
+def get_supabase_client() -> Optional[Any]:
+    """Retrieve or initialize singleton Supabase/PostgreSQL client."""
     global _supabase_client
     if _supabase_client is not None:
         return _supabase_client
 
-    if not settings.SUPABASE_URL or not settings.SUPABASE_KEY:
-        logger.warning("SUPABASE_URL or SUPABASE_KEY not configured; operating in local storage mode.")
+    if not HAS_SUPABASE or not getattr(settings, 'SUPABASE_URL', None) or not getattr(settings, 'SUPABASE_KEY', None):
+        logger.info("Supabase client not present/configured; operating in local JSON / Neon PostgreSQL storage mode.")
         return None
 
     try:
         _supabase_client = create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
         return _supabase_client
     except Exception as e:
-        logger.error(f"Failed to initialize Supabase client: {e}")
+        logger.warning(f"Could not connect to Supabase (using local/Neon fallback): {e}")
         return None

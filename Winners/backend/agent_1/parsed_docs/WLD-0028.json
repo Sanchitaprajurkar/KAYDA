@@ -1,0 +1,54 @@
+{
+  "doc_id": "WLD-0028",
+  "file_name": "WLD-0028.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\WLD-0028.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0028",
+    "event_id": "NONE",
+    "title": "Heatwave prompts water safety campaign",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": "1",
+    "pub_date": "2024-07-18",
+    "pub_time": "09:00",
+    "country": "Midgard",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0028.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0028 EVENT_ID: NONE TITLE: Heatwave prompts water safety campaign SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2024-07-18 PUB_TIME: 09:00 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Heatwave prompts water safety campaign",
+      "char_count": 276,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwave. The campaign will run on radio, in clinics and on noticeboards in public buildings.",
+      "char_count": 206,
+      "word_count": 32
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] Officials advised people to avoid strenuous outdoor work during the hottest hours and to check on older neighbours. Swimming in rivers and lakes is discouraged where there is no lifeguard, and several sites have been marked with warning signs.",
+      "char_count": 248,
+      "word_count": 40
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] The ministry said hospitals have seen an increase in cases of heat exhaustion but that services remain open. A free advice line will operate during daylight hours for the rest of the week.",
+      "char_count": 193,
+      "word_count": 34
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0028 EVENT_ID: NONE TITLE: Heatwave prompts water safety campaign SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2024-07-18 PUB_TIME: 09:00 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Heatwave prompts water safety campaign\n\n[P1] The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwave. The campaign will run on radio, in clinics and on noticeboards in public buildings.\n\n[P2] Officials advised people to avoid strenuous outdoor work during the hottest hours and to check on older neighbours. Swimming in rivers and lakes is discouraged where there is no lifeguard, and several sites have been marked with warning signs.\n\n[P3] The ministry said hospitals have seen an increase in cases of heat exhaustion but that services remain open. A free advice line will operate during daylight hours for the rest of the week.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}

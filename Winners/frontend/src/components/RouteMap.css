@@ -1,104 +1,306 @@
-/* RouteMap.css */
-.route-map {
+/* RouteMap.css — Yggdrasil Celestial Trade Matrix */
+.realm-matrix {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: var(--bg-void);
+  background: var(--bg-surface);
   overflow: hidden;
   position: relative;
 }
 
-.route-map__header {
+/* ── Realm Matrix Header ── */
+.realm-matrix__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 7px 10px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--border);
+  padding: 18px 24px 14px;
+  background: rgba(13, 15, 14, 0.4);
   flex-shrink: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
-.route-map__header-left {
+.realm-matrix__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.realm-matrix__title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.realm-matrix__subtitle {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* View Filters */
+.realm-matrix__views {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.realm-matrix__view-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: none;
+  color: var(--text-secondary);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 11px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
 }
 
-.route-map__header-dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--thor);
-}
-
-.route-map__header-title {
+.realm-matrix__view-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-primary);
 }
 
-.route-map__legend {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+.realm-matrix__view-btn.active {
+  background: rgba(215, 173, 98, 0.14);
+  color: var(--odin-hi);
+  font-weight: 600;
 }
 
-.route-map__legend-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.pip {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.route-map__legend-line {
-  width: 16px;
-  height: 1px;
+.pip--crimson {
+  background: var(--thor-hi);
+  box-shadow: 0 0 8px rgba(217, 72, 72, 0.6);
 }
 
-.route-map__canvas {
+.pip--emerald {
+  background: var(--loki-hi);
+  box-shadow: 0 0 8px rgba(25, 183, 122, 0.6);
+}
+
+.pip--gold {
+  background: var(--odin-hi);
+  box-shadow: 0 0 8px rgba(215, 173, 98, 0.6);
+}
+
+/* ── Canvas Wrap ── */
+.realm-matrix__canvas-wrap {
   flex: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
   min-height: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, rgba(26, 33, 29, 0.7) 0%, rgba(13, 15, 14, 0.95) 90%);
 }
 
-.route-map__canvas svg {
+.realm-matrix__svg {
   width: 100%;
   height: 100%;
-  max-height: 400px;
+  user-select: none;
 }
 
-.route-map__footer {
-  border-top: 1px solid var(--border);
-  padding: 6px 10px;
+/* Ethereal Ley Line Animations */
+@keyframes ley-flow {
+  from {
+    stroke-dashoffset: 40;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ley-flow-reverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+
+.ley-line--suspended {
+  animation: ley-flow 2s linear infinite;
+  opacity: 0.85;
+}
+
+.ley-line--mitigated {
+  animation: ley-flow-reverse 1.8s linear infinite;
+  opacity: 0.9;
+}
+
+/* Celestial Realm Node Interactions */
+.celestial-realm {
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.celestial-realm:hover {
+  transform: scale(1.08);
+}
+
+@keyframes celestial-halo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.celestial-halo {
+  animation: celestial-halo-spin 12s linear infinite;
+  transform-origin: 0 0;
+}
+
+.realm-title-text {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.9));
+  pointer-events: none;
+  transition: fill 0.2s ease;
+}
+
+/* ── Strategic Chronicle Floating Lore Card ── */
+.realm-chronicle {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+  right: 24px;
+  max-width: 480px;
+  background: rgba(21, 25, 22, 0.95);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fade-in 0.25s ease-out;
+  pointer-events: none;
+}
+
+.realm-chronicle__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 9.5px;
+}
+
+.realm-chronicle__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.realm-chronicle__name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+}
+
+.realm-chronicle__role {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.realm-chronicle__status-pip {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.realm-chronicle__status-pip.type--disrupted {
+  background: rgba(217, 72, 72, 0.14);
+  color: var(--thor-hi);
+}
+
+.realm-chronicle__status-pip.type--terminus {
+  background: rgba(215, 173, 98, 0.14);
+  color: var(--odin-hi);
+}
+
+.realm-chronicle__status-pip.type--alt {
+  background: rgba(25, 183, 122, 0.14);
+  color: var(--loki-hi);
+}
+
+.realm-chronicle__lore {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 400;
+}
+
+.realm-chronicle__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.realm-chronicle__stat-item {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.realm-chronicle__stat-item strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── Realm Chronicle Bottom Strip ── */
+.realm-matrix__footer {
+  padding: 14px 24px;
+  background: rgba(13, 15, 14, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
   color: var(--text-secondary);
   flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-/* SVG node labels */
-.map-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8.5px;
+.realm-matrix__foot-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-/* Animated disruption ring */
-@keyframes disruption-ring {
-  0%   { r: 9; opacity: 0.7; }
-  100% { r: 22; opacity: 0; }
+.realm-matrix__foot-label {
+  color: var(--text-muted);
 }
 
-.disruption-ring {
-  animation: disruption-ring 2s ease-out infinite;
+.realm-matrix__foot-val {
+  font-weight: 600;
 }
 
-/* March animation for disrupted dashes */
-.dashes-march {
-  animation: dash-march 0.6s linear infinite;
+.color--crimson {
+  color: var(--thor-hi);
+}
+
+.color--emerald {
+  color: var(--loki-hi);
+}
+
+.color--gold {
+  color: var(--odin-hi);
 }

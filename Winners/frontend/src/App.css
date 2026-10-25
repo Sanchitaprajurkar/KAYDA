@@ -1,33 +1,106 @@
-/* App.css — Trial Layout */
+/* App.css — Cinematic Norse Courtroom Trial Layout */
 .trial-layout {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: var(--bg-void);
+  color: var(--text-primary);
+  position: relative;
 }
 
-/* ── 3-Column Arena ── */
+/* ── 3-Chamber Courtroom Arena (30% Thor, 40% Evidence, 30% Loki) ── */
 .trial-arena {
   flex: 1;
+  min-height: 520px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  min-height: 0;
-}
-
-.trial-arena__col {
+  grid-template-columns: 3fr 4fr 3fr; /* 30% Thor / 40% Center / 30% Loki */
   overflow: hidden;
-  border-right: 1px solid var(--border);
+  background: var(--bg-void);
+  position: relative;
+  gap: 16px;
+  padding: 12px 18px;
+  box-sizing: border-box;
 }
 
-.trial-arena__col:last-child {
-  border-right: none;
+/* Thor & Loki Agent Columns */
+.trial-arena__col {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+/* Evidence Arena Center Stage — strictly constrained so it never pushes side columns */
 .trial-arena__center {
+  min-width: 0;
+  min-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--border);
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1240px) {
+  .trial-arena {
+    gap: 12px;
+    padding: 10px 14px;
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trial-layout {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .trial-arena {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    gap: 16px;
+    padding: 14px;
+  }
+
+  .trial-arena__col {
+    height: 580px;
+    min-height: 580px;
+  }
+
+  .trial-arena__center {
+    height: 520px;
+    min-height: 520px;
+    order: -1; /* Evidence & corridor stay prominent at top on stacked screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .trial-arena__col {
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .trial-arena__center {
+    height: 440px;
+    min-height: 440px;
+  }
 }

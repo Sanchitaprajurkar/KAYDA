@@ -1,139 +1,198 @@
-/* TopBar.css */
+/* ============================================================
+   TOPBAR — Minimal Asgardian Courtroom Navigation Bar
+   ============================================================ */
+
 .topbar {
-  height: 40px;
+  height: 60px;
   width: 100%;
-  background: var(--bg-void);
-  border-bottom: 1px solid var(--border);
-  padding: 0 12px;
+  box-sizing: border-box;
+  background: #111413;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0 1.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 11px;
+  gap: 1.5rem;
   user-select: none;
   flex-shrink: 0;
   z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* 1. Left: Branding & Sanctuary button */
+.topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.topbar__home-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(244, 240, 231, 0.65);
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.topbar__home-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(215, 173, 98, 0.35);
+  color: #F4F0E7;
 }
 
 .topbar__brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
-.topbar__logo {
+.topbar__emblem {
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--text-primary);
+  justify-content: center;
+  filter: drop-shadow(0 0 8px rgba(215, 173, 98, 0.4));
 }
 
-.topbar__logo-rune {
-  color: var(--odin);
-  font-family: var(--font-mono);
-  font-size: 13px;
+.topbar__emblem-svg {
+  width: 100%;
+  height: 100%;
 }
 
-.topbar__divider {
-  color: var(--border-hi);
+.topbar__title-brand {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  background: linear-gradient(135deg, #FFF 0%, #E8C684 60%, #C49B45 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.topbar__tagline {
-  color: var(--text-secondary);
-  letter-spacing: 0.15em;
-  font-family: var(--font-mono);
-  font-size: 10px;
+/* 2. Center: Current Trial Shortened Question */
+.topbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
 }
 
-.topbar__divider-line {
-  width: 1px;
-  height: 14px;
-  background: var(--border);
-}
-
-.topbar__live {
+.topbar__trial-info {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--loki);
+  gap: 0.6rem;
+  max-width: 640px;
+  min-width: 0;
+}
+
+.topbar__trial-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D7AD62;
+  flex-shrink: 0;
+  padding: 0.2rem 0.45rem;
+  background: rgba(215, 173, 98, 0.1);
+  border-radius: 4px;
+}
+
+.topbar__trial-query {
+  font-size: 0.82rem;
   font-weight: 500;
+  color: rgba(244, 240, 231, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.topbar__live-dot {
-  position: relative;
-  display: inline-flex;
-  width: 8px;
-  height: 8px;
-}
-.topbar__live-dot::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: var(--loki);
-  opacity: 0.6;
-  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-.topbar__live-dot::after {
-  content: '';
-  position: relative;
-  display: inline-flex;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--loki);
-}
-
-/* Center meta */
-.topbar__meta {
+/* 3. Right: As-of Date, New Trial & View Final Briefing */
+.topbar__right {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-secondary);
+  gap: 0.85rem;
+  flex-shrink: 0;
 }
 
-.topbar__meta-tag {
-  color: var(--text-primary);
-  font-weight: 500;
-  background: var(--bg-panel);
-  padding: 2px 6px;
-  border: 1px solid var(--border);
-}
-
-.topbar__meta-sep {
-  color: var(--border-hi);
-}
-
-.topbar__meta-round {
-  color: var(--odin);
-}
-
-/* Right stats */
-.topbar__stats {
+.topbar__asof {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--text-secondary);
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  color: rgba(244, 240, 231, 0.7);
+  background: #171A19;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
 }
 
-.topbar__stats-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.topbar__asof-icon {
+  color: #D7AD62;
 }
 
-.topbar__stats-val {
-  color: var(--text-primary);
+.topbar__btn-new {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(244, 240, 231, 0.8);
+  font-size: 0.74rem;
   font-weight: 600;
+  padding: 0.38rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
 }
 
-.topbar__stats-green {
-  color: var(--loki);
+.topbar__btn-new:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(215, 173, 98, 0.35);
+  color: #F4F0E7;
+}
+
+.topbar__btn-briefing {
+  background: linear-gradient(135deg, #D7AD62 0%, #96702E 100%);
+  border: none;
+  color: #0D0F0E;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.42rem 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 0.22s ease;
+  box-shadow: 0 0 16px rgba(215, 173, 98, 0.35);
+}
+
+.topbar__btn-briefing:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(215, 173, 98, 0.55);
+  background: linear-gradient(135deg, #E2BC72 0%, #A67D34 100%);
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    height: auto;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .topbar__center {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+  }
 }

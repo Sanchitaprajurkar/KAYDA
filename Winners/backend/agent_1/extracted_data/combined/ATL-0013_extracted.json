@@ -1,0 +1,279 @@
+{
+  "doc_id": "ATL-0013",
+  "title": "Country profile: Vanir",
+  "facts_count": 7,
+  "entities_count": 5,
+  "facts": [
+    {
+      "fact_id": "696bcb45",
+      "category": "TRADE_VOLUME",
+      "subject": "Vanir Rice and Wheat Exports",
+      "statement": "Vanir is the largest rice exporter in the region and a significant wheat producer.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Vanir is the largest rice exporter in the region and a significant wheat producer."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "152d324f",
+      "category": "TRADE_VOLUME",
+      "subject": "Vanir Main Exports",
+      "statement": "The country's main exports are rice and wheat.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "The country's main exports are rice and wheat."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "f84a236e",
+      "category": "ROUTE_STATUS",
+      "subject": "Vanir Rice Port",
+      "statement": "Vanir Rice Port is the main export facility, with bulk handling and bagging lines.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Vanir Rice Port is the main export facility, with bulk handling and bagging lines."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "ce61f82e",
+      "category": "TRADE_VOLUME",
+      "subject": "Rune Trading",
+      "statement": "Rune Trading, a grain and rice trader, is the best-known firm in the sector.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "Rune Trading, a grain and rice trader, is the best-known firm in the sector."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "bb388588",
+      "category": "ROUTE_STATUS",
+      "subject": "Vanir Rice Port",
+      "statement": "Vanir Rice Port handles the largest share of its rice shipments.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "Vanir Rice Port handles the largest share of its rice shipments."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "4dfee531",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Rice and Wheat Cultivation",
+      "statement": "Rice is grown in the wet lowlands, while wheat is more common on higher ground.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "Rice is grown in the wet lowlands, while wheat is more common on higher ground."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "21d5ca1b",
+      "category": "ROUTE_STATUS",
+      "subject": "Vanir Rice Port Infrastructure",
+      "statement": "The port has storage silos and bagging lines, and a rail spur connects it to the main inland towns.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0013",
+        "file_name": "ATL-0013.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "The port has storage silos and bagging lines, and a rail spur connects it to the main inland towns."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Vanir",
+      "type": "NATION",
+      "aliases": [],
+      "description": "Vanir is the largest rice exporter in the region and a significant wheat producer.",
+      "mentions_count": 5,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ATL-0013 EVENT_ID: NONE TITLE: Country profile: Vanir SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIA..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vanir is the largest rice exporter in the region and a significant wheat producer. Its economy is more agricultural..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are rice and wheat. It imports fuel and fertiliser, both of which are important for its ..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Rune Trading, a grain and rice trader, is the best-known firm in the sector. The country has a long coastline and s..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Rice is grown in the wet lowlands, while wheat is more common on higher ground. The port has storage silos and bagg..."
+        }
+      ]
+    },
+    {
+      "name": "Vanir Rice Port",
+      "type": "PORT",
+      "aliases": [],
+      "description": "Vanir Rice Port is the main export facility, with bulk handling and bagging lines.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are rice and wheat. It imports fuel and fertiliser, both of which are important for its ..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Rice is grown in the wet lowlands, while wheat is more common on higher ground. The port has storage silos and bagg..."
+        }
+      ]
+    },
+    {
+      "name": "Rice",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "Rice is grown in the wet lowlands and is the main export of Vanir.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vanir is the largest rice exporter in the region and a significant wheat producer. Its economy is more agricultural..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are rice and wheat. It imports fuel and fertiliser, both of which are important for its ..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Rune Trading, a grain and rice trader, is the best-known firm in the sector. The country has a long coastline and s..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "Wheat is a significant crop in Vanir, more common on higher ground.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vanir is the largest rice exporter in the region and a significant wheat producer. Its economy is more agricultural..."
+        },
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Rune Trading, a grain and rice trader, is the best-known firm in the sector. The country has a long coastline and s..."
+        }
+      ]
+    },
+    {
+      "name": "Rune Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "Rune Trading is a grain and rice trader, the best-known firm in the sector.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0013",
+          "file_name": "ATL-0013.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The country's main exports are rice and wheat. It imports fuel and fertiliser, both of which are important for its ..."
+        }
+      ]
+    }
+  ]
+}

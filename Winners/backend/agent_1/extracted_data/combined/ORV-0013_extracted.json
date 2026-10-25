@@ -1,0 +1,204 @@
+{
+  "doc_id": "ORV-0013",
+  "title": "Correction: Orvan corridor agreement was not renewed",
+  "facts_count": 5,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "7016fb9a",
+      "category": "RETRACTION_NOTICE",
+      "subject": "Orvan corridor agreement",
+      "statement": "The report that the Corridor Agreement had been renewed was wrong.",
+      "date_mentioned": "2026-09-09",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "On 9 September we reported that the Corridor Agreement had been renewed. That report was wrong."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "4f4fb395",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Orvan corridor agreement",
+      "statement": "The agreement expired on 10 September without a renewal.",
+      "date_mentioned": "2026-09-10",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The agreement expired on 10 September without a renewal."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "d3e4852e",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Orvan corridor agreement",
+      "statement": "Talks ended without a signed replacement.",
+      "date_mentioned": "2026-09-10",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Talks ended without a signed replacement."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "fb5a4962",
+      "category": "RETRACTION_NOTICE",
+      "subject": "Orvan corridor agreement",
+      "statement": "The original story should not be relied on.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "The original story should not be relied on."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    },
+    {
+      "fact_id": "2943628d",
+      "category": "ROUTE_STATUS",
+      "subject": "sea exports",
+      "statement": "Sea exports now move under the general rules.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "The correct position is that sea exports now move under the general rules."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0013 EVENT_ID: E5 TITLE: Correction: Orvan corridor agreement was not renewed SOURCE_NAME: Raven Wire SOURCE..."
+        },
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] On 9 September we reported that the Corridor Agreement had been renewed. That report was wrong...."
+        },
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement expired on 10 September without a renewal. Talks ended without a signed replacement...."
+        },
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] The error appeared in an early edition and was repeated by other outlets. We have removed the report from our wire ..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0013 EVENT_ID: E5 TITLE: Correction: Orvan corridor agreement was not renewed SOURCE_NAME: Raven Wire SOURCE..."
+        }
+      ]
+    },
+    {
+      "name": "Corridor Agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0013 EVENT_ID: E5 TITLE: Correction: Orvan corridor agreement was not renewed SOURCE_NAME: Raven Wire SOURCE..."
+        },
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] On 9 September we reported that the Corridor Agreement had been renewed. That report was wrong...."
+        },
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The agreement expired on 10 September without a renewal. Talks ended without a signed replacement...."
+        }
+      ]
+    },
+    {
+      "name": "sea exports",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0013",
+          "file_name": "ORV-0013.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] The error appeared in an early edition and was repeated by other outlets. We have removed the report from our wire ..."
+        }
+      ]
+    }
+  ]
+}

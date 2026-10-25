@@ -9,38 +9,44 @@
 }
 
 :root {
-  /* Core palette */
-  --bg-void:       #080A0A;
-  --bg-panel:      #111615;
-  --bg-card:       #191F1C;
-  --bg-surface:    #0F1410;
+  /* Core palette — Cinematic Norse obsidian & elevated charcoal */
+  --bg-void:       #0D0F0E;
+  --bg-panel:      #151916;
+  --bg-card:       #1A201C;
+  --bg-card-hover: #222924;
+  --bg-surface:    #151916;
+  --bg-glass:      rgba(21, 25, 22, 0.75);
 
-  /* Thor — Crimson (high risk) */
-  --thor:          #E63946;
-  --thor-hi:       #FF525F;
-  --thor-dim:      rgba(230, 57, 70, 0.12);
-  --thor-border:   rgba(230, 57, 70, 0.35);
+  /* Thor — Refined Crimson (The Alarm) */
+  --thor:          #D94848;
+  --thor-hi:       #F06565;
+  --thor-dim:      rgba(217, 72, 72, 0.12);
+  --thor-glow:     rgba(217, 72, 72, 0.35);
+  --thor-border:   rgba(217, 72, 72, 0.38);
 
-  /* Loki — Emerald (mitigation) */
-  --loki:          #00C878;
-  --loki-hi:       #42FFAA;
-  --loki-dim:      rgba(0, 200, 120, 0.10);
-  --loki-border:   rgba(0, 200, 120, 0.30);
+  /* Loki — Emerald Green (The Mitigator) */
+  --loki:          #19B77A;
+  --loki-hi:       #38D397;
+  --loki-dim:      rgba(25, 183, 122, 0.12);
+  --loki-glow:     rgba(25, 183, 122, 0.35);
+  --loki-border:   rgba(25, 183, 122, 0.38);
 
-  /* Odin — Gold (verdict) */
-  --odin:          #D7B56D;
-  --odin-hi:       #F0D08A;
-  --odin-dim:      rgba(215, 181, 109, 0.12);
-  --odin-border:   rgba(215, 181, 109, 0.30);
+  /* Odin — Antique Gold (Verdict Bench) */
+  --odin:          #D7AD62;
+  --odin-hi:       #E8C684;
+  --odin-dim:      rgba(215, 173, 98, 0.12);
+  --odin-glow:     rgba(215, 173, 98, 0.35);
+  --odin-border:   rgba(215, 173, 98, 0.38);
 
-  /* Text */
-  --text-primary:  #F2F5F3;
-  --text-secondary:#919A95;
-  --text-muted:    #4A5450;
+  /* Text — Warm ivory & muted stone */
+  --text-primary:  #F4F0E7;
+  --text-secondary:#A5AAA5;
+  --text-muted:    #636B66;
 
-  /* Borders */
-  --border:        #191F1C;
-  --border-hi:     #252E29;
+  /* Borders — Subtle charcoal-gray */
+  --border:        #292F2B;
+  --border-hi:     #3D4640;
+  --border-light:  rgba(255, 255, 255, 0.08);
 
   /* Typography */
   --font-display: 'Cinzel', serif;

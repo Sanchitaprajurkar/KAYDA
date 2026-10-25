@@ -1,207 +1,294 @@
-/* OdinBench.css */
-.odin-bench {
+/* ============================================================
+   ODIN'S VERDICT PANEL — Streamlined High Bench Arbitration
+   ============================================================ */
+
+.odin-tribunal {
   width: 100%;
-  background: var(--bg-panel);
-  border-top: 1px solid var(--border);
+  box-sizing: border-box;
+  background: #141716;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 18px 10px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   flex-shrink: 0;
 }
 
-/* Primary bar */
-.odin-bench__bar {
-  height: 38px;
-  padding: 0 12px;
+/* Header */
+.odin-tribunal__header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border);
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 4px;
 }
 
-.odin-bench__identity {
+.odin-tribunal__title-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.65rem;
+  flex-wrap: wrap;
 }
 
-.odin-bench__title {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--odin);
-  letter-spacing: 0.05em;
-}
-
-.odin-bench__pills {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.odin-pill {
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  padding: 2px 8px;
-  border: 1px solid;
-  background: transparent;
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-}
-
-.odin-pill:hover {
-  opacity: 0.85;
-}
-
-.odin-bench__right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.odin-bench__range {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-}
-
-.odin-bench__range-label {
-  color: var(--text-secondary);
-}
-
-.odin-bench__range-val {
-  color: var(--text-primary);
-  font-weight: 600;
-  background: var(--bg-void);
-  padding: 2px 8px;
-  border: 1px solid var(--border);
-}
-
-.odin-bench__conf {
-  font-size: 9.5px;
-  padding: 2px 6px;
-  border: 1px solid var(--odin-border);
-  background: var(--odin-dim);
-  color: var(--odin);
-  font-family: var(--font-mono);
-}
-
-.odin-bench__toggle {
-  background: var(--bg-void);
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  cursor: pointer;
-  padding: 4px;
+.odin-tribunal__emblem {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(215, 173, 98, 0.12);
+  color: #D7AD62;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.15s;
+  flex-shrink: 0;
 }
 
-.odin-bench__toggle:hover {
-  color: var(--text-primary);
+.odin-tribunal__headline {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
 }
 
-/* Expanded shelf */
-.odin-bench__shelf {
-  background: var(--bg-void);
-  padding: 8px 10px;
-  max-height: 160px;
-  overflow-y: auto;
-  border-bottom: 1px solid var(--border);
-  animation: fade-in 0.2s ease-out;
+.odin-tribunal__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #F8E5B5;
 }
 
-.odin-bench__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
+.odin-tribunal__assessment-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-/* Finding card */
-.finding-card {
-  background: var(--bg-panel);
-  border: 1px solid var(--border);
-  padding: 8px 10px;
+.odin-tribunal__assessment-label {
+  font-size: 0.72rem;
+  color: rgba(244, 240, 231, 0.6);
+}
+
+.odin-tribunal__assessment-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-significant {
+  background: rgba(239, 68, 68, 0.14);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+
+.badge-limited {
+  background: rgba(16, 185, 129, 0.14);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.28);
+}
+
+.odin-tribunal__exposure-range {
+  font-size: 0.72rem;
+  color: #D7AD62;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+/* Table */
+.odin-tribunal__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 6px;
+  background: #111413;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.odin-tribunal__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.odin-tribunal__table th {
+  background: #181C1A;
+  color: #D7AD62;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.42rem 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.th-finding { width: 22%; }
+.th-assessment { width: 14%; }
+.th-explanation { width: 49%; }
+.th-evidence { width: 15%; text-align: right; }
+
+.odin-tribunal__table td {
+  padding: 0.45rem 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  vertical-align: middle;
+}
+
+.odin-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.odin-row:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.odin-row.row-selected {
+  background: #191E1C;
+}
+
+/* Cells */
+.finding-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  color: #F4F0E7;
+  font-weight: 600;
+  font-size: 0.74rem;
+}
+
+.chevron-toggle {
+  color: rgba(244, 240, 231, 0.4);
+}
+
+.assessment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+}
+
+.badge-established {
+  background: rgba(16, 185, 129, 0.12);
+  color: #34D399;
+  border: 1px solid rgba(16, 185, 129, 0.22);
+}
+
+.badge-contested {
+  background: rgba(245, 158, 11, 0.12);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.22);
+}
+
+.finding-summary-text {
+  margin: 0;
+  font-size: 0.73rem;
+  line-height: 1.38;
+  color: rgba(244, 240, 231, 0.8);
+}
+
+.td-evidence {
+  text-align: right;
+}
+
+.odin-view-source-btn {
+  background: #1C221F;
+  border: 1px solid rgba(215, 173, 98, 0.22);
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #F8E5B5;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.15s ease;
+}
+
+.odin-view-source-btn:hover {
+  background: rgba(215, 173, 98, 0.18);
+  border-color: #D7AD62;
+  color: #FFF;
+}
+
+.ext-icon {
+  opacity: 0.6;
+}
+
+/* Expanded Detail Row */
+.odin-expanded-row td {
+  padding: 0 0.85rem 0.65rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.expanded-explanation-box {
+  background: #181D1B;
+  border-radius: 6px;
+  padding: 0.65rem 0.85rem;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  animation: fade-in 0.2s ease-out;
+  gap: 0.4rem;
+  border-left: 3px solid #D7AD62;
 }
 
-.finding-card__top {
+.expanded-box-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.finding-card__id {
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  color: var(--odin);
-}
-
-.finding-card__round {
-  font-family: var(--font-mono);
-  font-size: 8.5px;
-  color: var(--text-muted);
-  border: 1px solid var(--border-hi);
-  padding: 1px 4px;
-}
-
-.finding-card__body {
-  font-size: 11px;
-  color: var(--text-primary);
-  line-height: 1.5;
-}
-
-.finding-card__docs {
-  display: flex;
   align-items: center;
-  gap: 4px;
-  font-family: var(--font-mono);
-  font-size: 9.5px;
 }
 
-.finding-card__docs-label {
-  color: var(--text-secondary);
+.expanded-box-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #D7AD62;
 }
 
-.finding-card__doc-btn {
-  background: none;
-  border: none;
+.expanded-box-id {
+  font-size: 0.65rem;
+  color: rgba(244, 240, 231, 0.5);
+  font-family: monospace;
+}
+
+.expanded-box-desc {
+  margin: 0;
+  font-size: 0.73rem;
+  line-height: 1.4;
+  color: rgba(244, 240, 231, 0.85);
+}
+
+.expanded-box-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.expanded-inspect-btn {
+  background: #212824;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.68rem;
+  color: #F4F0E7;
   cursor: pointer;
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  color: var(--loki);
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.finding-card__doc-btn:hover {
-  color: var(--loki-hi);
-}
-
-.finding-card__bottom {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.35rem;
+  transition: all 0.15s ease;
 }
 
-.finding-card__impact {
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  font-weight: 600;
-  background: var(--bg-void);
-  padding: 2px 7px;
-  border: 1px solid var(--border);
-}
-
-.finding-card__conf {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  color: var(--text-muted);
+.expanded-inspect-btn:hover {
+  background: rgba(215, 173, 98, 0.15);
+  border-color: #D7AD62;
+  color: #F8E5B5;
 }

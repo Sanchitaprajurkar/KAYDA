@@ -1,0 +1,215 @@
+{
+  "doc_id": "ORV-0029",
+  "file_name": "ORV-0029.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\03_Ragnarok Trial of the Nine Realms\\dev_pack_E5\\docs\\ORV-0029.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "ORV-0029",
+    "event_id": "E5",
+    "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+    "source_name": "Cargo Weekly",
+    "source_type": "trade_note",
+    "reliability": 2,
+    "pub_date": "2027-01-20",
+    "pub_time": "11:40",
+    "country": "Asgard",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0029.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0029",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: E5",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Trade note: Orvan to Asgard, maize, July to December 2026",
+      "char_count": 64,
+      "word_count": 11
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Cargo Weekly",
+      "char_count": 25,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: trade_note",
+      "char_count": 23,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 2",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2027-01-20",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 11:40",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Asgard",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: Wheat",
+      "char_count": 13,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Trade note: Orvan to Asgard, maize, July to December 2026",
+      "char_count": 57,
+      "word_count": 10
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] Route: Orvan to Asgard, maize.",
+      "char_count": 35,
+      "word_count": 6
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] In July 2026, the value was USD 72.9M and the volume was 187,000 tonnes.",
+      "char_count": 77,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] In August 2026, the value was USD 72.9M and the volume was 187,000 tonnes.",
+      "char_count": 79,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 17,
+      "page_number": null,
+      "raw_text": "[P4] In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes.",
+      "char_count": 81,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 18,
+      "page_number": null,
+      "raw_text": "[P5] In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.",
+      "char_count": 79,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 19,
+      "page_number": null,
+      "raw_text": "[P6] In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+      "char_count": 80,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 20,
+      "page_number": null,
+      "raw_text": "[P7] In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+      "char_count": 80,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 21,
+      "page_number": null,
+      "raw_text": "[P8] In July 2025, the value was USD 76.8M and the volume was 197,000 tonnes.",
+      "char_count": 77,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 22,
+      "page_number": null,
+      "raw_text": "[P9] In August 2025, the value was USD 76.4M and the volume was 196,000 tonnes.",
+      "char_count": 79,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 23,
+      "page_number": null,
+      "raw_text": "[P10] In September 2025, the value was USD 72.2M and the volume was 185,000 tonnes.",
+      "char_count": 83,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 24,
+      "page_number": null,
+      "raw_text": "[P11] In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.",
+      "char_count": 81,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 25,
+      "page_number": null,
+      "raw_text": "[P12] In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.",
+      "char_count": 82,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 26,
+      "page_number": null,
+      "raw_text": "[P13] In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.",
+      "char_count": 82,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 27,
+      "page_number": null,
+      "raw_text": "[P14] The maize route is bought on the open market and has no long-term contract cover.",
+      "char_count": 87,
+      "word_count": 16
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0029\n\nEVENT_ID: E5\n\nTITLE: Trade note: Orvan to Asgard, maize, July to December 2026\n\nSOURCE_NAME: Cargo Weekly\n\nSOURCE_TYPE: trade_note\n\nRELIABILITY: 2\n\nPUB_DATE: 2027-01-20\n\nPUB_TIME: 11:40\n\nCOUNTRY: Asgard\n\nSECTOR: Wheat\n\nLANGUAGE: en\n\n---\n\nTrade note: Orvan to Asgard, maize, July to December 2026\n\n[P1] Route: Orvan to Asgard, maize.\n\n[P2] In July 2026, the value was USD 72.9M and the volume was 187,000 tonnes.\n\n[P3] In August 2026, the value was USD 72.9M and the volume was 187,000 tonnes.\n\n[P4] In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes.\n\n[P5] In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.\n\n[P6] In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\n\n[P7] In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\n\n[P8] In July 2025, the value was USD 76.8M and the volume was 197,000 tonnes.\n\n[P9] In August 2025, the value was USD 76.4M and the volume was 196,000 tonnes.\n\n[P10] In September 2025, the value was USD 72.2M and the volume was 185,000 tonnes.\n\n[P11] In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.\n\n[P12] In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.\n\n[P13] In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.\n\n[P14] The maize route is bought on the open market and has no long-term contract cover.",
+  "total_paragraphs": 27,
+  "total_pages": null
+}
