@@ -245,7 +245,9 @@ class RunemarkTools:
             disrupted_year=disrupted_year, premium_pct=premium_pct, window=window,
             gross_loss_pct=res.gross_value_loss_pct, net_loss_pct=res.net_value_loss_pct,
             net_import_loss_pct=round(res.net_value_loss_usd_m / imports * 100, 2) if imports else 0.0,
+            gross_import_loss_pct=round(res.gross_value_loss_usd_m / imports * 100, 2) if imports else 0.0,
             import_baseline_usd_m=round(imports, 2),
+            # high_bound_pct is reference only (gross × spot-premium / primary baseline); not a valid claim bound.
             high_bound_pct=round(res.high_exposure_bound_usd_m / base * 100, 2) if base else 0.0,
             baseline_usd_m=base, gross_loss_usd_m=res.gross_value_loss_usd_m, net_loss_usd_m=res.net_value_loss_usd_m,
             substitute_gain_usd_m=res.substitute_value_gain_usd_m,
@@ -281,10 +283,24 @@ def calculation_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, str
                             for k in ("gross_loss_pct", "net_import_loss_pct", "high_bound_pct")):
             return "math_error", f"The {calc.window} calculation does not recompute from the trade rows."
     if claim.calculations:
-        values = {round(v, 2) for c in claim.calculations
-                  for v in (c.gross_loss_pct, c.net_import_loss_pct, c.high_bound_pct)}
-        if round(claim.estimate.low, 2) not in values or round(claim.estimate.high, 2) not in values:
-            return "math_error", "The claimed bounds are not among the figures its own calculations produce."
+        # Both bounds must use the same denominator: the total import basket (primary + substitute baseline).
+        # low  = net_import_loss_pct  — net loss / total imports (best case: substitutes fully absorbed the shortfall).
+        # high = gross_import_loss_pct — gross loss / total imports (worst case: no substitution materialises).
+        # gross_loss_pct and high_bound_pct (primary-baseline denominator / price-inflated) are reference metrics only.
+        low_ok = any(abs(round(claim.estimate.low, 2) - round(c.net_import_loss_pct, 2)) <= 0.05
+                     for c in claim.calculations)
+        high_ok = any(abs(round(claim.estimate.high, 2) - round(c.gross_import_loss_pct, 2)) <= 0.05
+                      for c in claim.calculations)
+        if not low_ok:
+            nets = ", ".join(f"{c.net_import_loss_pct:.2f}%" for c in claim.calculations)
+            return ("math_error",
+                    f"estimate.low ({claim.estimate.low:.2f}%) must equal net_import_loss_pct from one of its "
+                    f"calculations ({nets}) — net value loss / total import basket (primary + substitute baseline).")
+        if not high_ok:
+            grosses = ", ".join(f"{c.gross_import_loss_pct:.2f}%" for c in claim.calculations)
+            return ("math_error",
+                    f"estimate.high ({claim.estimate.high:.2f}%) must equal gross_import_loss_pct from one of its "
+                    f"calculations ({grosses}) — gross value loss / total import basket (no substitution scenario).")
     return None
 
 

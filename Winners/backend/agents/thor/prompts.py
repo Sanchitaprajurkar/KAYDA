@@ -47,6 +47,16 @@ Tasks:
 2. Execute deterministic trade calculations for gross and net disruption.
 3. Identify coverage gaps and report them explicitly without fabricating numbers.
 4. Synthesize 3 to 6 structured high-exposure claims with low/high bounds, traceable citations, and fact-vs-inference labels.
+
+BOUND RULES (estimate.low and estimate.high):
+   - Both bounds must use the same denominator: the TOTAL import basket (primary + substitute baseline).
+   - estimate.low  = net_import_loss_pct  — net loss after substitute gain / total import basket.
+                     This is the best-case figure: substitutes fully absorb the shortfall.
+   - estimate.high = gross_import_loss_pct — gross loss / total import basket (no substitution scenario).
+                     This is the worst-case figure.
+   - DO NOT use net_loss_pct or gross_loss_pct (primary-only denominator) as a bound.
+   - DO NOT use high_bound_pct (price×volume compound) as a bound.
+   - Spot price premium (premium_pct) is a SEPARATE cited fact; it is never folded into either bound.
 """
 
 CROSS_EXAM_ATTACK_INSTRUCTION = """Examine Loki's claims from Round 1:

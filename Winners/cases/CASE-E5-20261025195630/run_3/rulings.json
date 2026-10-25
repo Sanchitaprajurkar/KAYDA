@@ -1,0 +1,151 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T3-01",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONTESTED",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "The evidence shows both a significant loss of maize imports from Orvan and partial replacement with Vanir, but the extent of compensation remains unclear.",
+      "decided_by": "odin",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-02",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-03",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-01",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-02",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-03",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Midgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        50.18,
+        70.01
+      ],
+      "loki": [
+        38.49,
+        62.51
+      ],
+      "odin": [
+        50.18,
+        62.51
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0030, no substitute supply on the record); windows: full Oct-Dec 50.2%; late Nov-Dec 62.5%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Midgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        39.42,
+        67.58
+      ],
+      "loki": [
+        37.4,
+        41.38
+      ],
+      "odin": null,
+      "basis": "No calculation survived the trial."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "basis": "Evidence missing: no trade series for this flow; no range is given."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        31.41,
+        67.54
+      ],
+      "loki": [
+        28.32,
+        34.19
+      ],
+      "odin": null,
+      "basis": "No calculation survived the trial."
+    }
+  ],
+  "remand": [
+    "Midgard Maize: no established trade-row finding",
+    "Midgard Wheat: no established trade-row finding",
+    "Tolan Wheat: no established trade-row finding"
+  ],
+  "llm_usage": {
+    "THOR": {
+      "calls": 8,
+      "cache_hits": 0,
+      "tokens": 3724
+    },
+    "LOKI": {
+      "calls": 8,
+      "cache_hits": 0,
+      "tokens": 3074
+    },
+    "ODIN": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 865
+    }
+  }
+}

@@ -218,14 +218,17 @@ class Odin:
                 k = self.tools.compute_change(None, cell.country, cell.sector, report.case_scope.event_countries,
                                               primary, subs, months, base, dis, 0.0, name)
                 if k:
-                    figures.append((name, months, k.net_import_loss_pct))
+                    # Both bounds use total import basket as denominator (consistent with claim bounds).
+                    figures.append((name, months, k.net_import_loss_pct, k.gross_import_loss_pct))
             if figures:
-                vals = [f[2] for f in figures]
-                r.odin = (round(min(vals), 2), round(max(vals), 2))
+                # low = min net_import_loss across windows; high = max gross_import_loss across windows
+                r.odin = (round(min(f[2] for f in figures), 2), round(max(f[3] for f in figures), 2))
                 r.basis = (f"Recomputed from the Case File's trade rows ({', '.join(cell.primary_series)}"
                            + (f", net of {', '.join(cell.substitute_series)}" if cell.substitute_series else
                               ", no substitute supply on the record")
-                           + "); windows: " + "; ".join(f"{n} {m[0][:3]}-{m[-1][:3]} {v:.1f}%" for n, m, v in figures)
+                           + "); windows: " + "; ".join(
+                               f"{n} {m[0][:3]}-{m[-1][:3]} net {v:.1f}%-gross {g:.1f}%"
+                               for n, m, v, g in figures)
                            + ". The onset month is left out because it was only partly affected.")
             out.append(r)
         return out

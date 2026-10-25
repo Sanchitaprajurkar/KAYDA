@@ -1,0 +1,2297 @@
+{
+  "claims": [
+    {
+      "claim_id": "T2-01",
+      "side": "THOR",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Maize",
+      "kind": "calculation",
+      "statement": "Midgard has lost 62.5% of its maize imports from Orvan (November, December vs a year earlier); over the full months after onset the loss is 50.2% and no substitute supply is on the record, and with a 12% spot premium the loss reaches 70.0%.",
+      "estimate": {
+        "low": 50.18,
+        "high": 70.01,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0030; the 12% spot premium is Thor's assumption, not a sourced figure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 80.2M and the volume was 211,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 80.2,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 62.1M and the volume was 146,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 62.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 31.9M and the volume was 75,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 31.5M and the volume was 74,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 82.5M and the volume was 217,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 82.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 82.8M and the volume was 218,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 82.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P12",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In November 2025, the value was USD 84.7M and the volume was 223,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 84.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P13",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In December 2025, the value was USD 84.4M and the volume was 222,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 84.4,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "onset",
+          "gross_loss_pct": 38.49,
+          "net_loss_pct": 38.49,
+          "net_import_loss_pct": 38.49,
+          "import_baseline_usd_m": 334.4,
+          "high_bound_pct": 43.1,
+          "baseline_usd_m": 334.4,
+          "gross_loss_usd_m": 128.7,
+          "net_loss_usd_m": 128.7,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P10",
+            "ORV-0030#P11",
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P4",
+            "ORV-0030#P5",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "full",
+          "gross_loss_pct": 50.18,
+          "net_loss_pct": 50.18,
+          "net_import_loss_pct": 50.18,
+          "import_baseline_usd_m": 251.9,
+          "high_bound_pct": 56.2,
+          "baseline_usd_m": 251.9,
+          "gross_loss_usd_m": 126.4,
+          "net_loss_usd_m": 126.4,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P11",
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P5",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "late",
+          "gross_loss_pct": 62.51,
+          "net_loss_pct": 62.51,
+          "net_import_loss_pct": 62.51,
+          "import_baseline_usd_m": 169.1,
+          "high_bound_pct": 70.01,
+          "baseline_usd_m": 169.1,
+          "gross_loss_usd_m": 105.7,
+          "net_loss_usd_m": 105.7,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "CONCEDED"
+    },
+    {
+      "claim_id": "T2-02",
+      "side": "THOR",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Wheat",
+      "kind": "calculation",
+      "statement": "Midgard has lost 60.3% of its wheat imports from Orvan (September, October, November, December vs a year earlier); even after recorded substitutes from Vanir, at least 39.4% of recorded imports are gone, and with a 12% spot premium the loss reaches 67.6%.",
+      "estimate": {
+        "low": 39.42,
+        "high": 67.58,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0009, ORV-0027; the 12% spot premium is Thor's assumption, not a sourced figure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 38.2M and the volume was 93,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.2,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 34.5M and the volume was 84,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 34.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 35.3M and the volume was 86,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 35.3,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 34.1M and the volume was 83,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 34.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 97.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 86.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 31.5M and the volume was 84,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 30.9M and the volume was 77,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 30.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 38.5M and the volume was 96,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 36.9M and the volume was 92,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 36.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 32.6M and the volume was 87,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.6,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 28.9M and the volume was 77,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 28.9,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "onset",
+          "gross_loss_pct": 60.34,
+          "net_loss_pct": 55.15,
+          "net_import_loss_pct": 41.38,
+          "import_baseline_usd_m": 477.5,
+          "high_bound_pct": 67.58,
+          "baseline_usd_m": 358.3,
+          "gross_loss_usd_m": 216.2,
+          "net_loss_usd_m": 197.6,
+          "substitute_gain_usd_m": 18.6,
+          "rows_used": [
+            "ORV-0009#P10",
+            "ORV-0009#P11",
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P4",
+            "ORV-0009#P5",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P4",
+            "ORV-0027#P5",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "full",
+          "gross_loss_pct": 60.1,
+          "net_loss_pct": 52.53,
+          "net_import_loss_pct": 39.42,
+          "import_baseline_usd_m": 347.0,
+          "high_bound_pct": 67.31,
+          "baseline_usd_m": 260.4,
+          "gross_loss_usd_m": 156.5,
+          "net_loss_usd_m": 136.8,
+          "substitute_gain_usd_m": 19.7,
+          "rows_used": [
+            "ORV-0009#P11",
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P5",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P5",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "late",
+          "gross_loss_pct": 60.02,
+          "net_loss_pct": 49.83,
+          "net_import_loss_pct": 37.4,
+          "import_baseline_usd_m": 231.3,
+          "high_bound_pct": 67.22,
+          "baseline_usd_m": 173.6,
+          "gross_loss_usd_m": 104.2,
+          "net_loss_usd_m": 86.5,
+          "substitute_gain_usd_m": 17.7,
+          "rows_used": [
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "CONCEDED"
+    },
+    {
+      "claim_id": "T2-03",
+      "side": "THOR",
+      "run": 2,
+      "country": "Tolan",
+      "sector": "Wheat",
+      "kind": "calculation",
+      "statement": "Tolan has lost 60.3% of its wheat imports from Orvan (September, October, November, December vs a year earlier); even after recorded substitutes from Vanir, at least 31.4% of recorded imports are gone, and with a 12% spot premium the loss reaches 67.5%.",
+      "estimate": {
+        "low": 31.41,
+        "high": 67.54,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0046, ORV-0044; the 12% spot premium is Thor's assumption, not a sourced figure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 17.0M and the volume was 43,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 17.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 15.4M and the volume was 39,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.4,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 15.8M and the volume was 40,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 15.0M and the volume was 38,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 43.4M and the volume was 124,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 43.4,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 38.5M and the volume was 110,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 21.1M and the volume was 57,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 21.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 20.6M and the volume was 52,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 20.6,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 26.5M and the volume was 67,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 26.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 25.7M and the volume was 65,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 25.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 21.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 19.2,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "onset",
+          "gross_loss_pct": 60.3,
+          "net_loss_pct": 51.26,
+          "net_import_loss_pct": 34.19,
+          "import_baseline_usd_m": 238.7,
+          "high_bound_pct": 67.54,
+          "baseline_usd_m": 159.2,
+          "gross_loss_usd_m": 96.0,
+          "net_loss_usd_m": 81.6,
+          "substitute_gain_usd_m": 14.4,
+          "rows_used": [
+            "ORV-0046#P10",
+            "ORV-0046#P11",
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P4",
+            "ORV-0046#P5",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P4",
+            "ORV-0044#P5",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "full",
+          "gross_loss_pct": 60.1,
+          "net_loss_pct": 47.06,
+          "net_import_loss_pct": 31.41,
+          "import_baseline_usd_m": 173.5,
+          "high_bound_pct": 67.31,
+          "baseline_usd_m": 115.8,
+          "gross_loss_usd_m": 69.6,
+          "net_loss_usd_m": 54.5,
+          "substitute_gain_usd_m": 15.1,
+          "rows_used": [
+            "ORV-0046#P11",
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P5",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P5",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 12.0,
+          "window": "late",
+          "gross_loss_pct": 60.16,
+          "net_loss_pct": 42.43,
+          "net_import_loss_pct": 28.32,
+          "import_baseline_usd_m": 115.8,
+          "high_bound_pct": 67.37,
+          "baseline_usd_m": 77.3,
+          "gross_loss_usd_m": 46.5,
+          "net_loss_usd_m": 32.8,
+          "substitute_gain_usd_m": 13.7,
+          "rows_used": [
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "CONCEDED"
+    },
+    {
+      "claim_id": "T2-04",
+      "side": "THOR",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Maize",
+      "kind": "evidence",
+      "statement": "Midgard's maize arrivals from Orvan were reported well below the levels of a year earlier in December, indicating a severe disruption in supply.",
+      "estimate": {
+        "low": 50.18,
+        "high": 70.01,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This evidence highlights the significant drop in maize imports from Orvan, supporting the claim of severe exposure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": "09bcfbb6",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "T2-05",
+      "side": "THOR",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Wheat",
+      "kind": "evidence",
+      "statement": "Preliminary customs figures show Midgard's wheat arrivals from Orvan well below the levels of a year earlier in December, reflecting a critical supply chain disruption.",
+      "estimate": {
+        "low": 39.42,
+        "high": 67.58,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This evidence reinforces the argument of severe exposure for Midgard's wheat imports due to the collapse of the Orvan corridor.",
+      "citations": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": "09bcfbb6",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "T2-06",
+      "side": "THOR",
+      "run": 2,
+      "country": "Tolan",
+      "sector": "Wheat",
+      "kind": "evidence",
+      "statement": "Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply, indicating a shift in sourcing due to supply disruptions.",
+      "estimate": {
+        "low": 31.41,
+        "high": 67.54,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This evidence illustrates Tolan's attempts to mitigate exposure by sourcing from alternative suppliers, but still highlights the vulnerability due to reliance on Orvan.",
+      "citations": [
+        {
+          "doc_id": "ORV-0042",
+          "ref": "ORV-0042#P1",
+          "kind": "paragraph",
+          "pub_date": "2026-11-25",
+          "pub_time": "13:05",
+          "tier": 2,
+          "source_name": "Anchor Marine",
+          "title": "Anchor Marine reports busier berths at Tolan Harbour",
+          "excerpt": "Anchor Marine says Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply.",
+          "fact_id": "1a3e6c01",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "L2-01",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Maize",
+      "kind": "calculation",
+      "statement": "Midgard's maize import loss is 38.5-62.5% depending on the window; the worst month is not the trend.",
+      "estimate": {
+        "low": 38.49,
+        "high": 62.51,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0030 net of no substitutes.",
+      "citations": [
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 80.2M and the volume was 211,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 80.2,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 62.1M and the volume was 146,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 62.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 31.9M and the volume was 75,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 31.5M and the volume was 74,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 82.5M and the volume was 217,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 82.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 82.8M and the volume was 218,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 82.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P12",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In November 2025, the value was USD 84.7M and the volume was 223,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 84.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0030",
+          "ref": "ORV-0030#P13",
+          "kind": "trade_row",
+          "pub_date": "2027-01-21",
+          "pub_time": "09:35",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+          "excerpt": "In December 2025, the value was USD 84.4M and the volume was 222,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 84.4,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "onset",
+          "gross_loss_pct": 38.49,
+          "net_loss_pct": 38.49,
+          "net_import_loss_pct": 38.49,
+          "import_baseline_usd_m": 334.4,
+          "high_bound_pct": 38.49,
+          "baseline_usd_m": 334.4,
+          "gross_loss_usd_m": 128.7,
+          "net_loss_usd_m": 128.7,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P10",
+            "ORV-0030#P11",
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P4",
+            "ORV-0030#P5",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "full",
+          "gross_loss_pct": 50.18,
+          "net_loss_pct": 50.18,
+          "net_import_loss_pct": 50.18,
+          "import_baseline_usd_m": 251.9,
+          "high_bound_pct": 50.18,
+          "baseline_usd_m": 251.9,
+          "gross_loss_usd_m": 126.4,
+          "net_loss_usd_m": 126.4,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P11",
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P5",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Maize",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0030"
+          ],
+          "substitute_series": [],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "late",
+          "gross_loss_pct": 62.51,
+          "net_loss_pct": 62.51,
+          "net_import_loss_pct": 62.51,
+          "import_baseline_usd_m": 169.1,
+          "high_bound_pct": 62.51,
+          "baseline_usd_m": 169.1,
+          "gross_loss_usd_m": 105.7,
+          "net_loss_usd_m": 105.7,
+          "substitute_gain_usd_m": 0.0,
+          "rows_used": [
+            "ORV-0030#P12",
+            "ORV-0030#P13",
+            "ORV-0030#P6",
+            "ORV-0030#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "CONCEDED"
+    },
+    {
+      "claim_id": "L2-02",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Wheat",
+      "kind": "calculation",
+      "statement": "Net of substitute supply from Vanir, Midgard lost only 37.4-41.4% of its recorded wheat imports, well below the 60.3% headline fall in deliveries from Orvan.",
+      "estimate": {
+        "low": 37.4,
+        "high": 41.38,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0009 net of ORV-0027.",
+      "citations": [
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 38.2M and the volume was 93,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.2,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 34.5M and the volume was 84,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 34.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 35.3M and the volume was 86,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 35.3,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 34.1M and the volume was 83,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 34.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 97.9M and the volume was 272,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 97.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0009",
+          "ref": "ORV-0009#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-19",
+          "pub_time": "09:20",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 86.8M and the volume was 241,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 86.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 31.5M and the volume was 84,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 31.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 30.9M and the volume was 77,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 30.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 38.5M and the volume was 96,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 36.9M and the volume was 92,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 36.9,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 32.6M and the volume was 87,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.6,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0027",
+          "ref": "ORV-0027#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "09:05",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 28.9M and the volume was 77,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 28.9,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "onset",
+          "gross_loss_pct": 60.34,
+          "net_loss_pct": 55.15,
+          "net_import_loss_pct": 41.38,
+          "import_baseline_usd_m": 477.5,
+          "high_bound_pct": 60.34,
+          "baseline_usd_m": 358.3,
+          "gross_loss_usd_m": 216.2,
+          "net_loss_usd_m": 197.6,
+          "substitute_gain_usd_m": 18.6,
+          "rows_used": [
+            "ORV-0009#P10",
+            "ORV-0009#P11",
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P4",
+            "ORV-0009#P5",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P4",
+            "ORV-0027#P5",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "full",
+          "gross_loss_pct": 60.1,
+          "net_loss_pct": 52.53,
+          "net_import_loss_pct": 39.42,
+          "import_baseline_usd_m": 347.0,
+          "high_bound_pct": 60.1,
+          "baseline_usd_m": 260.4,
+          "gross_loss_usd_m": 156.5,
+          "net_loss_usd_m": 136.8,
+          "substitute_gain_usd_m": 19.7,
+          "rows_used": [
+            "ORV-0009#P11",
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P5",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P5",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Midgard",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0009"
+          ],
+          "substitute_series": [
+            "ORV-0027"
+          ],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "late",
+          "gross_loss_pct": 60.02,
+          "net_loss_pct": 49.83,
+          "net_import_loss_pct": 37.4,
+          "import_baseline_usd_m": 231.3,
+          "high_bound_pct": 60.02,
+          "baseline_usd_m": 173.6,
+          "gross_loss_usd_m": 104.2,
+          "net_loss_usd_m": 86.5,
+          "substitute_gain_usd_m": 17.7,
+          "rows_used": [
+            "ORV-0009#P12",
+            "ORV-0009#P13",
+            "ORV-0009#P6",
+            "ORV-0009#P7",
+            "ORV-0027#P6",
+            "ORV-0027#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "DEFENDED"
+    },
+    {
+      "claim_id": "L2-03",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Tolan",
+      "sector": "Wheat",
+      "kind": "calculation",
+      "statement": "Net of substitute supply from Vanir, Tolan lost only 28.3-34.2% of its recorded wheat imports, well below the 60.3% headline fall in deliveries from Orvan.",
+      "estimate": {
+        "low": 28.32,
+        "high": 34.19,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "INFERENCE",
+      "reasoning": "TradeCalculator over ORV-0046 net of ORV-0044.",
+      "citations": [
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 17.0M and the volume was 43,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 17.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 15.4M and the volume was 39,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.4,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 15.8M and the volume was 40,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 15.0M and the volume was 38,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 15.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 43.4M and the volume was 124,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 43.4,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 38.5M and the volume was 110,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 38.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P4",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2026, the value was USD 21.1M and the volume was 57,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 21.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P5",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 20.6M and the volume was 52,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 20.6,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P6",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 26.5M and the volume was 67,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 26.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P7",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 25.7M and the volume was 65,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 25.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P10",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In September 2025, the value was USD 21.8M and the volume was 59,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 21.8,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0044",
+          "ref": "ORV-0044#P11",
+          "kind": "trade_row",
+          "pub_date": "2027-01-22",
+          "pub_time": "10:50",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 19.2M and the volume was 52,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 19.2,
+          "unit": "USD M"
+        }
+      ],
+      "calculations": [
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "onset",
+          "gross_loss_pct": 60.3,
+          "net_loss_pct": 51.26,
+          "net_import_loss_pct": 34.19,
+          "import_baseline_usd_m": 238.7,
+          "high_bound_pct": 60.3,
+          "baseline_usd_m": 159.2,
+          "gross_loss_usd_m": 96.0,
+          "net_loss_usd_m": 81.6,
+          "substitute_gain_usd_m": 14.4,
+          "rows_used": [
+            "ORV-0046#P10",
+            "ORV-0046#P11",
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P4",
+            "ORV-0046#P5",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P4",
+            "ORV-0044#P5",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "October",
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "full",
+          "gross_loss_pct": 60.1,
+          "net_loss_pct": 47.06,
+          "net_import_loss_pct": 31.41,
+          "import_baseline_usd_m": 173.5,
+          "high_bound_pct": 60.1,
+          "baseline_usd_m": 115.8,
+          "gross_loss_usd_m": 69.6,
+          "net_loss_usd_m": 54.5,
+          "substitute_gain_usd_m": 15.1,
+          "rows_used": [
+            "ORV-0046#P11",
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P5",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P5",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        },
+        {
+          "country": "Tolan",
+          "sector": "Wheat",
+          "origins": [
+            "Orvan"
+          ],
+          "primary_series": [
+            "ORV-0046"
+          ],
+          "substitute_series": [
+            "ORV-0044"
+          ],
+          "months": [
+            "November",
+            "December"
+          ],
+          "baseline_year": 2025,
+          "disrupted_year": 2026,
+          "premium_pct": 0.0,
+          "window": "late",
+          "gross_loss_pct": 60.16,
+          "net_loss_pct": 42.43,
+          "net_import_loss_pct": 28.32,
+          "import_baseline_usd_m": 115.8,
+          "high_bound_pct": 60.16,
+          "baseline_usd_m": 77.3,
+          "gross_loss_usd_m": 46.5,
+          "net_loss_usd_m": 32.8,
+          "substitute_gain_usd_m": 13.7,
+          "rows_used": [
+            "ORV-0046#P12",
+            "ORV-0046#P13",
+            "ORV-0046#P6",
+            "ORV-0046#P7",
+            "ORV-0044#P6",
+            "ORV-0044#P7"
+          ],
+          "rows_flagged": []
+        }
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "L2-04",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Wheat",
+      "kind": "evidence",
+      "statement": "Preliminary customs figures show Midgard's wheat arrivals from Orvan well below the levels of a year earlier in December.",
+      "estimate": {
+        "low": 37.4,
+        "high": 41.38,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This indicates that while there is a decline in wheat imports from Orvan, the presence of substitute suppliers can mitigate the impact.",
+      "citations": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": "09bcfbb6",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "L2-05",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Midgard",
+      "sector": "Maize",
+      "kind": "evidence",
+      "statement": "Preliminary customs figures show Midgard's maize arrivals from Orvan well below the levels of a year earlier in December.",
+      "estimate": {
+        "low": 38.49,
+        "high": 62.51,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This suggests that although maize imports are down, the potential for rerouting and substitute suppliers can soften the loss.",
+      "citations": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": "09bcfbb6",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    },
+    {
+      "claim_id": "L2-06",
+      "side": "LOKI",
+      "run": 2,
+      "country": "Tolan",
+      "sector": "Wheat",
+      "kind": "evidence",
+      "statement": "Preliminary customs figures show Tolan's wheat arrivals from Orvan well below the levels of a year earlier in December.",
+      "estimate": {
+        "low": 28.32,
+        "high": 34.19,
+        "unit": "pct_import_value_loss",
+        "metric": "Fall in import value vs the same months a year earlier",
+        "baseline": "same months of 2025"
+      },
+      "nature": "SOURCED_FACT",
+      "reasoning": "This indicates a decline in wheat imports for Tolan, but similar to Midgard, substitute suppliers can help alleviate the severity of the exposure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": "09bcfbb6",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "calculations": [],
+      "status": "ACTIVE"
+    }
+  ],
+  "attacks": [
+    {
+      "attack_id": "AT2-01",
+      "run": 2,
+      "attacker": "THOR",
+      "target_claim_id": "L2-01",
+      "reason": "math_error",
+      "argument": "Loki's claim of a 38.5-62.5% loss in maize imports contradicts the confirmed net value loss of close to 40% when accounting for substitute supply from Vanir, indicating a miscalculation in the range presented.",
+      "counter_evidence": [],
+      "grounds": "argued"
+    },
+    {
+      "attack_id": "AT2-02",
+      "run": 2,
+      "attacker": "THOR",
+      "target_claim_id": "L2-02",
+      "reason": "math_error",
+      "argument": "The assertion that Tolan lost only 28.3-34.2% of its wheat imports is flawed, as the confirmed net value loss for Midgard wheat, which includes Vanir supply, is close to 40%, suggesting that Tolan's losses are likely underestimated.",
+      "counter_evidence": [],
+      "grounds": "argued"
+    },
+    {
+      "attack_id": "AL2-01",
+      "run": 2,
+      "attacker": "LOKI",
+      "target_claim_id": "T2-01",
+      "reason": "contradicts",
+      "argument": "While Midgard has lost a significant portion of its maize imports from Orvan, evidence shows that Vanir and rail deliveries have filled part of the gap, indicating that the exposure is limited.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P5",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Even so, the direction is clear: Orvan's share of Midgard's grain imports has fallen, while Vanir and rail deliveries have taken part of the gap.",
+          "fact_id": "12dcfa9d",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0004",
+          "ref": "ORV-0004#P1",
+          "kind": "paragraph",
+          "pub_date": "2026-12-02",
+          "pub_time": "10:20",
+          "tier": 2,
+          "source_name": "Vantro Trading",
+          "title": "Vantro Trading: markets have already adjusted, no damage",
+          "excerpt": "Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement.",
+          "fact_id": "7a1e9f49",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued"
+    },
+    {
+      "attack_id": "AL2-02",
+      "run": 2,
+      "attacker": "LOKI",
+      "target_claim_id": "T2-02",
+      "reason": "contradicts",
+      "argument": "Despite the reported losses in wheat imports, Tolan is successfully sourcing more wheat from Vanir, demonstrating that substitute suppliers are mitigating the impact.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P5",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Even so, the direction is clear: Orvan's share of Midgard's grain imports has fallen, while Vanir and rail deliveries have taken part of the gap.",
+          "fact_id": "12dcfa9d",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0042",
+          "ref": "ORV-0042#P1",
+          "kind": "paragraph",
+          "pub_date": "2026-11-25",
+          "pub_time": "13:05",
+          "tier": 2,
+          "source_name": "Anchor Marine",
+          "title": "Anchor Marine reports busier berths at Tolan Harbour",
+          "excerpt": "Anchor Marine says Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply.",
+          "fact_id": "1a3e6c01",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued"
+    },
+    {
+      "attack_id": "AL2-03",
+      "run": 2,
+      "attacker": "LOKI",
+      "target_claim_id": "T2-03",
+      "reason": "contradicts",
+      "argument": "The evidence indicates that Tolan is replacing some of its lost wheat supply from Orvan with imports from Vanir, which softens the overall exposure.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0042",
+          "ref": "ORV-0042#P1",
+          "kind": "paragraph",
+          "pub_date": "2026-11-25",
+          "pub_time": "13:05",
+          "tier": 2,
+          "source_name": "Anchor Marine",
+          "title": "Anchor Marine reports busier berths at Tolan Harbour",
+          "excerpt": "Anchor Marine says Tolan Harbour is handling more wheat cargoes from Vanir as Tolan buyers replace some Orvan supply.",
+          "fact_id": "1a3e6c01",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P5",
+          "kind": "paragraph",
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Even so, the direction is clear: Orvan's share of Midgard's grain imports has fallen, while Vanir and rail deliveries have taken part of the gap.",
+          "fact_id": "12dcfa9d",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued"
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "RT2-01",
+      "run": 2,
+      "side": "THOR",
+      "attack_id": "AL2-01",
+      "claim_id": "T2-01",
+      "decision": "CONCEDED",
+      "explanation": "No new admissible evidence answers the attack.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RT2-02",
+      "run": 2,
+      "side": "THOR",
+      "attack_id": "AL2-02",
+      "claim_id": "T2-02",
+      "decision": "CONCEDED",
+      "explanation": "No new admissible evidence answers the attack.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RT2-03",
+      "run": 2,
+      "side": "THOR",
+      "attack_id": "AL2-03",
+      "claim_id": "T2-03",
+      "decision": "CONCEDED",
+      "explanation": "No new admissible evidence answers the attack.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RL2-01",
+      "run": 2,
+      "side": "LOKI",
+      "attack_id": "AT2-01",
+      "claim_id": "L2-01",
+      "decision": "CONCEDED",
+      "explanation": "The evidence indicates that the confirmed net value loss for maize imports is close to 40%, which contradicts my previous claim of a 38.5-62.5% loss. Therefore, I concede this point.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RL2-02",
+      "run": 2,
+      "side": "LOKI",
+      "attack_id": "AT2-02",
+      "claim_id": "L2-02",
+      "decision": "DEFENDED",
+      "explanation": "While the confirmed net value loss for Midgard wheat is close to 40%, Tolan buyers have replaced part of the lost volume with wheat from Vanir, indicating that the overall impact may be mitigated. Additionally, a purchasing manager at a Midgard mill stated that they can replace some of the lost wheat, suggesting that the losses may not be as severe as indicated.",
+      "new_evidence": [
+        {
+          "doc_id": "ORV-0046",
+          "ref": "ORV-0046#P14",
+          "kind": "paragraph",
+          "pub_date": "2027-01-20",
+          "pub_time": "10:05",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+          "excerpt": "Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap.",
+          "fact_id": "4aee0fe3",
+          "assertion": "CONFIRMED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0006",
+          "ref": "ORV-0006#P4",
+          "kind": "paragraph",
+          "pub_date": "2026-10-08",
+          "pub_time": "08:45",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "Millers look beyond Orvan as wheat cargoes slip",
+          "excerpt": "\"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill.",
+          "fact_id": "5dcabdb9",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "side_failures": {}
+}

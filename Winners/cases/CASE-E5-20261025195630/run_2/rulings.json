@@ -1,0 +1,219 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T2-01",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-02",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-03",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-04",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-05",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-06",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-01",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-02",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONTESTED",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "The evidence shows both a confirmed net value loss close to 40% and a partial replacement of lost volume with Vanir wheat, leading to conflicting interpretations of the overall impact.",
+      "decided_by": "odin",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-03",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-04",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-05",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-06",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Midgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        50.18,
+        70.01
+      ],
+      "loki": [
+        38.49,
+        62.51
+      ],
+      "odin": null,
+      "basis": "No calculation survived the trial."
+    },
+    {
+      "country": "Midgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        39.42,
+        67.58
+      ],
+      "loki": [
+        37.4,
+        41.38
+      ],
+      "odin": [
+        37.4,
+        39.42
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0009, net of ORV-0027); windows: full Oct-Dec 39.4%; late Nov-Dec 37.4%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "basis": "Evidence missing: no trade series for this flow; no range is given."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        31.41,
+        67.54
+      ],
+      "loki": [
+        28.32,
+        34.19
+      ],
+      "odin": [
+        28.32,
+        31.41
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0046, net of ORV-0044); windows: full Oct-Dec 31.4%; late Nov-Dec 28.3%. The onset month is left out because it was only partly affected."
+    }
+  ],
+  "remand": [
+    "Midgard Maize: no established trade-row finding",
+    "Midgard Wheat: no established trade-row finding"
+  ],
+  "llm_usage": {
+    "THOR": {
+      "calls": 6,
+      "cache_hits": 0,
+      "tokens": 5185
+    },
+    "LOKI": {
+      "calls": 6,
+      "cache_hits": 0,
+      "tokens": 3763
+    },
+    "ODIN": {
+      "calls": 1,
+      "cache_hits": 0,
+      "tokens": 751
+    }
+  }
+}

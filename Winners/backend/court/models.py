@@ -36,11 +36,12 @@ class Calculation(BaseModel):
     disrupted_year: int
     premium_pct: float = 0.0
     window: str = ""
-    gross_loss_pct: float = 0.0  # disrupted supplier's loss / its own baseline (TradeCalculator)
-    net_loss_pct: float = 0.0  # TradeCalculator's net loss / disrupted supplier's baseline
-    net_import_loss_pct: float = 0.0  # same net loss / baseline imports from every supplier in the calculation
+    gross_loss_pct: float = 0.0  # gross loss / primary-supplier baseline (for reference only)
+    net_loss_pct: float = 0.0    # net loss / primary-supplier baseline (for reference only)
+    net_import_loss_pct: float = 0.0   # net loss / total-import basket = claim estimate.low
+    gross_import_loss_pct: float = 0.0 # gross loss / total-import basket = claim estimate.high
     import_baseline_usd_m: float = 0.0
-    high_bound_pct: float = 0.0
+    high_bound_pct: float = 0.0  # reference only: gross × spot-premium / primary baseline
     baseline_usd_m: float = 0.0
     gross_loss_usd_m: float = 0.0
     net_loss_usd_m: float = 0.0
@@ -50,10 +51,13 @@ class Calculation(BaseModel):
 
 
 class Estimate(BaseModel):
-    low: float
-    high: float
-    unit: str = "pct_import_value_loss"
-    metric: str = "Fall in import value vs the same months a year earlier"
+    low: float   # = net_import_loss_pct: net loss / total import basket — best case (substitutes materialise)
+    high: float  # = gross_import_loss_pct: gross loss / total import basket — worst case (no substitution)
+    unit: str = "pct_total_import_basket"
+    # Both bounds use the same denominator: baseline imports from ALL suppliers (primary + substitute).
+    # This measures the fraction of your total import supply that was lost.
+    # spot-price premium is a separate fact on Calculation.premium_pct, not folded into either bound.
+    metric: str = "Value loss as % of total baseline import basket (same disruption months, year-on-year)"
     baseline: str = ""
 
 

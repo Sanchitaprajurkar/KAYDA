@@ -40,15 +40,18 @@ class CourtLoki(Advocate):
         calcs = self._calc_windows(report, country, sector, primary, substitutes)
         if not calcs:
             return None
+        # Both bounds use the same denominator: the total import basket (primary + substitute baseline).
+        # low = net_import_loss_pct  — best case, substitutes fully materialise.
+        # high = gross_import_loss_pct — worst case, no substitution.
         low = min(c.net_import_loss_pct for c in calcs)
-        high = max(c.net_import_loss_pct for c in calcs)
+        high = max(c.gross_import_loss_pct for c in calcs)
         gross = max(c.gross_loss_pct for c in calcs)
         subs = sorted({s.origin for s in substitutes})
         statement = (f"Net of substitute supply from {', '.join(subs)}, {country} lost only {low:.1f}-{high:.1f}% of its "
-                     f"recorded {sector.lower()} imports, well below the {gross:.1f}% headline fall in deliveries "
+                     f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
                      f"from {'/'.join(sorted(origins))}." if subs else
-                     f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% depending on the window; "
-                     f"the worst month is not the trend.")
+                     f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
+                     f"depending on the window; the worst month is not the trend.")
         cites = []
         for c in calcs:
             cites += [e for e in self.tools.row_evidence(c) if e.ref not in {x.ref for x in cites}]
@@ -58,5 +61,6 @@ class CourtLoki(Advocate):
                                        baseline=f"same months of {calcs[0].baseline_year}"),
                      nature="INFERENCE",
                      reasoning=f"TradeCalculator over {', '.join(cell.primary_series)} net of "
-                               f"{', '.join(s.doc_id for s in substitutes) or 'no substitutes'}.",
+                               f"{', '.join(s.doc_id for s in substitutes) or 'no substitutes'}; "
+                               f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).",
                      citations=cites[:12], calculations=calcs)
