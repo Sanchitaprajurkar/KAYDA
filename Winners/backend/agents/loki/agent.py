@@ -47,11 +47,32 @@ class CourtLoki(Advocate):
         high = max(c.gross_import_loss_pct for c in calcs)
         gross = max(c.gross_loss_pct for c in calcs)
         subs = sorted({s.origin for s in substitutes})
-        statement = (f"Net of substitute supply from {', '.join(subs)}, {country} lost only {low:.1f}-{high:.1f}% of its "
-                     f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
-                     f"from {'/'.join(sorted(origins))}." if subs else
-                     f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
-                     f"depending on the window; the worst month is not the trend.")
+        prior_claim = next((c for c in self.claims.values() if c.kind == "calculation"
+                            and (c.country, c.sector) == (country, sector) and c.run == run - 1), None)
+
+        if run > 1 and prior_claim and subs:
+            statement = (f"Following Odin's remand, substitute supply from {', '.join(subs)} ({', '.join(s.doc_id for s in substitutes)}) "
+                         f"is now verified in the Case File. {country} lost only {low:.1f}-{high:.1f}% of its "
+                         f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
+                         f"from {'/'.join(sorted(origins))}.")
+            reasoning = (f"Run {run}: substitute series verified on remand confirms mitigation from {', '.join(subs)}; "
+                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).")
+        elif run > 1 and prior_claim:
+            statement = (f"Following Odin's remand, no alternative trade series was recorded for {country} {sector}; "
+                         f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
+                         f"depending on the window; the worst month is not the trend.")
+            reasoning = (f"Run {run}: No substitute trade series on record for {country} {sector}; "
+                         f"position maintained at {low:.1f}-{high:.1f}% based on seasonal window adjustment.")
+        else:
+            statement = (f"Net of substitute supply from {', '.join(subs)}, {country} lost only {low:.1f}-{high:.1f}% of its "
+                         f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
+                         f"from {'/'.join(sorted(origins))}." if subs else
+                         f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
+                         f"depending on the window; the worst month is not the trend.")
+            reasoning = (f"TradeCalculator over {', '.join(cell.primary_series)} net of "
+                         f"{', '.join(s.doc_id for s in substitutes) or 'no substitutes'}; "
+                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).")
+
         cites = []
         for c in calcs:
             cites += [e for e in self.tools.row_evidence(c) if e.ref not in {x.ref for x in cites}]
@@ -60,7 +81,5 @@ class CourtLoki(Advocate):
                      estimate=Estimate(low=round(low, 2), high=round(high, 2),
                                        baseline=f"same months of {calcs[0].baseline_year}"),
                      nature="INFERENCE",
-                     reasoning=f"TradeCalculator over {', '.join(cell.primary_series)} net of "
-                               f"{', '.join(s.doc_id for s in substitutes) or 'no substitutes'}; "
-                               f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).",
+                     reasoning=reasoning,
                      citations=cites[:12], calculations=calcs)

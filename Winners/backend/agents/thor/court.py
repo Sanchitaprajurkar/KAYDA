@@ -47,13 +47,41 @@ class CourtThor(Advocate):
         high = max(c.gross_import_loss_pct for c in calcs)
         origins = "/".join(report.case_scope.event_countries)
         subs = sorted({x.origin for x in substitutes if x})
-        statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
-                     f"({', '.join(worst.months)} vs a year earlier); "
-                     + (f"even after recorded substitutes from {', '.join(subs)}, at least {low:.1f}% "
-                        f"of the total import basket is gone" if subs else
-                        f"over the full months after onset the loss is {low:.1f}% of the total import basket "
-                        f"and no substitute supply is on the record")
-                     + f". A spot-price premium of {self.premium_pct:g}% is separately observed.")
+        prior_claim = next((c for c in self.claims.values() if c.kind == "calculation"
+                            and (c.country, c.sector) == (country, sector) and c.run == run - 1), None)
+
+        if run > 1 and prior_claim and (low != prior_claim.estimate.low or high != prior_claim.estimate.high):
+            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
+                         f"({', '.join(worst.months)} vs a year earlier); following Odin's remand, new substitute trade data "
+                         f"from {', '.join(subs)} is incorporated, revising net exposure from "
+                         f"{prior_claim.estimate.low:.1f}-{prior_claim.estimate.high:.1f}% down to {low:.1f}-{high:.1f}% "
+                         f"of the total import basket. A spot-price premium of {self.premium_pct:g}% is separately observed.")
+            reasoning = (f"Revised in Run {run} using new substitute series {', '.join(cell.substitute_series)} retrieved on remand: "
+                         f"estimate revised from {prior_claim.estimate.low:.1f}-{prior_claim.estimate.high:.1f}% to {low:.1f}-{high:.1f}% "
+                         f"(low = net_import_loss_pct, high = gross_import_loss_pct / total import basket); "
+                         f"the {self.premium_pct:g}% spot premium is separately cited, not in either bound.")
+        elif run > 1 and prior_claim:
+            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
+                         f"({', '.join(worst.months)} vs a year earlier); following Odin's remand, Heimdall's search confirmed "
+                         f"no substitute {sector.lower()} supply is on the record. Thor maintains {low:.1f}-{high:.1f}% "
+                         f"of the total import basket as the unmitigated baseline loss. "
+                         f"A spot-price premium of {self.premium_pct:g}% is separately observed.")
+            reasoning = (f"Maintained in Run {run} at {low:.1f}-{high:.1f}%: Heimdall's remand search confirmed no substitute "
+                         f"trade series exists for {country} {sector}; with primary disruption unmitigated, position remains unchanged; "
+                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket); "
+                         f"the {self.premium_pct:g}% spot premium is separately cited.")
+        else:
+            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
+                         f"({', '.join(worst.months)} vs a year earlier); "
+                         + (f"even after recorded substitutes from {', '.join(subs)}, at least {low:.1f}% "
+                            f"of the total import basket is gone" if subs else
+                            f"over the full months after onset the loss is {low:.1f}% of the total import basket "
+                            f"and no substitute supply is on the record")
+                         + f". A spot-price premium of {self.premium_pct:g}% is separately observed.")
+            reasoning = (f"TradeCalculator over {', '.join(cell.primary_series + cell.substitute_series)}; "
+                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket); "
+                         f"the {self.premium_pct:g}% spot premium is separately cited, not in either bound.")
+
         cites = []
         for c in calcs:
             cites += [e for e in self.tools.row_evidence(c) if e.ref not in {x.ref for x in cites}]
@@ -62,7 +90,5 @@ class CourtThor(Advocate):
                      estimate=Estimate(low=round(min(low, high), 2), high=round(max(low, high), 2),
                                        baseline=f"same months of {worst.baseline_year}"),
                      nature="INFERENCE",
-                     reasoning=f"TradeCalculator over {', '.join(cell.primary_series + cell.substitute_series)}; "
-                               f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket); "
-                               f"the {self.premium_pct:g}% spot premium is separately cited, not in either bound.",
+                     reasoning=reasoning,
                      citations=cites[:12], calculations=calcs)

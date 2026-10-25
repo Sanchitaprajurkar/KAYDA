@@ -18,6 +18,27 @@ def _span(s) -> str:
     return f"{s[0]:.1f}-{s[1]:.1f}%" if s else "-"
 
 
+def _odin_cell(rng) -> str:
+    """Format the Odin column of the exposure table.
+
+    Four distinct states:
+      * Evidence missing  – status != COVERED; no trade data exists for this flow.
+      * No defensible range – status == COVERED but no Odin range was computed (no calculation
+        survived or the trade window returned no figures).  This is NOT zero exposure; it means
+        the case record does not support a defensible quantitative estimate.
+      * Contested range   – Odin computed a range but at least one of the underlying calculation
+        rulings is CONTESTED (the parties disagree on a material fact).  The figure is a
+        working estimate, not an established finding.
+      * Established range – All surviving calculation rulings are ESTABLISHED.
+    """
+    if rng.status != "COVERED":
+        return "evidence missing"
+    if rng.odin is None:
+        return "no defensible range established"
+    tag = " _(contested)_" if rng.odin_classification == "CONTESTED" else ""
+    return f"{_span(rng.odin)}{tag}"
+
+
 def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: bool, reasons: List[str]) -> Dict:
     final = runs[-1]
     claims = {c.claim_id: c for c in final.claims}
@@ -38,10 +59,11 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
         if rng.status != "COVERED":
             lines.append(f"- {rng.country} {rng.sector}: evidence missing; no range is given.")
         elif rng.odin:
-            lines.append(f"- {rng.country} {rng.sector}: Odin's range **{_span(rng.odin)}** fall in import value "
+            contested_note = " **(contested range — see findings)**" if rng.odin_classification == "CONTESTED" else ""
+            lines.append(f"- {rng.country} {rng.sector}: Odin's range **{_span(rng.odin)}**{contested_note} fall in import value "
                          f"(Thor {_span(rng.thor)}, Loki {_span(rng.loki)}).")
         else:
-            lines.append(f"- {rng.country} {rng.sector}: unresolved; {rng.basis}")
+            lines.append(f"- {rng.country} {rng.sector}: no defensible range established; {rng.basis}")
     lines.append(f"- Findings: {len(groups['ESTABLISHED'])} established, {len(groups['CONTESTED'])} contested, "
                  f"{len(groups['CONCEDED'])} conceded, {len(groups['REJECTED'])} rejected.")
     lines.append("")
@@ -62,10 +84,14 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
 
     lines += ["## Exposure table", "", "| Country | Sector | Thor | Loki | Odin | Basis |", "|---|---|---|---|---|---|"]
     for rng in final.ranges:
-        odin = _span(rng.odin) if rng.status == "COVERED" else "evidence missing"
-        lines.append(f"| {rng.country} | {rng.sector} | {_span(rng.thor)} | {_span(rng.loki)} | {odin} | {rng.basis} |")
-    lines.append("")
-
+        lines.append(f"| {rng.country} | {rng.sector} | {_span(rng.thor)} | {_span(rng.loki)} | {_odin_cell(rng)} | {rng.basis} |")
+    lines += ["",
+              "> **Odin column key**: *evidence missing* = no trade data on record for this flow; "
+              "*no defensible range established* = data exists but no calculation survived the trial "
+              "(this is NOT zero exposure); "
+              "*X–Y% (contested)* = range computed but at least one underlying finding is contested; "
+              "*X–Y%* = range computed from established findings.",
+              ""]
     wins = windows(report)
     late = wins.get("late")
     lines += ["## Next-quarter outlook", ""]

@@ -101,6 +101,14 @@ class Odin:
                     reason="Verified against its sources" + ("; the other side failed, so it went unchallenged."
                                                              if opponent_failed else " and never credibly countered."))
                 continue
+            if c.kind == "calculation" and not any(e.kind == "trade_row" for a in by_target[c.claim_id]
+                                                   for e in a.counter_evidence):
+                # Verified arithmetic over trade rows; only trade data could overturn it, and none was offered.
+                rulings[c.claim_id] = Ruling(
+                    claim_id=c.claim_id, side=c.side, run=c.run, ruling="UPHELD", nature="INFERENCE",
+                    classification=self._classify("UPHELD", c),
+                    reason="Recomputes exactly from the trade rows; the attacks offered no trade data against it.")
+                continue
             pending.append(c)
 
         decided = self._llm_rulings(report, pending, by_target, answers) if pending else {}
@@ -208,6 +216,9 @@ class Odin:
                 r.basis = "No calculation survived the trial."
                 out.append(r)
                 continue
+            # Derive worst classification: CONTESTED if any surviving ruling is CONTESTED, else ESTABLISHED.
+            surviving_classifications = [ruled[c.claim_id].classification for c in surviving]
+            worst_class = "CONTESTED" if "CONTESTED" in surviving_classifications else "ESTABLISHED"
             primary = [self.tools.series(d) for d in cell.primary_series]
             subs = [self.tools.series(d) for d in cell.substitute_series]
             figures = []
@@ -223,6 +234,7 @@ class Odin:
             if figures:
                 # low = min net_import_loss across windows; high = max gross_import_loss across windows
                 r.odin = (round(min(f[2] for f in figures), 2), round(max(f[3] for f in figures), 2))
+                r.odin_classification = worst_class
                 r.basis = (f"Recomputed from the Case File's trade rows ({', '.join(cell.primary_series)}"
                            + (f", net of {', '.join(cell.substitute_series)}" if cell.substitute_series else
                               ", no substitute supply on the record")

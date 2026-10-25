@@ -118,6 +118,10 @@ class CellRange(BaseModel):
     thor: Optional[Tuple[float, float]] = None
     loki: Optional[Tuple[float, float]] = None
     odin: Optional[Tuple[float, float]] = None
+    # Worst classification among the surviving calculation rulings that produced the Odin range.
+    # ESTABLISHED = all surviving calcs were ESTABLISHED; CONTESTED = at least one was CONTESTED.
+    # None means no Odin range was produced (evidence missing or no calculation survived).
+    odin_classification: Optional[str] = None
     basis: str = ""
 
 

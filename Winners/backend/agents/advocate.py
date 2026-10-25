@@ -221,7 +221,16 @@ class Advocate:
         hits = []
         for query, filters in self.opening_queries(report, run, remand):
             hits += self._search(query, filters)
-        candidates = self._collect(hits, event)
+        candidates = self._collect(hits, event, exclude=self.cited_fact_ids if run > 1 else frozenset())
+        if run > 1 and report.new_document_ids:
+            new_set = set(report.new_document_ids)
+            for did in report.new_document_ids:
+                if self.tools.admissible(did):
+                    for f in self.tools.store.facts(did):
+                        if f.fact_id not in self.cited_fact_ids and f.fact_id not in {c.fact_id for c in candidates}:
+                            self.pool[f.fact_id] = f
+                            candidates.append(f)
+            candidates.sort(key=lambda f: (0 if f.source_ref.doc_id in new_set else 1, f.source_ref.doc_id))
 
         claims = []
         for cell in self._cells(report):
@@ -405,6 +414,8 @@ class Advocate:
                 continue
             if a.grounds == "rule" and a.reason in AUTO_CONCEDE:
                 out.append(self._concede(report, claim, a, run, f"The rules found a {a.reason} defect: {a.argument}"))
+            elif self._stands_on_rows(claim, a):
+                out.append(self._defend_by_recompute(claim, a, run))
             else:
                 to_argue.append((a, claim))
         if to_argue:
@@ -444,6 +455,23 @@ class Advocate:
         for i, r in enumerate(out, 1):
             r.response_id = f"R{self.prefix}{run}-{i:02d}"
         return out
+
+    def _stands_on_rows(self, claim: Claim, a: Attack) -> bool:
+        """A calculation that still recomputes from in-scope trade rows can only be defeated by trade data."""
+        return (claim.kind == "calculation"
+                and not any(e.kind == "trade_row" for e in a.counter_evidence)
+                and calculation_defect(self.tools, claim) is None
+                and citation_scope_defect(self.tools, claim) is None)
+
+    def _defend_by_recompute(self, claim: Claim, a: Attack, run: int) -> Response:
+        claim.status = "DEFENDED"
+        series = sorted({s for k in claim.calculations for s in k.primary_series + k.substitute_series})
+        r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
+                     decision="DEFENDED", explanation=f"The figures recompute exactly from the trade rows of "
+                                                      f"{', '.join(series)}; the attack cites no trade data "
+                                                      f"that changes them.")
+        self.log("defence", agent=self.side, response=r.model_dump())
+        return r
 
     def _concede(self, report, claim: Claim, a: Attack, run: int, why: str) -> Response:
         claim.status = "CONCEDED"

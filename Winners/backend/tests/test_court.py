@@ -95,6 +95,20 @@ def test_remand_and_second_run_with_new_evidence(trial):
     assert trial["result"]["status"] == "COMPLETE"
 
 
+def test_run2_incorporates_new_evidence_and_explains_positions(trial):
+    t1 = trial["transcripts"][0]["claims"]
+    t2 = trial["transcripts"][1]["claims"]
+    thor_r1 = {f"{c['country']}|{c['sector']}": c for c in t1 if c["side"] == "THOR" and c["kind"] == "calculation"}
+    thor_r2 = {f"{c['country']}|{c['sector']}": c for c in t2 if c["side"] == "THOR" and c["kind"] == "calculation"}
+    # Midgard Wheat: estimate revised downward because substitute series ORV-0027 was added
+    assert thor_r2["Midgard|Wheat"]["estimate"]["low"] < thor_r1["Midgard|Wheat"]["estimate"]["low"]
+    assert "revising net exposure" in thor_r2["Midgard|Wheat"]["statement"].lower()
+    # Midgard Maize: no substitute series existed; Thor explicitly explains why position is maintained
+    assert "following odin's remand" in thor_r2["Midgard|Maize"]["statement"].lower()
+    assert "maintains" in thor_r2["Midgard|Maize"]["statement"].lower()
+    assert "maintained" in thor_r2["Midgard|Maize"]["reasoning"].lower()
+
+
 # Range accuracy and calibration: Odin's range sits inside both sides' ranges; the gap cell gets none
 def test_ranges(trial):
     cells = {(r["country"], r["sector"]): r for r in trial["rulings"][-1]["ranges"]}
@@ -183,3 +197,60 @@ def test_token_budget_falls_back_to_rules(tmp_path, monkeypatch):
     assert any(e["event"] == "limit_hit" and e.get("limit") == "tokens" for e in events)
     t = json.loads((tmp_path / "cases" / "T-BUDGET" / "run_1" / "transcript.json").read_text(encoding="utf-8"))
     assert t["claims"] and t["attacks"]  # calculations and a rule-based attack still happen
+
+
+# Problem 4: Odin's final exposure table differentiates contested ranges, missing evidence, and unestablished ranges
+def test_problem4_briefing_contested_ranges_and_unestablished_exposure(tmp_path):
+    from backend.court.briefing import write_briefing
+    from backend.court.heimdall_bridge import CaseEvidenceReport
+    from backend.court.models import CellRange, RunRecord, Ruling
+    from backend.court.procedure import CourtSession
+
+    from pathlib import Path
+    # 1. Verify standard multi-run trial output includes the new legend and states
+    res = session(tmp_path).run(QUERY, case_id="T-P4")
+    md = (Path(res["dir"]) / "briefing.md").read_text(encoding="utf-8")
+    assert "Odin column key" in md
+    assert "no defensible range established" in md
+    assert "evidence missing" in md
+
+    # 2. Test explicit briefing formatting for both CONTESTED and UNESTABLISHED states
+    case_dir = tmp_path / "cases" / "T-P4"
+    r2_data = json.loads((case_dir / "run_2" / "rulings.json").read_text(encoding="utf-8"))
+    report_data = json.loads((case_dir / "run_2" / "transcript.json").read_text(encoding="utf-8"))
+    
+    # Simulate a run with a contested cell and a covered cell with no defensible range
+    synth_ranges = [
+        CellRange(country="Midgard", sector="Maize", status="COVERED",
+                  thor=(50.2, 70.0), loki=(38.5, 62.5), odin=(50.2, 62.5),
+                  odin_classification="CONTESTED", basis="Contested calculation"),
+        CellRange(country="Midgard", sector="Wheat", status="COVERED",
+                  thor=(39.4, 67.6), loki=(37.4, 41.4), odin=None,
+                  odin_classification=None, basis="No calculation survived"),
+        CellRange(country="Tolan", sector="Maize", status="EVIDENCE_MISSING",
+                  thor=None, loki=None, odin=None, basis="No trade series"),
+        CellRange(country="Tolan", sector="Wheat", status="COVERED",
+                  thor=(31.4, 40.2), loki=(28.3, 40.2), odin=(28.3, 40.2),
+                  odin_classification="ESTABLISHED", basis="Established findings")
+    ]
+    
+    r2_data["run"] = 2
+    r2_data["claims"] = report_data["claims"]
+    mock_run = RunRecord.model_validate(r2_data)
+    mock_run.ranges = synth_ranges
+    
+    heimdall = offline_heimdall()
+    rep = heimdall.build_case_file(query=QUERY, case_id="T-P4")
+    b = write_briefing(rep, [mock_run], complete=True, reasons=[])
+    b_md = b["markdown"]
+    
+    # Executive summary explains contested range
+    assert "Midgard Maize: Odin's range **50.2-62.5%** **(contested range — see findings)**" in b_md
+    assert "Midgard Wheat: no defensible range established" in b_md
+    
+    # Exposure table annotations
+    assert "| Midgard | Maize | 50.2-70.0% | 38.5-62.5% | 50.2-62.5% _(contested)_ |" in b_md
+    assert "| Midgard | Wheat | 39.4-67.6% | 37.4-41.4% | no defensible range established |" in b_md
+    assert "| Tolan | Maize | - | - | evidence missing |" in b_md
+    assert "| Tolan | Wheat | 31.4-40.2% | 28.3-40.2% | 28.3-40.2% |" in b_md
+
