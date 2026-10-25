@@ -1,0 +1,104 @@
+/* RouteMap.css */
+.route-map {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-void);
+  overflow: hidden;
+  position: relative;
+}
+
+.route-map__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.route-map__header-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.route-map__header-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--thor);
+}
+
+.route-map__header-title {
+  color: var(--text-primary);
+}
+
+.route-map__legend {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.route-map__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.route-map__legend-line {
+  width: 16px;
+  height: 1px;
+}
+
+.route-map__canvas {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  min-height: 0;
+}
+
+.route-map__canvas svg {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+
+.route-map__footer {
+  border-top: 1px solid var(--border);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+/* SVG node labels */
+.map-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5px;
+}
+
+/* Animated disruption ring */
+@keyframes disruption-ring {
+  0%   { r: 9; opacity: 0.7; }
+  100% { r: 22; opacity: 0; }
+}
+
+.disruption-ring {
+  animation: disruption-ring 2s ease-out infinite;
+}
+
+/* March animation for disrupted dashes */
+.dashes-march {
+  animation: dash-march 0.6s linear infinite;
+}
