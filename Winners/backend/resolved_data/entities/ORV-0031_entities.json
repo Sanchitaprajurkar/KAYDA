@@ -1,63 +1,5 @@
 [
   {
-    "name": "Asgard",
-    "type": "NATION",
-    "aliases": [],
-    "description": "A nation involved in the feed market and agriculture.",
-    "mentions_count": 7,
-    "source_refs": [
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 1,
-        "text_snippet": "DOC_ID: ORV-0031 EVENT_ID: E5 TITLE: Asgard feed buyers feel the cost of a shorter Orvan harvest SOURCE_NAME: Asgard Her..."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 2,
-        "text_snippet": "[P1] Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains..."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 3,
-        "text_snippet": "[P2] Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open..."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 4,
-        "text_snippet": "[P3] \"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister...."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 5,
-        "text_snippet": "[P4] Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir...."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 6,
-        "text_snippet": "[P5] The difference between the two products is the heart of the story here. Wheat bought under the long-term contract a..."
-      },
-      {
-        "doc_id": "ORV-0031",
-        "file_name": "ORV-0031.txt",
-        "page_number": null,
-        "paragraph_index": 7,
-        "text_snippet": "[P6] The ministry's stock estimate covers wheat and maize together, which makes it hard to see the maize position on its..."
-      }
-    ]
-  },
-  {
     "name": "Orvan",
     "type": "NATION",
     "aliases": [],
@@ -113,7 +55,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": "A type of grain that is currently facing supply issues in Asgard.",
-    "mentions_count": 5,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0031",
@@ -140,6 +82,13 @@
         "doc_id": "ORV-0031",
         "file_name": "ORV-0031.txt",
         "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] \"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister...."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
         "paragraph_index": 5,
         "text_snippet": "[P4] Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir...."
       },
@@ -149,6 +98,13 @@
         "page_number": null,
         "paragraph_index": 6,
         "text_snippet": "[P5] The difference between the two products is the heart of the story here. Wheat bought under the long-term contract a..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's stock estimate covers wheat and maize together, which makes it hard to see the maize position on its..."
       }
     ]
   },
@@ -157,7 +113,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": "A type of grain that is covered under a long-term contract with Orvan.",
-    "mentions_count": 5,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0031",
@@ -184,6 +140,13 @@
         "doc_id": "ORV-0031",
         "file_name": "ORV-0031.txt",
         "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] \"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister...."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
         "paragraph_index": 5,
         "text_snippet": "[P4] Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir...."
       },
@@ -193,6 +156,13 @@
         "page_number": null,
         "paragraph_index": 6,
         "text_snippet": "[P5] The difference between the two products is the heart of the story here. Wheat bought under the long-term contract a..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's stock estimate covers wheat and maize together, which makes it hard to see the maize position on its..."
       }
     ]
   },
@@ -215,9 +185,11 @@
   {
     "name": "Asgard Herald",
     "type": "ORGANIZATION",
-    "aliases": [],
+    "aliases": [
+      "Asgard"
+    ],
     "description": "The news source reporting on the feed market situation.",
-    "mentions_count": 1,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0031",
@@ -225,6 +197,78 @@
         "page_number": null,
         "paragraph_index": 1,
         "text_snippet": "DOC_ID: ORV-0031 EVENT_ID: E5 TITLE: Asgard feed buyers feel the cost of a shorter Orvan harvest SOURCE_NAME: Asgard Her..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] \"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister...."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir...."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The difference between the two products is the heart of the story here. Wheat bought under the long-term contract a..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's stock estimate covers wheat and maize together, which makes it hard to see the maize position on its..."
+      }
+    ]
+  },
+  {
+    "name": "ministry",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The difference between the two products is the heart of the story here. Wheat bought under the long-term contract a..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's stock estimate covers wheat and maize together, which makes it hard to see the maize position on its..."
+      },
+      {
+        "doc_id": "ORV-0031",
+        "file_name": "ORV-0031.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The ministry has not revised its stock estimate for the winter...."
       }
     ]
   }

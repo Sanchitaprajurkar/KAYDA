@@ -56,11 +56,6 @@ class FakeGraph:
         return KnowledgeGraphSummary(graph_status="MOCK_RECORDED")
 
 
-class FakeRepo:
-    def save_case_report(self, report):
-        return True
-
-
 class FakeCaseStore:
     enabled = False
 
@@ -77,7 +72,7 @@ def store():
 def make_agent(store, conflicts=None):
     llm = ScriptedLLM(conflicts)
     return HeimdallAgent(evidence_store=store, contradiction_detector=ContradictionDetector(llm),
-                         event_verifier=EventVerifier(llm), graph_builder=FakeGraph(), repository=FakeRepo(),
+                         event_verifier=EventVerifier(llm), graph_builder=FakeGraph(),
                          case_store=FakeCaseStore()), llm
 
 
@@ -196,7 +191,7 @@ def test_graph_gets_only_evidence_documents(report, store):
 
 @pytest.mark.skipif(not settings.OPENAI_API_KEY, reason="needs OPENAI_API_KEY (live LLM)")
 def test_live_case_file():
-    r = HeimdallAgent(case_store=FakeCaseStore(), graph_builder=FakeGraph(), repository=FakeRepo()
+    r = HeimdallAgent(case_store=FakeCaseStore(), graph_builder=FakeGraph()
                       ).build_case_file(query=QUERY, case_id="T-LIVE")
     assert r.event_verification.status == EventStatus.CONFIRMED
     assert r.event_verification.is_active_at_as_of

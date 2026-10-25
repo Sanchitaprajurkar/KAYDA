@@ -55,7 +55,7 @@
     "type": "NATION",
     "aliases": [],
     "description": "A nation from which wheat cargoes are being sourced.",
-    "mentions_count": 6,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0006",
@@ -98,6 +98,13 @@
         "page_number": null,
         "paragraph_index": 7,
         "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+      },
+      {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] Vanir wheat offers have been small and priced above Orvan's usual terms...."
       }
     ]
   },
@@ -106,7 +113,7 @@
     "type": "NATION",
     "aliases": [],
     "description": "A nation supplying wheat to Midgard.",
-    "mentions_count": 3,
+    "mentions_count": 5,
     "source_refs": [
       {
         "doc_id": "ORV-0006",
@@ -126,14 +133,28 @@
         "doc_id": "ORV-0006",
         "file_name": "ORV-0006.txt",
         "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The shift is visible in the paperwork as much as in the prices. Millers that once booked a single large Orvan cargo..."
+      },
+      {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
         "paragraph_index": 7,
         "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+      },
+      {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] Vanir wheat offers have been small and priced above Orvan's usual terms...."
       }
     ]
   },
   {
     "name": "Ravik",
-    "type": "PORT",
+    "type": "NATION",
     "aliases": [],
     "description": "A port from which rail deliveries are being arranged.",
     "mentions_count": 3,
@@ -166,7 +187,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": "The primary commodity being traded and sourced by millers.",
-    "mentions_count": 6,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0006",
@@ -209,6 +230,13 @@
         "page_number": null,
         "paragraph_index": 7,
         "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+      },
+      {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] Vanir wheat offers have been small and priced above Orvan's usual terms...."
       }
     ]
   },
@@ -217,7 +245,7 @@
     "type": "AGREEMENT",
     "aliases": [],
     "description": "An agreement related to the transportation of goods that expired on 10 September.",
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0006",
@@ -225,6 +253,13 @@
         "page_number": null,
         "paragraph_index": 3,
         "text_snippet": "[P2] The Realm Trade Ministry put the September port index at 40, against an old normal of 100...."
+      },
+      {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement...."
       }
     ]
   }

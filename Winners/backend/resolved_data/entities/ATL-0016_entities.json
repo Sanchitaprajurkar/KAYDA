@@ -34,7 +34,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ATL-0016",
@@ -49,6 +49,13 @@
         "page_number": null,
         "paragraph_index": 3,
         "text_snippet": "[P2] Shield Insurance (Asgard) is a marine insurer. Axe Metals (Dorin) is a specialty-metal miner. Solen Energy (Solvar)..."
+      },
+      {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
       }
     ]
   },
@@ -449,6 +456,22 @@
         "page_number": null,
         "paragraph_index": 4,
         "text_snippet": "[P3] Nexor Chips (Ketra) makes computer chips. Granite Mining (Valhalla) mines copper. Paxen Pharma (Midgard) makes medi..."
+      }
+    ]
+  },
+  {
+    "name": "home country",
+    "type": "NATION",
+    "aliases": [],
+    "description": "The country where a firm's head office and main operations are based.",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0016",
+        "file_name": "ATL-0016.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The directory lists normal activities only. A firm's home country is where its head office and main operations are ..."
       }
     ]
   }

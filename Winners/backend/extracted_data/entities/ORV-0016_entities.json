@@ -52,7 +52,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0016",
@@ -67,6 +67,13 @@
         "page_number": 1,
         "paragraph_index": 6,
         "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The corridor desk will keep a record of bookings made before expiry so that any cargo already under contract can be..."
       }
     ]
   },
@@ -75,7 +82,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0016",
@@ -90,6 +97,13 @@
         "page_number": 1,
         "paragraph_index": 6,
         "text_snippet": "[P5] The notice is signed by the trade ministry's corridor desk and takes effect on expiry. Exporters who hold bookings ..."
+      },
+      {
+        "doc_id": "ORV-0016",
+        "file_name": "ORV-0016.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The corridor desk will keep a record of bookings made before expiry so that any cargo already under contract can be..."
       }
     ]
   },

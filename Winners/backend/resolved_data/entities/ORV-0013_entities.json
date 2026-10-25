@@ -87,7 +87,7 @@
     "type": "INFRASTRUCTURE",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0013",
@@ -95,6 +95,13 @@
         "page_number": null,
         "paragraph_index": 4,
         "text_snippet": "[P3] The error appeared in an early edition and was repeated by other outlets. We have removed the report from our wire ..."
+      },
+      {
+        "doc_id": "ORV-0013",
+        "file_name": "ORV-0013.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] We apologise for the error. The correct position is that sea exports now move under the general rules...."
       }
     ]
   }

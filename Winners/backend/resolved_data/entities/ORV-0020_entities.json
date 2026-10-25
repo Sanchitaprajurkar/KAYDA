@@ -2,9 +2,11 @@
   {
     "name": "Vantro Trading",
     "type": "ORGANIZATION",
-    "aliases": [],
+    "aliases": [
+      "Vantro"
+    ],
     "description": "A company involved in trading operations, specifically dealing with Orvan cargoes.",
-    "mentions_count": 6,
+    "mentions_count": 7,
     "source_refs": [
       {
         "doc_id": "ORV-0020",
@@ -47,16 +49,30 @@
         "page_number": null,
         "paragraph_index": 6,
         "text_snippet": "[P5] The notice board update is dated the same day as the firm's weekly call with customers. It lists the documents that..."
+      },
+      {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] Vantro expects the rail route to remain its main alternative while the sea corridor is closed...."
       }
     ]
   },
   {
     "name": "Orvan",
-    "type": "COMMODITY",
+    "type": "NATION",
     "aliases": [],
     "description": "Cargoes being transported by Vantro Trading.",
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
+      {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0020 EVENT_ID: E5 TITLE: Vantro Trading: operational update on Orvan cargoes SOURCE_NAME: Vantro Trading SOU..."
+      },
       {
         "doc_id": "ORV-0020",
         "file_name": "ORV-0020.txt",
@@ -87,7 +103,7 @@
     "type": "CORRIDOR",
     "aliases": [],
     "description": "A route for maritime transport that is currently closed.",
-    "mentions_count": 2,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0020",
@@ -100,8 +116,38 @@
         "doc_id": "ORV-0020",
         "file_name": "ORV-0020.txt",
         "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The update covers the firm's own operations and does not speak for the port or for other traders. It says rail and ..."
+      },
+      {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
         "paragraph_index": 6,
         "text_snippet": "[P5] The notice board update is dated the same day as the firm's weekly call with customers. It lists the documents that..."
+      },
+      {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] Vantro expects the rail route to remain its main alternative while the sea corridor is closed...."
+      }
+    ]
+  },
+  {
+    "name": "rail route",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0020",
+        "file_name": "ORV-0020.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] Vantro expects the rail route to remain its main alternative while the sea corridor is closed...."
       }
     ]
   }

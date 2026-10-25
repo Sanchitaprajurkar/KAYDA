@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 4,
+    "mentions_count": 5,
     "source_refs": [
       {
         "doc_id": "ORV-0022",
@@ -19,6 +19,13 @@
         "page_number": null,
         "paragraph_index": 14,
         "text_snippet": "[P1] By Lena Sorn. Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels ..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik...."
       },
       {
         "doc_id": "ORV-0022",
@@ -85,7 +92,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0022",
@@ -107,6 +114,13 @@
         "page_number": null,
         "paragraph_index": 18,
         "text_snippet": "[P5] The customs figures are provisional and cover arrivals cleared before the holiday break, so they may be revised. Ev..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures..."
       }
     ]
   },
@@ -142,7 +156,7 @@
   },
   {
     "name": "Ravik",
-    "type": "PORT",
+    "type": "NATION",
     "aliases": [],
     "description": null,
     "mentions_count": 1,

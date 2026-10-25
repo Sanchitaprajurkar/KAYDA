@@ -129,7 +129,7 @@
   },
   {
     "name": "Ravik Rail Link",
-    "type": "CORRIDOR",
+    "type": "INFRASTRUCTURE",
     "aliases": [],
     "description": "The principal land bridge, with rail and road routes running through the capital region.",
     "mentions_count": 1,

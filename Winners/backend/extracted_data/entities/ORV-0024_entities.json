@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 5,
+    "mentions_count": 6,
     "source_refs": [
       {
         "doc_id": "ORV-0024",
@@ -40,6 +40,13 @@
         "page_number": 1,
         "paragraph_index": 8,
         "text_snippet": "[P7] Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard whea..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] The agreement was unusual because it was not a tariff deal. It was a shipping arrangement, brokered by a third coun..."
       }
     ]
   },
@@ -151,7 +158,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0024",
@@ -166,6 +173,13 @@
         "page_number": 1,
         "paragraph_index": 4,
         "text_snippet": "[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the p..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] Vanir also sells wheat, and some of that supply can reach Tolan and Midgard. The amounts are small compared with Or..."
       },
       {
         "doc_id": "ORV-0024",
@@ -196,6 +210,87 @@
         "page_number": 1,
         "paragraph_index": 4,
         "text_snippet": "[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the p..."
+      }
+    ]
+  },
+  {
+    "name": "Agreement",
+    "type": "AGREEMENT",
+    "aliases": [],
+    "description": "The agreement expired on 10 September 2026.",
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] The Corridor Agreement was a one-year arrangement signed on 10 September 2025. Asgard mediated it...."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kep..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the p..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The agreement expired on 10 September 2026. Talks on renewal failed, and the port moved onto the general rules with..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] The agreement was unusual because it was not a tariff deal. It was a shipping arrangement, brokered by a third coun..."
+      }
+    ]
+  },
+  {
+    "name": "Port",
+    "type": "PORT",
+    "aliases": [],
+    "description": "The port moved onto the general rules with no replacement arrangement.",
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kep..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the p..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The agreement expired on 10 September 2026. Talks on renewal failed, and the port moved onto the general rules with..."
+      },
+      {
+        "doc_id": "ORV-0024",
+        "file_name": "ORV-0024.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] The agreement was unusual because it was not a tariff deal. It was a shipping arrangement, brokered by a third coun..."
       }
     ]
   }

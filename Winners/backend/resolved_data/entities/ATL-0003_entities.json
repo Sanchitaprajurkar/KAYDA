@@ -41,7 +41,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": "Main exports are rice, copper ore and a small amount of specialty metals.",
-    "mentions_count": 2,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ATL-0003",
@@ -56,6 +56,20 @@
         "page_number": null,
         "paragraph_index": 15,
         "text_snippet": "[P2] The main exports are rice, copper ore and a small amount of specialty metals. The country imports machinery, much o..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Granite Mining, a copper miner, is the best-known firm. The mining sector supports engineering, haulage and repair ..."
+      },
+      {
+        "doc_id": "ATL-0003",
+        "file_name": "ATL-0003.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits. Rice farm..."
       }
     ]
   },

@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0047",
@@ -26,12 +26,19 @@
         "page_number": 1,
         "paragraph_index": 6,
         "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      },
+      {
+        "doc_id": "ORV-0047",
+        "file_name": "ORV-0047.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The view rests on three observations. First, the sea route is the cheapest way to move Orvan grain in bulk, so a la..."
       }
     ]
   },
   {
     "name": "Ravik",
-    "type": "INFRASTRUCTURE",
+    "type": "NATION",
     "aliases": [],
     "description": null,
     "mentions_count": 1,
@@ -128,7 +135,7 @@
     "type": "CORRIDOR",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0047",
@@ -136,12 +143,19 @@
         "page_number": 1,
         "paragraph_index": 6,
         "text_snippet": "[P5] Vanir wheat sales to Tolan and Midgard may rise by between a seventh and a fifth in volume, again from a small base..."
+      },
+      {
+        "doc_id": "ORV-0047",
+        "file_name": "ORV-0047.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The view rests on three observations. First, the sea route is the cheapest way to move Orvan grain in bulk, so a la..."
       }
     ]
   },
   {
     "name": "port strike",
-    "type": "AGREEMENT",
+    "type": "INFRASTRUCTURE",
     "aliases": [],
     "description": null,
     "mentions_count": 1,
@@ -152,6 +166,22 @@
         "page_number": 1,
         "paragraph_index": 3,
         "text_snippet": "[P2] The corridor agreement ended on 10 September and the port strike began on 14 September. The September port index of..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan grain",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0047",
+        "file_name": "ORV-0047.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The view rests on three observations. First, the sea route is the cheapest way to move Orvan grain in bulk, so a la..."
       }
     ]
   }

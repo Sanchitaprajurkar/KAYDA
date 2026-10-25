@@ -1,9 +1,11 @@
 [
   {
-    "name": "Ymir",
-    "type": "NATION",
-    "aliases": [],
-    "description": "A small country that hosts a canal linking the West Sea and the East Sea.",
+    "name": "Ymir Canal Authority",
+    "type": "ORGANIZATION",
+    "aliases": [
+      "Ymir"
+    ],
+    "description": "The authority that manages the canal and publishes schedules and operating notices.",
     "mentions_count": 4,
     "source_refs": [
       {
@@ -37,10 +39,10 @@
     ]
   },
   {
-    "name": "Ymir Canal Authority",
-    "type": "ORGANIZATION",
+    "name": "Ymir Locks",
+    "type": "INFRASTRUCTURE",
     "aliases": [],
-    "description": "The authority that manages the canal and publishes schedules and operating notices.",
+    "description": "A stepped canal with scheduled crossings in both directions.",
     "mentions_count": 2,
     "source_refs": [
       {
@@ -60,27 +62,11 @@
     ]
   },
   {
-    "name": "Ymir Locks",
-    "type": "INFRASTRUCTURE",
-    "aliases": [],
-    "description": "A stepped canal with scheduled crossings in both directions.",
-    "mentions_count": 1,
-    "source_refs": [
-      {
-        "doc_id": "ATL-0005",
-        "file_name": "ATL-0005.txt",
-        "page_number": null,
-        "paragraph_index": 3,
-        "text_snippet": "[P2] Ymir earns most of its income from transit and port services. It imports food and fuel, and its own exports are lim..."
-      }
-    ]
-  },
-  {
     "name": "Bifrost Terminals",
     "type": "ORGANIZATION",
     "aliases": [],
     "description": "A canal and port operator, known as the best local firm.",
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ATL-0005",
@@ -88,6 +74,52 @@
         "page_number": null,
         "paragraph_index": 3,
         "text_snippet": "[P2] Ymir earns most of its income from transit and port services. It imports food and fuel, and its own exports are lim..."
+      },
+      {
+        "doc_id": "ATL-0005",
+        "file_name": "ATL-0005.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] The main facility is Ymir Locks, a stepped canal with scheduled crossings in both directions. Bifrost Terminals, a ..."
+      }
+    ]
+  },
+  {
+    "name": "canal authority",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0005",
+        "file_name": "ATL-0005.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Ymir earns most of its income from transit and port services. It imports food and fuel, and its own exports are lim..."
+      },
+      {
+        "doc_id": "ATL-0005",
+        "file_name": "ATL-0005.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The canal authority publishes a schedule of crossings and a list of approved pilots. A road follows the water for m..."
+      }
+    ]
+  },
+  {
+    "name": "lock gates",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0005",
+        "file_name": "ATL-0005.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The canal authority publishes a schedule of crossings and a list of approved pilots. A road follows the water for m..."
       }
     ]
   }

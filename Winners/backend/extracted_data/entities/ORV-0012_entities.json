@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0012",
@@ -12,6 +12,20 @@
         "page_number": null,
         "paragraph_index": 9,
         "text_snippet": "COUNTRY: Orvan..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Orvan Grain Port loadings: September to November 2026..."
+      },
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The Realm Trade Ministry publishes the port loading index for grain leaving Orvan Grain Port by sea. The old normal..."
       }
     ]
   },
@@ -20,8 +34,15 @@
     "type": "PORT",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Orvan Grain Port loadings: September to November 2026..."
+      },
       {
         "doc_id": "ORV-0012",
         "file_name": "ORV-0012.docx",
@@ -36,8 +57,15 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 7,
+    "mentions_count": 8,
     "source_refs": [
+      {
+        "doc_id": "ORV-0012",
+        "file_name": "ORV-0012.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Orvan Grain Port loadings: September to November 2026..."
+      },
       {
         "doc_id": "ORV-0012",
         "file_name": "ORV-0012.docx",

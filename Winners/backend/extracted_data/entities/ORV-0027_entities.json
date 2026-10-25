@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0027",
@@ -26,6 +26,13 @@
         "page_number": null,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Vanir wheat reached Midgard in larger volumes from November, mostly on short-term contracts...."
       }
     ]
   },
@@ -34,7 +41,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0027",
@@ -56,6 +63,13 @@
         "page_number": null,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Vanir wheat reached Midgard in larger volumes from November, mostly on short-term contracts...."
       }
     ]
   },
@@ -64,7 +78,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0027",
@@ -86,6 +100,13 @@
         "page_number": null,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Vanir wheat reached Midgard in larger volumes from November, mostly on short-term contracts...."
       }
     ]
   }

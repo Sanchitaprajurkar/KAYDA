@@ -48,7 +48,7 @@
     "type": "ORGANIZATION",
     "aliases": [],
     "description": "The best-known chipmaker in Ketra.",
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ATL-0009",
@@ -56,6 +56,13 @@
         "page_number": 1,
         "paragraph_index": 3,
         "text_snippet": "[P2] The main exports are computer chips and consumer goods. The main imports are specialty metals and LNG. Chip product..."
+      },
+      {
+        "doc_id": "ATL-0009",
+        "file_name": "ATL-0009.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Nexor Chips, a chipmaker, is the best-known firm. The country has container terminals on the coast and a fast road ..."
       }
     ]
   },

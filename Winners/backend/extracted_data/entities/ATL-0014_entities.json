@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ATL-0014",
@@ -12,6 +12,20 @@
         "page_number": null,
         "paragraph_index": 9,
         "text_snippet": "COUNTRY: Ymir..."
+      },
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The region has two sea chokepoints and one land bridge. Ymir Locks joins the West Sea and the East Sea, and Bifrost..."
+      },
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] Ymir Locks is a stepped canal with scheduled crossings, pilotage and maintenance windows. In normal times, vessels ..."
       }
     ]
   },
@@ -81,6 +95,22 @@
         "page_number": null,
         "paragraph_index": 16,
         "text_snippet": "[P3] Ravik Rail Link combines a rail line and a parallel road. It carries transit freight, containers and bulk goods, an..."
+      }
+    ]
+  },
+  {
+    "name": "Atlas",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0014",
+        "file_name": "ATL-0014.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Each route has a single fixed path. Cargoes do not switch between the locks, the strait and the land bridge within ..."
       }
     ]
   }

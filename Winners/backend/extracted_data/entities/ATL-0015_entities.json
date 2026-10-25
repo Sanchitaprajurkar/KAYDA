@@ -73,7 +73,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": "Liquefied natural gas, a main export of Solvar.",
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ATL-0015",
@@ -88,6 +88,13 @@
         "page_number": 1,
         "paragraph_index": 3,
         "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms. The gr..."
       }
     ]
   },
@@ -205,6 +212,109 @@
         "page_number": 1,
         "paragraph_index": 4,
         "text_snippet": "[P3] Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms. The gr..."
+      }
+    ]
+  },
+  {
+    "name": "Gas Terminal",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The main exports are LNG, LPG, maize and soya beans. The country imports machinery and medicines. Solvar Gas Termin..."
+      },
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
+      }
+    ]
+  },
+  {
+    "name": "Jetty",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
+      }
+    ]
+  },
+  {
+    "name": "Safety Zone",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
+      }
+    ]
+  },
+  {
+    "name": "Grain Silos",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
+      }
+    ]
+  },
+  {
+    "name": "General Cargo Berth",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
+      }
+    ]
+  },
+  {
+    "name": "Coastal Road",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ATL-0015",
+        "file_name": "ATL-0015.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along..."
       }
     ]
   }

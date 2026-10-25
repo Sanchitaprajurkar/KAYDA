@@ -67,5 +67,21 @@
         "text_snippet": "[P1] Route: Orvan to Midgard, wheat...."
       }
     ]
+  },
+  {
+    "name": "Ravik",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0009",
+        "file_name": "ORV-0009.txt",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] December was the weakest month of the half-year, and rail loadings through Ravik were still rising...."
+      }
+    ]
   }
 ]

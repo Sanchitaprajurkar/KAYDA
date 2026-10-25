@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0001",
@@ -12,6 +12,13 @@
         "page_number": null,
         "paragraph_index": 9,
         "text_snippet": "COUNTRY: Ravik..."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrup..."
       }
     ]
   },
@@ -20,7 +27,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0001",
@@ -28,6 +35,27 @@
         "page_number": null,
         "paragraph_index": 10,
         "text_snippet": "SECTOR: Wheat..."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrup..."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers...."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
       }
     ]
   },
@@ -117,7 +145,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0001",
@@ -125,6 +153,20 @@
         "page_number": null,
         "paragraph_index": 14,
         "text_snippet": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrup..."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea...."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it ..."
       }
     ]
   },
@@ -201,6 +243,29 @@
         "page_number": null,
         "paragraph_index": 19,
         "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
+      }
+    ]
+  },
+  {
+    "name": "corridor",
+    "type": "CORRIDOR",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it ..."
+      },
+      {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "[P7] The firm expects prices to stay firm while the corridor remains closed...."
       }
     ]
   }

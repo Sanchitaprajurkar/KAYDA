@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0018",
@@ -12,6 +12,20 @@
         "page_number": null,
         "paragraph_index": 9,
         "text_snippet": "COUNTRY: Orvan..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "Modelling the Orvan gap: assumptions matter more than the headline..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] Our model puts the loss on the four Orvan sea routes at 50% to 60% of value in the fourth quarter, against the deal..."
       }
     ]
   },
@@ -20,7 +34,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 4,
+    "mentions_count": 6,
     "source_refs": [
       {
         "doc_id": "ORV-0018",
@@ -47,17 +61,31 @@
         "doc_id": "ORV-0018",
         "file_name": "ORV-0018.docx",
         "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The assumptions are doing most of the work in this model, and readers should test them rather than accept the headl..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
         "paragraph_index": 20,
         "text_snippet": "[P7] The model does not include a full reopening of the sea route, because the port index does not support one. It also ..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 21,
+        "text_snippet": "[P8] On these assumptions, the net value loss for Midgard wheat is close to 40%, once Vanir supply is included...."
       }
     ]
   },
   {
     "name": "Midgard",
-    "type": "CORRIDOR",
+    "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0018",
@@ -70,17 +98,31 @@
         "doc_id": "ORV-0018",
         "file_name": "ORV-0018.docx",
         "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The assumptions are doing most of the work in this model, and readers should test them rather than accept the headl..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
         "paragraph_index": 20,
         "text_snippet": "[P7] The model does not include a full reopening of the sea route, because the port index does not support one. It also ..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 21,
+        "text_snippet": "[P8] On these assumptions, the net value loss for Midgard wheat is close to 40%, once Vanir supply is included...."
       }
     ]
   },
   {
     "name": "Vanir",
-    "type": "CORRIDOR",
+    "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0018",
@@ -93,14 +135,28 @@
         "doc_id": "ORV-0018",
         "file_name": "ORV-0018.docx",
         "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The assumptions are doing most of the work in this model, and readers should test them rather than accept the headl..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
         "paragraph_index": 20,
         "text_snippet": "[P7] The model does not include a full reopening of the sea route, because the port index does not support one. It also ..."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 21,
+        "text_snippet": "[P8] On these assumptions, the net value loss for Midgard wheat is close to 40%, once Vanir supply is included...."
       }
     ]
   },
   {
     "name": "Asgard",
-    "type": "CORRIDOR",
+    "type": "NATION",
     "aliases": [],
     "description": null,
     "mentions_count": 1,
@@ -111,6 +167,45 @@
         "page_number": null,
         "paragraph_index": 18,
         "text_snippet": "[P5] The Asgard wheat contract is modelled separately because it is protected. We assume a loss of about 8%...."
+      }
+    ]
+  },
+  {
+    "name": "USD",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Second, we assume rail runs at its practical limit, which we put at 54% above the pre-crisis volume on a base of US..."
+      }
+    ]
+  },
+  {
+    "name": "Tolan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] Third, we assume Vanir wheat gains of 14% to 18% in volume on the Tolan and Midgard routes...."
+      },
+      {
+        "doc_id": "ORV-0018",
+        "file_name": "ORV-0018.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The assumptions are doing most of the work in this model, and readers should test them rather than accept the headl..."
       }
     ]
   }

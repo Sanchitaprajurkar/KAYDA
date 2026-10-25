@@ -54,7 +54,7 @@
     "type": "ORGANIZATION",
     "aliases": [],
     "description": "A trading company involved in grain markets.",
-    "mentions_count": 7,
+    "mentions_count": 8,
     "source_refs": [
       {
         "doc_id": "ORV-0004",
@@ -104,6 +104,13 @@
         "page_number": 1,
         "paragraph_index": 7,
         "text_snippet": "[P6] The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered...."
+      },
+      {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] Vantro declined to give volume figures...."
       }
     ]
   }

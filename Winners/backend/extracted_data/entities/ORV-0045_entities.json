@@ -34,7 +34,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0045",
@@ -42,6 +42,13 @@
         "page_number": 1,
         "paragraph_index": 6,
         "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+      },
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The note's method is simple: count the berths that agents say were booked and compare that with the same weeks a ye..."
       }
     ]
   },
@@ -97,6 +104,22 @@
         "page_number": 1,
         "paragraph_index": 2,
         "text_snippet": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended...."
+      }
+    ]
+  },
+  {
+    "name": "Maize",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The note's method is simple: count the berths that agents say were booked and compare that with the same weeks a ye..."
       }
     ]
   }

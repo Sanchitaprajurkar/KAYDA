@@ -87,8 +87,201 @@
     "type": "AGREEMENT",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 38.8M and the volume was 97,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] This route runs under a long-term contract, which is why its volumes moved far less than the open-market routes...."
+      }
+    ]
+  },
+  {
+    "name": "USD",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 12,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] In July 2025, the value was USD 42.8M and the volume was 107,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 10,
+        "text_snippet": "[P9] In August 2025, the value was USD 44.4M and the volume was 111,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 11,
+        "text_snippet": "[P10] In September 2025, the value was USD 42.8M and the volume was 107,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 12,
+        "text_snippet": "[P11] In October 2025, the value was USD 39.6M and the volume was 99,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 13,
+        "text_snippet": "[P12] In November 2025, the value was USD 39.6M and the volume was 99,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 14,
+        "text_snippet": "[P13] In December 2025, the value was USD 38.8M and the volume was 97,000 tonnes...."
+      }
+    ]
+  },
+  {
+    "name": "tonnes",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 12,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] In July 2025, the value was USD 42.8M and the volume was 107,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 10,
+        "text_snippet": "[P9] In August 2025, the value was USD 44.4M and the volume was 111,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 11,
+        "text_snippet": "[P10] In September 2025, the value was USD 42.8M and the volume was 107,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 12,
+        "text_snippet": "[P11] In October 2025, the value was USD 39.6M and the volume was 99,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0019",
+        "file_name": "ORV-0019.pdf",
+        "page_number": 1,
+        "paragraph_index": 13,
+        "text_snippet": "[P12] In November 2025, the value was USD 39.6M and the volume was 99,000 tonnes...."
+      },
       {
         "doc_id": "ORV-0019",
         "file_name": "ORV-0019.pdf",

@@ -27,7 +27,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0046",
@@ -49,6 +49,13 @@
         "page_number": 1,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 37.8M and the volume was 108,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0046",
+        "file_name": "ORV-0046.pdf",
+        "page_number": 1,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap...."
       }
     ]
   },
@@ -57,7 +64,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 3,
+    "mentions_count": 4,
     "source_refs": [
       {
         "doc_id": "ORV-0046",
@@ -79,6 +86,13 @@
         "page_number": 1,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 37.8M and the volume was 108,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0046",
+        "file_name": "ORV-0046.pdf",
+        "page_number": 1,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap...."
       }
     ]
   },
@@ -87,7 +101,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0046",
@@ -95,6 +109,13 @@
         "page_number": 1,
         "paragraph_index": 14,
         "text_snippet": "[P13] In December 2025, the value was USD 37.8M and the volume was 108,000 tonnes...."
+      },
+      {
+        "doc_id": "ORV-0046",
+        "file_name": "ORV-0046.pdf",
+        "page_number": 1,
+        "paragraph_index": 15,
+        "text_snippet": "[P14] Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap...."
       }
     ]
   }

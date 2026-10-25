@@ -77,7 +77,7 @@
   },
   {
     "name": "Ravik",
-    "type": "CORRIDOR",
+    "type": "NATION",
     "aliases": [],
     "description": null,
     "mentions_count": 1,
@@ -93,10 +93,10 @@
   },
   {
     "name": "Vanir",
-    "type": "ORGANIZATION",
+    "type": "NATION",
     "aliases": [],
     "description": "An organization involved in wheat shipments.",
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0035",
@@ -111,6 +111,13 @@
         "page_number": null,
         "paragraph_index": 6,
         "text_snippet": "[P5] The quarterly picture is one of a deep loss followed by a partial and uneven recovery. Loadings fell fastest in the..."
+      },
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's December return will be watched for signs that the low has passed. Port agents say berth use has imp..."
       }
     ]
   },
@@ -159,6 +166,50 @@
         "page_number": null,
         "paragraph_index": 5,
         "text_snippet": "[P4] Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard...."
+      }
+    ]
+  },
+  {
+    "name": "Port",
+    "type": "PORT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0035 EVENT_ID: E5 TITLE: December loadings close a poor quarter at Orvan Grain Port SOURCE_NAME: Cargo Weekl..."
+      },
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Orvan Grain Port loaded grain at about 30 on the ministry index in December, according to preliminary port figures...."
+      },
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] The port strike that began in September has left berth availability below normal...."
+      },
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The quarterly picture is one of a deep loss followed by a partial and uneven recovery. Loadings fell fastest in the..."
+      },
+      {
+        "doc_id": "ORV-0035",
+        "file_name": "ORV-0035.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The ministry's December return will be watched for signs that the low has passed. Port agents say berth use has imp..."
       }
     ]
   }

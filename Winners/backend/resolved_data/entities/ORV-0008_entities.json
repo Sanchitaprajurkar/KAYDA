@@ -133,7 +133,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
       {
         "doc_id": "ORV-0008",
@@ -141,6 +141,13 @@
         "page_number": 1,
         "paragraph_index": 8,
         "text_snippet": "[P7] The port authority has set up a waiting area for crews and has asked agents to keep vessel documents ready. It says..."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] Buyers in Midgard and Tolan have been told to expect longer delays...."
       }
     ]
   },
@@ -149,8 +156,45 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 1,
+    "mentions_count": 2,
     "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The port authority has set up a waiting area for crews and has asked agents to keep vessel documents ready. It says..."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 9,
+        "text_snippet": "[P8] Buyers in Midgard and Tolan have been told to expect longer delays...."
+      }
+    ]
+  },
+  {
+    "name": "port authority",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The port authority says it cannot estimate when normal working will resume...."
+      },
+      {
+        "doc_id": "ORV-0008",
+        "file_name": "ORV-0008.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The queue outside the harbour is being managed by the port authority, which is giving priority to vessels that were..."
+      },
       {
         "doc_id": "ORV-0008",
         "file_name": "ORV-0008.pdf",

@@ -4,7 +4,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0002",
@@ -19,6 +19,13 @@
         "page_number": 1,
         "paragraph_index": 3,
         "text_snippet": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from ..."
+      },
+      {
+        "doc_id": "ORV-0002",
+        "file_name": "ORV-0002.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Asgard mediated the agreement. While it was in force, sea exports from Orvan ran at about 95% of the old normal...."
       }
     ]
   },
@@ -130,7 +137,7 @@
   },
   {
     "name": "Asgard",
-    "type": "ORGANIZATION",
+    "type": "NATION",
     "aliases": [],
     "description": null,
     "mentions_count": 1,

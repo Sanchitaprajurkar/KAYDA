@@ -27,7 +27,7 @@
     "type": "NATION",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ORV-0050",
@@ -42,6 +42,13 @@
         "page_number": null,
         "paragraph_index": 2,
         "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+      },
+      {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The rail link normally carries about USD 25M of Orvan wheat a month. Volumes in recent weeks ran well above the sam..."
       }
     ]
   },
@@ -93,7 +100,7 @@
   },
   {
     "name": "Ravik Rail Link",
-    "type": "CORRIDOR",
+    "type": "INFRASTRUCTURE",
     "aliases": [],
     "description": null,
     "mentions_count": 4,
@@ -164,6 +171,29 @@
         "page_number": null,
         "paragraph_index": 7,
         "text_snippet": "[P6] The operator says the extra traffic has been handled without a formal priority scheme. Contracted cargoes go first,..."
+      }
+    ]
+  },
+  {
+    "name": "contracted cargoes",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The operator says the extra traffic has been handled without a formal priority scheme. Contracted cargoes go first,..."
+      },
+      {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "[P7] The line's operator says priority is being given to contracted cargoes...."
       }
     ]
   }

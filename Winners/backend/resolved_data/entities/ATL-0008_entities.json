@@ -64,7 +64,7 @@
     "type": "COMMODITY",
     "aliases": [],
     "description": null,
-    "mentions_count": 2,
+    "mentions_count": 3,
     "source_refs": [
       {
         "doc_id": "ATL-0008",
@@ -79,6 +79,13 @@
         "page_number": null,
         "paragraph_index": 3,
         "text_snippet": "[P2] The country's main exports are medicines and consumer goods. Its main imports are rice, grain and LNG. Midgard Harb..."
+      },
+      {
+        "doc_id": "ATL-0008",
+        "file_name": "ATL-0008.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Hammer Freight, a bulk shipping firm, and Paxen Pharma, a medicines maker, are among the country's best-known compa..."
       }
     ]
   },
