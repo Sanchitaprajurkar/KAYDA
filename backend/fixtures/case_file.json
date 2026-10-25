@@ -1,0 +1,101 @@
+{
+  "case_id": "CASE-E5-001",
+  "event_id": "E5",
+  "event_name": "Orvan grain corridor collapse",
+  "investigation_question": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement? Give a low and high range for wheat and maize imports.",
+  "as_of_date": "2027-01-25",
+  "countries": [
+    "Midgard",
+    "Tolan"
+  ],
+  "sectors": [
+    "Wheat",
+    "Maize"
+  ],
+  "evidence_references": [
+    {
+      "doc_id": "ORV-0016",
+      "title": "Corridor Agreement expires with no renewal",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "gov_notice",
+      "reliability": 1,
+      "pub_date": "2026-09-10",
+      "country": "Orvan",
+      "sector": "Wheat",
+      "summary": "Official notification confirming the one-year grain arrangement expired without renewal.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "doc_id": "ORV-0009",
+      "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability": 1,
+      "pub_date": "2027-01-19",
+      "country": "Midgard",
+      "sector": "Wheat",
+      "summary": "Monthly trade note detailing wheat flows from Orvan to Midgard across H2 2025 and H2 2026.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "doc_id": "ORV-0030",
+      "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability": 1,
+      "pub_date": "2027-01-21",
+      "country": "Midgard",
+      "sector": "Maize",
+      "summary": "Monthly trade note detailing maize flows from Orvan to Midgard across H2 2025 and H2 2026.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "doc_id": "ORV-0046",
+      "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+      "source_name": "Harbour Review",
+      "source_type": "trade_note",
+      "reliability": 2,
+      "pub_date": "2027-01-20",
+      "country": "Tolan",
+      "sector": "Wheat",
+      "summary": "Monthly trade note detailing wheat flows from Orvan to Tolan across H2 2025 and H2 2026.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "doc_id": "ORV-0027",
+      "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability": 1,
+      "pub_date": "2027-01-22",
+      "country": "Midgard",
+      "sector": "Wheat",
+      "summary": "Evidenced substitute wheat imports from Vanir to Midgard.",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "doc_id": "ORV-0044",
+      "title": "Trade note: Vanir to Tolan, wheat, July to December 2026",
+      "source_name": "Cargo Weekly",
+      "source_type": "trade_note",
+      "reliability": 2,
+      "pub_date": "2027-01-22",
+      "country": "Tolan",
+      "sector": "Wheat",
+      "summary": "Evidenced substitute wheat imports from Vanir to Tolan.",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_GAP",
+      "description": "No monthly trade note or statistical filing exists in Runemark for Tolan maize imports as of 25 Jan 2027.",
+      "impact": "UNQUANTIFIED_GAP"
+    }
+  ],
+  "round_number": 1,
+  "status": "IN_TRIAL",
+  "created_at": "2027-01-25T10:00:00Z"
+}

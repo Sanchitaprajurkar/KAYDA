@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+# Nine Realms Backend Services
+
+The primary backend codebase and test suites are maintained under `/backend`.
+For full setup, schemas, agents, tools, memory, and tests, see:
+[`/backend/README.md`](../../backend/README.md)
+
+Quick run from root:
+```bash
+python -m pytest backend/tests
+uvicorn backend.app.main:app --reload --port 8000
+=======
 # ⚔️ Trial of the Nine Realms — Adversarial Courtroom Backend
 
 Autonomous adversarial multi-agent system analyzing global supply chain disruptions using an adversarial courtroom paradigm over the invented **Runemark** trade world.
@@ -109,4 +121,5 @@ The server will start on `http://localhost:8000`.
 ### Running Tests:
 ```bash
 python backend/tests/test_trial.py
+>>>>>>> dbd7014eec6a20d5aba2587232c69f4c192866f8
 ```
