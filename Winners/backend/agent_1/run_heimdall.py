@@ -15,20 +15,28 @@ def main():
     parser.add_argument("--event-id", default=None, help="Event ID instead of a query, e.g. E5")
     parser.add_argument("--case-id", default=None, help="Custom case ID (optional)")
     parser.add_argument("--max-documents", type=int, default=40)
+    parser.add_argument("--research", default=None, metavar="REQUEST",
+                        help="Re-search an existing case (needs --case-id): what Odin asked Heimdall to look for")
     args = parser.parse_args()
     query = args.query or (None if args.event_id else SAMPLE_QUERY)
+    if args.research and not args.case_id:
+        parser.error("--research needs --case-id")
 
     try:
-        report = HeimdallAgent().build_case_file(query=query, event_id=args.event_id, case_id=args.case_id,
-                                                 max_documents=args.max_documents)
+        agent = HeimdallAgent()
+        report = (agent.re_search(args.case_id, args.research) if args.research else
+                  agent.build_case_file(query=query, event_id=args.event_id, case_id=args.case_id,
+                                        max_documents=args.max_documents))
     except Exception as e:
         print(f"\n[ERROR] Case file failed: {e}", file=sys.stderr)
         sys.exit(1)
 
     v, s = report.event_verification, report.case_scope
     print("\n" + "=" * 70)
-    print(f" Case {report.case_id}")
+    print(f" Case {report.case_id}  (run {report.run_number})")
     print("=" * 70)
+    for r in report.research_history:
+        print(f" Run {r.run_number} re-search: '{r.request}' -> new {r.new_document_ids or 'none'} | {r.note}")
     print(f" Scope        : event {s.event_id} | countries {s.countries} | commodities {s.commodities} | "
           f"as of {s.as_of_date}")
     print(f" Retrieved    : {len(report.retrieved_documents)} documents | excluded relevant: "

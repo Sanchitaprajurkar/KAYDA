@@ -7,19 +7,24 @@
   5. Detect contradictions    (across all retrieved facts; favoured side decided on credibility and recency)
   6. Verify the event         (CONFIRMED / DISPUTED / UNVERIFIED / DISPROVEN / DEVELOPING, with cited reasoning)
 
+When Odin sends the case back, re_search() starts the next run: it searches for what Odin asked, adds only
+admissible documents not already in the Case File, and re-runs steps 3-6 over the combined evidence.
+
 Case runs never parse raw files or extract new facts, so trapped content cannot re-enter.
 """
 
 import logging
 from datetime import datetime, timezone
-from typing import List, Optional
+from typing import Callable, List, Optional, Tuple
 
 from agent_1.case.analysis import EvidenceAnalyst
 from agent_1.case.retrieval import EvidenceRetriever
 from agent_1.case.scope import CaseUnderstanding
+from agent_1.case.text import contains_term, tokens
 from agent_1.config import settings
 from agent_1.graph.graph_builder import Neo4jGraphBuilder
-from agent_1.models.case_file import CaseEvidenceReport
+from agent_1.models.case_file import (CaseEvidenceReport, CaseScope, RejectedEvidence, ResearchRun,
+                                      RetrievedDocument)
 from agent_1.models.evidence import ExtractedEntity, MissingInformation
 from agent_1.reasoning.contradiction_detector import ContradictionDetector
 from agent_1.reasoning.verifier import EventVerifier
@@ -27,6 +32,17 @@ from agent_1.storage.case_store import NeonCaseStore
 from agent_1.storage.evidence_store import ResolvedEvidenceStore
 
 logger = logging.getLogger(__name__)
+
+MAX_RUNS = 3  # hard limit on send-backs so the trial loop always ends (FR5.4)
+MAX_NEW_DOCUMENTS = 10
+
+
+class CaseNotFoundError(KeyError):
+    pass
+
+
+class RunLimitError(ValueError):
+    pass
 
 
 class HeimdallAgent:
@@ -55,12 +71,7 @@ class HeimdallAgent:
         case_id: Optional[str] = None,
         max_documents: int = 40,
     ) -> CaseEvidenceReport:
-        timeline: List[dict] = []
-
-        def log(phase: str, message: str, **data):
-            timeline.append({"timestamp": datetime.now(timezone.utc).isoformat(), "agent": "HEIMDALL",
-                             "phase": phase, "message": message, **data})
-            logger.info(f"[{phase}] {message}")
+        timeline, log = self._tracer(run_number=1)
 
         # 1. Understand the case
         scope = self.understanding.understand(query=query, event_id=event_id)
@@ -76,6 +87,72 @@ class HeimdallAgent:
         log("RETRIEVE", f"{len(retrieved)} evidence documents retrieved; {len(rejected)} relevant documents "
                         f"were excluded before trial", retrieved_doc_ids=doc_ids,
             excluded_doc_ids=[r.doc_id for r in rejected])
+
+        return self._assemble(case_id, query or scope.event_name or event_id or "", scope, retrieved, rejected,
+                              run_number=1, history=[], new_ids=doc_ids, timeline=timeline, log=log)
+
+    def re_search(
+        self,
+        case_id: str,
+        request: str,
+        prior: Optional[CaseEvidenceReport] = None,
+        max_new_documents: int = MAX_NEW_DOCUMENTS,
+    ) -> CaseEvidenceReport:
+        """Next run after Odin sends the case back: search for `request`, add new admissible evidence (FR1.4).
+
+        The case mandate (question, event, countries, commodities, as-of date) does not change; the request only
+        steers the search. If nothing new is admissible, the run says so rather than padding the Case File.
+        """
+        if prior is None:
+            prior = self.case_store.load(case_id) if self.case_store.enabled else None
+        if prior is None:
+            raise CaseNotFoundError(case_id)
+        run = prior.run_number + 1
+        if run > MAX_RUNS:
+            raise RunLimitError(f"Case {case_id} has reached the limit of {MAX_RUNS} runs.")
+        focus = list(dict.fromkeys(tokens(request)))
+        if not focus:
+            raise ValueError("The re-search request has no searchable terms.")
+
+        timeline, log = self._tracer(run_number=run)
+        scope = prior.case_scope.model_copy(deep=True)
+        focus_scope = scope.model_copy(update={"search_terms": focus})
+        log("RESEARCH", f"Run {run}: Odin asked for '{request}'", focus_terms=focus)
+
+        asked_countries = [c for c in self.understanding.countries if contains_term(request, c)]
+        known = {d.doc_id for d in prior.retrieved_documents}
+        found = [d for d in self.retriever.retrieve(focus_scope, max_documents=len(self.evidence_store.evidence_ids()),
+                                                    reference_countries=asked_countries, shared_references=True)
+                 if d.doc_id not in known][:max_new_documents]
+        known_excluded = {r.doc_id for r in prior.rejected_evidence}
+        new_rejected = [r for r in self.retriever.rejected(focus_scope) if r.doc_id not in known_excluded]
+        new_ids = [d.doc_id for d in found]
+        note = (f"{len(new_ids)} new admissible document(s) added." if new_ids
+                else "No admissible document beyond those already in the Case File matches this request.")
+        log("RETRIEVE", note, new_doc_ids=new_ids, new_excluded_doc_ids=[r.doc_id for r in new_rejected])
+
+        history = prior.research_history + [ResearchRun(
+            run_number=run, request=request, focus_terms=focus, new_document_ids=new_ids,
+            new_excluded_ids=[r.doc_id for r in new_rejected], note=note)]
+        return self._assemble(case_id, prior.target_query, scope, prior.retrieved_documents + found,
+                              prior.rejected_evidence + new_rejected, run_number=run, history=history,
+                              new_ids=new_ids, timeline=timeline, log=log)
+
+    @staticmethod
+    def _tracer(run_number: int) -> Tuple[List[dict], Callable]:
+        timeline: List[dict] = []
+
+        def log(phase: str, message: str, **data):
+            timeline.append({"timestamp": datetime.now(timezone.utc).isoformat(), "agent": "HEIMDALL",
+                             "run_number": run_number, "phase": phase, "message": message, **data})
+            logger.info(f"[run {run_number}] [{phase}] {message}")
+
+        return timeline, log
+
+    def _assemble(self, case_id: str, query: str, scope: CaseScope, retrieved: List[RetrievedDocument],
+                  rejected: List[RejectedEvidence], run_number: int, history: List[ResearchRun],
+                  new_ids: List[str], timeline: List[dict], log: Callable) -> CaseEvidenceReport:
+        doc_ids = [d.doc_id for d in retrieved]
 
         # 3 & 4. Analyse evidence and assess credibility
         analyst = EvidenceAnalyst(self.evidence_store, self.understanding.countries, self.understanding.commodities)
@@ -124,8 +201,11 @@ class HeimdallAgent:
 
         report = CaseEvidenceReport(
             case_id=case_id,
+            run_number=run_number,
+            research_history=history,
+            new_document_ids=new_ids,
             as_of_date=scope.as_of_date,
-            target_query=query or scope.event_name or event_id or "",
+            target_query=query,
             case_scope=scope,
             event_verification=verification,
             retrieved_documents=retrieved,

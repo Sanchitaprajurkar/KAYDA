@@ -8,9 +8,9 @@ import re
 
 import pytest
 
-from agent_1.agent import HeimdallAgent
+from agent_1.agent import MAX_RUNS, CaseNotFoundError, HeimdallAgent, RunLimitError
 from agent_1.config import settings
-from agent_1.models.case_file import EventStatus, KnowledgeGraphSummary
+from agent_1.models.case_file import CaseEvidenceReport, EventStatus, KnowledgeGraphSummary
 from agent_1.reasoning.contradiction_detector import ContradictionDetector, PairResponse, PairVerdict
 from agent_1.reasoning.verifier import EventVerifier, Stance, StanceResponse
 from agent_1.storage.evidence_store import DEFAULT_RESOLVED_DIR, ResolvedEvidenceStore
@@ -60,6 +60,25 @@ class FakeCaseStore:
     enabled = False
 
 
+class MemoryCaseStore:
+    """Neon stand-in: keeps the Case File as the JSON that would go into cases.case_file."""
+    enabled = True
+
+    def __init__(self):
+        self.rows = {}
+
+    def save(self, report, timeline):
+        self.rows[report.case_id] = json.loads(json.dumps(report.model_dump(mode="json")))
+        return {"cases": 1}
+
+    def load(self, case_id):
+        row = self.rows.get(case_id)
+        return CaseEvidenceReport.model_validate(row) if row else None
+
+    def list_cases(self):
+        return [{"case_id": k, "run_number": v["run_number"]} for k, v in self.rows.items()]
+
+
 def fact_id(store, doc_id, pattern):
     return next(f.fact_id for f in store.facts(doc_id) if re.search(pattern, f.statement, re.I))
 
@@ -69,11 +88,11 @@ def store():
     return ResolvedEvidenceStore()
 
 
-def make_agent(store, conflicts=None):
+def make_agent(store, conflicts=None, case_store=None):
     llm = ScriptedLLM(conflicts)
     return HeimdallAgent(evidence_store=store, contradiction_detector=ContradictionDetector(llm),
                          event_verifier=EventVerifier(llm), graph_builder=FakeGraph(),
-                         case_store=FakeCaseStore()), llm
+                         case_store=case_store or FakeCaseStore()), llm
 
 
 @pytest.fixture(scope="module")
@@ -187,6 +206,78 @@ def test_unknown_event_is_unverified(store):
 def test_graph_gets_only_evidence_documents(report, store):
     evidence = set(store.evidence_ids())
     assert all(d.doc_id in evidence for d in report.retrieved_documents)
+
+
+# Runs: Odin sends the case back, Heimdall re-searches (FR1.4, FR5.4)
+def test_first_run(report):
+    assert report.run_number == 1 and report.research_history == []
+    assert report.new_document_ids == [d.doc_id for d in report.retrieved_documents]
+
+
+def test_case_file_survives_storage_round_trip(store):
+    cases = MemoryCaseStore()
+    agent, _ = make_agent(store, case_store=cases)
+    built = agent.build_case_file(query=QUERY, case_id="T-STORE")
+    loaded = cases.load("T-STORE")
+    built.metadata.pop("neon")  # save counts are added after the file is stored
+    assert loaded.model_dump(mode="json") == built.model_dump(mode="json")
+    assert loaded.rejected_evidence and loaded.evidence_digest.metrics and loaded.missing_information
+
+
+def test_re_search_adds_only_new_admissible_evidence(store):
+    cases = MemoryCaseStore()
+    agent, _ = make_agent(store, case_store=cases)
+    run1 = agent.build_case_file(query=QUERY, case_id="T-RS")
+    run2 = agent.re_search("T-RS", "rail capacity on the Ravik Rail Link")
+
+    assert run2.run_number == 2 and cases.load("T-RS").run_number == 2
+    first = [d.doc_id for d in run1.retrieved_documents]
+    assert run2.new_document_ids and not set(run2.new_document_ids) & set(first)
+    assert "ATL-0006" in run2.new_document_ids
+    assert [d.doc_id for d in run2.retrieved_documents] == first + run2.new_document_ids
+    assert set(run2.new_document_ids) <= set(store.evidence_ids())
+    h = run2.research_history[-1]
+    assert (h.run_number, h.request, h.new_document_ids) == (2, "rail capacity on the Ravik Rail Link",
+                                                             run2.new_document_ids)
+    # the mandate does not change
+    assert run2.case_scope.countries == run1.case_scope.countries and run2.target_query == QUERY
+    assert all(t["run_number"] == 2 for t in run2.metadata["trace"])
+
+
+def test_re_search_reports_when_nothing_new(store):
+    agent, _ = make_agent(store)
+    run1 = agent.build_case_file(query=QUERY, case_id="T-NONE")
+    run2 = agent.re_search("T-NONE", "Orvan corridor wheat", prior=run1)
+    assert run2.new_document_ids == [] and "No admissible document" in run2.research_history[-1].note
+
+
+def test_run_limit_and_unknown_case(store):
+    cases = MemoryCaseStore()
+    agent, _ = make_agent(store, case_store=cases)
+    agent.build_case_file(query=QUERY, case_id="T-LIM")
+    for _ in range(MAX_RUNS - 1):
+        agent.re_search("T-LIM", "Vanir wheat supplier")
+    with pytest.raises(RunLimitError):
+        agent.re_search("T-LIM", "Vanir wheat supplier")
+    with pytest.raises(CaseNotFoundError):
+        agent.re_search("NO-SUCH-CASE", "anything")
+
+
+def test_api_serves_case_file_from_store_and_re_searches(store, monkeypatch):
+    from fastapi.testclient import TestClient
+    from agent_1.api import main
+    agent, _ = make_agent(store, case_store=MemoryCaseStore())
+    monkeypatch.setattr(main, "agent", agent)
+    agent.build_case_file(query=QUERY, case_id="T-API")
+    client = TestClient(main.app)
+
+    got = client.get("/case/T-API")
+    assert got.status_code == 200 and got.json()["run_number"] == 1
+    assert [c["case_id"] for c in client.get("/cases").json()] == ["T-API"]
+    rs = client.post("/case/T-API/research", json={"request": "Vanir as an alternative wheat supplier"})
+    assert rs.status_code == 200 and rs.json()["run_number"] == 2 and "ATL-0013" in rs.json()["new_document_ids"]
+    assert client.get("/case/MISSING").status_code == 404
+    assert client.post("/case/MISSING/research", json={"request": "x y"}).status_code == 404
 
 
 @pytest.mark.skipif(not settings.OPENAI_API_KEY, reason="needs OPENAI_API_KEY (live LLM)")

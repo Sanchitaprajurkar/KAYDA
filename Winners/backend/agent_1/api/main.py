@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from agent_1.config import settings
-from agent_1.agent import HeimdallAgent
+from agent_1.agent import MAX_NEW_DOCUMENTS, CaseNotFoundError, HeimdallAgent, RunLimitError
 from agent_1.extraction.manifest_service import ManifestService
 from agent_1.models.case_file import CaseEvidenceReport
 from agent_1.models.document import ParsedDocument
@@ -118,16 +118,43 @@ def create_case_file(request: CaseRequest) -> CaseEvidenceReport:
         raise HTTPException(status_code=500, detail=f"Heimdall case file failed: {e}")
 
 
+def _require_store() -> None:
+    if not agent.case_store.enabled:
+        raise HTTPException(status_code=503, detail="Neon is not configured; Case Files are stored there.")
+
+
 @app.get("/cases", tags=["Case Files"])
-def list_cases() -> List[str]:
-    """List all analyzed case report IDs."""
-    return agent.repository.list_cases()
+def list_cases() -> List[Dict[str, Any]]:
+    """List stored Case Files (latest run of each), newest first."""
+    _require_store()
+    return agent.case_store.list_cases()
 
 
 @app.get("/case/{case_id}", response_model=CaseEvidenceReport, tags=["Case Files"])
 def get_case(case_id: str) -> CaseEvidenceReport:
-    """Retrieve an existing Case Evidence Report by ID."""
-    report = agent.repository.get_case_report(case_id)
+    """The latest Case File for a case, read from Neon - what Thor, Loki and Odin consume."""
+    _require_store()
+    report = agent.case_store.load(case_id)
     if not report:
-        raise HTTPException(status_code=404, detail=f"Case report '{case_id}' not found.")
+        raise HTTPException(status_code=404, detail=f"Case '{case_id}' not found.")
     return report
+
+
+class ResearchRequest(BaseModel):
+    request: str = Field(description="What Odin wants Heimdall to look for",
+                         json_schema_extra={"example": "Tolan maize imports and rail capacity after December"})
+    max_new_documents: int = Field(default=MAX_NEW_DOCUMENTS, ge=1, le=40)
+
+
+@app.post("/case/{case_id}/research", response_model=CaseEvidenceReport, tags=["Heimdall Intake"])
+def research_case(case_id: str, body: ResearchRequest) -> CaseEvidenceReport:
+    """Odin sends the case back: Heimdall searches again and returns the next run's Case File (FR1.4)."""
+    _require_store()
+    try:
+        return agent.re_search(case_id, body.request, max_new_documents=body.max_new_documents)
+    except CaseNotFoundError:
+        raise HTTPException(status_code=404, detail=f"Case '{case_id}' not found.")
+    except RunLimitError as e:
+        raise HTTPException(status_code=409, detail=str(e))
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))

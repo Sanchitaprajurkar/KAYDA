@@ -2,7 +2,7 @@
 
 import math
 from collections import Counter
-from typing import Dict, List, Tuple
+from typing import Dict, List, Sequence, Tuple
 
 from agent_1.case.text import contains_term, norm, token_set, tokens
 from agent_1.models.case_file import CaseScope, RejectedEvidence, RetrievedDocument
@@ -40,18 +40,24 @@ class EvidenceRetriever:
                     tf[term] + K1 * (1 - B + B * len(toks) / self.avg_len))
         return score, matched
 
-    def _in_scope(self, doc_id: str, scope: CaseScope) -> bool:
+    def _in_scope(self, doc_id: str, scope: CaseScope, reference_countries: Sequence[str] = (),
+                  shared_references: bool = False) -> bool:
         meta = self.store.document(doc_id).manifest_meta
         if not scope.event_identified:
             return True
         if meta.event_id == scope.event_id:
             return True
-        # Reference (atlas) documents are in scope when they concern a country in the case.
-        names = scope.countries + scope.event_countries
-        return meta.source_type == "atlas" and any(
-            (meta.country or "") == c or contains_term(meta.title or "", c) for c in names)
+        if meta.source_type != "atlas":
+            return False
+        # Reference (atlas) documents are in scope when they concern a country in the case, or (on a re-search)
+        # a country Odin asked about, or when they are shared references rather than a country profile.
+        if shared_references and "profile" not in (meta.title or "").lower():
+            return True
+        names = scope.countries + scope.event_countries + list(reference_countries)
+        return any((meta.country or "") == c or contains_term(meta.title or "", c) for c in names)
 
-    def retrieve(self, scope: CaseScope, max_documents: int = 40) -> List[RetrievedDocument]:
+    def retrieve(self, scope: CaseScope, max_documents: int = 40, reference_countries: Sequence[str] = (),
+                 shared_references: bool = False) -> List[RetrievedDocument]:
         weights = self._weights(scope)
         per_doc: Dict[str, List[Tuple[float, int, List[str]]]] = {}
         for did, idx, toks in self.paragraphs:
@@ -61,7 +67,7 @@ class EvidenceRetriever:
 
         results = []
         for did, hits in per_doc.items():
-            if not self._in_scope(did, scope):
+            if not self._in_scope(did, scope, reference_countries, shared_references):
                 continue
             hits.sort(reverse=True)
             meta = self.store.document(did).manifest_meta
