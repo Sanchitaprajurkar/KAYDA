@@ -1,0 +1,298 @@
+{
+  "doc_id": "ORV-0050",
+  "title": "Rail takes the strain on the Orvan to Ravik grain run",
+  "facts_count": 4,
+  "flagged_count": 1,
+  "entities_count": 7,
+  "facts": [
+    {
+      "fact_id": "e1719301",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan wheat",
+      "statement": "Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators warn that the line cannot absorb the lost sea volumes.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators warn that the line cannot absorb the lost sea volumes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "c0dc7300",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "rail tariffs",
+      "statement": "Rail tariffs have risen with demand.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "Rail tariffs have risen with demand."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "727daee6",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The operator says the extra traffic has been handled without a formal priority scheme.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "The operator says the extra traffic has been handled without a formal priority scheme."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    },
+    {
+      "fact_id": "217512e8",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The line's operator says priority is being given to contracted cargoes.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "The line's operator says priority is being given to contracted cargoes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b68, not cited \u00b67"
+      ]
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "5dec30dd",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan wheat",
+      "statement": "The rail link normally carries about USD 25M of Orvan wheat a month.",
+      "date_mentioned": null,
+      "numeric_value": 25000000.0,
+      "unit": "USD",
+      "source_ref": {
+        "doc_id": "ORV-0050",
+        "file_name": "ORV-0050.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The rail link normally carries about USD 25M of Orvan wheat a month."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.54,
+      "assertion_status": "REPORTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Numeric value overstated; 'about USD 25M' is not explicitly stated as '25000000.0 USD'.",
+        "Assertion status corrected CONFIRMED -> REPORTED"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0050 EVENT_ID: E5 TITLE: Rail takes the strain on the Orvan to Ravik grain run SOURCE_NAME: Harbour Review S..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0050 EVENT_ID: E5 TITLE: Rail takes the strain on the Orvan to Ravik grain run SOURCE_NAME: Harbour Review S..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0050 EVENT_ID: E5 TITLE: Rail takes the strain on the Orvan to Ravik grain run SOURCE_NAME: Harbour Review S..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The rail link normally carries about USD 25M of Orvan wheat a month. Volumes in recent weeks ran well above the sam..."
+        }
+      ]
+    },
+    {
+      "name": "sea corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators w..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The rail link normally carries about USD 25M of Orvan wheat a month. Volumes in recent weeks ran well above the sam..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Rail tariffs have risen with demand. Road haulage is being used for short gaps, at higher cost...."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The rail link was built for transit, not for the grain trade on this scale, and its limits are now visible in the t..."
+        }
+      ]
+    },
+    {
+      "name": "Samir Tolle",
+      "type": "PERSON",
+      "aliases": [],
+      "description": "A commodity trader who books space on the route.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"We are running extra paths, but the link is a single corridor with limited sidings,\" said Samir Tolle, a commodity..."
+        }
+      ]
+    },
+    {
+      "name": "the operator",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "The entity managing the rail link.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The rail link was built for transit, not for the grain trade on this scale, and its limits are now visible in the t..."
+        },
+        {
+          "doc_id": "ORV-0050",
+          "file_name": "ORV-0050.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The operator says the extra traffic has been handled without a formal priority scheme. Contracted cargoes go first,..."
+        }
+      ]
+    }
+  ]
+}

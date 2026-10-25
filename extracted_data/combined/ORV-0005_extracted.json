@@ -1,0 +1,253 @@
+{
+  "doc_id": "ORV-0005",
+  "title": "Trade note: Orvan to Ravik, wheat, July to December 2026",
+  "facts_count": 7,
+  "flagged_count": 0,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "5f5cb883",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In July 2026, the value was USD 25.0M and the volume was 64,000 tonnes.",
+      "date_mentioned": "July 2026",
+      "numeric_value": 64000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "In July 2026, the value was USD 25.0M and the volume was 64,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "c45e8a28",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In August 2026, the value was USD 26.9M and the volume was 69,000 tonnes.",
+      "date_mentioned": "August 2026",
+      "numeric_value": 69000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "In August 2026, the value was USD 26.9M and the volume was 69,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "e91663cf",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In September 2026, the value was USD 26.5M and the volume was 68,000 tonnes.",
+      "date_mentioned": "September 2026",
+      "numeric_value": 68000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "In September 2026, the value was USD 26.5M and the volume was 68,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "a1fb4b54",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In October 2026, the value was USD 34.2M and the volume was 82,000 tonnes.",
+      "date_mentioned": "October 2026",
+      "numeric_value": 82000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "In October 2026, the value was USD 34.2M and the volume was 82,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f587396b",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In November 2026, the value was USD 43.4M and the volume was 104,000 tonnes.",
+      "date_mentioned": "November 2026",
+      "numeric_value": 104000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "In November 2026, the value was USD 43.4M and the volume was 104,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "4e95cce7",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan to Ravik wheat trade",
+      "statement": "In December 2026, the value was USD 41.7M and the volume was 100,000 tonnes.",
+      "date_mentioned": "December 2026",
+      "numeric_value": 100000.0,
+      "unit": "tonnes",
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "In December 2026, the value was USD 41.7M and the volume was 100,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "b19ed4c5",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan to Ravik wheat trade route",
+      "statement": "This route moves by rail over the Ravik Rail Link, and rail capacity is the limit on further growth.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0005",
+        "file_name": "ORV-0005.pdf",
+        "page_number": 1,
+        "paragraph_index": 15,
+        "text_snippet": "This route moves by rail over the Ravik Rail Link, and rail capacity is the limit on further growth."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b615, not cited \u00b614"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+        },
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+        },
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0005 EVENT_ID: E5 TITLE: Trade note: Orvan to Ravik, wheat, July to December 2026 SOURCE_NAME: Harbour Revie..."
+        },
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Orvan to Ravik, wheat...."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0005",
+          "file_name": "ORV-0005.pdf",
+          "page_number": 1,
+          "paragraph_index": 14,
+          "text_snippet": "[P13] In December 2025, the value was USD 23.4M and the volume was 60,000 tonnes...."
+        }
+      ]
+    }
+  ]
+}

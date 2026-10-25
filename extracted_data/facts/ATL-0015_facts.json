@@ -1,0 +1,156 @@
+[
+  {
+    "fact_id": "08e005b7",
+    "category": "TRADE_VOLUME",
+    "subject": "LNG, LPG, maize and soya beans",
+    "statement": "Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG and also grows maize and soya beans, giving it a mix of energy and agricultural income.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Solvar is an energy and grain exporter with coasts on the West Sea and the northern ocean. It produces LNG and LPG and also grows maize and soya beans, giving it a mix of energy and agricultural income."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bc2b0056",
+    "category": "TRADE_VOLUME",
+    "subject": "LNG, LPG, maize and soya beans",
+    "statement": "The main exports are LNG, LPG, maize and soya beans.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The main exports are LNG, LPG, maize and soya beans."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "55c35229",
+    "category": "TRADE_VOLUME",
+    "subject": "machinery and medicines",
+    "statement": "The country imports machinery and medicines.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The country imports machinery and medicines."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "02a495c4",
+    "category": "ROUTE_STATUS",
+    "subject": "Solvar Gas Terminal",
+    "statement": "Solvar Gas Terminal is the principal energy export facility, with berths for liquefied gas carriers and a separate general cargo area.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Solvar Gas Terminal is the principal energy export facility, with berths for liquefied gas carriers and a separate general cargo area."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d19c4156",
+    "category": "OTHER",
+    "subject": "Solen Energy and Brightwave Shipping",
+    "statement": "Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Solen Energy, an LNG producer, and Brightwave Shipping, an LNG and tanker carrier, are the best-known firms."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "49bdc0c2",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "grain trade",
+    "statement": "The grain trade uses smaller terminals and silos along the northern coast, often sharing road links with the energy sites.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "The grain trade uses smaller terminals and silos along the northern coast, often sharing road links with the energy sites."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "2aa6e64c",
+    "category": "ROUTE_STATUS",
+    "subject": "gas terminal and grain silos",
+    "statement": "The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along the coast, connected by a coastal road.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0015",
+      "file_name": "ATL-0015.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "The gas terminal has its own jetty and safety zone. Grain silos and a smaller general cargo berth sit further along the coast, connected by a coastal road."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

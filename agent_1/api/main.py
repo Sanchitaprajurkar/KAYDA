@@ -12,7 +12,7 @@ from agent_1.parsers.parser_factory import ParserFactory
 from agent_1.models.case_file import CaseEvidenceReport
 from agent_1.models.document import ParsedDocument
 from agent_1.graph.client import Neo4jClient
-from agent_1.storage.supabase_client import get_supabase_client
+from agent_1.storage.neon_client import get_neon_client
 
 app = FastAPI(
     title="Heimdall Agent API",
@@ -50,8 +50,8 @@ def health_check() -> Dict[str, Any]:
     """Check connectivity and operational readiness of Heimdall Agent components."""
     neo4j_client = Neo4jClient()
     neo4j_connected = neo4j_client.is_connected
-    supabase_client = get_supabase_client()
-    supabase_ready = supabase_client is not None
+    neon_client = get_neon_client()
+    neon_status = neon_client.ping()
     openai_ready = bool(settings.OPENAI_API_KEY)
 
     catalog_summary = manifest_service.get_catalog_summary()
@@ -64,7 +64,12 @@ def health_check() -> Dict[str, Any]:
         "services": {
             "openai_llm": {"configured": openai_ready, "model": settings.OPENAI_MODEL},
             "neo4j_graph": {"connected": neo4j_connected, "uri": settings.NEO4J_URI},
-            "supabase_storage": {"configured": supabase_ready, "url": settings.SUPABASE_URL},
+            "neon_postgres": {
+                "configured": neon_client.is_configured,
+                "connected": neon_status.get("connected", False),
+                "database": neon_status.get("database"),
+                "latency_ms": neon_status.get("latency_ms"),
+            },
         },
         "corpus": {
             "total_documents": catalog_summary["total_documents"],

@@ -1,0 +1,149 @@
+{
+  "doc_id": "WLD-0026",
+  "title": "Music festival adds second stage",
+  "facts_count": 4,
+  "flagged_count": 1,
+  "entities_count": 1,
+  "facts": [
+    {
+      "fact_id": "973140aa",
+      "category": "OTHER",
+      "subject": "Music festival",
+      "statement": "Organisers of a music festival on Tolan have added a second stage after tickets sold faster than expected.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0026",
+        "file_name": "WLD-0026.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Organisers of a music festival on Tolan have added a second stage after tickets sold faster than expected."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "0c4e4ac7",
+      "category": "OTHER",
+      "subject": "Camping and shuttle buses",
+      "statement": "Camping is included in the ticket, and shuttle buses will run between the site and the town centre until midnight.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0026",
+        "file_name": "WLD-0026.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Camping is included in the ticket, and shuttle buses will run between the site and the town centre until midnight."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "285346a8",
+      "category": "OTHER",
+      "subject": "Visitor guidelines",
+      "statement": "Organisers asked visitors to bring refillable water bottles and to leave glass containers at home.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0026",
+        "file_name": "WLD-0026.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "Organisers asked visitors to bring refillable water bottles and to leave glass containers at home."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f7771698",
+      "category": "OTHER",
+      "subject": "Family area and campsite patrol",
+      "statement": "A quiet area has been set aside for families, and a team of volunteers will patrol the campsite overnight.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0026",
+        "file_name": "WLD-0026.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "A quiet area has been set aside for families, and a team of volunteers will patrol the campsite overnight."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "6ff6bd9b",
+      "category": "OTHER",
+      "subject": "Music festival duration",
+      "statement": "The festival will run for three days in a meadow outside the main town.",
+      "date_mentioned": null,
+      "numeric_value": 3.0,
+      "unit": "days",
+      "source_ref": {
+        "doc_id": "WLD-0026",
+        "file_name": "WLD-0026.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "The festival will run for three days in a meadow outside the main town."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.54,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Numeric value of 3.0 days is not explicitly stated in the paragraph.",
+        "Assertion status corrected CONFIRMED -> PROJECTED"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Tolan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0026",
+          "file_name": "WLD-0026.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: WLD-0026 EVENT_ID: NONE TITLE: Music festival adds second stage SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIAB..."
+        },
+        {
+          "doc_id": "WLD-0026",
+          "file_name": "WLD-0026.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Organisers of a music festival on Tolan have added a second stage after tickets sold faster than expected. The new ..."
+        }
+      ]
+    }
+  ]
+}

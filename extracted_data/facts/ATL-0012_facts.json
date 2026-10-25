@@ -1,0 +1,269 @@
+[
+  {
+    "fact_id": "b3f75494",
+    "category": "OTHER",
+    "subject": "Ymir Canal Authority",
+    "statement": "The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarely wrong.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "The Ymir Canal Authority is an official outlet that publishes canal notices in a precise, formal style and is rarely wrong."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6a3c9f02",
+    "category": "OTHER",
+    "subject": "Realm Trade Ministry",
+    "statement": "The Realm Trade Ministry is an official outlet for government notices; it is formal and slow, and it may issue later corrections.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "The Realm Trade Ministry is an official outlet for government notices; it is formal and slow, and it may issue later corrections."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "0e11fb8d",
+    "category": "OTHER",
+    "subject": "Raven Wire",
+    "statement": "Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Raven Wire is a reputable wire service that publishes short, fast reports and openly corrects itself."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "996be21c",
+    "category": "OTHER",
+    "subject": "Midgard Times",
+    "statement": "Midgard Times is a reputable business daily that is careful and gives numbers with context.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Midgard Times is a reputable business daily that is careful and gives numbers with context."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ad285555",
+    "category": "OTHER",
+    "subject": "Asgard Herald",
+    "statement": "Asgard Herald is a regional paper with good local detail and some errors.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Asgard Herald is a regional paper with good local detail and some errors."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "6f32f8d5",
+    "category": "OTHER",
+    "subject": "Tide Research",
+    "statement": "Tide Research is an analyst firm with opinionated forecasts that are sometimes too sure.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Tide Research is an analyst firm with opinionated forecasts that are sometimes too sure."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f9058811",
+    "category": "OTHER",
+    "subject": "Ledger Analytics",
+    "statement": "Ledger Analytics is an analyst firm whose numbers-heavy reports often hide their assumptions.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Ledger Analytics is an analyst firm whose numbers-heavy reports often hide their assumptions."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "db8a67ab",
+    "category": "OTHER",
+    "subject": "Saga Chat",
+    "statement": "Saga Chat is a social platform with short, unverified posts that spread quickly.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Saga Chat is a social platform with short, unverified posts that spread quickly."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "1d7390de",
+    "category": "OTHER",
+    "subject": "Trade Whisper",
+    "statement": "Trade Whisper is a blog that carries insider claims without sources.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Trade Whisper is a blog that carries insider claims without sources."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bee1844d",
+    "category": "OTHER",
+    "subject": "Daily Roar",
+    "statement": "Daily Roar is a tabloid that exaggerates and uses loud headlines.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Daily Roar is a tabloid that exaggerates and uses loud headlines."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5b12658d",
+    "category": "OTHER",
+    "subject": "Reliability tiers",
+    "statement": "Reliability tiers run from 1 (official) to 4 (weak).",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Reliability tiers run from 1 (official) to 4 (weak)."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bb675c12",
+    "category": "OTHER",
+    "subject": "Harbour Review",
+    "statement": "Harbour Review and Cargo Weekly are reputable trade publications with detailed shipping, cargo and port coverage.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0012",
+      "file_name": "ATL-0012.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Harbour Review and Cargo Weekly are reputable trade publications with detailed shipping, cargo and port coverage."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Statement combines two subjects (Harbour Review and Cargo Weekly) instead of focusing on one.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

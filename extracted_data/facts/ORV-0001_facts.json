@@ -1,0 +1,112 @@
+[
+  {
+    "fact_id": "fabef0af",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan wheat",
+    "statement": "Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "97eeb861",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan wheat",
+    "statement": "The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "9ee47eea",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan wheat",
+    "statement": "\"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "\"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "256f5da8",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "rail link",
+    "statement": "The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 18,
+      "text_snippet": "The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "7f7d3f15",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "prices",
+    "statement": "The firm expects prices to stay firm while the corridor remains closed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0001",
+      "file_name": "ORV-0001.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "The firm expects prices to stay firm while the corridor remains closed."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

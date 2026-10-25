@@ -1,0 +1,94 @@
+[
+  {
+    "fact_id": "561bc107",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "The Realm Trade Ministry reports that dock workers at Orvan Grain Port began a strike on 14 September 2026.",
+    "date_mentioned": "14 September 2026",
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "The Realm Trade Ministry reports that dock workers at Orvan Grain Port began a strike on 14 September 2026."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "aee78e08",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Some grain berths are closed and the remaining berths are working at reduced speed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Some grain berths are closed and the remaining berths are working at reduced speed."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b42e4851",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Vessels already in the roads are being held. New arrivals may be asked to wait outside the harbour.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "Vessels already in the roads are being held. New arrivals may be asked to wait outside the harbour."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a9e9fc4c",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Orvan Grain Port",
+    "statement": "Exporters should expect delays and should not assume a quick return to normal working.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0032",
+      "file_name": "ORV-0032.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Exporters should expect delays and should not assume a quick return to normal working."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement is framed as a definitive expectation rather than a projection.",
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

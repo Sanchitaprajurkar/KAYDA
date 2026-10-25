@@ -1,0 +1,120 @@
+[
+  {
+    "fact_id": "e1719301",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan wheat",
+    "statement": "Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators warn that the line cannot absorb the lost sea volumes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Grain traffic on the Ravik Rail Link has risen sharply since Orvan's sea corridor agreement lapsed, but operators warn that the line cannot absorb the lost sea volumes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "c0dc7300",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "rail tariffs",
+    "statement": "Rail tariffs have risen with demand.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Rail tariffs have risen with demand."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "727daee6",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "The operator says the extra traffic has been handled without a formal priority scheme.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "The operator says the extra traffic has been handled without a formal priority scheme."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  },
+  {
+    "fact_id": "217512e8",
+    "category": "ROUTE_STATUS",
+    "subject": "Ravik Rail Link",
+    "statement": "The line's operator says priority is being given to contracted cargoes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "The line's operator says priority is being given to contracted cargoes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶8, not cited ¶7"
+    ]
+  },
+  {
+    "fact_id": "5dec30dd",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan wheat",
+    "statement": "The rail link normally carries about USD 25M of Orvan wheat a month.",
+    "date_mentioned": null,
+    "numeric_value": 25000000.0,
+    "unit": "USD",
+    "source_ref": {
+      "doc_id": "ORV-0050",
+      "file_name": "ORV-0050.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "The rail link normally carries about USD 25M of Orvan wheat a month."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value overstated; 'about USD 25M' is not explicitly stated as '25000000.0 USD'.",
+      "Assertion status corrected CONFIRMED -> REPORTED",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

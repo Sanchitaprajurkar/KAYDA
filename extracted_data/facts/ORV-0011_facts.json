@@ -1,0 +1,117 @@
+[
+  {
+    "fact_id": "d05ae041",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "wheat store",
+    "statement": "The crop is thin in places, but the store should be full,\" said Leif Garrow, who leads the Orvan farm union.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0011",
+      "file_name": "ORV-0011.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "\"The crop is thin in places, but the store should be full,\" said Leif Garrow, who leads the Orvan farm union."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "cfae2e07",
+    "category": "DISRUPTION_STATUS",
+    "subject": "harvest estimate",
+    "statement": "The ministry has not published a harvest estimate.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0011",
+      "file_name": "ORV-0011.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "The ministry has not published a harvest estimate."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "941e9a93",
+    "category": "DISRUPTION_STATUS",
+    "subject": "forecast",
+    "statement": "The ministry has not published a forecast, and the union has not asked for one.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0011",
+      "file_name": "ORV-0011.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "The ministry has not published a forecast, and the union has not asked for one."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  },
+  {
+    "fact_id": "cb0ce365",
+    "category": "TRADE_VOLUME",
+    "subject": "domestic flour demand",
+    "statement": "Local buyers say domestic flour demand is steady.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0011",
+      "file_name": "ORV-0011.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "Local buyers say domestic flour demand is steady."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ec68bfa1",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "wheat store",
+    "statement": "Orvan farm groups expect a solid wheat harvest this season after a dry spring and a cool start to the growing year.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0011",
+      "file_name": "ORV-0011.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Orvan farm groups expect a solid wheat harvest this season after a dry spring and a cool start to the growing year."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement presents an expectation as if it is a confirmed fact.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

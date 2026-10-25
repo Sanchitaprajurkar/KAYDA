@@ -1,0 +1,90 @@
+[
+  {
+    "fact_id": "1bfcc866",
+    "category": "OTHER",
+    "subject": "Television chef",
+    "statement": "A well-known television chef was spotted at a winter fair in Midgard at the weekend, apparently enjoying a quiet afternoon with family and friends.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0029",
+      "file_name": "WLD-0029.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "A well-known television chef was spotted at a winter fair in Midgard at the weekend, apparently enjoying a quiet afternoon with family and friends."
+    },
+    "reliability_tier": 4,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bb3a28bc",
+    "category": "OTHER",
+    "subject": "Television chef",
+    "statement": "The chef declined to comment when approached, though a stallholder said the visit was friendly and low-key.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0029",
+      "file_name": "WLD-0029.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The chef declined to comment when approached, though a stallholder said the visit was friendly and low-key."
+    },
+    "reliability_tier": 4,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "69108f6c",
+    "category": "OTHER",
+    "subject": "Television chef restaurant plans",
+    "statement": "Rumours that the chef is planning a new restaurant in the city remain unconfirmed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0029",
+      "file_name": "WLD-0029.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "Rumours that the chef is planning a new restaurant in the city remain unconfirmed."
+    },
+    "reliability_tier": 4,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "RUMOURED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f078bef9",
+    "category": "OTHER",
+    "subject": "Television chef restaurant announcement",
+    "statement": "A representative for the chef said there was nothing to announce at this time and asked for the family's privacy to be respected.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0029",
+      "file_name": "WLD-0029.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "A representative for the chef said there was nothing to announce at this time and asked for the family's privacy to be respected."
+    },
+    "reliability_tier": 4,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

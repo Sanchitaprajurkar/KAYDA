@@ -1,0 +1,46 @@
+[
+  {
+    "fact_id": "d19184b8",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Rune Trading",
+    "statement": "Rune Trading (Vanir) trades grain and rice.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Rune Trading (Vanir) trades grain and rice."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "94e7573f",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "Corvan Grain",
+    "statement": "Corvan Grain (Orvan) exports grain.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0016",
+      "file_name": "ATL-0016.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Corvan Grain (Orvan) exports grain."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

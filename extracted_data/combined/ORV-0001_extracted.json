@@ -1,0 +1,327 @@
+{
+  "doc_id": "ORV-0001",
+  "title": "Vantro Trading: rail is a partial substitute, not a replacement",
+  "facts_count": 5,
+  "flagged_count": 0,
+  "entities_count": 8,
+  "facts": [
+    {
+      "fact_id": "fabef0af",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan wheat",
+      "statement": "Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "97eeb861",
+      "category": "TRADE_VOLUME",
+      "subject": "Orvan wheat",
+      "statement": "The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "9ee47eea",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan wheat",
+      "statement": "\"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "\"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "256f5da8",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "rail link",
+      "statement": "The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "7f7d3f15",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "prices",
+      "statement": "The firm expects prices to stay firm while the corridor remains closed.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0001",
+        "file_name": "ORV-0001.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "The firm expects prices to stay firm while the corridor remains closed."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 9,
+          "text_snippet": "COUNTRY: Ravik..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 10,
+          "text_snippet": "SECTOR: Wheat..."
+        }
+      ]
+    },
+    {
+      "name": "Vantro Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A company involved in trading wheat and using rail links for transportation.",
+      "mentions_count": 8,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "SOURCE_NAME: Vantro Trading..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 13,
+          "text_snippet": "Vantro Trading: rail is a partial substitute, not a replacement..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrup..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea...."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 16,
+          "text_snippet": "[P3] \"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a t..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 17,
+          "text_snippet": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers...."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it ..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan Grain Port",
+      "type": "PORT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea...."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrup..."
+        }
+      ]
+    },
+    {
+      "name": "Vanir",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 17,
+          "text_snippet": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers...."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 18,
+          "text_snippet": "[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it ..."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
+        }
+      ]
+    },
+    {
+      "name": "Tolan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 17,
+          "text_snippet": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers...."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
+        }
+      ]
+    },
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 17,
+          "text_snippet": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers...."
+        },
+        {
+          "doc_id": "ORV-0001",
+          "file_name": "ORV-0001.docx",
+          "page_number": null,
+          "paragraph_index": 19,
+          "text_snippet": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It say..."
+        }
+      ]
+    }
+  ]
+}

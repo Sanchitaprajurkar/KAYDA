@@ -1,0 +1,267 @@
+{
+  "doc_id": "ATL-0010",
+  "title": "Country profile: Tolan",
+  "facts_count": 6,
+  "flagged_count": 0,
+  "entities_count": 6,
+  "facts": [
+    {
+      "fact_id": "2f8f1d05",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Tolan imports",
+      "statement": "Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported rice, wheat and fuel for most of its needs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported rice, wheat and fuel for most of its needs."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "37ab49eb",
+      "category": "TRADE_VOLUME",
+      "subject": "Tolan imports and exports",
+      "statement": "The main imports are rice, wheat and fuel. The country's exports are limited and consist mainly of services and small quantities of light manufactures.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The main imports are rice, wheat and fuel. The country's exports are limited and consist mainly of services and small quantities of light manufactures."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "c2c85528",
+      "category": "ROUTE_STATUS",
+      "subject": "Tolan Harbour",
+      "statement": "Tolan Harbour is the principal island port, handling containers, bulk cargo and passenger traffic.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "Tolan Harbour is the principal island port, handling containers, bulk cargo and passenger traffic."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "af0313ab",
+      "category": "ROUTE_STATUS",
+      "subject": "Tolan transport network",
+      "statement": "The island has a single main road network and relies on coastal shipping and a small number of scheduled services for connections to the mainland.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "The island has a single main road network and relies on coastal shipping and a small number of scheduled services for connections to the mainland."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "7395b318",
+      "category": "ROUTE_STATUS",
+      "subject": "Tolan main road",
+      "statement": "The main road runs around the coast, with smaller routes into the hills.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "The main road runs around the coast, with smaller routes into the hills."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      ]
+    },
+    {
+      "fact_id": "3afffb9d",
+      "category": "ROUTE_STATUS",
+      "subject": "Tolan passenger service",
+      "statement": "A scheduled passenger service connects the harbour to the mainland, and most goods arrive by sea.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0010",
+        "file_name": "ATL-0010.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "A scheduled passenger service connects the harbour to the mainland, and most goods arrive by sea."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b65, not cited \u00b64"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Tolan",
+      "type": "NATION",
+      "aliases": [],
+      "description": "An island importer with a narrow economic base.",
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ATL-0010 EVENT_ID: NONE TITLE: Country profile: Tolan SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIA..."
+        },
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported r..."
+        },
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The main imports are rice, wheat and fuel. The country's exports are limited and consist mainly of services and sma..."
+        },
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Anchor Marine, a port services firm, is the best-known local company. The island has a single main road network and..."
+        }
+      ]
+    },
+    {
+      "name": "Tolan Harbour",
+      "type": "PORT",
+      "aliases": [
+        "Tolan Harbour"
+      ],
+      "description": "The principal island port, handling containers, bulk cargo and passenger traffic.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The main imports are rice, wheat and fuel. The country's exports are limited and consist mainly of services and sma..."
+        }
+      ]
+    },
+    {
+      "name": "rice",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main import of Tolan.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported r..."
+        }
+      ]
+    },
+    {
+      "name": "wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main import of Tolan.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported r..."
+        }
+      ]
+    },
+    {
+      "name": "fuel",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A main import of Tolan.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Tolan is an island importer with a narrow economic base. It produces few goods of its own and depends on imported r..."
+        }
+      ]
+    },
+    {
+      "name": "Anchor Marine",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A port services firm, the best-known local company.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0010",
+          "file_name": "ATL-0010.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Anchor Marine, a port services firm, is the best-known local company. The island has a single main road network and..."
+        }
+      ]
+    }
+  ]
+}

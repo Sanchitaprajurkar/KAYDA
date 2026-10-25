@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Ravik",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0025",
+        "file_name": "WLD-0025.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Ravik..."
+      }
+    ]
+  },
+  {
+    "name": "Library",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": "The public library in Ravik's largest town",
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0025",
+        "file_name": "WLD-0025.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month. T..."
+      },
+      {
+        "doc_id": "WLD-0025",
+        "file_name": "WLD-0025.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] Extra staff hours will be funded from the library's existing budget. The reading rooms, computers and borrowing des..."
+      },
+      {
+        "doc_id": "WLD-0025",
+        "file_name": "WLD-0025.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Library staff said the later closing time is aimed at students and people who work during the day. A quiet study ar..."
+      }
+    ]
+  }
+]

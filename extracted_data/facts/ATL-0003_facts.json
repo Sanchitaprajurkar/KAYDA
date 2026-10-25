@@ -1,0 +1,178 @@
+[
+  {
+    "fact_id": "ddecc7ba",
+    "category": "TRADE_VOLUME",
+    "subject": "Valhalla rice exports",
+    "statement": "Valhalla is the second rice exporter in the region and also a miner.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "Valhalla is the second rice exporter in the region and also a miner."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "dba024a9",
+    "category": "TRADE_VOLUME",
+    "subject": "Valhalla main exports",
+    "statement": "The main exports are rice, copper ore and a small amount of specialty metals.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The main exports are rice, copper ore and a small amount of specialty metals."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "35e3fa13",
+    "category": "TRADE_VOLUME",
+    "subject": "Valhalla imports",
+    "statement": "The country imports machinery, much of it for mining and food processing.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The country imports machinery, much of it for mining and food processing."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "0b21d848",
+    "category": "ROUTE_STATUS",
+    "subject": "Valhalla export routes",
+    "statement": "Rice and metal shipments leave through several commercial terminals rather than a single named hub.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "Rice and metal shipments leave through several commercial terminals rather than a single named hub."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b415d81d",
+    "category": "OTHER",
+    "subject": "Granite Mining",
+    "statement": "Granite Mining, a copper miner, is the best-known firm.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Granite Mining, a copper miner, is the best-known firm."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "9418b1f6",
+    "category": "OTHER",
+    "subject": "Valhalla mining sector",
+    "statement": "The mining sector supports engineering, haulage and repair businesses, while the rice trade is handled by a large number of independent growers and cooperatives.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "The mining sector supports engineering, haulage and repair businesses, while the rice trade is handled by a large number of independent growers and cooperatives."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "31b08962",
+    "category": "ROUTE_STATUS",
+    "subject": "Valhalla mining towns",
+    "statement": "Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Mining towns in the hills are linked by haul roads to the coast, and processing plants sit near the pits."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "02fa1154",
+    "category": "ROUTE_STATUS",
+    "subject": "Valhalla rice farms",
+    "statement": "Rice farms in the lowlands use a separate network of smaller roads and stores.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0003",
+      "file_name": "ATL-0003.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Rice farms in the lowlands use a separate network of smaller roads and stores."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

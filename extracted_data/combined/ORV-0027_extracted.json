@@ -1,0 +1,258 @@
+{
+  "doc_id": "ORV-0027",
+  "title": "Trade note: Vanir to Midgard, wheat, July to December 2026",
+  "facts_count": 7,
+  "flagged_count": 0,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "4b10ebaa",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In July 2026, the value was USD 30.0M and the volume was 80,000 tonnes.",
+      "date_mentioned": "July 2026",
+      "numeric_value": 30.0,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "In July 2026, the value was USD 30.0M and the volume was 80,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "7de3e558",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In August 2026, the value was USD 32.2M and the volume was 86,000 tonnes.",
+      "date_mentioned": "August 2026",
+      "numeric_value": 32.2,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "In August 2026, the value was USD 32.2M and the volume was 86,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "a1fe2ad2",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In September 2026, the value was USD 31.5M and the volume was 84,000 tonnes.",
+      "date_mentioned": "September 2026",
+      "numeric_value": 31.5,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "In September 2026, the value was USD 31.5M and the volume was 84,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "c8418dad",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In October 2026, the value was USD 30.9M and the volume was 77,000 tonnes.",
+      "date_mentioned": "October 2026",
+      "numeric_value": 30.9,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "In October 2026, the value was USD 30.9M and the volume was 77,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "9d1818d6",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In November 2026, the value was USD 38.5M and the volume was 96,000 tonnes.",
+      "date_mentioned": "November 2026",
+      "numeric_value": 38.5,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "In November 2026, the value was USD 38.5M and the volume was 96,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f3dbd497",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir to Midgard wheat",
+      "statement": "In December 2026, the value was USD 36.9M and the volume was 92,000 tonnes.",
+      "date_mentioned": "December 2026",
+      "numeric_value": 36.9,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "In December 2026, the value was USD 36.9M and the volume was 92,000 tonnes."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "bc36afaa",
+      "category": "TRADE_VOLUME",
+      "subject": "Vanir wheat",
+      "statement": "Vanir wheat reached Midgard in larger volumes from November, mostly on short-term contracts.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0027",
+        "file_name": "ORV-0027.txt",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "Vanir wheat reached Midgard in larger volumes from November, mostly on short-term contracts."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b615, not cited \u00b614"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Vanir",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+        }
+      ]
+    },
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0027 EVENT_ID: E5 TITLE: Trade note: Vanir to Midgard, wheat, July to December 2026 SOURCE_NAME: Realm Trade..."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Route: Vanir to Midgard, wheat...."
+        },
+        {
+          "doc_id": "ORV-0027",
+          "file_name": "ORV-0027.txt",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P13] In December 2025, the value was USD 28.1M and the volume was 75,000 tonnes...."
+        }
+      ]
+    }
+  ]
+}

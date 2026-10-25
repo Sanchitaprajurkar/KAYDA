@@ -1,0 +1,316 @@
+{
+  "doc_id": "ORV-0033",
+  "title": "Ravik statement on rail capacity for Orvan grain",
+  "facts_count": 6,
+  "flagged_count": 0,
+  "entities_count": 5,
+  "facts": [
+    {
+      "fact_id": "2977240a",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "252cf378",
+      "category": "OTHER",
+      "subject": "Rail capacity booking",
+      "statement": "The government says shippers should book rail capacity early.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "The government says shippers should book rail capacity early."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "4e43a111",
+      "category": "OTHER",
+      "subject": "Booking process for buyers",
+      "statement": "Buyers who need a booking have been told to approach the link directly.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "Buyers who need a booking have been told to approach the link directly."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    },
+    {
+      "fact_id": "a12c510c",
+      "category": "OTHER",
+      "subject": "Reassurance to buyers",
+      "statement": "The minister's office says the purpose was to reassure buyers that a land route exists.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The minister's office says the purpose was to reassure buyers that a land route exists."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b66, not cited \u00b64"
+      ]
+    },
+    {
+      "fact_id": "0aff9738",
+      "category": "OTHER",
+      "subject": "Details on rail capacity",
+      "statement": "It is short on detail: it does not give the volume moved, the share of the lost trade carried, or the tariff charged.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "It is short on detail: it does not give the volume moved, the share of the lost trade carried, or the tariff charged."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b66, not cited \u00b65"
+      ]
+    },
+    {
+      "fact_id": "4c513e64",
+      "category": "OTHER",
+      "subject": "Volume and tariffs information",
+      "statement": "The statement does not give volumes or tariffs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0033",
+        "file_name": "ORV-0033.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "The statement does not give volumes or tariffs."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b68, not cited \u00b67"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation mentioned in the document.",
+      "mentions_count": 7,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik government issued this statement...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The statement was read out at a briefing and later posted on the ministry's notice board. It does not name the rail..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation mentioned in the document.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "A commodity related to the rail capacity statement.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOUR..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": "The rail infrastructure mentioned for transporting grain.",
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government says shippers should book rail capacity early...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan corridor",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": "The corridor that ended, affecting rail movements.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik government issued this statement...."
+        },
+        {
+          "doc_id": "ORV-0033",
+          "file_name": "ORV-0033.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain th..."
+        }
+      ]
+    }
+  ]
+}
