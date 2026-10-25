@@ -1,0 +1,1115 @@
+{
+  "case_id": "CASE-E5-THOR-LINK",
+  "run_number": 1,
+  "research_history": [],
+  "new_document_ids": [
+    "ORV-0030",
+    "ORV-0046",
+    "ORV-0024",
+    "ORV-0021",
+    "ORV-0002",
+    "ORV-0009",
+    "ORV-0031",
+    "ORV-0016",
+    "ORV-0022",
+    "ORV-0018",
+    "ORV-0006",
+    "ORV-0034",
+    "ORV-0001",
+    "ORV-0042",
+    "ORV-0047"
+  ],
+  "generated_at": "2026-10-25T18:04:45.800821+00:00",
+  "as_of_date": "2027-01-25",
+  "target_query": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement? Give a low and high range for wheat and maize imports.",
+  "case_scope": {
+    "query": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement? Give a low and high range for wheat and maize imports.",
+    "event_id": "E5",
+    "event_name": "Orvan grain corridor collapse",
+    "event_identified": true,
+    "countries": [
+      "Midgard",
+      "Orvan",
+      "Tolan"
+    ],
+    "event_countries": [
+      "Orvan"
+    ],
+    "commodities": [
+      "Maize",
+      "Wheat"
+    ],
+    "sectors": [
+      "Maize",
+      "Wheat"
+    ],
+    "period_start": "2026-09-10",
+    "period_end": "2027-01-25",
+    "as_of_date": "2027-01-25",
+    "search_terms": [
+      "midgard",
+      "tolan",
+      "end",
+      "orvan",
+      "corridor",
+      "agreement",
+      "wheat",
+      "maize",
+      "import",
+      "grain",
+      "collapse"
+    ],
+    "notes": [
+      "Event matched on terms ['corridor', 'orvan']"
+    ]
+  },
+  "event_verification": {
+    "status": "CONFIRMED",
+    "confidence_score": 0.97,
+    "is_active_at_as_of": true,
+    "summary": "Orvan grain corridor collapse is CONFIRMED and still in effect as of 2027-01-25: 3 independent Tier 1-2 outlet(s) (Harbour Review, Raven Wire, Realm Trade Ministry) confirm it and no credible evidence stands against it.",
+    "onset_date": "2026-09-10"
+  },
+  "retrieved_documents": [
+    {
+      "doc_id": "ORV-0030",
+      "title": "Trade note: Orvan to Midgard, maize, July to December 2026",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability_tier": 1,
+      "pub_date": "2027-01-21",
+      "relevance_score": 27.945,
+      "matched_terms": [
+        "maize",
+        "midgard",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        1,
+        15
+      ],
+      "reason": "matched maize, midgard, orvan, wheat; country Midgard; sector Maize"
+    },
+    {
+      "doc_id": "ORV-0046",
+      "title": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+      "source_name": "Harbour Review",
+      "source_type": "trade_note",
+      "reliability_tier": 2,
+      "pub_date": "2027-01-20",
+      "relevance_score": 26.641,
+      "matched_terms": [
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        1,
+        15
+      ],
+      "reason": "matched orvan, tolan, wheat; country Tolan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0024",
+      "title": "How the Orvan grain corridor worked, and why its ending matters",
+      "source_name": "Harbour Review",
+      "source_type": "explainer",
+      "reliability_tier": 2,
+      "pub_date": "2026-09-12",
+      "relevance_score": 26.08,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "grain",
+        "maize",
+        "midgard",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        7,
+        3,
+        1
+      ],
+      "reason": "matched agreement, corridor, grain, maize, midgard, orvan, tolan, wheat; country Orvan"
+    },
+    {
+      "doc_id": "ORV-0021",
+      "title": "Corvan Grain: October sea shipments down 62% on last year",
+      "source_name": "Corvan Grain",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "pub_date": "2026-11-12",
+      "relevance_score": 25.71,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "end",
+        "grain",
+        "maize",
+        "midgard",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        3,
+        2,
+        7
+      ],
+      "reason": "matched agreement, corridor, end, grain, maize, midgard, orvan, tolan, wheat; country Orvan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0002",
+      "title": "Corridor Agreement: terms of the one-year grain arrangement",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "gov_notice",
+      "reliability_tier": 1,
+      "pub_date": "2026-06-15",
+      "relevance_score": 23.86,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "grain",
+        "maize",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        3,
+        1,
+        5
+      ],
+      "reason": "matched agreement, corridor, grain, maize, orvan, wheat; country Orvan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0009",
+      "title": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability_tier": 1,
+      "pub_date": "2027-01-19",
+      "relevance_score": 21.853,
+      "matched_terms": [
+        "midgard",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        1
+      ],
+      "reason": "matched midgard, orvan, wheat; country Midgard; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0031",
+      "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+      "source_name": "Asgard Herald",
+      "source_type": "news",
+      "reliability_tier": 3,
+      "pub_date": "2026-11-05",
+      "relevance_score": 21.595,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "maize",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        3,
+        7
+      ],
+      "reason": "matched agreement, corridor, maize, orvan, wheat; sector Maize"
+    },
+    {
+      "doc_id": "ORV-0016",
+      "title": "Corridor Agreement expires with no renewal",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "gov_notice",
+      "reliability_tier": 1,
+      "pub_date": "2026-09-10",
+      "relevance_score": 20.921,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "grain",
+        "maize",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        4,
+        7,
+        1
+      ],
+      "reason": "matched agreement, corridor, grain, maize, orvan, wheat; country Orvan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0022",
+      "title": "December grain arrivals point to a smaller Orvan share",
+      "source_name": "Midgard Times",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "pub_date": "2027-01-12",
+      "relevance_score": 20.876,
+      "matched_terms": [
+        "grain",
+        "import",
+        "maize",
+        "midgard",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        14,
+        16,
+        18
+      ],
+      "reason": "matched grain, import, maize, midgard, orvan, wheat; country Midgard; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0018",
+      "title": "Modelling the Orvan gap: assumptions matter more than the headline",
+      "source_name": "Ledger Analytics",
+      "source_type": "analyst_note",
+      "reliability_tier": 3,
+      "pub_date": "2026-12-15",
+      "relevance_score": 20.432,
+      "matched_terms": [
+        "agreement",
+        "midgard",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        17,
+        21,
+        19
+      ],
+      "reason": "matched agreement, midgard, orvan, tolan, wheat; country Orvan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0006",
+      "title": "Millers look beyond Orvan as wheat cargoes slip",
+      "source_name": "Midgard Times",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "pub_date": "2026-10-08",
+      "relevance_score": 20.367,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "midgard",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        4,
+        2,
+        5
+      ],
+      "reason": "matched agreement, corridor, midgard, orvan, wheat; country Midgard; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0034",
+      "title": "Orvan grain ships turn back as corridor deal lapses",
+      "source_name": "Raven Wire",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "pub_date": "2026-09-11",
+      "relevance_score": 19.904,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "grain",
+        "midgard",
+        "orvan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        1,
+        3
+      ],
+      "reason": "matched agreement, corridor, grain, midgard, orvan, wheat; country Orvan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0001",
+      "title": "Vantro Trading: rail is a partial substitute, not a replacement",
+      "source_name": "Vantro Trading",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "pub_date": "2026-10-20",
+      "relevance_score": 19.709,
+      "matched_terms": [
+        "corridor",
+        "grain",
+        "midgard",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        17,
+        19,
+        14
+      ],
+      "reason": "matched corridor, grain, midgard, orvan, tolan, wheat; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0042",
+      "title": "Anchor Marine reports busier berths at Tolan Harbour",
+      "source_name": "Anchor Marine",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "pub_date": "2026-11-25",
+      "relevance_score": 19.433,
+      "matched_terms": [
+        "grain",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        2,
+        5,
+        6
+      ],
+      "reason": "matched grain, orvan, tolan, wheat; country Tolan; sector Wheat"
+    },
+    {
+      "doc_id": "ORV-0047",
+      "title": "Orvan wheat: the sea loss is real, the substitutes are small",
+      "source_name": "Tide Research",
+      "source_type": "analyst_note",
+      "reliability_tier": 3,
+      "pub_date": "2026-10-22",
+      "relevance_score": 19.003,
+      "matched_terms": [
+        "agreement",
+        "corridor",
+        "grain",
+        "midgard",
+        "orvan",
+        "tolan",
+        "wheat"
+      ],
+      "top_paragraphs": [
+        6,
+        1,
+        3
+      ],
+      "reason": "matched agreement, corridor, grain, midgard, orvan, tolan, wheat; country Orvan; sector Wheat"
+    }
+  ],
+  "rejected_evidence": [
+    {
+      "doc_id": "ORV-0043",
+      "title": "Orvan grain corridor renewed for a second year",
+      "source_name": "Raven Wire",
+      "reliability_tier": 2,
+      "pub_date": "2026-09-09",
+      "reason": "RETRACTED",
+      "related_doc_id": "ORV-0013",
+      "detail": "retracted by ORV-0013: 'the Corridor Agreement had been renewed'",
+      "claims": [
+        "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks.",
+        "Wheat offers for Orvan cargoes eased on the report.",
+        "The renewal would keep sea exports at about 95% of the old normal."
+      ],
+      "relevance_score": 10.682
+    },
+    {
+      "doc_id": "ORV-0036",
+      "title": "Trade note: Orvan to Midgard, wheat, January 2027",
+      "source_name": "Cargo Weekly",
+      "reliability_tier": 2,
+      "pub_date": "2027-02-22",
+      "reason": "CLOCK_EXCLUDED",
+      "related_doc_id": null,
+      "detail": "published 2027-02-22 after as-of 2027-01-25",
+      "claims": [
+        "In January 2027, the value was USD 34.9M and the volume was 85,000 tonnes.",
+        "In January 2026, the value was USD 84.6M and the volume was 235,000 tonnes."
+      ],
+      "relevance_score": 8.847
+    },
+    {
+      "doc_id": "ORV-0041",
+      "title": "Spring bookings point to a slow Orvan recovery",
+      "source_name": "Midgard Times",
+      "reliability_tier": 2,
+      "pub_date": "2027-04-09",
+      "reason": "CLOCK_EXCLUDED",
+      "related_doc_id": null,
+      "detail": "published 2027-04-09 after as-of 2027-01-25",
+      "claims": [
+        "Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels before the corridor ended.",
+        "Port agents in Orvan say berth use is improving from the winter low.",
+        "Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat.",
+        "The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commit to large volumes.",
+        "Buyers say they are watching the port index and the rail timetable before they commit to larger contracts."
+      ],
+      "relevance_score": 8.637
+    },
+    {
+      "doc_id": "ORV-0026",
+      "title": "Sources: every grain ship sunk, Orvan port shut for good",
+      "source_name": "Trade Whisper",
+      "reliability_tier": 4,
+      "pub_date": "2026-09-16",
+      "reason": "RUMOUR",
+      "related_doc_id": "ORV-0016",
+      "detail": "Tier 4 blog; contradicted by ORV-0016, ORV-0017",
+      "claims": [
+        "A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen.",
+        "The same source says the corridor agreement is dead and that no buyer should expect a cargo this year."
+      ],
+      "relevance_score": 8.122
+    },
+    {
+      "doc_id": "ORV-0028",
+      "title": "FAMINE FEAR AS ORVAN GRAIN VANISHES",
+      "source_name": "Daily Roar",
+      "reliability_tier": 4,
+      "pub_date": "2026-10-05",
+      "reason": "TABLOID",
+      "related_doc_id": null,
+      "detail": "Tier 4 tabloid",
+      "claims": [
+        "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.",
+        "Bread prices have already started to climb."
+      ],
+      "relevance_score": 7.855
+    },
+    {
+      "doc_id": "ORV-0049",
+      "title": "Orvan corridor: talks on track, keep the base case",
+      "source_name": "Tide Research",
+      "reliability_tier": 3,
+      "pub_date": "2026-08-25",
+      "reason": "SUPERSEDED",
+      "related_doc_id": "ORV-0016",
+      "detail": "forecast overtaken by Tier 1 notice ORV-0016 (Corridor Agreement expires with no renewal)",
+      "claims": [
+        "Our base case assumes sea exports stay near 95% of the old normal through the winter.",
+        "The main risk is a delay in signing, not a failure.",
+        "For now, we see no reason to mark Orvan wheat lower.",
+        "We think the Orvan corridor will be renewed.",
+        "If the corridor is renewed, the recent risk premium should fade and Orvan wheat should trade close to its previous level."
+      ],
+      "relevance_score": 7.815
+    },
+    {
+      "doc_id": "ORV-0015",
+      "title": "Asgard mediators welcome reported Orvan renewal",
+      "source_name": "Asgard Herald",
+      "reliability_tier": 3,
+      "pub_date": "2026-09-09",
+      "reason": "TAINTED",
+      "related_doc_id": "ORV-0043",
+      "detail": "repeats the claim retracted by ORV-0013 (originally ORV-0043)",
+      "claims": [
+        "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+        "The Asgard Herald understands that the agreement will keep sea exports near their recent level.",
+        "Feed mills that had been testing alternative suppliers put those enquiries on hold.",
+        "Shipping agents in Asgard reported no change to schedules.",
+        "For Asgard buyers, the report suggested that the recent pattern of arrivals would continue without a break."
+      ],
+      "relevance_score": 4.941
+    },
+    {
+      "doc_id": "ORV-0010",
+      "title": "Orvan port gone",
+      "source_name": "Saga Chat",
+      "reliability_tier": 4,
+      "pub_date": "2026-09-15",
+      "reason": "RUMOUR",
+      "related_doc_id": "ORV-0016",
+      "detail": "Tier 4 social_post; contradicted by ORV-0016, ORV-0017",
+      "claims": [
+        "Hearing Orvan Grain Port was destroyed last night.",
+        "No ships moving.",
+        "Friends in Orvan say the whole quay is gone.",
+        "Nobody is loading anything."
+      ],
+      "relevance_score": 4.925
+    },
+    {
+      "doc_id": "ORV-0014",
+      "title": "New corridor talks to open after Orvan request",
+      "source_name": "Realm Trade Ministry",
+      "reliability_tier": 1,
+      "pub_date": "2027-02-11",
+      "reason": "CLOCK_EXCLUDED",
+      "related_doc_id": null,
+      "detail": "published 2027-02-11 after as-of 2027-01-25",
+      "claims": [
+        "The Realm Trade Ministry says new talks on an Orvan grain corridor will open at the request of exporters.",
+        "The talks will cover sea movements and rail capacity, the ministry says.",
+        "No terms have been agreed and no date has been set for a conclusion.",
+        "The ministry says current rules remain in force until a new text is agreed.",
+        "Current export rules remain in force."
+      ],
+      "relevance_score": 4.77
+    },
+    {
+      "doc_id": "ORV-0003",
+      "title": "Corridor talks progress, renewal expected",
+      "source_name": "Realm Trade Ministry",
+      "reliability_tier": 1,
+      "pub_date": "2026-08-18",
+      "reason": "SUPERSEDED",
+      "related_doc_id": "ORV-0016",
+      "detail": "forecast overtaken by Tier 1 notice ORV-0016 (Corridor Agreement expires with no renewal)",
+      "claims": [
+        "The Realm Trade Ministry reports that talks on renewing the Corridor Agreement are progressing well.",
+        "Both sides have accepted the principle of a further term, according to officials close to the talks.",
+        "The notice reflects the position at the time it was written, when both delegations had described the talks as constructive.",
+        "A further notice will follow when the talks conclude.",
+        "The ministry expects a renewal to be signed before the current agreement ends."
+      ],
+      "relevance_score": 3.788
+    }
+  ],
+  "source_assessments": [
+    {
+      "doc_id": "ORV-0030",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability_tier": 1,
+      "tier_label": "Official",
+      "pub_date": "2027-01-21",
+      "days_before_as_of": 4,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.95,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0046",
+      "source_name": "Harbour Review",
+      "source_type": "trade_note",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2027-01-20",
+      "days_before_as_of": 5,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0024",
+      "source_name": "Harbour Review",
+      "source_type": "explainer",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-09-12",
+      "days_before_as_of": 135,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0021",
+      "source_name": "Corvan Grain",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-11-12",
+      "days_before_as_of": 74,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": [
+        "Company statement: self-interested party."
+      ]
+    },
+    {
+      "doc_id": "ORV-0002",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "gov_notice",
+      "reliability_tier": 1,
+      "tier_label": "Official",
+      "pub_date": "2026-06-15",
+      "days_before_as_of": 224,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.95,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0009",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "trade_note",
+      "reliability_tier": 1,
+      "tier_label": "Official",
+      "pub_date": "2027-01-19",
+      "days_before_as_of": 6,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.95,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0031",
+      "source_name": "Asgard Herald",
+      "source_type": "news",
+      "reliability_tier": 3,
+      "tier_label": "Regional paper or analyst firm",
+      "pub_date": "2026-11-05",
+      "days_before_as_of": 81,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.6,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0016",
+      "source_name": "Realm Trade Ministry",
+      "source_type": "gov_notice",
+      "reliability_tier": 1,
+      "tier_label": "Official",
+      "pub_date": "2026-09-10",
+      "days_before_as_of": 137,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.95,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0022",
+      "source_name": "Midgard Times",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2027-01-12",
+      "days_before_as_of": 13,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0018",
+      "source_name": "Ledger Analytics",
+      "source_type": "analyst_note",
+      "reliability_tier": 3,
+      "tier_label": "Regional paper or analyst firm",
+      "pub_date": "2026-12-15",
+      "days_before_as_of": 41,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.6,
+      "notes": [
+        "Analyst estimate: check assumptions and whether figures are point estimates."
+      ]
+    },
+    {
+      "doc_id": "ORV-0006",
+      "source_name": "Midgard Times",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-10-08",
+      "days_before_as_of": 109,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": []
+    },
+    {
+      "doc_id": "ORV-0034",
+      "source_name": "Raven Wire",
+      "source_type": "news",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-09-11",
+      "days_before_as_of": 136,
+      "temporally_valid": true,
+      "cites_sources": [
+        "Realm Trade Ministry"
+      ],
+      "credibility_score": 0.85,
+      "notes": [
+        "Relies on Realm Trade Ministry; not independent of it."
+      ]
+    },
+    {
+      "doc_id": "ORV-0001",
+      "source_name": "Vantro Trading",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-10-20",
+      "days_before_as_of": 97,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": [
+        "Company statement: self-interested party."
+      ]
+    },
+    {
+      "doc_id": "ORV-0042",
+      "source_name": "Anchor Marine",
+      "source_type": "company_statement",
+      "reliability_tier": 2,
+      "tier_label": "Reputable (wire, business daily, trade press)",
+      "pub_date": "2026-11-25",
+      "days_before_as_of": 61,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.85,
+      "notes": [
+        "Company statement: self-interested party."
+      ]
+    },
+    {
+      "doc_id": "ORV-0047",
+      "source_name": "Tide Research",
+      "source_type": "analyst_note",
+      "reliability_tier": 3,
+      "tier_label": "Regional paper or analyst firm",
+      "pub_date": "2026-10-22",
+      "days_before_as_of": 95,
+      "temporally_valid": true,
+      "cites_sources": [],
+      "credibility_score": 0.6,
+      "notes": [
+        "Analyst estimate: check assumptions and whether figures are point estimates."
+      ]
+    }
+  ],
+  "analyzed_documents": [
+    {
+      "DOC_ID": "ORV-0030",
+      "EVENT_ID": "E5",
+      "TITLE": "Trade note: Orvan to Midgard, maize, July to December 2026",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "trade_note",
+      "RELIABILITY": "1",
+      "PUB_DATE": "2027-01-21",
+      "PUB_TIME": "09:35",
+      "COUNTRY": "Midgard",
+      "SECTOR": "Maize",
+      "LANGUAGE": "en",
+      "file": "ORV-0030.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0046",
+      "EVENT_ID": "E5",
+      "TITLE": "Trade note: Orvan to Tolan, wheat, July to December 2026",
+      "SOURCE_NAME": "Harbour Review",
+      "SOURCE_TYPE": "trade_note",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2027-01-20",
+      "PUB_TIME": "10:05",
+      "COUNTRY": "Tolan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0046.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0024",
+      "EVENT_ID": "E5",
+      "TITLE": "How the Orvan grain corridor worked, and why its ending matters",
+      "SOURCE_NAME": "Harbour Review",
+      "SOURCE_TYPE": "explainer",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-09-12",
+      "PUB_TIME": "10:15",
+      "COUNTRY": "Orvan",
+      "SECTOR": "general",
+      "LANGUAGE": "en",
+      "file": "ORV-0024.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0021",
+      "EVENT_ID": "E5",
+      "TITLE": "Corvan Grain: October sea shipments down 62% on last year",
+      "SOURCE_NAME": "Corvan Grain",
+      "SOURCE_TYPE": "company_statement",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-11-12",
+      "PUB_TIME": "10:30",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0021.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0002",
+      "EVENT_ID": "E5",
+      "TITLE": "Corridor Agreement: terms of the one-year grain arrangement",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "gov_notice",
+      "RELIABILITY": "1",
+      "PUB_DATE": "2026-06-15",
+      "PUB_TIME": "09:00",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0002.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0009",
+      "EVENT_ID": "E5",
+      "TITLE": "Trade note: Orvan to Midgard, wheat, July to December 2026",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "trade_note",
+      "RELIABILITY": "1",
+      "PUB_DATE": "2027-01-19",
+      "PUB_TIME": "09:20",
+      "COUNTRY": "Midgard",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0009.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0031",
+      "EVENT_ID": "E5",
+      "TITLE": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+      "SOURCE_NAME": "Asgard Herald",
+      "SOURCE_TYPE": "news",
+      "RELIABILITY": "3",
+      "PUB_DATE": "2026-11-05",
+      "PUB_TIME": "09:15",
+      "COUNTRY": "Asgard",
+      "SECTOR": "Maize",
+      "LANGUAGE": "en",
+      "file": "ORV-0031.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0016",
+      "EVENT_ID": "E5",
+      "TITLE": "Corridor Agreement expires with no renewal",
+      "SOURCE_NAME": "Realm Trade Ministry",
+      "SOURCE_TYPE": "gov_notice",
+      "RELIABILITY": "1",
+      "PUB_DATE": "2026-09-10",
+      "PUB_TIME": "17:45",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0016.pdf",
+      "FORMAT": "PDF"
+    },
+    {
+      "DOC_ID": "ORV-0022",
+      "EVENT_ID": "E5",
+      "TITLE": "December grain arrivals point to a smaller Orvan share",
+      "SOURCE_NAME": "Midgard Times",
+      "SOURCE_TYPE": "news",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2027-01-12",
+      "PUB_TIME": "07:55",
+      "COUNTRY": "Midgard",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0022.docx",
+      "FORMAT": "DOCX"
+    },
+    {
+      "DOC_ID": "ORV-0018",
+      "EVENT_ID": "E5",
+      "TITLE": "Modelling the Orvan gap: assumptions matter more than the headline",
+      "SOURCE_NAME": "Ledger Analytics",
+      "SOURCE_TYPE": "analyst_note",
+      "RELIABILITY": "3",
+      "PUB_DATE": "2026-12-15",
+      "PUB_TIME": "09:40",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0018.docx",
+      "FORMAT": "DOCX"
+    },
+    {
+      "DOC_ID": "ORV-0006",
+      "EVENT_ID": "E5",
+      "TITLE": "Millers look beyond Orvan as wheat cargoes slip",
+      "SOURCE_NAME": "Midgard Times",
+      "SOURCE_TYPE": "news",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-10-08",
+      "PUB_TIME": "08:45",
+      "COUNTRY": "Midgard",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0006.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0034",
+      "EVENT_ID": "E5",
+      "TITLE": "Orvan grain ships turn back as corridor deal lapses",
+      "SOURCE_NAME": "Raven Wire",
+      "SOURCE_TYPE": "news",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-09-11",
+      "PUB_TIME": "06:20",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0034.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0001",
+      "EVENT_ID": "E5",
+      "TITLE": "Vantro Trading: rail is a partial substitute, not a replacement",
+      "SOURCE_NAME": "Vantro Trading",
+      "SOURCE_TYPE": "company_statement",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-10-20",
+      "PUB_TIME": "09:50",
+      "COUNTRY": "Ravik",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0001.docx",
+      "FORMAT": "DOCX"
+    },
+    {
+      "DOC_ID": "ORV-0042",
+      "EVENT_ID": "E5",
+      "TITLE": "Anchor Marine reports busier berths at Tolan Harbour",
+      "SOURCE_NAME": "Anchor Marine",
+      "SOURCE_TYPE": "company_statement",
+      "RELIABILITY": "2",
+      "PUB_DATE": "2026-11-25",
+      "PUB_TIME": "13:05",
+      "COUNTRY": "Tolan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0042.txt",
+      "FORMAT": "TXT"
+    },
+    {
+      "DOC_ID": "ORV-0047",
+      "EVENT_ID": "E5",
+      "TITLE": "Orvan wheat: the sea loss is real, the substitutes are small",
+      "SOURCE_NAME": "Tide Research",
+      "SOURCE_TYPE": "analyst_note",
+      "RELIABILITY": "3",
+      "PUB_DATE": "2026-10-22",
+      "PUB_TIME": "08:20",
+      "COUNTRY": "Orvan",
+      "SECTOR": "Wheat",
+      "LANGUAGE": "en",
+      "file": "ORV-0047.pdf",
+      "FORMAT": "PDF"
+    }
+  ],
+  "coverage_map": [
+    {
+      "country": "Midgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "primary_series": [
+        "ORV-0030"
+      ],
+      "substitute_series": [],
+      "substitution_evidenced": false,
+      "periods": [
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "note": "12 month(s) of Orvan trade rows; no substitute supply evidenced in the Case File"
+    },
+    {
+      "country": "Midgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "primary_series": [
+        "ORV-0009"
+      ],
+      "substitute_series": [],
+      "substitution_evidenced": false,
+      "periods": [
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "note": "12 month(s) of Orvan trade rows; no substitute supply evidenced in the Case File"
+    },
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_MISSING",
+      "primary_series": [],
+      "substitute_series": [],
+      "substitution_evidenced": false,
+      "periods": [],
+      "note": "Evidence missing: no trade series for this flow, so no range can be given without inventing one."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "primary_series": [
+        "ORV-0046"
+      ],
+      "substitute_series": [],
+      "substitution_evidenced": false,
+      "periods": [
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "note": "12 month(s) of Orvan trade rows; no substitute supply evidenced in the Case File"
+    }
+  ],
+  "missing_information": [
+    {
+      "gap_id": "80b73b5d",
+      "topic": "Tolan Maize trade data",
+      "expected_scope": "A trade note or customs figure for maize flows into Tolan.",
+      "impact_on_assessment": "Evidence missing: no range can be given for this flow without inventing one."
+    }
+  ]
+}

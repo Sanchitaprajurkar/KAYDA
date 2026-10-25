@@ -1,0 +1,82 @@
+﻿{
+  "doc_id": "ORV-0039",
+  "file_name": "ORV-0039.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0039.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0039",
+    "event_id": "NONE",
+    "title": "Ravik Rail Link adds two freight paths for the summer",
+    "source_name": "Cargo Weekly",
+    "source_type": "shipping_update",
+    "reliability": 2,
+    "pub_date": "2026-06-10",
+    "pub_time": "08:05",
+    "country": "Ravik",
+    "sector": "general",
+    "language": "en",
+    "file": "ORV-0039.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0039 EVENT_ID: NONE TITLE: Ravik Rail Link adds two freight paths for the summer SOURCE_NAME: Cargo Weekly SOURCE_TYPE: shipping_update RELIABILITY: 2 PUB_DATE: 2026-06-10 PUB_TIME: 08:05 COUNTRY: Ravik SECTOR: general LANGUAGE: en --- Ravik Rail Link adds two freight paths for the summer",
+      "char_count": 301,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] The Ravik Rail Link will run additional freight paths each weekday from June to August.",
+      "char_count": 92,
+      "word_count": 16
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight.",
+      "char_count": 107,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] The link says the extra paths are for scheduled traffic and are not a reserve for spot cargoes.",
+      "char_count": 100,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] Road hauliers will keep their existing access to the terminal.",
+      "char_count": 67,
+      "word_count": 11
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will be reviewed at the end of the summer. The timetable has been adjusted so that the new paths do not delay the existing passenger service. Freight customers have been told that wagon availability, rather than track capacity, is the main constraint on bookings. The link's office will publish any changes to the schedule in the usual way.",
+      "char_count": 455,
+      "word_count": 78
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] The link says the extra paths are a trial and will be kept only if demand holds. It has asked freight customers to book in advance. The timetable change does not affect passenger services. The office will publish a revised notice if the trial is extended.",
+      "char_count": 260,
+      "word_count": 47
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": 1,
+      "raw_text": "[P7] A revised timetable is available from the link's office.",
+      "char_count": 61,
+      "word_count": 10
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0039 EVENT_ID: NONE TITLE: Ravik Rail Link adds two freight paths for the summer SOURCE_NAME: Cargo Weekly SOURCE_TYPE: shipping_update RELIABILITY: 2 PUB_DATE: 2026-06-10 PUB_TIME: 08:05 COUNTRY: Ravik SECTOR: general LANGUAGE: en --- Ravik Rail Link adds two freight paths for the summer\n\n[P1] The Ravik Rail Link will run additional freight paths each weekday from June to August.\n\n[P2] Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight.\n\n[P3] The link says the extra paths are for scheduled traffic and are not a reserve for spot cargoes.\n\n[P4] Road hauliers will keep their existing access to the terminal.\n\n[P5] The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will be reviewed at the end of the summer. The timetable has been adjusted so that the new paths do not delay the existing passenger service. Freight customers have been told that wagon availability, rather than track capacity, is the main constraint on bookings. The link's office will publish any changes to the schedule in the usual way.\n\n[P6] The link says the extra paths are a trial and will be kept only if demand holds. It has asked freight customers to book in advance. The timetable change does not affect passenger services. The office will publish a revised notice if the trial is extended.\n\n[P7] A revised timetable is available from the link's office.",
+  "total_paragraphs": 8,
+  "total_pages": 1
+}

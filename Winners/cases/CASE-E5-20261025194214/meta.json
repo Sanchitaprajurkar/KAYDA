@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-E5-20261025194214",
+  "question": "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement? Give a low and high range for wheat and maize imports.",
+  "as_of_date": "2027-01-25",
+  "runs": 2,
+  "status": "COMPLETE",
+  "git_sha": "ba2cf823e30576b5cb5d273be943f421bdbae55f",
+  "models": {
+    "THOR": "scripted",
+    "LOKI": "scripted",
+    "ODIN": "scripted"
+  },
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-25T19:42:15.775182+00:00"
+}

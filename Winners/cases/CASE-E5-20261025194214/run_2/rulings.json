@@ -1,0 +1,197 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T2-01",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "scripted ruling",
+      "decided_by": "odin",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-02",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-03",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-04",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-05",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-01",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "scripted ruling",
+      "decided_by": "odin",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-02",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-03",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-04",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-05",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Midgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        50.18,
+        74.51
+      ],
+      "loki": [
+        38.49,
+        62.51
+      ],
+      "odin": [
+        50.18,
+        62.51
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0030, no substitute supply on the record); windows: full Oct-Dec 50.2%; late Nov-Dec 62.5%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Midgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        14.47,
+        72.34
+      ],
+      "loki": [
+        12.45,
+        16.42
+      ],
+      "odin": [
+        12.45,
+        14.47
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0009, net of ORV-0027); windows: full Oct-Dec 14.5%; late Nov-Dec 12.4%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "basis": "Evidence missing: no trade series for this flow; no range is given."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        0.0,
+        72.3
+      ],
+      "loki": [
+        0.0,
+        0.88
+      ],
+      "odin": [
+        0.0,
+        0.0
+      ],
+      "basis": "Recomputed from the Case File's trade rows (ORV-0046, net of ORV-0044); windows: full Oct-Dec 0.0%; late Nov-Dec 0.0%. The onset month is left out because it was only partly affected."
+    }
+  ],
+  "remand": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 6,
+      "cache_hits": 0,
+      "tokens": 4064
+    },
+    "LOKI": {
+      "calls": 6,
+      "cache_hits": 0,
+      "tokens": 3220
+    },
+    "ODIN": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 868
+    }
+  }
+}

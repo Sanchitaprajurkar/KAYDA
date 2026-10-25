@@ -1,0 +1,54 @@
+﻿{
+  "doc_id": "WLD-0027",
+  "file_name": "WLD-0027.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\WLD-0027.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0027",
+    "event_id": "NONE",
+    "title": "Solen Energy sponsors coastal clean-up",
+    "source_name": "Raven Wire",
+    "source_type": "company_statement",
+    "reliability": "2",
+    "pub_date": "2024-11-08",
+    "pub_time": "13:15",
+    "country": "Solvar",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0027.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0027 EVENT_ID: NONE TITLE: Solen Energy sponsors coastal clean-up SOURCE_NAME: Raven Wire SOURCE_TYPE: company_statement RELIABILITY: 2 PUB_DATE: 2024-11-08 PUB_TIME: 13:15 COUNTRY: Solvar SECTOR: general LANGUAGE: en --- Solen Energy sponsors coastal clean-up",
+      "char_count": 272,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Solen Energy has agreed to fund a year of monthly beach clean-ups along the northern coast. The company will pay for gloves, bags and a small truck, while local volunteers will organise the work itself.",
+      "char_count": 207,
+      "word_count": 36
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The first clean-up is planned for the last weekend of the month. Volunteers will meet at a car park near the dunes and work in small groups, with a hot drink provided at the end of the morning.",
+      "char_count": 198,
+      "word_count": 39
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] A company spokesperson said the sponsorship is part of a wider community programme and does not change the firm's normal operations. Local organisers said they hope to collect data on the most common types of litter.",
+      "char_count": 221,
+      "word_count": 37
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0027 EVENT_ID: NONE TITLE: Solen Energy sponsors coastal clean-up SOURCE_NAME: Raven Wire SOURCE_TYPE: company_statement RELIABILITY: 2 PUB_DATE: 2024-11-08 PUB_TIME: 13:15 COUNTRY: Solvar SECTOR: general LANGUAGE: en --- Solen Energy sponsors coastal clean-up\n\n[P1] Solen Energy has agreed to fund a year of monthly beach clean-ups along the northern coast. The company will pay for gloves, bags and a small truck, while local volunteers will organise the work itself.\n\n[P2] The first clean-up is planned for the last weekend of the month. Volunteers will meet at a car park near the dunes and work in small groups, with a hot drink provided at the end of the morning.\n\n[P3] A company spokesperson said the sponsorship is part of a wider community programme and does not change the firm's normal operations. Local organisers said they hope to collect data on the most common types of litter.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}

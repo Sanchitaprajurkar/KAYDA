@@ -1,0 +1,54 @@
+﻿{
+  "doc_id": "WLD-0029",
+  "file_name": "WLD-0029.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\WLD-0029.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0029",
+    "event_id": "NONE",
+    "title": "Television chef spotted at winter fair",
+    "source_name": "Daily Roar",
+    "source_type": "tabloid",
+    "reliability": "4",
+    "pub_date": "2024-12-19",
+    "pub_time": "08:10",
+    "country": "Midgard",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0029.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0029 EVENT_ID: NONE TITLE: Television chef spotted at winter fair SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RELIABILITY: 4 PUB_DATE: 2024-12-19 PUB_TIME: 08:10 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Television chef spotted at winter fair",
+      "char_count": 263,
+      "word_count": 35
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] A well-known television chef was spotted at a winter fair in Midgard at the weekend, apparently enjoying a quiet afternoon with family and friends. Onlookers said the chef queued for a hot drink and bought a small wooden bowl from a craft stall.",
+      "char_count": 250,
+      "word_count": 44
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The chef declined to comment when approached, though a stallholder said the visit was friendly and low-key. Staff at the fair said visitor numbers were strong despite the cold weather.",
+      "char_count": 189,
+      "word_count": 31
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Rumours that the chef is planning a new restaurant in the city remain unconfirmed. A representative for the chef said there was nothing to announce at this time and asked for the family's privacy to be respected.",
+      "char_count": 217,
+      "word_count": 38
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0029 EVENT_ID: NONE TITLE: Television chef spotted at winter fair SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RELIABILITY: 4 PUB_DATE: 2024-12-19 PUB_TIME: 08:10 COUNTRY: Midgard SECTOR: general LANGUAGE: en --- Television chef spotted at winter fair\n\n[P1] A well-known television chef was spotted at a winter fair in Midgard at the weekend, apparently enjoying a quiet afternoon with family and friends. Onlookers said the chef queued for a hot drink and bought a small wooden bowl from a craft stall.\n\n[P2] The chef declined to comment when approached, though a stallholder said the visit was friendly and low-key. Staff at the fair said visitor numbers were strong despite the cold weather.\n\n[P3] Rumours that the chef is planning a new restaurant in the city remain unconfirmed. A representative for the chef said there was nothing to announce at this time and asked for the family's privacy to be respected.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}

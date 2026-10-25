@@ -1,0 +1,96 @@
+﻿{
+  "doc_id": "ORV-0024",
+  "file_name": "ORV-0024.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0024.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0024",
+    "event_id": "E5",
+    "title": "How the Orvan grain corridor worked, and why its ending matters",
+    "source_name": "Harbour Review",
+    "source_type": "explainer",
+    "reliability": 2,
+    "pub_date": "2026-09-12",
+    "pub_time": "10:15",
+    "country": "Orvan",
+    "sector": "general",
+    "language": "en",
+    "file": "ORV-0024.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0024 EVENT_ID: E5 TITLE: How the Orvan grain corridor worked, and why its ending matters SOURCE_NAME: Harbour Review SOURCE_TYPE: explainer RELIABILITY: 2 PUB_DATE: 2026-09-12 PUB_TIME: 10:15 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- How the Orvan grain corridor worked, and why its ending matters",
+      "char_count": 315,
+      "word_count": 45
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] The Corridor Agreement was a one-year arrangement signed on 10 September 2025. Asgard mediated it.",
+      "char_count": 103,
+      "word_count": 16
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+      "char_count": 162,
+      "word_count": 30
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the port by sea; it did not cover rail movements or sales by other exporters.",
+      "char_count": 192,
+      "word_count": 36
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] The agreement expired on 10 September 2026. Talks on renewal failed, and the port moved onto the general rules with no replacement arrangement.",
+      "char_count": 148,
+      "word_count": 24
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The main alternative is rail. The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried.",
+      "char_count": 178,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] Vanir also sells wheat, and some of that supply can reach Tolan and Midgard. The amounts are small compared with Orvan's sea trade.",
+      "char_count": 136,
+      "word_count": 24
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": 1,
+      "raw_text": "[P7] Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes.",
+      "char_count": 176,
+      "word_count": 27
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": 1,
+      "raw_text": "[P8] The agreement was unusual because it was not a tariff deal. It was a shipping arrangement, brokered by a third country, that gave buyers a predictable route and gave Orvan a reason to keep the port open. That made it fragile: when the talks failed, there was no fallback rule to keep the ships moving, and the strike turned a political lapse into an operational one. The overland substitute is real, but it was never designed to carry the same volume. That is why the event looks like a cliff followed by a partial recovery rather than a simple shortage.",
+      "char_count": 559,
+      "word_count": 101
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": 1,
+      "raw_text": "[P9] The result is a cliff in sea volumes followed by a partial overland substitute, not a full recovery.",
+      "char_count": 105,
+      "word_count": 19
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0024 EVENT_ID: E5 TITLE: How the Orvan grain corridor worked, and why its ending matters SOURCE_NAME: Harbour Review SOURCE_TYPE: explainer RELIABILITY: 2 PUB_DATE: 2026-09-12 PUB_TIME: 10:15 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- How the Orvan grain corridor worked, and why its ending matters\n\n[P1] The Corridor Agreement was a one-year arrangement signed on 10 September 2025. Asgard mediated it.\n\n[P2] Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.\n\n[P3] Under the agreement, sea exports ran at about 95% of the old normal. The deal covered wheat and maize leaving the port by sea; it did not cover rail movements or sales by other exporters.\n\n[P4] The agreement expired on 10 September 2026. Talks on renewal failed, and the port moved onto the general rules with no replacement arrangement.\n\n[P5] The main alternative is rail. The Ravik Rail Link can carry grain to Ravik and onward, but its capacity is limited and it cannot move the volumes that the sea route carried.\n\n[P6] Vanir also sells wheat, and some of that supply can reach Tolan and Midgard. The amounts are small compared with Orvan's sea trade.\n\n[P7] Asgard holds a long-term wheat contract with Orvan. That contract is mostly protected, which is why the Asgard wheat route behaves differently from the open-market routes.\n\n[P8] The agreement was unusual because it was not a tariff deal. It was a shipping arrangement, brokered by a third country, that gave buyers a predictable route and gave Orvan a reason to keep the port open. That made it fragile: when the talks failed, there was no fallback rule to keep the ships moving, and the strike turned a political lapse into an operational one. The overland substitute is real, but it was never designed to carry the same volume. That is why the event looks like a cliff followed by a partial recovery rather than a simple shortage.\n\n[P9] The result is a cliff in sea volumes followed by a partial overland substitute, not a full recovery.",
+  "total_paragraphs": 10,
+  "total_pages": 1
+}

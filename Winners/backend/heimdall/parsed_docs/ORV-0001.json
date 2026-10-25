@@ -1,0 +1,166 @@
+﻿{
+  "doc_id": "ORV-0001",
+  "file_name": "ORV-0001.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0001.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "ORV-0001",
+    "event_id": "E5",
+    "title": "Vantro Trading: rail is a partial substitute, not a replacement",
+    "source_name": "Vantro Trading",
+    "source_type": "company_statement",
+    "reliability": 2,
+    "pub_date": "2026-10-20",
+    "pub_time": "09:50",
+    "country": "Ravik",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0001.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0001",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: E5",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Vantro Trading: rail is a partial substitute, not a replacement",
+      "char_count": 70,
+      "word_count": 11
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Vantro Trading",
+      "char_count": 27,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: company_statement",
+      "char_count": 30,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 2",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2026-10-20",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 09:50",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Ravik",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: Wheat",
+      "char_count": 13,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Vantro Trading: rail is a partial substitute, not a replacement",
+      "char_count": 63,
+      "word_count": 10
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted.",
+      "char_count": 124,
+      "word_count": 21
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea.",
+      "char_count": 120,
+      "word_count": 23
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] \"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm.",
+      "char_count": 138,
+      "word_count": 26
+    },
+    {
+      "paragraph_index": 17,
+      "page_number": null,
+      "raw_text": "[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers.",
+      "char_count": 88,
+      "word_count": 15
+    },
+    {
+      "paragraph_index": 18,
+      "page_number": null,
+      "raw_text": "[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it keep customers supplied. Even so, the trader is careful not to promise more than the rail link can carry. The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost. It expects the sea route to remain the main channel once the corridor is restored, whenever that happens.",
+      "char_count": 451,
+      "word_count": 80
+    },
+    {
+      "paragraph_index": 19,
+      "page_number": null,
+      "raw_text": "[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It says it will keep buying Vanir wheat where the price works. It has not changed its delivery terms for Tolan or Midgard.",
+      "char_count": 236,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 20,
+      "page_number": null,
+      "raw_text": "[P7] The firm expects prices to stay firm while the corridor remains closed.",
+      "char_count": 76,
+      "word_count": 13
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0001\n\nEVENT_ID: E5\n\nTITLE: Vantro Trading: rail is a partial substitute, not a replacement\n\nSOURCE_NAME: Vantro Trading\n\nSOURCE_TYPE: company_statement\n\nRELIABILITY: 2\n\nPUB_DATE: 2026-10-20\n\nPUB_TIME: 09:50\n\nCOUNTRY: Ravik\n\nSECTOR: Wheat\n\nLANGUAGE: en\n\n---\n\nVantro Trading: rail is a partial substitute, not a replacement\n\n[P1] Vantro Trading has shifted part of its Orvan wheat business to the Ravik Rail Link while sea loadings remain disrupted.\n\n[P2] The company says the rail link can take only a fraction of the volume that normally leaves Orvan Grain Port by sea.\n\n[P3] \"Rail is a useful bridge for contracted cargoes, but it will not cover the lost sea volumes,\" said Samir Tolle, a trader at the firm.\n\n[P4] Vantro is also buying small volumes of Vanir wheat for Tolan and Midgard customers.\n\n[P5] Vantro's book is split between Orvan grain and smaller positions in Vanir, and the firm says the mix has helped it keep customers supplied. Even so, the trader is careful not to promise more than the rail link can carry. The firm has told buyers that any volume moved overland will come with a different delivery schedule and a higher cost. It expects the sea route to remain the main channel once the corridor is restored, whenever that happens.\n\n[P6] The firm has also told customers that rail space is allocated week by week, so volumes cannot be guaranteed. It says it will keep buying Vanir wheat where the price works. It has not changed its delivery terms for Tolan or Midgard.\n\n[P7] The firm expects prices to stay firm while the corridor remains closed.",
+  "total_paragraphs": 20,
+  "total_pages": null
+}

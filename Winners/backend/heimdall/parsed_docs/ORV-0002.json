@@ -1,0 +1,75 @@
+﻿{
+  "doc_id": "ORV-0002",
+  "file_name": "ORV-0002.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0002.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0002",
+    "event_id": "E5",
+    "title": "Corridor Agreement: terms of the one-year grain arrangement",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "gov_notice",
+    "reliability": 1,
+    "pub_date": "2026-06-15",
+    "pub_time": "09:00",
+    "country": "Orvan",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0002.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0002 EVENT_ID: E5 TITLE: Corridor Agreement: terms of the one-year grain arrangement SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2026-06-15 PUB_TIME: 09:00 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Corridor Agreement: terms of the one-year grain arrangement",
+      "char_count": 312,
+      "word_count": 40
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] The Realm Trade Ministry publishes this summary of the Corridor Agreement for the guidance of exporters and shippers.",
+      "char_count": 122,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from Orvan Grain Port.",
+      "char_count": 137,
+      "word_count": 26
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Asgard mediated the agreement. While it was in force, sea exports from Orvan ran at about 95% of the old normal.",
+      "char_count": 117,
+      "word_count": 22
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] The agreement dealt only with the sea corridor. Rail movements and sales by other exporters were outside it.",
+      "char_count": 113,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The summary is issued in the ministry's usual form and is intended for shippers who need the standing terms in one place. It repeats the text that exporters have worked under since the agreement took effect. Questions about a particular cargo should go to the customs office that handles the port, not to the mediation team. The ministry will keep the summary on file after the agreement ends, because contracts signed while it was in force still refer to it.",
+      "char_count": 464,
+      "word_count": 81
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales.",
+      "char_count": 123,
+      "word_count": 22
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0002 EVENT_ID: E5 TITLE: Corridor Agreement: terms of the one-year grain arrangement SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2026-06-15 PUB_TIME: 09:00 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Corridor Agreement: terms of the one-year grain arrangement\n\n[P1] The Realm Trade Ministry publishes this summary of the Corridor Agreement for the guidance of exporters and shippers.\n\n[P2] The agreement was signed on 10 September 2025 and ran for one year. It covered wheat and maize shipped by sea from Orvan Grain Port.\n\n[P3] Asgard mediated the agreement. While it was in force, sea exports from Orvan ran at about 95% of the old normal.\n\n[P4] The agreement dealt only with the sea corridor. Rail movements and sales by other exporters were outside it.\n\n[P5] The summary is issued in the ministry's usual form and is intended for shippers who need the standing terms in one place. It repeats the text that exporters have worked under since the agreement took effect. Questions about a particular cargo should go to the customs office that handles the port, not to the mediation team. The ministry will keep the summary on file after the agreement ends, because contracts signed while it was in force still refer to it.\n\n[P6] This summary is issued for record. It does not change customs duties, quality rules or the general law on grain sales.",
+  "total_paragraphs": 7,
+  "total_pages": 1
+}

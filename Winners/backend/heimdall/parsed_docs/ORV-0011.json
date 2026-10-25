@@ -1,0 +1,82 @@
+﻿{
+  "doc_id": "ORV-0011",
+  "file_name": "ORV-0011.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0011.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ORV-0011",
+    "event_id": "NONE",
+    "title": "Orvan growers point to a full wheat store after a dry spring",
+    "source_name": "Raven Wire",
+    "source_type": "news",
+    "reliability": 2,
+    "pub_date": "2026-04-08",
+    "pub_time": "07:35",
+    "country": "Orvan",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0011.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0011 EVENT_ID: NONE TITLE: Orvan growers point to a full wheat store after a dry spring SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2026-04-08 PUB_TIME: 07:35 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Orvan growers point to a full wheat store after a dry spring",
+      "char_count": 300,
+      "word_count": 47
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] Orvan farm groups expect a solid wheat harvest this season after a dry spring and a cool start to the growing year.",
+      "char_count": 120,
+      "word_count": 23
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] \"The crop is thin in places, but the store should be full,\" said Leif Garrow, who leads the Orvan farm union.",
+      "char_count": 114,
+      "word_count": 22
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] Growers say maize planting is on schedule and that fuel and machinery costs remain the main concern.",
+      "char_count": 105,
+      "word_count": 18
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] The ministry has not published a harvest estimate. Traders are watching the weather rather than the port.",
+      "char_count": 110,
+      "word_count": 18
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "[P5] The farm union's mood is better than it was at the start of the season, when dry weather delayed planting in the west. Growers say the rain came late but in time for the grain to fill, and that the maize crop has caught up. The union is more worried about the cost of spare parts and the availability of seasonal labour than about the harvest itself. Local mills say they expect to buy most of their wheat close to home this year.",
+      "char_count": 435,
+      "word_count": 84
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "[P6] The union says the rain came at the right time for the wheat, though the west is still drier than the east. It expects the maize harvest to begin on schedule. The ministry has not published a forecast, and the union has not asked for one. Local buyers say they will wait for the first samples before setting terms.",
+      "char_count": 319,
+      "word_count": 60
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "[P7] Local buyers say domestic flour demand is steady.",
+      "char_count": 54,
+      "word_count": 9
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0011 EVENT_ID: NONE TITLE: Orvan growers point to a full wheat store after a dry spring SOURCE_NAME: Raven Wire SOURCE_TYPE: news RELIABILITY: 2 PUB_DATE: 2026-04-08 PUB_TIME: 07:35 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Orvan growers point to a full wheat store after a dry spring\n\n[P1] Orvan farm groups expect a solid wheat harvest this season after a dry spring and a cool start to the growing year.\n\n[P2] \"The crop is thin in places, but the store should be full,\" said Leif Garrow, who leads the Orvan farm union.\n\n[P3] Growers say maize planting is on schedule and that fuel and machinery costs remain the main concern.\n\n[P4] The ministry has not published a harvest estimate. Traders are watching the weather rather than the port.\n\n[P5] The farm union's mood is better than it was at the start of the season, when dry weather delayed planting in the west. Growers say the rain came late but in time for the grain to fill, and that the maize crop has caught up. The union is more worried about the cost of spare parts and the availability of seasonal labour than about the harvest itself. Local mills say they expect to buy most of their wheat close to home this year.\n\n[P6] The union says the rain came at the right time for the wheat, though the west is still drier than the east. It expects the maize harvest to begin on schedule. The ministry has not published a forecast, and the union has not asked for one. Local buyers say they will wait for the first samples before setting terms.\n\n[P7] Local buyers say domestic flour demand is steady.",
+  "total_paragraphs": 8,
+  "total_pages": null
+}

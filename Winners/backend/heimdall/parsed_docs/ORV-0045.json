@@ -1,0 +1,82 @@
+﻿{
+  "doc_id": "ORV-0045",
+  "file_name": "ORV-0045.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0045.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0045",
+    "event_id": "E5",
+    "title": "Corvan Grain sea exports down 90%, our channel checks show",
+    "source_name": "Ledger Analytics",
+    "source_type": "analyst_note",
+    "reliability": 3,
+    "pub_date": "2026-11-10",
+    "pub_time": "08:15",
+    "country": "Orvan",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0045.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Analytics SOURCE_TYPE: analyst_note RELIABILITY: 3 PUB_DATE: 2026-11-10 PUB_TIME: 08:15 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Corvan Grain sea exports down 90%, our channel checks show",
+      "char_count": 308,
+      "word_count": 43
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+      "char_count": 109,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The estimate is based on berth bookings and on conversations with loading agents.",
+      "char_count": 86,
+      "word_count": 14
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] We assume the port strike removed most working berths and that rail cannot absorb the difference.",
+      "char_count": 102,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] If correct, the fall is far deeper than the official port index suggests.",
+      "char_count": 78,
+      "word_count": 14
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who provided the berth bookings did not give a common definition of a cancelled cargo, and the note does not reconcile their figures. It also treats the port strike as if it had removed most working berths for the whole quarter, which is an assumption rather than an observation. The official index, which is published with a lag, tells a less dramatic story. Readers should treat the estimate as an outlier until the company reports.",
+      "char_count": 546,
+      "word_count": 95
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] The note's method is simple: count the berths that agents say were booked and compare that with the same weeks a year earlier. It does not adjust for the mix of wheat and maize, or for the size of the vessels. Those choices push the estimate lower than a tonnage-based measure would. The note's author says the figure is meant to capture the direction of travel, not the exact loss. The note does not give a confidence interval or a sample size, and it does not name the agents. It says the estimate will be revised when the company reports quarterly.",
+      "char_count": 556,
+      "word_count": 102
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": 1,
+      "raw_text": "[P7] We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+      "char_count": 95,
+      "word_count": 18
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Analytics SOURCE_TYPE: analyst_note RELIABILITY: 3 PUB_DATE: 2026-11-10 PUB_TIME: 08:15 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Corvan Grain sea exports down 90%, our channel checks show\n\n[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.\n\n[P2] The estimate is based on berth bookings and on conversations with loading agents.\n\n[P3] We assume the port strike removed most working berths and that rail cannot absorb the difference.\n\n[P4] If correct, the fall is far deeper than the official port index suggests.\n\n[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who provided the berth bookings did not give a common definition of a cancelled cargo, and the note does not reconcile their figures. It also treats the port strike as if it had removed most working berths for the whole quarter, which is an assumption rather than an observation. The official index, which is published with a lag, tells a less dramatic story. Readers should treat the estimate as an outlier until the company reports.\n\n[P6] The note's method is simple: count the berths that agents say were booked and compare that with the same weeks a year earlier. It does not adjust for the mix of wheat and maize, or for the size of the vessels. Those choices push the estimate lower than a tonnage-based measure would. The note's author says the figure is meant to capture the direction of travel, not the exact loss. The note does not give a confidence interval or a sample size, and it does not name the agents. It says the estimate will be revised when the company reports quarterly.\n\n[P7] We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+  "total_paragraphs": 8,
+  "total_pages": 1
+}

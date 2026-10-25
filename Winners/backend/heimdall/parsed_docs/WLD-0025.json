@@ -1,0 +1,138 @@
+﻿{
+  "doc_id": "WLD-0025",
+  "file_name": "WLD-0025.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\WLD-0025.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "WLD-0025",
+    "event_id": "NONE",
+    "title": "Library extends opening hours",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2025-01-23",
+    "pub_time": "09:35",
+    "country": "Ravik",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0025.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: WLD-0025",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: NONE",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Library extends opening hours",
+      "char_count": 36,
+      "word_count": 5
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Midgard Times",
+      "char_count": 26,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: news",
+      "char_count": 17,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 2",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2025-01-23",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 09:35",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Ravik",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: general",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Library extends opening hours",
+      "char_count": 29,
+      "word_count": 4
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month. The change follows a trial in the autumn, when evening visits rose steadily.",
+      "char_count": 195,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] Extra staff hours will be funded from the library's existing budget. The reading rooms, computers and borrowing desk will all remain available, though the local history room will close an hour earlier.",
+      "char_count": 206,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] Library staff said the later closing time is aimed at students and people who work during the day. A quiet study area has been added on the first floor, and the cafe will remain open until seven.",
+      "char_count": 200,
+      "word_count": 38
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0025\n\nEVENT_ID: NONE\n\nTITLE: Library extends opening hours\n\nSOURCE_NAME: Midgard Times\n\nSOURCE_TYPE: news\n\nRELIABILITY: 2\n\nPUB_DATE: 2025-01-23\n\nPUB_TIME: 09:35\n\nCOUNTRY: Ravik\n\nSECTOR: general\n\nLANGUAGE: en\n\n---\n\nLibrary extends opening hours\n\n[P1] The public library in Ravik's largest town will stay open until eight in the evening on weekdays from next month. The change follows a trial in the autumn, when evening visits rose steadily.\n\n[P2] Extra staff hours will be funded from the library's existing budget. The reading rooms, computers and borrowing desk will all remain available, though the local history room will close an hour earlier.\n\n[P3] Library staff said the later closing time is aimed at students and people who work during the day. A quiet study area has been added on the first floor, and the cafe will remain open until seven.",
+  "total_paragraphs": 16,
+  "total_pages": null
+}

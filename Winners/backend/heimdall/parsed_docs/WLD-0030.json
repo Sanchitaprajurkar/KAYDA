@@ -1,0 +1,54 @@
+﻿{
+  "doc_id": "WLD-0030",
+  "file_name": "WLD-0030.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\WLD-0030.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "WLD-0030",
+    "event_id": "NONE",
+    "title": "Dance troupe announces winter tour",
+    "source_name": "Asgard Herald",
+    "source_type": "news",
+    "reliability": "3",
+    "pub_date": "2024-11-29",
+    "pub_time": "16:10",
+    "country": "Vanir",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0030.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: WLD-0030 EVENT_ID: NONE TITLE: Dance troupe announces winter tour SOURCE_NAME: Asgard Herald SOURCE_TYPE: news RELIABILITY: 3 PUB_DATE: 2024-11-29 PUB_TIME: 16:10 COUNTRY: Vanir SECTOR: general LANGUAGE: en --- Dance troupe announces winter tour",
+      "char_count": 253,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] A contemporary dance troupe from Vanir has announced a winter tour of six towns. The programme includes a new work inspired by folk stories and a shorter piece set to live percussion.",
+      "char_count": 188,
+      "word_count": 33
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The troupe has twelve dancers and travels with a small technical team. Performances will take place in halls and community centres, with workshops for young people at three of the venues.",
+      "char_count": 192,
+      "word_count": 32
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Tickets are available now, with concessions for students and older residents. The tour begins next month and ends before the new year, and the troupe will return to Vanir for a final performance. A short question-and-answer session with the dancers will follow the last show in each town.",
+      "char_count": 293,
+      "word_count": 49
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0030 EVENT_ID: NONE TITLE: Dance troupe announces winter tour SOURCE_NAME: Asgard Herald SOURCE_TYPE: news RELIABILITY: 3 PUB_DATE: 2024-11-29 PUB_TIME: 16:10 COUNTRY: Vanir SECTOR: general LANGUAGE: en --- Dance troupe announces winter tour\n\n[P1] A contemporary dance troupe from Vanir has announced a winter tour of six towns. The programme includes a new work inspired by folk stories and a shorter piece set to live percussion.\n\n[P2] The troupe has twelve dancers and travels with a small technical team. Performances will take place in halls and community centres, with workshops for young people at three of the venues.\n\n[P3] Tickets are available now, with concessions for students and older residents. The tour begins next month and ends before the new year, and the troupe will return to Vanir for a final performance. A short question-and-answer session with the dancers will follow the last show in each town.",
+  "total_paragraphs": 4,
+  "total_pages": 1
+}

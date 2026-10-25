@@ -1,0 +1,82 @@
+﻿{
+  "doc_id": "ORV-0033",
+  "file_name": "ORV-0033.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0033.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ORV-0033",
+    "event_id": "E5",
+    "title": "Ravik statement on rail capacity for Orvan grain",
+    "source_name": "Ravik government",
+    "source_type": "gov_notice",
+    "reliability": 1,
+    "pub_date": "2026-11-18",
+    "pub_time": "11:00",
+    "country": "Ravik",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0033.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2026-11-18 PUB_TIME: 11:00 COUNTRY: Ravik SECTOR: Wheat LANGUAGE: en --- Ravik statement on rail capacity for Orvan grain",
+      "char_count": 286,
+      "word_count": 39
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] The Ravik government issued this statement.",
+      "char_count": 48,
+      "word_count": 7
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain that would otherwise have gone by sea.",
+      "char_count": 156,
+      "word_count": 27
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister.",
+      "char_count": 106,
+      "word_count": 19
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] The government says shippers should book rail capacity early.",
+      "char_count": 66,
+      "word_count": 10
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": 1,
+      "raw_text": "[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it does not give the volume moved, the share of the lost trade carried, or the tariff charged. The minister's office says the purpose was to reassure buyers that a land route exists.",
+      "char_count": 300,
+      "word_count": 53
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": 1,
+      "raw_text": "[P6] The statement was read out at a briefing and later posted on the ministry's notice board. It does not name the rail operators who attended, and it does not describe the terms on which space is allocated. Buyers who need a booking have been told to approach the link directly. The government says it will issue a further statement if capacity changes.",
+      "char_count": 355,
+      "word_count": 63
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": 1,
+      "raw_text": "[P7] The statement does not give volumes or tariffs.",
+      "char_count": 52,
+      "word_count": 9
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0033 EVENT_ID: E5 TITLE: Ravik statement on rail capacity for Orvan grain SOURCE_NAME: Ravik government SOURCE_TYPE: gov_notice RELIABILITY: 1 PUB_DATE: 2026-11-18 PUB_TIME: 11:00 COUNTRY: Ravik SECTOR: Wheat LANGUAGE: en --- Ravik statement on rail capacity for Orvan grain\n\n[P1] The Ravik government issued this statement.\n\n[P2] Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended. The link is carrying grain that would otherwise have gone by sea.\n\n[P3] \"The rail link covers all of the exports Orvan has lost,\" said Sana Okafor, the Ravik trade minister.\n\n[P4] The government says shippers should book rail capacity early.\n\n[P5] The statement was issued after a meeting between the Ravik government and rail operators. It is short on detail: it does not give the volume moved, the share of the lost trade carried, or the tariff charged. The minister's office says the purpose was to reassure buyers that a land route exists.\n\n[P6] The statement was read out at a briefing and later posted on the ministry's notice board. It does not name the rail operators who attended, and it does not describe the terms on which space is allocated. Buyers who need a booking have been told to approach the link directly. The government says it will issue a further statement if capacity changes.\n\n[P7] The statement does not give volumes or tariffs.",
+  "total_paragraphs": 8,
+  "total_pages": 1
+}

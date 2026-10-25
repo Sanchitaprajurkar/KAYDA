@@ -1,0 +1,61 @@
+﻿{
+  "doc_id": "ATL-0011",
+  "file_name": "ATL-0011.pdf",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ATL-0011.pdf",
+  "format": "PDF",
+  "manifest_meta": {
+    "doc_id": "ATL-0011",
+    "event_id": "NONE",
+    "title": "Country profile: Orvan",
+    "source_name": "Realm Trade Ministry",
+    "source_type": "atlas",
+    "reliability": "1",
+    "pub_date": "2024-01-15",
+    "pub_time": "11:30",
+    "country": "Orvan",
+    "sector": "general",
+    "language": "en",
+    "file": "ATL-0011.pdf",
+    "format": "PDF"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": 1,
+      "raw_text": "DOC_ID: ATL-0011 EVENT_ID: NONE TITLE: Country profile: Orvan SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 11:30 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- Country profile: Orvan",
+      "char_count": 237,
+      "word_count": 30
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": 1,
+      "raw_text": "[P1] Orvan is a grain producer with a long coastline and a temperate interior. It grows wheat and maize on a large scale and also produces fertiliser, which is used at home and sold to neighbouring countries.",
+      "char_count": 208,
+      "word_count": 37
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": 1,
+      "raw_text": "[P2] The main exports are wheat, maize and fertiliser. The country imports machinery and medicines. Orvan Grain Port is the principal export facility, with silos, bulk loaders and a separate berth for bagged fertiliser.",
+      "char_count": 219,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": 1,
+      "raw_text": "[P3] Corvan Grain, a grain exporter, is the best-known firm. The port is connected to the interior by road and a short rail spur, and smaller loading points serve growers in the coastal districts.",
+      "char_count": 196,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": 1,
+      "raw_text": "[P4] Grain is stored in silos at the port and at inland collection points. Smaller berths handle bagged fertiliser, and a coastal road links the port to nearby towns.",
+      "char_count": 166,
+      "word_count": 29
+    }
+  ],
+  "full_text": "DOC_ID: ATL-0011 EVENT_ID: NONE TITLE: Country profile: Orvan SOURCE_NAME: Realm Trade Ministry SOURCE_TYPE: atlas RELIABILITY: 1 PUB_DATE: 2024-01-15 PUB_TIME: 11:30 COUNTRY: Orvan SECTOR: general LANGUAGE: en --- Country profile: Orvan\n\n[P1] Orvan is a grain producer with a long coastline and a temperate interior. It grows wheat and maize on a large scale and also produces fertiliser, which is used at home and sold to neighbouring countries.\n\n[P2] The main exports are wheat, maize and fertiliser. The country imports machinery and medicines. Orvan Grain Port is the principal export facility, with silos, bulk loaders and a separate berth for bagged fertiliser.\n\n[P3] Corvan Grain, a grain exporter, is the best-known firm. The port is connected to the interior by road and a short rail spur, and smaller loading points serve growers in the coastal districts.\n\n[P4] Grain is stored in silos at the port and at inland collection points. Smaller berths handle bagged fertiliser, and a coastal road links the port to nearby towns.",
+  "total_paragraphs": 5,
+  "total_pages": 1
+}

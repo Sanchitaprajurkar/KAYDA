@@ -1,0 +1,61 @@
+﻿{
+  "doc_id": "ORV-0013",
+  "file_name": "ORV-0013.txt",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\ORV-0013.txt",
+  "format": "TXT",
+  "manifest_meta": {
+    "doc_id": "ORV-0013",
+    "event_id": "E5",
+    "title": "Correction: Orvan corridor agreement was not renewed",
+    "source_name": "Raven Wire",
+    "source_type": "correction",
+    "reliability": 2,
+    "pub_date": "2026-09-10",
+    "pub_time": "09:10",
+    "country": "Orvan",
+    "sector": "Wheat",
+    "language": "en",
+    "file": "ORV-0013.txt",
+    "format": "TXT"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: ORV-0013 EVENT_ID: E5 TITLE: Correction: Orvan corridor agreement was not renewed SOURCE_NAME: Raven Wire SOURCE_TYPE: correction RELIABILITY: 2 PUB_DATE: 2026-09-10 PUB_TIME: 09:10 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Correction: Orvan corridor agreement was not renewed",
+      "char_count": 288,
+      "word_count": 37
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "[P1] On 9 September we reported that the Corridor Agreement had been renewed. That report was wrong.",
+      "char_count": 100,
+      "word_count": 17
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "[P2] The agreement expired on 10 September without a renewal. Talks ended without a signed replacement.",
+      "char_count": 103,
+      "word_count": 16
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "[P3] The error appeared in an early edition and was repeated by other outlets. We have removed the report from our wire and asked subscribers to use this correction. The original story should not be relied on. We will review how the claim was sourced.",
+      "char_count": 251,
+      "word_count": 45
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "[P4] We apologise for the error. The correct position is that sea exports now move under the general rules.",
+      "char_count": 107,
+      "word_count": 19
+    }
+  ],
+  "full_text": "DOC_ID: ORV-0013 EVENT_ID: E5 TITLE: Correction: Orvan corridor agreement was not renewed SOURCE_NAME: Raven Wire SOURCE_TYPE: correction RELIABILITY: 2 PUB_DATE: 2026-09-10 PUB_TIME: 09:10 COUNTRY: Orvan SECTOR: Wheat LANGUAGE: en --- Correction: Orvan corridor agreement was not renewed\n\n[P1] On 9 September we reported that the Corridor Agreement had been renewed. That report was wrong.\n\n[P2] The agreement expired on 10 September without a renewal. Talks ended without a signed replacement.\n\n[P3] The error appeared in an early edition and was repeated by other outlets. We have removed the report from our wire and asked subscribers to use this correction. The original story should not be relied on. We will review how the claim was sourced.\n\n[P4] We apologise for the error. The correct position is that sea exports now move under the general rules.",
+  "total_paragraphs": 5,
+  "total_pages": null
+}

@@ -1,0 +1,138 @@
+﻿{
+  "doc_id": "WLD-0024",
+  "file_name": "WLD-0024.docx",
+  "file_path": "C:\\Users\\Ajinkya\\KAYDA\\Winners\\dev_pack_E5\\docs\\WLD-0024.docx",
+  "format": "DOCX",
+  "manifest_meta": {
+    "doc_id": "WLD-0024",
+    "event_id": "NONE",
+    "title": "Council approves park budget after debate",
+    "source_name": "Midgard Times",
+    "source_type": "news",
+    "reliability": "2",
+    "pub_date": "2024-03-11",
+    "pub_time": "14:35",
+    "country": "Midgard",
+    "sector": "general",
+    "language": "en",
+    "file": "WLD-0024.docx",
+    "format": "DOCX"
+  },
+  "paragraphs": [
+    {
+      "paragraph_index": 1,
+      "page_number": null,
+      "raw_text": "DOC_ID: WLD-0024",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 2,
+      "page_number": null,
+      "raw_text": "EVENT_ID: NONE",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 3,
+      "page_number": null,
+      "raw_text": "TITLE: Council approves park budget after debate",
+      "char_count": 48,
+      "word_count": 7
+    },
+    {
+      "paragraph_index": 4,
+      "page_number": null,
+      "raw_text": "SOURCE_NAME: Midgard Times",
+      "char_count": 26,
+      "word_count": 3
+    },
+    {
+      "paragraph_index": 5,
+      "page_number": null,
+      "raw_text": "SOURCE_TYPE: news",
+      "char_count": 17,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 6,
+      "page_number": null,
+      "raw_text": "RELIABILITY: 2",
+      "char_count": 14,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 7,
+      "page_number": null,
+      "raw_text": "PUB_DATE: 2024-03-11",
+      "char_count": 20,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 8,
+      "page_number": null,
+      "raw_text": "PUB_TIME: 14:35",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 9,
+      "page_number": null,
+      "raw_text": "COUNTRY: Midgard",
+      "char_count": 16,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 10,
+      "page_number": null,
+      "raw_text": "SECTOR: general",
+      "char_count": 15,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 11,
+      "page_number": null,
+      "raw_text": "LANGUAGE: en",
+      "char_count": 12,
+      "word_count": 2
+    },
+    {
+      "paragraph_index": 12,
+      "page_number": null,
+      "raw_text": "---",
+      "char_count": 3,
+      "word_count": 1
+    },
+    {
+      "paragraph_index": 13,
+      "page_number": null,
+      "raw_text": "Council approves park budget after debate",
+      "char_count": 41,
+      "word_count": 6
+    },
+    {
+      "paragraph_index": 14,
+      "page_number": null,
+      "raw_text": "[P1] The city council has approved a budget for the repair and replanting of three public parks. The plan includes new paths, benches and drainage work, with most of the money going to the oldest park.",
+      "char_count": 201,
+      "word_count": 36
+    },
+    {
+      "paragraph_index": 15,
+      "page_number": null,
+      "raw_text": "[P2] The vote followed a long debate about parking and about whether to close one entrance during construction. Councillors agreed to keep all entrances open where possible and to publish a monthly progress note.",
+      "char_count": 212,
+      "word_count": 34
+    },
+    {
+      "paragraph_index": 16,
+      "page_number": null,
+      "raw_text": "[P3] Work is expected to begin in the autumn and to take about a year. Residents can comment on the plans at two public meetings, and the council said it will adjust the schedule to avoid the school holidays.",
+      "char_count": 208,
+      "word_count": 39
+    }
+  ],
+  "full_text": "DOC_ID: WLD-0024\n\nEVENT_ID: NONE\n\nTITLE: Council approves park budget after debate\n\nSOURCE_NAME: Midgard Times\n\nSOURCE_TYPE: news\n\nRELIABILITY: 2\n\nPUB_DATE: 2024-03-11\n\nPUB_TIME: 14:35\n\nCOUNTRY: Midgard\n\nSECTOR: general\n\nLANGUAGE: en\n\n---\n\nCouncil approves park budget after debate\n\n[P1] The city council has approved a budget for the repair and replanting of three public parks. The plan includes new paths, benches and drainage work, with most of the money going to the oldest park.\n\n[P2] The vote followed a long debate about parking and about whether to close one entrance during construction. Councillors agreed to keep all entrances open where possible and to publish a monthly progress note.\n\n[P3] Work is expected to begin in the autumn and to take about a year. Residents can comment on the plans at two public meetings, and the council said it will adjust the schedule to avoid the school holidays.",
+  "total_paragraphs": 16,
+  "total_pages": null
+}
