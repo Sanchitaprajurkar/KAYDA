@@ -1,0 +1,151 @@
+{
+  "doc_id": "WLD-0028",
+  "title": "Heatwave prompts water safety campaign",
+  "facts_count": 3,
+  "flagged_count": 1,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "9b13b595",
+      "category": "OTHER",
+      "subject": "Water safety campaign",
+      "statement": "The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwave.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwave."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "a95bb5da",
+      "category": "OTHER",
+      "subject": "Swimming safety",
+      "statement": "Swimming in rivers and lakes is discouraged where there is no lifeguard, and several sites have been marked with warning signs.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Swimming in rivers and lakes is discouraged where there is no lifeguard, and several sites have been marked with warning signs."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "1093459b",
+      "category": "OTHER",
+      "subject": "Heat exhaustion cases",
+      "statement": "The ministry said hospitals have seen an increase in cases of heat exhaustion but that services remain open.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "The ministry said hospitals have seen an increase in cases of heat exhaustion but that services remain open."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "a9485722",
+      "category": "OTHER",
+      "subject": "Free advice line",
+      "statement": "A free advice line will operate during daylight hours for the rest of the week.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "A free advice line will operate during daylight hours for the rest of the week."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.6,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Statement is presented as a confirmed fact rather than a future action."
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0028",
+          "file_name": "WLD-0028.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: WLD-0028 EVENT_ID: NONE TITLE: Heatwave prompts water safety campaign SOURCE_NAME: Realm Trade Ministry SOURCE_T..."
+        }
+      ]
+    },
+    {
+      "name": "health ministry",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0028",
+          "file_name": "WLD-0028.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwav..."
+        }
+      ]
+    },
+    {
+      "name": "hospitals",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0028",
+          "file_name": "WLD-0028.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Officials advised people to avoid strenuous outdoor work during the hottest hours and to check on older neighbours...."
+        }
+      ]
+    }
+  ]
+}

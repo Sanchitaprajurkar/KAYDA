@@ -16,6 +16,9 @@ def test_health_endpoint():
     assert data["as_of_date"] == "2027-01-25"
     assert data["corpus"]["total_documents"] == 76
     assert data["corpus"]["event_id"] == "E5"
+    assert "neon_postgres" in data["services"]
+    assert data["services"]["neon_postgres"]["configured"] is True
+    assert data["services"]["neon_postgres"]["connected"] is True
 
 
 def test_manifest_endpoint():

@@ -1,0 +1,162 @@
+{
+  "doc_id": "ORV-0045",
+  "title": "Corvan Grain sea exports down 90%, our channel checks show",
+  "facts_count": 1,
+  "flagged_count": 1,
+  "entities_count": 5,
+  "facts": [
+    {
+      "fact_id": "7496f371",
+      "category": "TRADE_VOLUME",
+      "subject": "Corvan Grain sea exports",
+      "statement": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+      "date_mentioned": null,
+      "numeric_value": 90.0,
+      "unit": "%",
+      "source_ref": {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "1f62681b",
+      "category": "TRADE_VOLUME",
+      "subject": "Corvan Grain sea exports",
+      "statement": "The note's author says the figure is meant to capture the direction of travel, not the exact loss.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "The note's author says the figure is meant to capture the direction of travel, not the exact loss."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.51,
+      "assertion_status": "ALLEGED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Missing attribution to the note's author as a claim rather than a confirmed fact.",
+        "Citation repaired: quote found in \u00b67, not cited \u00b66",
+        "Assertion status corrected REPORTED -> ALLEGED"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Corvan Grain",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Anal..."
+        },
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended...."
+        },
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Anal..."
+        }
+      ]
+    },
+    {
+      "name": "port strike",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] We assume the port strike removed most working berths and that rail cannot absorb the difference...."
+        },
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+        }
+      ]
+    },
+    {
+      "name": "corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0045",
+          "file_name": "ORV-0045.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended...."
+        }
+      ]
+    }
+  ]
+}

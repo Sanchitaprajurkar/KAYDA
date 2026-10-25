@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Midgard..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] By Lena Sorn. Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels ..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The customs figures are provisional and cover arrivals cleared before the holiday break, so they may be revised. Ev..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "[P7] The ministry is due to publish the December port index later this month...."
+      }
+    ]
+  },
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 13,
+        "text_snippet": "December grain arrivals point to a smaller Orvan share..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] By Lena Sorn. Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels ..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The Orvan port index for December is expected to be about 30, according to people who have seen the monthly return...."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The customs figures are provisional and cover arrivals cleared before the holiday break, so they may be revised. Ev..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures..."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 10,
+        "text_snippet": "SECTOR: Wheat..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] By Lena Sorn. Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels ..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The customs figures are provisional and cover arrivals cleared before the holiday break, so they may be revised. Ev..."
+      }
+    ]
+  },
+  {
+    "name": "Vanir",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik...."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "[P5] The customs figures are provisional and cover arrivals cleared before the holiday break, so they may be revised. Ev..."
+      },
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "[P6] The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures..."
+      }
+    ]
+  },
+  {
+    "name": "Ravik",
+    "type": "PORT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "[P3] Midgard millers have increased purchases from Vanir and moved more grain by rail through Ravik...."
+      }
+    ]
+  },
+  {
+    "name": "Vantro Trading",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0022",
+        "file_name": "ORV-0022.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "[P4] \"The market has found substitutes, but they cost more and they do not cover the whole gap,\" said Samir Tolle of Van..."
+      }
+    ]
+  }
+]

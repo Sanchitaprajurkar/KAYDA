@@ -1,0 +1,116 @@
+[
+  {
+    "fact_id": "74569ad4",
+    "category": "TRADE_VOLUME",
+    "subject": "rice and wheat exports",
+    "statement": "Vanir is the largest rice exporter in the region and a significant wheat producer.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Vanir is the largest rice exporter in the region and a significant wheat producer."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "e5cbcc9f",
+    "category": "TRADE_VOLUME",
+    "subject": "main exports",
+    "statement": "The country's main exports are rice and wheat.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The country's main exports are rice and wheat."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f85ab175",
+    "category": "TRADE_VOLUME",
+    "subject": "imports",
+    "statement": "It imports fuel and fertiliser, both of which are important for its farming sector.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "It imports fuel and fertiliser, both of which are important for its farming sector."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8c29b8d7",
+    "category": "ROUTE_STATUS",
+    "subject": "Vanir Rice Port",
+    "statement": "Vanir Rice Port is the main export facility, with bulk handling and bagging lines.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "Vanir Rice Port is the main export facility, with bulk handling and bagging lines."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "bfded352",
+    "category": "ROUTE_STATUS",
+    "subject": "Vanir Rice Port",
+    "statement": "the port has storage silos and bagging lines, and a rail spur connects it to the main inland towns.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ATL-0013",
+      "file_name": "ATL-0013.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "the port has storage silos and bagging lines, and a rail spur connects it to the main inland towns."
+    },
+    "reliability_tier": 1,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Missing attribution to Vanir Rice Port as the subject.",
+      "Citation repaired: quote found in ¶5, not cited ¶4",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

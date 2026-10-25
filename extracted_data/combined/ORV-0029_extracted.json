@@ -1,0 +1,400 @@
+{
+  "doc_id": "ORV-0029",
+  "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+  "facts_count": 14,
+  "flagged_count": 0,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "c72d61bd",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In July 2026, the value was USD 72.9M and the volume was 187,000 tonnes.",
+      "date_mentioned": "July 2026",
+      "numeric_value": 72.9,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "In July 2026, the value was USD 72.9M and the volume was 187,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "04f25abc",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In August 2026, the value was USD 72.9M and the volume was 187,000 tonnes.",
+      "date_mentioned": "August 2026",
+      "numeric_value": 72.9,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "In August 2026, the value was USD 72.9M and the volume was 187,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5a6154d4",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes.",
+      "date_mentioned": "September 2026",
+      "numeric_value": 30.7,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "9563999d",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.",
+      "date_mentioned": "October 2026",
+      "numeric_value": 32.0,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 18,
+        "text_snippet": "In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "d399a664",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+      "date_mentioned": "November 2026",
+      "numeric_value": 32.5,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 19,
+        "text_snippet": "In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "ff5efd10",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+      "date_mentioned": "December 2026",
+      "numeric_value": 32.5,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "adae782c",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan to Asgard maize",
+      "statement": "Route: Orvan to Asgard, maize.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "Route: Orvan to Asgard, maize."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "1d9ec33b",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In July 2025, the value was USD 76.8M and the volume was 197,000 tonnes.",
+      "date_mentioned": "July 2025",
+      "numeric_value": 76.8,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 21,
+        "text_snippet": "In July 2025, the value was USD 76.8M and the volume was 197,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "176cf628",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In August 2025, the value was USD 76.4M and the volume was 196,000 tonnes.",
+      "date_mentioned": "August 2025",
+      "numeric_value": 76.4,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 22,
+        "text_snippet": "In August 2025, the value was USD 76.4M and the volume was 196,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "fa5badf5",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In September 2025, the value was USD 72.2M and the volume was 185,000 tonnes.",
+      "date_mentioned": "September 2025",
+      "numeric_value": 72.2,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 23,
+        "text_snippet": "In September 2025, the value was USD 72.2M and the volume was 185,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "ea5d90d4",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.",
+      "date_mentioned": "October 2025",
+      "numeric_value": 72.5,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 24,
+        "text_snippet": "In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "78e77d72",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.",
+      "date_mentioned": "November 2025",
+      "numeric_value": 74.1,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 25,
+        "text_snippet": "In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "3e2665d7",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan to Asgard maize",
+      "statement": "In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.",
+      "date_mentioned": "December 2025",
+      "numeric_value": 73.7,
+      "unit": "M",
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 26,
+        "text_snippet": "In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "8feeba60",
+      "category": "ROUTE_STATUS",
+      "subject": "Orvan to Asgard maize",
+      "statement": "The maize route is bought on the open market and has no long-term contract cover.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0029",
+        "file_name": "ORV-0029.docx",
+        "page_number": null,
+        "paragraph_index": 27,
+        "text_snippet": "The maize route is bought on the open market and has no long-term contract cover."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b627, not cited \u00b614"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+        }
+      ]
+    },
+    {
+      "name": "Asgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+        },
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 9,
+          "text_snippet": "COUNTRY: Asgard..."
+        }
+      ]
+    },
+    {
+      "name": "maize",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 13,
+          "text_snippet": "Trade note: Orvan to Asgard, maize, July to December 2026..."
+        },
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Route: Orvan to Asgard, maize...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0029",
+          "file_name": "ORV-0029.docx",
+          "page_number": null,
+          "paragraph_index": 10,
+          "text_snippet": "SECTOR: Wheat..."
+        }
+      ]
+    }
+  ]
+}

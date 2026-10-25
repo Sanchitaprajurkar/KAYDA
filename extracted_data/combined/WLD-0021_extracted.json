@@ -1,0 +1,135 @@
+{
+  "doc_id": "WLD-0021",
+  "title": "Photography exhibition opens at town hall",
+  "facts_count": 3,
+  "flagged_count": 0,
+  "entities_count": 2,
+  "facts": [
+    {
+      "fact_id": "f52c35b8",
+      "category": "OTHER",
+      "subject": "Photography exhibition",
+      "statement": "An exhibition of photographs taken in Ravik's hill villages has opened at the town hall.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0021",
+        "file_name": "WLD-0021.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "An exhibition of photographs taken in Ravik's hill villages has opened at the town hall."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "98f00305",
+      "category": "OTHER",
+      "subject": "Photography exhibition",
+      "statement": "The exhibition is free and runs until the end of the month.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0021",
+        "file_name": "WLD-0021.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "The exhibition is free and runs until the end of the month."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      ]
+    },
+    {
+      "fact_id": "c827fe5a",
+      "category": "OTHER",
+      "subject": "Photography book",
+      "statement": "A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0021",
+        "file_name": "WLD-0021.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "A book of the photographs is available at the front desk, and a portion of the money will go to a local advice service."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A country where the photography exhibition is taking place.",
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0021",
+          "file_name": "WLD-0021.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: WLD-0021 EVENT_ID: NONE TITLE: Photography exhibition opens at town hall SOURCE_NAME: Midgard Times SOURCE_TYPE:..."
+        },
+        {
+          "doc_id": "WLD-0021",
+          "file_name": "WLD-0021.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] An exhibition of photographs taken in Ravik's hill villages has opened at the town hall. The images show work, cele..."
+        }
+      ]
+    },
+    {
+      "name": "town hall",
+      "type": "INFRASTRUCTURE",
+      "aliases": [],
+      "description": "The location where the photography exhibition is held.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0021",
+          "file_name": "WLD-0021.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: WLD-0021 EVENT_ID: NONE TITLE: Photography exhibition opens at town hall SOURCE_NAME: Midgard Times SOURCE_TYPE:..."
+        },
+        {
+          "doc_id": "WLD-0021",
+          "file_name": "WLD-0021.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] An exhibition of photographs taken in Ravik's hill villages has opened at the town hall. The images show work, cele..."
+        },
+        {
+          "doc_id": "WLD-0021",
+          "file_name": "WLD-0021.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The photographer said the project began as a personal record and grew into a wider portrait of the area. Several pe..."
+        }
+      ]
+    }
+  ]
+}

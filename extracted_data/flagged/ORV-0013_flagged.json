@@ -1,0 +1,26 @@
+[
+  {
+    "fact_id": "1fd1f486",
+    "category": "RETRACTION_NOTICE",
+    "subject": "Orvan corridor agreement",
+    "statement": "Correction: Orvan corridor agreement was not renewed",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0013",
+      "file_name": "ORV-0013.txt",
+      "page_number": null,
+      "paragraph_index": 1,
+      "text_snippet": "Correction: Orvan corridor agreement was not renewed"
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.0,
+    "assertion_status": "CORRECTED",
+    "evidence_status": "REJECTED",
+    "validation_notes": [
+      "Verifier: statement not supported by cited paragraph. The statement does not mention that the agreement was not renewed; it only states that it was a correction."
+    ]
+  }
+]

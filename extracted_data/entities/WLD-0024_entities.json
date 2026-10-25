@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0024",
+        "file_name": "WLD-0024.docx",
+        "page_number": null,
+        "paragraph_index": 9,
+        "text_snippet": "COUNTRY: Midgard..."
+      }
+    ]
+  },
+  {
+    "name": "city council",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "The governing body responsible for making decisions regarding local policies and budgets.",
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0024",
+        "file_name": "WLD-0024.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "[P1] The city council has approved a budget for the repair and replanting of three public parks. The plan includes new p..."
+      },
+      {
+        "doc_id": "WLD-0024",
+        "file_name": "WLD-0024.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "[P2] The vote followed a long debate about parking and about whether to close one entrance during construction. Councill..."
+      }
+    ]
+  }
+]

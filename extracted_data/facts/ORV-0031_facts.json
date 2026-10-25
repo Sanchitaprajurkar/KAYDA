@@ -1,0 +1,140 @@
+[
+  {
+    "fact_id": "1610c736",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "maize",
+    "statement": "Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains lapsed.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains lapsed."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "76442abc",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "wheat contract",
+    "statement": "Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "af938cc9",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "wheat contract",
+    "statement": "\"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 4,
+      "text_snippet": "\"The contract covers our wheat, not our maize,\" said Maren Holt, the Asgard trade minister."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "1bd4bc55",
+    "category": "DISRUPTION_STATUS",
+    "subject": "maize cargoes",
+    "statement": "Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 5,
+      "text_snippet": "Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "0ec0a19e",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "stock estimate",
+    "statement": "The ministry has not revised its stock estimate for the winter.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "The ministry has not revised its stock estimate for the winter."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "DENIED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶8, not cited ¶7"
+    ]
+  },
+  {
+    "fact_id": "90ef07fd",
+    "category": "GRAIN_OR_INVENTORY",
+    "subject": "maize position",
+    "statement": "Feed buyers say they are working through contracts signed before the corridor ended. They expect the next round of purchases to be smaller.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0031",
+      "file_name": "ORV-0031.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Feed buyers say they are working through contracts signed before the corridor ended. They expect the next round of purchases to be smaller."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Missing qualifier on 'expect the next round of purchases to be smaller' - it is stated as an expectation rather than a confirmed fact.",
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

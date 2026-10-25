@@ -1,0 +1,158 @@
+[
+  {
+    "fact_id": "931fef1c",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In July 2026, the value was USD 39.9M and the volume was 114,000 tonnes.",
+    "date_mentioned": "July 2026",
+    "numeric_value": 39.9,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "In July 2026, the value was USD 39.9M and the volume was 114,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a963c97a",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In August 2026, the value was USD 42.7M and the volume was 122,000 tonnes.",
+    "date_mentioned": "August 2026",
+    "numeric_value": 42.7,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "In August 2026, the value was USD 42.7M and the volume was 122,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "3ca8bda9",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In September 2026, the value was USD 17.0M and the volume was 43,000 tonnes.",
+    "date_mentioned": "September 2026",
+    "numeric_value": 17.0,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "In September 2026, the value was USD 17.0M and the volume was 43,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f5c41112",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In October 2026, the value was USD 15.4M and the volume was 39,000 tonnes.",
+    "date_mentioned": "October 2026",
+    "numeric_value": 15.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "In October 2026, the value was USD 15.4M and the volume was 39,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "f0497c99",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In November 2026, the value was USD 15.8M and the volume was 40,000 tonnes.",
+    "date_mentioned": "November 2026",
+    "numeric_value": 15.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "In November 2026, the value was USD 15.8M and the volume was 40,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "68c6df5a",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Tolan wheat",
+    "statement": "In December 2026, the value was USD 15.0M and the volume was 38,000 tonnes.",
+    "date_mentioned": "December 2026",
+    "numeric_value": 15.0,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "In December 2026, the value was USD 15.0M and the volume was 38,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "4aee0fe3",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Tolan wheat supply",
+    "statement": "Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0046",
+      "file_name": "ORV-0046.pdf",
+      "page_number": 1,
+      "paragraph_index": 15,
+      "text_snippet": "Tolan buyers replaced part of the lost volume with wheat from Vanir, but the replacement was smaller than the gap."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b615, not cited \u00b614"
+    ]
+  }
+]

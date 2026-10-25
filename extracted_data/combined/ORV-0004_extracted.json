@@ -1,0 +1,276 @@
+{
+  "doc_id": "ORV-0004",
+  "title": "Vantro Trading: markets have already adjusted, no damage",
+  "facts_count": 7,
+  "flagged_count": 0,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "7a1e9f49",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan corridor agreement",
+      "statement": "Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "321c79ea",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "grain prices",
+      "statement": "Prices have settled and buyers have found alternative supply, the firm says.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Prices have settled and buyers have found alternative supply, the firm says."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "0c417013",
+      "category": "OTHER",
+      "subject": "market status",
+      "statement": "Markets have adjusted; there is no damage left for our customers,\" said Samir Tolle, a trader at the firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "\"Markets have adjusted; there is no damage left for our customers,\" said Samir Tolle, a trader at the firm."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "20ee0f7d",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "company book status",
+      "statement": "The company says its own book is balanced for the rest of the year.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "The company says its own book is balanced for the rest of the year."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "44d68dd3",
+      "category": "OTHER",
+      "subject": "contract details",
+      "statement": "Vantro says its own book is balanced, but it does not show the positions or the terms of the substitute supply.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "Vantro says its own book is balanced, but it does not show the positions or the terms of the substitute supply."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "cab25e95",
+      "category": "OTHER",
+      "subject": "delivery terms",
+      "statement": "The firm says it has honoured all delivery terms this quarter.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The firm says it has honoured all delivery terms this quarter."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "15281011",
+      "category": "TRADE_VOLUME",
+      "subject": "volume figures",
+      "statement": "Vantro declined to give volume figures.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0004",
+        "file_name": "ORV-0004.pdf",
+        "page_number": 1,
+        "paragraph_index": 8,
+        "text_snippet": "Vantro declined to give volume figures."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "DENIED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b68, not cited \u00b67"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0004 EVENT_ID: E5 TITLE: Vantro Trading: markets have already adjusted, no damage SOURCE_NAME: Vantro Tradin..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0004 EVENT_ID: E5 TITLE: Vantro Trading: markets have already adjusted, no damage SOURCE_NAME: Vantro Tradin..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [
+        "Orvan corridor"
+      ],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement...."
+        }
+      ]
+    },
+    {
+      "name": "Vantro Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A trading company involved in grain markets.",
+      "mentions_count": 7,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0004 EVENT_ID: E5 TITLE: Vantro Trading: markets have already adjusted, no damage SOURCE_NAME: Vantro Tradin..."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Vantro Trading says grain markets have already adjusted to the end of the Orvan corridor agreement...."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Prices have settled and buyers have found alternative supply, the firm says...."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] \"Markets have adjusted; there is no damage left for our customers,\" said Samir Tolle, a trader at the firm...."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The company says its own book is balanced for the rest of the year...."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The statement is a view from a trading desk, not an audited result. Vantro says its own book is balanced, but it do..."
+        },
+        {
+          "doc_id": "ORV-0004",
+          "file_name": "ORV-0004.pdf",
+          "page_number": 1,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The firm's book includes contracts for delivery after the current quarter, and it says those contracts are covered...."
+        }
+      ]
+    }
+  ]
+}

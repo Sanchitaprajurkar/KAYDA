@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Solen Energy",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": "A company sponsoring coastal clean-ups",
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0027",
+        "file_name": "WLD-0027.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: WLD-0027 EVENT_ID: NONE TITLE: Solen Energy sponsors coastal clean-up SOURCE_NAME: Raven Wire SOURCE_TYPE: compa..."
+      },
+      {
+        "doc_id": "WLD-0027",
+        "file_name": "WLD-0027.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Solen Energy has agreed to fund a year of monthly beach clean-ups along the northern coast. The company will pay fo..."
+      },
+      {
+        "doc_id": "WLD-0027",
+        "file_name": "WLD-0027.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The first clean-up is planned for the last weekend of the month. Volunteers will meet at a car park near the dunes ..."
+      },
+      {
+        "doc_id": "WLD-0027",
+        "file_name": "WLD-0027.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] A company spokesperson said the sponsorship is part of a wider community programme and does not change the firm's n..."
+      }
+    ]
+  },
+  {
+    "name": "Solvar",
+    "type": "NATION",
+    "aliases": [],
+    "description": "Country where the coastal clean-up is taking place",
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0027",
+        "file_name": "WLD-0027.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: WLD-0027 EVENT_ID: NONE TITLE: Solen Energy sponsors coastal clean-up SOURCE_NAME: Raven Wire SOURCE_TYPE: compa..."
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "fact_id": "cc23c235",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Orvan grain corridor",
+    "statement": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0015",
+      "file_name": "ORV-0015.txt",
+      "page_number": null,
+      "paragraph_index": 2,
+      "text_snippet": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "a6561510",
+    "category": "TRADE_VOLUME",
+    "subject": "sea exports",
+    "statement": "The Asgard Herald understands that the agreement will keep sea exports near their recent level.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0015",
+      "file_name": "ORV-0015.txt",
+      "page_number": null,
+      "paragraph_index": 3,
+      "text_snippet": "The Asgard Herald understands that the agreement will keep sea exports near their recent level."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "50716089",
+    "category": "DISRUPTION_STATUS",
+    "subject": "feed mills",
+    "statement": "Feed mills that had been testing alternative suppliers put those enquiries on hold.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0015",
+      "file_name": "ORV-0015.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "Feed mills that had been testing alternative suppliers put those enquiries on hold."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  },
+  {
+    "fact_id": "bfc199f1",
+    "category": "ROUTE_STATUS",
+    "subject": "shipping agents",
+    "statement": "Shipping agents in Asgard reported no change to schedules.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0015",
+      "file_name": "ORV-0015.txt",
+      "page_number": null,
+      "paragraph_index": 8,
+      "text_snippet": "Shipping agents in Asgard reported no change to schedules."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶8, not cited ¶7"
+    ]
+  },
+  {
+    "fact_id": "f25a02b5",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Asgard buyers",
+    "statement": "For Asgard buyers, the report suggested that the recent pattern of arrivals would continue without a break.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0015",
+      "file_name": "ORV-0015.txt",
+      "page_number": null,
+      "paragraph_index": 7,
+      "text_snippet": "For Asgard buyers, the report suggested that the recent pattern of arrivals would continue without a break."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement implies certainty ('would continue') rather than the hedged language ('suggested') used in the paragraph.",
+      "Citation repaired: quote found in ¶7, not cited ¶6",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

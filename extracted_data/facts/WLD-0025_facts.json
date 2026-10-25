@@ -1,0 +1,24 @@
+[
+  {
+    "fact_id": "5ba017ca",
+    "category": "OTHER",
+    "subject": "Library funding",
+    "statement": "Extra staff hours will be funded from the library's existing budget.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0025",
+      "file_name": "WLD-0025.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "Extra staff hours will be funded from the library's existing budget."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

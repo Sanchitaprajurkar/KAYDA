@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: WLD-0028 EVENT_ID: NONE TITLE: Heatwave prompts water safety campaign SOURCE_NAME: Realm Trade Ministry SOURCE_T..."
+      }
+    ]
+  },
+  {
+    "name": "health ministry",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] The health ministry has launched a campaign reminding residents to drink water regularly during the current heatwav..."
+      }
+    ]
+  },
+  {
+    "name": "hospitals",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "WLD-0028",
+        "file_name": "WLD-0028.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Officials advised people to avoid strenuous outdoor work during the hottest hours and to check on older neighbours...."
+      }
+    ]
+  }
+]

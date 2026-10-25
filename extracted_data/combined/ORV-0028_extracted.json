@@ -1,0 +1,127 @@
+{
+  "doc_id": "ORV-0028",
+  "title": "FAMINE FEAR AS ORVAN GRAIN VANISHES",
+  "facts_count": 2,
+  "flagged_count": 0,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "50b28558",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan grain shipments",
+      "statement": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0028",
+        "file_name": "ORV-0028.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "f0fa8141",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "bread prices",
+      "statement": "Bread prices have already started to climb.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0028",
+        "file_name": "ORV-0028.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "Bread prices have already started to climb."
+      },
+      "reliability_tier": 4,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0028 EVENT_ID: E5 TITLE: FAMINE FEAR AS ORVAN GRAIN VANISHES SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RE..."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal...."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] The government has refused to confirm the claim...."
+        },
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The story is based on a single warehouse worker and a photograph of an empty shelf that the paper says was taken in..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal...."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0028",
+          "file_name": "ORV-0028.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0028 EVENT_ID: E5 TITLE: FAMINE FEAR AS ORVAN GRAIN VANISHES SOURCE_NAME: Daily Roar SOURCE_TYPE: tabloid RE..."
+        }
+      ]
+    }
+  ]
+}

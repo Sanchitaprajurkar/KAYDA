@@ -1,0 +1,192 @@
+[
+  {
+    "fact_id": "631ff815",
+    "category": "TRADE_VOLUME",
+    "subject": "Orvan sea routes",
+    "statement": "Our model puts the loss on the four Orvan sea routes at 50% to 60% of value in the fourth quarter, against the deal-level path.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "Our model puts the loss on the four Orvan sea routes at 50% to 60% of value in the fourth quarter, against the deal-level path."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "89fda548",
+    "category": "TRADE_VOLUME",
+    "subject": "Vanir wheat",
+    "statement": "Third, we assume Vanir wheat gains of 14% to 18% in volume on the Tolan and Midgard routes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 17,
+      "text_snippet": "Third, we assume Vanir wheat gains of 14% to 18% in volume on the Tolan and Midgard routes."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "5ad39a27",
+    "category": "ROUTE_STATUS",
+    "subject": "sea route",
+    "statement": "The model does not include a full reopening of the sea route, because the port index does not support one.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "The model does not include a full reopening of the sea route, because the port index does not support one."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "8c83a9f0",
+    "category": "ROUTE_STATUS",
+    "subject": "sea route",
+    "statement": "It also does not include a second strike or a new agreement.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "It also does not include a second strike or a new agreement."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶20, not cited ¶21"
+    ]
+  },
+  {
+    "fact_id": "3bb9d795",
+    "category": "DISRUPTION_STATUS",
+    "subject": "estimate",
+    "statement": "Those choices keep the estimate conservative on volumes and cautious on prices.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 20,
+      "text_snippet": "Those choices keep the estimate conservative on volumes and cautious on prices."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶20, not cited ¶21"
+    ]
+  },
+  {
+    "fact_id": "57b5de3b",
+    "category": "TRADE_VOLUME",
+    "subject": "rail runs",
+    "statement": "Second, we assume rail runs at its practical limit, which we put at 54% above the pre-crisis volume on a base of USD 25M a month.",
+    "date_mentioned": null,
+    "numeric_value": 54.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Second, we assume rail runs at its practical limit, which we put at 54% above the pre-crisis volume on a base of USD 25M a month."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value is stated as a percentage but not explicitly confirmed in the paragraph.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "5000b6cc",
+    "category": "TRADE_VOLUME",
+    "subject": "Asgard wheat contract",
+    "statement": "We assume a loss of about 8%.",
+    "date_mentioned": null,
+    "numeric_value": 8.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 18,
+      "text_snippet": "We assume a loss of about 8%."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. The statement drops the hedge 'about' from the original text.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  },
+  {
+    "fact_id": "8890e142",
+    "category": "TRADE_VOLUME",
+    "subject": "Midgard wheat",
+    "statement": "On these assumptions, the net value loss for Midgard wheat is close to 40%, once Vanir supply is included.",
+    "date_mentioned": null,
+    "numeric_value": 40.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0018",
+      "file_name": "ORV-0018.docx",
+      "page_number": null,
+      "paragraph_index": 21,
+      "text_snippet": "On these assumptions, the net value loss for Midgard wheat is close to 40%, once Vanir supply is included."
+    },
+    "reliability_tier": 3,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value is stated as a percentage but not explicitly confirmed in the paragraph.",
+      "Citation repaired: quote found in ¶21, not cited ¶20",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

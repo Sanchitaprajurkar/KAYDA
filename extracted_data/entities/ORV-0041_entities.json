@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Midgard",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0041 EVENT_ID: E5 TITLE: Spring bookings point to a slow Orvan recovery SOURCE_NAME: Midgard Times SOURCE_TY..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels bef..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commi..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0041 EVENT_ID: E5 TITLE: Spring bookings point to a slow Orvan recovery SOURCE_NAME: Midgard Times SOURCE_TY..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels bef..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] Port agents in Orvan say berth use is improving from the winter low...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer...."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 5,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0041 EVENT_ID: E5 TITLE: Spring bookings point to a slow Orvan recovery SOURCE_NAME: Midgard Times SOURCE_TY..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels bef..."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commi..."
+      }
+    ]
+  },
+  {
+    "name": "Ravik",
+    "type": "PORT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer...."
+      }
+    ]
+  },
+  {
+    "name": "Vanir",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] Rail loadings through Ravik are still high, and Vanir continues to supply part of Midgard's wheat...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] \"We are buying again, but we are not relying on one route,\" said a Midgard buyer...."
+      },
+      {
+        "doc_id": "ORV-0041",
+        "file_name": "ORV-0041.txt",
+        "page_number": null,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The bookings are still small compared with the trade before the corridor ended, and buyers are careful not to commi..."
+      }
+    ]
+  }
+]

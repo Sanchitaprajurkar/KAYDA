@@ -1,0 +1,46 @@
+[
+  {
+    "fact_id": "83bcde8b",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In January 2027, the value was USD 34.9M and the volume was 85,000 tonnes.",
+    "date_mentioned": "January 2027",
+    "numeric_value": 34.9,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0036",
+      "file_name": "ORV-0036.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "In January 2027, the value was USD 34.9M and the volume was 85,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": false,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "d585af43",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Midgard wheat",
+    "statement": "In January 2026, the value was USD 84.6M and the volume was 235,000 tonnes.",
+    "date_mentioned": "January 2026",
+    "numeric_value": 84.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0036",
+      "file_name": "ORV-0036.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "In January 2026, the value was USD 84.6M and the volume was 235,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": false,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  }
+]

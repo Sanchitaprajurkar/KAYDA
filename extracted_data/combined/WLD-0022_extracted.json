@@ -1,0 +1,125 @@
+{
+  "doc_id": "WLD-0022",
+  "title": "Museum acquires antique clock collection",
+  "facts_count": 2,
+  "flagged_count": 2,
+  "entities_count": 1,
+  "facts": [
+    {
+      "fact_id": "d40c073d",
+      "category": "OTHER",
+      "subject": "oldest clock",
+      "statement": "The oldest item is a wooden wall clock with a hand-painted face, and the newest dates from the early part of the last century.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0022",
+        "file_name": "WLD-0022.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "The oldest item is a wooden wall clock with a hand-painted face, and the newest dates from the early part of the last century."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "ca00d53b",
+      "category": "OTHER",
+      "subject": "clock exhibition",
+      "statement": "The museum plans to open a small exhibition in the spring.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0022",
+        "file_name": "WLD-0022.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "The museum plans to open a small exhibition in the spring."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b64, not cited \u00b63"
+      ]
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "a152698e",
+      "category": "OTHER",
+      "subject": "antique clock collection",
+      "statement": "A private collector has donated more than sixty antique clocks to a museum in Dorin.",
+      "date_mentioned": null,
+      "numeric_value": 60.0,
+      "unit": "clocks",
+      "source_ref": {
+        "doc_id": "WLD-0022",
+        "file_name": "WLD-0022.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "A private collector has donated more than sixty antique clocks to a museum in Dorin."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "REJECTED",
+      "validation_notes": [
+        "Numeric value 60 is not stated in the source paragraph (calculated or invented)"
+      ]
+    },
+    {
+      "fact_id": "3484c39d",
+      "category": "OTHER",
+      "subject": "public talk",
+      "statement": "A clockmaker has offered to give a public talk about repair techniques, and the museum is looking for volunteers to help record the collection.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "WLD-0022",
+        "file_name": "WLD-0022.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "A clockmaker has offered to give a public talk about repair techniques, and the museum is looking for volunteers to help record the collection."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.51,
+      "assertion_status": "REPORTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Claimed assertion status of CONFIRMED is incorrect; the statement is reported as an offer, not confirmed.",
+        "Citation repaired: quote found in \u00b64, not cited \u00b63",
+        "Assertion status corrected CONFIRMED -> REPORTED"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Dorin",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "WLD-0022",
+          "file_name": "WLD-0022.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: WLD-0022 EVENT_ID: NONE TITLE: Museum acquires antique clock collection SOURCE_NAME: Asgard Herald SOURCE_TYPE: ..."
+        }
+      ]
+    }
+  ]
+}

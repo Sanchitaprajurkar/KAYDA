@@ -1,0 +1,210 @@
+{
+  "doc_id": "ORV-0049",
+  "title": "Orvan corridor: talks on track, keep the base case",
+  "facts_count": 3,
+  "flagged_count": 2,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "091d7088",
+      "category": "TRADE_VOLUME",
+      "subject": "sea exports",
+      "statement": "Our base case assumes sea exports stay near 95% of the old normal through the winter.",
+      "date_mentioned": null,
+      "numeric_value": 95.0,
+      "unit": "%",
+      "source_ref": {
+        "doc_id": "ORV-0049",
+        "file_name": "ORV-0049.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "Our base case assumes sea exports stay near 95% of the old normal through the winter."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "b566164f",
+      "category": "OTHER",
+      "subject": "risk of signing delay",
+      "statement": "The main risk is a delay in signing, not a failure.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0049",
+        "file_name": "ORV-0049.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "The main risk is a delay in signing, not a failure."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "6ef586a6",
+      "category": "GRAIN_OR_INVENTORY",
+      "subject": "Orvan wheat",
+      "statement": "For now, we see no reason to mark Orvan wheat lower.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0049",
+        "file_name": "ORV-0049.docx",
+        "page_number": null,
+        "paragraph_index": 21,
+        "text_snippet": "For now, we see no reason to mark Orvan wheat lower."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "6cfe23be",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Orvan corridor",
+      "statement": "We think the Orvan corridor will be renewed.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0049",
+        "file_name": "ORV-0049.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "We think the Orvan corridor will be renewed."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.6,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. The statement is framed as a belief ('We think') rather than a confirmed fact."
+      ]
+    },
+    {
+      "fact_id": "f74c350c",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Orvan wheat",
+      "statement": "If the corridor is renewed, the recent risk premium should fade and Orvan wheat should trade close to its previous level.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0049",
+        "file_name": "ORV-0049.docx",
+        "page_number": null,
+        "paragraph_index": 20,
+        "text_snippet": "If the corridor is renewed, the recent risk premium should fade and Orvan wheat should trade close to its previous level."
+      },
+      "reliability_tier": 3,
+      "is_as_of_valid": true,
+      "confidence": 0.6,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. The statement implies a future outcome ('should fade and trade close') rather than a confirmed fact."
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 9,
+          "text_snippet": "COUNTRY: Orvan..."
+        },
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] We think the Orvan corridor will be renewed. Talks are on track and neither side has an interest in a lapse...."
+        },
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 20,
+          "text_snippet": "[P7] The note's price view follows from the base case. If the corridor is renewed, the recent risk premium should fade a..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 10,
+          "text_snippet": "SECTOR: Wheat..."
+        },
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 20,
+          "text_snippet": "[P7] The note's price view follows from the base case. If the corridor is renewed, the recent risk premium should fade a..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan corridor",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "TITLE: Orvan corridor: talks on track, keep the base case..."
+        },
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] We think the Orvan corridor will be renewed. Talks are on track and neither side has an interest in a lapse...."
+        },
+        {
+          "doc_id": "ORV-0049",
+          "file_name": "ORV-0049.docx",
+          "page_number": null,
+          "paragraph_index": 20,
+          "text_snippet": "[P7] The note's price view follows from the base case. If the corridor is renewed, the recent risk premium should fade a..."
+        }
+      ]
+    }
+  ]
+}

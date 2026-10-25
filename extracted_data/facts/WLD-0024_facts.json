@@ -1,0 +1,71 @@
+[
+  {
+    "fact_id": "87de6da2",
+    "category": "OTHER",
+    "subject": "park budget",
+    "statement": "The city council has approved a budget for the repair and replanting of three public parks.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0024",
+      "file_name": "WLD-0024.docx",
+      "page_number": null,
+      "paragraph_index": 14,
+      "text_snippet": "The city council has approved a budget for the repair and replanting of three public parks."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "ddddf2ac",
+    "category": "OTHER",
+    "subject": "construction debate",
+    "statement": "The vote followed a long debate about parking and about whether to close one entrance during construction.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0024",
+      "file_name": "WLD-0024.docx",
+      "page_number": null,
+      "paragraph_index": 15,
+      "text_snippet": "The vote followed a long debate about parking and about whether to close one entrance during construction."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "283ae826",
+    "category": "OTHER",
+    "subject": "construction schedule",
+    "statement": "Work is expected to begin in the autumn and to take about a year.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "WLD-0024",
+      "file_name": "WLD-0024.docx",
+      "page_number": null,
+      "paragraph_index": 16,
+      "text_snippet": "Work is expected to begin in the autumn and to take about a year."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Missing hedge 'expected' in the statement.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

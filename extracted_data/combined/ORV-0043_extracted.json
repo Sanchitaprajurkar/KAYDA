@@ -1,0 +1,175 @@
+{
+  "doc_id": "ORV-0043",
+  "title": "Orvan grain corridor renewed for a second year",
+  "facts_count": 2,
+  "flagged_count": 1,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "099c55fc",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "Orvan grain corridor",
+      "statement": "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0043",
+        "file_name": "ORV-0043.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "66b12fc8",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Wheat offers for Orvan cargoes",
+      "statement": "Wheat offers for Orvan cargoes eased on the report.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0043",
+        "file_name": "ORV-0043.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "Wheat offers for Orvan cargoes eased on the report."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "6c559985",
+      "category": "TRADE_VOLUME",
+      "subject": "sea exports",
+      "statement": "The renewal would keep sea exports at about 95% of the old normal.",
+      "date_mentioned": null,
+      "numeric_value": 95.0,
+      "unit": "%",
+      "source_ref": {
+        "doc_id": "ORV-0043",
+        "file_name": "ORV-0043.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "The renewal would keep sea exports at about 95% of the old normal."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.6,
+      "assertion_status": "PROJECTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Numeric value of 95% is stated as 'about 95%', which is a hedge that is missing in the statement."
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0043 EVENT_ID: E5 TITLE: Orvan grain corridor renewed for a second year SOURCE_NAME: Raven Wire SOURCE_TYPE:..."
+        },
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in t..."
+        },
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The report was put together quickly after two sources said a signing was close. It did not include a copy of the te..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0043 EVENT_ID: E5 TITLE: Orvan grain corridor renewed for a second year SOURCE_NAME: Raven Wire SOURCE_TYPE:..."
+        },
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The report was put together quickly after two sources said a signing was close. It did not include a copy of the te..."
+        }
+      ]
+    },
+    {
+      "name": "Corridor Agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in t..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan grain corridor",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0043 EVENT_ID: E5 TITLE: Orvan grain corridor renewed for a second year SOURCE_NAME: Raven Wire SOURCE_TYPE:..."
+        },
+        {
+          "doc_id": "ORV-0043",
+          "file_name": "ORV-0043.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in t..."
+        }
+      ]
+    }
+  ]
+}

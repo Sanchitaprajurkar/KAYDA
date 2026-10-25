@@ -1,0 +1,367 @@
+{
+  "doc_id": "ATL-0006",
+  "title": "Country profile: Ravik",
+  "facts_count": 7,
+  "flagged_count": 1,
+  "entities_count": 4,
+  "facts": [
+    {
+      "fact_id": "11c35c0f",
+      "category": "OTHER",
+      "subject": "Ravik",
+      "statement": "Ravik is a land-bridge neighbour that connects the eastern and western parts of the region by rail and road.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 14,
+        "text_snippet": "Ravik is a land-bridge neighbour that connects the eastern and western parts of the region by rail and road."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "b341072d",
+      "category": "TRADE_VOLUME",
+      "subject": "Ravik exports",
+      "statement": "The main exports are rail and road transit services and wheat.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "The main exports are rail and road transit services and wheat."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "b76f3387",
+      "category": "TRADE_VOLUME",
+      "subject": "Ravik imports",
+      "statement": "The country imports energy and manufactured goods.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "The country imports energy and manufactured goods."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "97db0cac",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "Ravik Rail Link is the principal land bridge, with rail and road routes running through the capital region.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 15,
+        "text_snippet": "Ravik Rail Link is the principal land bridge, with rail and road routes running through the capital region."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "0b296e25",
+      "category": "OTHER",
+      "subject": "Vantro Trading",
+      "statement": "Vantro Trading, a commodity trader, is the best-known firm.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "Vantro Trading, a commodity trader, is the best-known firm."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "1f1a1468",
+      "category": "OTHER",
+      "subject": "Customs facilities",
+      "statement": "Customs facilities at both ends of the land bridge process transit traffic.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "Customs facilities at both ends of the land bridge process transit traffic."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5c2cc751",
+      "category": "OTHER",
+      "subject": "Warehouses and repair yards",
+      "statement": "Warehouses and repair yards are clustered along the main road, with a parallel rail line for bulk goods.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 17,
+        "text_snippet": "Warehouses and repair yards are clustered along the main road, with a parallel rail line for bulk goods."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "a296e405",
+      "category": "OTHER",
+      "subject": "Ravik transit infrastructure",
+      "statement": "The country also has repair yards, truck stops and customs facilities along the main transit routes, and a grain-growing sector in the western plains.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ATL-0006",
+        "file_name": "ATL-0006.docx",
+        "page_number": null,
+        "paragraph_index": 16,
+        "text_snippet": "The country also has repair yards, truck stops and customs facilities along the main transit routes, and a grain-growing sector in the western plains."
+      },
+      "reliability_tier": 1,
+      "is_as_of_valid": true,
+      "confidence": 0.6,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. Statement attributes transit infrastructure to Ravik, but the source does not specify this connection."
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A land-bridge neighbour that connects the eastern and western parts of the region by rail and road.",
+      "mentions_count": 17,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ATL-0006..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "EVENT_ID: NONE..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "TITLE: Country profile: Ravik..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "SOURCE_NAME: Realm Trade Ministry..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "SOURCE_TYPE: atlas..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "RELIABILITY: 1..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "PUB_DATE: 2024-01-15..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 8,
+          "text_snippet": "PUB_TIME: 11:45..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 9,
+          "text_snippet": "COUNTRY: Ravik..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 10,
+          "text_snippet": "SECTOR: general..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 11,
+          "text_snippet": "LANGUAGE: en..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 12,
+          "text_snippet": "---..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 13,
+          "text_snippet": "Country profile: Ravik..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 14,
+          "text_snippet": "[P1] Ravik is a land-bridge neighbour that connects the eastern and western parts of the region by rail and road. Its ec..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The main exports are rail and road transit services and wheat. The country imports energy and manufactured goods. R..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 16,
+          "text_snippet": "[P3] Vantro Trading, a commodity trader, is the best-known firm. The country also has repair yards, truck stops and cust..."
+        },
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 17,
+          "text_snippet": "[P4] Customs facilities at both ends of the land bridge process transit traffic. Warehouses and repair yards are cluster..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "CORRIDOR",
+      "aliases": [],
+      "description": "The principal land bridge, with rail and road routes running through the capital region.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The main exports are rail and road transit services and wheat. The country imports energy and manufactured goods. R..."
+        }
+      ]
+    },
+    {
+      "name": "Vantro Trading",
+      "type": "ORGANIZATION",
+      "aliases": [],
+      "description": "A commodity trader, the best-known firm in Ravik.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 16,
+          "text_snippet": "[P3] Vantro Trading, a commodity trader, is the best-known firm. The country also has repair yards, truck stops and cust..."
+        }
+      ]
+    },
+    {
+      "name": "wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "One of the main exports of Ravik.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ATL-0006",
+          "file_name": "ATL-0006.docx",
+          "page_number": null,
+          "paragraph_index": 15,
+          "text_snippet": "[P2] The main exports are rail and road transit services and wheat. The country imports energy and manufactured goods. R..."
+        }
+      ]
+    }
+  ]
+}

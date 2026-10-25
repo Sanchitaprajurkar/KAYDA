@@ -1,0 +1,377 @@
+{
+  "doc_id": "ORV-0006",
+  "title": "Millers look beyond Orvan as wheat cargoes slip",
+  "facts_count": 6,
+  "flagged_count": 0,
+  "entities_count": 6,
+  "facts": [
+    {
+      "fact_id": "1f62bc81",
+      "category": "TRADE_VOLUME",
+      "subject": "wheat",
+      "statement": "Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik after Orvan's sea loadings fell in September.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 2,
+        "text_snippet": "Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik after Orvan's sea loadings fell in September."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "77b006ba",
+      "category": "DISRUPTION_STATUS",
+      "subject": "Orvan port index",
+      "statement": "The Realm Trade Ministry put the September port index at 40, against an old normal of 100.",
+      "date_mentioned": "September",
+      "numeric_value": 40.0,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 3,
+        "text_snippet": "The Realm Trade Ministry put the September port index at 40, against an old normal of 100."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "2bed416c",
+      "category": "TREATY_OR_AGREEMENT",
+      "subject": "corridor agreement",
+      "statement": "Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement.",
+      "date_mentioned": "10 September",
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 4,
+        "text_snippet": "Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "5dcabdb9",
+      "category": "TRADE_VOLUME",
+      "subject": "wheat",
+      "statement": "We can replace some of the lost wheat, not all of it, said a purchasing manager at a Midgard mill.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 5,
+        "text_snippet": "\"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.85,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Quote not verbatim (100% match); replaced with source text from \u00b65"
+      ]
+    },
+    {
+      "fact_id": "2540858f",
+      "category": "DISRUPTION_STATUS",
+      "subject": "rail and sea cargo timing",
+      "statement": "The hardest part is not the price but the timing. A rail parcel can arrive in days, while a sea cargo takes weeks to arrange.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 7,
+        "text_snippet": "The hardest part is not the price but the timing. A rail parcel can arrive in days, while a sea cargo takes weeks to arrange."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.95,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": [
+        "Citation repaired: quote found in \u00b67, not cited \u00b66"
+      ]
+    },
+    {
+      "fact_id": "d74a56d3",
+      "category": "TARIFF_OR_PRICE",
+      "subject": "Vanir wheat pricing",
+      "statement": "Vanir wheat offers have been small and priced above Orvan's usual terms.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0006",
+        "file_name": "ORV-0006.txt",
+        "page_number": null,
+        "paragraph_index": 8,
+        "text_snippet": "Vanir wheat offers have been small and priced above Orvan's usual terms."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "REPORTED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [],
+  "entities": [
+    {
+      "name": "Midgard",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation involved in wheat milling and trade.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0006 EVENT_ID: E5 TITLE: Millers look beyond Orvan as wheat cargoes slip SOURCE_NAME: Midgard Times SOURCE_T..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Lena Sorn. Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik aft..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement...."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill. The company as..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The shift is visible in the paperwork as much as in the prices. Millers that once booked a single large Orvan cargo..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+        }
+      ]
+    },
+    {
+      "name": "Orvan",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation from which wheat cargoes are being sourced.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0006 EVENT_ID: E5 TITLE: Millers look beyond Orvan as wheat cargoes slip SOURCE_NAME: Midgard Times SOURCE_T..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Lena Sorn. Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik aft..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement...."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill. The company as..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The shift is visible in the paperwork as much as in the prices. Millers that once booked a single large Orvan cargo..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+        }
+      ]
+    },
+    {
+      "name": "Vanir",
+      "type": "NATION",
+      "aliases": [],
+      "description": "A nation supplying wheat to Midgard.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Lena Sorn. Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik aft..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill. The company as..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik",
+      "type": "PORT",
+      "aliases": [],
+      "description": "A port from which rail deliveries are being arranged.",
+      "mentions_count": 3,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Lena Sorn. Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik aft..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill. The company as..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The shift is visible in the paperwork as much as in the prices. Millers that once booked a single large Orvan cargo..."
+        }
+      ]
+    },
+    {
+      "name": "Wheat",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": "The primary commodity being traded and sourced by millers.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0006 EVENT_ID: E5 TITLE: Millers look beyond Orvan as wheat cargoes slip SOURCE_NAME: Midgard Times SOURCE_T..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] By Lena Sorn. Midgard's flour millers are booking wheat from Vanir and asking for more rail capacity from Ravik aft..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 4,
+          "text_snippet": "[P3] Midgard buyers had expected the corridor agreement to be renewed. It expired on 10 September without a replacement...."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] \"We can replace some of the lost wheat, not all of it,\" said a purchasing manager at a Midgard mill. The company as..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The shift is visible in the paperwork as much as in the prices. Millers that once booked a single large Orvan cargo..."
+        },
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The millers' buying desks say the hardest part is not the price but the timing. A rail parcel can arrive in days, w..."
+        }
+      ]
+    },
+    {
+      "name": "corridor agreement",
+      "type": "AGREEMENT",
+      "aliases": [],
+      "description": "An agreement related to the transportation of goods that expired on 10 September.",
+      "mentions_count": 1,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0006",
+          "file_name": "ORV-0006.txt",
+          "page_number": null,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] The Realm Trade Ministry put the September port index at 40, against an old normal of 100...."
+        }
+      ]
+    }
+  ]
+}

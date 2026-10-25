@@ -1,0 +1,73 @@
+[
+  {
+    "fact_id": "099c55fc",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Orvan grain corridor",
+    "statement": "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0043",
+      "file_name": "ORV-0043.pdf",
+      "page_number": 1,
+      "paragraph_index": 2,
+      "text_snippet": "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "66b12fc8",
+    "category": "DISRUPTION_STATUS",
+    "subject": "Wheat offers for Orvan cargoes",
+    "statement": "Wheat offers for Orvan cargoes eased on the report.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0043",
+      "file_name": "ORV-0043.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "Wheat offers for Orvan cargoes eased on the report."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "REPORTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in ¶7, not cited ¶6"
+    ]
+  },
+  {
+    "fact_id": "6c559985",
+    "category": "TRADE_VOLUME",
+    "subject": "sea exports",
+    "statement": "The renewal would keep sea exports at about 95% of the old normal.",
+    "date_mentioned": null,
+    "numeric_value": 95.0,
+    "unit": "%",
+    "source_ref": {
+      "doc_id": "ORV-0043",
+      "file_name": "ORV-0043.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "The renewal would keep sea exports at about 95% of the old normal."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.7,
+    "assertion_status": "PROJECTED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Verifier: statement only partially supported. Numeric value of 95% is stated as 'about 95%', which is a hedge that is missing in the statement.",
+      "Manually approved by analyst during review_flagged.py session"
+    ]
+  }
+]

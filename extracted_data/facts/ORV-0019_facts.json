@@ -1,0 +1,158 @@
+[
+  {
+    "fact_id": "e40a2ff3",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes.",
+    "date_mentioned": "July 2026",
+    "numeric_value": 40.8,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 3,
+      "text_snippet": "In July 2026, the value was USD 40.8M and the volume was 102,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "be186856",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes.",
+    "date_mentioned": "August 2026",
+    "numeric_value": 42.0,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 4,
+      "text_snippet": "In August 2026, the value was USD 42.0M and the volume was 105,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "512723a4",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes.",
+    "date_mentioned": "September 2026",
+    "numeric_value": 38.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 5,
+      "text_snippet": "In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "003ec49e",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes.",
+    "date_mentioned": "October 2026",
+    "numeric_value": 36.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 6,
+      "text_snippet": "In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "81d6773e",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes.",
+    "date_mentioned": "November 2026",
+    "numeric_value": 36.4,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 7,
+      "text_snippet": "In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "af04b7ac",
+    "category": "TARIFF_OR_PRICE",
+    "subject": "Orvan to Asgard wheat",
+    "statement": "In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes.",
+    "date_mentioned": "December 2026",
+    "numeric_value": 35.6,
+    "unit": "M",
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 8,
+      "text_snippet": "In December 2026, the value was USD 35.6M and the volume was 89,000 tonnes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 1.0,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": []
+  },
+  {
+    "fact_id": "b7af5cf8",
+    "category": "TREATY_OR_AGREEMENT",
+    "subject": "Orvan to Asgard wheat route",
+    "statement": "This route runs under a long-term contract, which is why its volumes moved far less than the open-market routes.",
+    "date_mentioned": null,
+    "numeric_value": null,
+    "unit": null,
+    "source_ref": {
+      "doc_id": "ORV-0019",
+      "file_name": "ORV-0019.pdf",
+      "page_number": 1,
+      "paragraph_index": 15,
+      "text_snippet": "This route runs under a long-term contract, which is why its volumes moved far less than the open-market routes."
+    },
+    "reliability_tier": 2,
+    "is_as_of_valid": true,
+    "confidence": 0.95,
+    "assertion_status": "CONFIRMED",
+    "evidence_status": "VERIFIED",
+    "validation_notes": [
+      "Citation repaired: quote found in \u00b615, not cited \u00b614"
+    ]
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "name": "Tolan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 6,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0037 EVENT_ID: NONE TITLE: Tolan's small boat fleet welcomes a stronger season SOURCE_NAME: Raven Wire SOURC..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Tolan's fishing cooperatives report a better season for inshore boats, with steady catches and firm prices at the h..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The fleet has asked the ministry for help with cold storage, saying the current facility is full at the peak of the..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry says it is reviewing the storage request...."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The cooperative says the season has been helped by calm weather and by a good run of smaller species close to shore..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "[P6] The cooperative says the cold store was built for a smaller fleet and a shorter season. It has asked for a survey b..."
+      }
+    ]
+  },
+  {
+    "name": "fishing cooperatives",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Tolan's fishing cooperatives report a better season for inshore boats, with steady catches and firm prices at the h..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The fleet has asked the ministry for help with cold storage, saying the current facility is full at the peak of the..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry says it is reviewing the storage request...."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The cooperative says the season has been helped by calm weather and by a good run of smaller species close to shore..."
+      }
+    ]
+  },
+  {
+    "name": "ministry",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 4,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The fleet has asked the ministry for help with cold storage, saying the current facility is full at the peak of the..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] \"We are landing more than we can keep,\" said a cooperative secretary. \"The market is good; the ice is the problem.\"..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry says it is reviewing the storage request...."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The cooperative says the season has been helped by calm weather and by a good run of smaller species close to shore..."
+      }
+    ]
+  },
+  {
+    "name": "harbour market",
+    "type": "PORT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Tolan's fishing cooperatives report a better season for inshore boats, with steady catches and firm prices at the h..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry says it is reviewing the storage request...."
+      }
+    ]
+  },
+  {
+    "name": "cold storage",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "[P2] The fleet has asked the ministry for help with cold storage, saying the current facility is full at the peak of the..."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 5,
+        "text_snippet": "[P4] The ministry says it is reviewing the storage request...."
+      },
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The cooperative says the season has been helped by calm weather and by a good run of smaller species close to shore..."
+      }
+    ]
+  },
+  {
+    "name": "tourism board",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0037",
+        "file_name": "ORV-0037.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The cooperative says the season has been helped by calm weather and by a good run of smaller species close to shore..."
+      }
+    ]
+  }
+]

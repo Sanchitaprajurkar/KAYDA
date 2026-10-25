@@ -1,0 +1,222 @@
+{
+  "doc_id": "ORV-0039",
+  "title": "Ravik Rail Link adds two freight paths for the summer",
+  "facts_count": 2,
+  "flagged_count": 2,
+  "entities_count": 3,
+  "facts": [
+    {
+      "fact_id": "5f07a93d",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The Ravik Rail Link will run additional freight paths each weekday from June to August.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0039",
+        "file_name": "ORV-0039.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "The Ravik Rail Link will run additional freight paths each weekday from June to August."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    },
+    {
+      "fact_id": "0558d552",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0039",
+        "file_name": "ORV-0039.pdf",
+        "page_number": 1,
+        "paragraph_index": 3,
+        "text_snippet": "Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 1.0,
+      "assertion_status": "CONFIRMED",
+      "evidence_status": "VERIFIED",
+      "validation_notes": []
+    }
+  ],
+  "flagged_facts": [
+    {
+      "fact_id": "2b4f66ac",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will be reviewed at the end of the summer.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0039",
+        "file_name": "ORV-0039.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will be reviewed at the end of the summer."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.51,
+      "assertion_status": "REPORTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. The statement is framed as confirmed but it is reported that the link says they will be reviewed, which is not a confirmation.",
+        "Citation repaired: quote found in \u00b66, not cited \u00b65",
+        "Assertion status corrected CONFIRMED -> REPORTED"
+      ]
+    },
+    {
+      "fact_id": "2853a7be",
+      "category": "ROUTE_STATUS",
+      "subject": "Ravik Rail Link",
+      "statement": "The link says the extra paths are a trial and will be kept only if demand holds.",
+      "date_mentioned": null,
+      "numeric_value": null,
+      "unit": null,
+      "source_ref": {
+        "doc_id": "ORV-0039",
+        "file_name": "ORV-0039.pdf",
+        "page_number": 1,
+        "paragraph_index": 7,
+        "text_snippet": "The link says the extra paths are a trial and will be kept only if demand holds."
+      },
+      "reliability_tier": 2,
+      "is_as_of_valid": true,
+      "confidence": 0.51,
+      "assertion_status": "REPORTED",
+      "evidence_status": "UNCERTAIN",
+      "validation_notes": [
+        "Verifier: statement only partially supported. The statement is framed as confirmed but it is reported that the link says the extra paths are a trial, which is not a confirmation.",
+        "Citation repaired: quote found in \u00b67, not cited \u00b66",
+        "Assertion status corrected CONFIRMED -> REPORTED"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Ravik",
+      "type": "NATION",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 4,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0039 EVENT_ID: NONE TITLE: Ravik Rail Link adds two freight paths for the summer SOURCE_NAME: Cargo Weekly S..."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik Rail Link will run additional freight paths each weekday from June to August...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Road hauliers will keep their existing access to the terminal...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will ..."
+        }
+      ]
+    },
+    {
+      "name": "Ravik Rail Link",
+      "type": "INFRASTRUCTURE",
+      "aliases": [
+        "link"
+      ],
+      "description": "A rail link providing freight services in Ravik.",
+      "mentions_count": 6,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 1,
+          "text_snippet": "DOC_ID: ORV-0039 EVENT_ID: NONE TITLE: Ravik Rail Link adds two freight paths for the summer SOURCE_NAME: Cargo Weekly S..."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 2,
+          "text_snippet": "[P1] The Ravik Rail Link will run additional freight paths each weekday from June to August...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Road hauliers will keep their existing access to the terminal...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 6,
+          "text_snippet": "[P5] The extra paths are aimed at seasonal demand from grain and general freight customers, and the link says they will ..."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 7,
+          "text_snippet": "[P6] The link says the extra paths are a trial and will be kept only if demand holds. It has asked freight customers to ..."
+        }
+      ]
+    },
+    {
+      "name": "grain",
+      "type": "COMMODITY",
+      "aliases": [],
+      "description": null,
+      "mentions_count": 2,
+      "source_refs": [
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 3,
+          "text_snippet": "[P2] Paths leave early in the morning and in the late afternoon. All take grain wagons and general freight...."
+        },
+        {
+          "doc_id": "ORV-0039",
+          "file_name": "ORV-0039.pdf",
+          "page_number": 1,
+          "paragraph_index": 5,
+          "text_snippet": "[P4] Road hauliers will keep their existing access to the terminal...."
+        }
+      ]
+    }
+  ]
+}

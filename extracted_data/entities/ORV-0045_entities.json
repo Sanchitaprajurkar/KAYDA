@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Corvan Grain",
+    "type": "ORGANIZATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 3,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Anal..."
+      },
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended...."
+      },
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+      }
+    ]
+  },
+  {
+    "name": "Wheat",
+    "type": "COMMODITY",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+      }
+    ]
+  },
+  {
+    "name": "Orvan",
+    "type": "NATION",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 1,
+        "text_snippet": "DOC_ID: ORV-0045 EVENT_ID: E5 TITLE: Corvan Grain sea exports down 90%, our channel checks show SOURCE_NAME: Ledger Anal..."
+      }
+    ]
+  },
+  {
+    "name": "port strike",
+    "type": "INFRASTRUCTURE",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 2,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 4,
+        "text_snippet": "[P3] We assume the port strike removed most working berths and that rail cannot absorb the difference...."
+      },
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 6,
+        "text_snippet": "[P5] The channel checks are not a substitute for the company's accounts, and the note says so. The three agents who prov..."
+      }
+    ]
+  },
+  {
+    "name": "corridor agreement",
+    "type": "AGREEMENT",
+    "aliases": [],
+    "description": null,
+    "mentions_count": 1,
+    "source_refs": [
+      {
+        "doc_id": "ORV-0045",
+        "file_name": "ORV-0045.pdf",
+        "page_number": 1,
+        "paragraph_index": 2,
+        "text_snippet": "[P1] Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended...."
+      }
+    ]
+  }
+]
