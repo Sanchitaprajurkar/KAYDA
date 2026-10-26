@@ -117,13 +117,14 @@ def validate_refs(refs: List[EvidenceRef], report, tools, where: str) -> Tuple[L
                 why = f"row {r.locator.row} does not exist in {r.source_id}"
             elif _norm(r.quote_or_value) not in _norm(row.text) and not _value_matches(r.quote_or_value, row):
                 why = "value does not appear in the cited row"
-        elif r.locator.paragraph is None and r.locator.paragraph_index is None:
-            why = "no paragraph, page or row locator"
         elif r.source_id in set_aside:
-            # Set-aside documents are not in the evidence store; Heimdall recorded their claims at trap resolution.
+            # Set-aside documents are recorded by Heimdall at document level (no paragraph exists in the Case File);
+            # the quote must match Heimdall's record of what the document claimed.
             rec = next((e for e in inv.evidence if e.doc_id == r.source_id and not e.admissible), None)
             if rec is None or _norm(r.quote_or_value) not in _norm(rec.quote):
                 why = "quote does not match Heimdall's record of the set-aside claim"
+        elif r.locator.paragraph is None and r.locator.paragraph_index is None:
+            why = "no paragraph, page or row locator"
         else:
             text = _paragraph_text(tools, r.source_id, r.locator)
             if text is None:
@@ -145,7 +146,8 @@ def _value_matches(value: str, row) -> bool:
 def _paragraph_text(tools, doc_id: str, loc: Locator) -> Optional[str]:
     body = dict(tools.store.body_paragraphs(doc_id))
     label = re.compile(r"^\s*\[P(\d+)\]")
-    for p in tools.store.document(doc_id).paragraphs:
+    # A labelled [P n] wins over an unlabelled block (e.g. the header) whose index happens to equal n.
+    for p in sorted(tools.store.document(doc_id).paragraphs, key=lambda p: not label.match(p.raw_text or "")):
         m = label.match(p.raw_text or "")
         number = int(m.group(1)) if m else p.paragraph_index
         if loc.paragraph_index is not None and p.paragraph_index != loc.paragraph_index:
@@ -376,15 +378,21 @@ def _rule_attack(side, claim, inv, run) -> Optional[Attack]:
     """The most specific defect the rules can show in an opponent's argument."""
     arg = claim.argument
     prop = next(p for p in inv.spec.propositions if p.prop_id == arg.claim_id)
-    places = [m.group(0) for m in re.finditer(r"\b[A-Z][a-z]{3,}\b", prop.text) if m.start() > 0]
+    # Named subjects of the proposition (a multi-word name counts once), except the party the claim is attributed
+    # to: counter-evidence about the subject matter need not name the claimant.
+    names = [m.group(0) for m in re.finditer(r"\b[A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,})*", prop.text)
+             if m.start() > 0 or len(m.group(0).split()) > 1]
+    places = [n for n in names if not (prop.attributed_to and n.split()[0] in prop.attributed_to)]
+    meta = {e.doc_id: f"{e.source_name or ''} {e.citation}" for e in inv.evidence}
     for i, r in enumerate(arg.evidence_refs, 1):
         if "set aside" in r.reliability_note and r.evidence_type != "unsupported_inference":
             return _attack(side, claim, "source_authenticity_failure", f"ref {i}",
                            f"{r.source_id} was set aside before trial.",
                            "A set-aside source shows the claim was made, not that it is true.", [], run, "rule")
     for i, r in enumerate(arg.evidence_refs, 1):
+        where = f"{r.quote_or_value} {meta.get(r.source_id, '')}"
         if places and r.evidence_type in ("direct", "corroborating") and \
-                not any(re.search(rf"\b{re.escape(w)}\b", r.quote_or_value) for w in places):
+                not any(re.search(rf"\b{re.escape(n.split()[0])}\b", where) for n in places):
             return _attack(side, claim, "wrong_entity_or_geographic_scope", f"ref {i}",
                            f"{r.source_id} {r.locator.label()} does not name {', '.join(places[:3])}.",
                            "Evidence about a different entity or place cannot establish this proposition.", [], run,

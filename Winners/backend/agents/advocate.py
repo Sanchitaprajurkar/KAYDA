@@ -668,6 +668,9 @@ class Advocate:
             a.attack_id = f"A{self.prefix}{run}-{i:02d}"
             if not a.attack_type:
                 a.attack_type = self._map_attack_type(a.reason)
+            if a.counter_evidence_refs:  # every filed attack's references are checked, whatever built them
+                a.counter_evidence_refs = self._validated(a.counter_evidence_refs, report,
+                                                          f"{self.side} attack {a.attack_id}")
             self.log("attack", agent=self.side, attack=a.model_dump())
         return attacks
 
