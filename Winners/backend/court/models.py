@@ -1,10 +1,87 @@
 """Courtroom records. Everything an agent files is one of these, so Odin and the briefing can trace it."""
 
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Literal, Optional, Tuple
 
 from pydantic import BaseModel, Field
 
 ATTACK_REASONS = ("contradicts", "retracted", "low_tier", "wrong_scope", "stale", "math_error")
+# Attack taxonomy for proposition-level cross-examination. `reason` (above) stays as the coarse legacy label Odin reads.
+ATTACK_TYPES = (
+    "source_authenticity_failure", "source_reliability_challenge", "wrong_entity_or_geographic_scope",
+    "temporal_mismatch", "contradictory_evidence", "unsupported_inference", "unsupported_causal_relationship",
+    "incorrect_calculation", "invalid_baseline_or_denominator", "forecast_presented_as_observed_fact",
+    "missing_corroboration", "overstated_conclusion", "misinterpretation_of_evidence",
+)
+ATTACK_TYPE_REASON = {  # coarse label for Odin's existing prompt and precedent keys
+    "source_authenticity_failure": "retracted", "source_reliability_challenge": "low_tier",
+    "wrong_entity_or_geographic_scope": "wrong_scope", "temporal_mismatch": "stale",
+    "contradictory_evidence": "contradicts", "incorrect_calculation": "math_error",
+    "invalid_baseline_or_denominator": "math_error", "unsupported_inference": "wrong_scope",
+    "unsupported_causal_relationship": "wrong_scope", "forecast_presented_as_observed_fact": "wrong_scope",
+    "missing_corroboration": "low_tier", "overstated_conclusion": "wrong_scope",
+    "misinterpretation_of_evidence": "contradicts",
+}
+RESPONSE_ACTIONS = ("maintain", "withdraw_inference", "narrow_proposition", "accept_point", "maintain_disagreement")
+EVIDENCE_TYPES = ("direct", "corroborating", "circumstantial", "contradictory", "contextual", "unsupported_inference")
+EPISTEMIC_STATUSES = ("observed_fact", "reported_claim", "projection", "inference")
+
+
+class Confidence(BaseModel):
+    level: Literal["HIGH", "MEDIUM", "LOW"]
+    explanation: str = Field(min_length=1, description="Why this level; a bare level is not accepted")
+
+
+class Locator(BaseModel):
+    """Where in the source. A paragraph citation carries Heimdall's paragraph label and its internal index."""
+    paragraph: Optional[int] = None
+    page: Optional[int] = None
+    row: Optional[str] = None
+    paragraph_index: Optional[int] = None
+
+    def label(self) -> str:
+        if self.row:
+            return f"row {self.row}"
+        return f"Page {self.page or 1} | Paragraph {self.paragraph}"
+
+
+class EvidenceRef(BaseModel):
+    source_id: str
+    locator: Locator
+    quote_or_value: str
+    evidence_type: Literal["direct", "corroborating", "circumstantial", "contradictory", "contextual",
+                           "unsupported_inference"] = "contextual"
+    epistemic_status: Literal["observed_fact", "reported_claim", "projection", "inference"] = "reported_claim"
+    reliability_note: str = ""
+    establishes: str = ""        # what this source actually shows
+    does_not_establish: str = ""  # what it does not
+
+
+class Revision(BaseModel):
+    round: int
+    action: Literal["maintain", "withdraw_inference", "narrow_proposition", "accept_point", "maintain_disagreement"]
+    original_proposition: str
+    revised_proposition: str
+    retained_evidence_refs: List[EvidenceRef] = Field(default_factory=list)
+    withdrawn_inferences: List[str] = Field(default_factory=list)
+    reason: str
+
+
+class ClaimArgument(BaseModel):
+    """One side's argument on one Heimdall proposition. claim_id and proposition_text come from the Case File."""
+    claim_id: str
+    proposition_text: str
+    position: Literal["supports", "challenges"]
+    evidence_refs: List[EvidenceRef] = Field(default_factory=list)
+    reasoning: str = ""
+    assumptions: List[str] = Field(default_factory=list)
+    limitations_uncertainty: List[str] = Field(default_factory=list)
+    confidence: Confidence
+    adverse_evidence_handling: str = ""                              # Thor
+    alternative_explanations: List[str] = Field(default_factory=list)  # Loki
+    revision_history: List[Revision] = Field(default_factory=list)
+    numerical_analysis: Optional[Dict[str, Any]] = None
+    strategy: str = ""  # the investigation type(s) that shaped the argument
+    evidence_requests: List[Dict[str, Any]] = Field(default_factory=list)  # targeted searches and what they found
 
 
 class Evidence(BaseModel):
@@ -108,18 +185,19 @@ class Claim(BaseModel):
     claim_id: str
     side: str  # THOR | LOKI
     run: int
-    country: str
-    sector: str
-    kind: str  # calculation | evidence
+    country: str = ""
+    sector: str = ""
+    kind: str = "evidence"  # calculation | evidence
     statement: str
     estimate: Optional[Estimate] = None
     nature: str = "SOURCED_FACT"  # SOURCED_FACT | INFERENCE, as filed by the side; Odin rules on it
     reasoning: str = ""
-    citations: List[Evidence] = Field(min_length=1)
+    citations: List[Evidence] = Field(default_factory=list)
     assessment: Optional[Assessment] = None
     requests: List[str] = Field(default_factory=list)  # evidence the side found that is not yet in the Case File
     status: str = "ACTIVE"  # ACTIVE | DEFENDED | NARROWED | CONCEDED
     narrowed_from: Optional[Estimate] = None  # the estimate as first filed, when the owner narrowed it
+    argument: Optional[ClaimArgument] = None
 
 
 class Attack(BaseModel):
@@ -133,6 +211,12 @@ class Attack(BaseModel):
     grounds: str = "argued"  # argued | rule (found deterministically)
     # The metric the attacker says the data does support. The owner may narrow to it instead of conceding.
     narrow_to: Optional[str] = None
+    attack_type: Optional[str] = None  # one of ATTACK_TYPES
+    target_proposition_id: Optional[str] = None  # Heimdall's claim ID when the target is a proposition argument
+    target_evidence_or_reasoning: Optional[str] = None
+    defect: Optional[str] = None
+    explanation: str = ""
+    counter_evidence_refs: List[EvidenceRef] = Field(default_factory=list)
 
 
 class Response(BaseModel):
@@ -144,6 +228,9 @@ class Response(BaseModel):
     decision: str  # DEFENDED | NARROWED | CONCEDED
     explanation: str
     new_evidence: List[Evidence] = Field(default_factory=list)
+    action: Optional[str] = None  # one of RESPONSE_ACTIONS; `decision` stays the legacy label Odin reads
+    revision: Optional[Revision] = None
+    new_evidence_refs: List[EvidenceRef] = Field(default_factory=list)
 
 
 class Finding(BaseModel):

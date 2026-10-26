@@ -55,7 +55,9 @@ def test_both_sides_search_and_file_claims(trial):
     claims = trial["transcripts"][0]["claims"]
     for side in ("THOR", "LOKI"):
         mine = [c for c in claims if c["side"] == side]
-        assert 1 <= len(mine) <= 6 and all(c["citations"] for c in mine)
+        assert 1 <= len(mine) <= 6
+        # every pressed claim cites evidence; a position with nothing admissible behind it is filed as not pressed
+        assert all(c["citations"] or (c["status"] == "CONCEDED" and "not pressed" in c["statement"]) for c in mine)
         spans = [c["estimate"] for c in mine if c["estimate"] and c["estimate"]["low"] is not None]
         assert all(e["low"] <= e["high"] for e in spans)
 
@@ -174,7 +176,8 @@ def test_reproducibility_artifacts(trial):
     assert meta["as_of_date"] == "2027-01-25" and meta["limits"]["max_runs"] == 3
 
 
-# FR6.1 / criterion 9: private memory changes what an agent does, and the influence is logged
+# FR6.1 / criterion 9: private memory changes what an agent does, and the influence is logged. A concession from an
+# earlier case is a labelled caution to re-evaluate; it never suppresses a claim in a new case.
 def test_memory_changes_an_advocates_action(tmp_path):
     from backend.court.memory import AgentMemory
     store = ResolvedEvidenceStore()
@@ -186,10 +189,8 @@ def test_memory_changes_an_advocates_action(tmp_path):
     events = [json.loads(x) for x in (tmp_path / "cases" / "T-MEM" / "log.jsonl").read_text(encoding="utf-8")
               .splitlines()]
     reads = [e for e in _of(events, "memory_read") if e["agent"] == "LOKI"]
-    assert reads and "skipped re-asserting" in reads[0]["influenced"]
-    claims = json.loads((tmp_path / "cases" / "T-MEM" / "run_1" / "transcript.json").read_text(encoding="utf-8"))
-    assert not any(e.get("fact_id") == fact.fact_id for c in claims["claims"] if c["side"] == "LOKI"
-                   for e in c["citations"])
+    assert reads and any("no claim suppressed" in r["influenced"] for r in reads)
+    assert not any("skipped re-asserting" in r["influenced"] for r in reads)
 
 
 # FR2.3 / FR3.3: conceding is recorded and remembered; a rule-proven defect cannot be argued away
@@ -206,12 +207,14 @@ def test_concession_is_remembered(tmp_path):
     tools = RunemarkTools(heimdall.evidence_store, heimdall.trade, report.as_of_date, set(), 16)
     memory = AgentMemory("loki", tmp_path / "memory")
     loki = CourtLoki(tools, CourtLLM("LOKI", 40_000, ScriptedLLM()), memory, log)
+    report = report.model_copy(update={"investigation": None})  # the legacy evidence-claim path
     claims = loki.open_case(report, 1, [])
     target = next(c for c in claims if c.kind == "evidence")
     answers = loki.respond(report, [Attack(attack_id="ATT-1", run=1, attacker="THOR", target_claim_id=target.claim_id,
                                            reason="math_error", argument="does not add up", grounds="rule")], 1)
     assert answers[0].decision == "CONCEDED" and target.status == "CONCEDED"
-    assert memory.by_category("concession")
+    rows = memory.by_category("case_specific_concession")  # typed memory: the concession belongs to this case
+    assert rows and all(r["case_id"] == "T-CON" for r in rows)
 
 
 # NFR3 / NFR5: an exhausted token budget degrades to the rules instead of crashing
@@ -477,7 +480,7 @@ def test_research_outcome_reports_unanswered_gaps(tmp_path):
 def test_out_of_scope_evidence_never_reaches_a_claim(tmp_path):
     from backend.agents.advocate import PickedClaim
     report, tools, thor, _, _ = _court(tmp_path)
-    thor.open_case(report, 1, [])
+    thor.open_case(report.model_copy(update={"investigation": None}), 1, [])  # the legacy round-1 screen
     cell = f"{_unmeasured_cell(report, tools).country}|{_unmeasured_cell(report, tools).sector}"
     assert thor._eligible and all(cells for cells in thor._eligible.values())
     outside = next(fid for fid, f in thor.pool.items() if fid not in thor._eligible)

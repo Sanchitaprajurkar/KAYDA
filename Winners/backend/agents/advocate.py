@@ -13,10 +13,12 @@ from pydantic import BaseModel, Field
 from backend.court.heimdall_bridge import CaseEvidenceReport, ExtractedFact
 from backend.court.llm import BudgetExceeded, CourtLLM, compact
 from backend.court.memory import AgentMemory
-from backend.court.display import cite, cite_group, fmt_estimate
+from backend.court.display import cite, cite_group, fmt_estimate, fmt_span
 from backend.court.exposure import numeric_claim_defect
+from backend.agents.argument import build_arguments, build_attacks, respond_target, respond_to, validate_refs
 from backend.court.models import (ATTACK_REASONS, NATIONAL_IMPORT_SHARE, NET_EXPOSURE, ROUTE_VALUE_DECLINE,
-                                  ROUTE_VOLUME_DECLINE, SOURCE_STATED, Attack, Claim, Estimate, Evidence, Response)
+                                  ROUTE_VOLUME_DECLINE, SOURCE_STATED, Attack, Claim, ClaimArgument, Estimate,
+                                  Evidence, EvidenceRef, Locator, Response, Revision)
 from backend.court.tools import (DuplicateQuery, RunemarkTools, SearchFilters, SearchHit, ToolLimit,
                                  attack_counter_scope_defect, citation_scope_defect, offers_new_trade_rows)
 
@@ -132,6 +134,7 @@ class Advocate:
         self.claims: Dict[str, Claim] = {}
         self.pool: Dict[str, ExtractedFact] = {}
         self._eligible: Dict[str, List[str]] = {}
+        self.citation_failures: List[dict] = []
 
     # -- policy hooks -----------------------------------------------------------
     def opening_queries(self, report: CaseEvidenceReport, run: int, remand: List[str]) -> List[Tuple[str, SearchFilters]]:
@@ -168,15 +171,46 @@ class Advocate:
                  results=[h.ref for h in hits])
         return hits
 
-    def _conceded_facts(self, event_id: str) -> Dict[str, dict]:
+    CASE_SPECIFIC = ("case_specific_concession", "concession")  # legacy "concession" rows are read as case-specific
+
+    def _conceded_facts(self, event_id: str, case_id: Optional[str] = None) -> Dict[str, dict]:
+        """Facts this side conceded earlier in the same case. A concession from another case never suppresses a
+        claim here; see _cautions()."""
         out = {}
-        for row in self.memory.by_category("concession", prefix=f"{event_id}:"):
-            for fid in row["value"].get("fact_ids", []):
-                out[fid] = row
+        if not case_id:
+            return out
+        for category in self.CASE_SPECIFIC:
+            for row in self.memory.by_category(category):
+                if row.get("case_id") == case_id:
+                    for fid in row["value"].get("fact_ids", []):
+                        out[fid] = row
         return out
 
-    def _collect(self, hits: List[SearchHit], event_id: str, exclude: set = frozenset()) -> List[ExtractedFact]:
-        conceded = self._conceded_facts(event_id)
+    def _cautions(self, report: CaseEvidenceReport) -> List[str]:
+        """Prior-case memory as labelled cautions to re-check, plus reusable lessons. Never facts, never suppression."""
+        notes = []
+        for category in self.CASE_SPECIFIC:
+            for row in self.memory.by_category(category):
+                if row.get("case_id") and row["case_id"] != report.case_id:
+                    v = row["value"]
+                    notes.append(f"[prior case {row['case_id']}] {self.side.title()} conceded a point after a "
+                                 f"'{v.get('attack_type') or v.get('attack')}' attack; re-evaluate from this Case File.")
+        for row in self.memory.by_category("challenged_argument_pattern"):
+            v = row["value"]
+            notes.append(f"[lesson] arguments resting on {v.get('evidence_type')} / {v.get('epistemic_status')} "
+                         f"evidence were challenged as {v.get('attack_type')} ({v.get('count', 1)}x).")
+        for row in self.memory.by_category("reusable_reasoning_lesson"):
+            notes.append(f"[lesson] {row['value'].get('lesson')}")
+        notes = list(dict.fromkeys(notes))[:8]
+        if notes:
+            self.log("memory_read", agent=self.side, key="cautions",
+                     influenced=f"{len(notes)} caution(s)/lesson(s) put before the argument as hints to re-evaluate; "
+                                f"no claim suppressed")
+        return notes
+
+    def _collect(self, hits: List[SearchHit], event_id: str, exclude: set = frozenset(),
+                 case_id: Optional[str] = None) -> List[ExtractedFact]:
+        conceded = self._conceded_facts(event_id, case_id=case_id)
         out = []
         for f in self.tools.facts_for(hits):
             if not self.tools.admissible(f.source_ref.doc_id) or f.fact_id in exclude:
@@ -192,7 +226,7 @@ class Advocate:
         return out[:MAX_CANDIDATES]
 
     def _plain_refs(self, text: str) -> str:
-        """Rewrite raw refs (ORV-0019#P4) and fact IDs an LLM may write into the DOC | Page | Paragraph form."""
+        """Rewrite raw refs (DOC-0000#P4) and fact IDs an LLM may write into the DOC | Page | Paragraph form."""
         text = _RAW_REF.sub(lambda m: self.tools.cite_label(m.group(1), int(m.group(2))), text or "")
         return _WORD.sub(lambda m: cite(self.tools.evidence(self.pool[m.group(0)]))
                          if m.group(0) in self.pool else m.group(0), text)
@@ -302,13 +336,89 @@ class Advocate:
         n = sum(1 for c in self.claims.values() if c.run == run) + 1
         return f"{self.prefix}{run}-{n:02d}"
 
+    def _ref_to_evidence(self, r: EvidenceRef) -> Evidence:
+        """The legacy citation Odin's checks read, built from a validated reference."""
+        meta = self.tools.store.document(r.source_id).manifest_meta
+        return Evidence(doc_id=r.source_id, ref=f"{r.source_id}#P{r.locator.paragraph}", kind="paragraph",
+                        page_number=r.locator.page or 1, paragraph_number=r.locator.paragraph,
+                        pub_date=meta.pub_date, pub_time=meta.pub_time, tier=meta.reliability_tier or 4,
+                        source_name=meta.source_name, title=meta.title, excerpt=r.quote_or_value,
+                        assertion=r.epistemic_status.upper())
+
+    def _validated(self, refs: List[EvidenceRef], report, where: str) -> List[EvidenceRef]:
+        kept, failed = validate_refs(refs, report, self.tools, where)
+        for f in failed:
+            self.citation_failures.append(f.model_dump())
+            self.log("citation_rejected", agent=self.side, where=f.where, source=f.source_id, locator=f.locator,
+                     reason=f.reason)
+        return kept
+
+    def _request_if_gap(self, report: CaseEvidenceReport, arg: ClaimArgument) -> None:
+        """A material gap (nothing direct for this side) triggers a targeted search through the agent's own tool.
+        Only Case File evidence may be argued; anything found outside it is logged as a request for Heimdall."""
+        if any(r.evidence_type == "direct" for r in arg.evidence_refs):
+            return
+        prop = next(p for p in report.investigation.spec.propositions if p.prop_id == arg.claim_id)
+        queries = (prop.support_queries if self.side == "THOR" else prop.contradict_queries)[:1]
+        in_case = {e.doc_id for e in report.investigation.evidence if e.prop_id == arg.claim_id}
+        for q in queries:
+            hits = self._search(q, SearchFilters(event_id=report.case_scope.event_id, max_tier=3))
+            found = list(dict.fromkeys(h.doc_id for h in hits))
+            req = {"query": q, "reason": "no direct evidence for this side's position in the Case File",
+                   "already_in_case_file": [d for d in found if d in in_case],
+                   "outside_case_file": [d for d in found if d not in in_case]}
+            arg.evidence_requests.append(req)
+            self.log("evidence_request", agent=self.side, claim_id=arg.claim_id, **req)
+
+    def _open_investigation_case(self, report: CaseEvidenceReport, run: int, remand: List[str]) -> List[Claim]:
+        """One claim per Heimdall proposition, the same claim IDs for both sides. Exposure calculations are added
+        only when the investigation spec calls for exposure analysis."""
+        inv = report.investigation
+        args = build_arguments(self.side, report, self._ask, self._cautions(report))
+        claims = []
+        for arg in args:
+            self._request_if_gap(report, arg)
+            arg.evidence_refs = self._validated(arg.evidence_refs, report, f"{self.side} argument {arg.claim_id}")
+            admissible = [r for r in arg.evidence_refs if self.tools.admissible(r.source_id)]
+            citations = [self._ref_to_evidence(r) for r in admissible]
+            verb = "supports" if self.side == "THOR" else "challenges"
+            claim = Claim(claim_id=f"{self.prefix}{run}-{arg.claim_id}", side=self.side, run=run,
+                          kind="evidence", statement=f"[{arg.claim_id}] {self.side.title()} {verb}: "
+                                                     f"{arg.proposition_text}",
+                          nature="SOURCED_FACT" if citations and all(r.epistemic_status == "observed_fact"
+                                                                     for r in admissible) else "INFERENCE",
+                          reasoning=arg.reasoning, citations=citations, argument=arg,
+                          requests=list(dict.fromkeys(d for q in arg.evidence_requests
+                                                      for d in q["outside_case_file"])))
+            if not citations:
+                # Odin rules only on cited evidence; a position with nothing admissible behind it is not pressed.
+                claim.status = "CONCEDED"
+                claim.statement += " (not pressed: no admissible evidence in the Case File for this position)"
+            self.memory.write(f"{report.case_id}:{self.side}:{arg.claim_id}", "case_specific_proposition",
+                              {"claim_id": arg.claim_id, "position": arg.position,
+                               "sources": [r.source_id for r in arg.evidence_refs]}, report.case_id)
+            claims.append(self._record(claim))
+        if inv.spec.exposure_applicable:
+            for cell in self._cells(report):
+                try:
+                    c = self.cell_claim(report, cell.country, cell.sector, run)
+                except ToolLimit as e:
+                    self.log("limit_hit", agent=self.side, limit="tool_calls", detail=str(e))
+                    break
+                if c:
+                    claims.append(self._record(c))
+        return claims
+
     # -- round 1: claims --------------------------------------------------------
     def open_case(self, report: CaseEvidenceReport, run: int, remand: List[str]) -> List[Claim]:
+        if getattr(report, "investigation", None) and report.investigation.spec.propositions:
+            return self._open_investigation_case(report, run, remand)
         event = report.case_scope.event_id or "NONE"
         hits = []
         for query, filters in self.opening_queries(report, run, remand):
             hits += self._search(query, filters)
-        candidates = self._collect(hits, event, exclude=self.cited_fact_ids if run > 1 else frozenset())
+        candidates = self._collect(hits, event, exclude=self.cited_fact_ids if run > 1 else frozenset(),
+                                   case_id=report.case_id)
         if run > 1 and report.new_document_ids:
             new_set = set(report.new_document_ids)
             for did in report.new_document_ids:
@@ -379,6 +489,19 @@ class Advocate:
                      kind="evidence", statement=statement, estimate=est, nature=nature,
                      reasoning=p.reasoning, citations=cites)
 
+    @staticmethod
+    def _map_attack_type(reason: str) -> str:
+        return {"contradicts": "contradictory_evidence", "math_error": "incorrect_calculation",
+                "low_tier": "source_reliability_challenge", "retracted": "source_authenticity_failure",
+                "stale": "temporal_mismatch", "wrong_scope": "wrong_entity_or_geographic_scope"}.get(
+            reason, "misinterpretation_of_evidence")
+
+    def _evidence_to_ref(self, e: Evidence) -> EvidenceRef:
+        return EvidenceRef(source_id=e.doc_id, quote_or_value=e.excerpt, reliability_note=f"Tier {e.tier}",
+                           locator=Locator(row=e.ref) if e.kind == "trade_row" else
+                           Locator(paragraph=e.paragraph_number, page=e.page_number),
+                           evidence_type="contradictory", epistemic_status="reported_claim")
+
     # -- round 2: grounds found by rule ------------------------------------------
     def rule_grounds(self, report: CaseEvidenceReport, opponent: List[Claim], run: int) -> List[Attack]:
         """Defects the attacker's own tools can prove without argument. Heimdall's exclusion reasons and open
@@ -394,32 +517,45 @@ class Advocate:
                       "UNRELATED_EVENT": "wrong_scope"}
         out = []
         for claim in opponent:
+            if claim.status == "CONCEDED":
+                continue  # a position its owner did not press is not attacked
             bad = [e for e in claim.citations if not self.tools.admissible(e.doc_id)]
             if bad:
                 x = excluded.get(bad[0].doc_id)
+                reason = reason_for.get(x.reason if x else "", "retracted")
+                arg = (f"{cite(bad[0])} was set aside before trial"
+                       f"{f' as {x.reason}' if x else ''}; it is not admissible.")
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
-                                  reason=reason_for.get(x.reason if x else "", "retracted"), grounds="rule",
-                                  argument=f"{cite(bad[0])} was set aside before trial"
-                                           f"{f' as {x.reason}' if x else ''}; it is not admissible."))
+                                  reason=reason, grounds="rule", argument=arg,
+                                  attack_type=self._map_attack_type(reason),
+                                  target_evidence_or_reasoning=claim.statement, defect=arg))
                 continue
             if all(e.tier >= 4 for e in claim.citations):
+                arg = "The claim rests only on Tier 4 sources."
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
-                                  reason="low_tier", grounds="rule",
-                                  argument="The claim rests only on Tier 4 sources."))
+                                  reason="low_tier", grounds="rule", argument=arg,
+                                  attack_type="source_reliability_challenge",
+                                  target_evidence_or_reasoning=claim.statement, defect=arg))
                 continue
             defect = numeric_claim_defect(self.tools, report, claim)
             if defect:
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
-                                  reason=defect[0], argument=defect[1], grounds="rule"))
+                                  reason=defect[0], argument=defect[1], grounds="rule",
+                                  attack_type=self._map_attack_type(defect[0]),
+                                  target_evidence_or_reasoning=claim.statement, defect=defect[1]))
                 continue
             scope = citation_scope_defect(self.tools, claim)
             if scope:
                 out.append(Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
-                                  reason=scope[0], argument=scope[1], grounds="rule"))
+                                  reason=scope[0], argument=scope[1], grounds="rule",
+                                  attack_type="wrong_entity_or_geographic_scope",
+                                  target_evidence_or_reasoning=claim.statement, defect=scope[1]))
                 continue
             label = self._label_challenge(claim)
             if label:
-                out.append(label.model_copy(update={"run": run}))
+                out.append(label.model_copy(update={"run": run, "attack_type": "overstated_conclusion",
+                                                    "target_evidence_or_reasoning": claim.statement,
+                                                    "defect": label.argument}))
                 continue
             for e in claim.citations:
                 other = next((f for f in conflicts.get(e.fact_id or "", [])
@@ -428,12 +564,16 @@ class Advocate:
                 if other:
                     self.pool[other.fact_id] = other
                     counter_e = self.tools.evidence(other)
-                    # Validate that the counter-evidence actually concerns the same country/sector.
+                    arg = (f"Heimdall flagged {cite(e)} as contradicted by "
+                           f"{cite(counter_e)}: \"{other.statement[:160]}\"")
                     atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=claim.claim_id,
                                  reason="contradicts", grounds="rule",
                                  counter_evidence=[counter_e],
-                                 argument=f"Heimdall flagged {cite(e)} as contradicted by "
-                                          f"{cite(counter_e)}: \"{other.statement[:160]}\"")
+                                 argument=arg,
+                                 attack_type="contradictory_evidence",
+                                 target_evidence_or_reasoning=claim.statement,
+                                 defect=arg,
+                                 counter_evidence_refs=[self._evidence_to_ref(counter_e)])
                     bad = attack_counter_scope_defect(self.tools, atk, claim)
                     if not bad:
                         out.append(atk)
@@ -449,12 +589,14 @@ class Advocate:
         if a.metrics[NET_EXPOSURE].status == "AVAILABLE" or a.metrics[ROUTE_VALUE_DECLINE].value is None:
             return None
         rv = a.metrics[ROUTE_VALUE_DECLINE].value
+        arg = (f"The trade rows establish a {rv:.2f}% route value decline on {a.route}; they do not "
+               f"establish net exposure, because substitution is {a.substitution.status} "
+               f"({a.substitution.note}). {fmt_estimate(est)} is the no-substitution scenario "
+               f"under a stronger label, not the net loss.")
         return Attack(attack_id="", run=claim.run, attacker=self.side, target_claim_id=claim.claim_id,
                       reason="wrong_scope", grounds="rule", narrow_to=ROUTE_VALUE_DECLINE,
-                      argument=f"The trade rows establish a {rv:.2f}% route value decline on {a.route}; they do not "
-                               f"establish net exposure, because substitution is {a.substitution.status} "
-                               f"({a.substitution.note}). {fmt_estimate(est)} is the no-substitution scenario "
-                               f"under a stronger label, not the net loss.")
+                      argument=arg, attack_type="overstated_conclusion",
+                      target_evidence_or_reasoning=claim.statement, defect=arg)
 
     # -- round 2: attacks -------------------------------------------------------
     def attack(self, report: CaseEvidenceReport, opponent: List[Claim], run: int,
@@ -465,19 +607,35 @@ class Advocate:
             hits += self._search(self._attack_query(claim),
                                  SearchFilters(event_id=event, country=claim.country
                                                if claim.country in report.case_scope.countries else None, max_tier=3))
-        pool = self._collect(hits, event) + [self.pool[f] for f in list(self.pool)[:12]]
+        pool = self._collect(hits, event, case_id=report.case_id) + [self.pool[f] for f in list(self.pool)[:12]]
         targets = {f"{c.country}|{c.sector}" for c in opponent}
         pool = [f for f in {f.fact_id: f for f in pool}.values()
-                if targets & set(self._cells_for(f, report))][:MAX_CANDIDATES]
+                if not targets or targets & set(self._cells_for(f, report))][:MAX_CANDIDATES]
         attacks = list(rule_grounds)
         by_id = {c.claim_id: c for c in opponent}
+        taken = {a.target_claim_id for a in attacks}
+
+        # Proposition arguments: taxonomy attacks on actual weaknesses, counter-evidence validated before filing.
+        argued = [c for c in opponent if c.argument and c.claim_id not in taken and c.status != "CONCEDED"]
+        if argued and getattr(report, "investigation", None):
+            for atk in build_attacks(self.side, report, argued, self._ask, run):
+                atk.counter_evidence_refs = self._validated(atk.counter_evidence_refs, report,
+                                                            f"{self.side} attack on {atk.target_claim_id}")
+                if atk.attack_type == "contradictory_evidence" and not atk.counter_evidence_refs:
+                    continue
+                atk.counter_evidence = [self._ref_to_evidence(r) for r in atk.counter_evidence_refs
+                                        if self.tools.admissible(r.source_id)]
+                attacks.append(atk)
+                taken.add(atk.target_claim_id)
+        opponent_legacy = [c for c in opponent if not c.argument]
+
         picked = self._ask(ROUND2.format(
             claims="\n".join(f"{c.claim_id} [{c.country}|{c.sector}] {fmt_estimate(c.estimate)} "
-                             f"cites {cite_group(c.citations)} | {c.statement}" for c in opponent),
+                             f"cites {cite_group(c.citations)} | {c.statement}" for c in opponent_legacy),
             grounds="\n".join(f"{a.target_claim_id}: {a.reason} - {a.argument}" for a in rule_grounds) or "none",
             candidates="\n".join(self._line(f, self.tools) for f in pool),
-            reasons=", ".join(ATTACK_REASONS), mandate=self.mandate), Round2) if opponent else None
-        taken = {a.target_claim_id for a in attacks}
+            reasons=", ".join(ATTACK_REASONS), mandate=self.mandate), Round2) if opponent_legacy else None
+
         for p in (picked.attacks if picked else []):
             if p.target_claim_id not in by_id or p.target_claim_id in taken:
                 continue
@@ -485,7 +643,11 @@ class Advocate:
             if not counter and p.reason in ("contradicts", "stale"):
                 continue  # an evidence-based attack needs evidence
             atk = Attack(attack_id="", run=run, attacker=self.side, target_claim_id=p.target_claim_id,
-                         reason=p.reason, argument=self._plain_refs(p.argument), counter_evidence=counter)
+                         reason=p.reason, argument=self._plain_refs(p.argument), counter_evidence=counter,
+                         attack_type=self._map_attack_type(p.reason),
+                         target_evidence_or_reasoning=by_id[p.target_claim_id].statement,
+                         defect=p.argument,
+                         counter_evidence_refs=[self._evidence_to_ref(e) for e in counter])
             off = self._off_mandate(atk, by_id[p.target_claim_id], report)
             if off:
                 self.log("attack_rejected", agent=self.side, attack_id=p.target_claim_id, reason=off)
@@ -504,6 +666,8 @@ class Advocate:
                 attacks.append(fallback)
         for i, a in enumerate(attacks, 1):
             a.attack_id = f"A{self.prefix}{run}-{i:02d}"
+            if not a.attack_type:
+                a.attack_type = self._map_attack_type(a.reason)
             self.log("attack", agent=self.side, attack=a.model_dump())
         return attacks
 
@@ -564,9 +728,11 @@ class Advocate:
         out, to_argue = [], []
         for a in attacks:
             claim = self.claims.get(a.target_claim_id)
-            if not claim:
+            if not claim or (claim.argument and claim.status == "CONCEDED"):
                 continue
-            if self._can_narrow(report, claim, a):
+            if claim.argument and not (a.grounds == "rule" and a.attack_type is None and a.reason in AUTO_CONCEDE):
+                out.append(self._respond_argument(report, claim, a, run))
+            elif self._can_narrow(report, claim, a):
                 out.append(self._narrow(report, claim, a, run))
             elif a.grounds == "rule" and a.reason in AUTO_CONCEDE:
                 out.append(self._concede(report, claim, a, run, f"The rules found a {a.reason} defect: {a.argument}"))
@@ -602,7 +768,7 @@ class Advocate:
                         self.cited_fact_ids.add(e.fact_id)
                     r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id,
                                  claim_id=claim.claim_id, decision="DEFENDED", explanation=self._plain_refs(p.explanation),
-                                 new_evidence=cites)
+                                 new_evidence=cites, action="rebut")
                     self.log("defence", agent=self.side, response=r.model_dump())
                     out.append(r)
                 else:
@@ -612,6 +778,52 @@ class Advocate:
         for i, r in enumerate(out, 1):
             r.response_id = f"R{self.prefix}{run}-{i:02d}"
         return out
+
+    DECISION = {"maintain": "DEFENDED", "maintain_disagreement": "DEFENDED", "narrow_proposition": "NARROWED",
+                "withdraw_inference": "NARROWED", "accept_point": "NARROWED"}
+
+    def _respond_argument(self, report, claim: Claim, a: Attack, run: int) -> Response:
+        """Maintain, narrow, withdraw an inference or accept a point. The claim keeps its ID; a partial concession
+        appends a Revision and keeps the valid factual references. It is recorded as an advocate action only."""
+        action, why, revision = respond_to(self.side, claim, a, run)
+        arg = claim.argument
+        target = respond_target(arg, a)
+        if revision:
+            arg.revision_history.append(revision)
+            arg.evidence_refs = revision.retained_evidence_refs
+            claim.citations = [self._ref_to_evidence(r) for r in arg.evidence_refs
+                               if self.tools.admissible(r.source_id)]
+            claim.statement = (f"[{arg.claim_id}] {self.side.title()} ({action.replace('_', ' ')}): "
+                               f"{revision.revised_proposition}")
+            self._remember_concession(report, claim, a, action, target)
+        decision = self.DECISION[action]
+        if decision == "NARROWED" and not claim.citations:
+            decision, claim.status = "CONCEDED", "CONCEDED"
+        else:
+            claim.status = "NARROWED" if decision == "NARROWED" else "DEFENDED"
+        r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
+                     decision=decision, explanation=why, action=action, revision=revision)
+        self.log({"DEFENDED": "defence", "NARROWED": "narrowing", "CONCEDED": "concession"}[decision],
+                 agent=self.side, response=r.model_dump())
+        return r
+
+    def _remember_concession(self, report, claim: Claim, a: Attack, action: str, target) -> None:
+        """Typed memory: the concession is case-specific; only the attack pattern (no entities) is reusable."""
+        arg = claim.argument
+        self.memory.write(f"{report.case_id}:{self.side}:{arg.claim_id}:r{claim.run}:{a.attack_type}",
+                          "case_specific_concession",
+                          {"claim_id": arg.claim_id, "action": action, "attack_type": a.attack_type,
+                           "fact_ids": [], "withdrawn": arg.revision_history[-1].withdrawn_inferences},
+                          report.case_id)
+        if target is not None:
+            key = f"pattern:{a.attack_type}:{target.evidence_type}:{target.epistemic_status}"
+            prior = self.memory.read(key) or {}
+            self.memory.write(key, "challenged_argument_pattern",
+                              {"attack_type": a.attack_type, "evidence_type": target.evidence_type,
+                               "epistemic_status": target.epistemic_status, "count": prior.get("count", 0) + 1},
+                              report.case_id)
+        self.log("memory_write", agent=self.side, key=f"{report.case_id}:{arg.claim_id}",
+                 value=f"case-specific concession ({action}) after {a.attack_type}")
 
     def _can_narrow(self, report, claim: Claim, a: Attack) -> bool:
         """The attack disputes the label, not the rows, and the rows do support the narrower metric."""
@@ -630,12 +842,28 @@ class Advocate:
         claim.estimate = Estimate(low=m.value, high=m.value, metric=a.narrow_to, unit=m.unit,
                                   basis=f"narrowed from {fmt_estimate(old)}, which holds only if nothing is replaced")
         claim.status = "NARROWED"
+        old_statement = claim.statement
         claim.statement = self._narrowed_statement(claim.statement, old, m)
+        explanation = (f"The rows stand: {m.label} is {m.value:.2f}%. {self.side.title()} drops the "
+                       f"{old.metric.replace('_', ' ')} label and narrows the claim to that measured figure; "
+                       f"the attack disputes the label, not the calculation.")
+        revision = None
+        if claim.argument:
+            revision = Revision(
+                round=run,
+                action="narrow_proposition",
+                original_proposition=old_statement,
+                revised_proposition=claim.statement,
+                retained_evidence_refs=claim.argument.evidence_refs,
+                withdrawn_inferences=[f"Net exposure {fmt_estimate(old)} without substitution verification"],
+                reason=explanation
+            )
+            claim.argument.revision_history.append(revision)
         r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
                      decision="NARROWED",
-                     explanation=f"The rows stand: {m.label} is {m.value:.2f}%. {self.side.title()} drops the "
-                                 f"{old.metric.replace('_', ' ')} label and narrows the claim to that measured figure; "
-                                 f"the attack disputes the label, not the calculation.")
+                     explanation=explanation,
+                     action="narrow_proposition",
+                     revision=revision)
         self.log("narrowing", agent=self.side, response=r.model_dump())
         return r
 
@@ -665,7 +893,8 @@ class Advocate:
         r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
                      decision="DEFENDED", explanation=f"The figures recompute exactly from the trade rows at "
                                                       f"{cite_group(rows)}; the attack cites no trade data "
-                                                      f"that changes them.")
+                                                      f"that changes them.",
+                     action="rebut")
         self.log("defence", agent=self.side, response=r.model_dump())
         return r
 
@@ -674,11 +903,33 @@ class Advocate:
         event = report.case_scope.event_id or "NONE"
         facts = [e.fact_id for e in claim.citations if e.fact_id]
         if facts:
-            key = f"{event}:{'+'.join(sorted(facts))}"
-            self.memory.write(key, "concession", {"statement": claim.statement, "fact_ids": facts,
-                                                  "attack": a.reason, "argument": a.argument}, report.case_id)
+            key = f"{report.case_id}:{event}:{'+'.join(sorted(facts))}"
+            concession_data = {"statement": claim.statement, "fact_ids": facts, "attack": a.reason,
+                               "attack_type": a.attack_type or self._map_attack_type(a.reason),
+                               "argument": a.argument}
+            self.memory.write(key, "case_specific_concession", concession_data, report.case_id)
             self.log("memory_write", agent=self.side, key=key, value=f"conceded: {claim.statement[:100]}")
+        elif claim.argument:
+            key = f"{report.case_id}:{self.side}:{claim.argument.claim_id}:r{run}:conceded"
+            self.memory.write(key, "case_specific_concession",
+                              {"claim_id": claim.argument.claim_id, "action": "accept_point", "fact_ids": [],
+                               "attack": a.reason, "attack_type": a.attack_type or self._map_attack_type(a.reason)},
+                              report.case_id)
+            self.log("memory_write", agent=self.side, key=key, value=f"case-specific concession on "
+                                                                      f"{claim.argument.claim_id}")
+        revision = None
+        if claim.argument:
+            revision = Revision(
+                round=run,
+                action="accept_point",
+                original_proposition=claim.statement,
+                revised_proposition="CONCEDED",
+                retained_evidence_refs=[],
+                withdrawn_inferences=[claim.statement],
+                reason=why
+            )
+            claim.argument.revision_history.append(revision)
         r = Response(response_id="", run=run, side=self.side, attack_id=a.attack_id, claim_id=claim.claim_id,
-                     decision="CONCEDED", explanation=why)
+                     decision="CONCEDED", explanation=why, action="accept_point", revision=revision)
         self.log("concession", agent=self.side, response=r.model_dump())
         return r

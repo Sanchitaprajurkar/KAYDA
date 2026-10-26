@@ -14,7 +14,7 @@ class CourtThor(Advocate):
     side = "THOR"
     prefix = "T"
     system_prompt = THOR_SYSTEM_PROMPT
-    mandate = "THOR - the exposure is severe; mitigation is unproven, late, costly or too small"
+    mandate = "THOR - the strongest supporting case; builds explicit evidence chains and establishes severity/impact"
     off_mandate = re.compile(r"not as severe|less severe|overstat|exaggerat|alternative supply (?:has been|was) found|"
                              r"prices (?:have )?(?:settled|eased|fallen)|loss is (?:limited|small|modest)|"
                              r"fully (?:replaced|offset)|well mitigated", re.I)
@@ -23,16 +23,23 @@ class CourtThor(Advocate):
 
     def opening_queries(self, report, run: int, remand: List[str]) -> List[Tuple[str, SearchFilters]]:
         s = report.case_scope
+        event = s.event_id
         if run > 1:
             return self.remand_queries(report, remand, "shortfall")
-        origins, goods = " ".join(s.event_countries), " ".join(s.commodities)
-        importers = " ".join(c for c in s.countries if c not in s.event_countries)
-        event = s.event_id
-        return [
-            (f"{origins} {goods} exports loss collapse shortfall {importers}", SearchFilters(event_id=event, max_tier=3)),
-            (f"capacity limit bottleneck delays congestion {goods}", SearchFilters(event_id=event, max_tier=2)),
-            (f"prices rise premium cost {goods} {importers}", SearchFilters(event_id=event, max_tier=3)),
-        ]
+        out = []
+        if getattr(report, "investigation", None) and report.investigation.spec.propositions:
+            for prop in report.investigation.spec.propositions:
+                for q in prop.support_queries[:2]:
+                    out.append((q, SearchFilters(event_id=event, max_tier=3)))
+        if not out or (getattr(report, "investigation", None) and report.investigation.spec.exposure_applicable):
+            origins, goods = " ".join(s.event_countries), " ".join(s.commodities)
+            importers = " ".join(c for c in s.countries if c not in s.event_countries)
+            out.extend([
+                (f"{origins} {goods} exports loss collapse shortfall {importers}", SearchFilters(event_id=event, max_tier=3)),
+                (f"capacity limit bottleneck delays congestion {goods}", SearchFilters(event_id=event, max_tier=2)),
+                (f"prices rise premium cost {goods} {importers}", SearchFilters(event_id=event, max_tier=3)),
+            ])
+        return out[:6]
 
     def _interpretive_challenge(self, claim: Claim) -> Optional[str]:
         a = claim.assessment

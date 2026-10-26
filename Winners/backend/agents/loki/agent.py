@@ -20,7 +20,7 @@ class CourtLoki(Advocate):
     side = "LOKI"
     prefix = "L"
     system_prompt = LOKI_SYSTEM_PROMPT
-    mandate = "LOKI - the exposure is limited; substitutes, rerouting and stocks soften the loss"
+    mandate = "LOKI - the strongest opposing case; identifies counter-evidence, scope limits, and unverified assumptions"
     off_mandate = re.compile(r"more severe|understat|underestimat|worse than (?:claimed|stated)|no (?:real )?"
                              r"mitigation|mitigation (?:has )?failed|loss is (?:larger|greater)", re.I)
     attack_terms = "substitute alternative supply spot purchases stocks"
@@ -50,16 +50,22 @@ class CourtLoki(Advocate):
 
     def opening_queries(self, report, run: int, remand: List[str]) -> List[Tuple[str, SearchFilters]]:
         s = report.case_scope
+        event = s.event_id
         if run > 1:
             return self.remand_queries(report, remand, "alternative")
-        goods = " ".join(s.commodities)
-        event = s.event_id
-        queries = [(f"{c} {goods} imports alternative supply substitute suppliers",
-                    SearchFilters(event_id=event, country=c))
-                   for c in s.countries if c not in s.event_countries]
-        queries.append((f"stocks reserves rerouted rail road adjusted markets {goods}",
+        out = []
+        if getattr(report, "investigation", None) and report.investigation.spec.propositions:
+            for prop in report.investigation.spec.propositions:
+                for q in prop.contradict_queries[:2]:
+                    out.append((q, SearchFilters(event_id=event, max_tier=3)))
+        if not out or (getattr(report, "investigation", None) and report.investigation.spec.exposure_applicable):
+            goods = " ".join(s.commodities)
+            for c in [c for c in s.countries if c not in s.event_countries]:
+                out.append((f"{c} {goods} imports alternative supply substitute suppliers",
+                            SearchFilters(event_id=event, country=c)))
+            out.append((f"stocks reserves rerouted rail road adjusted markets {goods}",
                         SearchFilters(event_id=event, max_tier=3)))
-        return queries
+        return out[:6]
 
     def _interpretive_challenge(self, claim: Claim) -> Optional[str]:
         a = claim.assessment
