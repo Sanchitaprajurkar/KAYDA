@@ -83,14 +83,18 @@ def _render(event: str, d: dict) -> Optional[str]:
             f"{fmt_estimate(c.get('estimate'))}  {c['statement']}"
         ]
         if c.get("citations"):
-            lines.extend(_format_supporting_evidence(c["citations"]))
+            basis = (c.get("argument") or {}).get("challenge_basis")
+            title = {"not_established": "QUALIFYING RECORDS (cited for what they show; not proof of falsity)",
+                     "evidence_against": "EVIDENCE AGAINST"}.get(basis, "SUPPORTING EVIDENCE")
+            lines.extend(_format_supporting_evidence(c["citations"], title))
         if c.get("assessment"):
             lines.extend(calculation_lines(c["assessment"], c.get("estimate")))
         return "\n".join(lines).rstrip()
     if event == "attack":
         a = d["attack"]
         lines = [
-            f"  {d['agent']:<5} attacks {a['target_claim_id']} ({a['reason']}, {a['grounds']}): {a['argument']}"
+            f"  {d['agent']:<5} attacks {a['target_claim_id']} ({a.get('attack_type') or a['reason']}, {a['grounds']}"
+            f"{', ' + a['target_evidence_or_reasoning'] if a.get('target_evidence_or_reasoning') else ''}): {a['argument']}"
         ]
         if a.get("counter_evidence"):
             lines.extend(_format_supporting_evidence(a["counter_evidence"], "COUNTER-EVIDENCE"))

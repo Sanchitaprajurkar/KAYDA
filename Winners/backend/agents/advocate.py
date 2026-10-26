@@ -15,7 +15,8 @@ from backend.court.llm import BudgetExceeded, CourtLLM, compact
 from backend.court.memory import AgentMemory
 from backend.court.display import cite, cite_group, fmt_estimate, fmt_span
 from backend.court.exposure import numeric_claim_defect
-from backend.agents.argument import build_arguments, build_attacks, respond_target, respond_to, validate_refs
+from backend.agents.argument import (build_arguments, build_attacks, carrying_refs, respond_target, respond_to,
+                                     validate_refs)
 from backend.court.models import (ATTACK_REASONS, NATIONAL_IMPORT_SHARE, NET_EXPOSURE, ROUTE_VALUE_DECLINE,
                                   ROUTE_VOLUME_DECLINE, SOURCE_STATED, Attack, Claim, ClaimArgument, Estimate,
                                   Evidence, EvidenceRef, Locator, Response, Revision)
@@ -370,30 +371,41 @@ class Advocate:
             arg.evidence_requests.append(req)
             self.log("evidence_request", agent=self.side, claim_id=arg.claim_id, **req)
 
+    def _carrying_citations(self, arg: ClaimArgument) -> List[Evidence]:
+        """What Odin rules on: only the admissible references that carry this side's position. Context and
+        qualifying records stay in the argument for what they show; they are not offered as proof."""
+        return [self._ref_to_evidence(r) for r in carrying_refs(arg) if self.tools.admissible(r.source_id)]
+
+    def _position_statement(self, arg: ClaimArgument, pressed: bool) -> str:
+        if not pressed:
+            return (f"[{arg.claim_id}] {self.side.title()} does not press this: nothing in the Case File carries its "
+                    f"position on \"{arg.proposition_text}\".")
+        if self.side == "THOR":
+            return f"[{arg.claim_id}] Thor supports: {arg.proposition_text}"
+        if arg.challenge_basis == "not_established":
+            return (f"[{arg.claim_id}] Loki challenges as not established (unproven, not shown false): "
+                    f"{arg.proposition_text}")
+        return f"[{arg.claim_id}] Loki challenges with evidence against: {arg.proposition_text}"
+
     def _open_investigation_case(self, report: CaseEvidenceReport, run: int, remand: List[str]) -> List[Claim]:
         """One claim per Heimdall proposition, the same claim IDs for both sides. Exposure calculations are added
         only when the investigation spec calls for exposure analysis."""
         inv = report.investigation
-        args = build_arguments(self.side, report, self._ask, self._cautions(report))
+        args = build_arguments(self.side, report, self._cautions(report))
         claims = []
         for arg in args:
             self._request_if_gap(report, arg)
             arg.evidence_refs = self._validated(arg.evidence_refs, report, f"{self.side} argument {arg.claim_id}")
-            admissible = [r for r in arg.evidence_refs if self.tools.admissible(r.source_id)]
-            citations = [self._ref_to_evidence(r) for r in admissible]
-            verb = "supports" if self.side == "THOR" else "challenges"
+            citations = self._carrying_citations(arg)
+            pressed = arg.pressed and bool(citations)
             claim = Claim(claim_id=f"{self.prefix}{run}-{arg.claim_id}", side=self.side, run=run,
-                          kind="evidence", statement=f"[{arg.claim_id}] {self.side.title()} {verb}: "
-                                                     f"{arg.proposition_text}",
-                          nature="SOURCED_FACT" if citations and all(r.epistemic_status == "observed_fact"
-                                                                     for r in admissible) else "INFERENCE",
+                          kind="evidence", statement=self._position_statement(arg, pressed),
+                          nature="SOURCED_FACT" if citations and all(e.assertion == "OBSERVED_FACT"
+                                                                     for e in citations) else "INFERENCE",
                           reasoning=arg.reasoning, citations=citations, argument=arg,
+                          status="ACTIVE" if pressed else "NOT_PRESSED",
                           requests=list(dict.fromkeys(d for q in arg.evidence_requests
                                                       for d in q["outside_case_file"])))
-            if not citations:
-                # Odin rules only on cited evidence; a position with nothing admissible behind it is not pressed.
-                claim.status = "CONCEDED"
-                claim.statement += " (not pressed: no admissible evidence in the Case File for this position)"
             self.memory.write(f"{report.case_id}:{self.side}:{arg.claim_id}", "case_specific_proposition",
                               {"claim_id": arg.claim_id, "position": arg.position,
                                "sources": [r.source_id for r in arg.evidence_refs]}, report.case_id)
@@ -517,7 +529,7 @@ class Advocate:
                       "UNRELATED_EVENT": "wrong_scope"}
         out = []
         for claim in opponent:
-            if claim.status == "CONCEDED":
+            if claim.status in ("CONCEDED", "NOT_PRESSED"):
                 continue  # a position its owner did not press is not attacked
             bad = [e for e in claim.citations if not self.tools.admissible(e.doc_id)]
             if bad:
@@ -616,9 +628,10 @@ class Advocate:
         taken = {a.target_claim_id for a in attacks}
 
         # Proposition arguments: taxonomy attacks on actual weaknesses, counter-evidence validated before filing.
-        argued = [c for c in opponent if c.argument and c.claim_id not in taken and c.status != "CONCEDED"]
+        argued = [c for c in opponent if c.argument and c.claim_id not in taken
+                  and c.status not in ("CONCEDED", "NOT_PRESSED")]
         if argued and getattr(report, "investigation", None):
-            for atk in build_attacks(self.side, report, argued, self._ask, run):
+            for atk in build_attacks(self.side, report, argued, run):
                 atk.counter_evidence_refs = self._validated(atk.counter_evidence_refs, report,
                                                             f"{self.side} attack on {atk.target_claim_id}")
                 if atk.attack_type == "contradictory_evidence" and not atk.counter_evidence_refs:
@@ -731,7 +744,7 @@ class Advocate:
         out, to_argue = [], []
         for a in attacks:
             claim = self.claims.get(a.target_claim_id)
-            if not claim or (claim.argument and claim.status == "CONCEDED"):
+            if not claim or (claim.argument and claim.status in ("CONCEDED", "NOT_PRESSED")):
                 continue
             if claim.argument and not (a.grounds == "rule" and a.attack_type is None and a.reason in AUTO_CONCEDE):
                 out.append(self._respond_argument(report, claim, a, run))
@@ -794,8 +807,7 @@ class Advocate:
         if revision:
             arg.revision_history.append(revision)
             arg.evidence_refs = revision.retained_evidence_refs
-            claim.citations = [self._ref_to_evidence(r) for r in arg.evidence_refs
-                               if self.tools.admissible(r.source_id)]
+            claim.citations = self._carrying_citations(arg)
             claim.statement = (f"[{arg.claim_id}] {self.side.title()} ({action.replace('_', ' ')}): "
                                f"{revision.revised_proposition}")
             self._remember_concession(report, claim, a, action, target)

@@ -76,8 +76,8 @@ class Odin:
         if rows:
             out.append(f"{len(rows)} trade row(s) present and unflagged in {', '.join(sorted({e.doc_id for e in rows}))}")
         if paras:
-            out.append(f"{len(paras)} quoted paragraph(s) found verbatim in their documents and naming "
-                       f"{claim.country} or {claim.sector}")
+            scope = (f" and naming {claim.country} or {claim.sector}" if claim.country or claim.sector else "")
+            out.append(f"{len(paras)} quoted paragraph(s) found verbatim in their documents{scope}")
         a = claim.assessment
         if claim.kind == "calculation" and a:
             q = a.quantities
@@ -145,6 +145,12 @@ class Odin:
         pending = []
         for c in claims:
             opponent_failed = ("LOKI" if c.side == "THOR" else "THOR") in side_failures
+            if c.status == "NOT_PRESSED":
+                rulings[c.claim_id] = Ruling(claim_id=c.claim_id, side=c.side, run=c.run, ruling="CONCEDED",
+                                             nature="INFERENCE", classification="NOT_PRESSED",
+                                             reason="Not pressed: nothing in the Case File carries this side's "
+                                                    "position. This is not a finding on the proposition.")
+                continue
             if c.status == "CONCEDED":
                 rulings[c.claim_id] = Ruling(claim_id=c.claim_id, side=c.side, run=c.run, ruling="CONCEDED",
                                              nature=self._default_nature(c), classification="CONCEDED",
@@ -349,6 +355,10 @@ class Odin:
                 if not profile:
                     missing.append(f"{label}: evidence gap not yet checked against the {cell.country} reference "
                                    f"sheet")
+        # Heimdall already ran its follow-up searches: propositions it could not resolve are open, not sufficient.
+        inv = getattr(report, "investigation", None)
+        if inv is not None:
+            still_open += [f"Proposition {u}" for u in inv.unresolved]
         return list(dict.fromkeys(missing)), list(dict.fromkeys(still_open))
 
     def research_outcomes(self, report: CaseEvidenceReport, asked: List[str], record: RunRecord) -> List[ResearchOutcome]:

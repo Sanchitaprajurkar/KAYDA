@@ -43,7 +43,7 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
     final = runs[-1]
     claims = {c.claim_id: c for c in final.claims}
     groups: Dict[str, List] = {"ESTABLISHED": [], "PARTLY_ESTABLISHED": [], "CONTESTED": [], "UNCONTESTED": [],
-                               "CONCEDED": [], "REJECTED": []}
+                               "CONCEDED": [], "REJECTED": [], "NOT_PRESSED": []}
     for r in final.rulings:
         groups[r.classification].append((r, claims[r.claim_id]))
     v = report.event_verification
@@ -82,7 +82,8 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
               "PARTLY_ESTABLISHED": "Partly established findings (the measured fact stands; the conclusion does not)",
               "CONTESTED": "Contested findings",
               "UNCONTESTED": "Unchallenged findings (cannot be Established)", "CONCEDED": "Conceded findings",
-              "REJECTED": "Rejected claims"}
+              "REJECTED": "Rejected claims",
+              "NOT_PRESSED": "Positions not pressed (nothing in the Case File carries them; not a finding)"}
     for key, title in titles.items():
         if not groups[key]:
             continue

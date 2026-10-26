@@ -94,3 +94,19 @@ def test_no_relevant_evidence_is_reported_as_insufficient():
                                                  "glaciers.", case_id="T-INV-NONE")
     assert r.investigation.insufficient
     assert r.missing_information and r.missing_information[0].topic == "Insufficient evidence for the question"
+
+
+def test_a_planner_that_drops_a_stated_prediction_is_corrected():
+    from heimdall.case.investigation import Investigator, _Plan, _PlannedProp
+    h = offline_heimdall()
+    inv = Investigator(h.evidence_store, h.retriever, h.understanding, llm=None)
+    rules = inv.plan(Q2, h.understanding.understand(query=Q2))
+    assert sum("famine" in p.text.lower() for p in rules.propositions) == 1  # split from the export forecast
+    dropped = _Plan(investigation_types=["COMPETING_CLAIMS"], propositions=[
+        _PlannedProp(text="Ledger Analytics projects a -90% grain export wipeout", kind="CLAIM",
+                     attributed_to="Ledger Analytics"),
+        _PlannedProp(text="Corvan Grain disputes the projection", kind="CLAIM", attributed_to="Corvan Grain")])
+    merged = inv._merge_plan(rules, dropped, [])
+    famine = [p for p in merged.propositions if "famine" in p.text.lower()]
+    export = [p for p in merged.propositions if "export" in p.text.lower()]
+    assert famine and export and not {p.prop_id for p in famine} & {p.prop_id for p in export}

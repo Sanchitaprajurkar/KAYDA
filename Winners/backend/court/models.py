@@ -81,6 +81,9 @@ class ClaimArgument(BaseModel):
     revision_history: List[Revision] = Field(default_factory=list)
     numerical_analysis: Optional[Dict[str, Any]] = None
     strategy: str = ""  # the investigation type(s) that shaped the argument
+    # Loki only: "evidence_against" (contradicting evidence) or "not_established" (unproven; not a claim of falsity)
+    challenge_basis: Optional[Literal["evidence_against", "not_established"]] = None
+    pressed: bool = True  # False when nothing in the Case File carries this side's position
     evidence_requests: List[Dict[str, Any]] = Field(default_factory=list)  # targeted searches and what they found
 
 
@@ -249,7 +252,8 @@ class Ruling(BaseModel):
     ruling: str  # UPHELD | REJECTED | CONTESTED | CONCEDED
     nature: str  # SOURCED_FACT | INFERENCE
     # PARTLY_ESTABLISHED: the measured fact stands, the conclusion the claim draws from it does not
-    classification: str  # ESTABLISHED | PARTLY_ESTABLISHED | CONTESTED | CONCEDED | REJECTED | UNCONTESTED
+    # ... | NOT_PRESSED: the side had nothing in the Case File to carry its position (not a finding)
+    classification: str  # ESTABLISHED | PARTLY_ESTABLISHED | CONTESTED | CONCEDED | REJECTED | UNCONTESTED | NOT_PRESSED
     reason: str
     decided_by: str = "rules"  # rules | odin
     failed_checks: List[str] = Field(default_factory=list)

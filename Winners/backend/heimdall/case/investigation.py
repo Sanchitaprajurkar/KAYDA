@@ -17,7 +17,7 @@ from pydantic import BaseModel, Field
 
 from heimdall.case.text import contains_term, norm, stem, tokens
 
-MAX_ROUNDS = 3
+MAX_ROUNDS = 2  # one targeted follow-up round; it stops early when a round adds nothing
 CANDIDATES_PER_PROPOSITION = 10
 _LABEL = re.compile(r"^\s*\[P(\d+)\]\s*")
 
@@ -254,6 +254,10 @@ class Investigator:
                              support_queries=p.support_queries[:4], contradict_queries=p.contradict_queries[:4],
                              sense_notes=p.sense_notes[:3])
                  for i, p in enumerate(plan.propositions[:6], 1) if p.text.strip()]
+        # A planner may merge or drop a requirement the question states: keep any rule proposition it left out.
+        for r in spec.propositions:
+            if props and not self._covered(r, props):
+                props.append(r.model_copy(update={"prop_id": f"P{len(props) + 1}"}))
         return spec.model_copy(update={
             "investigation_types": list(dict.fromkeys(types or spec.investigation_types)),
             "entities": list(dict.fromkeys(spec.entities + plan.entities))[:12],
@@ -283,13 +287,36 @@ class Investigator:
                    or re.search(r"between\s+(.+?)\s+and\s+(.+?)(?:\.\s|\.$|$)", text, re.I))
         if dispute:
             for side in dispute.groups():
-                props.append(Proposition(prop_id=f"P{len(props) + 1}", text=side.strip(" ()"),
-                                         kind="FORECAST" if re.search(TYPE_CUES["FORECAST_EVALUATION"], side, re.I)
-                                         else "CLAIM", attributed_to=side.split("(")[0].strip()))
+                party = side.split("(")[0].strip()
+                for part in self._predictions(side):
+                    props.append(Proposition(
+                        prop_id=f"P{len(props) + 1}", text=part,
+                        kind="FORECAST" if re.search(TYPE_CUES["FORECAST_EVALUATION"], side, re.I) else "CLAIM",
+                        attributed_to=party))
         if not props:
             props.append(Proposition(prop_id="P1", text=text, kind="EXPOSURE" if "EXPOSURE_ANALYSIS" in types
                                      else "EVENT"))
         return props
+
+    @staticmethod
+    def _predictions(side: str) -> List[str]:
+        """'Party (verbing A and B)' -> ['Party, verbing: A', 'Party, verbing: B']; anything else unchanged."""
+        m = re.match(r"\s*([^(]+?)\s*\(\s*(\w+ing)\s+(.+?)\)?\s*$", side)
+        if not m:
+            return [side.strip(" ()")]
+        party, verb, body = m.groups()
+        parts = [x.strip(" ,") for x in re.split(r"\s+and\s+(?=[a-z])", body)]
+        parts = [x for x in parts if len(tokens(x)) >= 2]
+        if len(parts) < 2:
+            return [side.strip(" ()")]
+        return [f"{party}, {verb}: {x}" for x in parts]
+
+    def _covered(self, rule: "Proposition", planned: List["Proposition"]) -> bool:
+        """Whether some planned proposition carries the rule proposition's distinctive words."""
+        party = set(tokens(rule.attributed_to or ""))  # the claimant's name says nothing about what is claimed
+        rare = {t for t in tokens(rule.text) if self.retriever.idf.get(t, 6.0) >= 3.0 and t not in party}
+        return not rare or any(rare & set(tokens(p.text)) == rare or len(rare & set(tokens(p.text))) >= 2
+                               for p in planned)
 
     @staticmethod
     def _requirements(spec: InvestigationSpec) -> None:
@@ -324,22 +351,29 @@ class Investigator:
 
     # -- retrieval ----------------------------------------------------------------------------------------------------
     def search(self, queries: Sequence[str], scope, exclude: set) -> List[Tuple[str, int, float, List[str]]]:
-        """Paragraph-level BM25 over admissible evidence; best score per paragraph across the query variants."""
-        best: Dict[Tuple[str, int], Tuple[float, List[str]]] = {}
+        """Paragraph-level BM25 over admissible evidence. Each query variant is ranked on its own and the lists are
+        interleaved, so the candidates cover every evidence requirement (support, operations, official records,
+        denials) instead of the variant with the most matching words."""
+        per_query: List[List[Tuple[str, int, float, List[str]]]] = []
         for q in queries:
             weights = {t: 1.0 for t in tokens(q)}
             if not weights:
                 continue
+            hits = []
             for did, idx, toks in self.retriever.paragraphs:
                 if (did, idx) in exclude or self.retriever.after_as_of(did, scope):
                     continue
-                score, matched = self.retriever._bm25(toks, weights)
-                if score > 0 and score > best.get((did, idx), (0, []))[0]:
-                    best[(did, idx)] = (score, [q])
-                elif score > 0:
-                    best[(did, idx)][1].append(q)
-        ranked = sorted(((did, idx, s, qs) for (did, idx), (s, qs) in best.items()), key=lambda x: -x[2])
-        return ranked
+                score, _ = self.retriever._bm25(toks, weights)
+                if score > 0:
+                    hits.append((did, idx, round(score, 3), [q]))
+            per_query.append(sorted(hits, key=lambda x: -x[2]))
+        out, seen = [], set()
+        for rank in range(max((len(h) for h in per_query), default=0)):
+            for hits in per_query:
+                if rank < len(hits) and hits[rank][:2] not in seen:
+                    seen.add(hits[rank][:2])
+                    out.append(hits[rank])
+        return out
 
     def _paragraph(self, doc_id: str, idx: int) -> Tuple[str, int, int]:
         """Body text of a paragraph (metadata header lines stripped), its [P n] label and page."""
@@ -371,9 +405,9 @@ class Investigator:
 
     # -- evaluation ---------------------------------------------------------------------------------------------------
     def evaluate(self, prop: Proposition, items: List[EvidenceItem]) -> List[EvidenceItem]:
+        items = [it for it in items if self._sense_ok(prop, it) and self._linked(prop, it)]
         judged = self._llm_judge(prop, items) if self.llm is not None and items else None
         out = []
-        items = [it for it in items if self._sense_ok(prop, it)]
         for i, it in enumerate(items):
             j = judged.get(f"C{i}") if judged else None
             if judged is not None and j is None:
@@ -390,8 +424,37 @@ class Investigator:
             else:
                 ruled = self._rule_judge(prop, it)
                 if ruled:
-                    out.append(ruled)
+                    out.append(self._sense_cap(prop, ruled))
         return out
+
+    def _places(self, prop: Proposition) -> List[str]:
+        return [n for n in Investigator._entities(prop.text)
+                if n.split()[0] in self.understanding.countries or n in self.understanding.countries]
+
+    def _linked(self, prop: Proposition, it: EvidenceItem) -> bool:
+        """Whether a paragraph bears on the proposition at all. Shared common words or an ambiguous word used in
+        another sense are not a link. An operational or official record at the alleged location is."""
+        unshown = {stem(t) for t in SENSES if contains_term(prop.text, t) and contains_term(it.quote, t)
+                   and self._senses_in(prop.text, t)
+                   and self._senses_in(prop.text, t)[0] not in self._senses_in(it.quote, t)}
+        names = {t for c in self.understanding.countries for t in tokens(c)}
+        want = set(tokens(prop.text + " " + " ".join(s for w in token_words(prop.text) for s in SYNONYMS.get(w, []))))
+        rare = [t for t in want & set(tokens(it.quote)) if t not in unshown and t not in names
+                and self.retriever.idf.get(t, 6.0) >= 2.5]
+        if prop.kind in ("INCIDENT", "EVENT"):
+            # An incident is alleged at a specific place: a multi-word place must be named in full (in the paragraph
+            # or its document's title); elsewhere is not evidence about it, however many words it shares.
+            places = self._places(prop)
+            title = self.store.document(it.doc_id).manifest_meta.title or ""
+            at_place = not places or any(contains_term(it.quote + " " + title, n) for n in places)
+            record = re.search("|".join(re.escape(t) for t in OPERATIONS_TERMS + OFFICIAL_TERMS + DENIAL_TERMS),
+                               it.quote, re.I)
+            return bool(at_place and (rare or record))
+        if rare:
+            return True
+        meta = self.store.document(it.doc_id).manifest_meta
+        party = prop.attributed_to and contains_term(f"{meta.source_name} {meta.title}", prop.attributed_to.split()[0])
+        return bool(party)
 
     def _senses_in(self, text: str, term: str) -> List[str]:
         return [s for s, cues in SENSES[term].items() if any(contains_term(text, c) for c in cues)]
@@ -410,11 +473,13 @@ class Investigator:
         return True
 
     def _sense_cap(self, prop: Proposition, it: EvidenceItem) -> EvidenceItem:
-        """A paragraph that uses the word without showing the proposition's sense cannot support that sense."""
+        """A paragraph that uses the word without showing the proposition's sense can neither support nor
+        contradict that sense; at most it is operational context that qualifies the claim."""
         for term in SENSES:
             want = self._senses_in(prop.text, term) if contains_term(prop.text, term) else []
-            if want and contains_term(it.quote, term) and it.stance == "SUPPORTS" and                     want[0] not in self._senses_in(it.quote, term):
-                it.stance = "CONTEXT"
+            if want and contains_term(it.quote, term) and want[0] not in self._senses_in(it.quote, term):
+                if it.stance in ("SUPPORTS", "CONTRADICTS"):
+                    it.stance = "CONTEXT" if it.stance == "SUPPORTS" else "QUALIFIES"
                 it.limitations.append(f"uses '{term}' without showing the {want[0]} sense the proposition needs")
         return it
 
@@ -442,11 +507,6 @@ class Investigator:
         shared, rare = self._distinctive(prop, text)
         if shared < 2 or rare < 1:
             return None
-        places = [n for n in Investigator._entities(prop.text) if n.split()[0] in self.understanding.countries
-                  or n in self.understanding.countries]
-        if prop.kind in ("INCIDENT", "EVENT") and places and not any(
-                contains_term(text, n) or contains_term(text, n.split()[0]) for n in places):
-            return None  # an incident is alleged somewhere specific; elsewhere is not evidence about it
         contra, support = bool(CONTRA_CUES.search(text)), bool(SUPPORT_CUES.search(text))
         if prop.kind == "EXPOSURE":
             contra = support = False  # exposure is argued from trade rows downstream, not from cue words
@@ -486,7 +546,8 @@ class Investigator:
                                   "evaluated_by": sorted({k.evaluated_by for k in kept}) or ["-"]})
             inv.findings = self._findings(spec, inv.evidence)
             gaps = [f for f in inv.findings if f.status == "INSUFFICIENT" or not f.contradicting]
-            if not gaps or rnd == MAX_ROUNDS:
+            added = sum(a["kept"] for a in inv.audit if a["round"] == rnd)
+            if not gaps or rnd == MAX_ROUNDS or (rnd > 1 and not added):
                 break
             pending = {f.prop_id: self._follow_up(next(p for p in spec.propositions if p.prop_id == f.prop_id), f)
                        for f in gaps}
@@ -535,7 +596,10 @@ class Investigator:
             text = " ".join([r.title or ""] + list(r.claims))
             for p in spec.propositions:
                 shared, rare = self._distinctive(p, text, rare_idf=3.0)
-                if p.kind != "EXPOSURE" and shared >= 2 and rare >= 1:
+                # A word the admissible corpus never uses (idf at its ceiling) is specific enough on its own.
+                unique = sum(1 for t in set(tokens(p.text)) & set(tokens(text))
+                             if self.retriever.idf.get(t, 6.0) >= 5.9)
+                if p.kind != "EXPOSURE" and rare >= 1 and (shared >= 2 or unique >= 1):
                     out.append(EvidenceItem(
                         prop_id=p.prop_id, doc_id=r.doc_id, paragraph_index=0, paragraph_number=0,
                         citation=f"{r.doc_id} (set aside: {r.reason})", quote=(r.claims or [r.title or ""])[0],

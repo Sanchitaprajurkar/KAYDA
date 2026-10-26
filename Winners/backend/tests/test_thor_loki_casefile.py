@@ -87,10 +87,7 @@ def test_q1_has_no_exposure_numbers(trials):
             assert c["argument"]["numerical_analysis"] is None
 
 
-# 4. the export forecast and the famine prediction are separate claims. Known defect outside Thor/Loki: Heimdall's
-# offline (rules) planner keeps "-90% wipeout and imminent famine" in one proposition; the advocates argue Heimdall's
-# claim IDs as given and may not invent new ones.
-@pytest.mark.xfail(strict=True, reason="Heimdall rules planner does not split compound predictions")
+# 4. the export forecast and the famine prediction are separate claims
 def test_q2_forecast_and_famine_are_separate_claims(trials):
     props = trials["Q2"]["files"][0]["investigation"]["spec"]["propositions"]
     export = [p["prop_id"] for p in props if "export" in p["text"].lower()]
@@ -164,8 +161,11 @@ def test_memory_does_not_cross_cases(tmp_path, first, second):
     reads = [e for e in b["events"] if e["event"] == "memory_read"]
     print(f"{first} -> {second}: {len(conceded_first)} concession/narrowing(s) in {first}; memory reads in {second}: "
           f"{sorted({e['influenced'][:100] for e in reads})}")
-    assert conceded_first, "the first case produced no concession, so the check would be vacuous"
+    from backend.court.memory import AgentMemory
+    written = [r for side in ("thor", "loki") for cat in ("case_specific_concession", "case_specific_proposition")
+               for r in AgentMemory(side, mem).by_category(cat) if r["case_id"] == f"T-MEM-{first}"]
+    assert written, "the first case left no case-specific memory, so the check would be vacuous"
     assert not any("skipped re-asserting" in e["influenced"] for e in reads)
-    assert any("no claim suppressed" in e["influenced"] for e in reads)  # prior-case entries surface only as cautions
+    assert all("no claim suppressed" in e["influenced"] for e in reads)  # prior-case entries surface only as cautions
     assert _filed(b) == _filed(fresh)      # same claims, statuses, confidence and evidence as on a fresh store
     assert _outcome(b) == _outcome(fresh)  # and the same cross-examination outcome

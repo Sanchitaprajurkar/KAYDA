@@ -57,7 +57,7 @@ def test_both_sides_search_and_file_claims(trial):
         mine = [c for c in claims if c["side"] == side]
         assert 1 <= len(mine) <= 6
         # every pressed claim cites evidence; a position with nothing admissible behind it is filed as not pressed
-        assert all(c["citations"] or (c["status"] == "CONCEDED" and "not pressed" in c["statement"]) for c in mine)
+        assert all(c["citations"] or c["status"] == "NOT_PRESSED" for c in mine)
         spans = [c["estimate"] for c in mine if c["estimate"] and c["estimate"]["low"] is not None]
         assert all(e["low"] <= e["high"] for e in spans)
 
@@ -87,7 +87,7 @@ def test_odin_rules_on_every_claim(trial):
         assert {c["claim_id"] for c in t["claims"]} == {x["claim_id"] for x in r["rulings"]}
         assert all(x["nature"] in ("SOURCED_FACT", "INFERENCE") for x in r["rulings"])
         assert all(x["classification"] in ("ESTABLISHED", "PARTLY_ESTABLISHED", "CONTESTED", "CONCEDED", "REJECTED",
-                                           "UNCONTESTED") for x in r["rulings"])
+                                           "UNCONTESTED", "NOT_PRESSED") for x in r["rulings"])
         # independent validation is stated for every claim that survives, attacked or not
         assert all(x["validation"] for x in r["rulings"] if x["ruling"] in ("UPHELD", "CONTESTED"))
         assert not any("never credibly countered" in x["reason"] for x in r["rulings"])
