@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from typing import Callable, List, Optional, Tuple
 
 from heimdall.case.analysis import EvidenceAnalyst
+from heimdall.case.investigation import Investigation, Investigator, Proposition
 from heimdall.case.retrieval import EvidenceRetriever
 from heimdall.case.scope import CaseUnderstanding
 from heimdall.case.text import contains_term, tokens
@@ -81,12 +82,20 @@ class HeimdallAgent:
     ) -> CaseEvidenceReport:
         timeline, log = self._tracer(run_number=1)
 
-        # 1. Understand the case
+        # 1. Understand the case: what is being asked, before any retrieval
         scope = self.understanding.understand(query=query, event_id=event_id)
         case_id = case_id or f"CASE-{scope.event_id or 'ADHOC'}-{datetime.now(timezone.utc):%Y%m%d%H%M%S}"
-        log("UNDERSTAND", f"Event {scope.event_id or 'unidentified'} ({scope.event_name or '-'}); countries "
-                          f"{scope.countries}; commodities {scope.commodities}; as of {scope.as_of_date}",
-            search_terms=scope.search_terms)
+        investigator = self._investigator()
+        spec = investigator.plan(query or scope.event_name or "", scope)
+        if spec.exposure_applicable:
+            scope.commodities = scope.commodities or list(scope.sectors)  # cells need a commodity axis
+        else:
+            scope.commodities = []  # not an exposure question: no country-commodity grid is forced on it
+        log("UNDERSTAND", f"Event {scope.event_id or 'unidentified'} ({scope.event_name or '-'}); investigation "
+                          f"{'+'.join(spec.investigation_types)} (planned by {spec.planned_by}); "
+                          f"{len(spec.propositions)} proposition(s); exposure cells {spec.cells or 'not applicable'}; "
+                          f"as of {scope.as_of_date}",
+            search_terms=scope.search_terms, propositions=[p.text for p in spec.propositions])
 
         # 2. Retrieve: the question's direct flows always, other trade routes held back, the rest capped
         ranked = self.retriever.retrieve(scope, max_documents=len(self.evidence_store.evidence_ids()))
@@ -100,8 +109,35 @@ class HeimdallAgent:
                         f"relevant documents were excluded before trial", retrieved_doc_ids=doc_ids,
             deferred_doc_ids=[d.doc_id for d in deferred], excluded_doc_ids=[r.doc_id for r in rejected])
 
+        # 2b. Proposition-level evidence: BM25 per requirement, LLM evaluation, gap-driven follow-up searches
+        investigation = investigator.investigate(spec, scope, rejected)
+        for a in investigation.audit:
+            log("INVESTIGATE", f"round {a['round']} {a['proposition']}: {a['candidates']} candidate paragraph(s), "
+                               f"{a['kept']} kept ({', '.join(a['evaluated_by'])})", queries=a["queries"])
+        if not spec.exposure_applicable:
+            # The evidence for the question's propositions is the Case File; exposure runs keep their focused set.
+            known = {d.doc_id for d in retrieved}
+            extra = list(dict.fromkeys(e.doc_id for e in investigation.evidence if e.admissible
+                                       and e.stance != "CONTEXT" and e.doc_id not in known))
+            retrieved += [self._as_retrieved(did, investigation) for did in extra]
+            doc_ids = [d.doc_id for d in retrieved]
+
         return self._assemble(case_id, query or scope.event_name or event_id or "", scope, retrieved, rejected,
-                              run_number=1, history=[], new_ids=doc_ids, timeline=timeline, log=log)
+                              run_number=1, history=[], new_ids=doc_ids, timeline=timeline, log=log,
+                              investigation=investigation)
+
+    def _investigator(self) -> Investigator:
+        return Investigator(self.evidence_store, self.retriever, self.understanding,
+                            llm=getattr(self.event_verifier, "llm", None))
+
+    def _as_retrieved(self, doc_id: str, investigation: Investigation) -> RetrievedDocument:
+        meta = self.evidence_store.document(doc_id).manifest_meta
+        items = [e for e in investigation.evidence if e.doc_id == doc_id]
+        return RetrievedDocument(
+            doc_id=doc_id, title=meta.title, source_name=meta.source_name, source_type=meta.source_type,
+            reliability_tier=meta.reliability_tier, pub_date=meta.pub_date,
+            relevance_score=max(e.bm25_score for e in items), top_paragraphs=[e.paragraph_index for e in items][:3],
+            reason="evidence for " + ", ".join(sorted({f"{e.prop_id} ({e.stance.lower()})" for e in items})))
 
     def re_search(
         self,
@@ -190,9 +226,16 @@ class HeimdallAgent:
         history = prior.research_history + [ResearchRun(
             run_number=run, request=request, focus_terms=focus, new_document_ids=new_ids,
             new_excluded_ids=[r.doc_id for r in new_rejected], note=note)]
+        investigation = prior.investigation
+        if investigation is not None:
+            # Gap-driven: Odin's request becomes one more requirement to search for and evaluate.
+            spec = investigation.spec.model_copy(deep=True)
+            spec.propositions.append(Proposition(prop_id=f"P{len(spec.propositions) + 1}", text=request,
+                                                 kind="CLAIM", support_queries=[" ".join(focus[:8])]))
+            investigation = self._investigator().investigate(spec, scope, prior.rejected_evidence + new_rejected)
         return self._assemble(case_id, prior.target_query, scope, prior.retrieved_documents + found,
                               prior.rejected_evidence + new_rejected, run_number=run, history=history,
-                              new_ids=new_ids, timeline=timeline, log=log)
+                              new_ids=new_ids, timeline=timeline, log=log, investigation=investigation)
 
     def _split_by_route(self, scope: CaseScope, ranked: List[RetrievedDocument]):
         """Direct trade series (event origin -> an importer in the question), other trade series, the rest."""
@@ -244,7 +287,8 @@ class HeimdallAgent:
 
     def _assemble(self, case_id: str, query: str, scope: CaseScope, retrieved: List[RetrievedDocument],
                   rejected: List[RejectedEvidence], run_number: int, history: List[ResearchRun],
-                  new_ids: List[str], timeline: List[dict], log: Callable) -> CaseEvidenceReport:
+                  new_ids: List[str], timeline: List[dict], log: Callable,
+                  investigation: Optional[Investigation] = None) -> CaseEvidenceReport:
         doc_ids = [d.doc_id for d in retrieved]
 
         # 3 & 4. Analyse evidence and assess credibility
@@ -270,6 +314,18 @@ class HeimdallAgent:
             scope.period_start = verification.onset_date
         log("VERIFY", verification.summary, status=verification.status.value,
             confidence=verification.confidence_score)
+        specific = [p for p in (investigation.spec.propositions if investigation else []) if p.kind != "EXPOSURE"]
+        if specific:
+            # Verifying the broader event says nothing about a specific allegation within it.
+            found = {f.prop_id: f for f in investigation.findings}
+            parts = [f"{p.prop_id} '{p.text[:120]}': {found[p.prop_id].status} ({len(found[p.prop_id].supporting)} "
+                     f"supporting, {len(found[p.prop_id].contradicting)} contradicting)" for p in specific]
+            verification.summary += (f" This status covers the broader event {verification.event_id or ''} only; "
+                                     f"the question's own propositions are assessed separately: " + "; ".join(parts)
+                                     + ". The ruling on them is Odin's.")
+            verification.reasoning.append("Scope of this verification: the corpus event, not the specific "
+                                          "allegations or claims in the question (see investigation findings).")
+            log("VERIFY_PROPOSITIONS", "; ".join(parts))
 
         series = [s for d in doc_ids if (s := self.trade.series(d))]
         coverage = coverage_map(scope, series)
@@ -281,6 +337,17 @@ class HeimdallAgent:
             expected_scope=f"A trade note or customs figure for {c.sector.lower()} flows into {c.country}.",
             impact_on_assessment="Evidence missing: no range can be given for this flow without inventing one.",
         ) for c in coverage if c.status == "EVIDENCE_MISSING"]
+        if investigation is not None:
+            missing += [MissingInformation(
+                topic=u.split(":", 1)[0] + " evidence", expected_scope=u,
+                impact_on_assessment="Unresolved: missing evidence is not a negative finding.")
+                for u in investigation.unresolved]
+            if investigation.insufficient:
+                missing.insert(0, MissingInformation(
+                    topic="Insufficient evidence for the question",
+                    expected_scope="Admissible evidence that supports or contradicts any proposition of the question.",
+                    impact_on_assessment="No admissible evidence bears on the question; the case is not sufficient."))
+                log("INSUFFICIENT", "no admissible evidence supports or contradicts any proposition")
 
         entity_map = {}
         for ent in (e for d in doc_ids for e in self.evidence_store.entities(d)):
@@ -320,6 +387,7 @@ class HeimdallAgent:
             # Heimdall reports cited evidence only; exposure ranges are argued downstream from cited facts.
             trade_exposures=[],
             knowledge_graph_summary=graph_summary,
+            investigation=investigation,
             metadata={"evidence_source": "resolved_data", "corpus_as_of": settings.AS_OF_DATE,
                       "trace": timeline},
         )

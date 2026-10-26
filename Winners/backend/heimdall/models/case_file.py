@@ -5,6 +5,7 @@ from enum import Enum
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel, Field
 
+from heimdall.case.investigation import Investigation
 from heimdall.models.manifest import ManifestEntry
 from heimdall.models.evidence import (
     ExtractedEntity,
@@ -274,6 +275,9 @@ class CaseEvidenceReport(BaseModel):
     missing_information: List[MissingInformation] = Field(default_factory=list)
     trade_exposures: List[TradeExposureSummary] = Field(default_factory=list)
     knowledge_graph_summary: KnowledgeGraphSummary = Field(default_factory=KnowledgeGraphSummary)
+    # The task as Heimdall understood it, the paragraph evidence for and against each proposition, gaps and audit.
+    # Country-commodity coverage above applies only when investigation.spec.exposure_applicable is true.
+    investigation: Optional[Investigation] = None
     metadata: Dict[str, Any] = Field(default_factory=dict)
 
     def to_json_report(self, indent: int = 2) -> str:
