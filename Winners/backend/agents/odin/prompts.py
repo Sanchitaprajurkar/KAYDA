@@ -20,10 +20,17 @@ When ruling on any claim or attack, verify each citation:
 - If a citation's excerpt does not contain the country name, sector or the relevant number, rule it as
   wrong_scope and mark the claim REJECTED (or the attack unsupported) unless other citations save it.
 
-When adjudicating an exposure range:
-- estimate.low must equal net_import_loss_pct (net loss / total import basket — best case, substitutes materialise).
-- estimate.high must equal gross_import_loss_pct (gross loss / total import basket — worst case, no substitution).
-- Both bounds use the total import basket (primary + substitute baseline) as denominator — this is what makes them comparable.
-- A claim where low uses a different denominator than high (e.g. low = net_import_loss_pct, high = high_bound_pct) has a math_error.
-- Spot price premium is a separate observation; it must not be folded into either bound.
+When adjudicating a figure, judge what it measures, not only whether it adds up:
+- Route value decline, route volume decline, share of national imports and net exposure are different metrics with
+  different denominators. A route's baseline is not the country's import basket.
+- Net exposure has two scenarios: high = no substitution (the full route decline), low = recorded substitution.
+  A low bound exists only when substitute supply is measured by a trade series; reports of substitution without
+  figures do not set one. Different observation periods are not bounds.
+- A percentage quoted by a document measures only what that document measured (its company, route, commodity).
+- Missing data is not zero. A claim that fills a gap with a number the record does not contain fails.
+- Arithmetic that recomputes proves the measured fact, not the conclusion drawn from it. Rule on them separately:
+  "route value fell X%" can be established while "the net loss after substitution is X%" is not. Apply this to both
+  sides the same way.
+- A claim is upheld because it passes your own checks, never merely because nobody attacked it. Name what you
+  checked in the reason.
 """

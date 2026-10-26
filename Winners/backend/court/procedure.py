@@ -22,7 +22,7 @@ from backend.agents.advocate import MAX_CLAIMS_PER_SIDE
 from backend.agents.loki import CourtLoki
 from backend.agents.odin import Odin
 from backend.agents.thor.court import CourtThor
-from backend.court.display import calculation_lines, cite
+from backend.court.display import calculation_lines, cite, fmt_estimate, fmt_span
 from backend.court.briefing import write_briefing
 from backend.court.heimdall_bridge import MAX_RUNS, ROOT, TRIAL_STATUSES, HeimdallAgent
 from backend.court.llm import CourtLLM
@@ -80,12 +80,12 @@ def _render(event: str, d: dict) -> Optional[str]:
         c = d["claim"]
         lines = [
             f"  {d['agent']:<5} {c['claim_id']} [{c['country']}|{c['sector']}] "
-            f"{c['estimate']['low']:g}-{c['estimate']['high']:g}%  {c['statement']}"
+            f"{fmt_estimate(c.get('estimate'))}  {c['statement']}"
         ]
         if c.get("citations"):
             lines.extend(_format_supporting_evidence(c["citations"]))
-        if c.get("calculations"):
-            lines.extend(calculation_lines(c["calculations"], c["estimate"]))
+        if c.get("assessment"):
+            lines.extend(calculation_lines(c["assessment"], c.get("estimate")))
         return "\n".join(lines).rstrip()
     if event == "attack":
         a = d["attack"]
@@ -108,10 +108,16 @@ def _render(event: str, d: dict) -> Optional[str]:
     if event == "concession":
         r = d["response"]
         return f"  {d['agent']:<5} CONCEDES {r['claim_id']}: {r['explanation']}"
+    if event == "narrowing":
+        r = d["response"]
+        return f"  {d['agent']:<5} NARROWS {r['claim_id']}: {r['explanation']}"
     if event == "ruling":
         r = d["ruling"]
         line = f"  ODIN  {r['claim_id']}: {r['ruling']} -> {r['classification']} ({r['nature']}) {r['reason']}"
         return line + (f"\n        citations checked: {d['sources']}" if d.get("sources") else "")
+    if event == "research_outcome":
+        o = d["outcome"]
+        return f"  ODIN  re-search on \"{o['gap']}\": {o['explanation']}"
     if event in ("memory_read", "memory_write"):
         return f"  {d['agent']:<5} {event}: {d.get('influenced') or d.get('value')}"
     if event in ("limit_hit", "error", "side_failed"):
@@ -192,8 +198,9 @@ class CourtSession:
             report = self.heimdall.re_search(report.case_id, request, prior=report)
             heimdall_memory.write(key, "research", {"new": report.new_document_ids}, report.case_id)
             log("memory_write", agent="HEIMDALL", key=key, value=f"searched: {request[:120]}")
-            log("note", text=f"Heimdall run {report.run_number}: new evidence {report.new_document_ids or 'none'}; "
-                             f"{report.research_history[-1].note}")
+            log("note", text=f"Heimdall run {report.run_number}: retrieved {report.new_document_ids or 'nothing new'}; "
+                             f"{report.research_history[-1].note} Whether this answers the send-back is ruled after "
+                             f"the run.")
             remand = missing
 
         complete = not missing
@@ -203,8 +210,10 @@ class CourtSession:
         self._save(case_dir / "meta.json", self._meta(report, len(runs), briefing["status"], llms))
         log("phase", title=f"BRIEFING ({briefing['status']})")
         for r in runs[-1].ranges:
-            log("note", text=f"{r.country} {r.sector}: Thor {_fmt(r.thor)} | Loki {_fmt(r.loki)} | "
-                             f"Odin {_fmt(r.odin) if r.status == 'COVERED' else 'evidence missing'}")
+            side = lambda k, span: _fmt(span) if span else r.positions.get(k, "-")  # noqa: E731
+            log("note", text=f"{r.country} {r.sector}: Thor {side('THOR', r.thor)} | Loki {side('LOKI', r.loki)} | "
+                             f"Odin {_fmt(r.odin) if r.status == 'COVERED' else 'evidence missing'}"
+                             + (f" [net exposure, % of baseline route value, {r.period}]" if r.odin else ""))
         log("note", text=f"Saved to {case_dir}")
         return {"case_id": report.case_id, "status": briefing["status"], "runs": len(runs), "dir": str(case_dir),
                 "ranges": [r.model_dump() for r in runs[-1].ranges]}
@@ -245,12 +254,19 @@ class CourtSession:
         log("phase", title=f"RUN {run} - ODIN RULES")
         record.rulings = odin.rule(report, record.claims, record.attacks, record.responses, record.side_failures)
         record.ranges = odin.ranges(report, record.claims, record.rulings)
-        record.remand = odin.sufficiency(report, record.claims, record.rulings)
+        record.remand, record.open_gaps = odin.sufficiency(report, record.claims, record.rulings)
+        if run > 1 and remand:
+            record.research = odin.research_outcomes(report, remand, record)
+            for o in record.research:
+                log("research_outcome", agent="ODIN", outcome=o.model_dump())
         for item in record.remand:
             log("remand", agent="ODIN", missing=item)
             log("note", text=f"ODIN  missing: {item}")
+        for item in record.open_gaps:
+            log("note", text=f"ODIN  open gap (searched for, not on the record; reported, not chased): {item}")
         if not record.remand:
-            log("note", text="ODIN  the record is sufficient")
+            log("note", text="ODIN  no further search would help" if record.open_gaps else
+                "ODIN  the record is sufficient")
 
     def _log_case_file(self, log, report) -> None:
         v = report.event_verification
@@ -277,7 +293,9 @@ class CourtSession:
                                                  "side_failures": record.side_failures})
         self._save(run_dir / "rulings.json", {"rulings": [r.model_dump() for r in record.rulings],
                                               "ranges": [r.model_dump() for r in record.ranges],
-                                              "remand": record.remand, "llm_usage": record.llm_usage})
+                                              "remand": record.remand, "open_gaps": record.open_gaps,
+                                              "research": [o.model_dump() for o in record.research],
+                                              "llm_usage": record.llm_usage})
 
     @staticmethod
     def _save(path: Path, data) -> None:
@@ -302,4 +320,4 @@ class CourtSession:
 
 
 def _fmt(span) -> str:
-    return f"{span[0]:.1f}-{span[1]:.1f}%" if span else "-"
+    return fmt_span(span)

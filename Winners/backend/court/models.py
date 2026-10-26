@@ -26,43 +26,82 @@ class Evidence(BaseModel):
     unit: Optional[str] = None
 
 
-class Calculation(BaseModel):
-    """Inputs and outputs of one TradeCalculator run, so Odin can recompute it."""
+# Data status for every input and metric. Missing data is never treated as zero.
+AVAILABLE = "AVAILABLE"            # measured from validated rows or a stated figure
+CONFIRMED_ZERO = "CONFIRMED_ZERO"  # measured, and the measurement is zero (e.g. substitutes did not rise)
+UNKNOWN = "UNKNOWN"                # the record shows the thing exists but does not measure it
+UNAVAILABLE = "UNAVAILABLE"        # nothing on the record either way
+
+# Metric keys. Each has one numerator and one denominator; see backend/court/exposure.py.
+ROUTE_VALUE_DECLINE = "route_value_decline"
+ROUTE_VOLUME_DECLINE = "route_volume_decline"
+NATIONAL_IMPORT_SHARE = "national_import_share"
+NET_EXPOSURE = "net_exposure"
+SOURCE_STATED = "source_stated"  # a percentage quoted by a document; it measures only what that document measured
+METRICS = (ROUTE_VALUE_DECLINE, ROUTE_VOLUME_DECLINE, NATIONAL_IMPORT_SHARE, NET_EXPOSURE)
+
+
+class Quantity(BaseModel):
+    """One input to a metric, with where it came from."""
+    name: str
+    value: Optional[float] = None
+    unit: str
+    status: str
+    period: str = ""
+    rows: List[str] = Field(default_factory=list)
+    sources: List[str] = Field(default_factory=list)  # DOC_ID | Page N | Paragraph M
+    note: str = ""
+
+
+class Metric(BaseModel):
+    key: str
+    label: str
+    value: Optional[float] = None
+    unit: str = "%"
+    status: str
+    numerator: Optional[str] = None    # Quantity name
+    denominator: Optional[str] = None  # Quantity name
+    formula: str
+    assumptions: List[str] = Field(default_factory=list)
+    missing_inputs: List[str] = Field(default_factory=list)
+
+
+class Assessment(BaseModel):
+    """Everything known about one importer-commodity cell over one observation period, from validated rows only."""
     country: str
     sector: str
     origins: List[str]
+    route: str
     primary_series: List[str]
     substitute_series: List[str] = Field(default_factory=list)
+    window: str
     months: List[str]
     baseline_year: int
     disrupted_year: int
-    premium_pct: float = 0.0
-    window: str = ""
-    gross_loss_pct: float = 0.0  # gross loss / primary-supplier baseline (for reference only)
-    net_loss_pct: float = 0.0    # net loss / primary-supplier baseline (for reference only)
-    net_import_loss_pct: float = 0.0   # net loss / total-import basket = claim estimate.low
-    gross_import_loss_pct: float = 0.0 # gross loss / total-import basket = claim estimate.high
-    import_baseline_usd_m: float = 0.0
-    high_bound_pct: float = 0.0  # reference only: gross × spot-premium / primary baseline
-    baseline_usd_m: float = 0.0
-    gross_loss_usd_m: float = 0.0
-    net_loss_usd_m: float = 0.0
-    substitute_gain_usd_m: float = 0.0
-    rows_used: List[str] = Field(default_factory=list)
+    period: str
+    quantities: Dict[str, Quantity] = Field(default_factory=dict)
+    metrics: Dict[str, Metric] = Field(default_factory=dict)
+    substitution: Quantity
+    low: Optional[float] = None   # recorded-substitution scenario; None when substitution is not quantified
+    high: Optional[float] = None  # no-substitution scenario
+    range_metric: str = NET_EXPOSURE
+    range_basis: str = ""
+    sensitivity: List[Dict[str, Any]] = Field(default_factory=list)  # other periods: information, never bounds
+    breakdown: List[Dict[str, Any]] = Field(default_factory=list)    # every row used
     rows_flagged: List[str] = Field(default_factory=list)
-    # One entry per valid row used: {month, year, origin, series, role (primary|substitute), value_usd_m, row_id}
-    breakdown: List[Dict[str, Any]] = Field(default_factory=list)
+    assumptions: List[str] = Field(default_factory=list)
+    missing_inputs: List[str] = Field(default_factory=list)
 
 
 class Estimate(BaseModel):
-    low: float   # = net_import_loss_pct: net loss / total import basket — best case (substitutes materialise)
-    high: float  # = gross_import_loss_pct: gross loss / total import basket — worst case (no substitution)
-    unit: str = "pct_total_import_basket"
-    # Both bounds use the same denominator: baseline imports from ALL suppliers (primary + substitute).
-    # This measures the fraction of your total import supply that was lost.
-    # spot-price premium is a separate fact on Calculation.premium_pct, not folded into either bound.
-    metric: str = "Value loss as % of total baseline import basket (same disruption months, year-on-year)"
-    baseline: str = ""
+    """A figure a party puts forward. Both bounds are optional: no evidence, no number."""
+    low: Optional[float] = None
+    high: Optional[float] = None
+    metric: str = NET_EXPOSURE
+    unit: str = ""
+    basis: str = ""
+    # "" = every scenario the data supports (low may be None); "recorded_substitution" = the low scenario as a point
+    scenario: str = ""
 
 
 class Claim(BaseModel):
@@ -73,12 +112,14 @@ class Claim(BaseModel):
     sector: str
     kind: str  # calculation | evidence
     statement: str
-    estimate: Estimate
+    estimate: Optional[Estimate] = None
     nature: str = "SOURCED_FACT"  # SOURCED_FACT | INFERENCE, as filed by the side; Odin rules on it
     reasoning: str = ""
     citations: List[Evidence] = Field(min_length=1)
-    calculations: List[Calculation] = Field(default_factory=list)
-    status: str = "ACTIVE"  # ACTIVE | DEFENDED | CONCEDED
+    assessment: Optional[Assessment] = None
+    requests: List[str] = Field(default_factory=list)  # evidence the side found that is not yet in the Case File
+    status: str = "ACTIVE"  # ACTIVE | DEFENDED | NARROWED | CONCEDED
+    narrowed_from: Optional[Estimate] = None  # the estimate as first filed, when the owner narrowed it
 
 
 class Attack(BaseModel):
@@ -90,6 +131,8 @@ class Attack(BaseModel):
     argument: str
     counter_evidence: List[Evidence] = Field(default_factory=list)
     grounds: str = "argued"  # argued | rule (found deterministically)
+    # The metric the attacker says the data does support. The owner may narrow to it instead of conceding.
+    narrow_to: Optional[str] = None
 
 
 class Response(BaseModel):
@@ -98,9 +141,18 @@ class Response(BaseModel):
     side: str
     attack_id: str
     claim_id: str
-    decision: str  # DEFENDED | CONCEDED
+    decision: str  # DEFENDED | NARROWED | CONCEDED
     explanation: str
     new_evidence: List[Evidence] = Field(default_factory=list)
+
+
+class Finding(BaseModel):
+    """One conclusion inside a claim, ruled on separately: a fact can stand while the conclusion drawn from it fails."""
+    metric: str
+    statement: str
+    value: Optional[float] = None
+    established: bool
+    reason: str
 
 
 class Ruling(BaseModel):
@@ -109,21 +161,38 @@ class Ruling(BaseModel):
     run: int
     ruling: str  # UPHELD | REJECTED | CONTESTED | CONCEDED
     nature: str  # SOURCED_FACT | INFERENCE
-    classification: str  # ESTABLISHED | CONTESTED | CONCEDED | REJECTED | UNCONTESTED
+    # PARTLY_ESTABLISHED: the measured fact stands, the conclusion the claim draws from it does not
+    classification: str  # ESTABLISHED | PARTLY_ESTABLISHED | CONTESTED | CONCEDED | REJECTED | UNCONTESTED
     reason: str
     decided_by: str = "rules"  # rules | odin
     failed_checks: List[str] = Field(default_factory=list)
+    validation: List[str] = Field(default_factory=list)  # checks the claim passed, whether or not it was attacked
+    findings: List[Finding] = Field(default_factory=list)
+
+
+class ResearchOutcome(BaseModel):
+    """Whether a re-search answered the gap Odin sent back. Retrieving documents is not answering the question."""
+    gap: str
+    resolved: bool
+    new_documents: List[str] = Field(default_factory=list)
+    used_documents: List[str] = Field(default_factory=list)  # new documents a claim in this run actually cited
+    explanation: str
 
 
 class CellRange(BaseModel):
     country: str
     sector: str
     status: str  # COVERED | EVIDENCE_MISSING
-    thor: Optional[Tuple[float, float]] = None
-    loki: Optional[Tuple[float, float]] = None
-    odin: Optional[Tuple[float, float]] = None
-    # Worst classification among the surviving calculation rulings that produced the Odin range.
-    # ESTABLISHED = all surviving calcs were ESTABLISHED; CONTESTED = at least one was CONTESTED.
+    thor: Optional[Tuple[Optional[float], Optional[float]]] = None
+    loki: Optional[Tuple[Optional[float], Optional[float]]] = None
+    odin: Optional[Tuple[Optional[float], Optional[float]]] = None  # (low or None, high)
+    metrics: Dict[str, Optional[float]] = Field(default_factory=dict)
+    metric_status: Dict[str, str] = Field(default_factory=dict)
+    substitution: str = ""
+    period: str = ""
+    positions: Dict[str, str] = Field(default_factory=dict)  # each side's stated position on this cell
+    # ESTABLISHED = no surviving calc was CONTESTED; CONTESTED = at least one was. An odin range with no low bound is
+    # an upper bound only, whatever the classification: the net loss is not established.
     # None means no Odin range was produced (evidence missing or no calculation survived).
     odin_classification: Optional[str] = None
     basis: str = ""
@@ -139,5 +208,7 @@ class RunRecord(BaseModel):
     rulings: List[Ruling] = Field(default_factory=list)
     ranges: List[CellRange] = Field(default_factory=list)
     remand: List[str] = Field(default_factory=list)
+    research: List[ResearchOutcome] = Field(default_factory=list)  # how the re-search before this run answered the remand
+    open_gaps: List[str] = Field(default_factory=list)  # gaps searched for and still unresolved; reported, not chased
     side_failures: Dict[str, str] = Field(default_factory=dict)
     llm_usage: Dict[str, Dict[str, int]] = Field(default_factory=dict)

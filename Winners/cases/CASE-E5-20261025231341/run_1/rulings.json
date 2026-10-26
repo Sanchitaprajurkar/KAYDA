@@ -1,0 +1,95 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-01",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-01",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        null,
+        55.97
+      ],
+      "loki": null,
+      "odin": null,
+      "metrics": {
+        "route_value_decline": 55.97,
+        "route_volume_decline": 61.42,
+        "national_import_share": null,
+        "net_exposure": null
+      },
+      "metric_status": {
+        "route_value_decline": "AVAILABLE",
+        "route_volume_decline": "AVAILABLE",
+        "national_import_share": "UNAVAILABLE",
+        "net_exposure": "UNKNOWN"
+      },
+      "substitution": "UNKNOWN: substitution is reported but no trade series measures it",
+      "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+      "positions": {
+        "THOR": "up to 55.97% (no lower bound on the record) net exposure",
+        "LOKI": "route value decline 55.97% accepted; net exposure not established"
+      },
+      "odin_classification": null,
+      "basis": "No calculation survived the trial."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "metrics": {},
+      "metric_status": {},
+      "substitution": "",
+      "period": "",
+      "positions": {},
+      "odin_classification": null,
+      "basis": "Evidence missing: no trade series for this flow; no figure is given."
+    }
+  ],
+  "remand": [
+    "Asgard Maize: no established trade-row finding",
+    "Asgard Maize: net effect of substitute supply is not in the Case File"
+  ],
+  "llm_usage": {
+    "THOR": {
+      "calls": 3,
+      "cache_hits": 0,
+      "tokens": 4415
+    },
+    "LOKI": {
+      "calls": 3,
+      "cache_hits": 0,
+      "tokens": 2893
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

@@ -3,7 +3,7 @@
 from typing import Dict, List
 
 from backend.court.heimdall_bridge import CaseEvidenceReport
-from backend.court.display import calculation_lines, cite
+from backend.court.display import calculation_lines, cite, fmt_span
 from backend.court.models import CellRange, Claim, Evidence, RunRecord
 from backend.court.tools import windows
 
@@ -14,7 +14,7 @@ def _cite(e: Evidence) -> str:
 
 
 def _span(s) -> str:
-    return f"{s[0]:.1f}-{s[1]:.1f}%" if s else "-"
+    return fmt_span(s)
 
 
 def _odin_cell(rng) -> str:
@@ -34,14 +34,16 @@ def _odin_cell(rng) -> str:
         return "evidence missing"
     if rng.odin is None:
         return "no defensible range established"
-    tag = " _(contested)_" if rng.odin_classification == "CONTESTED" else ""
-    return f"{_span(rng.odin)}{tag}"
+    tags = (["upper bound; net exposure not established"] if rng.odin[0] is None else []) + \
+        (["contested"] if rng.odin_classification == "CONTESTED" else [])
+    return _span(rng.odin) + (f" _({'; '.join(tags)})_" if tags else "")
 
 
 def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: bool, reasons: List[str]) -> Dict:
     final = runs[-1]
     claims = {c.claim_id: c for c in final.claims}
-    groups: Dict[str, List] = {"ESTABLISHED": [], "CONTESTED": [], "UNCONTESTED": [], "CONCEDED": [], "REJECTED": []}
+    groups: Dict[str, List] = {"ESTABLISHED": [], "PARTLY_ESTABLISHED": [], "CONTESTED": [], "UNCONTESTED": [],
+                               "CONCEDED": [], "REJECTED": []}
     for r in final.rulings:
         groups[r.classification].append((r, claims[r.claim_id]))
     v = report.event_verification
@@ -58,16 +60,27 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
         if rng.status != "COVERED":
             lines.append(f"- {rng.country} {rng.sector}: evidence missing; no range is given.")
         elif rng.odin:
-            contested_note = " **(contested range — see findings)**" if rng.odin_classification == "CONTESTED" else ""
-            lines.append(f"- {rng.country} {rng.sector}: Odin's range **{_span(rng.odin)}**{contested_note} fall in import value "
-                         f"(Thor {_span(rng.thor)}, Loki {_span(rng.loki)}).")
+            contested_note = (" **(contested range — see findings)**" if rng.odin_classification == "CONTESTED"
+                              else "") + \
+                (" **(upper bound only: substitution is not measured, so the net loss is not established)**"
+                 if rng.odin[0] is None else "")
+            lines.append(f"- {rng.country} {rng.sector}: Odin's range **{_span(rng.odin)}**{contested_note} net exposure, "
+                         f"% of baseline route value{f' ({rng.period})' if rng.period else ''} "
+                         f"(Thor {_span(rng.thor) if rng.thor else rng.positions.get('THOR', '-')}; "
+                         f"Loki {_span(rng.loki) if rng.loki else rng.positions.get('LOKI', '-')}).")
         else:
             lines.append(f"- {rng.country} {rng.sector}: no defensible range established; {rng.basis}")
-    lines.append(f"- Findings: {len(groups['ESTABLISHED'])} established, {len(groups['CONTESTED'])} contested, "
-                 f"{len(groups['CONCEDED'])} conceded, {len(groups['REJECTED'])} rejected.")
+    lines.append(f"- Findings: {len(groups['ESTABLISHED'])} established, {len(groups['PARTLY_ESTABLISHED'])} partly "
+                 f"established, {len(groups['CONTESTED'])} contested, {len(groups['CONCEDED'])} conceded, "
+                 f"{len(groups['REJECTED'])} rejected.")
+    open_gaps = final.open_gaps
+    if open_gaps:
+        lines.append("- Open gaps (searched for; the record does not answer them): " + "; ".join(open_gaps) + ".")
     lines.append("")
 
-    titles = {"ESTABLISHED": "Established findings", "CONTESTED": "Contested findings",
+    titles = {"ESTABLISHED": "Established findings",
+              "PARTLY_ESTABLISHED": "Partly established findings (the measured fact stands; the conclusion does not)",
+              "CONTESTED": "Contested findings",
               "UNCONTESTED": "Unchallenged findings (cannot be Established)", "CONCEDED": "Conceded findings",
               "REJECTED": "Rejected claims"}
     for key, title in titles.items():
@@ -84,19 +97,40 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
                     lines.append(f"  {i}. `{cite(e)}`")
                     if e.excerpt:
                         lines.append(f'     Supporting excerpt: "{e.excerpt.strip()}"')
-            if c.calculations:
-                lines += ["", "  ```"] + calculation_lines(c.calculations, c.estimate) + ["  ```"]
+            if c.assessment:
+                lines += ["", "  ```"] + calculation_lines(c.assessment, c.estimate) + ["  ```"]
+            for f in r.findings:
+                lines.append(f"  - {'Established' if f.established else 'Not established'}: {f.statement} {f.reason}")
             lines.append(f"  _Ruling: {r.ruling}. {r.reason}_\n")
         lines.append("")
 
     lines += ["## Exposure table", "", "| Country | Sector | Thor | Loki | Odin | Basis |", "|---|---|---|---|---|---|"]
     for rng in final.ranges:
-        lines.append(f"| {rng.country} | {rng.sector} | {_span(rng.thor)} | {_span(rng.loki)} | {_odin_cell(rng)} | {rng.basis} |")
+        thor = _span(rng.thor) if rng.thor else rng.positions.get("THOR", "-")
+        loki = _span(rng.loki) if rng.loki else rng.positions.get("LOKI", "-")
+        lines.append(f"| {rng.country} | {rng.sector} | {thor} | {loki} | {_odin_cell(rng)} | {rng.basis} |")
+    lines += ["", "## Metrics by cell", "",
+              "| Country | Sector | Period | Value decline | Volume decline | Share of national imports | "
+              "Substitution | Net exposure range |", "|---|---|---|---|---|---|---|---|"]
+    for rng in final.ranges:
+        def m(key):
+            v = rng.metrics.get(key)
+            return f"{v:.2f}%" if v is not None else (rng.metric_status.get(key) or "-")
+        lines.append(f"| {rng.country} | {rng.sector} | {rng.period or '-'} | {m('route_value_decline')} | "
+                     f"{m('route_volume_decline')} | {m('national_import_share')} | "
+                     f"{(rng.substitution or '-').split(':')[0]} | {_span(rng.odin)} |")
     lines += ["",
+              "> Value and volume declines are on the route itself (lost / baseline route figure). Share of national "
+              "imports needs the country's total imports; UNAVAILABLE means no document states it. Net exposure "
+              "low = recorded-substitution scenario, high = no-substitution scenario; 'up to' means substitution is "
+              "not measured, so no lower bound exists. '-' or UNAVAILABLE is not zero.",
+              "",
               "> **Odin column key**: *evidence missing* = no trade data on record for this flow; "
               "*no defensible range established* = data exists but no calculation survived the trial "
               "(this is NOT zero exposure); "
               "*X–Y% (contested)* = range computed but at least one underlying finding is contested; "
+              "*up to Y% (upper bound)* = the route decline is established, but substitution is not measured, so "
+              "the net loss is not; "
               "*X–Y%* = range computed from established findings.",
               ""]
     wins = windows(report)
@@ -107,7 +141,7 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
                      f"months ({late[0][0]}-{late[0][-1]} {late[2]}):")
         for rng in final.ranges:
             if rng.odin:
-                lines.append(f"- {rng.country} {rng.sector}: about {rng.odin[0]:.1f}-{rng.odin[1]:.1f}%.")
+                lines.append(f"- {rng.country} {rng.sector}: about {_span(rng.odin)}.")
     lines += ["", "Assumptions: no new agreement or reopening before the next quarter "
                   f"({'none is reported as of the as-of date' if v.is_active_at_as_of else 'the event is not active'});"
                   " substitute suppliers keep their latest volumes; no document after the as-of date is used.", ""]
@@ -129,8 +163,10 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
         lines.append(f"- Trade row {row} flagged and not used: {why}")
     for run in runs:
         lines.append(f"- Run {run.run}: {len(run.case_file_doc_ids)} documents in the Case File"
-                     + (f"; new evidence {', '.join(run.new_evidence)}" if run.run > 1 else "")
+                     + (f"; retrieved {', '.join(run.new_evidence)}" if run.run > 1 else "")
                      + (f"; sent back: {'; '.join(run.remand)}" if run.remand else ""))
+        for o in run.research:
+            lines.append(f"  - Re-search on \"{o.gap}\": {o.explanation}")
     lines.append("")
 
     sources: Dict[str, Evidence] = {}

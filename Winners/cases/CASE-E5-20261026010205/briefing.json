@@ -1,0 +1,130 @@
+{
+  "status": "COMPLETE",
+  "reasons": [],
+  "markdown": "# Briefing: As of 20 January 2027, what is Asgard's exposure from the Orvan corridor collapse? Provide wheat and maize import exposure ranges.\n\nCase `CASE-E5-20261026010205` | as of 2027-01-20 | runs: 2 | status: **COMPLETE**\n\n## Executive summary\n\n- Event: **CONFIRMED**, still in effect at the as-of date. Orvan grain corridor collapse is CONFIRMED and still in effect as of 2027-01-20: 6 independent Tier 1-2 outlet(s) (Cargo Weekly, Harbour Review, Midgard Times, Raven Wire, Realm Trade Ministry, Vantro Trading) confirm it and no credible evidence stands against it.\n- Asgard Maize: Odin's range **up to 56.0% (no lower bound on the record)** **(contested range — see findings)** **(upper bound only: substitution is not measured, so the net loss is not established)** net exposure, % of baseline route value (Oct-Dec 2026 vs Oct-Dec 2025) (Thor route value decline 55.97% (measured); narrowed from up to 55.97% (no lower bound on the record) [net_exposure], which holds only if nothing is replaced; Loki route value decline 55.97% (measured); net exposure not established).\n- Asgard Wheat: evidence missing; no range is given.\n- Findings: 1 established, 0 partly established, 1 contested, 0 conceded, 0 rejected.\n- Open gaps (searched for; the record does not answer them): Asgard Maize: net effect of substitute supply is not in the Case File.\n\n## Established findings\n\n- **T2-01** (THOR, Inference) Following Odin's remand, no new data changes the figures, so Thor maintains his reading of them. On Orvan -> Asgard, Maize, trade value fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025) and volume by 61.42%. Volume fell further than value (61.42% against 55.97%), so the physical shortfall is larger than the value figure shows. Every month of the period is below its year-earlier level, so this is a sustained disruption, not a single bad month. Thor claims the measured trade value decline on Orvan -> Asgard, Maize of 55.97%; 55.97% would be the net loss only if none of it is replaced, and the record does not measure replacement, so net exposure is not claimed as established. [ORV-0029 | Page 1 | Paragraph 11 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Paragraph 12 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Paragraph 13 | 2027-01-20 11:40]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0029 | Page 1 | Paragraph 11`\n     Supporting excerpt: \"In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.\"\n  2. `ORV-0029 | Page 1 | Paragraph 12`\n     Supporting excerpt: \"In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.\"\n  3. `ORV-0029 | Page 1 | Paragraph 13`\n     Supporting excerpt: \"In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.\"\n  4. `ORV-0029 | Page 1 | Paragraph 5`\n     Supporting excerpt: \"In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.\"\n  5. `ORV-0029 | Page 1 | Paragraph 6`\n     Supporting excerpt: \"In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n  6. `ORV-0029 | Page 1 | Paragraph 7`\n     Supporting excerpt: \"In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n\n  ```\n  CALCULATION (shared assessment; every trade row used is listed under SUPPORTING EVIDENCE):\n    Route: Orvan -> Asgard, Maize   Period: Oct-Dec 2026 vs Oct-Dec 2025 (full window)\n    Series: primary ORV-0029; substitute none in the Case File\n      Month             Orvan 2025          Orvan 2026   (USD M / tonnes)\n      Oct             72.5 / 186kt         32.0 / 72kt\n      Nov             74.1 / 190kt         32.5 / 73kt\n      Dec             73.7 / 189kt         32.5 / 73kt\n    Inputs:\n      route_baseline_value                220.3 USD M   [AVAILABLE] Oct-Dec 2025; rows ORV-0029#P11, ORV-0029#P12, ORV-0029#P13\n      route_disrupted_value                97.0 USD M   [AVAILABLE] Oct-Dec 2026; rows ORV-0029#P5, ORV-0029#P6, ORV-0029#P7\n      route_baseline_volume           565,000.0 tonnes  [AVAILABLE] Oct-Dec 2025; rows ORV-0029#P11, ORV-0029#P12, ORV-0029#P13\n      route_disrupted_volume          218,000.0 tonnes  [AVAILABLE] Oct-Dec 2026; rows ORV-0029#P5, ORV-0029#P6, ORV-0029#P7\n      route_value_loss                    123.3 USD M   [AVAILABLE] Oct-Dec 2026 vs Oct-Dec 2025 - route_baseline_value - route_disrupted_value (negative = increase)\n      route_volume_loss               347,000.0 tonnes  [AVAILABLE] Oct-Dec 2026 vs Oct-Dec 2025 - route_baseline_volume - route_disrupted_volume (negative = increase)\n      substitute_gain                       n/a USD M   [UNKNOWN] Oct-Dec 2026 vs Oct-Dec 2025 - substitution is reported but no trade series measures it; sources ORV-0031 | Page 1 | Paragraph 4\n      national_total_imports                n/a USD M   [UNAVAILABLE] Oct-Dec 2025 - no document in the Case File states Asgard's total imports\n    Metrics:\n      Trade value decline on Orvan -> Asgard, Maize: 55.97%  (% of baseline route value)\n        = (route_baseline_value - route_disrupted_value) / route_baseline_value x 100   numerator route_value_loss, denominator route_baseline_value\n      Trade volume decline on Orvan -> Asgard, Maize: 61.42%  (% of baseline route tonnes)\n        = (route_baseline_volume - route_disrupted_volume) / route_baseline_volume x 100   numerator route_volume_loss, denominator route_baseline_volume\n      Lost route value as a share of Asgard's total imports: UNAVAILABLE  (% of Asgard's total imports)\n        = route_value_loss / national_total_imports x 100   numerator route_value_loss, denominator national_total_imports\n        missing input: Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025\n      Net exposure on Orvan -> Asgard, Maize after recorded substitution: UNKNOWN  (% of baseline route value)\n        = (route_value_loss - substitute_gain) / route_baseline_value x 100   numerator route_value_loss - substitute_gain, denominator route_baseline_value\n        missing input: measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025\n    Substitution: UNKNOWN - substitution is reported but no trade series measures it (reported in ORV-0031 | Page 1 | Paragraph 4)\n    Range (net exposure, % of baseline route value): up to 55.97% (no lower bound on the record). Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.\n    Sensitivity only (not a bound): onset period Sep-Dec 2026 vs Sep-Dec 2025: route value decline 56.34%\n    Sensitivity only (not a bound): late period Nov-Dec 2026 vs Nov-Dec 2025: route value decline 56.02%\n    Assumption: Baseline is the same months one year earlier (Oct-Dec 2025), so seasonality is held constant.\n    Assumption: Values are nominal USD as reported; the value metric mixes price and quantity changes, the volume metric does not.\n    Filed estimate: 55.97% [route_value_decline]\n  ```\n  - Established: Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025). Measured: recomputes exactly from the validated trade rows.\n  - Established: Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025). Measured: recomputes exactly from the validated trade rows.\n  _Ruling: UPHELD. Passed independent validation; no live attack. Narrowed in cross-examination from up to 55.97% (no lower bound on the record) [net_exposure]; ruled as narrowed. Checked: 6 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record._\n\n\n## Contested findings\n\n- **L2-01** (LOKI, Inference) Following Odin's remand, the position stands. The decline on Orvan -> Asgard, Maize is not in dispute: trade value fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025). The Case File reports replacement supply: \"Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.\" (ORV-0031 | Page 1 | Paragraph 4). Mitigation from Vanir, question by question. The record speaks to whether it replaces the lost route shipments: reported (ORV-0031 | Page 1 | Paragraph 4); whether it arrives on time: reported (ORV-0031 | Page 1 | Paragraph 4); whether it costs more: reported (ORV-0031 | Page 1 | Paragraph 1). It is silent on how much the substitute supply amounts to, whether the alternative supply can be sustained. So the net impact cannot be quantified: of the USD 123.3M (347,000 tonnes) lost on Orvan -> Asgard, Maize (Oct-Dec 2026 vs Oct-Dec 2025), the share Vanir replaces is unknown, because nothing on the record measures how much is replaced. The 55.97% route decline is an agreed fact; treating it as Asgard's net loss of maize supply assumes zero replacement, which the record contradicts. [ORV-0029 | Page 1 | Paragraph 11 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Paragraph 12 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Paragraph 13 | 2027-01-20 11:40]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0029 | Page 1 | Paragraph 11`\n     Supporting excerpt: \"In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.\"\n  2. `ORV-0029 | Page 1 | Paragraph 12`\n     Supporting excerpt: \"In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.\"\n  3. `ORV-0029 | Page 1 | Paragraph 13`\n     Supporting excerpt: \"In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.\"\n  4. `ORV-0029 | Page 1 | Paragraph 5`\n     Supporting excerpt: \"In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.\"\n  5. `ORV-0029 | Page 1 | Paragraph 6`\n     Supporting excerpt: \"In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n  6. `ORV-0029 | Page 1 | Paragraph 7`\n     Supporting excerpt: \"In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n  7. `ORV-0031 | Page 1 | Paragraph 4`\n     Supporting excerpt: \"Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.\"\n  8. `ORV-0031 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains lapsed.\"\n\n  ```\n  CALCULATION (shared assessment; every trade row used is listed under SUPPORTING EVIDENCE):\n    Route: Orvan -> Asgard, Maize   Period: Oct-Dec 2026 vs Oct-Dec 2025 (full window)\n    Series: primary ORV-0029; substitute none in the Case File\n      Month             Orvan 2025          Orvan 2026   (USD M / tonnes)\n      Oct             72.5 / 186kt         32.0 / 72kt\n      Nov             74.1 / 190kt         32.5 / 73kt\n      Dec             73.7 / 189kt         32.5 / 73kt\n    Inputs:\n      route_baseline_value                220.3 USD M   [AVAILABLE] Oct-Dec 2025; rows ORV-0029#P11, ORV-0029#P12, ORV-0029#P13\n      route_disrupted_value                97.0 USD M   [AVAILABLE] Oct-Dec 2026; rows ORV-0029#P5, ORV-0029#P6, ORV-0029#P7\n      route_baseline_volume           565,000.0 tonnes  [AVAILABLE] Oct-Dec 2025; rows ORV-0029#P11, ORV-0029#P12, ORV-0029#P13\n      route_disrupted_volume          218,000.0 tonnes  [AVAILABLE] Oct-Dec 2026; rows ORV-0029#P5, ORV-0029#P6, ORV-0029#P7\n      route_value_loss                    123.3 USD M   [AVAILABLE] Oct-Dec 2026 vs Oct-Dec 2025 - route_baseline_value - route_disrupted_value (negative = increase)\n      route_volume_loss               347,000.0 tonnes  [AVAILABLE] Oct-Dec 2026 vs Oct-Dec 2025 - route_baseline_volume - route_disrupted_volume (negative = increase)\n      substitute_gain                       n/a USD M   [UNKNOWN] Oct-Dec 2026 vs Oct-Dec 2025 - substitution is reported but no trade series measures it; sources ORV-0031 | Page 1 | Paragraph 4\n      national_total_imports                n/a USD M   [UNAVAILABLE] Oct-Dec 2025 - no document in the Case File states Asgard's total imports\n    Metrics:\n      Trade value decline on Orvan -> Asgard, Maize: 55.97%  (% of baseline route value)\n        = (route_baseline_value - route_disrupted_value) / route_baseline_value x 100   numerator route_value_loss, denominator route_baseline_value\n      Trade volume decline on Orvan -> Asgard, Maize: 61.42%  (% of baseline route tonnes)\n        = (route_baseline_volume - route_disrupted_volume) / route_baseline_volume x 100   numerator route_volume_loss, denominator route_baseline_volume\n      Lost route value as a share of Asgard's total imports: UNAVAILABLE  (% of Asgard's total imports)\n        = route_value_loss / national_total_imports x 100   numerator route_value_loss, denominator national_total_imports\n        missing input: Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025\n      Net exposure on Orvan -> Asgard, Maize after recorded substitution: UNKNOWN  (% of baseline route value)\n        = (route_value_loss - substitute_gain) / route_baseline_value x 100   numerator route_value_loss - substitute_gain, denominator route_baseline_value\n        missing input: measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025\n    Substitution: UNKNOWN - substitution is reported but no trade series measures it (reported in ORV-0031 | Page 1 | Paragraph 4)\n    Range (net exposure, % of baseline route value): up to 55.97% (no lower bound on the record). Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.\n    Sensitivity only (not a bound): onset period Sep-Dec 2026 vs Sep-Dec 2025: route value decline 56.34%\n    Sensitivity only (not a bound): late period Nov-Dec 2026 vs Nov-Dec 2025: route value decline 56.02%\n    Assumption: Baseline is the same months one year earlier (Oct-Dec 2025), so seasonality is held constant.\n    Assumption: Values are nominal USD as reported; the value metric mixes price and quantity changes, the volume metric does not.\n    Filed estimate: 55.97% [route_value_decline]\n  ```\n  - Established: Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025). Measured: recomputes exactly from the validated trade rows.\n  - Established: Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025). Measured: recomputes exactly from the validated trade rows.\n  _Ruling: UPHELD. Arithmetic recomputes exactly from the trade rows; the attacks offered no other trade data against it. Checked: 8 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; 2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Maize; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record._\n\n\n## Exposure table\n\n| Country | Sector | Thor | Loki | Odin | Basis |\n|---|---|---|---|---|---|\n| Asgard | Maize | route value decline 55.97% (measured); narrowed from up to 55.97% (no lower bound on the record) [net_exposure], which holds only if nothing is replaced | route value decline 55.97% (measured); net exposure not established | up to 56.0% (no lower bound on the record) _(upper bound; net exposure not established; contested)_ | Net exposure on Orvan -> Asgard, Maize, Oct-Dec 2026 vs Oct-Dec 2025, % of baseline route value. Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported. Other periods (sensitivity only, not bounds): onset Sep-Dec 2026 vs Sep-Dec 2025: 56.34%; late Nov-Dec 2026 vs Nov-Dec 2025: 56.02%. |\n| Asgard | Wheat | - | - | evidence missing | Evidence missing: no trade series for this flow; no figure is given. |\n\n## Metrics by cell\n\n| Country | Sector | Period | Value decline | Volume decline | Share of national imports | Substitution | Net exposure range |\n|---|---|---|---|---|---|---|---|\n| Asgard | Maize | Oct-Dec 2026 vs Oct-Dec 2025 | 55.97% | 61.42% | UNAVAILABLE | UNKNOWN | up to 56.0% (no lower bound on the record) |\n| Asgard | Wheat | - | - | - | - | - | - |\n\n> Value and volume declines are on the route itself (lost / baseline route figure). Share of national imports needs the country's total imports; UNAVAILABLE means no document states it. Net exposure low = recorded-substitution scenario, high = no-substitution scenario; 'up to' means substitution is not measured, so no lower bound exists. '-' or UNAVAILABLE is not zero.\n\n> **Odin column key**: *evidence missing* = no trade data on record for this flow; *no defensible range established* = data exists but no calculation survived the trial (this is NOT zero exposure); *X–Y% (contested)* = range computed but at least one underlying finding is contested; *up to Y% (upper bound)* = the route decline is established, but substitution is not measured, so the net loss is not; *X–Y%* = range computed from established findings.\n\n## Next-quarter outlook\n\nIf conditions at 2027-01-20 persist, next quarter's loss stays near the latest months (November-December 2026):\n- Asgard Maize: about up to 56.0% (no lower bound on the record).\n\nAssumptions: no new agreement or reopening before the next quarter (none is reported as of the as-of date); substitute suppliers keep their latest volumes; no document after the as-of date is used.\n\n## Data-quality appendix\n\n- ORV-0015 set aside before trial: TAINTED (see ORV-0043)\n- ORV-0043 set aside before trial: RETRACTED (see ORV-0013)\n- ORV-0049 set aside before trial: SUPERSEDED (see ORV-0016)\n- ORV-0026 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0041 set aside before trial: CLOCK_EXCLUDED\n- ORV-0019 set aside before trial: CLOCK_EXCLUDED\n- ORV-0030 set aside before trial: CLOCK_EXCLUDED\n- ORV-0036 set aside before trial: CLOCK_EXCLUDED\n- ORV-0028 set aside before trial: TABLOID\n- ORV-0010 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0014 set aside before trial: CLOCK_EXCLUDED\n- ORV-0005 set aside before trial: CLOCK_EXCLUDED\n- ORV-0044 set aside before trial: CLOCK_EXCLUDED\n- ORV-0027 set aside before trial: CLOCK_EXCLUDED\n- ORV-0003 set aside before trial: SUPERSEDED (see ORV-0016)\n- Run 1: 15 documents in the Case File; sent back: Asgard Maize: net effect of substitute supply is not in the Case File\n- Run 2: 24 documents in the Case File; retrieved ORV-0004, ORV-0001, ATL-0016, ORV-0045, ORV-0042, ATL-0007, ATL-0012, ORV-0008, ORV-0035\n  - Re-search on \"Asgard Maize: net effect of substitute supply is not in the Case File\": Not resolved: substitution is still UNKNOWN (substitution is reported but no trade series measures it); none of the new documents measures or reports substitute supply for this cell; none of the 9 new document(s) is cited by a surviving claim.\n\n## Sources\n\n- ORV-0029: Trade note: Orvan to Asgard, maize, July to December 2026 (Cargo Weekly, Tier 2, 2027-01-20 11:40)\n- ORV-0031: Asgard feed buyers feel the cost of a shorter Orvan harvest (Asgard Herald, Tier 3, 2026-11-05 09:15)\n",
+  "exposure": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": null,
+      "loki": null,
+      "odin": [
+        null,
+        55.97
+      ],
+      "metrics": {
+        "route_value_decline": 55.97,
+        "route_volume_decline": 61.42,
+        "national_import_share": null,
+        "net_exposure": null
+      },
+      "metric_status": {
+        "route_value_decline": "AVAILABLE",
+        "route_volume_decline": "AVAILABLE",
+        "national_import_share": "UNAVAILABLE",
+        "net_exposure": "UNKNOWN"
+      },
+      "substitution": "UNKNOWN: substitution is reported but no trade series measures it",
+      "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+      "positions": {
+        "THOR": "route value decline 55.97% (measured); narrowed from up to 55.97% (no lower bound on the record) [net_exposure], which holds only if nothing is replaced",
+        "LOKI": "route value decline 55.97% (measured); net exposure not established"
+      },
+      "odin_classification": "CONTESTED",
+      "basis": "Net exposure on Orvan -> Asgard, Maize, Oct-Dec 2026 vs Oct-Dec 2025, % of baseline route value. Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported. Other periods (sensitivity only, not bounds): onset Sep-Dec 2026 vs Sep-Dec 2025: 56.34%; late Nov-Dec 2026 vs Nov-Dec 2025: 56.02%."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "metrics": {},
+      "metric_status": {},
+      "substitution": "",
+      "period": "",
+      "positions": {},
+      "odin_classification": null,
+      "basis": "Evidence missing: no trade series for this flow; no figure is given."
+    }
+  ],
+  "findings": {
+    "ESTABLISHED": [
+      {
+        "claim_id": "T2-01",
+        "side": "THOR",
+        "run": 2,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "ESTABLISHED",
+        "reason": "Passed independent validation; no live attack. Narrowed in cross-examination from up to 55.97% (no lower bound on the record) [net_exposure]; ruled as narrowed. Checked: 6 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [
+          "6 citation(s) admissible and dated on or before 2027-01-20",
+          "6 trade row(s) present and unflagged in ORV-0029",
+          "recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025)",
+          "filed figure 55.97% [route_value_decline] matches what that metric yields on the record"
+        ],
+        "findings": [
+          {
+            "metric": "route_value_decline",
+            "statement": "Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025).",
+            "value": 55.97,
+            "established": true,
+            "reason": "Measured: recomputes exactly from the validated trade rows."
+          },
+          {
+            "metric": "route_volume_decline",
+            "statement": "Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025).",
+            "value": 61.42,
+            "established": true,
+            "reason": "Measured: recomputes exactly from the validated trade rows."
+          }
+        ]
+      }
+    ],
+    "PARTLY_ESTABLISHED": [],
+    "CONTESTED": [
+      {
+        "claim_id": "L2-01",
+        "side": "LOKI",
+        "run": 2,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "CONTESTED",
+        "reason": "Arithmetic recomputes exactly from the trade rows; the attacks offered no other trade data against it. Checked: 8 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; 2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Maize; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [
+          "8 citation(s) admissible and dated on or before 2027-01-20",
+          "6 trade row(s) present and unflagged in ORV-0029",
+          "2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Maize",
+          "recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025)",
+          "filed figure 55.97% [route_value_decline] matches what that metric yields on the record"
+        ],
+        "findings": [
+          {
+            "metric": "route_value_decline",
+            "statement": "Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025).",
+            "value": 55.97,
+            "established": true,
+            "reason": "Measured: recomputes exactly from the validated trade rows."
+          },
+          {
+            "metric": "route_volume_decline",
+            "statement": "Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025).",
+            "value": 61.42,
+            "established": true,
+            "reason": "Measured: recomputes exactly from the validated trade rows."
+          }
+        ]
+      }
+    ],
+    "UNCONTESTED": [],
+    "CONCEDED": [],
+    "REJECTED": []
+  }
+}

@@ -33,6 +33,8 @@ OPERATIONAL LAWS:
    - When attacked by Loki:
      * If you possess NEW, previously uncited evidence: mount a structured DEFENCE.
      * If counter-evidence proves your source was retracted, corrupted, or erroneous: CONCEDE cleanly. A system where no one concedes has not genuinely debated.
+     * If the attack disputes only your label (e.g. net exposure where the rows measure a route decline): NARROW the
+       claim to the figure the rows do measure. Do not concede a correct calculation because its label was too strong.
 
 6. PRIVATE PERSISTENT MEMORY (FR6.1):
    - Maintain private memory isolated from all other agents. Log how past memory influences every analytical move.
@@ -48,15 +50,12 @@ Tasks:
 3. Identify coverage gaps and report them explicitly without fabricating numbers.
 4. Synthesize 3 to 6 structured high-exposure claims with low/high bounds, traceable citations, and fact-vs-inference labels.
 
-BOUND RULES (estimate.low and estimate.high):
-   - Both bounds must use the same denominator: the TOTAL import basket (primary + substitute baseline).
-   - estimate.low  = net_import_loss_pct  — net loss after substitute gain / total import basket.
-                     This is the best-case figure: substitutes fully absorb the shortfall.
-   - estimate.high = gross_import_loss_pct — gross loss / total import basket (no substitution scenario).
-                     This is the worst-case figure.
-   - DO NOT use net_loss_pct or gross_loss_pct (primary-only denominator) as a bound.
-   - DO NOT use high_bound_pct (price×volume compound) as a bound.
-   - Spot price premium (premium_pct) is a SEPARATE cited fact; it is never folded into either bound.
+FIGURE RULES:
+   - The trade metrics come from the shared assessment: route value decline, route volume decline, share of national
+     imports (only if a national total is on the record) and net exposure. Each has its own denominator; a route's
+     baseline is never the country's import basket.
+   - Net exposure: high = no-substitution scenario; low = recorded-substitution scenario, only when substitute
+     supply is measured. Different periods are not bounds. If the evidence supports no number, file none.
 """
 
 CROSS_EXAM_ATTACK_INSTRUCTION = """Examine Loki's claims from Round 1:

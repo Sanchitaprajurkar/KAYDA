@@ -1,0 +1,1039 @@
+{
+  "claims": [
+    {
+      "claim_id": "T1-01",
+      "side": "THOR",
+      "run": 1,
+      "country": "Asgard",
+      "sector": "Maize",
+      "kind": "calculation",
+      "statement": "On Orvan -> Asgard, Maize, trade value fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025) and volume by 61.42%. Volume fell further than value (61.42% against 55.97%), so the physical shortfall is larger than the value figure shows. Every month of the period is below its year-earlier level, so this is a sustained disruption, not a single bad month. Thor claims the measured trade value decline on Orvan -> Asgard, Maize of 55.97%; 55.97% would be the net loss only if none of it is replaced, and the record does not measure replacement, so net exposure is not claimed as established.",
+      "estimate": {
+        "low": 55.97,
+        "high": 55.97,
+        "metric": "route_value_decline",
+        "unit": "% of baseline route value",
+        "basis": "narrowed from up to 55.97% (no lower bound on the record) [net_exposure], which holds only if nothing is replaced",
+        "scenario": ""
+      },
+      "nature": "INFERENCE",
+      "reasoning": "Shared assessment of Orvan -> Asgard, Maize for Oct-Dec 2026 vs Oct-Dec 2025: Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.",
+      "citations": [
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P11",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 11,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 72.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P12",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 12,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 74.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P13",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 13,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 73.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P5",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P6",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 6,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P7",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 7,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.5,
+          "unit": "USD M"
+        }
+      ],
+      "assessment": {
+        "country": "Asgard",
+        "sector": "Maize",
+        "origins": [
+          "Orvan"
+        ],
+        "route": "Orvan -> Asgard, Maize",
+        "primary_series": [
+          "ORV-0029"
+        ],
+        "substitute_series": [],
+        "window": "full",
+        "months": [
+          "October",
+          "November",
+          "December"
+        ],
+        "baseline_year": 2025,
+        "disrupted_year": 2026,
+        "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+        "quantities": {
+          "route_baseline_value": {
+            "name": "route_baseline_value",
+            "value": 220.3,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [
+              "ORV-0029#P11",
+              "ORV-0029#P12",
+              "ORV-0029#P13"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_disrupted_value": {
+            "name": "route_disrupted_value",
+            "value": 97.0,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026",
+            "rows": [
+              "ORV-0029#P5",
+              "ORV-0029#P6",
+              "ORV-0029#P7"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_baseline_volume": {
+            "name": "route_baseline_volume",
+            "value": 565000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [
+              "ORV-0029#P11",
+              "ORV-0029#P12",
+              "ORV-0029#P13"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_disrupted_volume": {
+            "name": "route_disrupted_volume",
+            "value": 218000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026",
+            "rows": [
+              "ORV-0029#P5",
+              "ORV-0029#P6",
+              "ORV-0029#P7"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_value_loss": {
+            "name": "route_value_loss",
+            "value": 123.3,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "route_baseline_value - route_disrupted_value (negative = increase)"
+          },
+          "route_volume_loss": {
+            "name": "route_volume_loss",
+            "value": 347000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "route_baseline_volume - route_disrupted_volume (negative = increase)"
+          },
+          "substitute_gain": {
+            "name": "substitute_gain",
+            "value": null,
+            "unit": "USD M",
+            "status": "UNKNOWN",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [
+              "ORV-0031 | Page 1 | Paragraph 4"
+            ],
+            "note": "substitution is reported but no trade series measures it"
+          },
+          "national_total_imports": {
+            "name": "national_total_imports",
+            "value": null,
+            "unit": "USD M",
+            "status": "UNAVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "no document in the Case File states Asgard's total imports"
+          }
+        },
+        "metrics": {
+          "route_value_decline": {
+            "key": "route_value_decline",
+            "label": "Trade value decline on Orvan -> Asgard, Maize",
+            "value": 55.97,
+            "unit": "% of baseline route value",
+            "status": "AVAILABLE",
+            "numerator": "route_value_loss",
+            "denominator": "route_baseline_value",
+            "formula": "(route_baseline_value - route_disrupted_value) / route_baseline_value x 100",
+            "assumptions": [],
+            "missing_inputs": []
+          },
+          "route_volume_decline": {
+            "key": "route_volume_decline",
+            "label": "Trade volume decline on Orvan -> Asgard, Maize",
+            "value": 61.42,
+            "unit": "% of baseline route tonnes",
+            "status": "AVAILABLE",
+            "numerator": "route_volume_loss",
+            "denominator": "route_baseline_volume",
+            "formula": "(route_baseline_volume - route_disrupted_volume) / route_baseline_volume x 100",
+            "assumptions": [],
+            "missing_inputs": []
+          },
+          "national_import_share": {
+            "key": "national_import_share",
+            "label": "Lost route value as a share of Asgard's total imports",
+            "value": null,
+            "unit": "% of Asgard's total imports",
+            "status": "UNAVAILABLE",
+            "numerator": "route_value_loss",
+            "denominator": "national_total_imports",
+            "formula": "route_value_loss / national_total_imports x 100",
+            "assumptions": [],
+            "missing_inputs": [
+              "Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025"
+            ]
+          },
+          "net_exposure": {
+            "key": "net_exposure",
+            "label": "Net exposure on Orvan -> Asgard, Maize after recorded substitution",
+            "value": null,
+            "unit": "% of baseline route value",
+            "status": "UNKNOWN",
+            "numerator": "route_value_loss - substitute_gain",
+            "denominator": "route_baseline_value",
+            "formula": "(route_value_loss - substitute_gain) / route_baseline_value x 100",
+            "assumptions": [],
+            "missing_inputs": [
+              "measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025"
+            ]
+          }
+        },
+        "substitution": {
+          "name": "substitute_gain",
+          "value": null,
+          "unit": "USD M",
+          "status": "UNKNOWN",
+          "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+          "rows": [],
+          "sources": [
+            "ORV-0031 | Page 1 | Paragraph 4"
+          ],
+          "note": "substitution is reported but no trade series measures it"
+        },
+        "low": null,
+        "high": 55.97,
+        "range_metric": "net_exposure",
+        "range_basis": "Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.",
+        "sensitivity": [
+          {
+            "window": "onset",
+            "period": "Sep-Dec 2026 vs Sep-Dec 2025",
+            "route_value_decline": 56.34
+          },
+          {
+            "window": "late",
+            "period": "Nov-Dec 2026 vs Nov-Dec 2025",
+            "route_value_decline": 56.02
+          }
+        ],
+        "breakdown": [
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "October",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.0,
+            "volume_t": 72000.0,
+            "row_id": "ORV-0029#P5"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "November",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.5,
+            "volume_t": 73000.0,
+            "row_id": "ORV-0029#P6"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "December",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.5,
+            "volume_t": 73000.0,
+            "row_id": "ORV-0029#P7"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "October",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 72.5,
+            "volume_t": 186000.0,
+            "row_id": "ORV-0029#P11"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "November",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 74.1,
+            "volume_t": 190000.0,
+            "row_id": "ORV-0029#P12"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "December",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 73.7,
+            "volume_t": 189000.0,
+            "row_id": "ORV-0029#P13"
+          }
+        ],
+        "rows_flagged": [],
+        "assumptions": [
+          "Baseline is the same months one year earlier (Oct-Dec 2025), so seasonality is held constant.",
+          "Values are nominal USD as reported; the value metric mixes price and quantity changes, the volume metric does not."
+        ],
+        "missing_inputs": [
+          "Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025",
+          "measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025"
+        ]
+      },
+      "requests": [],
+      "status": "NARROWED",
+      "narrowed_from": {
+        "low": null,
+        "high": 55.97,
+        "metric": "net_exposure",
+        "unit": "% of baseline route value",
+        "basis": "Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.",
+        "scenario": ""
+      }
+    },
+    {
+      "claim_id": "T1-02",
+      "side": "THOR",
+      "run": 1,
+      "country": "Asgard",
+      "sector": "Maize",
+      "kind": "evidence",
+      "statement": "Thor relies on ORV-0031 | Page 1 | Paragraph 2: Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market.",
+      "estimate": null,
+      "nature": "SOURCED_FACT",
+      "reasoning": "The reliance on the open market for maize exposes Asgard to significant risks from supply chain disruptions.",
+      "citations": [
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market.",
+          "fact_id": "76442abc",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [],
+      "status": "DEFENDED",
+      "narrowed_from": null
+    },
+    {
+      "claim_id": "T1-03",
+      "side": "THOR",
+      "run": 1,
+      "country": "Asgard",
+      "sector": "Wheat",
+      "kind": "evidence",
+      "statement": "Asgard's long-term wheat contract with Orvan is mostly protected, but this does not mitigate the exposure from maize imports.",
+      "estimate": null,
+      "nature": "SOURCED_FACT",
+      "reasoning": "While wheat contracts provide some protection, the lack of similar arrangements for maize heightens Asgard's overall exposure.",
+      "citations": [
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market.",
+          "fact_id": "76442abc",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [],
+      "status": "CONCEDED",
+      "narrowed_from": null
+    },
+    {
+      "claim_id": "L1-01",
+      "side": "LOKI",
+      "run": 1,
+      "country": "Asgard",
+      "sector": "Maize",
+      "kind": "calculation",
+      "statement": "The decline on Orvan -> Asgard, Maize is not in dispute: trade value fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025). The Case File reports replacement supply: \"Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.\" (ORV-0031 | Page 1 | Paragraph 4). Mitigation from Vanir, question by question. The record speaks to whether it replaces the lost route shipments: reported (ORV-0031 | Page 1 | Paragraph 4); whether it arrives on time: reported (ORV-0031 | Page 1 | Paragraph 4); whether it costs more: reported (ORV-0031 | Page 1 | Paragraph 1). It is silent on how much the substitute supply amounts to, whether the alternative supply can be sustained. So the net impact cannot be quantified: of the USD 123.3M (347,000 tonnes) lost on Orvan -> Asgard, Maize (Oct-Dec 2026 vs Oct-Dec 2025), the share Vanir replaces is unknown, because nothing on the record measures how much is replaced. The 55.97% route decline is an agreed fact; treating it as Asgard's net loss of maize supply assumes zero replacement, which the record contradicts.",
+      "estimate": {
+        "low": 55.97,
+        "high": 55.97,
+        "metric": "route_value_decline",
+        "unit": "% of baseline route value",
+        "basis": "net exposure not established",
+        "scenario": ""
+      },
+      "nature": "INFERENCE",
+      "reasoning": "Run 1: shared assessment of Orvan -> Asgard, Maize for Oct-Dec 2026 vs Oct-Dec 2025; Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.",
+      "citations": [
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P11",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 11,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In October 2025, the value was USD 72.5M and the volume was 186,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 72.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P12",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 12,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In November 2025, the value was USD 74.1M and the volume was 190,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 74.1,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P13",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 13,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In December 2025, the value was USD 73.7M and the volume was 189,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 73.7,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P5",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.0,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P6",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 6,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0029",
+          "ref": "ORV-0029#P7",
+          "kind": "trade_row",
+          "page_number": 1,
+          "paragraph_number": 7,
+          "pub_date": "2027-01-20",
+          "pub_time": "11:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Trade note: Orvan to Asgard, maize, July to December 2026",
+          "excerpt": "In December 2026, the value was USD 32.5M and the volume was 73,000 tonnes.",
+          "fact_id": null,
+          "assertion": null,
+          "numeric_value": 32.5,
+          "unit": "USD M"
+        },
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P4",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 4,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.",
+          "fact_id": null,
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow and the corridor agreement remains lapsed.",
+          "fact_id": null,
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": {
+        "country": "Asgard",
+        "sector": "Maize",
+        "origins": [
+          "Orvan"
+        ],
+        "route": "Orvan -> Asgard, Maize",
+        "primary_series": [
+          "ORV-0029"
+        ],
+        "substitute_series": [],
+        "window": "full",
+        "months": [
+          "October",
+          "November",
+          "December"
+        ],
+        "baseline_year": 2025,
+        "disrupted_year": 2026,
+        "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+        "quantities": {
+          "route_baseline_value": {
+            "name": "route_baseline_value",
+            "value": 220.3,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [
+              "ORV-0029#P11",
+              "ORV-0029#P12",
+              "ORV-0029#P13"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_disrupted_value": {
+            "name": "route_disrupted_value",
+            "value": 97.0,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026",
+            "rows": [
+              "ORV-0029#P5",
+              "ORV-0029#P6",
+              "ORV-0029#P7"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_baseline_volume": {
+            "name": "route_baseline_volume",
+            "value": 565000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [
+              "ORV-0029#P11",
+              "ORV-0029#P12",
+              "ORV-0029#P13"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_disrupted_volume": {
+            "name": "route_disrupted_volume",
+            "value": 218000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026",
+            "rows": [
+              "ORV-0029#P5",
+              "ORV-0029#P6",
+              "ORV-0029#P7"
+            ],
+            "sources": [],
+            "note": ""
+          },
+          "route_value_loss": {
+            "name": "route_value_loss",
+            "value": 123.3,
+            "unit": "USD M",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "route_baseline_value - route_disrupted_value (negative = increase)"
+          },
+          "route_volume_loss": {
+            "name": "route_volume_loss",
+            "value": 347000.0,
+            "unit": "tonnes",
+            "status": "AVAILABLE",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "route_baseline_volume - route_disrupted_volume (negative = increase)"
+          },
+          "substitute_gain": {
+            "name": "substitute_gain",
+            "value": null,
+            "unit": "USD M",
+            "status": "UNKNOWN",
+            "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+            "rows": [],
+            "sources": [
+              "ORV-0031 | Page 1 | Paragraph 4"
+            ],
+            "note": "substitution is reported but no trade series measures it"
+          },
+          "national_total_imports": {
+            "name": "national_total_imports",
+            "value": null,
+            "unit": "USD M",
+            "status": "UNAVAILABLE",
+            "period": "Oct-Dec 2025",
+            "rows": [],
+            "sources": [],
+            "note": "no document in the Case File states Asgard's total imports"
+          }
+        },
+        "metrics": {
+          "route_value_decline": {
+            "key": "route_value_decline",
+            "label": "Trade value decline on Orvan -> Asgard, Maize",
+            "value": 55.97,
+            "unit": "% of baseline route value",
+            "status": "AVAILABLE",
+            "numerator": "route_value_loss",
+            "denominator": "route_baseline_value",
+            "formula": "(route_baseline_value - route_disrupted_value) / route_baseline_value x 100",
+            "assumptions": [],
+            "missing_inputs": []
+          },
+          "route_volume_decline": {
+            "key": "route_volume_decline",
+            "label": "Trade volume decline on Orvan -> Asgard, Maize",
+            "value": 61.42,
+            "unit": "% of baseline route tonnes",
+            "status": "AVAILABLE",
+            "numerator": "route_volume_loss",
+            "denominator": "route_baseline_volume",
+            "formula": "(route_baseline_volume - route_disrupted_volume) / route_baseline_volume x 100",
+            "assumptions": [],
+            "missing_inputs": []
+          },
+          "national_import_share": {
+            "key": "national_import_share",
+            "label": "Lost route value as a share of Asgard's total imports",
+            "value": null,
+            "unit": "% of Asgard's total imports",
+            "status": "UNAVAILABLE",
+            "numerator": "route_value_loss",
+            "denominator": "national_total_imports",
+            "formula": "route_value_loss / national_total_imports x 100",
+            "assumptions": [],
+            "missing_inputs": [
+              "Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025"
+            ]
+          },
+          "net_exposure": {
+            "key": "net_exposure",
+            "label": "Net exposure on Orvan -> Asgard, Maize after recorded substitution",
+            "value": null,
+            "unit": "% of baseline route value",
+            "status": "UNKNOWN",
+            "numerator": "route_value_loss - substitute_gain",
+            "denominator": "route_baseline_value",
+            "formula": "(route_value_loss - substitute_gain) / route_baseline_value x 100",
+            "assumptions": [],
+            "missing_inputs": [
+              "measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025"
+            ]
+          }
+        },
+        "substitution": {
+          "name": "substitute_gain",
+          "value": null,
+          "unit": "USD M",
+          "status": "UNKNOWN",
+          "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+          "rows": [],
+          "sources": [
+            "ORV-0031 | Page 1 | Paragraph 4"
+          ],
+          "note": "substitution is reported but no trade series measures it"
+        },
+        "low": null,
+        "high": 55.97,
+        "range_metric": "net_exposure",
+        "range_basis": "Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported.",
+        "sensitivity": [
+          {
+            "window": "onset",
+            "period": "Sep-Dec 2026 vs Sep-Dec 2025",
+            "route_value_decline": 56.34
+          },
+          {
+            "window": "late",
+            "period": "Nov-Dec 2026 vs Nov-Dec 2025",
+            "route_value_decline": 56.02
+          }
+        ],
+        "breakdown": [
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "October",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.0,
+            "volume_t": 72000.0,
+            "row_id": "ORV-0029#P5"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "November",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.5,
+            "volume_t": 73000.0,
+            "row_id": "ORV-0029#P6"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "December",
+            "year": 2026,
+            "series": "ORV-0029",
+            "value_usd_m": 32.5,
+            "volume_t": 73000.0,
+            "row_id": "ORV-0029#P7"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "October",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 72.5,
+            "volume_t": 186000.0,
+            "row_id": "ORV-0029#P11"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "November",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 74.1,
+            "volume_t": 190000.0,
+            "row_id": "ORV-0029#P12"
+          },
+          {
+            "role": "primary",
+            "origin": "Orvan",
+            "month": "December",
+            "year": 2025,
+            "series": "ORV-0029",
+            "value_usd_m": 73.7,
+            "volume_t": 189000.0,
+            "row_id": "ORV-0029#P13"
+          }
+        ],
+        "rows_flagged": [],
+        "assumptions": [
+          "Baseline is the same months one year earlier (Oct-Dec 2025), so seasonality is held constant.",
+          "Values are nominal USD as reported; the value metric mixes price and quantity changes, the volume metric does not."
+        ],
+        "missing_inputs": [
+          "Asgard's total imports (all goods, all suppliers) for Oct-Dec 2025",
+          "measured substitute supply of maize into Asgard for Oct-Dec 2026 vs Oct-Dec 2025"
+        ]
+      },
+      "requests": [],
+      "status": "DEFENDED",
+      "narrowed_from": null
+    }
+  ],
+  "attacks": [
+    {
+      "attack_id": "AT1-01",
+      "run": 1,
+      "attacker": "THOR",
+      "target_claim_id": "L1-01",
+      "reason": "contradicts",
+      "argument": "No trade series measures substitute supply for Asgard Maize (substitution is reported but no trade series measures it); any mitigation Loki points to is unquantified and cannot lower the figure.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null
+    },
+    {
+      "attack_id": "AL1-01",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-01",
+      "reason": "wrong_scope",
+      "argument": "The trade rows establish a 55.97% route value decline on Orvan -> Asgard, Maize; they do not establish net exposure, because substitution is UNKNOWN (substitution is reported but no trade series measures it). up to 55.97% (no lower bound on the record) [net_exposure] is the no-substitution scenario under a stronger label, not the net loss.",
+      "counter_evidence": [],
+      "grounds": "rule",
+      "narrow_to": "route_value_decline"
+    },
+    {
+      "attack_id": "AL1-02",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-02",
+      "reason": "wrong_scope",
+      "argument": "While maize is bought on the open market, the lack of measured substitution does not imply a total loss; alternative suppliers may mitigate the impact.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null
+    },
+    {
+      "attack_id": "AL1-03",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-03",
+      "reason": "wrong_scope",
+      "argument": "The assertion that exposure from maize imports is not mitigated overlooks the potential for substitute suppliers and rerouting, which could soften the overall loss.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "RT1-01",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-01",
+      "claim_id": "T1-01",
+      "decision": "NARROWED",
+      "explanation": "The rows stand: Trade value decline on Orvan -> Asgard, Maize is 55.97%. Thor drops the net exposure label and narrows the claim to that measured figure; the attack disputes the label, not the calculation.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RT1-02",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-02",
+      "claim_id": "T1-02",
+      "decision": "DEFENDED",
+      "explanation": "While it is true that maize is bought on the open market, the evidence from ORV-0031 | Page 1 | Paragraph 5 indicates that maize is exposed to the spot market and that feed compounders can only change rations temporarily. This highlights the structural vulnerability of maize supply, contradicting the assertion that alternative suppliers can fully mitigate the impact.",
+      "new_evidence": [
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P5",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Wheat bought under the long-term contract arrives on schedule and at agreed terms, while maize is bought cargo by cargo and is exposed to the spot market.",
+          "fact_id": "550dc35c",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0031",
+          "ref": "ORV-0031#P5",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2026-11-05",
+          "pub_time": "09:15",
+          "tier": 3,
+          "source_name": "Asgard Herald",
+          "title": "Asgard feed buyers feel the cost of a shorter Orvan harvest",
+          "excerpt": "Feed compounders say they can change rations for a while, but not indefinitely, and that the cost of switching is already showing in their margins.",
+          "fact_id": "efdd9afc",
+          "assertion": "REPORTED",
+          "numeric_value": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "response_id": "RT1-03",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-03",
+      "claim_id": "T1-03",
+      "decision": "CONCEDED",
+      "explanation": "No new admissible evidence answers the attack.",
+      "new_evidence": []
+    },
+    {
+      "response_id": "RL1-01",
+      "run": 1,
+      "side": "LOKI",
+      "attack_id": "AT1-01",
+      "claim_id": "L1-01",
+      "decision": "DEFENDED",
+      "explanation": "The figures recompute exactly from the trade rows at ORV-0029 | Page 1 | Paragraphs 5, 6, 7, 11, 12, 13; the attack cites no trade data that changes them.",
+      "new_evidence": []
+    }
+  ],
+  "side_failures": {}
+}

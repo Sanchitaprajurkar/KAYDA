@@ -1,0 +1,230 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-01",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Recomputes exactly from the trade rows; the attacks offered no trade data against it.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T1-02",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Recomputes exactly from the trade rows; the attacks offered no trade data against it.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T1-03",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T1-04",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T1-05",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "CONTESTED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T1-06",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-01",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-02",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-03",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-04",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-05",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L1-06",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Midgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        50.18,
+        62.51
+      ],
+      "loki": [
+        38.49,
+        62.51
+      ],
+      "odin": [
+        50.18,
+        62.51
+      ],
+      "odin_classification": "ESTABLISHED",
+      "basis": "Recomputed from the Case File's trade rows (ORV-0030, no substitute supply on the record); windows: full Oct-Dec net 50.2%-gross 50.2%; late Nov-Dec net 62.5%-gross 62.5%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Midgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        60.1,
+        60.34
+      ],
+      "loki": [
+        37.4,
+        45.28
+      ],
+      "odin": [
+        60.02,
+        60.1
+      ],
+      "odin_classification": "ESTABLISHED",
+      "basis": "Recomputed from the Case File's trade rows (ORV-0009, no substitute supply on the record); windows: full Oct-Dec net 60.1%-gross 60.1%; late Nov-Dec net 60.0%-gross 60.0%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Maize",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "odin_classification": null,
+      "basis": "Evidence missing: no trade series for this flow; no range is given."
+    },
+    {
+      "country": "Tolan",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        60.1,
+        60.3
+      ],
+      "loki": [
+        28.32,
+        40.22
+      ],
+      "odin": [
+        60.1,
+        60.16
+      ],
+      "odin_classification": "ESTABLISHED",
+      "basis": "Recomputed from the Case File's trade rows (ORV-0046, no substitute supply on the record); windows: full Oct-Dec net 60.1%-gross 60.1%; late Nov-Dec net 60.2%-gross 60.2%. The onset month is left out because it was only partly affected."
+    }
+  ],
+  "remand": [
+    "Midgard Maize: net effect of substitute supply is not in the Case File",
+    "Midgard Wheat: net effect of substitute supply is not in the Case File",
+    "Midgard Wheat: substitute trade series ORV-0027 cited by LOKI are not in the Case File",
+    "Tolan Maize: evidence gap not yet checked against the Tolan reference sheet",
+    "Tolan Wheat: net effect of substitute supply is not in the Case File",
+    "Tolan Wheat: substitute trade series ORV-0044 cited by LOKI are not in the Case File"
+  ],
+  "llm_usage": {
+    "THOR": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 3482
+    },
+    "LOKI": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 3043
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

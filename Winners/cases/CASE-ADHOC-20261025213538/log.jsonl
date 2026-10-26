@@ -1,0 +1,21 @@
+{"ts": "2026-10-25T21:36:04.100037+00:00", "event": "phase", "title": "CASE CASE-ADHOC-20261025213538: As of 10 April 2027, what is the impact on Jotunheim and Alfheim from the Muspelheim export embargo? Provide exposure ranges for oil and natural gas."}
+{"ts": "2026-10-25T21:36:04.100037+00:00", "event": "phase", "title": "HEIMDALL - CASE FILE (run 1)"}
+{"ts": "2026-10-25T21:36:04.101541+00:00", "event": "note", "text": "Event None: DISPUTED (confidence 0.5); active at 2027-04-10: True"}
+{"ts": "2026-10-25T21:36:04.102547+00:00", "event": "note", "text": "15 documents: ATL-0015, ORV-0045, ATL-0007, ATL-0002, ATL-0013, ATL-0011, ATL-0003, ORV-0013, ORV-0002, ORV-0034, ORV-0033, ORV-0016, ORV-0024, ATL-0005, ATL-0001"}
+{"ts": "2026-10-25T21:36:04.103629+00:00", "event": "doc_health", "agent": "HEIMDALL", "doc_id": "ORV-0043", "reason": "RETRACTED", "related": "ORV-0013"}
+{"ts": "2026-10-25T21:36:04.104667+00:00", "event": "doc_health", "agent": "HEIMDALL", "doc_id": "ORV-0049", "reason": "SUPERSEDED", "related": "ORV-0016"}
+{"ts": "2026-10-25T21:36:04.104667+00:00", "event": "doc_health", "agent": "HEIMDALL", "doc_id": "ORV-0014", "reason": "CLOCK_EXCLUDED", "related": null}
+{"ts": "2026-10-25T21:36:04.105727+00:00", "event": "doc_health", "agent": "HEIMDALL", "doc_id": "ORV-0015", "reason": "TAINTED", "related": "ORV-0043"}
+{"ts": "2026-10-25T21:36:04.105727+00:00", "event": "note", "text": "Set aside: ORV-0043 (RETRACTED), ORV-0049 (SUPERSEDED), ORV-0014 (CLOCK_EXCLUDED), ORV-0015 (TAINTED)"}
+{"ts": "2026-10-25T21:36:04.106726+00:00", "event": "case_file", "agent": "HEIMDALL", "run": 1, "doc_ids": ["ATL-0015", "ORV-0045", "ATL-0007", "ATL-0002", "ATL-0013", "ATL-0011", "ATL-0003", "ORV-0013", "ORV-0002", "ORV-0034", "ORV-0033", "ORV-0016", "ORV-0024", "ATL-0005", "ATL-0001"], "verdict": "DISPUTED"}
+{"ts": "2026-10-25T21:36:04.135446+00:00", "event": "phase", "title": "RUN 1 - ROUND 1 - CLAIMS (filed in parallel)"}
+{"ts": "2026-10-25T21:36:04.139296+00:00", "event": "query", "agent": "THOR", "query": "  exports loss collapse shortfall ", "filters": {"max_tier": 3}, "results": ["ORV-0047#para1", "ORV-0018#P5", "ORV-0018#P8", "ORV-0018#P1", "ORV-0045#para1", "ATL-0013#P2", "ATL-0011#P2", "ORV-0002#P3"]}
+{"ts": "2026-10-25T21:36:04.139296+00:00", "event": "query", "agent": "LOKI", "query": "stocks reserves rerouted rail road adjusted markets ", "filters": {"max_tier": 3}, "results": ["ORV-0004#para1", "ORV-0004#P1", "ORV-0004#P3", "ORV-0031#P7", "ATL-0006#P2", "ORV-0029#P14", "ORV-0021#P3", "ORV-0047#P1"]}
+{"ts": "2026-10-25T21:36:04.143766+00:00", "event": "query", "agent": "THOR", "query": "capacity limit bottleneck delays congestion ", "filters": {"max_tier": 2}, "results": ["ORV-0017#P7", "ORV-0005#P14", "ORV-0021#P3", "ORV-0008#P8", "ORV-0024#P5", "ORV-0033#para1", "ORV-0032#P6", "ORV-0030#P14"]}
+{"ts": "2026-10-25T21:36:04.147962+00:00", "event": "query", "agent": "THOR", "query": "prices rise premium cost  ", "filters": {"max_tier": 3}, "results": ["ORV-0047#P5", "ORV-0035#P7", "ORV-0006#P7", "ORV-0031#para1", "ORV-0001#P7", "ORV-0004#P2", "ORV-0047#P6", "ORV-0022#P4"]}
+{"ts": "2026-10-25T21:36:08.540993+00:00", "event": "phase", "title": "RUN 1 - ROUND 2 - CROSS-EXAMINATION: ATTACKS"}
+{"ts": "2026-10-25T21:36:08.542535+00:00", "event": "phase", "title": "RUN 1 - ROUND 3 - DEFEND OR CONCEDE"}
+{"ts": "2026-10-25T21:36:08.542535+00:00", "event": "phase", "title": "RUN 1 - ODIN RULES"}
+{"ts": "2026-10-25T21:36:08.544075+00:00", "event": "note", "text": "ODIN  the record is sufficient"}
+{"ts": "2026-10-25T21:36:08.626298+00:00", "event": "phase", "title": "BRIEFING (COMPLETE)"}
+{"ts": "2026-10-25T21:36:08.626298+00:00", "event": "note", "text": "Saved to C:\\Users\\Ajinkya\\KAYDA\\Winners\\cases\\CASE-ADHOC-20261025213538"}

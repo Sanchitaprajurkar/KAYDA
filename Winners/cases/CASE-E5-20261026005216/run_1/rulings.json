@@ -1,0 +1,170 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-01",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Passed independent validation; no live attack. Narrowed in cross-examination from up to 55.97% (no lower bound on the record) [net_exposure]; ruled as narrowed. Checked: 6 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [
+        "6 citation(s) admissible and dated on or before 2027-01-20",
+        "6 trade row(s) present and unflagged in ORV-0029",
+        "recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025)",
+        "filed figure 55.97% [route_value_decline] matches what that metric yields on the record"
+      ],
+      "findings": [
+        {
+          "metric": "route_value_decline",
+          "statement": "Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025).",
+          "value": 55.97,
+          "established": true,
+          "reason": "Measured: recomputes exactly from the validated trade rows."
+        },
+        {
+          "metric": "route_volume_decline",
+          "statement": "Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025).",
+          "value": 61.42,
+          "established": true,
+          "reason": "Measured: recomputes exactly from the validated trade rows."
+        }
+      ]
+    },
+    {
+      "claim_id": "T1-02",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "CONTESTED",
+      "reason": "Passed independent validation; no live attack. Checked: 2 citation(s) admissible and dated on or before 2027-01-20; 2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Wheat.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [
+        "2 citation(s) admissible and dated on or before 2027-01-20",
+        "2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Wheat"
+      ],
+      "findings": []
+    },
+    {
+      "claim_id": "T1-03",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-01",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "Arithmetic recomputes exactly from the trade rows; the attacks offered no other trade data against it. Checked: 8 citation(s) admissible and dated on or before 2027-01-20; 6 trade row(s) present and unflagged in ORV-0029; 2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Maize; recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025); filed figure 55.97% [route_value_decline] matches what that metric yields on the record.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [
+        "8 citation(s) admissible and dated on or before 2027-01-20",
+        "6 trade row(s) present and unflagged in ORV-0029",
+        "2 quoted paragraph(s) found verbatim in their documents and naming Asgard or Maize",
+        "recomputed from the rows: (220.3 - 97.0) / 220.3 = 55.97% route value decline (Oct-Dec 2026 vs Oct-Dec 2025)",
+        "filed figure 55.97% [route_value_decline] matches what that metric yields on the record"
+      ],
+      "findings": [
+        {
+          "metric": "route_value_decline",
+          "statement": "Trade value on Orvan -> Asgard, Maize fell by 55.97% (Oct-Dec 2026 vs Oct-Dec 2025).",
+          "value": 55.97,
+          "established": true,
+          "reason": "Measured: recomputes exactly from the validated trade rows."
+        },
+        {
+          "metric": "route_volume_decline",
+          "statement": "Trade volume on Orvan -> Asgard, Maize fell by 61.42% (Oct-Dec 2026 vs Oct-Dec 2025).",
+          "value": 61.42,
+          "established": true,
+          "reason": "Measured: recomputes exactly from the validated trade rows."
+        }
+      ]
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": null,
+      "loki": null,
+      "odin": [
+        null,
+        55.97
+      ],
+      "metrics": {
+        "route_value_decline": 55.97,
+        "route_volume_decline": 61.42,
+        "national_import_share": null,
+        "net_exposure": null
+      },
+      "metric_status": {
+        "route_value_decline": "AVAILABLE",
+        "route_volume_decline": "AVAILABLE",
+        "national_import_share": "UNAVAILABLE",
+        "net_exposure": "UNKNOWN"
+      },
+      "substitution": "UNKNOWN: substitution is reported but no trade series measures it",
+      "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+      "positions": {
+        "THOR": "route value decline 55.97% (measured); narrowed from up to 55.97% (no lower bound on the record) [net_exposure], which holds only if nothing is replaced",
+        "LOKI": "route value decline 55.97% (measured); net exposure not established"
+      },
+      "odin_classification": "CONTESTED",
+      "basis": "Net exposure on Orvan -> Asgard, Maize, Oct-Dec 2026 vs Oct-Dec 2025, % of baseline route value. Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported. Other periods (sensitivity only, not bounds): onset Sep-Dec 2026 vs Sep-Dec 2025: 56.34%; late Nov-Dec 2026 vs Nov-Dec 2025: 56.02%."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "metrics": {},
+      "metric_status": {},
+      "substitution": "",
+      "period": "",
+      "positions": {},
+      "odin_classification": null,
+      "basis": "Evidence missing: no trade series for this flow; no figure is given."
+    }
+  ],
+  "remand": [
+    "Asgard Maize: net effect of substitute supply is not in the Case File"
+  ],
+  "open_gaps": [],
+  "research": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 3130
+    },
+    "LOKI": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 3048
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

@@ -1,20 +1,25 @@
 """Thor in the courtroom: the case for high exposure, using Thor's own prompt and spot-premium assumption."""
 
+import re
 from typing import List, Optional, Tuple
 
 from backend.agents.advocate import Advocate
 from backend.agents.thor.prompts import THOR_SYSTEM_PROMPT
-from backend.court.models import Claim, Estimate
+from backend.court.display import fmt_span
+from backend.court.models import ROUTE_VALUE_DECLINE, ROUTE_VOLUME_DECLINE, Claim
 from backend.court.tools import SearchFilters
-
-THOR_SPOT_PREMIUM_PCT = 12.0  # standard spot-price escalation assumption (from problem statement)
 
 
 class CourtThor(Advocate):
     side = "THOR"
     prefix = "T"
     system_prompt = THOR_SYSTEM_PROMPT
-    premium_pct = THOR_SPOT_PREMIUM_PCT
+    mandate = "THOR - the exposure is severe; mitigation is unproven, late, costly or too small"
+    off_mandate = re.compile(r"not as severe|less severe|overstat|exaggerat|alternative supply (?:has been|was) found|"
+                             r"prices (?:have )?(?:settled|eased|fallen)|loss is (?:limited|small|modest)|"
+                             r"fully (?:replaced|offset)|well mitigated", re.I)
+    attack_terms = "delays shortage capacity premium shortfall"
+    defence_terms = "shortfall delays prices"
 
     def opening_queries(self, report, run: int, remand: List[str]) -> List[Tuple[str, SearchFilters]]:
         s = report.case_scope
@@ -29,66 +34,51 @@ class CourtThor(Advocate):
             (f"prices rise premium cost {goods} {importers}", SearchFilters(event_id=event, max_tier=3)),
         ]
 
+    def _interpretive_challenge(self, claim: Claim) -> Optional[str]:
+        a = claim.assessment
+        if a.low is None:
+            return (f"No trade series measures substitute supply for {a.country} {a.sector} ({a.substitution.note}); "
+                    f"any mitigation Loki points to is unquantified and cannot lower the figure.")
+        return (f"The recorded-substitution scenario assumes the measured substitute rise ({a.substitution.note}) "
+                f"persists; without it the full no-substitution figure applies.")
+
     def cell_claim(self, report, country: str, sector: str, run: int) -> Optional[Claim]:
-        """Thor uses only the substitutes on the record: he does not go looking for mitigation."""
-        cell = next(c for c in report.coverage_map if (c.country, c.sector) == (country, sector))
-        primary = [self.tools.series(d) for d in cell.primary_series]
-        substitutes = [self.tools.series(d) for d in cell.substitute_series]
-        calcs = self._calc_windows(report, country, sector, primary, substitutes)
-        if not calcs:
-            return None
-        worst = max(calcs, key=lambda c: c.gross_loss_pct)
-        central = next((c for c in calcs if c.window == "full"), worst)
-        # Both bounds use the same denominator: the total import basket (primary + substitute baseline).
-        # low = net_import_loss_pct  — best case, substitutes fully materialise.
-        # high = gross_import_loss_pct — worst case, no substitution.
-        # spot premium is a separate observation, not folded into either bound.
-        low = central.net_import_loss_pct
-        high = max(c.gross_import_loss_pct for c in calcs)
-        origins = "/".join(report.case_scope.event_countries)
-        subs = sorted({x.origin for x in substitutes if x})
-        prior_claim = next((c for c in self.claims.values() if c.kind == "calculation"
-                            and (c.country, c.sector) == (country, sector) and c.run == run - 1), None)
-
-        if run > 1 and prior_claim and (low != prior_claim.estimate.low or high != prior_claim.estimate.high):
-            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
-                         f"({', '.join(worst.months)} vs a year earlier); following Odin's remand, new substitute trade data "
-                         f"from {', '.join(subs)} is incorporated, revising net exposure from "
-                         f"{prior_claim.estimate.low:.1f}-{prior_claim.estimate.high:.1f}% down to {low:.1f}-{high:.1f}% "
-                         f"of the total import basket. A spot-price premium of {self.premium_pct:g}% is separately observed.")
-            reasoning = (f"Revised in Run {run} using new substitute series {', '.join(cell.substitute_series)} retrieved on remand: "
-                         f"estimate revised from {prior_claim.estimate.low:.1f}-{prior_claim.estimate.high:.1f}% to {low:.1f}-{high:.1f}% "
-                         f"(low = net_import_loss_pct, high = gross_import_loss_pct / total import basket); "
-                         f"the {self.premium_pct:g}% spot premium is separately cited, not in either bound.")
-        elif run > 1 and prior_claim:
-            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
-                         f"({', '.join(worst.months)} vs a year earlier); following Odin's remand, Heimdall's search confirmed "
-                         f"no substitute {sector.lower()} supply is on the record. Thor maintains {low:.1f}-{high:.1f}% "
-                         f"of the total import basket as the unmitigated baseline loss. "
-                         f"A spot-price premium of {self.premium_pct:g}% is separately observed.")
-            reasoning = (f"Maintained in Run {run} at {low:.1f}-{high:.1f}%: Heimdall's remand search confirmed no substitute "
-                         f"trade series exists for {country} {sector}; with primary disruption unmitigated, position remains unchanged; "
-                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket); "
-                         f"the {self.premium_pct:g}% spot premium is separately cited.")
+        """Thor's reading: the measured fall is large and broad, and nothing on the record shows it replaced."""
+        a = self._assessment(report, country, sector)
+        if not a or a.high is None:
+            return None  # no defensible number: Thor files none
+        vd = a.metrics[ROUTE_VALUE_DECLINE].value
+        vol = a.metrics[ROUTE_VOLUME_DECLINE].value
+        points = [f"On {a.route}, trade value fell by {vd:.2f}% ({a.period})"
+                  + (f" and volume by {vol:.2f}%" if vol is not None else "") + "."]
+        if vol is not None and vol > vd:
+            points.append(f"Volume fell further than value ({vol:.2f}% against {vd:.2f}%), so the physical shortfall "
+                          f"is larger than the value figure shows.")
+        below, total = self._months_below(a)
+        if total > 1 and below == total:
+            points.append(f"Every month of the period is below its year-earlier level, so this is a sustained "
+                          f"disruption, not a single bad month.")
+        sub = a.substitution
+        if a.low is None:
+            points.append(f"Replacement supply is not measured ({sub.note}), so none of the loss has been shown to be "
+                          f"replaced: the potential impact remains up to {a.high:.2f}% of the route's baseline value.")
+        elif abs(a.low - a.high) < 0.005:
+            points.append(f"Recorded substitutes did not rise ({sub.note}): net exposure is the full {a.high:.2f}% of the "
+                          f"route's baseline value.")
         else:
-            statement = (f"{country} has lost {worst.gross_loss_pct:.1f}% of its {sector.lower()} imports from {origins} "
-                         f"({', '.join(worst.months)} vs a year earlier); "
-                         + (f"even after recorded substitutes from {', '.join(subs)}, at least {low:.1f}% "
-                            f"of the total import basket is gone" if subs else
-                            f"over the full months after onset the loss is {low:.1f}% of the total import basket "
-                            f"and no substitute supply is on the record")
-                         + f". A spot-price premium of {self.premium_pct:g}% is separately observed.")
-            reasoning = (f"TradeCalculator over {', '.join(cell.primary_series + cell.substitute_series)}; "
-                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket); "
-                         f"the {self.premium_pct:g}% spot premium is separately cited, not in either bound.")
-
-        cites = []
-        for c in calcs:
-            cites += [e for e in self.tools.row_evidence(c) if e.ref not in {x.ref for x in cites}]
-        return Claim(claim_id=self._next_id(run), side=self.side, run=run, country=country, sector=sector,
-                     kind="calculation", statement=statement,
-                     estimate=Estimate(low=round(min(low, high), 2), high=round(max(low, high), 2),
-                                       baseline=f"same months of {worst.baseline_year}"),
-                     nature="INFERENCE",
-                     reasoning=reasoning,
-                     citations=cites, calculations=calcs)
+            points.append(f"Even after measured substitute supply ({sub.note}), {a.low:.2f}% of the route's baseline "
+                          f"value is still unreplaced, and {a.high:.2f}% if that substitution does not hold.")
+        prior = self._prior_calc(country, sector, run) if run > 1 else None
+        before = (prior.narrowed_from or prior.estimate) if prior else None  # compare like with like: as filed
+        span = fmt_span((a.low, a.high), 2)
+        if before and (before.low, before.high) != (a.low, a.high):
+            lead = "Following Odin's remand, new data in the Case File changes the assessment, revising net exposure. "
+            reasoning = (f"Revised in Run {run}: net exposure moved from "
+                         f"{fmt_span((before.low, before.high), 2)} to {span} ({a.range_basis})")
+        elif prior:
+            lead = "Following Odin's remand, no new data changes the figures, so Thor maintains his reading of them. "
+            reasoning = f"Maintained in Run {run} at {span}: the re-search added no data for this cell ({a.range_basis})"
+        else:
+            lead = ""
+            reasoning = f"Shared assessment of {a.route} for {a.period}: {a.range_basis}"
+        return self._calc_claim(run, a, lead + " ".join(points), reasoning)

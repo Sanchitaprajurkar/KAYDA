@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-E5-20261026005216",
+  "question": "As of 20 January 2027, what is Asgard's exposure from the Orvan corridor collapse? Provide wheat and maize import exposure ranges.",
+  "as_of_date": "2027-01-20",
+  "runs": 2,
+  "status": "COMPLETE",
+  "git_sha": "913973162db4645f9fddff8db341c68557838a23",
+  "models": {
+    "THOR": "gpt-4o-mini",
+    "LOKI": "gpt-4o-mini",
+    "ODIN": "gpt-4o-mini"
+  },
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-26T00:52:46.191046+00:00"
+}

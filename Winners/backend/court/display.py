@@ -43,52 +43,96 @@ def _as_dict(x: Any) -> dict:
     return x.model_dump() if isinstance(x, BaseModel) else x
 
 
-def calculation_lines(calculations: List[Any], estimate: Any, indent: str = "  ") -> List[str]:
-    """The arithmetic behind a calculation claim: per-month rows, totals, and how the low/high bounds are chosen."""
-    calcs = [_as_dict(c) for c in calculations]
-    if not calcs:
+def _num(v, unit: str = "") -> str:
+    if v is None:
+        return "n/a"
+    return f"{v:,.2f}{unit}" if unit == "%" else f"{v:,.1f}"
+
+
+def calculation_lines(assessment: Any, estimate: Any = None, indent: str = "  ") -> List[str]:
+    """The full provenance of a cell's figures: rows, inputs, each metric's numerator/denominator/formula, status,
+    assumptions, missing inputs, and how the range (if any) was formed."""
+    if not assessment:
         return []
-    est = _as_dict(estimate)
-    lines = [f"{indent}CALCULATION (TradeCalculator; every trade row used is listed under SUPPORTING EVIDENCE):"]
-    for k in calcs:
-        months = k["months"]
-        b, d = k["baseline_year"], k["disrupted_year"]
-        lines.append(f"{indent}  Window \"{k['window']}\": {', '.join(m[:3] for m in months)} {d} vs the same months of {b}")
-        cols: List[str] = []
-        table: Dict[str, Dict[str, Any]] = {}
-        for row in sorted(k.get("breakdown", []), key=lambda r: (r["role"] != "primary", r["origin"], r["year"])):
-            col = f"{row['origin']} {row['year']}"
-            if col not in cols:
-                cols.append(col)
-            table.setdefault(row["month"], {})[col] = row["value_usd_m"]
-        if cols:
-            lines.append(f"{indent}    {'Month':<10}" + "".join(f"{c:>16}" for c in cols) + "   (USD M)")
-            for m in months:
-                vals = table.get(m, {})
-                lines.append(f"{indent}    {m[:3]:<10}" + "".join(
-                    f"{vals[c]:>16.1f}" if c in vals else f"{'-':>16}" for c in cols))
-            lines.append(f"{indent}    {'Total':<10}" + "".join(
-                f"{sum(table.get(m, {}).get(c, 0.0) for m in months):>16.1f}" for c in cols))
-        origins = "/".join(k["origins"])
-        base, gross = k["baseline_usd_m"], k["gross_loss_usd_m"]
-        sub_gain, net, basket = k["substitute_gain_usd_m"], k["net_loss_usd_m"], k["import_baseline_usd_m"]
-        lines += [
-            f"{indent}    Gross loss       = {origins} {b} - {origins} {d} = {base:.1f} - {base - gross:.1f} = {gross:.1f}",
-            f"{indent}    Substitute gain  = substitutes {d} - substitutes {b} = {sub_gain:.1f}"
-            + ("" if k.get("substitute_series") else "  (no substitute series on the record)"),
-            f"{indent}    Net loss         = gross - substitute gain = {gross:.1f} - {sub_gain:.1f} = {net:.1f}",
-            f"{indent}    Import basket    = all suppliers, {b} = {basket:.1f}",
-            f"{indent}    Net / basket     = {net:.1f} / {basket:.1f} = {k['net_import_loss_pct']:.2f}%",
-            f"{indent}    Gross / basket   = {gross:.1f} / {basket:.1f} = {k['gross_import_loss_pct']:.2f}%",
-            f"{indent}    Gross / {origins} baseline = {gross:.1f} / {base:.1f} = {k['gross_loss_pct']:.2f}%",
-        ]
-        if k.get("rows_flagged"):
-            lines.append(f"{indent}    Flagged rows left out: {', '.join(k['rows_flagged'])}")
-    low_src = min(calcs, key=lambda k: abs(k["net_import_loss_pct"] - est["low"]))
-    high_src = min(calcs, key=lambda k: abs(k["gross_import_loss_pct"] - est["high"]))
-    lines.append(f"{indent}  Range: low {est['low']:.2f}% = net / basket (window \"{low_src['window']}\"); "
-                 f"high {est['high']:.2f}% = gross / basket (window \"{high_src['window']}\").")
-    premium = max(k.get("premium_pct", 0.0) for k in calcs)
-    if premium:
-        lines.append(f"{indent}  The {premium:g}% spot-price premium is a separate observation and is in neither bound.")
+    a = _as_dict(assessment)
+    months, b, d = a["months"], a["baseline_year"], a["disrupted_year"]
+    lines = [f"{indent}CALCULATION (shared assessment; every trade row used is listed under SUPPORTING EVIDENCE):",
+             f"{indent}  Route: {a['route']}   Period: {a['period']} ({a['window']} window)",
+             f"{indent}  Series: primary {', '.join(a['primary_series'])}; substitute "
+             f"{', '.join(a['substitute_series']) or 'none in the Case File'}"]
+    table: Dict[str, Dict[str, str]] = {}
+    cols: List[str] = []
+    for r in sorted(a.get("breakdown", []), key=lambda r: (r["role"] != "primary", r["origin"], r["year"])):
+        col = f"{r['origin']} {r['year']}"
+        if col not in cols:
+            cols.append(col)
+        vol = f"{r['volume_t'] / 1000:,.0f}kt" if r.get("volume_t") is not None else "n/a"
+        table.setdefault(r["month"], {})[col] = f"{r['value_usd_m']:.1f} / {vol}"
+    if cols:
+        lines.append(f"{indent}    {'Month':<8}" + "".join(f"{c:>20}" for c in cols) + "   (USD M / tonnes)")
+        for m in months:
+            lines.append(f"{indent}    {m[:3]:<8}" + "".join(f"{table.get(m, {}).get(c, '-'):>20}" for c in cols))
+    lines.append(f"{indent}  Inputs:")
+    for q in a["quantities"].values():
+        src = f"; rows {', '.join(q['rows'])}" if q.get("rows") else ""
+        src += f"; sources {'; '.join(q['sources'])}" if q.get("sources") else ""
+        note = f" - {q['note']}" if q.get("note") else ""
+        lines.append(f"{indent}    {q['name']:<28} {_num(q['value']):>12} {q['unit']:<7} [{q['status']}] "
+                     f"{q.get('period', '')}{note}{src}")
+    lines.append(f"{indent}  Metrics:")
+    for m in a["metrics"].values():
+        value = _num(m["value"], "%") if m["value"] is not None else m["status"]
+        lines.append(f"{indent}    {m['label']}: {value}  ({m['unit']})")
+        lines.append(f"{indent}      = {m['formula']}   numerator {m['numerator']}, denominator {m['denominator']}")
+        for x in m.get("assumptions", []):
+            lines.append(f"{indent}      assumption: {x}")
+        for x in m.get("missing_inputs", []):
+            lines.append(f"{indent}      missing input: {x}")
+    sub = a["substitution"]
+    lines.append(f"{indent}  Substitution: {sub['status']} - {sub['note']}"
+                 + (f" (reported in {'; '.join(sub['sources'])})" if sub.get("sources") else ""))
+    lines.append(f"{indent}  Range (net exposure, % of baseline route value): "
+                 f"{fmt_span((a['low'], a['high']), 2)}. {a['range_basis']}")
+    for x in a.get("sensitivity", []):
+        lines.append(f"{indent}  Sensitivity only (not a bound): {x['window']} period {x['period']}: route value "
+                     f"decline {_num(x.get('route_value_decline'), '%')}")
+    for x in a.get("assumptions", []):
+        lines.append(f"{indent}  Assumption: {x}")
+    if a.get("rows_flagged"):
+        lines.append(f"{indent}  Flagged rows left out: {', '.join(a['rows_flagged'])}")
+    if estimate is not None:
+        lines.append(f"{indent}  Filed estimate: {fmt_estimate(estimate)}")
     return lines
+
+
+def fmt_span(span, digits: int = 1) -> str:
+    """'a-b%', 'up to b% (no lower bound on the record)', 'b%' for a point, '-' for nothing."""
+    if not span or span[1] is None:
+        return "-"
+    lo, hi = span
+    if lo is None:
+        return f"up to {hi:.{digits}f}% (no lower bound on the record)"
+    if abs(lo - hi) < 0.005:
+        return f"{hi:.{digits}f}%"
+    return f"{lo:.{digits}f}-{hi:.{digits}f}%"
+
+
+def fmt_estimate(est) -> str:
+    if not est:
+        return "no estimate"
+    est = _as_dict(est)
+    return f"{fmt_span((est.get('low'), est.get('high')), 2)} [{est.get('metric')}]"
+
+
+def position(est) -> str:
+    """A side's position in words: its net-exposure span, its scenario, or the metric it accepts."""
+    if not est:
+        return "no figure filed"
+    e = _as_dict(est)
+    if e.get("metric") == "net_exposure":
+        if e.get("scenario") == "recorded_substitution":
+            return f"{e['low']:.2f}% net exposure (recorded-substitution scenario)"
+        return f"{fmt_span((e.get('low'), e.get('high')), 2)} net exposure"
+    value = e.get("high") if e.get("high") is not None else e.get("low")
+    label = e.get("metric", "").replace("_", " ")
+    return f"{label} {value:.2f}% (measured); {e.get('basis') or 'no net figure'}"

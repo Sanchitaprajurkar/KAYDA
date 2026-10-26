@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-ADHOC-20261025213538",
+  "question": "As of 10 April 2027, what is the impact on Jotunheim and Alfheim from the Muspelheim export embargo? Provide exposure ranges for oil and natural gas.",
+  "as_of_date": "2027-04-10",
+  "runs": 1,
+  "status": "COMPLETE",
+  "git_sha": "2b07a570d0f35c08e0402b645dd943a4e043f40f",
+  "models": {
+    "THOR": "gpt-4o-mini",
+    "LOKI": "gpt-4o-mini",
+    "ODIN": "gpt-4o-mini"
+  },
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-25T21:36:08.624778+00:00"
+}

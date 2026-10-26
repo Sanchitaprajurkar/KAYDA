@@ -1,0 +1,186 @@
+{
+  "status": "INCOMPLETE",
+  "reasons": [
+    "Asgard Wheat: no established trade-row finding"
+  ],
+  "markdown": "# Briefing: As of 20 January 2027, what is Asgard's exposure from the Orvan corridor collapse? Provide wheat and maize import exposure ranges.\n\nCase `CASE-E5-20261025220906` | as of 2027-01-20 | runs: 3 | status: **INCOMPLETE**\n\n**This case is not complete:** Asgard Wheat: no established trade-row finding\n\n## Executive summary\n\n- Event: **CONFIRMED**, still in effect at the as-of date. Orvan grain corridor collapse is CONFIRMED and still in effect as of 2027-01-20: 7 independent Tier 1-2 outlet(s) (Cargo Weekly, Harbour Review, Midgard Times, Raven Wire, Ravik government, Realm Trade Ministry, Vantro Trading) confirm it and no credible evidence stands against it.\n- Asgard Maize: Odin's range **56.0-56.0%** fall in import value (Thor 56.0-56.3%, Loki 56.0-56.3%).\n- Asgard Wheat: no defensible range established; No calculation survived the trial.\n- Findings: 3 established, 1 contested, 8 conceded, 0 rejected.\n\n## Established findings\n\n- **T3-01** (THOR, Inference) Asgard has lost 56.3% of its maize imports from Orvan (September, October, November, December vs a year earlier); following Odin's remand, Heimdall's search confirmed no substitute maize supply is on the record. Thor maintains 56.0-56.3% of the total import basket as the unmitigated baseline loss. A spot-price premium of 12% is separately observed. [ORV-0029 | Page 1 | Para 4 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Para 5 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Para 6 | 2027-01-20 11:40]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes.\"\n  2. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 5\n     Supporting excerpt: \"In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.\"\n  3. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 6\n     Supporting excerpt: \"In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n  _Ruling: UPHELD. Recomputes exactly from the trade rows; the attacks offered no trade data against it._\n\n- **T3-03** (THOR, Sourced fact) Asgard imports almost everything it consumes, from food and medicines to machinery and household goods, indicating a high dependency on external sources for maize. [ATL-0002 | Page 1 | Para 2 | 2024-01-15 09:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ATL-0002` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Asgard exports shipping and re-export services and imports almost everything it consumes, from food and medicines to machinery and household goods.\"\n  _Ruling: UPHELD. Verified against its sources and never credibly countered._\n\n- **L3-01** (LOKI, Inference) Following Odin's remand, no alternative trade series was recorded for Asgard Maize; Asgard's maize import loss is 56.0-56.3% of the total import basket depending on the window; the worst month is not the trend. [ORV-0029 | Page 1 | Para 4 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Para 5 | 2027-01-20 11:40] [ORV-0029 | Page 1 | Para 6 | 2027-01-20 11:40]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"In September 2026, the value was USD 30.7M and the volume was 69,000 tonnes.\"\n  2. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 5\n     Supporting excerpt: \"In October 2026, the value was USD 32.0M and the volume was 72,000 tonnes.\"\n  3. Document ID: `ORV-0029` | Page Number: 1 | Paragraph Number: 6\n     Supporting excerpt: \"In November 2026, the value was USD 32.5M and the volume was 73,000 tonnes.\"\n  _Ruling: UPHELD. Verified against its sources and never credibly countered._\n\n\n## Contested findings\n\n- **T3-04** (THOR, Sourced fact) Asgard's long-term wheat contract with Orvan is mostly protected, but maize is bought on the open market, leading to greater exposure for maize imports. [ORV-0031 | Page 1 | Para 2 | 2026-11-05 09:15] [ORV-0031 | Page 1 | Para 4 | 2026-11-05 09:15]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0031` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Asgard's long-term wheat contract with Orvan is mostly protected, local buyers say, but maize is bought on the open market.\"\n  2. Document ID: `ORV-0031` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"Port agents in Asgard report longer waits for maize cargoes and more spot purchases from Vanir.\"\n  _Ruling: UPHELD. Verified against its sources and never credibly countered._\n\n\n## Conceded findings\n\n- **T3-02** (THOR, Inference) Asgard has lost 8.7% of its wheat imports from Orvan (September, October, November, December vs a year earlier); following Odin's remand, Heimdall's search confirmed no substitute wheat supply is on the record. Thor maintains 8.1-8.7% of the total import basket as the unmitigated baseline loss. A spot-price premium of 12% is separately observed. [ORV-0019 | Page 1 | Para 4 | 2027-01-22 15:30] [ORV-0019 | Page 1 | Para 5 | 2027-01-22 15:30] [ORV-0019 | Page 1 | Para 6 | 2027-01-22 15:30]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes.\"\n  2. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 5\n     Supporting excerpt: \"In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes.\"\n  3. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 6\n     Supporting excerpt: \"In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **T3-05** (THOR, Sourced fact) Wheat is quoted in USD per tonne, usually between 220 and 320, indicating the financial implications of supply disruptions. [ATL-0007 | Page 1 | Para 3 | 2024-01-16 10:00] [ATL-0007 | Page 1 | Para 1 | 2024-01-16 10:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 3\n     Supporting excerpt: \"Fertiliser is quoted in USD per tonne, usually between 300 and 500.\"\n  2. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 1\n     Supporting excerpt: \"Wheat is quoted in USD per tonne, usually between 220 and 320.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **T3-06** (THOR, Sourced fact) Maize is quoted in USD per tonne, usually between 180 and 280, reflecting the potential cost increases due to supply chain disruptions. [ATL-0007 | Page 1 | Para 1 | 2024-01-16 10:00] [ATL-0007 | Page 1 | Para 1 | 2024-01-16 10:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 1\n     Supporting excerpt: \"Maize is quoted in USD per tonne, usually between 180 and 280.\"\n  2. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 1\n     Supporting excerpt: \"Wheat is quoted in USD per tonne, usually between 220 and 320.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **L3-02** (LOKI, Inference) Following Odin's remand, no alternative trade series was recorded for Asgard Wheat; Asgard's wheat import loss is 8.1-8.7% of the total import basket depending on the window; the worst month is not the trend. [ORV-0019 | Page 1 | Para 4 | 2027-01-22 15:30] [ORV-0019 | Page 1 | Para 5 | 2027-01-22 15:30] [ORV-0019 | Page 1 | Para 6 | 2027-01-22 15:30]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"In September 2026, the value was USD 38.4M and the volume was 96,000 tonnes.\"\n  2. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 5\n     Supporting excerpt: \"In October 2026, the value was USD 36.4M and the volume was 91,000 tonnes.\"\n  3. Document ID: `ORV-0019` | Page Number: 1 | Paragraph Number: 6\n     Supporting excerpt: \"In November 2026, the value was USD 36.4M and the volume was 91,000 tonnes.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **L3-03** (LOKI, Sourced fact) Asgard imports almost everything it consumes, including maize, which is quoted between USD 180 and 280 per tonne, indicating potential for price adjustments and alternative sourcing. [ATL-0007 | Page 1 | Para 2 | 2024-01-16 10:00] [ATL-0007 | Page 1 | Para 1 | 2024-01-16 10:00] [ATL-0002 | Page 1 | Para 2 | 2024-01-15 09:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Rice is quoted in USD per tonne, usually between 400 and 600.\"\n  2. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 1\n     Supporting excerpt: \"Maize is quoted in USD per tonne, usually between 180 and 280.\"\n  3. Document ID: `ATL-0002` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Asgard exports shipping and re-export services and imports almost everything it consumes, from food and medicines to machinery and household goods.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **L3-04** (LOKI, Sourced fact) Loki relies on ATL-0007#P2: Rice is quoted in USD per tonne, usually between 400 and 600. [ATL-0007 | Page 1 | Para 2 | 2024-01-16 10:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ATL-0007` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Rice is quoted in USD per tonne, usually between 400 and 600.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **L3-05** (LOKI, Sourced fact) Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended, indicating a shift in logistics that can help maintain wheat supply. [ORV-0033 | Page 1 | Para 2 | 2026-11-18 11:00] [ORV-0033 | Page 1 | Para 4 | 2026-11-18 11:00]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0033` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"Rail movements through the Ravik Rail Link have risen since the Orvan corridor ended.\"\n  2. Document ID: `ORV-0033` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"The government says shippers should book rail capacity early.\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n- **L3-06** (LOKI, Sourced fact) The rail link normally carries about USD 25M of Orvan wheat a month, and traders describe it as a bridge that works, but only for a share of the trade. [ORV-0050 | Page 1 | Para 2 | 2026-11-20 11:25] [ATL-0012 | Page 1 | Para 4 | 2024-01-16 10:30]\n  **SUPPORTING EVIDENCE:**\n  1. Document ID: `ORV-0050` | Page Number: 1 | Paragraph Number: 2\n     Supporting excerpt: \"The rail link normally carries about USD 25M of Orvan wheat a month.\"\n  2. Document ID: `ATL-0012` | Page Number: 1 | Paragraph Number: 4\n     Supporting excerpt: \"Reliability tiers run from 1 (official) to 4 (weak).\"\n  _Ruling: CONCEDED. Withdrawn by its owner in cross-examination._\n\n\n## Exposure table\n\n| Country | Sector | Thor | Loki | Odin | Basis |\n|---|---|---|---|---|---|\n| Asgard | Maize | 56.0-56.3% | 56.0-56.3% | 56.0-56.0% | Recomputed from the Case File's trade rows (ORV-0029, no substitute supply on the record); windows: full Oct-Dec net 56.0%-gross 56.0%; late Nov-Dec net 56.0%-gross 56.0%. The onset month is left out because it was only partly affected. |\n| Asgard | Wheat | 8.1-8.7% | 8.1-8.7% | no defensible range established | No calculation survived the trial. |\n\n> **Odin column key**: *evidence missing* = no trade data on record for this flow; *no defensible range established* = data exists but no calculation survived the trial (this is NOT zero exposure); *X–Y% (contested)* = range computed but at least one underlying finding is contested; *X–Y%* = range computed from established findings.\n\n## Next-quarter outlook\n\nIf conditions at 2027-01-20 persist, next quarter's loss stays near the latest months (November-December 2026):\n- Asgard Maize: about 56.0-56.0%.\n\nAssumptions: no new agreement or reopening before the next quarter (none is reported as of the as-of date); substitute suppliers keep their latest volumes; no document after the as-of date is used.\n\n## Data-quality appendix\n\n- ORV-0015 set aside before trial: TAINTED (see ORV-0043)\n- ORV-0043 set aside before trial: RETRACTED (see ORV-0013)\n- ORV-0049 set aside before trial: SUPERSEDED (see ORV-0016)\n- ORV-0026 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0041 set aside before trial: CLOCK_EXCLUDED\n- ORV-0036 set aside before trial: CLOCK_EXCLUDED\n- ORV-0028 set aside before trial: TABLOID\n- ORV-0010 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0014 set aside before trial: CLOCK_EXCLUDED\n- ORV-0003 set aside before trial: SUPERSEDED (see ORV-0016)\n- Run 1: 15 documents in the Case File; sent back: Asgard Maize: net effect of substitute supply is not in the Case File; Asgard Wheat: no established trade-row finding; Asgard Wheat: net effect of substitute supply is not in the Case File\n- Run 2: 25 documents in the Case File; new evidence ORV-0030, ORV-0027, ORV-0046, ATL-0002, ORV-0042, ORV-0005, ORV-0009, ORV-0044, ORV-0004, ORV-0001; sent back: Asgard Wheat: no established trade-row finding\n- Run 3: 34 documents in the Case File; new evidence ATL-0012, ORV-0012, ATL-0016, ORV-0008, ORV-0050, ORV-0033, ATL-0007, ORV-0035, ORV-0045; sent back: Asgard Wheat: no established trade-row finding\n\n## Sources\n\n- ATL-0002: Country profile: Asgard (Realm Trade Ministry, Tier 1, 2024-01-15 09:00)\n- ATL-0007: Product notes (Realm Trade Ministry, Tier 1, 2024-01-16 10:00)\n- ATL-0012: Outlet guide (Realm Trade Ministry, Tier 1, 2024-01-16 10:30)\n- ORV-0019: Trade note: Orvan to Asgard, wheat, July to December 2026 (Harbour Review, Tier 2, 2027-01-22 15:30)\n- ORV-0029: Trade note: Orvan to Asgard, maize, July to December 2026 (Cargo Weekly, Tier 2, 2027-01-20 11:40)\n- ORV-0031: Asgard feed buyers feel the cost of a shorter Orvan harvest (Asgard Herald, Tier 3, 2026-11-05 09:15)\n- ORV-0033: Ravik statement on rail capacity for Orvan grain (Ravik government, Tier 1, 2026-11-18 11:00)\n- ORV-0050: Rail takes the strain on the Orvan to Ravik grain run (Harbour Review, Tier 2, 2026-11-20 11:25)\n",
+  "exposure": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        55.97,
+        56.34
+      ],
+      "loki": [
+        55.97,
+        56.34
+      ],
+      "odin": [
+        55.97,
+        56.02
+      ],
+      "odin_classification": "ESTABLISHED",
+      "basis": "Recomputed from the Case File's trade rows (ORV-0029, no substitute supply on the record); windows: full Oct-Dec net 56.0%-gross 56.0%; late Nov-Dec net 56.0%-gross 56.0%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        8.14,
+        8.71
+      ],
+      "loki": [
+        8.14,
+        8.71
+      ],
+      "odin": null,
+      "odin_classification": null,
+      "basis": "No calculation survived the trial."
+    }
+  ],
+  "findings": {
+    "ESTABLISHED": [
+      {
+        "claim_id": "T3-01",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "ESTABLISHED",
+        "reason": "Recomputes exactly from the trade rows; the attacks offered no trade data against it.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "T3-03",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "UPHELD",
+        "nature": "SOURCED_FACT",
+        "classification": "ESTABLISHED",
+        "reason": "Verified against its sources and never credibly countered.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-01",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "ESTABLISHED",
+        "reason": "Verified against its sources and never credibly countered.",
+        "decided_by": "rules",
+        "failed_checks": []
+      }
+    ],
+    "CONTESTED": [
+      {
+        "claim_id": "T3-04",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "UPHELD",
+        "nature": "SOURCED_FACT",
+        "classification": "CONTESTED",
+        "reason": "Verified against its sources and never credibly countered.",
+        "decided_by": "rules",
+        "failed_checks": []
+      }
+    ],
+    "UNCONTESTED": [],
+    "CONCEDED": [
+      {
+        "claim_id": "T3-02",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "T3-05",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "T3-06",
+        "side": "THOR",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-02",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-03",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-04",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-05",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      },
+      {
+        "claim_id": "L3-06",
+        "side": "LOKI",
+        "run": 3,
+        "ruling": "CONCEDED",
+        "nature": "SOURCED_FACT",
+        "classification": "CONCEDED",
+        "reason": "Withdrawn by its owner in cross-examination.",
+        "decided_by": "rules",
+        "failed_checks": []
+      }
+    ],
+    "REJECTED": []
+  }
+}

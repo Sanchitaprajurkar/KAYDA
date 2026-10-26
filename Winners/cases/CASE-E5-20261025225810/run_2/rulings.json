@@ -1,0 +1,203 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T2-01",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-02",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-03",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-04",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-05",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T2-06",
+      "side": "THOR",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-01",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-02",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-03",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-04",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-05",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L2-06",
+      "side": "LOKI",
+      "run": 2,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        null,
+        55.97
+      ],
+      "loki": [
+        null,
+        55.97
+      ],
+      "odin": [
+        null,
+        55.97
+      ],
+      "metrics": {
+        "route_value_decline": 55.97,
+        "route_volume_decline": 61.42,
+        "national_import_share": null,
+        "net_exposure": null
+      },
+      "metric_status": {
+        "route_value_decline": "AVAILABLE",
+        "route_volume_decline": "AVAILABLE",
+        "national_import_share": "UNAVAILABLE",
+        "net_exposure": "UNKNOWN"
+      },
+      "substitution": "UNKNOWN: substitution is reported but no trade series measures it",
+      "period": "Oct-Dec 2026 vs Oct-Dec 2025",
+      "odin_classification": "ESTABLISHED",
+      "basis": "Net exposure on Orvan -> Asgard, Maize, Oct-Dec 2026 vs Oct-Dec 2025, % of baseline route value. Upper bound only: 55.97% is the no-substitution scenario (the full route value decline). Substitution is UNKNOWN (substitution is reported but no trade series measures it), so no lower bound is supported. Other periods (sensitivity only, not bounds): onset Sep-Dec 2026 vs Sep-Dec 2025: 56.34%; late Nov-Dec 2026 vs Nov-Dec 2025: 56.02%."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "EVIDENCE_MISSING",
+      "thor": null,
+      "loki": null,
+      "odin": null,
+      "metrics": {},
+      "metric_status": {},
+      "substitution": "",
+      "period": "",
+      "odin_classification": null,
+      "basis": "Evidence missing: no trade series for this flow; no figure is given."
+    }
+  ],
+  "remand": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 4,
+      "cache_hits": 0,
+      "tokens": 6969
+    },
+    "LOKI": {
+      "calls": 4,
+      "cache_hits": 0,
+      "tokens": 6222
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

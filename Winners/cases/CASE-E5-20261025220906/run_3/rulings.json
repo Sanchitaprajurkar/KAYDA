@@ -1,0 +1,193 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T3-01",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Recomputes exactly from the trade rows; the attacks offered no trade data against it.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-02",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-03",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-04",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "UPHELD",
+      "nature": "SOURCED_FACT",
+      "classification": "CONTESTED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-05",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "T3-06",
+      "side": "THOR",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-01",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Verified against its sources and never credibly countered.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-02",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-03",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-04",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-05",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    },
+    {
+      "claim_id": "L3-06",
+      "side": "LOKI",
+      "run": 3,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": []
+    }
+  ],
+  "ranges": [
+    {
+      "country": "Asgard",
+      "sector": "Maize",
+      "status": "COVERED",
+      "thor": [
+        55.97,
+        56.34
+      ],
+      "loki": [
+        55.97,
+        56.34
+      ],
+      "odin": [
+        55.97,
+        56.02
+      ],
+      "odin_classification": "ESTABLISHED",
+      "basis": "Recomputed from the Case File's trade rows (ORV-0029, no substitute supply on the record); windows: full Oct-Dec net 56.0%-gross 56.0%; late Nov-Dec net 56.0%-gross 56.0%. The onset month is left out because it was only partly affected."
+    },
+    {
+      "country": "Asgard",
+      "sector": "Wheat",
+      "status": "COVERED",
+      "thor": [
+        8.14,
+        8.71
+      ],
+      "loki": [
+        8.14,
+        8.71
+      ],
+      "odin": null,
+      "odin_classification": null,
+      "basis": "No calculation survived the trial."
+    }
+  ],
+  "remand": [
+    "Asgard Wheat: no established trade-row finding"
+  ],
+  "llm_usage": {
+    "THOR": {
+      "calls": 4,
+      "cache_hits": 2,
+      "tokens": 6000
+    },
+    "LOKI": {
+      "calls": 4,
+      "cache_hits": 2,
+      "tokens": 5500
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

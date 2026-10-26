@@ -5,7 +5,8 @@
                                 ledger rejects a repeated (query, filters) pair.
   facts_for(hits)               the sourced facts extracted from the paragraphs a search returned
   trade_series(dest, sector)    monthly trade series into a country, validated rows only count
-  compute_change(...)           the deterministic TradeCalculator; no number in a claim comes from the LLM
+  assessment(report, cell)      the cell's exposure metrics (backend/court/exposure.py); no number in a claim
+                                comes from the LLM, and Thor, Loki and Odin all read the same assessment
 
 Every call counts against the calling agent's per-run tool budget (NFR5).
 """
@@ -21,8 +22,7 @@ from pydantic import BaseModel, Field
 from backend.court.heimdall_bridge import (CaseEvidenceReport, ExtractedFact, ResolvedEvidenceStore, TradeSeries,
                                            TradeStore)
 from backend.court.display import cite
-from backend.court.models import Calculation, Evidence
-from backend.court.trade_calculator import DisruptionCalculationInput, TradeCalculator, TradeRow
+from backend.court.models import Assessment, Evidence
 
 K1, B, RRF_K = 1.2, 0.75, 60
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
@@ -109,6 +109,7 @@ class RunemarkTools:
         self.calls: Counter = Counter()
         self.index = _index_for(id(store), store)
         self._meta = {did: store.document(did).manifest_meta for did in store.evidence_ids()}
+        self._assessments: Dict[tuple, Optional[Assessment]] = {}
 
     # -- budget -----------------------------------------------------------------
     def start_run(self) -> None:
@@ -202,6 +203,24 @@ class RunemarkTools:
                     out.append(f)
         return out
 
+    def paragraph_evidence(self, label: str) -> Optional[Evidence]:
+        """The paragraph a 'DOC_ID | Page N | Paragraph M' label points to, as citable evidence."""
+        m = re.match(r"\s*(\S+) \| Page (\d+) \| Paragraph (\d+)", label or "")
+        if not m or m.group(1) not in self._meta or not self.admissible(m.group(1)):
+            return None
+        doc_id, page, para_no = m.group(1), int(m.group(2)), int(m.group(3))
+        meta = self._meta[doc_id]
+        paras = self.store.document(doc_id).paragraphs
+        # A labelled [P n] wins over an unlabelled block (e.g. the header) whose index happens to equal n.
+        for p in sorted(paras, key=lambda p: not _LABEL.match(p.raw_text or "")):
+            label_m = _LABEL.match(p.raw_text or "")
+            if (int(label_m.group(1)) if label_m else p.paragraph_index) == para_no:
+                return Evidence(doc_id=doc_id, ref=f"{doc_id}#P{para_no}", kind="paragraph", page_number=page,
+                                paragraph_number=para_no, pub_date=meta.pub_date, pub_time=meta.pub_time,
+                                tier=meta.reliability_tier, source_name=meta.source_name, title=meta.title,
+                                excerpt=_LABEL.sub("", p.raw_text or "").strip(), assertion="REPORTED")
+        return None
+
     def evidence(self, fact: ExtractedFact) -> Evidence:
         m = self._meta[fact.source_ref.doc_id]
         doc = self.store.document(fact.source_ref.doc_id)
@@ -255,55 +274,27 @@ class RunemarkTools:
     def series(self, doc_id: str) -> Optional[TradeSeries]:
         return self.trade.series(doc_id) if doc_id in self._meta else None
 
-    def compute_change(self, agent: Optional[str], country: str, sector: str, origins: Sequence[str],
-                       primary: Sequence[TradeSeries], substitutes: Sequence[TradeSeries], months: Sequence[str],
-                       baseline_year: int, disrupted_year: int, premium_pct: float = 0.0,
-                       window: str = "") -> Optional[Calculation]:
-        """TradeCalculator over validated rows; flagged rows are reported and never used."""
-        if agent:
-            self._spend(agent)
-        p_rows = [_to_row(r, s) for s in primary for r in s.rows]
-        s_rows = [_to_row(r, s) for s in substitutes for r in s.rows]
-        try:
-            res = TradeCalculator.calculate_disruption(DisruptionCalculationInput(
-                country=country, sector=sector, primary_supplier="/".join(origins), primary_rows=p_rows,
-                substitute_suppliers=sorted({s.origin for s in substitutes if s.origin}), substitute_rows=s_rows,
-                baseline_year=baseline_year, disrupted_year=disrupted_year, disruption_months=list(months),
-                spot_price_escalation_pct=premium_pct))
-        except ValueError:
+    def assessment(self, report: CaseEvidenceReport, cell) -> Optional[Assessment]:
+        """The cell's assessment from the current Case File. Deterministic and shared: every agent gets the same one."""
+        from backend.court.exposure import assess
+        if cell is None:
             return None
-        base = res.baseline_value_usd_m
-        breakdown = [{"month": r.month, "year": r.year, "origin": r.country_from, "series": r.doc_id, "role": role,
-                      "value_usd_m": r.val_usd_m, "row_id": r.full_id}
-                     for role, rows in (("primary", p_rows), ("substitute", s_rows)) for r in rows
-                     if not r.is_damaged and r.month in months and r.year in (baseline_year, disrupted_year)]
-        sub_base = sum(r.val_usd_m for r in s_rows
-                       if not r.is_damaged and r.year == baseline_year and r.month in months)
-        imports = base + sub_base
-        return Calculation(
-            country=country, sector=sector, origins=list(origins), primary_series=[s.doc_id for s in primary],
-            substitute_series=[s.doc_id for s in substitutes], months=list(months), baseline_year=baseline_year,
-            disrupted_year=disrupted_year, premium_pct=premium_pct, window=window,
-            gross_loss_pct=res.gross_value_loss_pct, net_loss_pct=res.net_value_loss_pct,
-            net_import_loss_pct=round(res.net_value_loss_usd_m / imports * 100, 2) if imports else 0.0,
-            gross_import_loss_pct=round(res.gross_value_loss_usd_m / imports * 100, 2) if imports else 0.0,
-            import_baseline_usd_m=round(imports, 2),
-            # high_bound_pct is reference only (gross × spot-premium / primary baseline); not a valid claim bound.
-            high_bound_pct=round(res.high_exposure_bound_usd_m / base * 100, 2) if base else 0.0,
-            baseline_usd_m=base, gross_loss_usd_m=res.gross_value_loss_usd_m, net_loss_usd_m=res.net_value_loss_usd_m,
-            substitute_gain_usd_m=res.substitute_value_gain_usd_m,
-            rows_used=res.source_row_ids + res.substitute_row_ids,
-            rows_flagged=[r.split(":")[0] for r in res.damaged_rows_reported], breakdown=breakdown)
+        key = (cell.country, cell.sector, tuple(cell.primary_series), tuple(cell.substitute_series),
+               tuple(d.doc_id for d in report.retrieved_documents), report.as_of_date)
+        if key not in self._assessments:
+            self._assessments[key] = assess(self, report, cell, windows(report))
+        a = self._assessments[key]
+        return a.model_copy(deep=True) if a else None
 
-    def row_evidence(self, calc: Calculation) -> List[Evidence]:
-        """Every valid trade row the calculation used, so each month of the claim can be checked."""
+    def row_evidence(self, a: Assessment) -> List[Evidence]:
+        """Every trade row the assessment used, so each month of the claim can be checked."""
         out = []
-        for did in calc.primary_series + calc.substitute_series:
+        wanted = {r["row_id"] for r in a.breakdown}
+        for did in dict.fromkeys(r["series"] for r in a.breakdown):
             s = self.trade.series(did)
             m = self._meta[did]
             doc = self.store.document(did) if did in self._meta else None
-            used = [r for r in s.rows if r.valid and r.month in calc.months
-                    and r.year in (calc.baseline_year, calc.disrupted_year)]
+            used = sorted((r for r in s.rows if r.row_id in wanted), key=lambda r: (r.year, r.period or ""))
             for r in used:
                 p_idx = r.paragraph_index
                 para = next((p for p in doc.paragraphs if p.paragraph_index == p_idx), None) if doc and p_idx else None
@@ -324,42 +315,6 @@ class RunemarkTools:
                                     pub_time=m.pub_time, tier=m.reliability_tier, source_name=m.source_name,
                                     title=m.title, excerpt=excerpt, numeric_value=r.value_usd_m, unit="USD M"))
         return out
-
-
-def calculation_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, str]]:
-    """(reason, argument) if a calculation claim uses the wrong series or does not recompute, else None."""
-    for calc in claim.calculations:
-        for sid in calc.primary_series + calc.substitute_series:
-            s = tools.series(sid)
-            if not s or s.dest != claim.country or (s.sector or "").lower() != claim.sector.lower():
-                return "wrong_scope", f"{sid} is not a {claim.sector} series into {claim.country}."
-        again = tools.compute_change(
-            None, calc.country, calc.sector, calc.origins, [tools.series(s) for s in calc.primary_series],
-            [tools.series(s) for s in calc.substitute_series], calc.months, calc.baseline_year,
-            calc.disrupted_year, calc.premium_pct, calc.window)
-        if not again or any(abs(getattr(again, k) - getattr(calc, k)) > 0.05
-                            for k in ("gross_loss_pct", "net_import_loss_pct", "high_bound_pct")):
-            return "math_error", f"The {calc.window} calculation does not recompute from the trade rows."
-    if claim.calculations:
-        # Both bounds must use the same denominator: the total import basket (primary + substitute baseline).
-        # low  = net_import_loss_pct  — net loss / total imports (best case: substitutes fully absorbed the shortfall).
-        # high = gross_import_loss_pct — gross loss / total imports (worst case: no substitution materialises).
-        # gross_loss_pct and high_bound_pct (primary-baseline denominator / price-inflated) are reference metrics only.
-        low_ok = any(abs(round(claim.estimate.low, 2) - round(c.net_import_loss_pct, 2)) <= 0.05
-                     for c in claim.calculations)
-        high_ok = any(abs(round(claim.estimate.high, 2) - round(c.gross_import_loss_pct, 2)) <= 0.05
-                      for c in claim.calculations)
-        if not low_ok:
-            nets = ", ".join(f"{c.net_import_loss_pct:.2f}%" for c in claim.calculations)
-            return ("math_error",
-                    f"estimate.low ({claim.estimate.low:.2f}%) must equal net_import_loss_pct from one of its "
-                    f"calculations ({nets}) — net value loss / total import basket (primary + substitute baseline).")
-        if not high_ok:
-            grosses = ", ".join(f"{c.gross_import_loss_pct:.2f}%" for c in claim.calculations)
-            return ("math_error",
-                    f"estimate.high ({claim.estimate.high:.2f}%) must equal gross_import_loss_pct from one of its "
-                    f"calculations ({grosses}) — gross value loss / total import basket (no substitution scenario).")
-    return None
 
 
 def citation_scope_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, str]]:
@@ -393,6 +348,12 @@ def citation_scope_defect(tools: "RunemarkTools", claim) -> Optional[Tuple[str, 
     return None
 
 
+def offers_new_trade_rows(attack, claim) -> bool:
+    """Trade rows offered against a claim count as counter-data only if the claim does not already rest on them."""
+    own = {e.ref for e in claim.citations}
+    return any(e.kind == "trade_row" and e.ref not in own for e in attack.counter_evidence)
+
+
 def attack_counter_scope_defect(tools: "RunemarkTools", attack, target_claim) -> Optional[Tuple[str, str]]:
     """(reason, argument) if an attack's counter-evidence is out of scope for the target claim.
 
@@ -418,14 +379,6 @@ def attack_counter_scope_defect(tools: "RunemarkTools", attack, target_claim) ->
                         f"Counter-evidence {cite(e)} does not mention {target_claim.country} or "
                         f"{target_claim.sector} in the cited paragraph.")
     return None
-
-
-def _to_row(r, s: TradeSeries) -> TradeRow:
-    return TradeRow(doc_id=r.doc_id, row_id=r.row_id.split("#")[-1], full_id=r.row_id, country_from=r.origin,
-                    country_to=r.dest, sector=r.sector or s.sector or "general", month=r.month or "UNKNOWN",
-                    year=r.year or 0, period=r.period or "INVALID", val_usd_m=max(r.value_usd_m or 0.0, 0.0),
-                    vol_tonnes=max(r.volume_t or 0.0, 0.0), is_damaged=not r.valid,
-                    damage_reason="; ".join(r.flags) or None)
 
 
 def windows(report: CaseEvidenceReport) -> Dict[str, Tuple[List[str], int, int]]:

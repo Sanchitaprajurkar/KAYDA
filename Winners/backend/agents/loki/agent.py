@@ -5,7 +5,9 @@ from typing import Dict, List, Optional, Tuple
 
 from backend.agents.advocate import Advocate
 from backend.agents.loki.prompts import LOKI_SYSTEM_PROMPT
-from backend.court.models import Claim, Estimate
+from backend.court.display import cite
+from backend.court.exposure import mitigation_analysis
+from backend.court.models import AVAILABLE, NET_EXPOSURE, ROUTE_VALUE_DECLINE, Claim, Estimate
 from backend.court.tools import SearchFilters
 
 
@@ -18,7 +20,11 @@ class CourtLoki(Advocate):
     side = "LOKI"
     prefix = "L"
     system_prompt = LOKI_SYSTEM_PROMPT
-    premium_pct = 0.0
+    mandate = "LOKI - the exposure is limited; substitutes, rerouting and stocks soften the loss"
+    off_mandate = re.compile(r"more severe|understat|underestimat|worse than (?:claimed|stated)|no (?:real )?"
+                             r"mitigation|mitigation (?:has )?failed|loss is (?:larger|greater)", re.I)
+    attack_terms = "substitute alternative supply spot purchases stocks"
+    defence_terms = "alternative supply substitute"
 
     def _evidence_claim(self, p, cell_est: Dict[str, Claim], run: int) -> Optional[Claim]:
         """A mitigation claim must say how much the mitigation replaces, or say that the record cannot tell."""
@@ -26,29 +32,19 @@ class CourtLoki(Advocate):
         if claim is None:
             return None
         text = claim.statement + " " + " ".join(e.excerpt for e in claim.citations)
-        calc_claim = cell_est.get(f"{claim.country}|{claim.sector}")
-        if not _MITIGATION.search(text) or not calc_claim or not calc_claim.calculations:
+        calc = cell_est.get(f"{claim.country}|{claim.sector}")
+        a = calc.assessment if calc else None
+        if not _MITIGATION.search(text) or not a:
             return claim
-        full = next((c for c in calc_claim.calculations if c.window == "full"), calc_claim.calculations[0])
-        k = max(calc_claim.calculations, key=lambda c: c.substitute_gain_usd_m)             if any(c.substitute_gain_usd_m > 0 for c in calc_claim.calculations) else full
-        origins = "/".join(k.origins)
-        named = sorted({s for s in _SUPPLIER.findall(text) if s not in k.origins and s != claim.country})
-        who = ", ".join(named) or "alternative supply"
-        months = f"{k.months[0][:3]}-{k.months[-1][:3]} {k.disrupted_year}"
-        if k.substitute_series and k.substitute_gain_usd_m > 0:
-            share = k.substitute_gain_usd_m / k.gross_loss_usd_m * 100 if k.gross_loss_usd_m else 0.0
-            claim.statement += (f" Quantified: recorded substitute supply ({', '.join(k.substitute_series)}) rose by "
-                                f"USD {k.substitute_gain_usd_m:.1f}M against USD {k.gross_loss_usd_m:.1f}M lost from "
-                                f"{origins} ({months}), replacing {share:.1f}% of the loss; this is already netted "
-                                f"into the low bound of {calc_claim.estimate.low:.2f}%.")
+        sub, loss = a.substitution, a.quantities["route_value_loss"].value
+        if sub.status == AVAILABLE and loss:
+            claim.statement += (f" Quantified: {sub.note} against USD {loss:.1f}M lost on {a.route} ({a.period}), "
+                                f"replacing {sub.value / loss * 100:.1f}% of the loss; this is the recorded-substitution "
+                                f"scenario already in the range.")
         else:
-            record = (f"the substitute series {', '.join(k.substitute_series)} show no rise in {months}"
-                      if k.substitute_series else
-                      f"the Case File has no {claim.sector.lower()} trade series from {who} into {claim.country}")
-            claim.statement += (f" Not quantified: {record}, so the evidence shows mitigation is happening but does "
-                                f"not establish how much is supplied or what share of the USD "
-                                f"{k.gross_loss_usd_m:.1f}M lost from {origins} ({months}) it replaces; nothing is "
-                                f"netted from the range on this basis.")
+            claim.statement += (f" Not quantified: {sub.note}. The evidence shows mitigation is happening but does not "
+                                f"establish how much is supplied or what share of the USD {loss:.1f}M lost on "
+                                f"{a.route} ({a.period}) it replaces; no lower bound rests on it.")
             claim.nature = "INFERENCE"
         return claim
 
@@ -65,59 +61,94 @@ class CourtLoki(Advocate):
                         SearchFilters(event_id=event, max_tier=3)))
         return queries
 
+    def _interpretive_challenge(self, claim: Claim) -> Optional[str]:
+        a = claim.assessment
+        if a.substitution.status == "UNKNOWN":
+            return (f"The Case File reports substitution for {a.country} {a.sector} "
+                    f"({'; '.join(a.substitution.sources) or a.substitution.note}); the no-substitution figure is an "
+                    f"upper bound, not the net exposure.")
+        if a.low is not None and a.low < a.high:
+            return (f"Measured substitute supply ({a.substitution.note}) is on the record; the no-substitution figure "
+                    f"overstates the net exposure.")
+        return None
+
     def cell_claim(self, report, country: str, sector: str, run: int) -> Optional[Claim]:
-        cell = next(c for c in report.coverage_map if (c.country, c.sector) == (country, sector))
-        primary = [self.tools.series(d) for d in cell.primary_series]
-        origins = set(report.case_scope.event_countries)
-        found = [s for s in self.tools.trade_series(self.side, country, sector) if s.origin not in origins]
-        substitutes = list({s.doc_id: s for s in [self.tools.series(d) for d in cell.substitute_series] + found}
-                           .values())
-        if found:
-            self.log("retrieval", agent=self.side, detail=f"substitute series for {country} {sector}: "
-                                                          f"{[s.doc_id for s in found]}")
-        calcs = self._calc_windows(report, country, sector, primary, substitutes)
-        if not calcs:
+        """Loki's reading: the route decline is not the net loss. Substitute series Loki finds outside the Case File
+        are requested, not used: both sides argue from the same validated data."""
+        a = self._assessment(report, country, sector)
+        if not a or a.high is None:
             return None
-        # Both bounds use the same denominator: the total import basket (primary + substitute baseline).
-        # low = net_import_loss_pct  — best case, substitutes fully materialise.
-        # high = gross_import_loss_pct — worst case, no substitution.
-        low = min(c.net_import_loss_pct for c in calcs)
-        high = max(c.gross_import_loss_pct for c in calcs)
-        gross = max(c.gross_loss_pct for c in calcs)
-        subs = sorted({s.origin for s in substitutes})
-        prior_claim = next((c for c in self.claims.values() if c.kind == "calculation"
-                            and (c.country, c.sector) == (country, sector) and c.run == run - 1), None)
-
-        if run > 1 and prior_claim and subs:
-            statement = (f"Following Odin's remand, substitute supply from {', '.join(subs)} ({', '.join(s.doc_id for s in substitutes)}) "
-                         f"is now verified in the Case File. {country} lost only {low:.1f}-{high:.1f}% of its "
-                         f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
-                         f"from {'/'.join(sorted(origins))}.")
-            reasoning = (f"Run {run}: substitute series verified on remand confirms mitigation from {', '.join(subs)}; "
-                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).")
-        elif run > 1 and prior_claim:
-            statement = (f"Following Odin's remand, no alternative trade series was recorded for {country} {sector}; "
-                         f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
-                         f"depending on the window; the worst month is not the trend.")
-            reasoning = (f"Run {run}: No substitute trade series on record for {country} {sector}; "
-                         f"position maintained at {low:.1f}-{high:.1f}% based on seasonal window adjustment.")
+        cell = next(c for c in report.coverage_map if (c.country, c.sector) == (country, sector))
+        found = [s.doc_id for s in self.tools.trade_series(self.side, country, sector)
+                 if s.origin not in a.origins and s.doc_id not in cell.substitute_series]
+        if found:
+            self.log("retrieval", agent=self.side, detail=f"substitute series for {country} {sector} not in the Case "
+                                                          f"File: {found}")
+        vd = a.metrics[ROUTE_VALUE_DECLINE]
+        sub = a.substitution
+        reports = [e for e in (self.tools.paragraph_evidence(x) for x in sub.sources) if e]
+        points = [f"The decline on {a.route} is not in dispute: trade value fell by {vd.value:.2f}% ({a.period})."]
+        estimate = Estimate(low=vd.value, high=vd.value, metric=ROUTE_VALUE_DECLINE, unit=vd.unit,
+                            basis="net exposure not established")
+        if a.low is not None and a.low < a.high - 0.005:
+            points.append(f"But replacement supply is measured ({sub.note}): on the recorded-substitution scenario net "
+                          f"exposure is {a.low:.2f}% of the route's baseline value, and the {a.high:.2f}% headline is "
+                          f"the no-substitution case.")
+            estimate = Estimate(low=a.low, high=a.low, metric=NET_EXPOSURE, unit=a.metrics[NET_EXPOSURE].unit,
+                                basis=a.range_basis, scenario="recorded_substitution")
+        elif reports:
+            quoted = "; ".join(f'"{e.excerpt}" ({cite(e)})' for e in reports[:2])
+            points.append(f"The Case File reports replacement supply: {quoted}.")
+            mitigation, extra = self._mitigation_points(report, a)
+            points += mitigation
+            reports += [e for e in extra if e.ref not in {r.ref for r in reports}]
+        elif a.low is not None:
+            points.append(f"Recorded substitutes did not rise ({sub.note}), but suppliers without a trade series are not "
+                          f"measured; the figure is the loss on this route, not {country}'s loss of {sector.lower()} "
+                          f"supply as a whole.")
         else:
-            statement = (f"Net of substitute supply from {', '.join(subs)}, {country} lost only {low:.1f}-{high:.1f}% of its "
-                         f"total recorded {sector.lower()} import basket, well below the {gross:.1f}% headline fall "
-                         f"from {'/'.join(sorted(origins))}." if subs else
-                         f"{country}'s {sector.lower()} import loss is {low:.1f}-{high:.1f}% of the total import basket "
-                         f"depending on the window; the worst month is not the trend.")
-            reasoning = (f"TradeCalculator over {', '.join(cell.primary_series)} net of "
-                         f"{', '.join(s.doc_id for s in substitutes) or 'no substitutes'}; "
-                         f"low = net_import_loss_pct, high = gross_import_loss_pct (both / total import basket).")
+            points.append(f"The Case File holds no measurement of replacement supply either way, so the net impact is "
+                          f"not established: the {vd.value:.2f}% figure is the loss on one route, not {country}'s loss "
+                          f"of {sector.lower()} supply as a whole.")
+        if found:
+            points.append(f"Loki asks for substitute series {', '.join(found)}, which are not yet in the Case File.")
+        prior = self._prior_calc(country, sector, run) if run > 1 else None
+        before = (prior.narrowed_from or prior.estimate) if prior else None
+        changed = before and (before.metric, before.low, before.high) != (estimate.metric, estimate.low, estimate.high)
+        lead = ("Following Odin's remand, new data in the Case File changes Loki's position. " if changed else
+                "Following Odin's remand, the position stands. " if prior else "")
+        reasoning = f"Run {run}: shared assessment of {a.route} for {a.period}; {a.range_basis}"
+        return self._calc_claim(run, a, lead + " ".join(points), reasoning, requests=found, estimate=estimate,
+                                extra_citations=reports[:4])
 
-        cites = []
-        for c in calcs:
-            cites += [e for e in self.tools.row_evidence(c) if e.ref not in {x.ref for x in cites}]
-        return Claim(claim_id=self._next_id(run), side=self.side, run=run, country=country, sector=sector,
-                     kind="calculation", statement=statement,
-                     estimate=Estimate(low=round(low, 2), high=round(high, 2),
-                                       baseline=f"same months of {calcs[0].baseline_year}"),
-                     nature="INFERENCE",
-                     reasoning=reasoning,
-                     citations=cites, calculations=calcs)
+    def _mitigation_points(self, report, a) -> Tuple[List[str], List]:
+        """Loki works through what decides the net loss, question by question, and says what the record cannot tell."""
+        answers, suppliers = mitigation_analysis(self.tools, report, a)
+        who = " and ".join(suppliers) or "other suppliers"
+        loss = a.quantities["route_value_loss"].value
+        lost_t = a.quantities["route_volume_loss"].value
+        self.log("retrieval", agent=self.side, detail=f"mitigation review for {a.country} {a.sector}: " + "; ".join(
+            f"{x['key']} {x['status']}" for x in answers))
+        cites, said, silent = [], [], []
+        for x in answers:
+            if x["status"] == "NOT_ON_RECORD":
+                silent.append(x["question"])
+                continue
+            refs = ", ".join(x["sources"][:2]) if x["status"] == "REPORTED" else "the substitute trade rows"
+            said.append(f"{x['question']}: {x['status'].lower()} ({refs})")
+            cites += [e for e in (self.tools.paragraph_evidence(s) for s in x["sources"][:2])
+                      if e and any(w in e.excerpt.lower() for w in (a.country.lower(), a.sector.lower()))]
+        out = [f"Mitigation from {who}, question by question."
+               + (f" The record speaks to {'; '.join(said)}." if said else "")
+               + (f" It is silent on {', '.join(silent)}." if silent else "")]
+        lost = f"USD {loss:,.1f}M" + (f" ({lost_t:,.0f} tonnes)" if lost_t is not None else "")
+        volume = next(x for x in answers if x["key"] == "volume")
+        why = ("the volume figures on the record are reports or projections, not a validated trade series for this "
+               "period, so they cannot be netted against the route loss" if volume["status"] == "REPORTED" else
+               "nothing on the record measures how much is replaced")
+        out.append(f"So the net impact cannot be quantified: of the {lost} lost on {a.route} ({a.period}), the share "
+                   f"{who} replaces is unknown, because {why}. The "
+                   f"{a.metrics[ROUTE_VALUE_DECLINE].value:.2f}% route decline is an agreed fact; treating it as "
+                   f"{a.country}'s net loss of {a.sector.lower()} supply assumes zero replacement, which the record "
+                   f"contradicts.")
+        return out, cites
