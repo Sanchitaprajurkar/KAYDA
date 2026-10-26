@@ -20,6 +20,14 @@ from heimdall.storage.evidence_store import ExcludedDocumentError, ResolvedEvide
 
 TRIAL_STATUSES = {EventStatus.CONFIRMED, EventStatus.DISPUTED}
 
+
+def goes_to_trial(report: CaseEvidenceReport) -> bool:
+    """A verified event goes to trial; so does a developing one, but only when Heimdall matched the question to a
+    known event (credible reports exist but are not yet confirmed). A developing verdict with no matched event means
+    unrelated documents were scored, not that the alleged event is reported."""
+    v = report.event_verification
+    return v.status in TRIAL_STATUSES or (v.status == EventStatus.DEVELOPING and bool(report.case_scope.event_id))
+
 __all__ = ["ROOT", "MAX_RUNS", "CaseNotFoundError", "HeimdallAgent", "RunLimitError", "TradeStore",
            "CaseEvidenceReport", "EventStatus", "TradeRowRecord", "TradeSeries", "ExtractedFact", "StructuredLLM",
-           "ExcludedDocumentError", "ResolvedEvidenceStore", "TRIAL_STATUSES"]
+           "ExcludedDocumentError", "ResolvedEvidenceStore", "TRIAL_STATUSES", "goes_to_trial"]

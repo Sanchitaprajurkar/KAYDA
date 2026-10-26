@@ -1,0 +1,366 @@
+{
+  "status": "COMPLETE",
+  "analytical_status": "PARTIAL",
+  "propositions": [
+    {
+      "prop_id": "P1",
+      "proposition": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+      "kind": "EVENT",
+      "classification": "INSUFFICIENT",
+      "supporting": [],
+      "contradicting": [],
+      "qualifying": [
+        {
+          "source_id": "ORV-0008",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Shipping update reporting on operational status, but not an official source.",
+          "establishes": "a qualification (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly)): Does not specify the cause of the closures or damage to infrastructure.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0008",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 6
+          },
+          "quote_or_value": "The port authority says it cannot estimate when normal working will resume.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Statement from the port authority, but lacks detailed context.",
+          "establishes": "a qualification (ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly)): Does not confirm physical destruction or military strikes as the reason for the operational issues.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0032",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "Some grain berths are closed and the remaining berths are working at reduced speed.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "MEDIUM: The source is a government notice, which may provide official information but does not confirm destruction due to military strikes.",
+          "establishes": "a qualification (ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry)): Does not specify the cause of the closures or reduced speed.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0035",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "The port strike that began in September has left berth availability below normal.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: The source is a shipping update, which may provide insights but lacks confirmation of destruction due to military strikes.",
+          "establishes": "a qualification (ORV-0035 | Page 1 | Paragraph 3 (report, Cargo Weekly)): Does not specify the cause of the port strike or confirm physical destruction of infrastructure.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0004",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "markets have already adjusted, no damage",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Company statement claiming no damage, but not an official assessment.",
+          "establishes": "something about another place (ORV-0004 | Page 1 | Paragraph 1 (official statement, Vantro Trading))",
+          "does_not_establish": "anything about the place where the incident is alleged"
+        },
+        {
+          "source_id": "ORV-0004",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "there is no damage left for our customers",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Company statement claiming no damage, but not an official assessment.",
+          "establishes": "something about another place (ORV-0004 | Page 1 | Paragraph 3 (official statement, Vantro Trading))",
+          "does_not_establish": "anything about the place where the incident is alleged"
+        }
+      ],
+      "set_aside": [
+        {
+          "source_id": "ORV-0026",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as RUMOUR; see ORV-0016",
+          "establishes": "that the claim was made (ORV-0026 (set aside: RUMOUR) (rumour, Trade Whisper))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0010",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Hearing Orvan Grain Port was destroyed last night.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as RUMOUR; see ORV-0016",
+          "establishes": "that the claim was made (ORV-0010 (set aside: RUMOUR) (rumour, Saga Chat))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0043",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as RETRACTED; see ORV-0013",
+          "establishes": "that the claim was made (ORV-0043 (set aside: RETRACTED) (correction, Raven Wire))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0015",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as TAINTED; see ORV-0043",
+          "establishes": "that the claim was made (ORV-0015 (set aside: TAINTED) (report, Asgard Herald))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0003",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "The Realm Trade Ministry reports that talks on renewing the Corridor Agreement are progressing well.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as SUPERSEDED; see ORV-0016",
+          "establishes": "that the claim was made (ORV-0003 (set aside: SUPERSEDED) (report, Realm Trade Ministry))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        }
+      ],
+      "limitations": [
+        "ORV-0004 | Page 1 | Paragraph 1 concerns a different place",
+        "ORV-0004 | Page 1 | Paragraph 3 concerns a different place"
+      ],
+      "reasoning": "Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM).",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": null,
+      "deception": "No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy (its only sources, ORV-0003, ORV-0010, ORV-0015, ORV-0026, ORV-0043, were set aside before trial as unreliable).",
+      "advocate_positions": {
+        "THOR": "not pressed",
+        "LOKI": "challenges as not established (6 reference(s), confidence MEDIUM)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only records that qualify it (e.g. operating conditions); none establishes it or its negation.",
+      "evidence_needed": "a record that explicitly describes the physical condition of the site: an official damage assessment, an inspection report by the responsible authority, a site or facility condition report, or an independent observation describing physical damage",
+      "reinvestigation": "Targeted re-investigation ran in run 2: it added 2 admissible record(s) bearing on this part (ORV-0004 Page 1 | Paragraph 1; ORV-0004 Page 1 | Paragraph 3), none of which decides the physical damage. No further search requested: the corpus offers no reasonable prospect of resolving it.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority responsible for Orvan Grain Port, a site or facility condition report, or an independent observation describing physical damage",
+      "research_requested": false
+    },
+    {
+      "prop_id": "P1.1",
+      "proposition": "operations at Orvan Grain Port were disrupted",
+      "kind": "EVENT",
+      "classification": "ESTABLISHED",
+      "supporting": [
+        {
+          "source_id": "ORV-0008",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Shipping update reporting on operational status, but not an official source.",
+          "establishes": "support for the proposition (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly))",
+          "does_not_establish": "Does not specify the cause of the closures or damage to infrastructure.; bearing on operations read by Odin from the quoted text"
+        },
+        {
+          "source_id": "ORV-0008",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 6
+          },
+          "quote_or_value": "The port authority says it cannot estimate when normal working will resume.",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Statement from the port authority, but lacks detailed context.",
+          "establishes": "support for the proposition (ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly))",
+          "does_not_establish": "Does not confirm physical destruction or military strikes as the reason for the operational issues.; bearing on operations read by Odin from the quoted text"
+        },
+        {
+          "source_id": "ORV-0032",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "Some grain berths are closed and the remaining berths are working at reduced speed.",
+          "evidence_type": "direct",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "MEDIUM: The source is a government notice, which may provide official information but does not confirm destruction due to military strikes.",
+          "establishes": "support for the proposition (ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry))",
+          "does_not_establish": "Does not specify the cause of the closures or reduced speed.; Does not confirm physical destruction of infrastructure."
+        },
+        {
+          "source_id": "ORV-0035",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "The port strike that began in September has left berth availability below normal.",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: The source is a shipping update, which may provide insights but lacks confirmation of destruction due to military strikes.",
+          "establishes": "support for the proposition (ORV-0035 | Page 1 | Paragraph 3 (report, Cargo Weekly))",
+          "does_not_establish": "Does not specify the cause of the port strike or confirm physical destruction of infrastructure.; uses 'strike' without showing the military sense the proposition needs"
+        }
+      ],
+      "contradicting": [],
+      "qualifying": [],
+      "set_aside": [],
+      "limitations": [
+        "Establishing disruption does not establish physical destruction or its cause."
+      ],
+      "reasoning": "Derived by Odin from P1: operational disruption is a separate question from physical damage, decided by operating records, and does not establish the damage. Established by 3 reliable source(s) with no reliable contradiction.",
+      "confidence": {
+        "level": "HIGH",
+        "explanation": "3 independent reliable source(s) decide it."
+      },
+      "attribution": null,
+      "deception": "No evidence of deliberate fabrication in the record.",
+      "advocate_positions": {},
+      "needs_investigation": false,
+      "evidence_gap": "",
+      "evidence_needed": "",
+      "reinvestigation": "",
+      "derived_from": "P1",
+      "derivation": "consequence",
+      "research_request": "",
+      "research_requested": false
+    }
+  ],
+  "reasons": [],
+  "markdown": "# Briefing: Evaluate the breaking alert claiming that Orvan Grain Port infrastructure and grain terminal silos were physically destroyed in military strikes. Conduct event verification to rule whether this disruption is verified or rejected as a decoy, citing verified port authority and logistics records.\n\nCase `CASE-E5-20261026044634` | as of 2027-01-25 | runs: 2 | execution: **COMPLETE** | analysis: **PARTIAL**\n\n> Execution says whether the courtroom workflow ran to the end. Analysis says whether the question is answered: COMPLETE (every requirement decided), PARTIAL (some decided), INSUFFICIENT (the evidence cannot answer it).\n\n## Executive summary\n\n- Broader event: **CONFIRMED**, still in effect at the as-of date. Orvan grain corridor collapse is CONFIRMED and still in effect as of 2027-01-25: 6 independent Tier 1-2 outlet(s) (Cargo Weekly, Harbour Review, Raven Wire, Ravik government, Realm Trade Ministry, Vantro Trading) confirm it and no credible evidence stands against it. This status covers the broader event E5 only; the question's own propositions are assessed separately: P1 'Orvan Grain Port infrastructure was physically destroyed in military strikes.': INSUFFICIENT (0 supporting, 0 contradicting); P2 'Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority ': CONTRADICTED (0 supporting, 2 contradicting). The ruling on them is Odin's.\n- P1 **INSUFFICIENT**: Orvan Grain Port infrastructure was physically destroyed in military strikes. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false.\n- P1.1 **ESTABLISHED**: operations at Orvan Grain Port were disrupted Derived by Odin from P1: operational disruption is a separate question from physical damage, decided by operating records, and does not establish the damage. Established by 3 reliable source(s) with no reliable contradiction.\n- Propositions ruled: 2 - 1 established, 0 rejected, 0 contested, 1 insufficient.\n- Advocate claims: 4 ruled - 2 not pressed, 0 conceded (advocate actions, not findings).\n- Open gaps (searched for; the record does not answer them): P1 (INSUFFICIENT): Orvan Grain Port infrastructure was physically destroyed in military strikes. - Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Needed: a record that explicitly describes the physical condition of the site: an official damage assessment, an inspection report by the responsible authority, a site or facility condition report, or an independent observation describing physical damage..\n\n## Proposition rulings\n\n> Odin's own ruling on each proposition, made from the evidence whatever the advocates pressed or conceded. Qualifying records establish neither the proposition nor its negation; absence of evidence is INSUFFICIENT, not REJECTED.\n\n### P1: Orvan Grain Port infrastructure was physically destroyed in military strikes.\n\n- **Ruling: INSUFFICIENT** (confidence MEDIUM: Confident only that the record cannot decide it.)\n- Reasoning: Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM).\n- Qualifying (neither side):\n  - `ORV-0008 | Page 1 | Paragraph 2` \"Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.\" - shows a qualification (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly)): Does not specify the cause of the closures or damage to infrastructure.; does not establish the proposition, or that it is false\n  - `ORV-0008 | Page 1 | Paragraph 5` \"The port authority says it cannot estimate when normal working will resume.\" - shows a qualification (ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly)): Does not confirm physical destruction or military strikes as the reason for the operational issues.; does not establish the proposition, or that it is false\n  - `ORV-0032 | Page 1 | Paragraph 2` \"Some grain berths are closed and the remaining berths are working at reduced speed.\" - shows a qualification (ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry)): Does not specify the cause of the closures or reduced speed.; does not establish the proposition, or that it is false\n  - `ORV-0035 | Page 1 | Paragraph 3` \"The port strike that began in September has left berth availability below normal.\" - shows a qualification (ORV-0035 | Page 1 | Paragraph 3 (report, Cargo Weekly)): Does not specify the cause of the port strike or confirm physical destruction of infrastructure.; does not establish the proposition, or that it is false\n  - `ORV-0004 | Page 1 | Paragraph 1` \"markets have already adjusted, no damage\" - shows something about another place (ORV-0004 | Page 1 | Paragraph 1 (official statement, Vantro Trading)); does not establish anything about the place where the incident is alleged\n  - `ORV-0004 | Page 1 | Paragraph 3` \"there is no damage left for our customers\" - shows something about another place (ORV-0004 | Page 1 | Paragraph 3 (official statement, Vantro Trading)); does not establish anything about the place where the incident is alleged\n- Set aside before trial:\n  - `ORV-0026 | Page 1 | Paragraph None` \"A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen.\" - shows that the claim was made (ORV-0026 (set aside: RUMOUR) (rumour, Trade Whisper)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0010 | Page 1 | Paragraph None` \"Hearing Orvan Grain Port was destroyed last night.\" - shows that the claim was made (ORV-0010 (set aside: RUMOUR) (rumour, Saga Chat)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0043 | Page 1 | Paragraph None` \"Orvan and its grain buyers have renewed the Corridor Agreement for a second year, according to people involved in the talks.\" - shows that the claim was made (ORV-0043 (set aside: RETRACTED) (correction, Raven Wire)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0015 | Page 1 | Paragraph None` \"Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.\" - shows that the claim was made (ORV-0015 (set aside: TAINTED) (report, Asgard Herald)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0003 | Page 1 | Paragraph None` \"The Realm Trade Ministry reports that talks on renewing the Corridor Agreement are progressing well.\" - shows that the claim was made (ORV-0003 (set aside: SUPERSEDED) (report, Realm Trade Ministry)); does not establish that it is true: the source was set aside before trial\n- Limitations: ORV-0004 | Page 1 | Paragraph 1 concerns a different place; ORV-0004 | Page 1 | Paragraph 3 concerns a different place\n- Deception: No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy (its only sources, ORV-0003, ORV-0010, ORV-0015, ORV-0026, ORV-0043, were set aside before trial as unreliable).\n- Further investigation needed: Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Would resolve it: a record that explicitly describes the physical condition of the site: an official damage assessment, an inspection report by the responsible authority, a site or facility condition report, or an independent observation describing physical damage. Targeted re-investigation ran in run 2: it added 2 admissible record(s) bearing on this part (ORV-0004 Page 1 | Paragraph 1; ORV-0004 Page 1 | Paragraph 3), none of which decides the physical damage. No further search requested: the corpus offers no reasonable prospect of resolving it.\n\n### P1.1: operations at Orvan Grain Port were disrupted (operational consequence derived from P1)\n\n- **Ruling: ESTABLISHED** (confidence HIGH: 3 independent reliable source(s) decide it.)\n- Reasoning: Derived by Odin from P1: operational disruption is a separate question from physical damage, decided by operating records, and does not establish the damage. Established by 3 reliable source(s) with no reliable contradiction.\n- Supporting:\n  - `ORV-0008 | Page 1 | Paragraph 2` \"Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.\" - shows support for the proposition (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly)); does not establish Does not specify the cause of the closures or damage to infrastructure.; bearing on operations read by Odin from the quoted text\n  - `ORV-0008 | Page 1 | Paragraph 5` \"The port authority says it cannot estimate when normal working will resume.\" - shows support for the proposition (ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly)); does not establish Does not confirm physical destruction or military strikes as the reason for the operational issues.; bearing on operations read by Odin from the quoted text\n  - `ORV-0032 | Page 1 | Paragraph 2` \"Some grain berths are closed and the remaining berths are working at reduced speed.\" - shows support for the proposition (ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry)); does not establish Does not specify the cause of the closures or reduced speed.; Does not confirm physical destruction of infrastructure.\n  - `ORV-0035 | Page 1 | Paragraph 3` \"The port strike that began in September has left berth availability below normal.\" - shows support for the proposition (ORV-0035 | Page 1 | Paragraph 3 (report, Cargo Weekly)); does not establish Does not specify the cause of the port strike or confirm physical destruction of infrastructure.; uses 'strike' without showing the military sense the proposition needs\n- Limitations: Establishing disruption does not establish physical destruction or its cause.\n- Deception: No evidence of deliberate fabrication in the record.\n\n## Arguments on propositions the evidence cannot decide\n\n- **L2-P1** (LOKI, Inference) [P1] Loki challenges as not established (unproven, not shown false): Orvan Grain Port infrastructure was physically destroyed in military strikes. [ORV-0008 | Page 1 | Paragraph 2 | 2026-09-18 14:40] [ORV-0008 | Page 1 | Paragraph 5 | 2026-09-18 14:40] [ORV-0032 | Page 1 | Paragraph 2 | 2026-09-15 08:30]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0008 | Page 1 | Paragraph 2`\n     Supporting excerpt: \"Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.\"\n  2. `ORV-0008 | Page 1 | Paragraph 5`\n     Supporting excerpt: \"The port authority says it cannot estimate when normal working will resume.\"\n  3. `ORV-0032 | Page 1 | Paragraph 2`\n     Supporting excerpt: \"Some grain berths are closed and the remaining berths are working at reduced speed.\"\n  4. `ORV-0035 | Page 1 | Paragraph 3`\n     Supporting excerpt: \"The port strike that began in September has left berth availability below normal.\"\n  _Ruling: UPHELD. Loki's argument prevails: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents._\n\n- **L2-P2** (LOKI, Inference) [P2] Loki (accept point): Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority responsible for Orvan Grain Port, a site or facility condition report, or an independent observation describing physical damage - argued only to the extent shown by ORV-0004 Page 1 | Paragraph 3 [ORV-0004 | Page 1 | Paragraph 3 | 2026-12-02 10:20]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0004 | Page 1 | Paragraph 3`\n     Supporting excerpt: \"there is no damage left for our customers\"\n  _Ruling: REJECTED. Ruled as narrowed in round 2 (accept point). Loki's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM)._\n\n\n## Positions not pressed (nothing in the Case File carries them; not a finding)\n\n- **T2-P1** (THOR, Inference) [P1] Thor does not press this: nothing in the Case File carries its position on \"Orvan Grain Port infrastructure was physically destroyed in military strikes.\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **T2-P2** (THOR, Inference) [P2] Thor does not press this: nothing in the Case File carries its position on \"Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority responsible for Orvan Grain Port, a site or facility condition report, or an independent observation describing physical damage\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n\n## Exposure table\n\n| Country | Sector | Thor | Loki | Odin | Basis |\n|---|---|---|---|---|---|\n\n## Metrics by cell\n\n| Country | Sector | Period | Value decline | Volume decline | Share of national imports | Substitution | Net exposure range |\n|---|---|---|---|---|---|---|---|\n\n> Value and volume declines are on the route itself (lost / baseline route figure). Share of national imports needs the country's total imports; UNAVAILABLE means no document states it. Net exposure low = recorded-substitution scenario, high = no-substitution scenario; 'up to' means substitution is not measured, so no lower bound exists. '-' or UNAVAILABLE is not zero.\n\n> **Odin column key**: *evidence missing* = no trade data on record for this flow; *no defensible range established* = data exists but no calculation survived the trial (this is NOT zero exposure); *X–Y% (contested)* = range computed but at least one underlying finding is contested; *up to Y% (upper bound)* = the route decline is established, but substitution is not measured, so the net loss is not; *X–Y%* = range computed from established findings.\n\n## Next-quarter outlook\n\n\nAssumptions: no new agreement or reopening before the next quarter (none is reported as of the as-of date); substitute suppliers keep their latest volumes; no document after the as-of date is used.\n\n## Data-quality appendix\n\n- ORV-0026 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0014 set aside before trial: CLOCK_EXCLUDED\n- ORV-0043 set aside before trial: RETRACTED (see ORV-0013)\n- ORV-0010 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0015 set aside before trial: TAINTED (see ORV-0043)\n- ORV-0049 set aside before trial: SUPERSEDED (see ORV-0016)\n- ORV-0041 set aside before trial: CLOCK_EXCLUDED\n- ORV-0028 set aside before trial: TABLOID\n- ORV-0036 set aside before trial: CLOCK_EXCLUDED\n- ORV-0003 set aside before trial: SUPERSEDED (see ORV-0016)\n- Run 1: 15 documents in the Case File; sent back: Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority responsible for Orvan Grain Port, a site or facility condition report, or an independent observation describing physical damage\n- Run 2: 25 documents in the Case File; retrieved ORV-0045, ORV-0004, ATL-0012, ORV-0050, ORV-0020, ORV-0031, ORV-0001, ORV-0042, ATL-0007, ORV-0018\n  - Re-search on \"Physical damage to Orvan Grain Port is recorded in an official damage assessment, an inspection report by the authority responsible for Orvan Grain Port, a site or facility condition report, or an independent observation describing physical damage\": Not resolved: P1 is INSUFFICIENT; new document(s) bearing on it: ORV-0004.\n\n## Sources\n\n- ORV-0004: Vantro Trading: markets have already adjusted, no damage (Vantro Trading, Tier 2, 2026-12-02 10:20)\n- ORV-0008: Orvan Grain Port holds ships as strike enters first week (Cargo Weekly, Tier 2, 2026-09-18 14:40)\n- ORV-0032: Strike reduces operations at Orvan Grain Port (Realm Trade Ministry, Tier 1, 2026-09-15 08:30)\n- ORV-0035: December loadings close a poor quarter at Orvan Grain Port (Cargo Weekly, Tier 2, 2027-01-14 12:10)\n",
+  "exposure": [],
+  "findings": {
+    "ESTABLISHED": [],
+    "PARTLY_ESTABLISHED": [],
+    "CONTESTED": [],
+    "UNCONTESTED": [],
+    "CONCEDED": [],
+    "REJECTED": [],
+    "NOT_PRESSED": [
+      {
+        "claim_id": "T2-P1",
+        "side": "THOR",
+        "run": 2,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "T2-P2",
+        "side": "THOR",
+        "run": 2,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      }
+    ],
+    "INSUFFICIENT": [
+      {
+        "claim_id": "L2-P1",
+        "side": "LOKI",
+        "run": 2,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Loki's argument prevails: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents.",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [
+          "4 citation(s) admissible and dated on or before 2027-01-25",
+          "4 quoted paragraph(s) found verbatim in their documents"
+        ],
+        "findings": []
+      },
+      {
+        "claim_id": "L2-P2",
+        "side": "LOKI",
+        "run": 2,
+        "ruling": "REJECTED",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Ruled as narrowed in round 2 (accept point). Loki's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM).",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      }
+    ]
+  }
+}

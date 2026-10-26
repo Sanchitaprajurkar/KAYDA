@@ -45,11 +45,15 @@ class Settings(BaseSettings):
         default="03_Ragnarok Trial of the Nine Realms/dev_pack_E5"
     )
 
-    # OpenAI API
+    # LLM Settings (OpenAI & Anthropic / Claude)
+    LLM_PROVIDER: str = Field(default="openai", description="Default LLM provider: 'openai' or 'claude' / 'anthropic'")
     OPENAI_API_KEY: Optional[str] = Field(default=None)
     OPENAI_MODEL: str = Field(default="gpt-4o")
     OPENAI_REASONING_MODEL: Optional[str] = Field(
         default=None, description="Model for Heimdall's contradiction and verification steps (defaults to OPENAI_MODEL)")
+    CLAUDE_API_KEY: Optional[str] = Field(default=None)
+    ANTHROPIC_API_KEY: Optional[str] = Field(default=None)
+    CLAUDE_MODEL: str = Field(default="claude-haiku-4-5-20251001", description="Claude model name")
 
     # Neon PostgreSQL
     NEON_DATABASE_URL: Optional[str] = Field(

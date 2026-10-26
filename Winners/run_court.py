@@ -51,12 +51,15 @@ def print_banner():
     print(banner)
 
 
-def print_session_info(query, case_id, offline_mode):
+def print_session_info(query, case_id, offline_mode, model_name=None):
     """Print session initialization information."""
     print("SESSION CONFIGURATION:")
     print(f"  Query: {query}")
     print(f"  Case ID: {case_id or 'Auto-generated'}")
-    print(f"  Mode: {'OFFLINE (Scripted LLM)' if offline_mode else 'ONLINE (Real LLM)'}")
+    if offline_mode:
+        print("  Mode: OFFLINE (Scripted LLM)")
+    else:
+        print(f"  Mode: ONLINE (Real LLM: {model_name or 'Default configured'})")
     print("=" * 70)
     print()
 
@@ -69,6 +72,7 @@ def main():
 Examples:
   python run_court.py
   python run_court.py --query "As of 25 January 2027, how exposed are Midgard and Tolan to the end of the Orvan corridor agreement?"
+  python run_court.py --model claude-haiku-4-5-20251001
   python run_court.py --offline --clear-cache
         """
     )
@@ -88,6 +92,11 @@ Examples:
         "--case-id",
         default=None,
         help="Specific case ID to use (default: auto-generated)"
+    )
+    parser.add_argument(
+        "--model",
+        default=None,
+        help="LLM model name (e.g. claude-haiku-4-5-20251001, claude-sonnet-4-5-20250929, gpt-4o-mini)"
     )
     parser.add_argument(
         "--offline",
@@ -120,14 +129,22 @@ Examples:
     else:
         query = args.query or default_query
     
-    # Print session header
-    print_banner()
-    print_session_info(query, args.case_id, args.offline)
-    
-    # Import and run the court session
+    # Import and prepare the court session
     sys.path.insert(0, str(Path(__file__).parent / "Winners"))
     
     from backend.court.procedure import CourtSession
+    from backend.court.heimdall_bridge import StructuredLLM, HeimdallAgent
+    from heimdall.reasoning.verifier import EventVerifier
+    from heimdall.reasoning.contradiction_detector import ContradictionDetector
+
+    active_model = None
+    if not args.offline:
+        active_llm = StructuredLLM(model_name=args.model)
+        active_model = active_llm.model_name
+    
+    # Print session header
+    print_banner()
+    print_session_info(query, args.case_id, args.offline, active_model)
     
     if args.offline:
         print("[OFFLINE MODE] Using scripted LLM - no API calls will be made\n")
@@ -138,8 +155,18 @@ Examples:
             llm_backends={"THOR": llm, "LOKI": llm, "ODIN": llm}
         )
     else:
-        print("[ONLINE MODE] Using real LLM - API calls will be made\n")
-        session = CourtSession()
+        print(f"[ONLINE MODE] Using real LLM ({active_model}) - API calls will be made\n")
+        if args.model:
+            heimdall = HeimdallAgent(
+                contradiction_detector=ContradictionDetector(llm=active_llm),
+                event_verifier=EventVerifier(llm=active_llm)
+            )
+            session = CourtSession(
+                heimdall=heimdall,
+                llm_backends={"THOR": active_llm, "LOKI": active_llm, "ODIN": active_llm}
+            )
+        else:
+            session = CourtSession()
     
     # Run the court session
     try:
@@ -149,7 +176,9 @@ Examples:
         print("\n" + "=" * 70)
         print("COURT SESSION COMPLETE")
         print("=" * 70)
-        print(f"Status: {result['status']}")
+        print(f"Status: {result['status']} (workflow execution)")
+        if result.get('analytical_status'):
+            print(f"Analytical status: {result['analytical_status']}")
         print(f"Case ID: {result['case_id']}")
         print(f"Runs: {result.get('runs', 'N/A')}")
         print(f"Results saved to: {result['dir']}")
@@ -172,6 +201,13 @@ Examples:
                 print(f"    Odin:  {_fmt_range(odin)}")
         
         print("\n" + "=" * 70)
+        if result.get("winner"):
+            label = {"THOR": "THOR WINS", "LOKI": "LOKI WINS", "DRAW": "DRAW - NEITHER SIDE PREVAILS"}
+            print(f"WINNER: {label.get(result['winner'], result['winner'])}")
+            print(f"  {result['verdict']}")
+        else:
+            print("WINNER: none - no trial was held")
+        print("=" * 70)
         return 0
         
     except KeyboardInterrupt:

@@ -1,0 +1,695 @@
+{
+  "status": "COMPLETE",
+  "analytical_status": "INSUFFICIENT",
+  "outcome": {
+    "winner": "LOKI",
+    "score": {
+      "THOR": -2,
+      "LOKI": 2
+    },
+    "tally": {
+      "THOR": {
+        "upheld": 0,
+        "rejected": 2,
+        "conceded": 0,
+        "contested": 0,
+        "not_pressed": 3
+      },
+      "LOKI": {
+        "upheld": 2,
+        "rejected": 0,
+        "conceded": 0,
+        "contested": 0,
+        "not_pressed": 3
+      }
+    },
+    "verdict": "Loki wins - Thor -2 (0 upheld, 2 rejected, 0 withdrawn, 0 contested, 3 not pressed); Loki +2 (2 upheld, 0 rejected, 0 withdrawn, 0 contested, 3 not pressed)."
+  },
+  "case_file": {
+    "Event ID": "no known event matched the question",
+    "Origin country": "not identified",
+    "Importer country": "none named in the question",
+    "Commodity": "none named in the question",
+    "As-of date": "2027-01-25 (evidence window 2026-09-15 to 2027-01-25)"
+  },
+  "propositions": [
+    {
+      "prop_id": "P1",
+      "proposition": "Ledger Analytics projected a -90% grain export wipeout",
+      "kind": "FORECAST",
+      "classification": "INSUFFICIENT",
+      "supporting": [
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: This is a Ledger Analytics analyst note reporting its own channel checks, but it is still an estimate rather than independently verified fact.",
+          "establishes": "support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics))",
+          "does_not_establish": "independent proof: it is the claimant's own publication"
+        }
+      ],
+      "contradicting": [],
+      "qualifying": [
+        {
+          "source_id": "ORV-0018",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 14
+          },
+          "quote_or_value": "Our model puts the loss on the four Orvan sea routes at 50% to 60% of value in the fourth quarter",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: This is a Ledger Analytics model result, but it gives a different magnitude and scope than the proposition, so it only partially bears on it.",
+          "establishes": "a qualification (ORV-0018 | Page 1 | Paragraph 1 (report, Ledger Analytics)): It concerns four Orvan sea routes, not specifically grain exports.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "The estimate is based on berth bookings and on conversations with loading agents.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: This is a Ledger Analytics estimate based on berth bookings and loading-agent conversations, which is relevant but still not independent proof.",
+          "establishes": "a qualification (ORV-0045 | Page 1 | Paragraph 2 (report, Ledger Analytics)): It supports the basis for an estimate, not the -90% forecast itself.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 7
+          },
+          "quote_or_value": "The note's author says the figure is meant to capture the direction of travel, not the exact loss. The note does not give a confidence interval or a sample size",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: It is a Ledger Analytics analyst note, not an independent verification, and the excerpt is incomplete; it describes a method and says the estimate is directional rather than exact.",
+          "establishes": "a qualification (ORV-0045 | Page 1 | Paragraph 6 (report, Ledger Analytics)): Does not state the projected change is -90% in the excerpt provided.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 6
+          },
+          "quote_or_value": "The official index, which is published with a lag, tells a less dramatic story. Readers should treat the estimate",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: This is a note about Ledger Analytics' estimate and its assumptions, not a direct statement of the projected percentage; it also flags that the estimate is less dramatic than official data.",
+          "establishes": "a qualification (ORV-0045 | Page 1 | Paragraph 5 (report, Ledger Analytics)): Does not provide the actual projected percentage.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "We assume the port strike removed most working berths and that rail cannot absorb the difference.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: This is an assumption stated in the analyst note, not evidence of the projected outcome itself.",
+          "establishes": "a qualification (ORV-0045 | Page 1 | Paragraph 3 (report, Ledger Analytics)): Does not establish a -90% grain export decline.",
+          "does_not_establish": "the proposition, or that it is false"
+        }
+      ],
+      "set_aside": [],
+      "limitations": [
+        "ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: the claimant's own publication"
+      ],
+      "reasoning": "This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (4 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: not pressed.",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": "Established that Ledger Analytics made this claim: ORV-0045 | Page 1 | Paragraph 1",
+      "deception": "No evidence of deliberate fabrication in the record.",
+      "advocate_positions": {
+        "THOR": "supports (4 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding)",
+        "LOKI": "not pressed"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only the claimant's own statements, forecasts or low-reliability material support it.",
+      "evidence_needed": "observed data for the period the forecast covers, from a source independent of the forecaster",
+      "reinvestigation": "Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "",
+      "research_requested": false
+    },
+    {
+      "prop_id": "P2",
+      "proposition": "Ledger Analytics projected imminent famine in importing nations",
+      "kind": "FORECAST",
+      "classification": "INSUFFICIENT",
+      "supporting": [],
+      "contradicting": [],
+      "qualifying": [],
+      "set_aside": [
+        {
+          "source_id": "ORV-0028",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as TABLOID",
+          "establishes": "that the claim was made (ORV-0028 (set aside: TABLOID) (rumour, Daily Roar))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        }
+      ],
+      "limitations": [],
+      "reasoning": "This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: no admissible evidence bears on it. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: not pressed.",
+      "confidence": {
+        "level": "LOW",
+        "explanation": "Confident only that the record cannot decide it; Heimdall's follow-up search found nothing more."
+      },
+      "attribution": "Ledger Analytics's own publications are in the record (ORV-0018; ORV-0045) but none was assessed as making this exact claim.",
+      "deception": "No evidence of deliberate fabrication in the record.",
+      "advocate_positions": {
+        "THOR": "not pressed",
+        "LOKI": "not pressed"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "No admissible evidence bears on it.",
+      "evidence_needed": "observed data for the period the forecast covers, from a source independent of the forecaster",
+      "reinvestigation": "Not requested: Heimdall's follow-up search for this proposition found no new admissible evidence, so the corpus offers no reasonable prospect of resolving it.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "",
+      "research_requested": false
+    },
+    {
+      "prop_id": "P3",
+      "proposition": "Corvan Grain company statements dispute Ledger Analytics projections",
+      "kind": "CLAIM",
+      "classification": "INSUFFICIENT",
+      "supporting": [
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: This is an analyst note based on channel checks, not Corvan Grain's own statement, and it is a projection-like estimate rather than direct proof.",
+          "establishes": "support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics))",
+          "does_not_establish": "independent proof: it is low reliability"
+        },
+        {
+          "source_id": "ORV-0021",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 6
+          },
+          "quote_or_value": "wanted to correct what it called exaggerated accounts of the disruption",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: This is a company statement describing its own position and explicitly says it wanted to correct exaggerated accounts, which indicates disagreement with outside reporting or projections.",
+          "establishes": "support for the proposition (ORV-0021 | Page 1 | Paragraph 5 (report, Corvan Grain))",
+          "does_not_establish": "independent proof: it is the claimant's own publication"
+        }
+      ],
+      "contradicting": [],
+      "qualifying": [],
+      "set_aside": [],
+      "limitations": [
+        "ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: low reliability",
+        "ORV-0021 | Page 1 | Paragraph 5 cannot establish it on its own: the claimant's own publication"
+      ],
+      "reasoning": "This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence MEDIUM); attacked: wrong_entity_or_geographic_scope; responded: accept_point; narrowed (an advocate action, not a finding); LOKI: not pressed.",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it; Heimdall's follow-up search found nothing more."
+      },
+      "attribution": "Established that Corvan Grain company statements made this claim: ORV-0021 | Page 1 | Paragraph 5",
+      "deception": "No evidence of deliberate fabrication in the record.",
+      "advocate_positions": {
+        "THOR": "supports (2 reference(s), confidence MEDIUM); attacked: wrong_entity_or_geographic_scope; responded: accept_point; narrowed (an advocate action, not a finding)",
+        "LOKI": "not pressed"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only the claimant's own statements, forecasts or low-reliability material support it.",
+      "evidence_needed": "an independent record of the asserted fact (official statistics, customs or operational data), not the claimant's own statement",
+      "reinvestigation": "Not requested: Heimdall's follow-up search for this proposition found no new admissible evidence, so the corpus offers no reasonable prospect of resolving it.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "",
+      "research_requested": false
+    },
+    {
+      "prop_id": "P4",
+      "proposition": "customs telemetry shows grain export levels inconsistent with a -90% wipeout",
+      "kind": "EVENT",
+      "classification": "INSUFFICIENT",
+      "supporting": [],
+      "contradicting": [],
+      "qualifying": [
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 14
+          },
+          "quote_or_value": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: A news report citing preliminary customs figures is reasonably reliable for observed customs data, but it is provisional and only covers arrivals, not full export levels.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times)): Shows lower arrivals, not a quantified export collapse.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: This is an analyst note based on channel checks, which is suggestive but not official customs telemetry and may be incomplete.",
+          "establishes": "a qualification (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics)): Based on channel checks rather than customs telemetry.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 19
+          },
+          "quote_or_value": "The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: News report describing provisional customs figures and a methodological caveat; useful but not final proof.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 6 (report, Midgard Times)): Indicates provisional customs figures exist, but not their exact level.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 18
+          },
+          "quote_or_value": "The customs figures are provisional",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "HIGH: A news report citing customs figures is a reasonably reliable secondary source, though the figures are provisional and may be revised.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 5 (report, Midgard Times)): Shows only provisional arrivals cleared before the holiday break, not a full customs telemetry series.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0017",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 7
+          },
+          "quote_or_value": "the index and the customs figures do not always match",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "HIGH: This is a news report describing the ministry's measurement method and the relationship between customs figures and loadings.",
+          "establishes": "a qualification (ORV-0017 | Page 1 | Paragraph 6 (report, Raven Wire)): Explains that customs and loadings can diverge, but does not provide the actual grain export level.",
+          "does_not_establish": "the proposition, or that it is false"
+        }
+      ],
+      "set_aside": [
+        {
+          "source_id": "ORV-0015",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as TAINTED; see ORV-0043",
+          "establishes": "that the claim was made (ORV-0015 (set aside: TAINTED) (report, Asgard Herald))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0049",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Our base case assumes sea exports stay near 95% of the old normal through the winter.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as SUPERSEDED; see ORV-0016",
+          "establishes": "that the claim was made (ORV-0049 (set aside: SUPERSEDED) (report, Tide Research))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        },
+        {
+          "source_id": "ORV-0041",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels before the corridor ended.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as CLOCK_EXCLUDED",
+          "establishes": "that the claim was made (ORV-0041 (set aside: CLOCK_EXCLUDED) (report, Midgard Times))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        }
+      ],
+      "limitations": [],
+      "reasoning": "Not established and not rejected: 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM).",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": null,
+      "deception": "No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy (its only sources, ORV-0015, ORV-0041, ORV-0049, were set aside before trial as unreliable).",
+      "advocate_positions": {
+        "THOR": "not pressed",
+        "LOKI": "challenges as not established (6 reference(s), confidence MEDIUM)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only records that qualify it (e.g. operating conditions); none establishes it or its negation.",
+      "evidence_needed": "a direct, independent record that the event occurred, or an official confirmation or denial",
+      "reinvestigation": "Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "",
+      "research_requested": false
+    },
+    {
+      "prop_id": "P5",
+      "proposition": "customs telemetry shows importing nations are not facing imminent famine",
+      "kind": "EVENT",
+      "classification": "INSUFFICIENT",
+      "supporting": [],
+      "contradicting": [],
+      "qualifying": [
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 14
+          },
+          "quote_or_value": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: A news report citing preliminary customs figures is relevant observed data, but it is only partial and does not directly assess famine conditions.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times)): Lower arrivals do not by themselves show imminent famine",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0042",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "the port is operating normally",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "MEDIUM: Company statement about port operations is relevant operational evidence, but it is not an official customs assessment and does not directly address famine.",
+          "establishes": "a qualification (ORV-0042 | Page 1 | Paragraph 2 (observation, Anchor Marine)): Normal port operations do not prove importing nations are not facing imminent famine",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 19
+          },
+          "quote_or_value": "The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: News report on provisional customs figures and market reaction; relevant as observed trade data, but it remains provisional and indirect for famine risk.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 6 (report, Midgard Times)): Does not establish that importing nations are not facing imminent famine",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 18
+          },
+          "quote_or_value": "The customs figures are provisional",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: A news report summarises customs figures, but it is provisional and indirect evidence rather than a direct official famine assessment.",
+          "establishes": "a qualification (ORV-0022 | Page 1 | Paragraph 5 (report, Midgard Times)): Shows only that grain import shares and substitute supply changed; it does not directly measure famine risk.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0017",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 7
+          },
+          "quote_or_value": "The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals.",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: News report describing how the ministry's return and customs figures are used; informative but not direct proof of famine conditions.",
+          "establishes": "a qualification (ORV-0017 | Page 1 | Paragraph 6 (report, Raven Wire)): Explains the data source and timing differences, but does not show whether importing nations face famine.",
+          "does_not_establish": "the proposition, or that it is false"
+        },
+        {
+          "source_id": "ORV-0031",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 2
+          },
+          "quote_or_value": "Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow",
+          "evidence_type": "circumstantial",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: News report about higher prices due to slower arrivals; suggests pressure on supply but does not establish famine.",
+          "establishes": "a qualification (ORV-0031 | Page 1 | Paragraph 1 (report, Asgard Herald)): Concerns feed compounders in one place, not importing nations generally.",
+          "does_not_establish": "the proposition, or that it is false"
+        }
+      ],
+      "set_aside": [],
+      "limitations": [],
+      "reasoning": "Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (4 reference(s), confidence MEDIUM).",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": null,
+      "deception": "No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy.",
+      "advocate_positions": {
+        "THOR": "not pressed",
+        "LOKI": "challenges as not established (4 reference(s), confidence MEDIUM)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only records that qualify it (e.g. operating conditions); none establishes it or its negation.",
+      "evidence_needed": "a direct, independent record that the event occurred, or an official confirmation or denial",
+      "reinvestigation": "Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.",
+      "derived_from": null,
+      "derivation": "",
+      "research_request": "",
+      "research_requested": false
+    }
+  ],
+  "reasons": [],
+  "markdown": "# Briefing: Adjudicate the dispute between Ledger Analytics (projecting a -90% grain export wipeout and imminent famine in importing nations) versus Corvan Grain company statements and customs telemetry. Detail which claims are Established, Contested, or Conceded during cross-examination.\n\nCase `CASE-ADHOC-20261026052037` | as of 2027-01-25 | runs: 1 | execution: **COMPLETE** | analysis: **INSUFFICIENT**\n\n> Execution says whether the courtroom workflow ran to the end. Analysis says whether the question is answered: COMPLETE (every requirement decided), PARTIAL (some decided), INSUFFICIENT (the evidence cannot answer it).\n\n## Case File\n\n| Field | Value |\n|---|---|\n| Event ID | no known event matched the question |\n| Origin country | not identified |\n| Importer country | none named in the question |\n| Commodity | none named in the question |\n| As-of date | 2027-01-25 (evidence window 2026-09-15 to 2027-01-25) |\n\n**Verdict: Loki wins - Thor -2 (0 upheld, 2 rejected, 0 withdrawn, 0 contested, 3 not pressed); Loki +2 (2 upheld, 0 rejected, 0 withdrawn, 0 contested, 3 not pressed).**\n\n> Scored from Odin's rulings on each side's arguments: +1 upheld, -1 rejected or withdrawn; contested arguments and positions not pressed score nothing.\n\n## Executive summary\n\n- Broader event: **CONFIRMED**, still in effect at the as-of date. the reported disruption is CONFIRMED and still in effect as of 2027-01-25: 3 independent Tier 1-2 outlet(s) (Raven Wire, Ravik government, Realm Trade Ministry) confirm it and no credible evidence stands against it. This status covers the broader event  only; the question's own propositions are assessed separately: P1 'Ledger Analytics projected a -90% grain export wipeout': SUPPORTED (2 supporting, 0 contradicting); P2 'Ledger Analytics projected imminent famine in importing nations': INSUFFICIENT (0 supporting, 0 contradicting); P3 'Corvan Grain company statements dispute Ledger Analytics projections': SUPPORTED (3 supporting, 0 contradicting); P4 'customs telemetry shows grain export levels inconsistent with a -90% wipeout': INSUFFICIENT (0 supporting, 0 contradicting); P5 'customs telemetry shows importing nations are not facing imminent famine': INSUFFICIENT (0 supporting, 0 contradicting). The ruling on them is Odin's.\n- P1 **INSUFFICIENT**: Ledger Analytics projected a -90% grain export wipeout This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false.\n- P2 **INSUFFICIENT**: Ledger Analytics projected imminent famine in importing nations This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: no admissible evidence bears on it. Absence of evidence is not evidence that it is false.\n- P3 **INSUFFICIENT**: Corvan Grain company statements dispute Ledger Analytics projections This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false.\n- P4 **INSUFFICIENT**: customs telemetry shows grain export levels inconsistent with a -90% wipeout Not established and not rejected: 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false.\n- P5 **INSUFFICIENT**: customs telemetry shows importing nations are not facing imminent famine Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false.\n- Propositions ruled: 5 - 0 established, 0 rejected, 0 contested, 5 insufficient.\n- Advocate claims: 10 ruled - 6 not pressed, 0 conceded (advocate actions, not findings).\n- Open gaps (searched for; the record does not answer them): P1 (INSUFFICIENT): Ledger Analytics projected a -90% grain export wipeout - Only the claimant's own statements, forecasts or low-reliability material support it. Needed: observed data for the period the forecast covers, from a source independent of the forecaster.; P2 (INSUFFICIENT): Ledger Analytics projected imminent famine in importing nations - No admissible evidence bears on it. Needed: observed data for the period the forecast covers, from a source independent of the forecaster.; P3 (INSUFFICIENT): Corvan Grain company statements dispute Ledger Analytics projections - Only the claimant's own statements, forecasts or low-reliability material support it. Needed: an independent record of the asserted fact (official statistics, customs or operational data), not the claimant's own statement.; P4 (INSUFFICIENT): customs telemetry shows grain export levels inconsistent with a -90% wipeout - Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Needed: a direct, independent record that the event occurred, or an official confirmation or denial.; P5 (INSUFFICIENT): customs telemetry shows importing nations are not facing imminent famine - Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Needed: a direct, independent record that the event occurred, or an official confirmation or denial..\n\n## Proposition rulings\n\n> Odin's own ruling on each proposition, made from the evidence whatever the advocates pressed or conceded. Qualifying records establish neither the proposition nor its negation; absence of evidence is INSUFFICIENT, not REJECTED.\n\n### P1: Ledger Analytics projected a -90% grain export wipeout\n\n- **Ruling: INSUFFICIENT** (confidence MEDIUM: Confident only that the record cannot decide it.)\n- Reasoning: This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (4 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: not pressed.\n- Supporting:\n  - `ORV-0045 | Page 1 | Paragraph 1` \"Corvan Grain sea exports down 90%, our channel checks show\" - shows support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics)); does not establish independent proof: it is the claimant's own publication\n- Qualifying (neither side):\n  - `ORV-0018 | Page 1 | Paragraph 1` \"Our model puts the loss on the four Orvan sea routes at 50% to 60% of value in the fourth quarter\" - shows a qualification (ORV-0018 | Page 1 | Paragraph 1 (report, Ledger Analytics)): It concerns four Orvan sea routes, not specifically grain exports.; does not establish the proposition, or that it is false\n  - `ORV-0045 | Page 1 | Paragraph 2` \"The estimate is based on berth bookings and on conversations with loading agents.\" - shows a qualification (ORV-0045 | Page 1 | Paragraph 2 (report, Ledger Analytics)): It supports the basis for an estimate, not the -90% forecast itself.; does not establish the proposition, or that it is false\n  - `ORV-0045 | Page 1 | Paragraph 6` \"The note's author says the figure is meant to capture the direction of travel, not the exact loss. The note does not give a confidence interval or a sample size\" - shows a qualification (ORV-0045 | Page 1 | Paragraph 6 (report, Ledger Analytics)): Does not state the projected change is -90% in the excerpt provided.; does not establish the proposition, or that it is false\n  - `ORV-0045 | Page 1 | Paragraph 5` \"The official index, which is published with a lag, tells a less dramatic story. Readers should treat the estimate\" - shows a qualification (ORV-0045 | Page 1 | Paragraph 5 (report, Ledger Analytics)): Does not provide the actual projected percentage.; does not establish the proposition, or that it is false\n  - `ORV-0045 | Page 1 | Paragraph 3` \"We assume the port strike removed most working berths and that rail cannot absorb the difference.\" - shows a qualification (ORV-0045 | Page 1 | Paragraph 3 (report, Ledger Analytics)): Does not establish a -90% grain export decline.; does not establish the proposition, or that it is false\n- Limitations: ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: the claimant's own publication\n- Attribution: Established that Ledger Analytics made this claim: ORV-0045 | Page 1 | Paragraph 1\n- Deception: No evidence of deliberate fabrication in the record.\n- Further investigation needed: Only the claimant's own statements, forecasts or low-reliability material support it. Would resolve it: observed data for the period the forecast covers, from a source independent of the forecaster. Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.\n\n### P2: Ledger Analytics projected imminent famine in importing nations\n\n- **Ruling: INSUFFICIENT** (confidence LOW: Confident only that the record cannot decide it; Heimdall's follow-up search found nothing more.)\n- Reasoning: This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: no admissible evidence bears on it. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: not pressed.\n- Set aside before trial:\n  - `ORV-0028 | Page 1 | Paragraph None` \"Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.\" - shows that the claim was made (ORV-0028 (set aside: TABLOID) (rumour, Daily Roar)); does not establish that it is true: the source was set aside before trial\n- Attribution: Ledger Analytics's own publications are in the record (ORV-0018; ORV-0045) but none was assessed as making this exact claim.\n- Deception: No evidence of deliberate fabrication in the record.\n- Further investigation needed: No admissible evidence bears on it. Would resolve it: observed data for the period the forecast covers, from a source independent of the forecaster. Not requested: Heimdall's follow-up search for this proposition found no new admissible evidence, so the corpus offers no reasonable prospect of resolving it.\n\n### P3: Corvan Grain company statements dispute Ledger Analytics projections\n\n- **Ruling: INSUFFICIENT** (confidence MEDIUM: Confident only that the record cannot decide it; Heimdall's follow-up search found nothing more.)\n- Reasoning: This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence MEDIUM); attacked: wrong_entity_or_geographic_scope; responded: accept_point; narrowed (an advocate action, not a finding); LOKI: not pressed.\n- Supporting:\n  - `ORV-0045 | Page 1 | Paragraph 1` \"Corvan Grain sea exports down 90%, our channel checks show\" - shows support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics)); does not establish independent proof: it is low reliability\n  - `ORV-0021 | Page 1 | Paragraph 5` \"wanted to correct what it called exaggerated accounts of the disruption\" - shows support for the proposition (ORV-0021 | Page 1 | Paragraph 5 (report, Corvan Grain)); does not establish independent proof: it is the claimant's own publication\n- Limitations: ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: low reliability; ORV-0021 | Page 1 | Paragraph 5 cannot establish it on its own: the claimant's own publication\n- Attribution: Established that Corvan Grain company statements made this claim: ORV-0021 | Page 1 | Paragraph 5\n- Deception: No evidence of deliberate fabrication in the record.\n- Further investigation needed: Only the claimant's own statements, forecasts or low-reliability material support it. Would resolve it: an independent record of the asserted fact (official statistics, customs or operational data), not the claimant's own statement. Not requested: Heimdall's follow-up search for this proposition found no new admissible evidence, so the corpus offers no reasonable prospect of resolving it.\n\n### P4: customs telemetry shows grain export levels inconsistent with a -90% wipeout\n\n- **Ruling: INSUFFICIENT** (confidence MEDIUM: Confident only that the record cannot decide it.)\n- Reasoning: Not established and not rejected: 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM).\n- Qualifying (neither side):\n  - `ORV-0022 | Page 1 | Paragraph 1` \"Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times)): Shows lower arrivals, not a quantified export collapse.; does not establish the proposition, or that it is false\n  - `ORV-0045 | Page 1 | Paragraph 1` \"Corvan Grain sea exports down 90%, our channel checks show\" - shows a qualification (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics)): Based on channel checks rather than customs telemetry.; does not establish the proposition, or that it is false\n  - `ORV-0022 | Page 1 | Paragraph 6` \"The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 6 (report, Midgard Times)): Indicates provisional customs figures exist, but not their exact level.; does not establish the proposition, or that it is false\n  - `ORV-0022 | Page 1 | Paragraph 5` \"The customs figures are provisional\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 5 (report, Midgard Times)): Shows only provisional arrivals cleared before the holiday break, not a full customs telemetry series.; does not establish the proposition, or that it is false\n  - `ORV-0017 | Page 1 | Paragraph 6` \"the index and the customs figures do not always match\" - shows a qualification (ORV-0017 | Page 1 | Paragraph 6 (report, Raven Wire)): Explains that customs and loadings can diverge, but does not provide the actual grain export level.; does not establish the proposition, or that it is false\n- Set aside before trial:\n  - `ORV-0015 | Page 1 | Paragraph None` \"Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.\" - shows that the claim was made (ORV-0015 (set aside: TAINTED) (report, Asgard Herald)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0049 | Page 1 | Paragraph None` \"Our base case assumes sea exports stay near 95% of the old normal through the winter.\" - shows that the claim was made (ORV-0049 (set aside: SUPERSEDED) (report, Tide Research)); does not establish that it is true: the source was set aside before trial\n  - `ORV-0041 | Page 1 | Paragraph None` \"Grain buyers in Midgard are booking more Orvan wheat for the spring, though volumes remain far below the levels before the corridor ended.\" - shows that the claim was made (ORV-0041 (set aside: CLOCK_EXCLUDED) (report, Midgard Times)); does not establish that it is true: the source was set aside before trial\n- Deception: No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy (its only sources, ORV-0015, ORV-0041, ORV-0049, were set aside before trial as unreliable).\n- Further investigation needed: Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Would resolve it: a direct, independent record that the event occurred, or an official confirmation or denial. Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.\n\n### P5: customs telemetry shows importing nations are not facing imminent famine\n\n- **Ruling: INSUFFICIENT** (confidence MEDIUM: Confident only that the record cannot decide it.)\n- Reasoning: Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (4 reference(s), confidence MEDIUM).\n- Qualifying (neither side):\n  - `ORV-0022 | Page 1 | Paragraph 1` \"Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times)): Lower arrivals do not by themselves show imminent famine; does not establish the proposition, or that it is false\n  - `ORV-0042 | Page 1 | Paragraph 2` \"the port is operating normally\" - shows a qualification (ORV-0042 | Page 1 | Paragraph 2 (observation, Anchor Marine)): Normal port operations do not prove importing nations are not facing imminent famine; does not establish the proposition, or that it is false\n  - `ORV-0022 | Page 1 | Paragraph 6` \"The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 6 (report, Midgard Times)): Does not establish that importing nations are not facing imminent famine; does not establish the proposition, or that it is false\n  - `ORV-0022 | Page 1 | Paragraph 5` \"The customs figures are provisional\" - shows a qualification (ORV-0022 | Page 1 | Paragraph 5 (report, Midgard Times)): Shows only that grain import shares and substitute supply changed; it does not directly measure famine risk.; does not establish the proposition, or that it is false\n  - `ORV-0017 | Page 1 | Paragraph 6` \"The ministry's return is watched by buyers because it is based on loadings rather than on ship arrivals.\" - shows a qualification (ORV-0017 | Page 1 | Paragraph 6 (report, Raven Wire)): Explains the data source and timing differences, but does not show whether importing nations face famine.; does not establish the proposition, or that it is false\n  - `ORV-0031 | Page 1 | Paragraph 1` \"Feed compounders in Asgard are paying more for maize as arrivals from Orvan slow\" - shows a qualification (ORV-0031 | Page 1 | Paragraph 1 (report, Asgard Herald)): Concerns feed compounders in one place, not importing nations generally.; does not establish the proposition, or that it is false\n- Deception: No evidence of deliberate fabrication; the allegation is unverified, not shown to be a hoax or decoy.\n- Further investigation needed: Only records that qualify it (e.g. operating conditions); none establishes it or its negation. Would resolve it: a direct, independent record that the event occurred, or an official confirmation or denial. Not requested: Odin has no targeted evidence type for this proposition beyond the searches Heimdall already ran; the gap is reported for the record.\n\n## Arguments on propositions the evidence cannot decide\n\n- **T1-P1** (THOR, Inference) [P1] Thor (narrow proposition): Ledger Analytics projected a -90% grain export wipeout - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1, ORV-0018 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 2 [ORV-0045 | Page 1 | Paragraph 1 | 2026-11-10 08:15] [ORV-0045 | Page 1 | Paragraph 1 | 2026-11-10 08:15]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Corvan Grain sea exports down 90%, our channel checks show\"\n  2. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.\"\n  _Ruling: REJECTED. Ruled as narrowed in round 1 (narrow proposition). Thor's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (4 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: not pressed._\n\n- **T1-P3** (THOR, Inference) [P3] Thor (accept point): Corvan Grain company statements dispute Ledger Analytics projections - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1 [ORV-0045 | Page 1 | Paragraph 1 | 2026-11-10 08:15] [ORV-0045 | Page 1 | Paragraph 1 | 2026-11-10 08:15]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Corvan Grain sea exports down 90%, our channel checks show\"\n  2. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.\"\n  _Ruling: REJECTED. Ruled as narrowed in round 1 (accept point). Thor's argument does not prevail: Odin's ruling on P3 is INSUFFICIENT. This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence MEDIUM); attacked: wrong_entity_or_geographic_scope; responded: accept_point; narrowed (an advocate action, not a finding); LOKI: not pressed._\n\n- **L1-P4** (LOKI, Inference) [P4] Loki challenges as not established (unproven, not shown false): customs telemetry shows grain export levels inconsistent with a -90% wipeout [ORV-0022 | Page 1 | Paragraph 1 | 2027-01-12 07:55] [ORV-0045 | Page 1 | Paragraph 1 | 2026-11-10 08:15] [ORV-0022 | Page 1 | Paragraph 6 | 2027-01-12 07:55]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0022 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.\"\n  2. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Corvan Grain sea exports down 90%, our channel checks show\"\n  3. `ORV-0022 | Page 1 | Paragraph 6`\n     Supporting excerpt: \"The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.\"\n  4. `ORV-0045 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.\"\n  _Ruling: UPHELD. Loki's argument prevails: Odin's ruling on P4 is INSUFFICIENT. Not established and not rejected: 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents._\n\n- **L1-P5** (LOKI, Inference) [P5] Loki challenges as not established (unproven, not shown false): customs telemetry shows importing nations are not facing imminent famine [ORV-0022 | Page 1 | Paragraph 1 | 2027-01-12 07:55] [ORV-0042 | Page 1 | Paragraph 2 | 2026-11-25 13:05] [ORV-0022 | Page 1 | Paragraph 6 | 2027-01-12 07:55]\n  **SUPPORTING EVIDENCE:**\n  1. `ORV-0022 | Page 1 | Paragraph 1`\n     Supporting excerpt: \"Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.\"\n  2. `ORV-0042 | Page 1 | Paragraph 2`\n     Supporting excerpt: \"the port is operating normally\"\n  3. `ORV-0022 | Page 1 | Paragraph 6`\n     Supporting excerpt: \"The full return is expected to show a smaller Orvan share than the provisional customs figures, because it measures loadings rather than arrivals.\"\n  4. `ORV-0022 | Page 1 | Paragraph 5`\n     Supporting excerpt: \"The customs figures are provisional\"\n  _Ruling: UPHELD. Loki's argument prevails: Odin's ruling on P5 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (4 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents._\n\n\n## Positions not pressed (nothing in the Case File carries them; not a finding)\n\n- **T1-P2** (THOR, Inference) [P2] Thor does not press this: nothing in the Case File carries its position on \"Ledger Analytics projected imminent famine in importing nations\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **T1-P4** (THOR, Inference) [P4] Thor does not press this: nothing in the Case File carries its position on \"customs telemetry shows grain export levels inconsistent with a -90% wipeout\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **T1-P5** (THOR, Inference) [P5] Thor does not press this: nothing in the Case File carries its position on \"customs telemetry shows importing nations are not facing imminent famine\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **L1-P1** (LOKI, Inference) [P1] Loki does not press this: nothing in the Case File carries its position on \"Ledger Analytics projected a -90% grain export wipeout\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **L1-P2** (LOKI, Inference) [P2] Loki does not press this: nothing in the Case File carries its position on \"Ledger Analytics projected imminent famine in importing nations\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n- **L1-P3** (LOKI, Inference) [P3] Loki does not press this: nothing in the Case File carries its position on \"Corvan Grain company statements dispute Ledger Analytics projections\". \n  _Ruling: CONCEDED. Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition._\n\n\n## Exposure table\n\n| Country | Sector | Thor | Loki | Odin | Basis |\n|---|---|---|---|---|---|\n\n## Metrics by cell\n\n| Country | Sector | Period | Value decline | Volume decline | Share of national imports | Substitution | Net exposure range |\n|---|---|---|---|---|---|---|---|\n\n> Value and volume declines are on the route itself (lost / baseline route figure). Share of national imports needs the country's total imports; UNAVAILABLE means no document states it. Net exposure low = recorded-substitution scenario, high = no-substitution scenario; 'up to' means substitution is not measured, so no lower bound exists. '-' or UNAVAILABLE is not zero.\n\n> **Odin column key**: *evidence missing* = no trade data on record for this flow; *no defensible range established* = data exists but no calculation survived the trial (this is NOT zero exposure); *X–Y% (contested)* = range computed but at least one underlying finding is contested; *up to Y% (upper bound)* = the route decline is established, but substitution is not measured, so the net loss is not; *X–Y%* = range computed from established findings.\n\n## Next-quarter outlook\n\n\nAssumptions: no new agreement or reopening before the next quarter (none is reported as of the as-of date); substitute suppliers keep their latest volumes; no document after the as-of date is used.\n\n## Data-quality appendix\n\n- ORV-0043 set aside before trial: RETRACTED (see ORV-0013)\n- ORV-0026 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0014 set aside before trial: CLOCK_EXCLUDED\n- ORV-0028 set aside before trial: TABLOID\n- ORV-0015 set aside before trial: TAINTED (see ORV-0043)\n- ORV-0010 set aside before trial: RUMOUR (see ORV-0016)\n- ORV-0049 set aside before trial: SUPERSEDED (see ORV-0016)\n- ORV-0041 set aside before trial: CLOCK_EXCLUDED\n- Run 1: 18 documents in the Case File\n\n## Sources\n\n- ORV-0022: December grain arrivals point to a smaller Orvan share (Midgard Times, Tier 2, 2027-01-12 07:55)\n- ORV-0042: Anchor Marine reports busier berths at Tolan Harbour (Anchor Marine, Tier 2, 2026-11-25 13:05)\n- ORV-0045: Corvan Grain sea exports down 90%, our channel checks show (Ledger Analytics, Tier 3, 2026-11-10 08:15)\n",
+  "exposure": [],
+  "findings": {
+    "ESTABLISHED": [],
+    "PARTLY_ESTABLISHED": [],
+    "CONTESTED": [],
+    "UNCONTESTED": [],
+    "CONCEDED": [],
+    "REJECTED": [],
+    "NOT_PRESSED": [
+      {
+        "claim_id": "T1-P2",
+        "side": "THOR",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "T1-P4",
+        "side": "THOR",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "T1-P5",
+        "side": "THOR",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "L1-P1",
+        "side": "LOKI",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "L1-P2",
+        "side": "LOKI",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "L1-P3",
+        "side": "LOKI",
+        "run": 1,
+        "ruling": "CONCEDED",
+        "nature": "INFERENCE",
+        "classification": "NOT_PRESSED",
+        "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+        "decided_by": "rules",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      }
+    ],
+    "INSUFFICIENT": [
+      {
+        "claim_id": "T1-P1",
+        "side": "THOR",
+        "run": 1,
+        "ruling": "REJECTED",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Ruled as narrowed in round 1 (narrow proposition). Thor's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (4 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: not pressed.",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "T1-P3",
+        "side": "THOR",
+        "run": 1,
+        "ruling": "REJECTED",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Ruled as narrowed in round 1 (accept point). Thor's argument does not prevail: Odin's ruling on P3 is INSUFFICIENT. This proposition reports a party's claim. Odin rules on whether what is claimed is borne out by the evidence; whether the party made it is the attribution finding. Not established and not rejected: 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence MEDIUM); attacked: wrong_entity_or_geographic_scope; responded: accept_point; narrowed (an advocate action, not a finding); LOKI: not pressed.",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [],
+        "findings": []
+      },
+      {
+        "claim_id": "L1-P4",
+        "side": "LOKI",
+        "run": 1,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Loki's argument prevails: Odin's ruling on P4 is INSUFFICIENT. Not established and not rejected: 5 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (6 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents.",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [
+          "4 citation(s) admissible and dated on or before 2027-01-25",
+          "4 quoted paragraph(s) found verbatim in their documents"
+        ],
+        "findings": []
+      },
+      {
+        "claim_id": "L1-P5",
+        "side": "LOKI",
+        "run": 1,
+        "ruling": "UPHELD",
+        "nature": "INFERENCE",
+        "classification": "INSUFFICIENT",
+        "reason": "Loki's argument prevails: Odin's ruling on P5 is INSUFFICIENT. Not established and not rejected: 6 record(s) qualify it without establishing it or its negation. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges as not established (4 reference(s), confidence MEDIUM). Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents.",
+        "decided_by": "odin",
+        "failed_checks": [],
+        "validation": [
+          "4 citation(s) admissible and dated on or before 2027-01-25",
+          "4 quoted paragraph(s) found verbatim in their documents"
+        ],
+        "findings": []
+      }
+    ]
+  }
+}

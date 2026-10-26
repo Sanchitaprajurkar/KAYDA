@@ -136,3 +136,24 @@ def position(est) -> str:
     value = e.get("high") if e.get("high") is not None else e.get("low")
     label = e.get("metric", "").replace("_", " ")
     return f"{label} {value:.2f}% (measured); {e.get('basis') or 'no net figure'}"
+
+
+def case_header(report: Any) -> Dict[str, str]:
+    """The shared Case File's scope, as Heimdall recorded it: every field shown, an empty one with the reason."""
+    s = report.case_scope
+    origins = list(s.event_countries)
+    importers = [c for c in s.countries if c not in origins]
+    if s.commodities:
+        commodity = ", ".join(s.commodities)
+    elif s.sectors:
+        commodity = f"{', '.join(s.sectors)} (none named in the question; the event's main sectors)"
+    else:
+        commodity = "none named in the question"
+    window = f"{s.period_start} to {s.period_end}" if s.period_start else None
+    return {
+        "Event ID": f"{s.event_id} - {s.event_name}" if s.event_id else "no known event matched the question",
+        "Origin country": ", ".join(origins) or "not identified",
+        "Importer country": ", ".join(importers) or "none named in the question",
+        "Commodity": commodity,
+        "As-of date": report.as_of_date + (f" (evidence window {window})" if window else ""),
+    }

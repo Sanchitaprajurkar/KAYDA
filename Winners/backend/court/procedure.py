@@ -22,9 +22,9 @@ from backend.agents.advocate import MAX_CLAIMS_PER_SIDE
 from backend.agents.loki import CourtLoki
 from backend.agents.odin import Odin
 from backend.agents.thor.court import CourtThor
-from backend.court.display import calculation_lines, cite, fmt_estimate, fmt_span
+from backend.court.display import calculation_lines, case_header, cite, fmt_estimate, fmt_span
 from backend.court.briefing import write_briefing
-from backend.court.heimdall_bridge import MAX_RUNS, ROOT, TRIAL_STATUSES, HeimdallAgent
+from backend.court.heimdall_bridge import MAX_RUNS, ROOT, HeimdallAgent, goes_to_trial
 from backend.court.llm import CourtLLM
 from backend.court.memory import AgentMemory
 from backend.court.models import RunRecord
@@ -119,6 +119,26 @@ def _render(event: str, d: dict) -> Optional[str]:
         r = d["ruling"]
         line = f"  ODIN  {r['claim_id']}: {r['ruling']} -> {r['classification']} ({r['nature']}) {r['reason']}"
         return line + (f"\n        citations checked: {d['sources']}" if d.get("sources") else "")
+    if event == "proposition_ruling":
+        r = d["ruling"]
+        origin = {"part": f" [part of {r.get('derived_from')}]",
+                  "consequence": f" [derived from {r.get('derived_from')}]"}.get(r.get("derivation"), "")
+        lines = [f"  ODIN  {r['prop_id']} => {r['classification']} (confidence {r['confidence']['level']}): "
+                 f"{r['proposition']}{origin}",
+                 f"        {r['reasoning']}"]
+        for label, key in (("supporting", "supporting"), ("contradicting", "contradicting"),
+                           ("qualifying", "qualifying"), ("set aside", "set_aside")):
+            if r.get(key):
+                lines.append(f"        {label}: " + "; ".join(
+                    f"{x['source_id']} {('Paragraph ' + str(x['locator']['paragraph'])) if x['locator'].get('paragraph') else ''}".strip()
+                    for x in r[key][:5]))
+        if r.get("attribution"):
+            lines.append(f"        attribution: {r['attribution']}")
+        if r.get("deception") and r["kind"] != "EXPOSURE":
+            lines.append(f"        deception: {r['deception']}")
+        if r.get("needs_investigation"):
+            lines.append(f"        gap: {r['evidence_gap']} Needed: {r['evidence_needed']}. {r['reinvestigation']}")
+        return "\n".join(lines)
     if event == "research_outcome":
         o = d["outcome"]
         return f"  ODIN  re-search on \"{o['gap']}\": {o['explanation']}"
@@ -151,7 +171,7 @@ class CourtSession:
         heimdall_memory = AgentMemory("heimdall", self.memory_dir)
 
         v = report.event_verification
-        if v.status not in TRIAL_STATUSES:
+        if not goes_to_trial(report):
             log("phase", title="NO TRIAL")
             log("note", text=f"Heimdall could not verify the event ({v.status.value}). {v.summary}")
             for reason in v.reasoning:
@@ -212,15 +232,21 @@ class CourtSession:
         (case_dir / "briefing.md").write_text(briefing["markdown"], encoding="utf-8")
         self._save(case_dir / "briefing.json", briefing)
         self._save(case_dir / "meta.json", self._meta(report, len(runs), briefing["status"], llms))
-        log("phase", title=f"BRIEFING ({briefing['status']})")
+        log("phase", title=f"BRIEFING (execution {briefing['status']}; analysis {briefing['analytical_status']})")
         for r in runs[-1].ranges:
             side = lambda k, span: _fmt(span) if span else r.positions.get(k, "-")  # noqa: E731
             log("note", text=f"{r.country} {r.sector}: Thor {side('THOR', r.thor)} | Loki {side('LOKI', r.loki)} | "
                              f"Odin {_fmt(r.odin) if r.status == 'COVERED' else 'evidence missing'}"
                              + (f" [net exposure, % of baseline route value, {r.period}]" if r.odin else ""))
+        result = briefing["outcome"]
+        log("phase", title="VERDICT")
+        log("verdict", agent="ODIN", **result)
+        log("note", text=f"ODIN  {result['verdict']}")
         log("note", text=f"Saved to {case_dir}")
-        return {"case_id": report.case_id, "status": briefing["status"], "runs": len(runs), "dir": str(case_dir),
-                "ranges": [r.model_dump() for r in runs[-1].ranges]}
+        return {"case_id": report.case_id, "status": briefing["status"],
+                "analytical_status": briefing["analytical_status"], "runs": len(runs), "dir": str(case_dir),
+                "ranges": [r.model_dump() for r in runs[-1].ranges], "winner": result["winner"],
+                "verdict": result["verdict"]}
 
     def _trial_run(self, log, report, run, remand, thor, loki, odin, record: RunRecord) -> None:
         sides = {"THOR": thor, "LOKI": loki}
@@ -256,9 +282,18 @@ class CourtSession:
         record.responses = [x for s in ("THOR", "LOKI") for x in answers.get(s, [])]
 
         log("phase", title=f"RUN {run} - ODIN RULES")
-        record.rulings = odin.rule(report, record.claims, record.attacks, record.responses, record.side_failures)
+        record.propositions = odin.adjudicate(report, record.claims, record.attacks, record.responses)
+        record.rulings = odin.rule(report, record.claims, record.attacks, record.responses, record.side_failures,
+                                   propositions=record.propositions)
         record.ranges = odin.ranges(report, record.claims, record.rulings)
-        record.remand, record.open_gaps = odin.sufficiency(report, record.claims, record.rulings)
+        odin.adjudicate_exposure(report, record.propositions, record.ranges)
+        record.completeness = odin.completeness(report, record.claims, record.propositions, record.ranges)
+        for item in record.completeness:
+            log("note", text=f"ODIN  completeness: no ruling for {item}")
+        record.analytical_status = odin.analytical_status(report, record.propositions, record.ranges,
+                                                          record.completeness)
+        record.remand, record.open_gaps = odin.sufficiency(report, record.claims, record.rulings,
+                                                           record.propositions)
         if run > 1 and remand:
             record.research = odin.research_outcomes(report, remand, record)
             for o in record.research:
@@ -270,11 +305,18 @@ class CourtSession:
             log("note", text=f"ODIN  open gap (searched for, not on the record; reported, not chased): {item}")
         if not record.remand:
             log("note", text="ODIN  no further search would help" if record.open_gaps else
-                "ODIN  the record is sufficient")
+                "ODIN  no further search needed")
+        log("note", text=f"ODIN  analytical status: {record.analytical_status}")
 
     def _log_case_file(self, log, report) -> None:
         v = report.event_verification
         log("phase", title=f"HEIMDALL - CASE FILE (run {report.run_number})")
+        header = case_header(report)
+        log("case_header", agent="HEIMDALL", **{k.lower().replace(" ", "_").replace("-", "_"): x
+                                               for k, x in header.items()})
+        width = max(len(k) for k in header)
+        for k, x in header.items():
+            log("note", text=f"{k + ':':<{width + 1}} {x}")
         log("note", text=f"Event {report.case_scope.event_id}: {v.status.value} (confidence {v.confidence_score})"
                          f"; active at {report.as_of_date}: {v.is_active_at_as_of}")
         log("note", text=f"{len(report.retrieved_documents)} documents: "
@@ -297,6 +339,9 @@ class CourtSession:
                                                  "side_failures": record.side_failures})
         self._save(run_dir / "rulings.json", {"rulings": [r.model_dump() for r in record.rulings],
                                               "ranges": [r.model_dump() for r in record.ranges],
+                                              "propositions": [p.model_dump() for p in record.propositions],
+                                              "analytical_status": record.analytical_status,
+                                              "completeness": record.completeness,
                                               "remand": record.remand, "open_gaps": record.open_gaps,
                                               "research": [o.model_dump() for o in record.research],
                                               "llm_usage": record.llm_usage})

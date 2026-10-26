@@ -1,0 +1,336 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "REJECTED",
+      "nature": "INFERENCE",
+      "classification": "INSUFFICIENT",
+      "reason": "Ruled as narrowed in round 1 (narrow proposition). Thor's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0035); 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 1 item(s) against it cannot reject it. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (1 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "T1-P2",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "NOT_PRESSED",
+      "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "T1-P3",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "REJECTED",
+      "nature": "INFERENCE",
+      "classification": "INSUFFICIENT",
+      "reason": "Ruled as narrowed in round 1 (narrow proposition). Thor's argument does not prevail: Odin's ruling on P3 is INSUFFICIENT. Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0042); 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "REJECTED",
+      "nature": "INFERENCE",
+      "classification": "INSUFFICIENT",
+      "reason": "Ruled as narrowed in round 1 (narrow proposition). Loki's argument does not prevail: Odin's ruling on P1 is INSUFFICIENT. Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0035); 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 1 item(s) against it cannot reject it. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (1 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P2",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "REJECTED",
+      "nature": "INFERENCE",
+      "classification": "INSUFFICIENT",
+      "reason": "Ruled as narrowed in round 1 (narrow proposition). Loki's argument does not prevail: Odin's ruling on P2 is INSUFFICIENT. Not established and not rejected: 1 item(s) against it cannot reject it. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P3",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "REJECTED",
+      "nature": "INFERENCE",
+      "classification": "INSUFFICIENT",
+      "reason": "Ruled as narrowed in round 1 (narrow proposition). Loki's argument does not prevail: Odin's ruling on P3 is INSUFFICIENT. Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0042); 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    }
+  ],
+  "ranges": [],
+  "propositions": [
+    {
+      "prop_id": "P1",
+      "proposition": "Ledger Analytics, projecting: a -90% grain export wipeout",
+      "kind": "FORECAST",
+      "classification": "INSUFFICIENT",
+      "supporting": [
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: Tier 3 analyst_note; judged by rule, not by reading",
+          "establishes": "support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics))",
+          "does_not_establish": "independent proof: it is the claimant's own publication"
+        }
+      ],
+      "contradicting": [
+        {
+          "source_id": "ORV-0035",
+          "locator": {
+            "paragraph": 4,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 5
+          },
+          "quote_or_value": "Rail loadings through Ravik remain high, and Vanir has increased wheat shipments to Tolan and Midgard.",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Tier 2 shipping_update; judged by rule, not by reading",
+          "establishes": "evidence against the proposition (ORV-0035 | Page 1 | Paragraph 4 (report, Cargo Weekly))",
+          "does_not_establish": "stance assigned by keyword rules; read the quote before relying on it"
+        },
+        {
+          "source_id": "ORV-0018",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 19
+          },
+          "quote_or_value": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline. A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms. The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat. We have not modelled a full recovery of the sea route inside the window, because the port index does not support one. The model is a guide to the size of the gap, not a forecast of monthly prices.",
+          "evidence_type": "contradictory",
+          "epistemic_status": "projection",
+          "reliability_note": "LOW: Tier 3 analyst_note; judged by rule, not by reading",
+          "establishes": "evidence against the proposition (ORV-0018 | Page 1 | Paragraph 6 (forecast, Ledger Analytics))",
+          "does_not_establish": "a rejection on its own: it is a forecast"
+        }
+      ],
+      "qualifying": [],
+      "set_aside": [],
+      "limitations": [
+        "ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: the claimant's own publication"
+      ],
+      "reasoning": "Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0035); 1 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources); 1 item(s) against it cannot reject it. Absence of evidence is not evidence that it is false. Advocates: THOR: supports (1 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": "Ledger Analytics is shown to have made this claim: ORV-0045 | Page 1 | Paragraph 1",
+      "deception": "No evidence of deliberate fabrication; the allegation is not shown to be a hoax or decoy.",
+      "advocate_positions": {
+        "THOR": "supports (1 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding)",
+        "LOKI": "challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only one reliable source bears on it; independent corroboration is missing.",
+      "evidence_needed": "observed data for the period the forecast covers, from a source independent of the forecaster",
+      "reinvestigation": "Not requested: a re-search would add Odin's request as a new proposition; the gap is reported for the record instead."
+    },
+    {
+      "prop_id": "P2",
+      "proposition": "Ledger Analytics, projecting: imminent famine in importing nations",
+      "kind": "FORECAST",
+      "classification": "INSUFFICIENT",
+      "supporting": [],
+      "contradicting": [
+        {
+          "source_id": "ORV-0018",
+          "locator": {
+            "paragraph": 6,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 19
+          },
+          "quote_or_value": "The assumptions are doing most of the work in this model, and readers should test them rather than accept the headline. A small change in the rail limit moves the net figure by several points, because the rail base is small but the gain is large in percentage terms. The Vanir assumption matters less for the total, though it matters a lot for Tolan and Midgard wheat. We have not modelled a full recovery of the sea route inside the window, because the port index does not support one. The model is a guide to the size of the gap, not a forecast of monthly prices.",
+          "evidence_type": "contradictory",
+          "epistemic_status": "projection",
+          "reliability_note": "LOW: Tier 3 analyst_note; judged by rule, not by reading",
+          "establishes": "evidence against the proposition (ORV-0018 | Page 1 | Paragraph 6 (forecast, Ledger Analytics))",
+          "does_not_establish": "a rejection on its own: it is a forecast"
+        }
+      ],
+      "qualifying": [],
+      "set_aside": [
+        {
+          "source_id": "ORV-0028",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as TABLOID",
+          "establishes": "that the claim was made (ORV-0028 (set aside: TABLOID) (rumour, Daily Roar))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        }
+      ],
+      "limitations": [],
+      "reasoning": "Not established and not rejected: 1 item(s) against it cannot reject it. Absence of evidence is not evidence that it is false. Advocates: THOR: not pressed; LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "confidence": {
+        "level": "LOW",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": "No admissible publication by Ledger Analytics shows the claim being made.",
+      "deception": "No evidence of deliberate fabrication; the allegation is not shown to be a hoax or decoy (its only sources, ORV-0028, were set aside before trial as unreliable).",
+      "advocate_positions": {
+        "THOR": "not pressed",
+        "LOKI": "challenges with evidence against (2 reference(s), confidence LOW); attacked: missing_corroboration; responded: narrow_proposition; narrowed (an advocate action, not a finding)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "No admissible evidence bears on it.",
+      "evidence_needed": "observed data for the period the forecast covers, from a source independent of the forecaster",
+      "reinvestigation": "Not requested: a re-search would add Odin's request as a new proposition; the gap is reported for the record instead."
+    },
+    {
+      "prop_id": "P3",
+      "proposition": "Corvan Grain company statements and customs telemetry",
+      "kind": "CLAIM",
+      "classification": "INSUFFICIENT",
+      "supporting": [
+        {
+          "source_id": "ORV-0022",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 14
+          },
+          "quote_or_value": "By Lena Sorn. Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Tier 2 news; judged by rule, not by reading",
+          "establishes": "support for the proposition (ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times))",
+          "does_not_establish": "independent proof: it is the claimant's own publication"
+        },
+        {
+          "source_id": "ORV-0045",
+          "locator": {
+            "paragraph": 1,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 1
+          },
+          "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+          "evidence_type": "direct",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: Tier 3 analyst_note; judged by rule, not by reading",
+          "establishes": "support for the proposition (ORV-0045 | Page 1 | Paragraph 1 (report, Ledger Analytics))",
+          "does_not_establish": "independent proof: it is the claimant's own publication"
+        }
+      ],
+      "contradicting": [
+        {
+          "source_id": "ORV-0042",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "\"The volumes are welcome, but they are smaller than the Orvan trade we have lost,\" said a company spokesperson.",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "MEDIUM: Tier 2 company_statement; judged by rule, not by reading",
+          "establishes": "evidence against the proposition (ORV-0042 | Page 1 | Paragraph 3 (report, Anchor Marine))",
+          "does_not_establish": "stance assigned by keyword rules; read the quote before relying on it"
+        }
+      ],
+      "qualifying": [],
+      "set_aside": [
+        {
+          "source_id": "ORV-0015",
+          "locator": {
+            "paragraph": null,
+            "page": 1,
+            "row": null,
+            "paragraph_index": null
+          },
+          "quote_or_value": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+          "evidence_type": "unsupported_inference",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "LOW: set aside before trial as TAINTED; see ORV-0043",
+          "establishes": "that the claim was made (ORV-0015 (set aside: TAINTED) (report, Asgard Herald))",
+          "does_not_establish": "that it is true: the source was set aside before trial"
+        }
+      ],
+      "limitations": [
+        "ORV-0022 | Page 1 | Paragraph 1 cannot establish it on its own: the claimant's own publication",
+        "ORV-0045 | Page 1 | Paragraph 1 cannot establish it on its own: the claimant's own publication"
+      ],
+      "reasoning": "Not established and not rejected: one reliable source contradicts it without corroboration (ORV-0042); 2 item(s) for it cannot establish it (claimant's own statements, forecasts, allegations or low-reliability sources). Absence of evidence is not evidence that it is false. Advocates: THOR: supports (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding); LOKI: challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding).",
+      "confidence": {
+        "level": "MEDIUM",
+        "explanation": "Confident only that the record cannot decide it."
+      },
+      "attribution": null,
+      "deception": "No evidence of deliberate fabrication; the allegation is not shown to be a hoax or decoy (its only sources, ORV-0015, were set aside before trial as unreliable).",
+      "advocate_positions": {
+        "THOR": "supports (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding)",
+        "LOKI": "challenges with evidence against (2 reference(s), confidence LOW); attacked: contradictory_evidence; responded: narrow_proposition; narrowed (an advocate action, not a finding)"
+      },
+      "needs_investigation": true,
+      "evidence_gap": "Only one reliable source bears on it; independent corroboration is missing.",
+      "evidence_needed": "an independent record of the asserted fact (official statistics, customs or operational data), not the claimant's own statement",
+      "reinvestigation": "Not requested: a re-search would add Odin's request as a new proposition; the gap is reported for the record instead."
+    }
+  ],
+  "analytical_status": "INSUFFICIENT",
+  "completeness": [],
+  "remand": [],
+  "open_gaps": [
+    "P1 (INSUFFICIENT): Ledger Analytics, projecting: a -90% grain export wipeout - Only one reliable source bears on it; independent corroboration is missing. Needed: observed data for the period the forecast covers, from a source independent of the forecaster.",
+    "P2 (INSUFFICIENT): Ledger Analytics, projecting: imminent famine in importing nations - No admissible evidence bears on it. Needed: observed data for the period the forecast covers, from a source independent of the forecaster.",
+    "P3 (INSUFFICIENT): Corvan Grain company statements and customs telemetry - Only one reliable source bears on it; independent corroboration is missing. Needed: an independent record of the asserted fact (official statistics, customs or operational data), not the claimant's own statement."
+  ],
+  "research": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "LOKI": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

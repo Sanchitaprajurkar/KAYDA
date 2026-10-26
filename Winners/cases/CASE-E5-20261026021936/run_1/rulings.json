@@ -1,0 +1,83 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "T1-P2",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONTESTED",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "The evidence confirms military strikes at Orvan Grain Port but does not provide direct evidence of damage to the grain terminal silos. Checked: 2 citation(s) admissible and dated on or before 2027-01-25; 2 quoted paragraph(s) found verbatim in their documents and naming  or .",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [
+        "2 citation(s) admissible and dated on or before 2027-01-25",
+        "2 quoted paragraph(s) found verbatim in their documents and naming  or "
+      ],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "SOURCED_FACT",
+      "classification": "CONCEDED",
+      "reason": "Withdrawn by its owner in cross-examination.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P2",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONTESTED",
+      "nature": "INFERENCE",
+      "classification": "CONTESTED",
+      "reason": "The claim acknowledges the strike but fails to substantiate the destruction of grain terminal silos with direct evidence. Checked: 2 citation(s) admissible and dated on or before 2027-01-25; 2 quoted paragraph(s) found verbatim in their documents and naming  or .",
+      "decided_by": "odin",
+      "failed_checks": [],
+      "validation": [
+        "2 citation(s) admissible and dated on or before 2027-01-25",
+        "2 quoted paragraph(s) found verbatim in their documents and naming  or "
+      ],
+      "findings": []
+    }
+  ],
+  "ranges": [],
+  "remand": [],
+  "open_gaps": [],
+  "research": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 4454
+    },
+    "LOKI": {
+      "calls": 2,
+      "cache_hits": 0,
+      "tokens": 4518
+    },
+    "ODIN": {
+      "calls": 1,
+      "cache_hits": 0,
+      "tokens": 1512
+    }
+  }
+}

@@ -3,7 +3,7 @@
 from typing import Dict, List
 
 from backend.court.heimdall_bridge import CaseEvidenceReport
-from backend.court.display import calculation_lines, cite, fmt_span
+from backend.court.display import calculation_lines, case_header, cite, fmt_span
 from backend.court.models import CellRange, Claim, Evidence, RunRecord
 from backend.court.tools import windows
 
@@ -43,19 +43,45 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
     final = runs[-1]
     claims = {c.claim_id: c for c in final.claims}
     groups: Dict[str, List] = {"ESTABLISHED": [], "PARTLY_ESTABLISHED": [], "CONTESTED": [], "UNCONTESTED": [],
-                               "CONCEDED": [], "REJECTED": [], "NOT_PRESSED": []}
+                               "CONCEDED": [], "REJECTED": [], "NOT_PRESSED": [], "INSUFFICIENT": []}
     for r in final.rulings:
         groups[r.classification].append((r, claims[r.claim_id]))
     v = report.event_verification
     status = "COMPLETE" if complete else "INCOMPLETE"
+    analysis = final.analytical_status or "INSUFFICIENT"
+    props = final.propositions
+    counts = {k: sum(1 for p in props if p.classification == k)
+              for k in ("ESTABLISHED", "REJECTED", "CONTESTED", "INSUFFICIENT")}
     lines = [f"# Briefing: {report.target_query}", "",
-             f"Case `{report.case_id}` | as of {report.as_of_date} | runs: {len(runs)} | status: **{status}**", ""]
+             f"Case `{report.case_id}` | as of {report.as_of_date} | runs: {len(runs)} | execution: **{status}** | "
+             f"analysis: **{analysis}**", "",
+             "> Execution says whether the courtroom workflow ran to the end. Analysis says whether the question is "
+             "answered: COMPLETE (every requirement decided), PARTIAL (some decided), INSUFFICIENT (the evidence "
+             "cannot answer it).", ""]
+    header = case_header(report)
+    lines += ["## Case File", "", "| Field | Value |", "|---|---|"]
+    lines += [f"| {k} | {x} |" for k, x in header.items()]
+    lines.append("")
     if not complete:
-        lines += ["**This case is not complete:** " + "; ".join(reasons), ""]
+        lines += ["**The workflow did not complete:** " + "; ".join(reasons), ""]
+    if final.completeness:
+        lines += ["**Requirements without a ruling:** " + "; ".join(final.completeness), ""]
+
+    from backend.agents.odin.agent import Odin
+    outcome = Odin.outcome(final.rulings, final.claims, report)
+    lines += [f"**Verdict: {outcome['verdict']}**", "",
+              "> Scored from Odin's rulings on each side's arguments: +1 upheld, -1 rejected or withdrawn; contested "
+              "arguments and positions not pressed score nothing.", ""]
 
     lines += ["## Executive summary", "",
-              f"- Event: **{v.status.value}**{', still in effect at the as-of date' if v.is_active_at_as_of else ''}. "
+              f"- Broader event: **{v.status.value}**{', still in effect at the as-of date' if v.is_active_at_as_of else ''}. "
               f"{v.summary}"]
+    for p in props:
+        if p.kind != "EXPOSURE":
+            lines.append(f"- {p.prop_id} **{p.classification}**: {p.proposition} {p.reasoning.split(' Advocates:')[0]}")
+    if props:
+        lines.append(f"- Propositions ruled: {len(props)} - {counts['ESTABLISHED']} established, {counts['REJECTED']} "
+                     f"rejected, {counts['CONTESTED']} contested, {counts['INSUFFICIENT']} insufficient.")
     for rng in final.ranges:
         if rng.status != "COVERED":
             lines.append(f"- {rng.country} {rng.sector}: evidence missing; no range is given.")
@@ -70,19 +96,49 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
                          f"Loki {_span(rng.loki) if rng.loki else rng.positions.get('LOKI', '-')}).")
         else:
             lines.append(f"- {rng.country} {rng.sector}: no defensible range established; {rng.basis}")
-    lines.append(f"- Findings: {len(groups['ESTABLISHED'])} established, {len(groups['PARTLY_ESTABLISHED'])} partly "
-                 f"established, {len(groups['CONTESTED'])} contested, {len(groups['CONCEDED'])} conceded, "
-                 f"{len(groups['REJECTED'])} rejected.")
+    lines.append(f"- Advocate claims: {len(final.rulings)} ruled - {len(groups['NOT_PRESSED'])} not pressed, "
+                 f"{len(groups['CONCEDED'])} conceded (advocate actions, not findings).")
     open_gaps = final.open_gaps
     if open_gaps:
         lines.append("- Open gaps (searched for; the record does not answer them): " + "; ".join(open_gaps) + ".")
     lines.append("")
+
+    if props:
+        lines += ["## Proposition rulings", "",
+                  "> Odin's own ruling on each proposition, made from the evidence whatever the advocates pressed or "
+                  "conceded. Qualifying records establish neither the proposition nor its negation; absence of "
+                  "evidence is INSUFFICIENT, not REJECTED.", ""]
+        for p in props:
+            origin = {"part": f" (separate part of the allegation in {p.derived_from})",
+                      "consequence": f" (operational consequence derived from {p.derived_from})"}.get(p.derivation, "")
+            lines += [f"### {p.prop_id}: {p.proposition}{origin}", "",
+                      f"- **Ruling: {p.classification}** (confidence {p.confidence.level}: {p.confidence.explanation})",
+                      f"- Reasoning: {p.reasoning}"]
+            for label, refs in (("Supporting", p.supporting), ("Contradicting", p.contradicting),
+                                ("Qualifying (neither side)", p.qualifying), ("Set aside before trial", p.set_aside)):
+                if refs:
+                    lines.append(f"- {label}:")
+                    for r in refs:
+                        quote = r.quote_or_value.strip()[:240]
+                        lines.append(f"  - `{r.source_id} | {r.locator.label()}` \"{quote}\" - shows "
+                                     f"{r.establishes}; does not establish {r.does_not_establish or '-'}")
+            if p.limitations:
+                lines.append("- Limitations: " + "; ".join(p.limitations))
+            if p.attribution:
+                lines.append(f"- Attribution: {p.attribution}")
+            if p.kind != "EXPOSURE" and p.deception:
+                lines.append(f"- Deception: {p.deception}")
+            if p.needs_investigation:
+                lines.append(f"- Further investigation needed: {p.evidence_gap} Would resolve it: "
+                             f"{p.evidence_needed}. {p.reinvestigation}")
+            lines.append("")
 
     titles = {"ESTABLISHED": "Established findings",
               "PARTLY_ESTABLISHED": "Partly established findings (the measured fact stands; the conclusion does not)",
               "CONTESTED": "Contested findings",
               "UNCONTESTED": "Unchallenged findings (cannot be Established)", "CONCEDED": "Conceded findings",
               "REJECTED": "Rejected claims",
+              "INSUFFICIENT": "Arguments on propositions the evidence cannot decide",
               "NOT_PRESSED": "Positions not pressed (nothing in the Case File carries them; not a finding)"}
     for key, title in titles.items():
         if not groups[key]:
@@ -179,6 +235,8 @@ def write_briefing(report: CaseEvidenceReport, runs: List[RunRecord], complete: 
         e = sources[doc_id]
         lines.append(f"- {doc_id}: {e.title} ({e.source_name}, Tier {e.tier}, {e.pub_date}"
                      f"{' ' + e.pub_time if e.pub_time else ''})")
-    return {"status": status, "reasons": reasons, "markdown": "\n".join(lines) + "\n",
+    return {"status": status, "analytical_status": analysis, "outcome": outcome, "case_file": header,
+            "propositions": [p.model_dump() for p in props],
+            "reasons": reasons, "markdown": "\n".join(lines) + "\n",
             "exposure": [r.model_dump() for r in final.ranges],
             "findings": {k: [r.model_dump() for r, _ in g] for k, g in groups.items()}}

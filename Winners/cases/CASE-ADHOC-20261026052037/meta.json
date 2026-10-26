@@ -1,0 +1,22 @@
+{
+  "case_id": "CASE-ADHOC-20261026052037",
+  "question": "Adjudicate the dispute between Ledger Analytics (projecting a -90% grain export wipeout and imminent famine in importing nations) versus Corvan Grain company statements and customs telemetry. Detail which claims are Established, Contested, or Conceded during cross-examination.",
+  "as_of_date": "2027-01-25",
+  "runs": 1,
+  "status": "COMPLETE",
+  "git_sha": "4ba2e04ab210fbc2080b120fabb876d46d82442c",
+  "models": {
+    "THOR": "gpt-5.4-mini",
+    "LOKI": "gpt-5.4-mini",
+    "ODIN": "gpt-5.4-mini"
+  },
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-26T05:21:36.898795+00:00"
+}

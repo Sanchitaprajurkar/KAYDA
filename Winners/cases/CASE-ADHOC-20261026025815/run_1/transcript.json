@@ -1,0 +1,1220 @@
+{
+  "claims": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Thor (narrow proposition): Ledger Analytics projects a -90% grain export wipeout. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 7, ORV-0045 Page 1 | Paragraph 4",
+      "estimate": null,
+      "nature": "SOURCED_FACT",
+      "reasoning": "Case File for P1: 2 supporting, 0 contradicting, 5 qualifying, 0 context, 0 set aside. Supporting: ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics). Qualified by ORV-0045 | Page 1 | Paragraph 7 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 4 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 6 (observation, Ledger Analytics). Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Corvan Grain sea exports down 90%, our channel checks show",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [],
+      "status": "NARROWED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Ledger Analytics projects a -90% grain export wipeout.",
+        "position": "supports",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "direct",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+            "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+            "evidence_type": "direct",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+            "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 7,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 8
+            },
+            "quote_or_value": "We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - While Ledger Analytics provides an estimate, they acknowledge the lack of actual figures from the company.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide confirmation of the accuracy of the 90% figure without the company's own data."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 4,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 5
+            },
+            "quote_or_value": "If correct, the fall is far deeper than the official port index suggests.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - Ledger Analytics suggests their estimate may differ from official figures, indicating uncertainty.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "The statement is conditional and does not confirm the 90% figure as definitive."
+          }
+        ],
+        "reasoning": "Case File for P1: 2 supporting, 0 contradicting, 5 qualifying, 0 context, 0 set aside. Supporting: ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics). Qualified by ORV-0045 | Page 1 | Paragraph 7 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 4 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 6 (observation, Ledger Analytics). Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to Ledger Analytics; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not confirm actual export figures, only a projection based on channel checks.",
+          "Does not provide confirmation of the accuracy of the 90% figure without the company's own data.",
+          "The statement is conditional and does not confirm the 90% figure as definitive."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Single-source argument; not independently corroborated."
+        },
+        "adverse_evidence_handling": "No admissible evidence contradicts the proposition.",
+        "alternative_explanations": [],
+        "revision_history": [
+          {
+            "round": 1,
+            "action": "narrow_proposition",
+            "original_proposition": "Ledger Analytics projects a -90% grain export wipeout.",
+            "revised_proposition": "Ledger Analytics projects a -90% grain export wipeout. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 7, ORV-0045 Page 1 | Paragraph 4",
+            "retained_evidence_refs": [
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 1,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 1
+                },
+                "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+                "evidence_type": "direct",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+                "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+                "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+              },
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 1,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 2
+                },
+                "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+                "evidence_type": "direct",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+                "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+                "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+              },
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 7,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 8
+                },
+                "quote_or_value": "We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+                "evidence_type": "circumstantial",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: MEDIUM reliability - While Ledger Analytics provides an estimate, they acknowledge the lack of actual figures from the company.",
+                "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+                "does_not_establish": "Does not provide confirmation of the accuracy of the 90% figure without the company's own data."
+              },
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 4,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 5
+                },
+                "quote_or_value": "If correct, the fall is far deeper than the official port index suggests.",
+                "evidence_type": "circumstantial",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: MEDIUM reliability - Ledger Analytics suggests their estimate may differ from official figures, indicating uncertainty.",
+                "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+                "does_not_establish": "The statement is conditional and does not confirm the 90% figure as definitive."
+              }
+            ],
+            "withdrawn_inferences": [
+              "that the proposition is independently corroborated"
+            ],
+            "reason": "missing_corroboration: The argument rests on a single source."
+          }
+        ],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": null,
+        "pressed": true,
+        "evidence_requests": []
+      }
+    },
+    {
+      "claim_id": "T1-P2",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P2] Thor does not press this: nothing in the Case File carries its position on \"Corvan Grain disputes the -90% grain export wipeout projection.\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P2: 0 supporting, 2 contradicting, 2 qualifying, 1 context, 0 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain); ORV-0021 | Page 1 | Paragraph 5 (official statement, Corvan Grain)) limit it; they do not establish it. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0033"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P2",
+        "proposition_text": "Corvan Grain disputes the -90% grain export wipeout projection.",
+        "position": "supports",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Corvan Grain reports that its sea shipments of wheat and maize in October 2026 were 62% below the same month a year earlier",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: HIGH reliability - This is a statement from Corvan Grain reporting their own shipment figures, which provides context to the claim.",
+            "establishes": "Heimdall assessed this official statement by Corvan Grain as one that qualifies the proposition",
+            "does_not_establish": "Does not directly address the -90% projection, only provides a different percentage drop.; Does not clarify the reasons for the drop."
+          },
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 5,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 6
+            },
+            "quote_or_value": "the company wanted to correct what it called exaggerated accounts of the disruption",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: HIGH reliability - The statement is from Corvan Grain, the company making the claim, and addresses the context of their export figures.",
+            "establishes": "Heimdall assessed this official statement by Corvan Grain as one that qualifies the proposition",
+            "does_not_establish": "Does not provide specific figures to directly dispute the -90% projection.; Does not clarify the extent of the impact from the strike versus the end of the agreement."
+          }
+        ],
+        "reasoning": "Case File for P2: 0 supporting, 2 contradicting, 2 qualifying, 1 context, 0 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain); ORV-0021 | Page 1 | Paragraph 5 (official statement, Corvan Grain)) limit it; they do not establish it. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to Corvan Grain; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.",
+          "The source is an analyst, not Corvan Grain itself.",
+          "Does not directly address the -90% projection, only provides a different percentage drop."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Nothing in the Case File supports it."
+        },
+        "adverse_evidence_handling": "2 admissible item(s) contradict it (ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics)); Thor cannot rebut them from the Case File and they stand against the claim.",
+        "alternative_explanations": [],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": null,
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "Corvan Grain official statements",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0021",
+              "ORV-0045"
+            ],
+            "outside_case_file": [
+              "ORV-0033"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "T1-P3",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P3] Thor does not press this: nothing in the Case File carries its position on \"Customs telemetry indicates actual grain export levels.\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P3: 0 supporting, 0 contradicting, 6 qualifying, 2 context, 3 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times); ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain)) limit it; they do not establish it. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0002",
+        "ORV-0016",
+        "ATL-0011",
+        "ATL-0006",
+        "ATL-0013"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P3",
+        "proposition_text": "Customs telemetry indicates actual grain export levels.",
+        "position": "supports",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The source is an analyst note, which may provide insights but is not official customs telemetry.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide actual customs telemetry data; only an observation based on channel checks."
+          },
+          {
+            "source_id": "ORV-0022",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 14
+            },
+            "quote_or_value": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Preliminary figures from a news source may not be fully verified or official.",
+            "establishes": "Heimdall assessed this report by Midgard Times as one that qualifies the proposition",
+            "does_not_establish": "Does not specify actual export levels; focuses on arrivals compared to previous year."
+          }
+        ],
+        "reasoning": "Case File for P3: 0 supporting, 0 contradicting, 6 qualifying, 2 context, 3 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times); ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain)) limit it; they do not establish it. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to customs telemetry; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not provide actual customs telemetry data; only an observation based on channel checks.",
+          "Does not specify actual export levels; focuses on arrivals compared to previous year.",
+          "Does not provide actual customs telemetry data; only company-specific shipment data."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Nothing in the Case File supports it."
+        },
+        "adverse_evidence_handling": "No admissible evidence contradicts the proposition.",
+        "alternative_explanations": [],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": null,
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "customs telemetry grain exports",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0045",
+              "ORV-0022"
+            ],
+            "outside_case_file": [
+              "ORV-0002",
+              "ORV-0016",
+              "ATL-0011",
+              "ATL-0006",
+              "ATL-0013"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "T1-P4",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P4] Thor does not press this: nothing in the Case File carries its position on \"Ledger Analytics, projecting: imminent famine in importing nations\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P4: 0 supporting, 0 contradicting, 0 qualifying, 0 context, 1 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. Forecast evaluation: the forecast's own publication shows what was projected, not that it came true; observed data for the same period is what tests it.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ATL-0012",
+        "ATL-0008",
+        "ATL-0010",
+        "ATL-0009",
+        "ATL-0013",
+        "ATL-0006",
+        "ATL-0005"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P4",
+        "proposition_text": "Ledger Analytics, projecting: imminent famine in importing nations",
+        "position": "supports",
+        "evidence_refs": [],
+        "reasoning": "Case File for P4: 0 supporting, 0 contradicting, 0 qualifying, 0 context, 1 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. Forecast evaluation: the forecast's own publication shows what was projected, not that it came true; observed data for the same period is what tests it.",
+        "assumptions": [
+          "The proposition is attributed to Ledger Analytics; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Nothing in the Case File supports it."
+        },
+        "adverse_evidence_handling": "No admissible evidence contradicts the proposition.",
+        "alternative_explanations": [],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": null,
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "ledger analytic project imminent famine import nation",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [],
+            "outside_case_file": [
+              "ATL-0012",
+              "ATL-0008",
+              "ATL-0010",
+              "ATL-0009",
+              "ATL-0013",
+              "ATL-0006",
+              "ATL-0005"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Loki does not press this: nothing in the Case File carries its position on \"Ledger Analytics projects a -90% grain export wipeout.\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P1: 2 supporting, 0 contradicting, 5 qualifying, 0 context, 0 set aside. Loki has no admissible evidence against the proposition; it is supported by ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics) and qualified by ORV-0045 | Page 1 | Paragraph 7 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 4 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 6 (observation, Ledger Analytics). Loki does not press a challenge. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0021",
+        "ORV-0033",
+        "ATL-0011"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Ledger Analytics projects a -90% grain export wipeout.",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 7,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 8
+            },
+            "quote_or_value": "We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - While Ledger Analytics provides an estimate, they acknowledge the lack of actual figures from the company.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide confirmation of the accuracy of the 90% figure without the company's own data."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 4,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 5
+            },
+            "quote_or_value": "If correct, the fall is far deeper than the official port index suggests.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - Ledger Analytics suggests their estimate may differ from official figures, indicating uncertainty.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "The statement is conditional and does not confirm the 90% figure as definitive."
+          }
+        ],
+        "reasoning": "Case File for P1: 2 supporting, 0 contradicting, 5 qualifying, 0 context, 0 set aside. Loki has no admissible evidence against the proposition; it is supported by ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics) and qualified by ORV-0045 | Page 1 | Paragraph 7 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 4 (observation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 6 (observation, Ledger Analytics). Loki does not press a challenge. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to Ledger Analytics; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not confirm actual export figures, only a projection based on channel checks.",
+          "Does not provide confirmation of the accuracy of the 90% figure without the company's own data.",
+          "The statement is conditional and does not confirm the 90% figure as definitive."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Nothing contradicts it."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "ORV-0045 | Page 1 | Paragraph 7: We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+          "ORV-0045 | Page 1 | Paragraph 4: If correct, the fall is far deeper than the official port index suggests."
+        ],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": null,
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "Corvan Grain statements",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0045"
+            ],
+            "outside_case_file": [
+              "ORV-0021",
+              "ORV-0033",
+              "ATL-0011"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P2",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P2] Loki (narrow proposition): Corvan Grain disputes the -90% grain export wipeout projection. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P2: 0 supporting, 2 contradicting, 2 qualifying, 1 context, 0 set aside. Evidence against the proposition: ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics). Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Corvan Grain sea exports down 90%, our channel checks show",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [
+        "ATL-0012",
+        "ORV-0013",
+        "ORV-0042",
+        "ORV-0031",
+        "ORV-0032",
+        "ORV-0020",
+        "ORV-0017"
+      ],
+      "status": "NARROWED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P2",
+        "proposition_text": "Corvan Grain disputes the -90% grain export wipeout projection.",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "corroborating",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - This is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+            "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+            "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended",
+            "evidence_type": "corroborating",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Similar to C1, this is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+            "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+            "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+          }
+        ],
+        "reasoning": "Case File for P2: 0 supporting, 2 contradicting, 2 qualifying, 1 context, 0 set aside. Evidence against the proposition: ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics); ORV-0045 | Page 1 | Paragraph 1 (allegation, Ledger Analytics). Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to Corvan Grain; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.",
+          "The source is an analyst, not Corvan Grain itself.",
+          "Does not directly address the -90% projection, only provides a different percentage drop."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Single-source argument; not independently corroborated."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "ORV-0021 | Page 1 | Paragraph 1: Corvan Grain reports that its sea shipments of wheat and maize in October 2026 were 62% below the same month a year earlier",
+          "ORV-0021 | Page 1 | Paragraph 5: the company wanted to correct what it called exaggerated accounts of the disruption"
+        ],
+        "revision_history": [
+          {
+            "round": 1,
+            "action": "narrow_proposition",
+            "original_proposition": "Corvan Grain disputes the -90% grain export wipeout projection.",
+            "revised_proposition": "Corvan Grain disputes the -90% grain export wipeout projection. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1",
+            "retained_evidence_refs": [
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 1,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 1
+                },
+                "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+                "evidence_type": "corroborating",
+                "epistemic_status": "reported_claim",
+                "reliability_note": "Heimdall: MEDIUM reliability - This is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+                "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+                "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+              },
+              {
+                "source_id": "ORV-0045",
+                "locator": {
+                  "paragraph": 1,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 2
+                },
+                "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended",
+                "evidence_type": "corroborating",
+                "epistemic_status": "reported_claim",
+                "reliability_note": "Heimdall: MEDIUM reliability - Similar to C1, this is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+                "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+                "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+              }
+            ],
+            "withdrawn_inferences": [
+              "that the proposition is independently corroborated"
+            ],
+            "reason": "missing_corroboration: The argument rests on a single source."
+          }
+        ],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": "evidence_against",
+        "pressed": true,
+        "evidence_requests": [
+          {
+            "query": "Ledger Analytics report",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0021"
+            ],
+            "outside_case_file": [
+              "ATL-0012",
+              "ORV-0013",
+              "ORV-0042",
+              "ORV-0031",
+              "ORV-0032",
+              "ORV-0020",
+              "ORV-0017"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P3",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P3] Loki challenges as not established (unproven, not shown false): Customs telemetry indicates actual grain export levels.",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P3: 0 supporting, 0 contradicting, 6 qualifying, 2 context, 3 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0015, ORV-0049), which shows the claim was made, not that it is true. The records ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times); ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain) qualify it; they do not show it to be false. Absence of evidence is not evidence of falsity. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+      "citations": [
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Corvan Grain sea exports down 90%, our channel checks show",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0022",
+          "ref": "ORV-0022#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2027-01-12",
+          "pub_time": "07:55",
+          "tier": 2,
+          "source_name": "Midgard Times",
+          "title": "December grain arrivals point to a smaller Orvan share",
+          "excerpt": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "Corvan Grain: October sea shipments down 62% on last year",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0045",
+          "ref": "ORV-0045#P1",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 1,
+          "pub_date": "2026-11-10",
+          "pub_time": "08:15",
+          "tier": 3,
+          "source_name": "Ledger Analytics",
+          "title": "Corvan Grain sea exports down 90%, our channel checks show",
+          "excerpt": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [
+        "ATL-0012"
+      ],
+      "status": "ACTIVE",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P3",
+        "proposition_text": "Customs telemetry indicates actual grain export levels.",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The source is an analyst note, which may provide insights but is not official customs telemetry.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide actual customs telemetry data; only an observation based on channel checks."
+          },
+          {
+            "source_id": "ORV-0022",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 14
+            },
+            "quote_or_value": "Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Preliminary figures from a news source may not be fully verified or official.",
+            "establishes": "Heimdall assessed this report by Midgard Times as one that qualifies the proposition",
+            "does_not_establish": "Does not specify actual export levels; focuses on arrivals compared to previous year."
+          },
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain: October sea shipments down 62% on last year",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Company statement may reflect internal data but is not official customs telemetry.",
+            "establishes": "Heimdall assessed this official statement by Corvan Grain as one that qualifies the proposition",
+            "does_not_establish": "Does not provide actual customs telemetry data; only company-specific shipment data."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - Analyst note based on channel checks, not official customs telemetry.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide actual customs telemetry data; only an observation based on channel checks."
+          },
+          {
+            "source_id": "ORV-0015",
+            "locator": {
+              "paragraph": null,
+              "page": 1,
+              "row": null,
+              "paragraph_index": null
+            },
+            "quote_or_value": "Asgard officials have welcomed reports that the Orvan grain corridor will be renewed for another year.",
+            "evidence_type": "unsupported_inference",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: LOW reliability - set aside before trial as TAINTED; see ORV-0043 (set aside before trial; inadmissible)",
+            "establishes": "Heimdall assessed this report by Asgard Herald as one that supports the proposition",
+            "does_not_establish": "inadmissible: it shows the claim was made, not that it is true"
+          },
+          {
+            "source_id": "ORV-0049",
+            "locator": {
+              "paragraph": null,
+              "page": 1,
+              "row": null,
+              "paragraph_index": null
+            },
+            "quote_or_value": "Our base case assumes sea exports stay near 95% of the old normal through the winter.",
+            "evidence_type": "unsupported_inference",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: LOW reliability - set aside before trial as SUPERSEDED; see ORV-0016 (set aside before trial; inadmissible)",
+            "establishes": "Heimdall assessed this report by Tide Research as one that supports the proposition",
+            "does_not_establish": "inadmissible: it shows the claim was made, not that it is true"
+          }
+        ],
+        "reasoning": "Case File for P3: 0 supporting, 0 contradicting, 6 qualifying, 2 context, 3 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0015, ORV-0049), which shows the claim was made, not that it is true. The records ORV-0045 | Page 1 | Paragraph 1 (observation, Ledger Analytics); ORV-0022 | Page 1 | Paragraph 1 (report, Midgard Times); ORV-0021 | Page 1 | Paragraph 1 (official statement, Corvan Grain) qualify it; they do not show it to be false. Absence of evidence is not evidence of falsity. Competing claims: each figure belongs to whoever asserts it; observed records decide how far a party's claim is borne out.",
+        "assumptions": [
+          "The proposition is attributed to customs telemetry; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not provide actual customs telemetry data; only an observation based on channel checks.",
+          "Does not specify actual export levels; focuses on arrivals compared to previous year.",
+          "Does not provide actual customs telemetry data; only company-specific shipment data."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "No supporting evidence on the record; the challenge is that the proposition is unproven, not that it is false."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "ORV-0045 | Page 1 | Paragraph 1: Corvan Grain sea exports down 90%, our channel checks show",
+          "ORV-0022 | Page 1 | Paragraph 1: Preliminary customs figures show Midgard's wheat and maize arrivals from Orvan well below the levels of a year earlier in December."
+        ],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": "not_established",
+        "pressed": true,
+        "evidence_requests": [
+          {
+            "query": "Ledger Analytics projections",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [],
+            "outside_case_file": [
+              "ATL-0012"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P4",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P4] Loki does not press this: nothing in the Case File carries its position on \"Ledger Analytics, projecting: imminent famine in importing nations\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P4: 0 supporting, 0 contradicting, 0 qualifying, 0 context, 1 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0028), which shows the claim was made, not that it is true. Absence of evidence is not evidence of falsity. Forecast evaluation: the forecast's own publication shows what was projected, not that it came true; observed data for the same period is what tests it.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0022",
+        "ATL-0012",
+        "ORV-0017",
+        "ORV-0004",
+        "ORV-0021"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P4",
+        "proposition_text": "Ledger Analytics, projecting: imminent famine in importing nations",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0028",
+            "locator": {
+              "paragraph": null,
+              "page": 1,
+              "row": null,
+              "paragraph_index": null
+            },
+            "quote_or_value": "Midgard is facing famine after Orvan's grain ships stopped sailing, the Daily Roar can reveal.",
+            "evidence_type": "unsupported_inference",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: LOW reliability - set aside before trial as TABLOID (set aside before trial; inadmissible)",
+            "establishes": "Heimdall assessed this rumour by Daily Roar as one that supports the proposition",
+            "does_not_establish": "inadmissible: it shows the claim was made, not that it is true"
+          }
+        ],
+        "reasoning": "Case File for P4: 0 supporting, 0 contradicting, 0 qualifying, 0 context, 1 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0028), which shows the claim was made, not that it is true. Absence of evidence is not evidence of falsity. Forecast evaluation: the forecast's own publication shows what was projected, not that it came true; observed data for the same period is what tests it.",
+        "assumptions": [
+          "The proposition is attributed to Ledger Analytics; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "No supporting evidence on the record; the challenge is that the proposition is unproven, not that it is false."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "COMPETING_CLAIMS+FORECAST_EVALUATION",
+        "challenge_basis": "not_established",
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "ledger analytic project actual figures data customs arrivals",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [],
+            "outside_case_file": [
+              "ORV-0022",
+              "ATL-0012",
+              "ORV-0017",
+              "ORV-0004",
+              "ORV-0021"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "attack_id": "AT1-01",
+      "run": 1,
+      "attacker": "THOR",
+      "target_claim_id": "L1-P2",
+      "reason": "low_tier",
+      "argument": "The argument rests on a single source. Without independent corroboration it is not established.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "missing_corroboration",
+      "target_proposition_id": "P2",
+      "target_evidence_or_reasoning": "reasoning",
+      "defect": "The argument rests on a single source.",
+      "explanation": "Without independent corroboration it is not established.",
+      "counter_evidence_refs": []
+    },
+    {
+      "attack_id": "AL1-01",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-P1",
+      "reason": "low_tier",
+      "argument": "The argument rests on a single source. Without independent corroboration it is not established.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "missing_corroboration",
+      "target_proposition_id": "P1",
+      "target_evidence_or_reasoning": "reasoning",
+      "defect": "The argument rests on a single source.",
+      "explanation": "Without independent corroboration it is not established.",
+      "counter_evidence_refs": []
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "RT1-01",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-01",
+      "claim_id": "T1-P1",
+      "decision": "NARROWED",
+      "explanation": "Thor narrows the argument: it rests on one source and is reported as such, with low confidence.",
+      "new_evidence": [],
+      "action": "narrow_proposition",
+      "revision": {
+        "round": 1,
+        "action": "narrow_proposition",
+        "original_proposition": "Ledger Analytics projects a -90% grain export wipeout.",
+        "revised_proposition": "Ledger Analytics projects a -90% grain export wipeout. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 7, ORV-0045 Page 1 | Paragraph 4",
+        "retained_evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "direct",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+            "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended.",
+            "evidence_type": "direct",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: HIGH reliability - Ledger Analytics is a recognized analyst firm providing a direct projection.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that supports the proposition",
+            "does_not_establish": "Does not confirm actual export figures, only a projection based on channel checks."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 7,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 8
+            },
+            "quote_or_value": "We have not seen the company's own figures. The estimate is a point estimate, not a range.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - While Ledger Analytics provides an estimate, they acknowledge the lack of actual figures from the company.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "Does not provide confirmation of the accuracy of the 90% figure without the company's own data."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 4,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 5
+            },
+            "quote_or_value": "If correct, the fall is far deeper than the official port index suggests.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - Ledger Analytics suggests their estimate may differ from official figures, indicating uncertainty.",
+            "establishes": "Heimdall assessed this observation by Ledger Analytics as one that qualifies the proposition",
+            "does_not_establish": "The statement is conditional and does not confirm the 90% figure as definitive."
+          }
+        ],
+        "withdrawn_inferences": [
+          "that the proposition is independently corroborated"
+        ],
+        "reason": "missing_corroboration: The argument rests on a single source."
+      },
+      "new_evidence_refs": []
+    },
+    {
+      "response_id": "RL1-01",
+      "run": 1,
+      "side": "LOKI",
+      "attack_id": "AT1-01",
+      "claim_id": "L1-P2",
+      "decision": "NARROWED",
+      "explanation": "Loki narrows the argument: it rests on one source and is reported as such, with low confidence.",
+      "new_evidence": [],
+      "action": "narrow_proposition",
+      "revision": {
+        "round": 1,
+        "action": "narrow_proposition",
+        "original_proposition": "Corvan Grain disputes the -90% grain export wipeout projection.",
+        "revised_proposition": "Corvan Grain disputes the -90% grain export wipeout projection. - argued only to the extent shown by ORV-0045 Page 1 | Paragraph 1, ORV-0045 Page 1 | Paragraph 1",
+        "retained_evidence_refs": [
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 1
+            },
+            "quote_or_value": "Corvan Grain sea exports down 90%, our channel checks show",
+            "evidence_type": "corroborating",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - This is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+            "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+            "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+          },
+          {
+            "source_id": "ORV-0045",
+            "locator": {
+              "paragraph": 1,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 2
+            },
+            "quote_or_value": "Our channel checks point to a 90% fall in Corvan Grain's sea exports since the corridor agreement ended",
+            "evidence_type": "corroborating",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Similar to C1, this is an analyst note reporting a claim based on channel checks, which may not be independently verified.",
+            "establishes": "Heimdall assessed this allegation by Ledger Analytics as one that contradicts the proposition",
+            "does_not_establish": "Does not provide direct evidence from Corvan Grain to support the claim of a 90% drop.; The source is an analyst, not Corvan Grain itself."
+          }
+        ],
+        "withdrawn_inferences": [
+          "that the proposition is independently corroborated"
+        ],
+        "reason": "missing_corroboration: The argument rests on a single source."
+      },
+      "new_evidence_refs": []
+    }
+  ],
+  "side_failures": {}
+}

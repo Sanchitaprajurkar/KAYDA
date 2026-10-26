@@ -1,0 +1,22 @@
+{
+  "case_id": "OFF-Q1b",
+  "question": "Evaluate the breaking alert claiming that Orvan Grain Port infrastructure and grain terminal silos were physically destroyed in military strikes.",
+  "as_of_date": "2027-01-25",
+  "runs": 1,
+  "status": "COMPLETE",
+  "git_sha": "8a1b6ad5577d2cd696a533572fdc86cccc692119",
+  "models": {
+    "THOR": "scripted",
+    "LOKI": "scripted",
+    "ODIN": "scripted"
+  },
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-26T02:33:54.783785+00:00"
+}

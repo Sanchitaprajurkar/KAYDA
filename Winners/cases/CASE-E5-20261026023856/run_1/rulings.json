@@ -1,0 +1,83 @@
+{
+  "rulings": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "NOT_PRESSED",
+      "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "T1-P2",
+      "side": "THOR",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "NOT_PRESSED",
+      "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "UPHELD",
+      "nature": "INFERENCE",
+      "classification": "ESTABLISHED",
+      "reason": "Passed independent validation; no live attack. Checked: 4 citation(s) admissible and dated on or before 2027-01-25; 4 quoted paragraph(s) found verbatim in their documents.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [
+        "4 citation(s) admissible and dated on or before 2027-01-25",
+        "4 quoted paragraph(s) found verbatim in their documents"
+      ],
+      "findings": []
+    },
+    {
+      "claim_id": "L1-P2",
+      "side": "LOKI",
+      "run": 1,
+      "ruling": "CONCEDED",
+      "nature": "INFERENCE",
+      "classification": "NOT_PRESSED",
+      "reason": "Not pressed: nothing in the Case File carries this side's position. This is not a finding on the proposition.",
+      "decided_by": "rules",
+      "failed_checks": [],
+      "validation": [],
+      "findings": []
+    }
+  ],
+  "ranges": [],
+  "remand": [],
+  "open_gaps": [
+    "Proposition P1: Orvan Grain Port infrastructure was physically destroyed in military strikes. - no admissible evidence found either way; this is not a finding that it is false",
+    "Proposition P2: Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes. - no admissible evidence found either way; this is not a finding that it is false"
+  ],
+  "research": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "LOKI": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

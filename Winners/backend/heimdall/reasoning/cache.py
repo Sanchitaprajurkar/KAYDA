@@ -5,10 +5,14 @@ evidence reaches the LLM. Stand-in LLMs without a model name are never cached.
 """
 
 import json
+import logging
 import os
+import tempfile
 import threading
 from pathlib import Path
 from typing import Any, Optional
+
+logger = logging.getLogger(__name__)
 
 CACHE_DIR = Path(os.getenv("HEIMDALL_CACHE_DIR") or Path(__file__).resolve().parents[2] / "cache")
 
@@ -35,7 +39,24 @@ class VerdictCache:
             self.data[f"{self.model}|{key}"] = value
 
     def save(self) -> None:
-        if self.enabled:
-            with self._lock:
+        if not self.enabled:
+            return
+        with self._lock:
+            try:
                 self.path.parent.mkdir(parents=True, exist_ok=True)
-                self.path.write_text(json.dumps(self.data, ensure_ascii=False), encoding="utf-8")
+                payload = json.dumps(self.data, ensure_ascii=False)
+                # Write to a sibling temp file and atomically replace to avoid Windows
+                # file-lock races (antivirus, other processes, concurrent saves).
+                fd, tmp = tempfile.mkstemp(dir=self.path.parent, prefix=self.path.stem, suffix=".tmp")
+                try:
+                    with os.fdopen(fd, "w", encoding="utf-8") as f:
+                        f.write(payload)
+                    os.replace(tmp, self.path)
+                except Exception:
+                    try:
+                        os.unlink(tmp)
+                    except OSError:
+                        pass
+                    raise
+            except Exception as exc:
+                logger.warning("VerdictCache: failed to save %s: %s", self.path.name, exc)

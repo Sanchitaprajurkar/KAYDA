@@ -9,14 +9,20 @@ from typing import Callable, Dict, List, Literal, Optional, Tuple
 
 from pydantic import BaseModel
 
+from backend.agents.odin.judge import Judge, exposure_ruling
+from backend.agents.odin.propositions import (DAMAGE, DAMAGE_NEEDED, allegation_parts, composite, damage_request,
+                                              is_damage,
+                                              is_damage_request, needs_operations, operations_items, place_of,
+                                              prior_search, research_parents, route, split, untried_evidence)
 from backend.agents.odin.prompts import ODIN_SYSTEM_PROMPT
-from backend.court.heimdall_bridge import CaseEvidenceReport
+from backend.court.heimdall_bridge import MAX_RUNS, CaseEvidenceReport
 from backend.court.llm import BudgetExceeded, CourtLLM
 from backend.court.memory import AgentMemory
 from backend.court.display import cite, cite_group, fmt_estimate, position
 from backend.court.exposure import numeric_claim_defect
 from backend.court.models import (AVAILABLE, CONFIRMED_ZERO, NET_EXPOSURE, ROUTE_VALUE_DECLINE, ROUTE_VOLUME_DECLINE,
-                                  Attack, CellRange, Claim, Finding, ResearchOutcome, Response, Ruling, RunRecord)
+                                  Attack, CellRange, Claim, Finding, PropositionRuling, ResearchOutcome, Response,
+                                  Ruling, RunRecord)
 from backend.court.tools import RunemarkTools, citation_scope_defect, offers_new_trade_rows
 
 
@@ -132,8 +138,225 @@ class Odin:
             else "INFERENCE"
 
     # -- rulings ----------------------------------------------------------------
+    # -- proposition-level adjudication ------------------------------------------------------------------------
+    def adjudicate(self, report: CaseEvidenceReport, claims: List[Claim], attacks: List[Attack],
+                   responses: List[Response]) -> List[PropositionRuling]:
+        """An independent ruling on every Heimdall proposition and every proposition an advocate argued, made from
+        the evidence regardless of what the advocates pressed or conceded. Exposure propositions are decided later
+        from the coverage table (adjudicate_exposure)."""
+        inv = getattr(report, "investigation", None)
+        self._compound: Dict[str, PropositionRuling] = {}
+        self._alias: Dict[str, str] = {}
+        if inv is None:
+            return []
+        judge = Judge(self.tools.store)
+        plan = inv.spec.propositions
+        sendbacks = research_parents(plan, report.research_history)
+        for q, parents in sendbacks.items():
+            self._alias[q] = parents[0]
+        out: List[PropositionRuling] = []
+        incident = getattr(inv.spec, "alleged_incident", None)
+        first_at_place: Dict[str, str] = {}
+        for p in plan:
+            if is_damage(p) and place_of(p.text):
+                first_at_place.setdefault(place_of(p.text).lower(), p.prop_id)
+        for p in plan:
+            if p.kind == "EXPOSURE" or p.prop_id in sendbacks:
+                continue  # exposure is decided from the coverage table; send-backs are Odin's own search requests
+            items = [e for e in inv.evidence if e.prop_id == p.prop_id]
+            searched = [e for e in inv.evidence if p.prop_id in sendbacks.get(e.prop_id, [])]
+            if is_damage(p):
+                parts, n_own = allegation_parts(p, incident, plan,
+                                                first_at_place.get((place_of(p.text) or "").lower()) == p.prop_id)
+                parts = parts if len(parts) > 1 else []
+            else:
+                parts = split(p.text) if p.kind in ("INCIDENT", "EVENT") else []
+                n_own = len(parts)
+            ops = needs_operations(p, plan)
+            if not (parts or ops or searched):
+                out.append(judge.rule(p, items, claims, attacks, responses, inv.audit, case_items=inv.evidence))
+                continue
+            pool = items + searched
+            if parts:
+                subs = [(p.model_copy(update={"prop_id": f"{p.prop_id}.{i}", "text": part.text}), group, part.target)
+                        for i, (part, group) in enumerate(zip(parts, route(parts, pool)), 1)]
+            else:
+                subs = [(p, pool, place_of(p.text) or p.text)]
+            batch = []
+            for i, (sp, group, target) in enumerate(subs):
+                r = judge.rule(sp, group, claims, attacks, responses, inv.audit, case_items=inv.evidence,
+                               argued_as=p.prop_id if i < max(n_own, 1) else sp.prop_id)
+                if parts:
+                    r.derived_from, r.derivation = p.prop_id, "part"
+                if parts and i >= n_own:
+                    r.reasoning = ("Added by Odin: the question's alleged incident includes this allegation, but no "
+                                   "proposition in Heimdall's plan carries it. " + r.reasoning)
+                batch.append((r, target))
+            if is_damage(p):
+                self._targeted_search(report, p, batch, items, searched, inv.audit)
+            if parts:
+                own = [r for r, _ in batch[:n_own]]
+                # An advocate who argued the proposition is answered by the part(s) it actually states.
+                self._compound[p.prop_id] = composite(p, own) if len(own) > 1 else own[0]
+            if ops:
+                batch.append((self._operations(judge, p, pool, len(subs) if parts else 0, claims, attacks,
+                                               responses, inv), None))
+            out += [r for r, _ in batch]
+        for r in out:
+            self.log("proposition_ruling", agent="ODIN", ruling=r.model_dump())
+        return out
+
+    @staticmethod
+    def _operations(judge: Judge, p, pool, n_parts: int, claims, attacks, responses, inv) -> PropositionRuling:
+        """The lesser proposition carried by a physical-damage allegation: operations at the site were disrupted.
+        Operating records decide it; deciding it says nothing about the physical damage."""
+        oid = f"{p.prop_id}.{n_parts + 1}"
+        op = p.model_copy(update={"prop_id": oid, "text": f"operations at {place_of(p.text)} were disrupted",
+                                  "kind": "EVENT", "attributed_to": None})
+        r = judge.rule(op, operations_items(pool, oid), claims, attacks, responses, inv.audit,
+                       case_items=inv.evidence)
+        r.derived_from, r.derivation = p.prop_id, "consequence"
+        r.reasoning = (f"Derived by Odin from {p.prop_id}: operational disruption is a separate question from "
+                       f"physical damage, decided by operating records, and does not establish the damage. "
+                       + r.reasoning)
+        r.limitations = list(dict.fromkeys(r.limitations + [
+            "Establishing disruption does not establish physical destruction or its cause."]))
+        return r
+
+    def _targeted_search(self, report, p, batch, items, searched, audit) -> None:
+        """For damage parts the record cannot decide: request one focused re-investigation if the evidence types that
+        could decide physical damage have not been searched yet; otherwise report the precise gap."""
+        place = place_of(p.text)
+        pending = [(r, t) for r, t in batch if r.classification == "INSUFFICIENT"]
+        if not (pending and place):
+            return
+        queries, searched_run = prior_search(p, audit, report.research_history)
+        request = damage_request(place, [t for _, t in pending])
+        requested = False
+        known = {(e.doc_id, e.paragraph_number) for e in items}
+        notes = {}
+        if searched_run:
+            for r, _ in pending:
+                new = sorted({f"{x.source_id} {x.locator.label()}" for x in r.supporting + r.contradicting + r.qualifying
+                              if (x.source_id, x.locator.paragraph) not in known})
+                notes[r.prop_id] = (
+                    f"Targeted re-investigation ran in run {searched_run}: it added {len(new)} admissible record(s) "
+                    f"bearing on this part" + (f" ({'; '.join(new[:4])})" if new else "") + ", none of which decides "
+                    f"the physical damage. No further search requested: the corpus offers no reasonable prospect of "
+                    f"resolving it.")
+        else:
+            untried = untried_evidence(queries)
+            if not untried:
+                note = ("Not requested: Heimdall's searches already covered damage assessments, inspection reports, "
+                        "condition reports and observations, and kept nothing that decides it.")
+            elif report.run_number >= MAX_RUNS:
+                note = "Not requested: the case has reached its run limit."
+            else:
+                requested = True
+                note = (f"Requested: a targeted re-investigation through Heimdall for {', '.join(untried)}, which the "
+                        f"searches so far did not cover.")
+        for r, _ in pending:
+            r.reinvestigation = notes.get(r.prop_id) or note
+            r.research_request, r.research_requested = request, requested
+            r.evidence_needed = DAMAGE_NEEDED
+
+    def _finding(self, findings: Dict[str, PropositionRuling], prop_id: str) -> Optional[PropositionRuling]:
+        """Odin's finding on the proposition an advocate argued: a compound allegation is answered by its parts;
+        a send-back proposition by the allegation it was searched for."""
+        prop_id = getattr(self, "_alias", {}).get(prop_id, prop_id)
+        return findings.get(prop_id) or getattr(self, "_compound", {}).get(prop_id)
+
+    def adjudicate_exposure(self, report: CaseEvidenceReport, propositions: List[PropositionRuling],
+                            ranges: List[CellRange]) -> List[PropositionRuling]:
+        inv = getattr(report, "investigation", None)
+        for p in (inv.spec.propositions if inv else []):
+            if p.kind == "EXPOSURE" and ranges:
+                r = exposure_ruling(p, ranges)
+                if r:
+                    propositions.append(r)
+                    self.log("proposition_ruling", agent="ODIN", ruling=r.model_dump())
+        return propositions
+
+    @staticmethod
+    def completeness(report: CaseEvidenceReport, claims: List[Claim], propositions: List[PropositionRuling],
+                     ranges: List[CellRange]) -> List[str]:
+        """Requirements of the question with no ruling. Checked against Heimdall's plan and the advocates' claims."""
+        inv = getattr(report, "investigation", None)
+        ruled = {p.prop_id for p in propositions} | {p.derived_from for p in propositions if p.derived_from}
+        sendbacks = research_parents(inv.spec.propositions, report.research_history) if inv else {}
+        ruled |= {q for q, parents in sendbacks.items() if set(parents) & ruled}
+        missing = [f"{p.prop_id}: {p.text}" for p in (inv.spec.propositions if inv else [])
+                   if p.prop_id not in ruled and not (p.kind == "EXPOSURE" and ranges)]
+        missing += [f"{c.claim_id}: argued proposition {c.argument.claim_id} is not in the Case File plan"
+                    for c in claims if c.argument and c.argument.claim_id not in ruled
+                    and c.argument.claim_id not in {p.prop_id for p in (inv.spec.propositions if inv else [])}]
+        return missing
+
+    @staticmethod
+    def analytical_status(report: CaseEvidenceReport, propositions: List[PropositionRuling],
+                          ranges: List[CellRange], completeness: List[str]) -> str:
+        """COMPLETE only when every requirement is decided (ESTABLISHED or REJECTED); PARTIAL when some are;
+        INSUFFICIENT when none is. Running the workflow is not the same as answering the question."""
+        # Exposure requirements are counted per coverage cell (a proposition spanning several cells is decided
+        # cell by cell); every other proposition counts once.
+        decided = [p.classification in ("ESTABLISHED", "REJECTED") for p in propositions if p.kind != "EXPOSURE"]
+        decided += [r.status == "COVERED" and r.odin is not None for r in ranges]
+        decided += [False] * len(completeness)
+        if not decided:
+            return "INSUFFICIENT"  # nothing was ruled on: an empty record is never sufficient
+        return "COMPLETE" if all(decided) else "PARTIAL" if any(decided) else "INSUFFICIENT"
+
+    @staticmethod
+    def outcome(rulings: List[Ruling], claims: List[Claim] = (), report: Optional[CaseEvidenceReport] = None) -> Dict:
+        """Who won the trial, from Odin's rulings on each side's arguments: +1 for every argument upheld, -1 for
+        every argument rejected or withdrawn. Contested arguments and positions not pressed score nothing (not
+        pressing is not a loss on the merits, and the opponent's prevailing argument already counts). Arguments on
+        Odin's own re-investigation request are the same issue as the allegation it serves, so are not scored twice."""
+        inv = getattr(report, "investigation", None)
+        sendbacks = research_parents(inv.spec.propositions, report.research_history) if inv else {}
+        repeat = {c.claim_id for c in claims if c.argument and c.argument.claim_id in sendbacks}
+        tally = {s: {"upheld": 0, "rejected": 0, "conceded": 0, "contested": 0, "not_pressed": 0}
+                 for s in ("THOR", "LOKI")}
+        for r in rulings:
+            if r.claim_id in repeat:
+                continue
+            t = tally.setdefault(r.side, {"upheld": 0, "rejected": 0, "conceded": 0, "contested": 0,
+                                          "not_pressed": 0})
+            key = ("not_pressed" if r.classification == "NOT_PRESSED" else
+                   {"UPHELD": "upheld", "REJECTED": "rejected", "CONCEDED": "conceded"}.get(r.ruling, "contested"))
+            t[key] += 1
+        score = {s: t["upheld"] - t["rejected"] - t["conceded"] for s, t in tally.items()}
+        thor, loki = score.get("THOR", 0), score.get("LOKI", 0)
+        winner = "THOR" if thor > loki else "LOKI" if loki > thor else "DRAW"
+
+        def line(s):
+            t = tally[s]
+            return (f"{s.title()} {score[s]:+d} ({t['upheld']} upheld, {t['rejected']} rejected, {t['conceded']} "
+                    f"withdrawn, {t['contested']} contested, {t['not_pressed']} not pressed)")
+        reason = f"{line('THOR')}; {line('LOKI')}." + (
+            f" {len(repeat)} argument(s) on Odin's own re-investigation request not scored separately (same issue "
+            f"as the allegation it serves)." if repeat else "")
+        verdict = (f"{winner.title()} wins" if winner != "DRAW" else "Draw: neither side prevails") + f" - {reason}"
+        return {"winner": winner, "score": score, "tally": tally, "verdict": verdict}
+
+    @staticmethod
+    def _argument_ruling(c: Claim, finding: PropositionRuling) -> Tuple[str, str]:
+        """(whether this advocate's argument prevails, why). The classification is the proposition's finding."""
+        cls, arg = finding.classification, c.argument
+        if arg.position == "supports":
+            prevails = {"ESTABLISHED": "UPHELD", "CONTESTED": "CONTESTED"}.get(cls, "REJECTED")
+        elif arg.challenge_basis == "not_established":
+            prevails = "REJECTED" if cls == "ESTABLISHED" else "UPHELD"
+        else:
+            prevails = {"REJECTED": "UPHELD", "CONTESTED": "CONTESTED"}.get(cls, "REJECTED")
+        what = {"UPHELD": "prevails", "REJECTED": "does not prevail", "CONTESTED": "is neither upheld nor defeated"}
+        return prevails, (f"{c.side.title()}'s argument {what[prevails]}: Odin's ruling on {finding.prop_id} is "
+                          f"{cls}. {finding.reasoning}")
+
     def rule(self, report: CaseEvidenceReport, claims: List[Claim], attacks: List[Attack],
-             responses: List[Response], side_failures: Dict[str, str]) -> List[Ruling]:
+             responses: List[Response], side_failures: Dict[str, str],
+             propositions: Optional[List[PropositionRuling]] = None) -> List[Ruling]:
+        findings = {p.prop_id: p for p in (propositions or [])}
         answers = {r.attack_id: r for r in responses}
         by_target: Dict[str, List[Attack]] = {}
         for a in attacks:
@@ -165,6 +388,18 @@ class Odin:
                 continue
             narrowed = (f" Narrowed in cross-examination from {fmt_estimate(c.narrowed_from)}; ruled as narrowed."
                         if c.narrowed_from else "")
+            finding = self._finding(findings, c.argument.claim_id) if c.argument else None
+            if finding is not None:
+                # An argument on a proposition is ruled by Odin's own finding on that proposition, in its narrowed
+                # form if the advocate narrowed it; the advocate's confidence is not taken on trust.
+                prevails, why = self._argument_ruling(c, finding)
+                if c.status == "NARROWED" and c.argument.revision_history:
+                    why = (f"Ruled as narrowed in round {c.argument.revision_history[-1].round} "
+                           f"({c.argument.revision_history[-1].action.replace('_', ' ')}). ") + why
+                rulings[c.claim_id] = Ruling(claim_id=c.claim_id, side=c.side, run=c.run, ruling=prevails,
+                                             nature="INFERENCE", classification=finding.classification,
+                                             reason=why, decided_by="odin")
+                continue
             if not by_target.get(c.claim_id):
                 rulings[c.claim_id] = Ruling(
                     claim_id=c.claim_id, side=c.side, run=c.run, ruling="UPHELD", nature=self._default_nature(c),
@@ -324,7 +559,8 @@ class Odin:
 
     # -- sufficiency ------------------------------------------------------------
     def sufficiency(self, report: CaseEvidenceReport, claims: List[Claim],
-                    rulings: List[Ruling]) -> Tuple[List[str], List[str]]:
+                    rulings: List[Ruling], propositions: Optional[List[PropositionRuling]] = None
+                    ) -> Tuple[List[str], List[str]]:
         """(gaps worth one more search, gaps already searched for and still open). Missing data the corpus may simply
         not hold is reported as an open gap, not chased forever, and never dropped as if it had been answered."""
         ruled = {r.claim_id: r for r in rulings}
@@ -355,10 +591,14 @@ class Odin:
                 if not profile:
                     missing.append(f"{label}: evidence gap not yet checked against the {cell.country} reference "
                                    f"sheet")
-        # Heimdall already ran its follow-up searches: propositions it could not resolve are open, not sufficient.
-        inv = getattr(report, "investigation", None)
-        if inv is not None:
-            still_open += [f"Proposition {u}" for u in inv.unresolved]
+        # An unresolved proposition is sent back only when Odin found a targeted search worth running (one request
+        # per allegation, never repeated); otherwise it is an open gap, reported with what would resolve it.
+        for p in propositions or []:
+            if p.research_requested:
+                missing.append(p.research_request)
+            elif p.needs_investigation and p.kind != "EXPOSURE":
+                still_open.append(f"{p.prop_id} ({p.classification}): {p.proposition} - {p.evidence_gap} Needed: "
+                                  f"{p.evidence_needed}.")
         return list(dict.fromkeys(missing)), list(dict.fromkeys(still_open))
 
     def research_outcomes(self, report: CaseEvidenceReport, asked: List[str], record: RunRecord) -> List[ResearchOutcome]:
@@ -372,6 +612,20 @@ class Odin:
         cells = {f"{c.country} {c.sector}": c for c in report.coverage_map}
         out = []
         for gap in asked:
+            targets = [p for p in record.propositions if p.research_request == gap] or [
+                p for p in record.propositions if p.derivation != "consequence" and DAMAGE.search(p.proposition)
+                and is_damage_request(gap, place_of(p.proposition) or "\0")]
+            if targets:
+                still = [p for p in targets if p.classification == "INSUFFICIENT"]
+                fresh = [d for d in new if any(r.source_id == d for p in targets
+                                               for r in p.supporting + p.contradicting + p.qualifying)]
+                detail = ("; ".join(f"{p.prop_id} is {p.classification}" for p in targets)
+                          + (f"; new document(s) bearing on it: {', '.join(fresh)}" if fresh else
+                             "; no new document bears on the physical damage" if new else
+                             "; the re-search found no new admissible documents"))
+                out.append(ResearchOutcome(gap=gap, resolved=not still, new_documents=new, used_documents=fresh,
+                                           explanation=f"{'Not resolved' if still else 'Resolved'}: {detail}."))
+                continue
             label, _, need = gap.partition(":")
             unresolved = gap in record.remand or gap in record.open_gaps
             cell = cells.get(label.strip())

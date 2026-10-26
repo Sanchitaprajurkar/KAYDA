@@ -1,0 +1,328 @@
+{
+  "claims": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Thor does not press this: nothing in the Case File carries its position on \"Orvan Grain Port infrastructure was physically destroyed in military strikes.\".",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P1: 0 supporting, 0 contradicting, 4 qualifying, 0 context, 2 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly); ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly); ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry)) limit it; they do not establish it. Event verification: only evidence of the event itself establishes it. Operating records qualify it; a set-aside source shows the claim was made, not that it is true.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0012",
+        "ORV-0004",
+        "ORV-0021"
+      ],
+      "status": "NOT_PRESSED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "position": "supports",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0008",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Report on operational status of the port, indicating some closures.",
+            "establishes": "Heimdall assessed this report by Cargo Weekly as one that qualifies the proposition",
+            "does_not_establish": "Does not confirm the cause of the closures or the extent of destruction."
+          },
+          {
+            "source_id": "ORV-0008",
+            "locator": {
+              "paragraph": 5,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 6
+            },
+            "quote_or_value": "The port authority says it cannot estimate when normal working will resume.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: HIGH reliability - Official statement from the port authority regarding operational status.",
+            "establishes": "Heimdall assessed this official statement by Cargo Weekly as one that qualifies the proposition",
+            "does_not_establish": "Does not specify reasons for operational disruptions or confirm destruction."
+          }
+        ],
+        "reasoning": "Case File for P1: 0 supporting, 0 contradicting, 4 qualifying, 0 context, 2 set aside. No admissible item in the Case File supports the proposition, so Thor does not press it. The qualifying records (ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly); ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly); ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry)) limit it; they do not establish it. Event verification: only evidence of the event itself establishes it. Operating records qualify it; a set-aside source shows the claim was made, not that it is true.",
+        "assumptions": [
+          "The proposition is attributed to breaking alert; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not confirm the cause of the closures or the extent of destruction.",
+          "Does not specify reasons for operational disruptions or confirm destruction.",
+          "Does not confirm physical destruction of infrastructure."
+        ],
+        "confidence": {
+          "level": "LOW",
+          "explanation": "Nothing in the Case File supports it."
+        },
+        "adverse_evidence_handling": "No admissible evidence contradicts the proposition.",
+        "alternative_explanations": [],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "challenge_basis": null,
+        "pressed": false,
+        "evidence_requests": [
+          {
+            "query": "Orvan Grain Port infrastructure damage reports",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0032",
+              "ORV-0035"
+            ],
+            "outside_case_file": [
+              "ORV-0012",
+              "ORV-0004",
+              "ORV-0021"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Loki challenges as not established (unproven, not shown false): Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "Case File for P1: 0 supporting, 0 contradicting, 4 qualifying, 0 context, 2 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0026, ORV-0010), which shows the claim was made, not that it is true. The records ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly); ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly); ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry) qualify it; they do not show it to be false. Absence of evidence is not evidence of falsity. Event verification: only evidence of the event itself establishes it. Operating records qualify it; a set-aside source shows the claim was made, not that it is true.",
+      "citations": [
+        {
+          "doc_id": "ORV-0008",
+          "ref": "ORV-0008#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-09-18",
+          "pub_time": "14:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Orvan Grain Port holds ships as strike enters first week",
+          "excerpt": "Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0008",
+          "ref": "ORV-0008#P5",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2026-09-18",
+          "pub_time": "14:40",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "Orvan Grain Port holds ships as strike enters first week",
+          "excerpt": "The port authority says it cannot estimate when normal working will resume.",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0032",
+          "ref": "ORV-0032#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-09-15",
+          "pub_time": "08:30",
+          "tier": 1,
+          "source_name": "Realm Trade Ministry",
+          "title": "Strike reduces operations at Orvan Grain Port",
+          "excerpt": "Some grain berths are closed and the remaining berths are working at reduced speed.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0035",
+          "ref": "ORV-0035#P3",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 3,
+          "pub_date": "2027-01-14",
+          "pub_time": "12:10",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "December loadings close a poor quarter at Orvan Grain Port",
+          "excerpt": "The port strike that began in September has left berth availability below normal.",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [
+        "ORV-0020",
+        "ORV-0012",
+        "ORV-0021"
+      ],
+      "status": "ACTIVE",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0008",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - Report on operational status of the port, indicating some closures.",
+            "establishes": "Heimdall assessed this report by Cargo Weekly as one that qualifies the proposition",
+            "does_not_establish": "Does not confirm the cause of the closures or the extent of destruction."
+          },
+          {
+            "source_id": "ORV-0008",
+            "locator": {
+              "paragraph": 5,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 6
+            },
+            "quote_or_value": "The port authority says it cannot estimate when normal working will resume.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: HIGH reliability - Official statement from the port authority regarding operational status.",
+            "establishes": "Heimdall assessed this official statement by Cargo Weekly as one that qualifies the proposition",
+            "does_not_establish": "Does not specify reasons for operational disruptions or confirm destruction."
+          },
+          {
+            "source_id": "ORV-0032",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Some grain berths are closed and the remaining berths are working at reduced speed.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The source is a government notice, which may provide official information but does not confirm destruction.",
+            "establishes": "Heimdall assessed this observation by Realm Trade Ministry as one that qualifies the proposition",
+            "does_not_establish": "Does not confirm physical destruction of infrastructure.; Does not specify the cause of the closures or reduced speed."
+          },
+          {
+            "source_id": "ORV-0035",
+            "locator": {
+              "paragraph": 3,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 4
+            },
+            "quote_or_value": "The port strike that began in September has left berth availability below normal.",
+            "evidence_type": "circumstantial",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: MEDIUM reliability - The source is a shipping update, which may provide insights but lacks confirmation of destruction.",
+            "establishes": "Heimdall assessed this report by Cargo Weekly as one that qualifies the proposition",
+            "does_not_establish": "Does not confirm physical destruction of infrastructure.; Does not specify if the strike is related to military actions."
+          },
+          {
+            "source_id": "ORV-0026",
+            "locator": {
+              "paragraph": null,
+              "page": 1,
+              "row": null,
+              "paragraph_index": null
+            },
+            "quote_or_value": "A source close to the docks says all grain ships at Orvan Grain Port have been sunk and the port will not reopen.",
+            "evidence_type": "unsupported_inference",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: LOW reliability - set aside before trial as RUMOUR; see ORV-0016 (set aside before trial; inadmissible)",
+            "establishes": "Heimdall assessed this rumour by Trade Whisper as one that supports the proposition",
+            "does_not_establish": "inadmissible: it shows the claim was made, not that it is true"
+          },
+          {
+            "source_id": "ORV-0010",
+            "locator": {
+              "paragraph": null,
+              "page": 1,
+              "row": null,
+              "paragraph_index": null
+            },
+            "quote_or_value": "Hearing Orvan Grain Port was destroyed last night.",
+            "evidence_type": "unsupported_inference",
+            "epistemic_status": "reported_claim",
+            "reliability_note": "Heimdall: LOW reliability - set aside before trial as RUMOUR; see ORV-0016 (set aside before trial; inadmissible)",
+            "establishes": "Heimdall assessed this rumour by Saga Chat as one that supports the proposition",
+            "does_not_establish": "inadmissible: it shows the claim was made, not that it is true"
+          }
+        ],
+        "reasoning": "Case File for P1: 0 supporting, 0 contradicting, 4 qualifying, 0 context, 2 set aside. The proposition is not established: no admissible item supports it. Its only sources were set aside before trial (ORV-0026, ORV-0010), which shows the claim was made, not that it is true. The records ORV-0008 | Page 1 | Paragraph 2 (report, Cargo Weekly); ORV-0008 | Page 1 | Paragraph 5 (official statement, Cargo Weekly); ORV-0032 | Page 1 | Paragraph 2 (observation, Realm Trade Ministry) qualify it; they do not show it to be false. Absence of evidence is not evidence of falsity. Event verification: only evidence of the event itself establishes it. Operating records qualify it; a set-aside source shows the claim was made, not that it is true.",
+        "assumptions": [
+          "The proposition is attributed to breaking alert; it is argued as their claim.",
+          "Prior-case cautions were noted for re-evaluation only; they are not evidence."
+        ],
+        "limitations_uncertainty": [
+          "Does not confirm the cause of the closures or the extent of destruction.",
+          "Does not specify reasons for operational disruptions or confirm destruction.",
+          "Does not confirm physical destruction of infrastructure."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "No supporting evidence on the record; the challenge is that the proposition is unproven, not that it is false."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "ORV-0008 | Page 1 | Paragraph 2: Two grain berths are closed. The port is loading at reduced speed on the berths that remain open.",
+          "ORV-0008 | Page 1 | Paragraph 5: The port authority says it cannot estimate when normal working will resume."
+        ],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "challenge_basis": "not_established",
+        "pressed": true,
+        "evidence_requests": [
+          {
+            "query": "Orvan Grain Port operational status",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0035",
+              "ORV-0032",
+              "ORV-0008"
+            ],
+            "outside_case_file": [
+              "ORV-0020",
+              "ORV-0012",
+              "ORV-0021"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "attacks": [],
+  "responses": [],
+  "side_failures": {}
+}

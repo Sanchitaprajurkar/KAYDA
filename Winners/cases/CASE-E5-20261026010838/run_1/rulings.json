@@ -1,0 +1,24 @@
+{
+  "rulings": [],
+  "ranges": [],
+  "remand": [],
+  "open_gaps": [],
+  "research": [],
+  "llm_usage": {
+    "THOR": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "LOKI": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    },
+    "ODIN": {
+      "calls": 0,
+      "cache_hits": 0,
+      "tokens": 0
+    }
+  }
+}

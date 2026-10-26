@@ -1,0 +1,955 @@
+{
+  "claims": [
+    {
+      "claim_id": "T1-P1",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Thor (withdraw inference): Supports position withdrawn on P1; the proposition itself is unchanged.",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "The evidence indicates that military strikes occurred at Orvan Grain Port starting on 14 September, leading to operational disruptions. However, while the strikes are confirmed, the specific claim of physical destruction is not directly established by the evidence provided.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0012",
+        "ORV-0004",
+        "ORV-0032"
+      ],
+      "status": "CONCEDED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "position": "supports",
+        "evidence_refs": [],
+        "reasoning": "The evidence indicates that military strikes occurred at Orvan Grain Port starting on 14 September, leading to operational disruptions. However, while the strikes are confirmed, the specific claim of physical destruction is not directly established by the evidence provided.",
+        "assumptions": [
+          "The military strikes indeed occurred as reported.",
+          "Operational disruptions correlate with physical damage."
+        ],
+        "limitations_uncertainty": [
+          "The evidence does not provide direct observation of destruction.",
+          "The reports are from Tier 2 sources, which may lack comprehensive verification."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "There is a reasonable basis for believing that military strikes occurred, but the extent of physical destruction remains unverified."
+        },
+        "adverse_evidence_handling": "The reports from Tier 4 sources (E6, E7) are set aside as rumors and do not provide credible evidence.",
+        "alternative_explanations": [],
+        "revision_history": [
+          {
+            "round": 1,
+            "action": "withdraw_inference",
+            "original_proposition": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+            "revised_proposition": "Supports position withdrawn on P1; the proposition itself is unchanged.",
+            "retained_evidence_refs": [],
+            "withdrawn_inferences": [
+              "The evidence indicates that military strikes occurred at Orvan Grain Port starting on 14 September, leading to operational disruptions. However, while the strikes are confirmed, the specific claim of "
+            ],
+            "reason": "unsupported_inference: The claim of operational disruptions is based on the occurrence of military strikes, but does not establish a direct causal link to physical destruction."
+          }
+        ],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "evidence_requests": [
+          {
+            "query": "Orvan Grain Port damage reports",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0035",
+              "ORV-0021"
+            ],
+            "outside_case_file": [
+              "ORV-0012",
+              "ORV-0004",
+              "ORV-0032"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "T1-P2",
+      "side": "THOR",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P2] Thor (narrow proposition): Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes. - argued only to the extent shown by ORV-0021 Page 1 | Paragraph 2, ORV-0024 Page 1 | Paragraph 2",
+      "estimate": null,
+      "nature": "SOURCED_FACT",
+      "reasoning": "The evidence indicates that military strikes occurred at Orvan Grain Port, which would logically affect the grain terminal silos. However, there is no direct evidence confirming their physical destruction.",
+      "citations": [
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0024",
+          "ref": "ORV-0024#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-09-12",
+          "pub_time": "10:15",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "How the Orvan grain corridor worked, and why its ending matters",
+          "excerpt": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [
+        "ORV-0012",
+        "ORV-0004",
+        "ORV-0032",
+        "ORV-0035"
+      ],
+      "status": "NARROWED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P2",
+        "proposition_text": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes.",
+        "position": "supports",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+            "establishes": "The strike at Orvan Grain Port began on 14 September, indicating military action affecting the grain terminal silos.",
+            "does_not_establish": "The extent of physical destruction to the silos."
+          },
+          {
+            "source_id": "ORV-0024",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The paragraph discusses a dock strike but does not provide evidence of military strikes or damage to silos.",
+            "establishes": "Orvan Grain Port is crucial for grain exports, implying that any military action would impact the silos.",
+            "does_not_establish": "Direct evidence of physical destruction."
+          }
+        ],
+        "reasoning": "The evidence indicates that military strikes occurred at Orvan Grain Port, which would logically affect the grain terminal silos. However, there is no direct evidence confirming their physical destruction.",
+        "assumptions": [
+          "The military strikes indeed occurred as reported.",
+          "The grain terminal silos are part of the infrastructure affected by the strikes."
+        ],
+        "limitations_uncertainty": [
+          "The evidence does not provide direct observation of destruction of the silos.",
+          "The reports are from Tier 2 sources, which may lack comprehensive verification."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "There is a reasonable basis for believing that military strikes occurred, but the extent of physical destruction of the silos remains unverified."
+        },
+        "adverse_evidence_handling": "The reports from Tier 4 sources (E6, E7) are set aside as rumors and do not provide credible evidence.",
+        "alternative_explanations": [],
+        "revision_history": [
+          {
+            "round": 1,
+            "action": "narrow_proposition",
+            "original_proposition": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes.",
+            "revised_proposition": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes. - argued only to the extent shown by ORV-0021 Page 1 | Paragraph 2, ORV-0024 Page 1 | Paragraph 2",
+            "retained_evidence_refs": [
+              {
+                "source_id": "ORV-0021",
+                "locator": {
+                  "paragraph": 2,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 3
+                },
+                "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+                "evidence_type": "contextual",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+                "establishes": "The strike at Orvan Grain Port began on 14 September, indicating military action affecting the grain terminal silos.",
+                "does_not_establish": "The extent of physical destruction to the silos."
+              },
+              {
+                "source_id": "ORV-0024",
+                "locator": {
+                  "paragraph": 2,
+                  "page": 1,
+                  "row": null,
+                  "paragraph_index": 3
+                },
+                "quote_or_value": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+                "evidence_type": "contextual",
+                "epistemic_status": "observed_fact",
+                "reliability_note": "Heimdall: MEDIUM reliability - The paragraph discusses a dock strike but does not provide evidence of military strikes or damage to silos.",
+                "establishes": "Orvan Grain Port is crucial for grain exports, implying that any military action would impact the silos.",
+                "does_not_establish": "Direct evidence of physical destruction."
+              }
+            ],
+            "withdrawn_inferences": [
+              "The evidence indicates that military strikes occurred at Orvan Grain Port, which would logically affect the grain terminal silos. However, there is no direct evidence confirming their physical destruc"
+            ],
+            "reason": "contradictory_evidence: The claim that Orvan grows more wheat and maize than it consumes contradicts the assertion of significant operational disruptions affecting grain exports."
+          }
+        ],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "evidence_requests": [
+          {
+            "query": "Orvan Grain Port grain terminal damage reports",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0021"
+            ],
+            "outside_case_file": [
+              "ORV-0012",
+              "ORV-0004",
+              "ORV-0032",
+              "ORV-0035"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P1",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P1] Loki (withdraw inference): Challenges position withdrawn on P1; the proposition itself is unchanged.",
+      "estimate": null,
+      "nature": "INFERENCE",
+      "reasoning": "The evidence indicates that a strike occurred at Orvan Grain Port, but it does not confirm that the infrastructure was physically destroyed. Reports suggest some berths are operational, contradicting the claim of total destruction. The rumors cited are unverified and do not provide concrete evidence of destruction.",
+      "citations": [],
+      "assessment": null,
+      "requests": [
+        "ORV-0012",
+        "ORV-0004",
+        "ORV-0032",
+        "ORV-0008"
+      ],
+      "status": "CONCEDED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P1",
+        "proposition_text": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "position": "challenges",
+        "evidence_refs": [],
+        "reasoning": "The evidence indicates that a strike occurred at Orvan Grain Port, but it does not confirm that the infrastructure was physically destroyed. Reports suggest some berths are operational, contradicting the claim of total destruction. The rumors cited are unverified and do not provide concrete evidence of destruction.",
+        "assumptions": [
+          "The reports and rumors are accurate reflections of the situation.",
+          "The operational status of the port is directly correlated to the extent of destruction."
+        ],
+        "limitations_uncertainty": [
+          "The evidence does not provide direct observation of destruction.",
+          "Rumors are not reliable sources of information."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "While there is evidence of a strike, the lack of direct confirmation of destruction and the operational status of some berths suggest that the claim may be exaggerated or unverified."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "Continued operations at some berths indicate that not all infrastructure is destroyed.",
+          "The presence of conflicting reports suggests that the situation may be more complex than total destruction."
+        ],
+        "revision_history": [
+          {
+            "round": 1,
+            "action": "withdraw_inference",
+            "original_proposition": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+            "revised_proposition": "Challenges position withdrawn on P1; the proposition itself is unchanged.",
+            "retained_evidence_refs": [],
+            "withdrawn_inferences": [
+              "The evidence indicates that a strike occurred at Orvan Grain Port, but it does not confirm that the infrastructure was physically destroyed. Reports suggest some berths are operational, contradicting "
+            ],
+            "reason": "unsupported_inference: The claim relies on unverified rumors without concrete evidence of destruction."
+          }
+        ],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "evidence_requests": [
+          {
+            "query": "denials of damage at Orvan Grain Port",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [
+              "ORV-0035"
+            ],
+            "outside_case_file": [
+              "ORV-0012",
+              "ORV-0004",
+              "ORV-0032",
+              "ORV-0008"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "claim_id": "L1-P2",
+      "side": "LOKI",
+      "run": 1,
+      "country": "",
+      "sector": "",
+      "kind": "evidence",
+      "statement": "[P2] Loki challenges: Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes.",
+      "estimate": null,
+      "nature": "SOURCED_FACT",
+      "reasoning": "The evidence shows that a strike occurred, but it does not confirm the destruction of grain terminal silos. The operational status of the port and the presence of conflicting reports suggest that the claim may not be substantiated. Rumors do not provide reliable evidence of destruction.",
+      "citations": [
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0024",
+          "ref": "ORV-0024#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-09-12",
+          "pub_time": "10:15",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "How the Orvan grain corridor worked, and why its ending matters",
+          "excerpt": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "assessment": null,
+      "requests": [
+        "ORV-0004",
+        "ORV-0012",
+        "ATL-0015",
+        "ORV-0022",
+        "ORV-0033",
+        "ORV-0032",
+        "ORV-0035"
+      ],
+      "status": "DEFENDED",
+      "narrowed_from": null,
+      "argument": {
+        "claim_id": "P2",
+        "proposition_text": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes.",
+        "position": "challenges",
+        "evidence_refs": [
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+            "establishes": "A strike occurred at Orvan Grain Port on 14 September.",
+            "does_not_establish": "The condition of the grain terminal silos."
+          },
+          {
+            "source_id": "ORV-0024",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The paragraph discusses a dock strike but does not provide evidence of military strikes or damage to silos.",
+            "establishes": "Orvan exports surplus grain via the port.",
+            "does_not_establish": "The current operational status of the grain terminal silos."
+          }
+        ],
+        "reasoning": "The evidence shows that a strike occurred, but it does not confirm the destruction of grain terminal silos. The operational status of the port and the presence of conflicting reports suggest that the claim may not be substantiated. Rumors do not provide reliable evidence of destruction.",
+        "assumptions": [
+          "The reports and rumors accurately reflect the condition of the silos.",
+          "The operational status of the silos is directly correlated to the extent of destruction."
+        ],
+        "limitations_uncertainty": [
+          "The evidence does not provide direct observation of the condition of the silos.",
+          "Rumors are not reliable sources of information."
+        ],
+        "confidence": {
+          "level": "MEDIUM",
+          "explanation": "While there is evidence of a strike, the lack of direct confirmation of destruction and the operational status of the port suggest that the claim may be exaggerated or unverified."
+        },
+        "adverse_evidence_handling": "",
+        "alternative_explanations": [
+          "Continued operations at the port indicate that not all silos are destroyed.",
+          "The presence of conflicting reports suggests that the situation may be more complex than total destruction."
+        ],
+        "revision_history": [],
+        "numerical_analysis": null,
+        "strategy": "EVENT_VERIFICATION",
+        "evidence_requests": [
+          {
+            "query": "denials of damage to grain terminal Orvan",
+            "reason": "no direct evidence for this side's position in the Case File",
+            "already_in_case_file": [],
+            "outside_case_file": [
+              "ORV-0004",
+              "ORV-0012",
+              "ATL-0015",
+              "ORV-0022",
+              "ORV-0033",
+              "ORV-0032",
+              "ORV-0035"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "attack_id": "AT1-01",
+      "run": 1,
+      "attacker": "THOR",
+      "target_claim_id": "L1-P1",
+      "reason": "wrong_scope",
+      "argument": "The claim relies on unverified rumors without concrete evidence of destruction. The assertion that all grain ships at Orvan Grain Port have been sunk is based on a rumor from a source close to the docks, which is not substantiated by any official or reliable documentation. This undermines the credibility of the claim.",
+      "counter_evidence": [],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "unsupported_inference",
+      "target_proposition_id": "P1",
+      "target_evidence_or_reasoning": "ref 4",
+      "defect": "The claim relies on unverified rumors without concrete evidence of destruction.",
+      "explanation": "The assertion that all grain ships at Orvan Grain Port have been sunk is based on a rumor from a source close to the docks, which is not substantiated by any official or reliable documentation. This undermines the credibility of the claim.",
+      "counter_evidence_refs": []
+    },
+    {
+      "attack_id": "AT1-02",
+      "run": 1,
+      "attacker": "THOR",
+      "target_claim_id": "L1-P2",
+      "reason": "wrong_scope",
+      "argument": "The claim does not provide evidence of destruction of grain terminal silos. While it acknowledges the strike, it fails to substantiate the claim regarding the destruction of grain terminal silos, as no direct evidence is presented to support this assertion.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "unsupported_inference",
+      "target_proposition_id": "P2",
+      "target_evidence_or_reasoning": "ref 1",
+      "defect": "The claim does not provide evidence of destruction of grain terminal silos.",
+      "explanation": "While it acknowledges the strike, it fails to substantiate the claim regarding the destruction of grain terminal silos, as no direct evidence is presented to support this assertion.",
+      "counter_evidence_refs": [
+        {
+          "source_id": "ORV-0021",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "Heimdall: MEDIUM reliability - Company statements can provide context but may not be independently verified.",
+          "establishes": "official statement by Corvan Grain",
+          "does_not_establish": "Does not confirm physical destruction of infrastructure."
+        },
+        {
+          "source_id": "ORV-0021",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+          "evidence_type": "contradictory",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+          "establishes": "observation by Corvan Grain",
+          "does_not_establish": "Does not specify the nature of the strike (military or otherwise); Does not confirm any physical damage to silos."
+        }
+      ]
+    },
+    {
+      "attack_id": "AL1-01",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-P1",
+      "reason": "wrong_scope",
+      "argument": "The claim of operational disruptions is based on the occurrence of military strikes, but does not establish a direct causal link to physical destruction. While the strikes at Orvan Grain Port are confirmed, the evidence does not directly support the conclusion that these strikes resulted in physical destruction of the port's infrastructure or operations. The evidence merely states that strikes occurred, which does not inherently imply that operational capacity was irreparably harmed.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0017",
+          "ref": "ORV-0017#P3",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 3,
+          "pub_date": "2026-12-16",
+          "pub_time": "07:10",
+          "tier": 2,
+          "source_name": "Raven Wire",
+          "title": "Orvan sea grain loadings stuck near a third of normal",
+          "excerpt": "the port strike which began on 14 September is still limiting berth use, though some berths are working",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        },
+        {
+          "doc_id": "ORV-0035",
+          "ref": "ORV-0035#P5",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 5,
+          "pub_date": "2027-01-14",
+          "pub_time": "12:10",
+          "tier": 2,
+          "source_name": "Cargo Weekly",
+          "title": "December loadings close a poor quarter at Orvan Grain Port",
+          "excerpt": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "unsupported_inference",
+      "target_proposition_id": "P1",
+      "target_evidence_or_reasoning": "ref 1",
+      "defect": "The claim of operational disruptions is based on the occurrence of military strikes, but does not establish a direct causal link to physical destruction.",
+      "explanation": "While the strikes at Orvan Grain Port are confirmed, the evidence does not directly support the conclusion that these strikes resulted in physical destruction of the port's infrastructure or operations. The evidence merely states that strikes occurred, which does not inherently imply that operational capacity was irreparably harmed.",
+      "counter_evidence_refs": [
+        {
+          "source_id": "ORV-0021",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "Heimdall: MEDIUM reliability - Company statements can provide context but may not be independently verified.",
+          "establishes": "official statement by Corvan Grain",
+          "does_not_establish": "Does not confirm physical destruction of infrastructure."
+        },
+        {
+          "source_id": "ORV-0017",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "the port strike which began on 14 September is still limiting berth use, though some berths are working",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "Heimdall: MEDIUM reliability - News reports can provide insights but may not have direct evidence of destruction.",
+          "establishes": "report by Raven Wire",
+          "does_not_establish": "Does not establish that infrastructure was physically destroyed."
+        },
+        {
+          "source_id": "ORV-0035",
+          "locator": {
+            "paragraph": 5,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 6
+          },
+          "quote_or_value": "Loadings fell fastest in the first weeks after the agreement ended, when the strike and the paperwork for the new rules coincided",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "Heimdall: MEDIUM reliability - News reports provide analysis but may lack direct evidence of destruction.",
+          "establishes": "report by Cargo Weekly",
+          "does_not_establish": "Does not confirm physical destruction of infrastructure."
+        }
+      ]
+    },
+    {
+      "attack_id": "AL1-02",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-P1",
+      "reason": "low_tier",
+      "argument": "The assertion that berth use is limited lacks corroborative evidence regarding the extent of operational disruptions. The evidence states that some berths are still operational, indicating that while there may be limitations, the overall operational capacity of the port is not entirely compromised. This undermines the claim of significant operational disruptions as a result of the strikes.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0017",
+          "ref": "ORV-0017#P3",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 3,
+          "pub_date": "2026-12-16",
+          "pub_time": "07:10",
+          "tier": 2,
+          "source_name": "Raven Wire",
+          "title": "Orvan sea grain loadings stuck near a third of normal",
+          "excerpt": "the port strike which began on 14 September is still limiting berth use, though some berths are working",
+          "fact_id": null,
+          "assertion": "REPORTED_CLAIM",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "missing_corroboration",
+      "target_proposition_id": "P1",
+      "target_evidence_or_reasoning": "ref 2",
+      "defect": "The assertion that berth use is limited lacks corroborative evidence regarding the extent of operational disruptions.",
+      "explanation": "The evidence states that some berths are still operational, indicating that while there may be limitations, the overall operational capacity of the port is not entirely compromised. This undermines the claim of significant operational disruptions as a result of the strikes.",
+      "counter_evidence_refs": [
+        {
+          "source_id": "ORV-0017",
+          "locator": {
+            "paragraph": 3,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 4
+          },
+          "quote_or_value": "the port strike which began on 14 September is still limiting berth use, though some berths are working",
+          "evidence_type": "contradictory",
+          "epistemic_status": "reported_claim",
+          "reliability_note": "Heimdall: MEDIUM reliability - News reports can provide insights but may not have direct evidence of destruction.",
+          "establishes": "report by Raven Wire",
+          "does_not_establish": "Does not establish that infrastructure was physically destroyed."
+        }
+      ]
+    },
+    {
+      "attack_id": "AL1-03",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-P2",
+      "reason": "wrong_scope",
+      "argument": "The logical inference that military strikes would affect grain terminal silos is not substantiated by direct evidence of such damage. The evidence confirms the occurrence of strikes but does not provide direct evidence of damage to the grain terminal silos. Thus, the conclusion drawn about the impact on grain storage is speculative and lacks a factual basis.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0021",
+          "ref": "ORV-0021#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-11-12",
+          "pub_time": "10:30",
+          "tier": 2,
+          "source_name": "Corvan Grain",
+          "title": "Corvan Grain: October sea shipments down 62% on last year",
+          "excerpt": "the strike at Orvan Grain Port that began on 14 September",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "unsupported_inference",
+      "target_proposition_id": "P2",
+      "target_evidence_or_reasoning": "ref 1",
+      "defect": "The logical inference that military strikes would affect grain terminal silos is not substantiated by direct evidence of such damage.",
+      "explanation": "The evidence confirms the occurrence of strikes but does not provide direct evidence of damage to the grain terminal silos. Thus, the conclusion drawn about the impact on grain storage is speculative and lacks a factual basis.",
+      "counter_evidence_refs": [
+        {
+          "source_id": "ORV-0021",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+          "evidence_type": "contradictory",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+          "establishes": "observation by Corvan Grain",
+          "does_not_establish": "Does not specify the nature of the strike (military or otherwise); Does not confirm any physical damage to silos."
+        }
+      ]
+    },
+    {
+      "attack_id": "AL1-04",
+      "run": 1,
+      "attacker": "LOKI",
+      "target_claim_id": "T1-P2",
+      "reason": "contradicts",
+      "argument": "The claim that Orvan grows more wheat and maize than it consumes contradicts the assertion of significant operational disruptions affecting grain exports. If Orvan is capable of producing surplus grain, it suggests that even with some operational disruptions, the overall capacity to export grain may not be severely impacted. This contradicts the assertion that military strikes would logically lead to a significant reduction in grain exports.",
+      "counter_evidence": [
+        {
+          "doc_id": "ORV-0024",
+          "ref": "ORV-0024#P2",
+          "kind": "paragraph",
+          "page_number": 1,
+          "paragraph_number": 2,
+          "pub_date": "2026-09-12",
+          "pub_time": "10:15",
+          "tier": 2,
+          "source_name": "Harbour Review",
+          "title": "How the Orvan grain corridor worked, and why its ending matters",
+          "excerpt": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+          "fact_id": null,
+          "assertion": "OBSERVED_FACT",
+          "numeric_value": null,
+          "unit": null
+        }
+      ],
+      "grounds": "argued",
+      "narrow_to": null,
+      "attack_type": "contradictory_evidence",
+      "target_proposition_id": "P2",
+      "target_evidence_or_reasoning": "ref 2",
+      "defect": "The claim that Orvan grows more wheat and maize than it consumes contradicts the assertion of significant operational disruptions affecting grain exports.",
+      "explanation": "If Orvan is capable of producing surplus grain, it suggests that even with some operational disruptions, the overall capacity to export grain may not be severely impacted. This contradicts the assertion that military strikes would logically lead to a significant reduction in grain exports.",
+      "counter_evidence_refs": [
+        {
+          "source_id": "ORV-0024",
+          "locator": {
+            "paragraph": 2,
+            "page": 1,
+            "row": null,
+            "paragraph_index": 3
+          },
+          "quote_or_value": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+          "evidence_type": "contradictory",
+          "epistemic_status": "observed_fact",
+          "reliability_note": "Heimdall: MEDIUM reliability - The paragraph discusses a dock strike but does not provide evidence of military strikes or damage to silos.",
+          "establishes": "observation by Harbour Review",
+          "does_not_establish": "Does not indicate any military action or destruction of silos.; Focuses on operational disruptions rather than physical damage."
+        }
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "RT1-01",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-01",
+      "claim_id": "T1-P1",
+      "decision": "CONCEDED",
+      "explanation": "Thor withdraws the inference: no direct or observed evidence carries it.",
+      "new_evidence": [],
+      "action": "withdraw_inference",
+      "revision": {
+        "round": 1,
+        "action": "withdraw_inference",
+        "original_proposition": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "revised_proposition": "Supports position withdrawn on P1; the proposition itself is unchanged.",
+        "retained_evidence_refs": [],
+        "withdrawn_inferences": [
+          "The evidence indicates that military strikes occurred at Orvan Grain Port starting on 14 September, leading to operational disruptions. However, while the strikes are confirmed, the specific claim of "
+        ],
+        "reason": "unsupported_inference: The claim of operational disruptions is based on the occurrence of military strikes, but does not establish a direct causal link to physical destruction."
+      },
+      "new_evidence_refs": []
+    },
+    {
+      "response_id": "RT1-02",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-03",
+      "claim_id": "T1-P2",
+      "decision": "DEFENDED",
+      "explanation": "Every reference is direct or observed; the argument stands as filed.",
+      "new_evidence": [],
+      "action": "maintain",
+      "revision": null,
+      "new_evidence_refs": []
+    },
+    {
+      "response_id": "RT1-03",
+      "run": 1,
+      "side": "THOR",
+      "attack_id": "AL1-04",
+      "claim_id": "T1-P2",
+      "decision": "NARROWED",
+      "explanation": "Thor narrows the argument: the counter-evidence is direct and its own references only qualify.",
+      "new_evidence": [],
+      "action": "narrow_proposition",
+      "revision": {
+        "round": 1,
+        "action": "narrow_proposition",
+        "original_proposition": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes.",
+        "revised_proposition": "Grain terminal silos at Orvan Grain Port were physically destroyed in military strikes. - argued only to the extent shown by ORV-0021 Page 1 | Paragraph 2, ORV-0024 Page 1 | Paragraph 2",
+        "retained_evidence_refs": [
+          {
+            "source_id": "ORV-0021",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "the strike at Orvan Grain Port that began on 14 September",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The statement refers to a strike at Orvan Grain Port but does not confirm physical destruction of silos.",
+            "establishes": "The strike at Orvan Grain Port began on 14 September, indicating military action affecting the grain terminal silos.",
+            "does_not_establish": "The extent of physical destruction to the silos."
+          },
+          {
+            "source_id": "ORV-0024",
+            "locator": {
+              "paragraph": 2,
+              "page": 1,
+              "row": null,
+              "paragraph_index": 3
+            },
+            "quote_or_value": "Orvan grows more wheat and maize than it eats and sells the surplus by sea from Orvan Grain Port. The agreement kept that sea route open to commercial ships.",
+            "evidence_type": "contextual",
+            "epistemic_status": "observed_fact",
+            "reliability_note": "Heimdall: MEDIUM reliability - The paragraph discusses a dock strike but does not provide evidence of military strikes or damage to silos.",
+            "establishes": "Orvan Grain Port is crucial for grain exports, implying that any military action would impact the silos.",
+            "does_not_establish": "Direct evidence of physical destruction."
+          }
+        ],
+        "withdrawn_inferences": [
+          "The evidence indicates that military strikes occurred at Orvan Grain Port, which would logically affect the grain terminal silos. However, there is no direct evidence confirming their physical destruc"
+        ],
+        "reason": "contradictory_evidence: The claim that Orvan grows more wheat and maize than it consumes contradicts the assertion of significant operational disruptions affecting grain exports."
+      },
+      "new_evidence_refs": []
+    },
+    {
+      "response_id": "RL1-01",
+      "run": 1,
+      "side": "LOKI",
+      "attack_id": "AT1-01",
+      "claim_id": "L1-P1",
+      "decision": "CONCEDED",
+      "explanation": "Loki withdraws the inference: no direct or observed evidence carries it.",
+      "new_evidence": [],
+      "action": "withdraw_inference",
+      "revision": {
+        "round": 1,
+        "action": "withdraw_inference",
+        "original_proposition": "Orvan Grain Port infrastructure was physically destroyed in military strikes.",
+        "revised_proposition": "Challenges position withdrawn on P1; the proposition itself is unchanged.",
+        "retained_evidence_refs": [],
+        "withdrawn_inferences": [
+          "The evidence indicates that a strike occurred at Orvan Grain Port, but it does not confirm that the infrastructure was physically destroyed. Reports suggest some berths are operational, contradicting "
+        ],
+        "reason": "unsupported_inference: The claim relies on unverified rumors without concrete evidence of destruction."
+      },
+      "new_evidence_refs": []
+    },
+    {
+      "response_id": "RL1-02",
+      "run": 1,
+      "side": "LOKI",
+      "attack_id": "AT1-02",
+      "claim_id": "L1-P2",
+      "decision": "DEFENDED",
+      "explanation": "Every reference is direct or observed; the argument stands as filed.",
+      "new_evidence": [],
+      "action": "maintain",
+      "revision": null,
+      "new_evidence_refs": []
+    }
+  ],
+  "side_failures": {}
+}

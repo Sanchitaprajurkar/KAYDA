@@ -1,0 +1,18 @@
+{
+  "case_id": "CASE-E5-20261026033206",
+  "question": "Evaluate the breaking alert claiming that Orvan Grain Port infrastructure and grain terminal silos were physically destroyed in military strikes. Conduct event verification to rule whether this disruption is verified or rejected as a decoy, citing verified port authority and logistics records.",
+  "as_of_date": "2027-01-25",
+  "runs": 1,
+  "status": "NO_TRIAL",
+  "git_sha": "4ba2e04ab210fbc2080b120fabb876d46d82442c",
+  "models": {},
+  "limits": {
+    "max_runs": 3,
+    "rounds_per_run": 3,
+    "max_claims_per_side": 6,
+    "max_tool_calls_per_agent_per_run": 16,
+    "max_tokens_per_agent_per_run": 40000,
+    "case_wallclock_s": 600
+  },
+  "saved_at": "2026-10-26T03:33:34.483368+00:00"
+}

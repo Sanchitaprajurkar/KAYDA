@@ -261,6 +261,34 @@ class Ruling(BaseModel):
     findings: List[Finding] = Field(default_factory=list)
 
 
+class PropositionRuling(BaseModel):
+    """Odin's own ruling on one proposition of the question, made from the evidence whatever the advocates did.
+    CONCEDED and NOT_PRESSED describe advocates' positions (advocate_positions); they are never a proposition's
+    classification."""
+    prop_id: str
+    proposition: str
+    kind: str = "CLAIM"
+    classification: Literal["ESTABLISHED", "CONTESTED", "REJECTED", "INSUFFICIENT"]
+    supporting: List[EvidenceRef] = Field(default_factory=list)
+    contradicting: List[EvidenceRef] = Field(default_factory=list)
+    qualifying: List[EvidenceRef] = Field(default_factory=list)  # bears on it without establishing either side
+    set_aside: List[EvidenceRef] = Field(default_factory=list)   # inadmissible sources of the claim
+    limitations: List[str] = Field(default_factory=list)
+    reasoning: str
+    confidence: Confidence
+    attribution: Optional[str] = None  # for a party's claim: whether the party is shown to have made it
+    deception: str = ""                # what the record shows about deliberate fabrication (never assumed)
+    advocate_positions: Dict[str, str] = Field(default_factory=dict)
+    needs_investigation: bool = False
+    evidence_gap: str = ""
+    evidence_needed: str = ""
+    reinvestigation: str = ""          # whether a further search was requested, and why or why not
+    derived_from: Optional[str] = None  # the Heimdall proposition this was split or derived from
+    derivation: str = ""               # "part" of a compound allegation, its operational "consequence", or "compound"
+    research_request: str = ""         # the targeted request for Heimdall, when one applies
+    research_requested: bool = False   # sent this run (False once it has been searched)
+
+
 class ResearchOutcome(BaseModel):
     """Whether a re-search answered the gap Odin sent back. Retrieving documents is not answering the question."""
     gap: str
@@ -301,5 +329,8 @@ class RunRecord(BaseModel):
     remand: List[str] = Field(default_factory=list)
     research: List[ResearchOutcome] = Field(default_factory=list)  # how the re-search before this run answered the remand
     open_gaps: List[str] = Field(default_factory=list)  # gaps searched for and still unresolved; reported, not chased
+    propositions: List[PropositionRuling] = Field(default_factory=list)  # Odin's ruling on every proposition
+    analytical_status: str = ""  # COMPLETE | PARTIAL | INSUFFICIENT; separate from whether the workflow ran
+    completeness: List[str] = Field(default_factory=list)  # requirements without a ruling (should be empty)
     side_failures: Dict[str, str] = Field(default_factory=dict)
     llm_usage: Dict[str, Dict[str, int]] = Field(default_factory=dict)
